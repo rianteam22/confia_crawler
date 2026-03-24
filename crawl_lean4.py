@@ -196,13 +196,30 @@ def in_scope(url: str, root_url: str) -> bool:
 
 def iter_links_from_html(base_url: str, html: str) -> Iterable[str]:
     soup = BeautifulSoup(html, "html.parser")
+
+    # Respect <base href="..."> tag (used by Verso-generated sites).
+    effective_base = base_url
+    base_tag = soup.find("base", href=True)
+    if base_tag:
+        effective_base = urljoin(base_url, base_tag["href"])
+
     for anchor in soup.find_all("a", href=True):
         href = (anchor.get("href") or "").strip()
         if not href:
             continue
         if href.startswith("#"):
             continue
-        yield urljoin(base_url, href)
+        yield urljoin(effective_base, href)
+
+
+def is_soft_404(html: str) -> bool:
+    """Detect server-side soft 404 pages (200 status but 'not found' content)."""
+    soup = BeautifulSoup(html, "html.parser")
+    if soup.title and soup.title.string:
+        title = soup.title.string.strip().lower()
+        if "not found" in title or "404" in title:
+            return True
+    return False
 
 
 def slugify_relative_path(path: str) -> str:
@@ -399,10 +416,18 @@ async def discover_and_cache_urls(
         html: str | None
         if raw_path.exists():
             html = raw_path.read_text(encoding="utf-8", errors="replace")
+            if is_soft_404(html):
+                logging.warning("[%s] Cached soft 404, skipping: %s", source.source_id, current_url)
+                del url_to_slug_map[current_url]
+                continue
             logging.info("[%s] Stage1 cache hit: %s", source.source_id, raw_path)
         else:
             html = await fetch_page_html(crawler, current_url, limiter)
             if html is None:
+                continue
+            if is_soft_404(html):
+                logging.warning("[%s] Soft 404 detected, skipping: %s", source.source_id, current_url)
+                del url_to_slug_map[current_url]
                 continue
             raw_path.write_text(html, encoding="utf-8")
             logging.info("[%s] Stage1 saved: %s", source.source_id, raw_path)
