@@ -1,0 +1,18 @@
+[←12.4. Foreign Function Interface](Run-Time-Code/Foreign-Function-Interface/#ffi "12.4. Foreign Function Interface")[13.1. Identifiers→](Terms/Identifiers/#identifiers-and-resolution "13.1. Identifiers")
+#  13. Terms[🔗](find/?domain=Verso.Genre.Manual.section&name=terms "Permalink")
+_Terms_ are the principal means of writing mathematics and programs in Lean. The elaborator translates them to Lean's minimal core language, which is then checked by the kernel and compiled for execution. The syntax of terms is [arbitrarily extensible](Notations-and-Macros/Defining-New-Syntax/#syntax-ext); this chapter documents the term syntax that Lean provides out-of-the-box.
+  1. [13.1. Identifiers](Terms/Identifiers/#identifiers-and-resolution)
+  2. [13.2. Function Types](Terms/Function-Types/#function-types)
+  3. [13.3. Functions](Terms/Functions/#function-terms)
+  4. [13.4. Function Application](Terms/Function-Application/#function-application)
+  5. [13.5. Numeric Literals](Terms/Numeric-Literals/#The-Lean-Language-Reference--Terms--Numeric-Literals)
+  6. [13.6. Structures and Constructors](Terms/Structures-and-Constructors/#The-Lean-Language-Reference--Terms--Structures-and-Constructors)
+  7. [13.7. Conditionals](Terms/Conditionals/#if-then-else)
+  8. [13.8. Pattern Matching](Terms/Pattern-Matching/#pattern-matching)
+  9. [13.9. Holes](Terms/Holes/#The-Lean-Language-Reference--Terms--Holes)
+  10. [13.10. Type Ascription](Terms/Type-Ascription/#The-Lean-Language-Reference--Terms--Type-Ascription)
+  11. [13.11. Quotation and Antiquotation](Terms/Quotation-and-Antiquotation/#The-Lean-Language-Reference--Terms--Quotation-and-Antiquotation)
+  12. [13.12. `do`-Notation](Terms/do--Notation/#The-Lean-Language-Reference--Terms--do--Notation)
+  13. [13.13. Proofs](Terms/Proofs/#The-Lean-Language-Reference--Terms--Proofs)
+
+[←12.4. Foreign Function Interface](Run-Time-Code/Foreign-Function-Interface/#ffi "12.4. Foreign Function Interface")[13.1. Identifiers→](Terms/Identifiers/#identifiers-and-resolution "13.1. Identifiers")

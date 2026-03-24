@@ -1,0 +1,17 @@
+[←About: dependsOnNoncomputable](Error-Explanations/About___--dependsOnNoncomputable/#The-Lean-Language-Reference--Error-Explanations--About___--dependsOnNoncomputable "About: dependsOnNoncomputable")[About: inductiveParamMismatch→](Error-Explanations/About___--inductiveParamMismatch/#The-Lean-Language-Reference--Error-Explanations--About___--inductiveParamMismatch "About: inductiveParamMismatch")
+#  About: `inductionWithNoAlts`[🔗](find/?domain=Verso.Genre.Manual.section&name=The-Lean-Language-Reference--Error-Explanations--About___--inductionWithNoAlts "Permalink")
+Error code: `lean.inductionWithNoAlts`
+_Induction pattern with nontactic in natural-number-game-style `with` clause._
+**Severity:** Error**Since:** 4.26.0
+Tactic-based proofs using induction in Lean need to use a pattern-matching-like notation to describe individual cases of the proof. However, the `induction'` tactic in Mathlib and the specialized `induction` tactic for natural numbers used in the Natural Number Game follows a different pattern.
+##  Examples[🔗](find/?domain=Verso.Genre.Manual.section&name=The-Lean-Language-Reference--Error-Explanations--About___--inductionWithNoAlts--Examples "Permalink")
+Adding Explicit Cases to an Induction Proof
+OriginalFixed
+`theorem zero_mul (m : [Nat](Basic-Types/Natural-Numbers/#Nat___zero "Documentation for Nat")) : 0 * m = 0 := by   [induction](Tactic-Proofs/Tactic-Reference/#induction "Documentation for tactic") m `Invalid syntax for induction tactic: The `with` keyword must be followed by a tactic or by an alternative (e.g. `| zero =>`), but here it is followed by the identifier `n`.`with n n_ih rw [Nat.mul_zero] rw [Nat.mul_succ] rw [Nat.add_zero] rw [n_ih] `
+```
+Invalid syntax for induction tactic: The `with` keyword must be followed by a tactic or by an alternative (e.g. `| zero =>`), but here it is followed by the identifier `n`.
+```
+
+`theorem zero_mul (m : [Nat](Basic-Types/Natural-Numbers/#Nat___zero "Documentation for Nat")) : 0 * m = 0 := by   [induction](Tactic-Proofs/Tactic-Reference/#induction "Documentation for tactic") m with   | [zero](Basic-Types/Natural-Numbers/#Nat___zero "Documentation for Nat.zero") =>     [rw](Tactic-Proofs/Tactic-Reference/#rw "Documentation for tactic") [Nat.mul_zero]   | [succ](Basic-Types/Natural-Numbers/#Nat___zero "Documentation for Nat.succ") n n_ih =>     [rw](Tactic-Proofs/Tactic-Reference/#rw "Documentation for tactic") [Nat.mul_succ]     [rw](Tactic-Proofs/Tactic-Reference/#rw "Documentation for tactic") [Nat.add_zero]     [rw](Tactic-Proofs/Tactic-Reference/#rw "Documentation for tactic") [n_ih] `
+The broken example has the structure of a correct proof in the Natural Numbers Game, and this proof will work if you `import Mathlib` and replace `induction` with `induction'`. Induction tactics in basic Lean expect the `with` keyword to be followed by a series of cases, and the names for the inductive case are provided in the `[succ](Basic-Types/Natural-Numbers/#Nat___zero "Documentation for Nat.succ")` case rather than being provided up-front.
+[←About: dependsOnNoncomputable](Error-Explanations/About___--dependsOnNoncomputable/#The-Lean-Language-Reference--Error-Explanations--About___--dependsOnNoncomputable "About: dependsOnNoncomputable")[About: inductiveParamMismatch→](Error-Explanations/About___--inductiveParamMismatch/#The-Lean-Language-Reference--Error-Explanations--About___--inductiveParamMismatch "About: inductiveParamMismatch")

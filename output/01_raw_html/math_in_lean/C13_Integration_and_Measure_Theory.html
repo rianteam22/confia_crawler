@@ -1,0 +1,768 @@
+<!DOCTYPE html><html class="writer-html5" lang="en" data-content_root="./"><head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>13. Integration and Measure Theory — Mathematics in Lean v4.19.0 documentation</title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=b86133f3">
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=e59714d7">
+      <link rel="stylesheet" type="text/css" href="_static/css/custom.css?v=0731ccc3">
+
+  
+    <link rel="shortcut icon" href="_static/favicon.ico">
+      <script src="_static/jquery.js?v=5d32c60e"></script>
+      <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="_static/documentation_options.js?v=7048e04d"></script>
+      <script src="_static/doctools.js?v=9bcbadda"></script>
+      <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html">
+    <link rel="search" title="Search" href="search.html">
+    <link rel="next" title="Index" href="genindex.html">
+    <link rel="prev" title="12. Differential Calculus" href="C12_Differential_Calculus.html"> 
+<style type="text/css">.CtxtMenu_InfoClose {  top:.2em; right:.2em;}
+.CtxtMenu_InfoContent {  overflow:auto; text-align:left; font-size:80%;  padding:.4em .6em; border:1px inset; margin:1em 0px;  max-height:20em; max-width:30em; background-color:#EEEEEE;  white-space:normal;}
+.CtxtMenu_Info.CtxtMenu_MousePost {outline:none;}
+.CtxtMenu_Info {  position:fixed; left:50%; width:auto; text-align:center;  border:3px outset; padding:1em 2em; background-color:#DDDDDD;  color:black;  cursor:default; font-family:message-box; font-size:120%;  font-style:normal; text-indent:0; text-transform:none;  line-height:normal; letter-spacing:normal; word-spacing:normal;  word-wrap:normal; white-space:nowrap; float:none; z-index:201;  border-radius: 15px;                     /* Opera 10.5 and IE9 */  -webkit-border-radius:15px;               /* Safari and Chrome */  -moz-border-radius:15px;                  /* Firefox */  -khtml-border-radius:15px;                /* Konqueror */  box-shadow:0px 10px 20px #808080;         /* Opera 10.5 and IE9 */  -webkit-box-shadow:0px 10px 20px #808080; /* Safari 3 & Chrome */  -moz-box-shadow:0px 10px 20px #808080;    /* Forefox 3.5 */  -khtml-box-shadow:0px 10px 20px #808080;  /* Konqueror */  filter:progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color="gray", Positive="true"); /* IE */}
+</style><style type="text/css">.CtxtMenu_MenuClose {  position:absolute;  cursor:pointer;  display:inline-block;  border:2px solid #AAA;  border-radius:18px;  -webkit-border-radius: 18px;             /* Safari and Chrome */  -moz-border-radius: 18px;                /* Firefox */  -khtml-border-radius: 18px;              /* Konqueror */  font-family: "Courier New", Courier;  font-size:24px;  color:#F0F0F0}
+.CtxtMenu_MenuClose span {  display:block; background-color:#AAA; border:1.5px solid;  border-radius:18px;  -webkit-border-radius: 18px;             /* Safari and Chrome */  -moz-border-radius: 18px;                /* Firefox */  -khtml-border-radius: 18px;              /* Konqueror */  line-height:0;  padding:8px 0 6px     /* may need to be browser-specific */}
+.CtxtMenu_MenuClose:hover {  color:white!important;  border:2px solid #CCC!important}
+.CtxtMenu_MenuClose:hover span {  background-color:#CCC!important}
+.CtxtMenu_MenuClose:hover:focus {  outline:none}
+</style><style type="text/css">.CtxtMenu_Menu {  position:absolute;  background-color:white;  color:black;  width:auto; padding:5px 0px;  border:1px solid #CCCCCC; margin:0; cursor:default;  font: menu; text-align:left; text-indent:0; text-transform:none;  line-height:normal; letter-spacing:normal; word-spacing:normal;  word-wrap:normal; white-space:nowrap; float:none; z-index:201;  border-radius: 5px;                     /* Opera 10.5 and IE9 */  -webkit-border-radius: 5px;             /* Safari and Chrome */  -moz-border-radius: 5px;                /* Firefox */  -khtml-border-radius: 5px;              /* Konqueror */  box-shadow:0px 10px 20px #808080;         /* Opera 10.5 and IE9 */  -webkit-box-shadow:0px 10px 20px #808080; /* Safari 3 & Chrome */  -moz-box-shadow:0px 10px 20px #808080;    /* Forefox 3.5 */  -khtml-box-shadow:0px 10px 20px #808080;  /* Konqueror */}
+.CtxtMenu_MenuItem {  padding: 1px 2em;  background:transparent;}
+.CtxtMenu_MenuArrow {  position:absolute; right:.5em; padding-top:.25em; color:#666666;  font-family: null; font-size: .75em}
+.CtxtMenu_MenuActive .CtxtMenu_MenuArrow {color:white}
+.CtxtMenu_MenuArrow.CtxtMenu_RTL {left:.5em; right:auto}
+.CtxtMenu_MenuCheck {  position:absolute; left:.7em;  font-family: null}
+.CtxtMenu_MenuCheck.CtxtMenu_RTL { right:.7em; left:auto }
+.CtxtMenu_MenuRadioCheck {  position:absolute; left: .7em;}
+.CtxtMenu_MenuRadioCheck.CtxtMenu_RTL {  right: .7em; left:auto}
+.CtxtMenu_MenuInputBox {  padding-left: 1em; right:.5em; color:#666666;  font-family: null;}
+.CtxtMenu_MenuInputBox.CtxtMenu_RTL {  left: .1em;}
+.CtxtMenu_MenuComboBox {  left:.1em; padding-bottom:.5em;}
+.CtxtMenu_MenuSlider {  left: .1em;}
+.CtxtMenu_SliderValue {  position:absolute; right:.1em; padding-top:.25em; color:#333333;  font-size: .75em}
+.CtxtMenu_SliderBar {  outline: none; background: #d3d3d3}
+.CtxtMenu_MenuLabel {  padding: 1px 2em 3px 1.33em;  font-style:italic}
+.CtxtMenu_MenuRule {  border-top: 1px solid #DDDDDD;  margin: 4px 3px;}
+.CtxtMenu_MenuDisabled {  color:GrayText}
+.CtxtMenu_MenuActive {  background-color: #606872;  color: white;}
+.CtxtMenu_MenuDisabled:focus {  background-color: #E8E8E8}
+.CtxtMenu_MenuLabel:focus {  background-color: #E8E8E8}
+.CtxtMenu_ContextMenu:focus {  outline:none}
+.CtxtMenu_ContextMenu .CtxtMenu_MenuItem:focus {  outline:none}
+.CtxtMenu_SelectionMenu {  position:relative; float:left;  border-bottom: none; -webkit-box-shadow:none; -webkit-border-radius:0px; }
+.CtxtMenu_SelectionItem {  padding-right: 1em;}
+.CtxtMenu_Selection {  right: 40%; width:50%; }
+.CtxtMenu_SelectionBox {  padding: 0em; max-height:20em; max-width: none;  background-color:#FFFFFF;}
+.CtxtMenu_SelectionDivider {  clear: both; border-top: 2px solid #000000;}
+.CtxtMenu_Menu .CtxtMenu_MenuClose {  top:-10px; left:-10px}
+</style><style id="MJX-CHTML-styles">
+mjx-container[jax="CHTML"] {
+  line-height: 0;
+}
+
+mjx-container [space="1"] {
+  margin-left: .111em;
+}
+
+mjx-container [space="2"] {
+  margin-left: .167em;
+}
+
+mjx-container [space="3"] {
+  margin-left: .222em;
+}
+
+mjx-container [space="4"] {
+  margin-left: .278em;
+}
+
+mjx-container [space="5"] {
+  margin-left: .333em;
+}
+
+mjx-container [rspace="1"] {
+  margin-right: .111em;
+}
+
+mjx-container [rspace="2"] {
+  margin-right: .167em;
+}
+
+mjx-container [rspace="3"] {
+  margin-right: .222em;
+}
+
+mjx-container [rspace="4"] {
+  margin-right: .278em;
+}
+
+mjx-container [rspace="5"] {
+  margin-right: .333em;
+}
+
+mjx-container [size="s"] {
+  font-size: 70.7%;
+}
+
+mjx-container [size="ss"] {
+  font-size: 50%;
+}
+
+mjx-container [size="Tn"] {
+  font-size: 60%;
+}
+
+mjx-container [size="sm"] {
+  font-size: 85%;
+}
+
+mjx-container [size="lg"] {
+  font-size: 120%;
+}
+
+mjx-container [size="Lg"] {
+  font-size: 144%;
+}
+
+mjx-container [size="LG"] {
+  font-size: 173%;
+}
+
+mjx-container [size="hg"] {
+  font-size: 207%;
+}
+
+mjx-container [size="HG"] {
+  font-size: 249%;
+}
+
+mjx-container [width="full"] {
+  width: 100%;
+}
+
+mjx-box {
+  display: inline-block;
+}
+
+mjx-block {
+  display: block;
+}
+
+mjx-itable {
+  display: inline-table;
+}
+
+mjx-row {
+  display: table-row;
+}
+
+mjx-row > * {
+  display: table-cell;
+}
+
+mjx-mtext {
+  display: inline-block;
+}
+
+mjx-mstyle {
+  display: inline-block;
+}
+
+mjx-merror {
+  display: inline-block;
+  color: red;
+  background-color: yellow;
+}
+
+mjx-mphantom {
+  visibility: hidden;
+}
+
+_::-webkit-full-page-media, _:future, :root mjx-container {
+  will-change: opacity;
+}
+
+mjx-assistive-mml {
+  position: absolute !important;
+  top: 0px;
+  left: 0px;
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 1px 0px 0px 0px !important;
+  border: 0px !important;
+  display: block !important;
+  width: auto !important;
+  overflow: hidden !important;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+mjx-assistive-mml[display="block"] {
+  width: 100% !important;
+}
+
+mjx-math {
+  display: inline-block;
+  text-align: left;
+  line-height: 0;
+  text-indent: 0;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 100%;
+  font-size-adjust: none;
+  letter-spacing: normal;
+  border-collapse: collapse;
+  word-wrap: normal;
+  word-spacing: normal;
+  white-space: nowrap;
+  direction: ltr;
+  padding: 1px 0;
+}
+
+mjx-container[jax="CHTML"][display="true"] {
+  display: block;
+  text-align: center;
+  margin: 1em 0;
+}
+
+mjx-container[jax="CHTML"][display="true"][width="full"] {
+  display: flex;
+}
+
+mjx-container[jax="CHTML"][display="true"] mjx-math {
+  padding: 0;
+}
+
+mjx-container[jax="CHTML"][justify="left"] {
+  text-align: left;
+}
+
+mjx-container[jax="CHTML"][justify="right"] {
+  text-align: right;
+}
+
+mjx-mi {
+  display: inline-block;
+  text-align: left;
+}
+
+mjx-c {
+  display: inline-block;
+}
+
+mjx-utext {
+  display: inline-block;
+  padding: .75em 0 .2em 0;
+}
+
+mjx-c::before {
+  display: block;
+  width: 0;
+}
+
+.MJX-TEX {
+  font-family: MJXZERO, MJXTEX;
+}
+
+.TEX-B {
+  font-family: MJXZERO, MJXTEX-B;
+}
+
+.TEX-I {
+  font-family: MJXZERO, MJXTEX-I;
+}
+
+.TEX-MI {
+  font-family: MJXZERO, MJXTEX-MI;
+}
+
+.TEX-BI {
+  font-family: MJXZERO, MJXTEX-BI;
+}
+
+.TEX-S1 {
+  font-family: MJXZERO, MJXTEX-S1;
+}
+
+.TEX-S2 {
+  font-family: MJXZERO, MJXTEX-S2;
+}
+
+.TEX-S3 {
+  font-family: MJXZERO, MJXTEX-S3;
+}
+
+.TEX-S4 {
+  font-family: MJXZERO, MJXTEX-S4;
+}
+
+.TEX-A {
+  font-family: MJXZERO, MJXTEX-A;
+}
+
+.TEX-C {
+  font-family: MJXZERO, MJXTEX-C;
+}
+
+.TEX-CB {
+  font-family: MJXZERO, MJXTEX-CB;
+}
+
+.TEX-FR {
+  font-family: MJXZERO, MJXTEX-FR;
+}
+
+.TEX-FRB {
+  font-family: MJXZERO, MJXTEX-FRB;
+}
+
+.TEX-SS {
+  font-family: MJXZERO, MJXTEX-SS;
+}
+
+.TEX-SSB {
+  font-family: MJXZERO, MJXTEX-SSB;
+}
+
+.TEX-SSI {
+  font-family: MJXZERO, MJXTEX-SSI;
+}
+
+.TEX-SC {
+  font-family: MJXZERO, MJXTEX-SC;
+}
+
+.TEX-T {
+  font-family: MJXZERO, MJXTEX-T;
+}
+
+.TEX-V {
+  font-family: MJXZERO, MJXTEX-V;
+}
+
+.TEX-VB {
+  font-family: MJXZERO, MJXTEX-VB;
+}
+
+mjx-stretchy-v mjx-c, mjx-stretchy-h mjx-c {
+  font-family: MJXZERO, MJXTEX-S1, MJXTEX-S4, MJXTEX, MJXTEX-A ! important;
+}
+
+@font-face /* 0 */ {
+  font-family: MJXZERO;
+  src: url("https://cdn.jsdelivr.net/npm/mathjax@3/es5/output/chtml/fonts/woff-v2/MathJax_Zero.woff") format("woff");
+}
+
+@font-face /* 1 */ {
+  font-family: MJXTEX;
+  src: url("https://cdn.jsdelivr.net/npm/mathjax@3/es5/output/chtml/fonts/woff-v2/MathJax_Main-Regular.woff") format("woff");
+}
+
+@font-face /* 2 */ {
+  font-family: MJXTEX-B;
+  src: url("https://cdn.jsdelivr.net/npm/mathjax@3/es5/output/chtml/fonts/woff-v2/MathJax_Main-Bold.woff") format("woff");
+}
+
+@font-face /* 3 */ {
+  font-family: MJXTEX-I;
+  src: url("https://cdn.jsdelivr.net/npm/mathjax@3/es5/output/chtml/fonts/woff-v2/MathJax_Math-Italic.woff") format("woff");
+}
+
+@font-face /* 4 */ {
+  font-family: MJXTEX-MI;
+  src: url("https://cdn.jsdelivr.net/npm/mathjax@3/es5/output/chtml/fonts/woff-v2/MathJax_Main-Italic.woff") format("woff");
+}
+
+@font-face /* 5 */ {
+  font-family: MJXTEX-BI;
+  src: url("https://cdn.jsdelivr.net/npm/mathjax@3/es5/output/chtml/fonts/woff-v2/MathJax_Math-BoldItalic.woff") format("woff");
+}
+
+@font-face /* 6 */ {
+  font-family: MJXTEX-S1;
+  src: url("https://cdn.jsdelivr.net/npm/mathjax@3/es5/output/chtml/fonts/woff-v2/MathJax_Size1-Regular.woff") format("woff");
+}
+
+@font-face /* 7 */ {
+  font-family: MJXTEX-S2;
+  src: url("https://cdn.jsdelivr.net/npm/mathjax@3/es5/output/chtml/fonts/woff-v2/MathJax_Size2-Regular.woff") format("woff");
+}
+
+@font-face /* 8 */ {
+  font-family: MJXTEX-S3;
+  src: url("https://cdn.jsdelivr.net/npm/mathjax@3/es5/output/chtml/fonts/woff-v2/MathJax_Size3-Regular.woff") format("woff");
+}
+
+@font-face /* 9 */ {
+  font-family: MJXTEX-S4;
+  src: url("https://cdn.jsdelivr.net/npm/mathjax@3/es5/output/chtml/fonts/woff-v2/MathJax_Size4-Regular.woff") format("woff");
+}
+
+@font-face /* 10 */ {
+  font-family: MJXTEX-A;
+  src: url("https://cdn.jsdelivr.net/npm/mathjax@3/es5/output/chtml/fonts/woff-v2/MathJax_AMS-Regular.woff") format("woff");
+}
+
+@font-face /* 11 */ {
+  font-family: MJXTEX-C;
+  src: url("https://cdn.jsdelivr.net/npm/mathjax@3/es5/output/chtml/fonts/woff-v2/MathJax_Calligraphic-Regular.woff") format("woff");
+}
+
+@font-face /* 12 */ {
+  font-family: MJXTEX-CB;
+  src: url("https://cdn.jsdelivr.net/npm/mathjax@3/es5/output/chtml/fonts/woff-v2/MathJax_Calligraphic-Bold.woff") format("woff");
+}
+
+@font-face /* 13 */ {
+  font-family: MJXTEX-FR;
+  src: url("https://cdn.jsdelivr.net/npm/mathjax@3/es5/output/chtml/fonts/woff-v2/MathJax_Fraktur-Regular.woff") format("woff");
+}
+
+@font-face /* 14 */ {
+  font-family: MJXTEX-FRB;
+  src: url("https://cdn.jsdelivr.net/npm/mathjax@3/es5/output/chtml/fonts/woff-v2/MathJax_Fraktur-Bold.woff") format("woff");
+}
+
+@font-face /* 15 */ {
+  font-family: MJXTEX-SS;
+  src: url("https://cdn.jsdelivr.net/npm/mathjax@3/es5/output/chtml/fonts/woff-v2/MathJax_SansSerif-Regular.woff") format("woff");
+}
+
+@font-face /* 16 */ {
+  font-family: MJXTEX-SSB;
+  src: url("https://cdn.jsdelivr.net/npm/mathjax@3/es5/output/chtml/fonts/woff-v2/MathJax_SansSerif-Bold.woff") format("woff");
+}
+
+@font-face /* 17 */ {
+  font-family: MJXTEX-SSI;
+  src: url("https://cdn.jsdelivr.net/npm/mathjax@3/es5/output/chtml/fonts/woff-v2/MathJax_SansSerif-Italic.woff") format("woff");
+}
+
+@font-face /* 18 */ {
+  font-family: MJXTEX-SC;
+  src: url("https://cdn.jsdelivr.net/npm/mathjax@3/es5/output/chtml/fonts/woff-v2/MathJax_Script-Regular.woff") format("woff");
+}
+
+@font-face /* 19 */ {
+  font-family: MJXTEX-T;
+  src: url("https://cdn.jsdelivr.net/npm/mathjax@3/es5/output/chtml/fonts/woff-v2/MathJax_Typewriter-Regular.woff") format("woff");
+}
+
+@font-face /* 20 */ {
+  font-family: MJXTEX-V;
+  src: url("https://cdn.jsdelivr.net/npm/mathjax@3/es5/output/chtml/fonts/woff-v2/MathJax_Vector-Regular.woff") format("woff");
+}
+
+@font-face /* 21 */ {
+  font-family: MJXTEX-VB;
+  src: url("https://cdn.jsdelivr.net/npm/mathjax@3/es5/output/chtml/fonts/woff-v2/MathJax_Vector-Bold.woff") format("woff");
+}
+
+mjx-c.mjx-c1D70E.TEX-I::before {
+  padding: 0.431em 0.571em 0.011em 0;
+  content: "\3C3";
+}
+</style></head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+
+          
+          
+          <a href="index.html" class="icon icon-home">
+            Mathematics in Lean
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs">
+    <input type="hidden" name="check_keywords" value="yes">
+    <input type="hidden" name="area" value="default">
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul class="current" aria-expanded="true">
+<li class="toctree-l1"><a class="reference internal" href="C01_Introduction.html">1. Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="C02_Basics.html">2. Basics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="C03_Logic.html">3. Logic</a></li>
+<li class="toctree-l1"><a class="reference internal" href="C04_Sets_and_Functions.html">4. Sets and Functions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="C05_Elementary_Number_Theory.html">5. Elementary Number Theory</a></li>
+<li class="toctree-l1"><a class="reference internal" href="C06_Discrete_Mathematics.html">6. Discrete Mathematics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="C07_Structures.html">7. Structures</a></li>
+<li class="toctree-l1"><a class="reference internal" href="C08_Hierarchies.html">8. Hierarchies</a></li>
+<li class="toctree-l1"><a class="reference internal" href="C09_Groups_and_Rings.html">9. Groups and Rings</a></li>
+<li class="toctree-l1"><a class="reference internal" href="C10_Linear_Algebra.html">10. Linear algebra</a></li>
+<li class="toctree-l1"><a class="reference internal" href="C11_Topology.html">11. Topology</a></li>
+<li class="toctree-l1"><a class="reference internal" href="C12_Differential_Calculus.html">12. Differential Calculus</a></li>
+<li class="toctree-l1 current" aria-expanded="true"><a class="reference internal current" href="#" aria-expanded="true"><button class="toctree-expand" title="Open/close menu"></button>13. Integration and Measure Theory</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#elementary-integration">13.1. Elementary Integration</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#measure-theory">13.2. Measure Theory</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#integration">13.3. Integration</a></li>
+</ul>
+</li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="genindex.html">Index</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Mathematics in Lean</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active"><span class="section-number">13. </span>Integration and Measure Theory</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/C13_Integration_and_Measure_Theory.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="index-0">
+<span id="integration-and-measure-theory"></span><span id="id1"></span><h1><span class="section-number">13. </span>Integration and Measure Theory<a class="headerlink" href="#index-0" title="Link to this heading"></a></h1>
+<section id="elementary-integration">
+<span id="index-1"></span><span id="id2"></span><h2><span class="section-number">13.1. </span>Elementary Integration<a class="headerlink" href="#elementary-integration" title="Link to this heading"></a></h2>
+<p>We first focus on integration of functions on finite intervals in <code class="docutils literal notranslate"><span class="pre">ℝ</span></code>. We can integrate
+elementary functions.</p>
+<div class="highlight-lean notranslate"><div class="highlight"><pre><span></span><span class="kn">open</span><span class="w"> </span><span class="n">MeasureTheory</span><span class="w"> </span><span class="n">intervalIntegral</span>
+
+<span class="kn">open</span><span class="w"> </span><span class="n">Interval</span>
+<span class="c1">-- this introduces the notation `[[a, b]]` for the segment from `min a b` to `max a b`</span>
+
+<span class="kd">example</span><span class="w"> </span><span class="o">(</span><span class="n">a</span><span class="w"> </span><span class="n">b</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="n">ℝ</span><span class="o">)</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="o">(</span><span class="bp">∫</span><span class="w"> </span><span class="n">x</span><span class="w"> </span><span class="k">in</span><span class="w"> </span><span class="n">a</span><span class="bp">..</span><span class="n">b</span><span class="o">,</span><span class="w"> </span><span class="n">x</span><span class="o">)</span><span class="w"> </span><span class="bp">=</span><span class="w"> </span><span class="o">(</span><span class="n">b</span><span class="w"> </span><span class="bp">^</span><span class="w"> </span><span class="mi">2</span><span class="w"> </span><span class="bp">-</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="bp">^</span><span class="w"> </span><span class="mi">2</span><span class="o">)</span><span class="w"> </span><span class="bp">/</span><span class="w"> </span><span class="mi">2</span><span class="w"> </span><span class="o">:=</span>
+<span class="w">  </span><span class="n">integral_id</span>
+
+<span class="kd">example</span><span class="w"> </span><span class="o">{</span><span class="n">a</span><span class="w"> </span><span class="n">b</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="n">ℝ</span><span class="o">}</span><span class="w"> </span><span class="o">(</span><span class="n">h</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="o">(</span><span class="mi">0</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="n">ℝ</span><span class="o">)</span><span class="w"> </span><span class="bp">∉</span><span class="w"> </span><span class="o">[[</span><span class="n">a</span><span class="o">,</span><span class="w"> </span><span class="n">b</span><span class="o">]])</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="o">(</span><span class="bp">∫</span><span class="w"> </span><span class="n">x</span><span class="w"> </span><span class="k">in</span><span class="w"> </span><span class="n">a</span><span class="bp">..</span><span class="n">b</span><span class="o">,</span><span class="w"> </span><span class="mi">1</span><span class="w"> </span><span class="bp">/</span><span class="w"> </span><span class="n">x</span><span class="o">)</span><span class="w"> </span><span class="bp">=</span><span class="w"> </span><span class="n">Real.log</span><span class="w"> </span><span class="o">(</span><span class="n">b</span><span class="w"> </span><span class="bp">/</span><span class="w"> </span><span class="n">a</span><span class="o">)</span><span class="w"> </span><span class="o">:=</span>
+<span class="w">  </span><span class="n">integral_one_div</span><span class="w"> </span><span class="n">h</span>
+</pre></div>
+</div>
+<p>The fundamental theorem of calculus relates integration and differentiation.
+Below we give simplified statements of the two parts of this theorem. The first part
+says that integration provides an inverse to differentiation and the second one
+specifies how to compute integrals of derivatives.
+(These two parts are very closely related, but their optimal versions,
+which are not shown here, are not equivalent.)</p>
+<div class="highlight-lean notranslate"><div class="highlight"><pre><span></span><span class="kd">example</span><span class="w"> </span><span class="o">(</span><span class="n">f</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="n">ℝ</span><span class="w"> </span><span class="bp">→</span><span class="w"> </span><span class="n">ℝ</span><span class="o">)</span><span class="w"> </span><span class="o">(</span><span class="n">hf</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="n">Continuous</span><span class="w"> </span><span class="n">f</span><span class="o">)</span><span class="w"> </span><span class="o">(</span><span class="n">a</span><span class="w"> </span><span class="n">b</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="n">ℝ</span><span class="o">)</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="n">deriv</span><span class="w"> </span><span class="o">(</span><span class="k">fun</span><span class="w"> </span><span class="n">u</span><span class="w"> </span><span class="bp">↦</span><span class="w"> </span><span class="bp">∫</span><span class="w"> </span><span class="n">x</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="n">ℝ</span><span class="w"> </span><span class="k">in</span><span class="w"> </span><span class="n">a</span><span class="bp">..</span><span class="n">u</span><span class="o">,</span><span class="w"> </span><span class="n">f</span><span class="w"> </span><span class="n">x</span><span class="o">)</span><span class="w"> </span><span class="n">b</span><span class="w"> </span><span class="bp">=</span><span class="w"> </span><span class="n">f</span><span class="w"> </span><span class="n">b</span><span class="w"> </span><span class="o">:=</span>
+<span class="w">  </span><span class="o">(</span><span class="n">integral_hasStrictDerivAt_right</span><span class="w"> </span><span class="o">(</span><span class="n">hf.intervalIntegrable</span><span class="w"> </span><span class="n">_</span><span class="w"> </span><span class="n">_</span><span class="o">)</span><span class="w"> </span><span class="o">(</span><span class="n">hf.stronglyMeasurableAtFilter</span><span class="w"> </span><span class="n">_</span><span class="w"> </span><span class="n">_</span><span class="o">)</span>
+<span class="w">        </span><span class="n">hf.continuousAt</span><span class="o">)</span><span class="bp">.</span><span class="n">hasDerivAt.deriv</span>
+
+<span class="kd">example</span><span class="w"> </span><span class="o">{</span><span class="n">f</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="n">ℝ</span><span class="w"> </span><span class="bp">→</span><span class="w"> </span><span class="n">ℝ</span><span class="o">}</span><span class="w"> </span><span class="o">{</span><span class="n">a</span><span class="w"> </span><span class="n">b</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="n">ℝ</span><span class="o">}</span><span class="w"> </span><span class="o">{</span><span class="n">f'</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="n">ℝ</span><span class="w"> </span><span class="bp">→</span><span class="w"> </span><span class="n">ℝ</span><span class="o">}</span><span class="w"> </span><span class="o">(</span><span class="n">h</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="bp">∀</span><span class="w"> </span><span class="n">x</span><span class="w"> </span><span class="bp">∈</span><span class="w"> </span><span class="o">[[</span><span class="n">a</span><span class="o">,</span><span class="w"> </span><span class="n">b</span><span class="o">]],</span><span class="w"> </span><span class="n">HasDerivAt</span><span class="w"> </span><span class="n">f</span><span class="w"> </span><span class="o">(</span><span class="n">f'</span><span class="w"> </span><span class="n">x</span><span class="o">)</span><span class="w"> </span><span class="n">x</span><span class="o">)</span>
+<span class="w">    </span><span class="o">(</span><span class="n">h'</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="n">IntervalIntegrable</span><span class="w"> </span><span class="n">f'</span><span class="w"> </span><span class="n">volume</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="n">b</span><span class="o">)</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="o">(</span><span class="bp">∫</span><span class="w"> </span><span class="n">y</span><span class="w"> </span><span class="k">in</span><span class="w"> </span><span class="n">a</span><span class="bp">..</span><span class="n">b</span><span class="o">,</span><span class="w"> </span><span class="n">f'</span><span class="w"> </span><span class="n">y</span><span class="o">)</span><span class="w"> </span><span class="bp">=</span><span class="w"> </span><span class="n">f</span><span class="w"> </span><span class="n">b</span><span class="w"> </span><span class="bp">-</span><span class="w"> </span><span class="n">f</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="o">:=</span>
+<span class="w">  </span><span class="n">integral_eq_sub_of_hasDerivAt</span><span class="w"> </span><span class="n">h</span><span class="w"> </span><span class="n">h'</span>
+</pre></div>
+</div>
+<p>Convolution is also defined in Mathlib and its basic properties are proved.</p>
+<div class="highlight-lean notranslate"><div class="highlight"><pre><span></span><span class="kn">open</span><span class="w"> </span><span class="n">Convolution</span>
+
+<span class="kd">example</span><span class="w"> </span><span class="o">(</span><span class="n">f</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="n">ℝ</span><span class="w"> </span><span class="bp">→</span><span class="w"> </span><span class="n">ℝ</span><span class="o">)</span><span class="w"> </span><span class="o">(</span><span class="n">g</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="n">ℝ</span><span class="w"> </span><span class="bp">→</span><span class="w"> </span><span class="n">ℝ</span><span class="o">)</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="n">f</span><span class="w"> </span><span class="bp">⋆</span><span class="w"> </span><span class="n">g</span><span class="w"> </span><span class="bp">=</span><span class="w"> </span><span class="k">fun</span><span class="w"> </span><span class="n">x</span><span class="w"> </span><span class="bp">↦</span><span class="w"> </span><span class="bp">∫</span><span class="w"> </span><span class="n">t</span><span class="o">,</span><span class="w"> </span><span class="n">f</span><span class="w"> </span><span class="n">t</span><span class="w"> </span><span class="bp">*</span><span class="w"> </span><span class="n">g</span><span class="w"> </span><span class="o">(</span><span class="n">x</span><span class="w"> </span><span class="bp">-</span><span class="w"> </span><span class="n">t</span><span class="o">)</span><span class="w"> </span><span class="o">:=</span>
+<span class="w">  </span><span class="n">rfl</span>
+</pre></div>
+</div>
+</section>
+<section id="measure-theory">
+<span id="index-2"></span><span id="id3"></span><h2><span class="section-number">13.2. </span>Measure Theory<a class="headerlink" href="#measure-theory" title="Link to this heading"></a></h2>
+<p>The general context for integration in Mathlib is measure theory. Even the elementary
+integrals of the previous section are in fact Bochner integrals. Bochner integration is
+a generalization of Lebesgue integration where the target space can be any Banach space,
+not necessarily finite dimensional.</p>
+<p>The first component in the development of measure theory
+is the notion of a <span class="math notranslate nohighlight"><mjx-container class="MathJax CtxtMenu_Attached_0" jax="CHTML" tabindex="0" ctxtmenu_counter="0" style="font-size: 114.5%; position: relative;"><mjx-math class="MJX-TEX" aria-hidden="true"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D70E TEX-I"></mjx-c></mjx-mi></mjx-math><mjx-assistive-mml unselectable="on" display="inline"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>σ</mi></math></mjx-assistive-mml></mjx-container></span>-algebra of sets, which are called the
+<em>measurable</em> sets.
+The type class <code class="docutils literal notranslate"><span class="pre">MeasurableSpace</span></code> serves to equip a type with such a structure.
+The sets <code class="docutils literal notranslate"><span class="pre">empty</span></code> and <code class="docutils literal notranslate"><span class="pre">univ</span></code> are measurable,
+the complement of a measurable set is measurable,
+and a countable union or intersection of measurable sets is measurable.
+Note that these axioms are redundant; if you <code class="docutils literal notranslate"><span class="pre">#print</span> <span class="pre">MeasurableSpace</span></code>,
+you will see the ones that Mathlib uses.
+As the examples below show, countability assumptions can be expressed using the
+<code class="docutils literal notranslate"><span class="pre">Encodable</span></code> type class.</p>
+<div class="highlight-lean notranslate"><div class="highlight"><pre><span></span><span class="kd">variable</span><span class="w"> </span><span class="o">{</span><span class="n">α</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="kt">Type</span><span class="bp">*</span><span class="o">}</span><span class="w"> </span><span class="o">[</span><span class="n">MeasurableSpace</span><span class="w"> </span><span class="n">α</span><span class="o">]</span>
+
+<span class="kd">example</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="n">MeasurableSet</span><span class="w"> </span><span class="o">(</span><span class="bp">∅</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="n">Set</span><span class="w"> </span><span class="n">α</span><span class="o">)</span><span class="w"> </span><span class="o">:=</span>
+<span class="w">  </span><span class="n">MeasurableSet.empty</span>
+
+<span class="kd">example</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="n">MeasurableSet</span><span class="w"> </span><span class="o">(</span><span class="n">univ</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="n">Set</span><span class="w"> </span><span class="n">α</span><span class="o">)</span><span class="w"> </span><span class="o">:=</span>
+<span class="w">  </span><span class="n">MeasurableSet.univ</span>
+
+<span class="kd">example</span><span class="w"> </span><span class="o">{</span><span class="n">s</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="n">Set</span><span class="w"> </span><span class="n">α</span><span class="o">}</span><span class="w"> </span><span class="o">(</span><span class="n">hs</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="n">MeasurableSet</span><span class="w"> </span><span class="n">s</span><span class="o">)</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="n">MeasurableSet</span><span class="w"> </span><span class="o">(</span><span class="n">s</span><span class="bp">ᶜ</span><span class="o">)</span><span class="w"> </span><span class="o">:=</span>
+<span class="w">  </span><span class="n">hs.compl</span>
+
+<span class="kd">example</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="n">Encodable</span><span class="w"> </span><span class="n">ℕ</span><span class="w"> </span><span class="o">:=</span><span class="w"> </span><span class="kd">by</span><span class="w"> </span><span class="n">infer_instance</span>
+
+<span class="kd">example</span><span class="w"> </span><span class="o">(</span><span class="n">n</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="n">ℕ</span><span class="o">)</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="n">Encodable</span><span class="w"> </span><span class="o">(</span><span class="n">Fin</span><span class="w"> </span><span class="n">n</span><span class="o">)</span><span class="w"> </span><span class="o">:=</span><span class="w"> </span><span class="kd">by</span><span class="w"> </span><span class="n">infer_instance</span>
+
+<span class="kd">variable</span><span class="w"> </span><span class="o">{</span><span class="n">ι</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="kt">Type</span><span class="bp">*</span><span class="o">}</span><span class="w"> </span><span class="o">[</span><span class="n">Encodable</span><span class="w"> </span><span class="n">ι</span><span class="o">]</span>
+
+<span class="kd">example</span><span class="w"> </span><span class="o">{</span><span class="n">f</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="n">ι</span><span class="w"> </span><span class="bp">→</span><span class="w"> </span><span class="n">Set</span><span class="w"> </span><span class="n">α</span><span class="o">}</span><span class="w"> </span><span class="o">(</span><span class="n">h</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="bp">∀</span><span class="w"> </span><span class="n">b</span><span class="o">,</span><span class="w"> </span><span class="n">MeasurableSet</span><span class="w"> </span><span class="o">(</span><span class="n">f</span><span class="w"> </span><span class="n">b</span><span class="o">))</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="n">MeasurableSet</span><span class="w"> </span><span class="o">(</span><span class="bp">⋃</span><span class="w"> </span><span class="n">b</span><span class="o">,</span><span class="w"> </span><span class="n">f</span><span class="w"> </span><span class="n">b</span><span class="o">)</span><span class="w"> </span><span class="o">:=</span>
+<span class="w">  </span><span class="n">MeasurableSet.iUnion</span><span class="w"> </span><span class="n">h</span>
+
+<span class="kd">example</span><span class="w"> </span><span class="o">{</span><span class="n">f</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="n">ι</span><span class="w"> </span><span class="bp">→</span><span class="w"> </span><span class="n">Set</span><span class="w"> </span><span class="n">α</span><span class="o">}</span><span class="w"> </span><span class="o">(</span><span class="n">h</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="bp">∀</span><span class="w"> </span><span class="n">b</span><span class="o">,</span><span class="w"> </span><span class="n">MeasurableSet</span><span class="w"> </span><span class="o">(</span><span class="n">f</span><span class="w"> </span><span class="n">b</span><span class="o">))</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="n">MeasurableSet</span><span class="w"> </span><span class="o">(</span><span class="bp">⋂</span><span class="w"> </span><span class="n">b</span><span class="o">,</span><span class="w"> </span><span class="n">f</span><span class="w"> </span><span class="n">b</span><span class="o">)</span><span class="w"> </span><span class="o">:=</span>
+<span class="w">  </span><span class="n">MeasurableSet.iInter</span><span class="w"> </span><span class="n">h</span>
+</pre></div>
+</div>
+<p>Once a type is measurable, we can measure it. On paper, a measure on a set
+(or type) equipped with a
+<span class="math notranslate nohighlight"><mjx-container class="MathJax CtxtMenu_Attached_0" jax="CHTML" tabindex="0" ctxtmenu_counter="1" style="font-size: 114.5%; position: relative;"><mjx-math class="MJX-TEX" aria-hidden="true"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D70E TEX-I"></mjx-c></mjx-mi></mjx-math><mjx-assistive-mml unselectable="on" display="inline"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>σ</mi></math></mjx-assistive-mml></mjx-container></span>-algebra is a function from the measurable sets to
+the extended non-negative reals that is
+additive on countable disjoint unions.
+In Mathlib, we don’t want to carry around measurability assumptions
+every time we write an application of the measure to a set.
+So we extend the measure to any set <code class="docutils literal notranslate"><span class="pre">s</span></code>
+as the infimum of measures of measurable sets containing <code class="docutils literal notranslate"><span class="pre">s</span></code>.
+Of course, many lemmas still require
+measurability assumptions, but not all.</p>
+<div class="highlight-lean notranslate"><div class="highlight"><pre><span></span><span class="kn">open</span><span class="w"> </span><span class="n">MeasureTheory</span><span class="w"> </span><span class="n">Function</span>
+<span class="kd">variable</span><span class="w"> </span><span class="o">{</span><span class="n">μ</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="n">Measure</span><span class="w"> </span><span class="n">α</span><span class="o">}</span>
+
+<span class="kd">example</span><span class="w"> </span><span class="o">(</span><span class="n">s</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="n">Set</span><span class="w"> </span><span class="n">α</span><span class="o">)</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="n">μ</span><span class="w"> </span><span class="n">s</span><span class="w"> </span><span class="bp">=</span><span class="w"> </span><span class="bp">⨅</span><span class="w"> </span><span class="o">(</span><span class="n">t</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="n">Set</span><span class="w"> </span><span class="n">α</span><span class="o">)</span><span class="w"> </span><span class="o">(</span><span class="n">_</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="n">s</span><span class="w"> </span><span class="bp">⊆</span><span class="w"> </span><span class="n">t</span><span class="o">)</span><span class="w"> </span><span class="o">(</span><span class="n">_</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="n">MeasurableSet</span><span class="w"> </span><span class="n">t</span><span class="o">),</span><span class="w"> </span><span class="n">μ</span><span class="w"> </span><span class="n">t</span><span class="w"> </span><span class="o">:=</span>
+<span class="w">  </span><span class="n">measure_eq_iInf</span><span class="w"> </span><span class="n">s</span>
+
+<span class="kd">example</span><span class="w"> </span><span class="o">(</span><span class="n">s</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="n">ι</span><span class="w"> </span><span class="bp">→</span><span class="w"> </span><span class="n">Set</span><span class="w"> </span><span class="n">α</span><span class="o">)</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="n">μ</span><span class="w"> </span><span class="o">(</span><span class="bp">⋃</span><span class="w"> </span><span class="n">i</span><span class="o">,</span><span class="w"> </span><span class="n">s</span><span class="w"> </span><span class="n">i</span><span class="o">)</span><span class="w"> </span><span class="bp">≤</span><span class="w"> </span><span class="bp">∑'</span><span class="w"> </span><span class="n">i</span><span class="o">,</span><span class="w"> </span><span class="n">μ</span><span class="w"> </span><span class="o">(</span><span class="n">s</span><span class="w"> </span><span class="n">i</span><span class="o">)</span><span class="w"> </span><span class="o">:=</span>
+<span class="w">  </span><span class="n">measure_iUnion_le</span><span class="w"> </span><span class="n">s</span>
+
+<span class="kd">example</span><span class="w"> </span><span class="o">{</span><span class="n">f</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="n">ℕ</span><span class="w"> </span><span class="bp">→</span><span class="w"> </span><span class="n">Set</span><span class="w"> </span><span class="n">α</span><span class="o">}</span><span class="w"> </span><span class="o">(</span><span class="n">hmeas</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="bp">∀</span><span class="w"> </span><span class="n">i</span><span class="o">,</span><span class="w"> </span><span class="n">MeasurableSet</span><span class="w"> </span><span class="o">(</span><span class="n">f</span><span class="w"> </span><span class="n">i</span><span class="o">))</span><span class="w"> </span><span class="o">(</span><span class="n">hdis</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="n">Pairwise</span><span class="w"> </span><span class="o">(</span><span class="n">Disjoint</span><span class="w"> </span><span class="n">on</span><span class="w"> </span><span class="n">f</span><span class="o">))</span><span class="w"> </span><span class="o">:</span>
+<span class="w">    </span><span class="n">μ</span><span class="w"> </span><span class="o">(</span><span class="bp">⋃</span><span class="w"> </span><span class="n">i</span><span class="o">,</span><span class="w"> </span><span class="n">f</span><span class="w"> </span><span class="n">i</span><span class="o">)</span><span class="w"> </span><span class="bp">=</span><span class="w"> </span><span class="bp">∑'</span><span class="w"> </span><span class="n">i</span><span class="o">,</span><span class="w"> </span><span class="n">μ</span><span class="w"> </span><span class="o">(</span><span class="n">f</span><span class="w"> </span><span class="n">i</span><span class="o">)</span><span class="w"> </span><span class="o">:=</span>
+<span class="w">  </span><span class="n">μ.m_iUnion</span><span class="w"> </span><span class="n">hmeas</span><span class="w"> </span><span class="n">hdis</span>
+</pre></div>
+</div>
+<p>Once a type has a measure associated with it, we say that a property <code class="docutils literal notranslate"><span class="pre">P</span></code>
+holds <em>almost everywhere</em> if the set of elements where the property fails
+has measure 0.
+The collection of properties that hold almost everywhere form a filter,
+but Mathlib introduces special notation for saying that a property holds
+almost everywhere.</p>
+<div class="highlight-lean notranslate"><div class="highlight"><pre><span></span><span class="kd">example</span><span class="w"> </span><span class="o">{</span><span class="n">P</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="n">α</span><span class="w"> </span><span class="bp">→</span><span class="w"> </span><span class="kt">Prop</span><span class="o">}</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="o">(</span><span class="bp">∀ᵐ</span><span class="w"> </span><span class="n">x</span><span class="w"> </span><span class="bp">∂</span><span class="n">μ</span><span class="o">,</span><span class="w"> </span><span class="n">P</span><span class="w"> </span><span class="n">x</span><span class="o">)</span><span class="w"> </span><span class="bp">↔</span><span class="w"> </span><span class="bp">∀ᶠ</span><span class="w"> </span><span class="n">x</span><span class="w"> </span><span class="k">in</span><span class="w"> </span><span class="n">ae</span><span class="w"> </span><span class="n">μ</span><span class="o">,</span><span class="w"> </span><span class="n">P</span><span class="w"> </span><span class="n">x</span><span class="w"> </span><span class="o">:=</span>
+<span class="w">  </span><span class="n">Iff.rfl</span>
+</pre></div>
+</div>
+</section>
+<section id="integration">
+<span id="id4"></span><h2><span class="section-number">13.3. </span>Integration<a class="headerlink" href="#integration" title="Link to this heading"></a></h2>
+<p>Now that we have measurable spaces and measures we can consider integrals.
+As explained above, Mathlib uses a very general notion of
+integration that allows any Banach space as the target.
+As usual, we don’t want our notation to
+carry around assumptions, so we define integration in such a way
+that an integral is equal to zero if the function in question is
+not integrable.
+Most lemmas having to do with integrals have integrability assumptions.</p>
+<div class="highlight-lean notranslate"><div class="highlight"><pre><span></span><span class="kn">section</span>
+<span class="kd">variable</span><span class="w"> </span><span class="o">{</span><span class="n">E</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="kt">Type</span><span class="bp">*</span><span class="o">}</span><span class="w"> </span><span class="o">[</span><span class="n">NormedAddCommGroup</span><span class="w"> </span><span class="n">E</span><span class="o">]</span><span class="w"> </span><span class="o">[</span><span class="n">NormedSpace</span><span class="w"> </span><span class="n">ℝ</span><span class="w"> </span><span class="n">E</span><span class="o">]</span><span class="w"> </span><span class="o">[</span><span class="n">CompleteSpace</span><span class="w"> </span><span class="n">E</span><span class="o">]</span><span class="w"> </span><span class="o">{</span><span class="n">f</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="n">α</span><span class="w"> </span><span class="bp">→</span><span class="w"> </span><span class="n">E</span><span class="o">}</span>
+
+<span class="kd">example</span><span class="w"> </span><span class="o">{</span><span class="n">f</span><span class="w"> </span><span class="n">g</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="n">α</span><span class="w"> </span><span class="bp">→</span><span class="w"> </span><span class="n">E</span><span class="o">}</span><span class="w"> </span><span class="o">(</span><span class="n">hf</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="n">Integrable</span><span class="w"> </span><span class="n">f</span><span class="w"> </span><span class="n">μ</span><span class="o">)</span><span class="w"> </span><span class="o">(</span><span class="n">hg</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="n">Integrable</span><span class="w"> </span><span class="n">g</span><span class="w"> </span><span class="n">μ</span><span class="o">)</span><span class="w"> </span><span class="o">:</span>
+<span class="w">    </span><span class="bp">∫</span><span class="w"> </span><span class="n">a</span><span class="o">,</span><span class="w"> </span><span class="n">f</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="bp">+</span><span class="w"> </span><span class="n">g</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="bp">∂</span><span class="n">μ</span><span class="w"> </span><span class="bp">=</span><span class="w"> </span><span class="bp">∫</span><span class="w"> </span><span class="n">a</span><span class="o">,</span><span class="w"> </span><span class="n">f</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="bp">∂</span><span class="n">μ</span><span class="w"> </span><span class="bp">+</span><span class="w"> </span><span class="bp">∫</span><span class="w"> </span><span class="n">a</span><span class="o">,</span><span class="w"> </span><span class="n">g</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="bp">∂</span><span class="n">μ</span><span class="w"> </span><span class="o">:=</span>
+<span class="w">  </span><span class="n">integral_add</span><span class="w"> </span><span class="n">hf</span><span class="w"> </span><span class="n">hg</span>
+</pre></div>
+</div>
+<p>As an example of the complex interactions between our various conventions, let us see how to integrate constant functions.
+Recall that a measure <code class="docutils literal notranslate"><span class="pre">μ</span></code> takes values in <code class="docutils literal notranslate"><span class="pre">ℝ≥0∞</span></code>, the type of extended non-negative reals.
+There is a function <code class="docutils literal notranslate"><span class="pre">ENNReal.toReal</span> <span class="pre">:</span> <span class="pre">ℝ≥0∞</span> <span class="pre">→</span> <span class="pre">ℝ</span></code> which sends <code class="docutils literal notranslate"><span class="pre">⊤</span></code>,
+the point at infinity, to zero.
+For any <code class="docutils literal notranslate"><span class="pre">s</span> <span class="pre">:</span> <span class="pre">Set</span> <span class="pre">α</span></code>, if <code class="docutils literal notranslate"><span class="pre">μ</span> <span class="pre">s</span> <span class="pre">=</span> <span class="pre">⊤</span></code>, then nonzero constant functions are not integrable on <code class="docutils literal notranslate"><span class="pre">s</span></code>.
+In that case, their integrals are equal to zero by definition, as is <code class="docutils literal notranslate"><span class="pre">(μ</span> <span class="pre">s).toReal</span></code>.
+So in all cases we have the following lemma.</p>
+<div class="highlight-lean notranslate"><div class="highlight"><pre><span></span><span class="kd">example</span><span class="w"> </span><span class="o">{</span><span class="n">s</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="n">Set</span><span class="w"> </span><span class="n">α</span><span class="o">}</span><span class="w"> </span><span class="o">(</span><span class="n">c</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="n">E</span><span class="o">)</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="bp">∫</span><span class="w"> </span><span class="n">x</span><span class="w"> </span><span class="k">in</span><span class="w"> </span><span class="n">s</span><span class="o">,</span><span class="w"> </span><span class="n">c</span><span class="w"> </span><span class="bp">∂</span><span class="n">μ</span><span class="w"> </span><span class="bp">=</span><span class="w"> </span><span class="o">(</span><span class="n">μ</span><span class="w"> </span><span class="n">s</span><span class="o">)</span><span class="bp">.</span><span class="n">toReal</span><span class="w"> </span><span class="bp">•</span><span class="w"> </span><span class="n">c</span><span class="w"> </span><span class="o">:=</span>
+<span class="w">  </span><span class="n">setIntegral_const</span><span class="w"> </span><span class="n">c</span>
+</pre></div>
+</div>
+<p>We now quickly explain how to access the most important theorems in integration theory, starting
+with the dominated convergence theorem. There are several versions in Mathlib,
+and here we only show the most basic one.</p>
+<div class="highlight-lean notranslate"><div class="highlight"><pre><span></span><span class="kn">open</span><span class="w"> </span><span class="n">Filter</span>
+
+<span class="kd">example</span><span class="w"> </span><span class="o">{</span><span class="n">F</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="n">ℕ</span><span class="w"> </span><span class="bp">→</span><span class="w"> </span><span class="n">α</span><span class="w"> </span><span class="bp">→</span><span class="w"> </span><span class="n">E</span><span class="o">}</span><span class="w"> </span><span class="o">{</span><span class="n">f</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="n">α</span><span class="w"> </span><span class="bp">→</span><span class="w"> </span><span class="n">E</span><span class="o">}</span><span class="w"> </span><span class="o">(</span><span class="n">bound</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="n">α</span><span class="w"> </span><span class="bp">→</span><span class="w"> </span><span class="n">ℝ</span><span class="o">)</span><span class="w"> </span><span class="o">(</span><span class="n">hmeas</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="bp">∀</span><span class="w"> </span><span class="n">n</span><span class="o">,</span><span class="w"> </span><span class="n">AEStronglyMeasurable</span><span class="w"> </span><span class="o">(</span><span class="n">F</span><span class="w"> </span><span class="n">n</span><span class="o">)</span><span class="w"> </span><span class="n">μ</span><span class="o">)</span>
+<span class="w">    </span><span class="o">(</span><span class="n">hint</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="n">Integrable</span><span class="w"> </span><span class="n">bound</span><span class="w"> </span><span class="n">μ</span><span class="o">)</span><span class="w"> </span><span class="o">(</span><span class="n">hbound</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="bp">∀</span><span class="w"> </span><span class="n">n</span><span class="o">,</span><span class="w"> </span><span class="bp">∀ᵐ</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="bp">∂</span><span class="n">μ</span><span class="o">,</span><span class="w"> </span><span class="bp">‖</span><span class="n">F</span><span class="w"> </span><span class="n">n</span><span class="w"> </span><span class="n">a</span><span class="bp">‖</span><span class="w"> </span><span class="bp">≤</span><span class="w"> </span><span class="n">bound</span><span class="w"> </span><span class="n">a</span><span class="o">)</span>
+<span class="w">    </span><span class="o">(</span><span class="n">hlim</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="bp">∀ᵐ</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="bp">∂</span><span class="n">μ</span><span class="o">,</span><span class="w"> </span><span class="n">Tendsto</span><span class="w"> </span><span class="o">(</span><span class="k">fun</span><span class="w"> </span><span class="n">n</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="n">ℕ</span><span class="w"> </span><span class="bp">↦</span><span class="w"> </span><span class="n">F</span><span class="w"> </span><span class="n">n</span><span class="w"> </span><span class="n">a</span><span class="o">)</span><span class="w"> </span><span class="n">atTop</span><span class="w"> </span><span class="o">(</span><span class="n">𝓝</span><span class="w"> </span><span class="o">(</span><span class="n">f</span><span class="w"> </span><span class="n">a</span><span class="o">)))</span><span class="w"> </span><span class="o">:</span>
+<span class="w">    </span><span class="n">Tendsto</span><span class="w"> </span><span class="o">(</span><span class="k">fun</span><span class="w"> </span><span class="n">n</span><span class="w"> </span><span class="bp">↦</span><span class="w"> </span><span class="bp">∫</span><span class="w"> </span><span class="n">a</span><span class="o">,</span><span class="w"> </span><span class="n">F</span><span class="w"> </span><span class="n">n</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="bp">∂</span><span class="n">μ</span><span class="o">)</span><span class="w"> </span><span class="n">atTop</span><span class="w"> </span><span class="o">(</span><span class="n">𝓝</span><span class="w"> </span><span class="o">(</span><span class="bp">∫</span><span class="w"> </span><span class="n">a</span><span class="o">,</span><span class="w"> </span><span class="n">f</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="bp">∂</span><span class="n">μ</span><span class="o">))</span><span class="w"> </span><span class="o">:=</span>
+<span class="w">  </span><span class="n">tendsto_integral_of_dominated_convergence</span><span class="w"> </span><span class="n">bound</span><span class="w"> </span><span class="n">hmeas</span><span class="w"> </span><span class="n">hint</span><span class="w"> </span><span class="n">hbound</span><span class="w"> </span><span class="n">hlim</span>
+</pre></div>
+</div>
+<p>Then we have Fubini’s theorem for integrals on product type.</p>
+<div class="highlight-lean notranslate"><div class="highlight"><pre><span></span><span class="kd">example</span><span class="w"> </span><span class="o">{</span><span class="n">α</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="kt">Type</span><span class="bp">*</span><span class="o">}</span><span class="w"> </span><span class="o">[</span><span class="n">MeasurableSpace</span><span class="w"> </span><span class="n">α</span><span class="o">]</span><span class="w"> </span><span class="o">{</span><span class="n">μ</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="n">Measure</span><span class="w"> </span><span class="n">α</span><span class="o">}</span><span class="w"> </span><span class="o">[</span><span class="n">SigmaFinite</span><span class="w"> </span><span class="n">μ</span><span class="o">]</span><span class="w"> </span><span class="o">{</span><span class="n">β</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="kt">Type</span><span class="bp">*</span><span class="o">}</span>
+<span class="w">    </span><span class="o">[</span><span class="n">MeasurableSpace</span><span class="w"> </span><span class="n">β</span><span class="o">]</span><span class="w"> </span><span class="o">{</span><span class="n">ν</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="n">Measure</span><span class="w"> </span><span class="n">β</span><span class="o">}</span><span class="w"> </span><span class="o">[</span><span class="n">SigmaFinite</span><span class="w"> </span><span class="n">ν</span><span class="o">]</span><span class="w"> </span><span class="o">(</span><span class="n">f</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="n">α</span><span class="w"> </span><span class="bp">×</span><span class="w"> </span><span class="n">β</span><span class="w"> </span><span class="bp">→</span><span class="w"> </span><span class="n">E</span><span class="o">)</span>
+<span class="w">    </span><span class="o">(</span><span class="n">hf</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="n">Integrable</span><span class="w"> </span><span class="n">f</span><span class="w"> </span><span class="o">(</span><span class="n">μ.prod</span><span class="w"> </span><span class="n">ν</span><span class="o">))</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="bp">∫</span><span class="w"> </span><span class="n">z</span><span class="o">,</span><span class="w"> </span><span class="n">f</span><span class="w"> </span><span class="n">z</span><span class="w"> </span><span class="bp">∂</span><span class="w"> </span><span class="n">μ.prod</span><span class="w"> </span><span class="n">ν</span><span class="w"> </span><span class="bp">=</span><span class="w"> </span><span class="bp">∫</span><span class="w"> </span><span class="n">x</span><span class="o">,</span><span class="w"> </span><span class="bp">∫</span><span class="w"> </span><span class="n">y</span><span class="o">,</span><span class="w"> </span><span class="n">f</span><span class="w"> </span><span class="o">(</span><span class="n">x</span><span class="o">,</span><span class="w"> </span><span class="n">y</span><span class="o">)</span><span class="w"> </span><span class="bp">∂</span><span class="n">ν</span><span class="w"> </span><span class="bp">∂</span><span class="n">μ</span><span class="w"> </span><span class="o">:=</span>
+<span class="w">  </span><span class="n">integral_prod</span><span class="w"> </span><span class="n">f</span><span class="w"> </span><span class="n">hf</span>
+</pre></div>
+</div>
+<p>There is a very general version of convolution that applies to any
+continuous bilinear form.</p>
+<div class="highlight-lean notranslate"><div class="highlight"><pre><span></span><span class="kn">open</span><span class="w"> </span><span class="n">Convolution</span>
+
+<span class="kd">variable</span><span class="w"> </span><span class="o">{</span><span class="n">𝕜</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="kt">Type</span><span class="bp">*</span><span class="o">}</span><span class="w"> </span><span class="o">{</span><span class="n">G</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="kt">Type</span><span class="bp">*</span><span class="o">}</span><span class="w"> </span><span class="o">{</span><span class="n">E</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="kt">Type</span><span class="bp">*</span><span class="o">}</span><span class="w"> </span><span class="o">{</span><span class="n">E'</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="kt">Type</span><span class="bp">*</span><span class="o">}</span><span class="w"> </span><span class="o">{</span><span class="n">F</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="kt">Type</span><span class="bp">*</span><span class="o">}</span><span class="w"> </span><span class="o">[</span><span class="n">NormedAddCommGroup</span><span class="w"> </span><span class="n">E</span><span class="o">]</span>
+<span class="w">  </span><span class="o">[</span><span class="n">NormedAddCommGroup</span><span class="w"> </span><span class="n">E'</span><span class="o">]</span><span class="w"> </span><span class="o">[</span><span class="n">NormedAddCommGroup</span><span class="w"> </span><span class="n">F</span><span class="o">]</span><span class="w"> </span><span class="o">[</span><span class="n">NontriviallyNormedField</span><span class="w"> </span><span class="n">𝕜</span><span class="o">]</span><span class="w"> </span><span class="o">[</span><span class="n">NormedSpace</span><span class="w"> </span><span class="n">𝕜</span><span class="w"> </span><span class="n">E</span><span class="o">]</span>
+<span class="w">  </span><span class="o">[</span><span class="n">NormedSpace</span><span class="w"> </span><span class="n">𝕜</span><span class="w"> </span><span class="n">E'</span><span class="o">]</span><span class="w"> </span><span class="o">[</span><span class="n">NormedSpace</span><span class="w"> </span><span class="n">𝕜</span><span class="w"> </span><span class="n">F</span><span class="o">]</span><span class="w"> </span><span class="o">[</span><span class="n">MeasurableSpace</span><span class="w"> </span><span class="n">G</span><span class="o">]</span><span class="w"> </span><span class="o">[</span><span class="n">NormedSpace</span><span class="w"> </span><span class="n">ℝ</span><span class="w"> </span><span class="n">F</span><span class="o">]</span><span class="w"> </span><span class="o">[</span><span class="n">CompleteSpace</span><span class="w"> </span><span class="n">F</span><span class="o">]</span>
+<span class="w">  </span><span class="o">[</span><span class="n">Sub</span><span class="w"> </span><span class="n">G</span><span class="o">]</span>
+
+<span class="kd">example</span><span class="w"> </span><span class="o">(</span><span class="n">f</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="n">G</span><span class="w"> </span><span class="bp">→</span><span class="w"> </span><span class="n">E</span><span class="o">)</span><span class="w"> </span><span class="o">(</span><span class="n">g</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="n">G</span><span class="w"> </span><span class="bp">→</span><span class="w"> </span><span class="n">E'</span><span class="o">)</span><span class="w"> </span><span class="o">(</span><span class="n">L</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="n">E</span><span class="w"> </span><span class="bp">→</span><span class="n">L</span><span class="o">[</span><span class="n">𝕜</span><span class="o">]</span><span class="w"> </span><span class="n">E'</span><span class="w"> </span><span class="bp">→</span><span class="n">L</span><span class="o">[</span><span class="n">𝕜</span><span class="o">]</span><span class="w"> </span><span class="n">F</span><span class="o">)</span><span class="w"> </span><span class="o">(</span><span class="n">μ</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="n">Measure</span><span class="w"> </span><span class="n">G</span><span class="o">)</span><span class="w"> </span><span class="o">:</span>
+<span class="w">    </span><span class="n">f</span><span class="w"> </span><span class="bp">⋆</span><span class="o">[</span><span class="n">L</span><span class="o">,</span><span class="w"> </span><span class="n">μ</span><span class="o">]</span><span class="w"> </span><span class="n">g</span><span class="w"> </span><span class="bp">=</span><span class="w"> </span><span class="k">fun</span><span class="w"> </span><span class="n">x</span><span class="w"> </span><span class="bp">↦</span><span class="w"> </span><span class="bp">∫</span><span class="w"> </span><span class="n">t</span><span class="o">,</span><span class="w"> </span><span class="n">L</span><span class="w"> </span><span class="o">(</span><span class="n">f</span><span class="w"> </span><span class="n">t</span><span class="o">)</span><span class="w"> </span><span class="o">(</span><span class="n">g</span><span class="w"> </span><span class="o">(</span><span class="n">x</span><span class="w"> </span><span class="bp">-</span><span class="w"> </span><span class="n">t</span><span class="o">))</span><span class="w"> </span><span class="bp">∂</span><span class="n">μ</span><span class="w"> </span><span class="o">:=</span>
+<span class="w">  </span><span class="n">rfl</span>
+</pre></div>
+</div>
+<p>Finally, Mathlib has a very general version of the change-of-variables formula.
+In the statement below, <code class="docutils literal notranslate"><span class="pre">BorelSpace</span> <span class="pre">E</span></code> means the
+<span class="math notranslate nohighlight"><mjx-container class="MathJax CtxtMenu_Attached_0" jax="CHTML" tabindex="0" ctxtmenu_counter="2" style="font-size: 114.5%; position: relative;"><mjx-math class="MJX-TEX" aria-hidden="true"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D70E TEX-I"></mjx-c></mjx-mi></mjx-math><mjx-assistive-mml unselectable="on" display="inline"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>σ</mi></math></mjx-assistive-mml></mjx-container></span>-algebra on <code class="docutils literal notranslate"><span class="pre">E</span></code> is generated by the open sets of <code class="docutils literal notranslate"><span class="pre">E</span></code>,
+and <code class="docutils literal notranslate"><span class="pre">IsAddHaarMeasure</span> <span class="pre">μ</span></code> means that the measure <code class="docutils literal notranslate"><span class="pre">μ</span></code> is left-invariant,
+gives finite mass to compact sets, and give positive mass to open sets.</p>
+<div class="highlight-lean notranslate"><div class="highlight"><pre><span></span><span class="kd">example</span><span class="w"> </span><span class="o">{</span><span class="n">E</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="kt">Type</span><span class="bp">*</span><span class="o">}</span><span class="w"> </span><span class="o">[</span><span class="n">NormedAddCommGroup</span><span class="w"> </span><span class="n">E</span><span class="o">]</span><span class="w"> </span><span class="o">[</span><span class="n">NormedSpace</span><span class="w"> </span><span class="n">ℝ</span><span class="w"> </span><span class="n">E</span><span class="o">]</span><span class="w"> </span><span class="o">[</span><span class="n">FiniteDimensional</span><span class="w"> </span><span class="n">ℝ</span><span class="w"> </span><span class="n">E</span><span class="o">]</span>
+<span class="w">    </span><span class="o">[</span><span class="n">MeasurableSpace</span><span class="w"> </span><span class="n">E</span><span class="o">]</span><span class="w"> </span><span class="o">[</span><span class="n">BorelSpace</span><span class="w"> </span><span class="n">E</span><span class="o">]</span><span class="w"> </span><span class="o">(</span><span class="n">μ</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="n">Measure</span><span class="w"> </span><span class="n">E</span><span class="o">)</span><span class="w"> </span><span class="o">[</span><span class="n">μ.IsAddHaarMeasure</span><span class="o">]</span><span class="w"> </span><span class="o">{</span><span class="n">F</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="kt">Type</span><span class="bp">*</span><span class="o">}</span>
+<span class="w">    </span><span class="o">[</span><span class="n">NormedAddCommGroup</span><span class="w"> </span><span class="n">F</span><span class="o">]</span><span class="w"> </span><span class="o">[</span><span class="n">NormedSpace</span><span class="w"> </span><span class="n">ℝ</span><span class="w"> </span><span class="n">F</span><span class="o">]</span><span class="w"> </span><span class="o">[</span><span class="n">CompleteSpace</span><span class="w"> </span><span class="n">F</span><span class="o">]</span><span class="w"> </span><span class="o">{</span><span class="n">s</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="n">Set</span><span class="w"> </span><span class="n">E</span><span class="o">}</span><span class="w"> </span><span class="o">{</span><span class="n">f</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="n">E</span><span class="w"> </span><span class="bp">→</span><span class="w"> </span><span class="n">E</span><span class="o">}</span>
+<span class="w">    </span><span class="o">{</span><span class="n">f'</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="n">E</span><span class="w"> </span><span class="bp">→</span><span class="w"> </span><span class="n">E</span><span class="w"> </span><span class="bp">→</span><span class="n">L</span><span class="o">[</span><span class="n">ℝ</span><span class="o">]</span><span class="w"> </span><span class="n">E</span><span class="o">}</span><span class="w"> </span><span class="o">(</span><span class="n">hs</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="n">MeasurableSet</span><span class="w"> </span><span class="n">s</span><span class="o">)</span>
+<span class="w">    </span><span class="o">(</span><span class="n">hf</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="bp">∀</span><span class="w"> </span><span class="n">x</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="n">E</span><span class="o">,</span><span class="w"> </span><span class="n">x</span><span class="w"> </span><span class="bp">∈</span><span class="w"> </span><span class="n">s</span><span class="w"> </span><span class="bp">→</span><span class="w"> </span><span class="n">HasFDerivWithinAt</span><span class="w"> </span><span class="n">f</span><span class="w"> </span><span class="o">(</span><span class="n">f'</span><span class="w"> </span><span class="n">x</span><span class="o">)</span><span class="w"> </span><span class="n">s</span><span class="w"> </span><span class="n">x</span><span class="o">)</span><span class="w"> </span><span class="o">(</span><span class="n">h_inj</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="n">InjOn</span><span class="w"> </span><span class="n">f</span><span class="w"> </span><span class="n">s</span><span class="o">)</span><span class="w"> </span><span class="o">(</span><span class="n">g</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="n">E</span><span class="w"> </span><span class="bp">→</span><span class="w"> </span><span class="n">F</span><span class="o">)</span><span class="w"> </span><span class="o">:</span>
+<span class="w">    </span><span class="bp">∫</span><span class="w"> </span><span class="n">x</span><span class="w"> </span><span class="k">in</span><span class="w"> </span><span class="n">f</span><span class="w"> </span><span class="bp">''</span><span class="w"> </span><span class="n">s</span><span class="o">,</span><span class="w"> </span><span class="n">g</span><span class="w"> </span><span class="n">x</span><span class="w"> </span><span class="bp">∂</span><span class="n">μ</span><span class="w"> </span><span class="bp">=</span><span class="w"> </span><span class="bp">∫</span><span class="w"> </span><span class="n">x</span><span class="w"> </span><span class="k">in</span><span class="w"> </span><span class="n">s</span><span class="o">,</span><span class="w"> </span><span class="bp">|</span><span class="o">(</span><span class="n">f'</span><span class="w"> </span><span class="n">x</span><span class="o">)</span><span class="bp">.</span><span class="n">det</span><span class="bp">|</span><span class="w"> </span><span class="bp">•</span><span class="w"> </span><span class="n">g</span><span class="w"> </span><span class="o">(</span><span class="n">f</span><span class="w"> </span><span class="n">x</span><span class="o">)</span><span class="w"> </span><span class="bp">∂</span><span class="n">μ</span><span class="w"> </span><span class="o">:=</span>
+<span class="w">  </span><span class="n">integral_image_eq_integral_abs_det_fderiv_smul</span><span class="w"> </span><span class="n">μ</span><span class="w"> </span><span class="n">hs</span><span class="w"> </span><span class="n">hf</span><span class="w"> </span><span class="n">h_inj</span><span class="w"> </span><span class="n">g</span>
+</pre></div>
+</div>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="C12_Differential_Calculus.html" class="btn btn-neutral float-left" title="12. Differential Calculus" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="genindex.html" class="btn btn-neutral float-right" title="Index" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr>
+
+  <div role="contentinfo">
+    <p>© Copyright 2020-2025, Jeremy Avigad, Patrick Massot. Text licensed under CC BY 4.0.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+
+</body></html>

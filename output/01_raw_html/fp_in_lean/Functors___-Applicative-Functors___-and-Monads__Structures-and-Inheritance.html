@@ -1,0 +1,2092 @@
+<!DOCTYPE html><html><head>
+    <script>
+      (function(){
+  const {protocol:proto, host:hostName, pathname:path, search:srch, hash:hsh} = window.location;
+  if (!(path.endsWith("/") || path.endsWith(".html"))) {
+    window.location.replace(`${proto}//${hostName}${path}/${srch}${hsh}`);
+  }
+})()</script>
+    <base href="./../../"><meta charset="utf-8">
+    <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <title>Structures and Inheritance</title><style data-tippy-stylesheet="">.tippy-box[data-animation=fade][data-state=hidden]{opacity:0}[data-tippy-root]{max-width:calc(100vw - 10px)}.tippy-box{position:relative;background-color:#333;color:#fff;border-radius:4px;font-size:14px;line-height:1.4;white-space:normal;outline:0;transition-property:transform,visibility,opacity}.tippy-box[data-placement^=top]>.tippy-arrow{bottom:0}.tippy-box[data-placement^=top]>.tippy-arrow:before{bottom:-7px;left:0;border-width:8px 8px 0;border-top-color:initial;transform-origin:center top}.tippy-box[data-placement^=bottom]>.tippy-arrow{top:0}.tippy-box[data-placement^=bottom]>.tippy-arrow:before{top:-7px;left:0;border-width:0 8px 8px;border-bottom-color:initial;transform-origin:center bottom}.tippy-box[data-placement^=left]>.tippy-arrow{right:0}.tippy-box[data-placement^=left]>.tippy-arrow:before{border-width:8px 0 8px 8px;border-left-color:initial;right:-7px;transform-origin:center left}.tippy-box[data-placement^=right]>.tippy-arrow{left:0}.tippy-box[data-placement^=right]>.tippy-arrow:before{left:-7px;border-width:8px 8px 8px 0;border-right-color:initial;transform-origin:center right}.tippy-box[data-inertia][data-state=visible]{transition-timing-function:cubic-bezier(.54,1.5,.38,1.11)}.tippy-arrow{width:16px;height:16px;color:#333}.tippy-arrow:before{content:"";position:absolute;border-color:transparent;border-style:solid}.tippy-content{position:relative;padding:5px 9px;z-index:1}</style><link rel="stylesheet" href="book.css">
+    <link rel="stylesheet" href="verso-vars.css">
+    <script src="https://cdn.jsdelivr.net/npm/marked@11.1.1/marked.min.js" integrity="sha384-zbcZAIxlvJtNE3Dp5nxLXdXtXyxwOdnILY1TDPVmKFhl4r4nSUG1r8bcFXGVa4Te" crossorigin="anonymous"></script>
+    <script src="-verso-search/elasticlunr.min.js"></script>
+    <script src="-verso-search/fuzzysort.min.js"></script>
+    <script src="-verso-search/searchIndex.js"></script>
+    <script type="module" src="-verso-search/search-init.js"></script>
+    <link rel="stylesheet" href="-verso-search/search-box.css">
+    <link rel="stylesheet" href="-verso-search/search-highlight.css">
+    <link rel="stylesheet" href="-verso-search/domain-display.css">
+    <script src="-verso-data/popper.min.js"></script>
+    <script src="-verso-data/katex/math.js"></script>
+    <script src="-verso-data/tippy-bundle.umd.min.js"></script>
+    <script src="-verso-data/katex/katex.js"></script>
+    <link rel="stylesheet" href="-verso-data/tippy-border.css">
+    <link rel="stylesheet" href="-verso-data/katex/katex.css">
+    <style>
+div.paragraph > .eval-steps:not(:first-child), div.paragraph > .eval-steps:not(:first-child) > * {
+  margin-top: 0.5rem;
+}
+
+div.paragraph > .eval-steps:not(:last-child), div.paragraph > .eval-steps:not(:last-child) > * {
+  margin-bottom: 0.5rem;
+}
+
+.eval-steps .hl.lean.block {
+  margin-top: 0.25em;
+  margin-bottom: 0.25em;
+}
+
+.eval-steps .hl.lean.block:not(:last-child)::after {
+  content: "⟹";
+  display: block;
+  margin-left: 1em;
+  font-size: 175%;
+}
+
+</style><style>
+.shell-commands {
+
+}
+.shell-commands > * {
+  display: block;
+  white-space: pre;
+}
+.shell-commands .command::before {
+  content: "$ ";
+  font-weight: 600;
+}
+
+div.paragraph > .shell-commands:not(:first-child) {
+  margin-top: 0.5rem;
+}
+
+div.paragraph > .shell-commands:not(:last-child) {
+  margin-bottom: 0.5rem;
+}
+</style><style>
+.eq-steps .hl.lean.block {
+  background-color: #f6f7f6;
+  padding: 1rem;
+  margin-top: 0.25rem;
+  margin-bottom: 0.25rem;
+}
+.eq-steps .reason {
+  font-style: italic;
+  margin-left: 2.5em;
+  display: flex;
+}
+.eq-steps .reason::before {
+  content: "={";
+  font-family: var(--verso-code-font-family);
+  font-style: normal;
+  font-weight: 600;
+  margin-right: 0.5em;
+  align-self: center;
+}
+.eq-steps .reason > p {
+  margin: 0;
+  max-width: 25em;
+  align-self: center;
+}
+.eq-steps .reason::after {
+  content: "}=";
+  font-family: var(--verso-code-font-family);
+  font-style: normal;
+  font-weight: 600;
+  margin-left: 1em;
+  align-self: center;
+}
+</style><style>/static/theme.css</style><style>
+.shell-command {
+
+}
+.shell-command.block > * {
+  display: block;
+  white-space: pre;
+}
+.shell-command .command .prompt {
+  font-weight: 600;
+}
+
+div.paragraph > .shell-command:not(:first-child) {
+  margin-top: 0.5rem;
+}
+
+div.paragraph > .shell-command:not(:last-child) {
+  margin-bottom: 0.5rem;
+}
+</style><style>
+.example-file {
+  white-space: normal;
+  font-family: var(--verso-structure-font-family);
+  margin: 1rem;
+  width: fit-content;
+  border: 1px solid #ddd;
+  padding: 0.5rem;
+
+  /* These are necessary for the container to behave nicely on mobile */
+  overflow-x: auto;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+.example-file::before {
+  counter-reset: linenumber;
+}
+.example-file > .line {
+  display: block;
+  white-space: pre;
+  counter-increment: linenumber;
+  font-family: var(--verso-code-font-family);
+}
+.example-file > .line::before {
+  -webkit-user-select: none;
+  display: inline-block;
+  content: counter(linenumber);
+  border-right: 1px solid #ddd;
+  width: 2em;
+  padding-right: 0.25em;
+  margin-right: 0.25em;
+  font-family: var(--verso-code-font-family);
+  text-align: right;
+}
+.example-file > .line::after {
+  -webkit-user-select: none;
+  display: inline-block;
+  content: "⏎";
+  opacity: 0;
+}
+.example-file > .line:hover::after {
+  opacity: 1;
+}
+.example-file > .line:hover, .example-file > .line:hover::before {
+  background-color: #eee;
+}
+.example-file > .empty {
+  display: block;
+  white-space: pre;
+  font-family: var(--verso-code-font-family);
+  font-style: italic;
+}
+.example-file > .empty::before {
+  -webkit-user-select: none;
+  display: inline-block;
+  content: "";
+  border-right: 1px solid #ddd;
+  width: 2em;
+  padding-right: 0.25em;
+  margin-right: 0.25em;
+  font-family: var(--verso-code-font-family);
+  text-align: right;
+}
+</style><style>/static/fonts/source-code-pro/source-code-pro.css</style><style>
+.namedocs {
+  position: relative;
+  border: solid 1px #98B2C0;
+  border-radius: .5rem;
+  padding-top: var(--verso--box-padding);
+  margin-top: var(--verso--box-vertical-margin);
+  margin-bottom: var(--verso--box-vertical-margin);
+}
+
+.namedocs .text {
+  /* Causes margins on child elements to collapse inside the element, such
+     that the margins don't extend into parent with the background color.
+     The effect is that weird borders in the definition box don't happen anymore. */
+  display: flow-root;
+  /* Add a padding. this is the same as the margin applied to the first and last child.
+     The effect is that the padding looks the same size on all sides. */
+  padding: 0 var(--verso--box-padding);
+  border-top: 1px solid #98B2C0;
+}
+
+.namedocs .text > pre {
+  overflow-x: auto;
+}
+
+.namedocs .signature {
+  font-family: var(--verso-code-font-family);
+  margin-top: 0 !important;
+  margin-left: var(--verso--box-padding) !important;
+  margin-bottom: .75rem !important;
+}
+
+.namedocs .label {
+  display: block;
+  font-size: small;
+  font-family: var(--verso-structure-font-family);
+  position: absolute;
+  top: -0.65rem;
+  left: 1rem;
+  background: #fff;
+  padding: 0 .5rem .125rem;
+  border: 1px solid #98B2C0;
+  border-radius: 1rem;
+  color: #555;
+}
+
+.namedocs h1 {
+  font-size: inherit;
+  font-weight: bold
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.namedocs > .text .constructor {
+  padding-top: 0;
+  padding-right: 0;
+  padding-bottom: 0;
+  margin-top: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.namedocs > .text .constructor::before {
+  content: '| ';
+  display: block;
+  font-family: var(--verso-code-font-family);
+  font-weight: bold;
+  float: left;
+  width: 0.5rem;
+  white-space: pre;
+}
+
+.namedocs > .text .constructor .name-and-type {
+  padding-left: 0.5rem;
+  float: left;
+  margin-top: 0;
+  max-width: calc(100% - 1rem);
+}
+.namedocs > .text .constructor .docs {
+  clear: both;
+  padding-left: 1rem;
+}
+
+/* These margins work together with the padding on .text */
+.namedocs .text > :first-child {
+  margin-top: var(--verso--box-padding);
+}
+.namedocs .text > :last-child {
+  margin-bottom: var(--verso--box-padding);
+}
+
+.namedocs .methods td, .namedocs .fields td {
+  vertical-align: top;
+}
+.namedocs .inheritance {
+  vertical-align: top;
+  font-size: smaller;
+  font-family: var(--verso-structure-font-family);
+}
+.namedocs .inheritance ol {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+}
+.namedocs .inheritance ol li {
+  list-style-type: none;
+  display: inline-block;
+}
+.namedocs .inheritance ol li::after {
+  content: " > "
+}
+.namedocs .inheritance ol li:last-child::after {
+  content: "";
+}
+
+.namedocs .extends {
+  display: inline;
+  margin: 0;
+  padding: 0;
+}
+
+.namedocs .extends li {
+  list-style-type: none;
+  display: inline-block;
+}
+
+.namedocs .extends li label {
+  padding-right: 1rem;
+}
+
+.namedocs .subdocs .name-and-type {
+  font-size: 1rem;
+  margin-left: 0;
+  margin-top: 0;
+  margin-right: 0;
+  margin-bottom: 0.5rem;
+}
+
+.namedocs .subdocs .docs {
+  margin-left: 1.5rem;
+  margin-top: 0;
+  margin-right: 0;
+  margin-bottom: 0.5rem;
+}
+
+.namedocs:has(input[data-parent-idx]) [data-inherited-from] {
+  transition-property: opacity, display;
+  transition-duration: 0.4s;
+  transition-behavior: allow-discrete;
+  @starting-style { opacity: 0 !important; }
+}
+
+#this-page-items .tactic-name { font-weight: bold; }
+.namedocs:has(input[data-parent-idx="0"]) [data-inherited-from="0"] {
+  display: none;
+  opacity: 0;
+}
+.namedocs:has(input[data-parent-idx="0"]:checked) [data-inherited-from="0"] {
+  display: block;
+  transform: none;
+  opacity: 1;
+}
+.namedocs:has(input[data-parent-idx="0"]:checked):has(.inheritance[data-inherited-from="0"]:hover) [data-inherited-from]:not([data-inherited-from="0"]) {
+  opacity: 0.5;
+}
+.namedocs:has(input[data-parent-idx="1"]) [data-inherited-from="1"] {
+  display: none;
+  opacity: 0;
+}
+.namedocs:has(input[data-parent-idx="1"]:checked) [data-inherited-from="1"] {
+  display: block;
+  transform: none;
+  opacity: 1;
+}
+.namedocs:has(input[data-parent-idx="1"]:checked):has(.inheritance[data-inherited-from="1"]:hover) [data-inherited-from]:not([data-inherited-from="1"]) {
+  opacity: 0.5;
+}
+.namedocs:has(input[data-parent-idx="2"]) [data-inherited-from="2"] {
+  display: none;
+  opacity: 0;
+}
+.namedocs:has(input[data-parent-idx="2"]:checked) [data-inherited-from="2"] {
+  display: block;
+  transform: none;
+  opacity: 1;
+}
+.namedocs:has(input[data-parent-idx="2"]:checked):has(.inheritance[data-inherited-from="2"]:hover) [data-inherited-from]:not([data-inherited-from="2"]) {
+  opacity: 0.5;
+}
+.namedocs:has(input[data-parent-idx="3"]) [data-inherited-from="3"] {
+  display: none;
+  opacity: 0;
+}
+.namedocs:has(input[data-parent-idx="3"]:checked) [data-inherited-from="3"] {
+  display: block;
+  transform: none;
+  opacity: 1;
+}
+.namedocs:has(input[data-parent-idx="3"]:checked):has(.inheritance[data-inherited-from="3"]:hover) [data-inherited-from]:not([data-inherited-from="3"]) {
+  opacity: 0.5;
+}
+.namedocs:has(input[data-parent-idx="4"]) [data-inherited-from="4"] {
+  display: none;
+  opacity: 0;
+}
+.namedocs:has(input[data-parent-idx="4"]:checked) [data-inherited-from="4"] {
+  display: block;
+  transform: none;
+  opacity: 1;
+}
+.namedocs:has(input[data-parent-idx="4"]:checked):has(.inheritance[data-inherited-from="4"]:hover) [data-inherited-from]:not([data-inherited-from="4"]) {
+  opacity: 0.5;
+}
+.namedocs:has(input[data-parent-idx="5"]) [data-inherited-from="5"] {
+  display: none;
+  opacity: 0;
+}
+.namedocs:has(input[data-parent-idx="5"]:checked) [data-inherited-from="5"] {
+  display: block;
+  transform: none;
+  opacity: 1;
+}
+.namedocs:has(input[data-parent-idx="5"]:checked):has(.inheritance[data-inherited-from="5"]:hover) [data-inherited-from]:not([data-inherited-from="5"]) {
+  opacity: 0.5;
+}
+.namedocs:has(input[data-parent-idx="6"]) [data-inherited-from="6"] {
+  display: none;
+  opacity: 0;
+}
+.namedocs:has(input[data-parent-idx="6"]:checked) [data-inherited-from="6"] {
+  display: block;
+  transform: none;
+  opacity: 1;
+}
+.namedocs:has(input[data-parent-idx="6"]:checked):has(.inheritance[data-inherited-from="6"]:hover) [data-inherited-from]:not([data-inherited-from="6"]) {
+  opacity: 0.5;
+}
+.namedocs:has(input[data-parent-idx="7"]) [data-inherited-from="7"] {
+  display: none;
+  opacity: 0;
+}
+.namedocs:has(input[data-parent-idx="7"]:checked) [data-inherited-from="7"] {
+  display: block;
+  transform: none;
+  opacity: 1;
+}
+.namedocs:has(input[data-parent-idx="7"]:checked):has(.inheritance[data-inherited-from="7"]:hover) [data-inherited-from]:not([data-inherited-from="7"]) {
+  opacity: 0.5;
+}
+.namedocs:has(input[data-parent-idx="8"]) [data-inherited-from="8"] {
+  display: none;
+  opacity: 0;
+}
+.namedocs:has(input[data-parent-idx="8"]:checked) [data-inherited-from="8"] {
+  display: block;
+  transform: none;
+  opacity: 1;
+}
+.namedocs:has(input[data-parent-idx="8"]:checked):has(.inheritance[data-inherited-from="8"]:hover) [data-inherited-from]:not([data-inherited-from="8"]) {
+  opacity: 0.5;
+}
+.namedocs:has(input[data-parent-idx="9"]) [data-inherited-from="9"] {
+  display: none;
+  opacity: 0;
+}
+.namedocs:has(input[data-parent-idx="9"]:checked) [data-inherited-from="9"] {
+  display: block;
+  transform: none;
+  opacity: 1;
+}
+.namedocs:has(input[data-parent-idx="9"]:checked):has(.inheritance[data-inherited-from="9"]:hover) [data-inherited-from]:not([data-inherited-from="9"]) {
+  opacity: 0.5;
+}
+.namedocs:has(input[data-parent-idx="10"]) [data-inherited-from="10"] {
+  display: none;
+  opacity: 0;
+}
+.namedocs:has(input[data-parent-idx="10"]:checked) [data-inherited-from="10"] {
+  display: block;
+  transform: none;
+  opacity: 1;
+}
+.namedocs:has(input[data-parent-idx="10"]:checked):has(.inheritance[data-inherited-from="10"]:hover) [data-inherited-from]:not([data-inherited-from="10"]) {
+  opacity: 0.5;
+}
+.namedocs:has(input[data-parent-idx="11"]) [data-inherited-from="11"] {
+  display: none;
+  opacity: 0;
+}
+.namedocs:has(input[data-parent-idx="11"]:checked) [data-inherited-from="11"] {
+  display: block;
+  transform: none;
+  opacity: 1;
+}
+.namedocs:has(input[data-parent-idx="11"]:checked):has(.inheritance[data-inherited-from="11"]:hover) [data-inherited-from]:not([data-inherited-from="11"]) {
+  opacity: 0.5;
+}
+.namedocs:has(input[data-parent-idx="12"]) [data-inherited-from="12"] {
+  display: none;
+  opacity: 0;
+}
+.namedocs:has(input[data-parent-idx="12"]:checked) [data-inherited-from="12"] {
+  display: block;
+  transform: none;
+  opacity: 1;
+}
+.namedocs:has(input[data-parent-idx="12"]:checked):has(.inheritance[data-inherited-from="12"]:hover) [data-inherited-from]:not([data-inherited-from="12"]) {
+  opacity: 0.5;
+}
+.namedocs:has(input[data-parent-idx="13"]) [data-inherited-from="13"] {
+  display: none;
+  opacity: 0;
+}
+.namedocs:has(input[data-parent-idx="13"]:checked) [data-inherited-from="13"] {
+  display: block;
+  transform: none;
+  opacity: 1;
+}
+.namedocs:has(input[data-parent-idx="13"]:checked):has(.inheritance[data-inherited-from="13"]:hover) [data-inherited-from]:not([data-inherited-from="13"]) {
+  opacity: 0.5;
+}
+.namedocs:has(input[data-parent-idx="14"]) [data-inherited-from="14"] {
+  display: none;
+  opacity: 0;
+}
+.namedocs:has(input[data-parent-idx="14"]:checked) [data-inherited-from="14"] {
+  display: block;
+  transform: none;
+  opacity: 1;
+}
+.namedocs:has(input[data-parent-idx="14"]:checked):has(.inheritance[data-inherited-from="14"]:hover) [data-inherited-from]:not([data-inherited-from="14"]) {
+  opacity: 0.5;
+}
+.namedocs:has(input[data-parent-idx="15"]) [data-inherited-from="15"] {
+  display: none;
+  opacity: 0;
+}
+.namedocs:has(input[data-parent-idx="15"]:checked) [data-inherited-from="15"] {
+  display: block;
+  transform: none;
+  opacity: 1;
+}
+.namedocs:has(input[data-parent-idx="15"]:checked):has(.inheritance[data-inherited-from="15"]:hover) [data-inherited-from]:not([data-inherited-from="15"]) {
+  opacity: 0.5;
+}
+.namedocs:has(input[data-parent-idx="16"]) [data-inherited-from="16"] {
+  display: none;
+  opacity: 0;
+}
+.namedocs:has(input[data-parent-idx="16"]:checked) [data-inherited-from="16"] {
+  display: block;
+  transform: none;
+  opacity: 1;
+}
+.namedocs:has(input[data-parent-idx="16"]:checked):has(.inheritance[data-inherited-from="16"]:hover) [data-inherited-from]:not([data-inherited-from="16"]) {
+  opacity: 0.5;
+}
+.namedocs:has(input[data-parent-idx="17"]) [data-inherited-from="17"] {
+  display: none;
+  opacity: 0;
+}
+.namedocs:has(input[data-parent-idx="17"]:checked) [data-inherited-from="17"] {
+  display: block;
+  transform: none;
+  opacity: 1;
+}
+.namedocs:has(input[data-parent-idx="17"]:checked):has(.inheritance[data-inherited-from="17"]:hover) [data-inherited-from]:not([data-inherited-from="17"]) {
+  opacity: 0.5;
+}
+.namedocs:has(input[data-parent-idx="18"]) [data-inherited-from="18"] {
+  display: none;
+  opacity: 0;
+}
+.namedocs:has(input[data-parent-idx="18"]:checked) [data-inherited-from="18"] {
+  display: block;
+  transform: none;
+  opacity: 1;
+}
+.namedocs:has(input[data-parent-idx="18"]:checked):has(.inheritance[data-inherited-from="18"]:hover) [data-inherited-from]:not([data-inherited-from="18"]) {
+  opacity: 0.5;
+}
+.namedocs:has(input[data-parent-idx="19"]) [data-inherited-from="19"] {
+  display: none;
+  opacity: 0;
+}
+.namedocs:has(input[data-parent-idx="19"]:checked) [data-inherited-from="19"] {
+  display: block;
+  transform: none;
+  opacity: 1;
+}
+.namedocs:has(input[data-parent-idx="19"]:checked):has(.inheritance[data-inherited-from="19"]:hover) [data-inherited-from]:not([data-inherited-from="19"]) {
+  opacity: 0.5;
+}
+.namedocs:has(input[data-parent-idx="20"]) [data-inherited-from="20"] {
+  display: none;
+  opacity: 0;
+}
+.namedocs:has(input[data-parent-idx="20"]:checked) [data-inherited-from="20"] {
+  display: block;
+  transform: none;
+  opacity: 1;
+}
+.namedocs:has(input[data-parent-idx="20"]:checked):has(.inheritance[data-inherited-from="20"]:hover) [data-inherited-from]:not([data-inherited-from="20"]) {
+  opacity: 0.5;
+}
+.namedocs:has(input[data-parent-idx="21"]) [data-inherited-from="21"] {
+  display: none;
+  opacity: 0;
+}
+.namedocs:has(input[data-parent-idx="21"]:checked) [data-inherited-from="21"] {
+  display: block;
+  transform: none;
+  opacity: 1;
+}
+.namedocs:has(input[data-parent-idx="21"]:checked):has(.inheritance[data-inherited-from="21"]:hover) [data-inherited-from]:not([data-inherited-from="21"]) {
+  opacity: 0.5;
+}
+.namedocs:has(input[data-parent-idx="22"]) [data-inherited-from="22"] {
+  display: none;
+  opacity: 0;
+}
+.namedocs:has(input[data-parent-idx="22"]:checked) [data-inherited-from="22"] {
+  display: block;
+  transform: none;
+  opacity: 1;
+}
+.namedocs:has(input[data-parent-idx="22"]:checked):has(.inheritance[data-inherited-from="22"]:hover) [data-inherited-from]:not([data-inherited-from="22"]) {
+  opacity: 0.5;
+}
+.namedocs:has(input[data-parent-idx="23"]) [data-inherited-from="23"] {
+  display: none;
+  opacity: 0;
+}
+.namedocs:has(input[data-parent-idx="23"]:checked) [data-inherited-from="23"] {
+  display: block;
+  transform: none;
+  opacity: 1;
+}
+.namedocs:has(input[data-parent-idx="23"]:checked):has(.inheritance[data-inherited-from="23"]:hover) [data-inherited-from]:not([data-inherited-from="23"]) {
+  opacity: 0.5;
+}
+.namedocs:has(input[data-parent-idx="24"]) [data-inherited-from="24"] {
+  display: none;
+  opacity: 0;
+}
+.namedocs:has(input[data-parent-idx="24"]:checked) [data-inherited-from="24"] {
+  display: block;
+  transform: none;
+  opacity: 1;
+}
+.namedocs:has(input[data-parent-idx="24"]:checked):has(.inheritance[data-inherited-from="24"]:hover) [data-inherited-from]:not([data-inherited-from="24"]) {
+  opacity: 0.5;
+}
+.namedocs:has(input[data-parent-idx="25"]) [data-inherited-from="25"] {
+  display: none;
+  opacity: 0;
+}
+.namedocs:has(input[data-parent-idx="25"]:checked) [data-inherited-from="25"] {
+  display: block;
+  transform: none;
+  opacity: 1;
+}
+.namedocs:has(input[data-parent-idx="25"]:checked):has(.inheritance[data-inherited-from="25"]:hover) [data-inherited-from]:not([data-inherited-from="25"]) {
+  opacity: 0.5;
+}
+.namedocs:has(input[data-parent-idx="26"]) [data-inherited-from="26"] {
+  display: none;
+  opacity: 0;
+}
+.namedocs:has(input[data-parent-idx="26"]:checked) [data-inherited-from="26"] {
+  display: block;
+  transform: none;
+  opacity: 1;
+}
+.namedocs:has(input[data-parent-idx="26"]:checked):has(.inheritance[data-inherited-from="26"]:hover) [data-inherited-from]:not([data-inherited-from="26"]) {
+  opacity: 0.5;
+}
+.namedocs:has(input[data-parent-idx="27"]) [data-inherited-from="27"] {
+  display: none;
+  opacity: 0;
+}
+.namedocs:has(input[data-parent-idx="27"]:checked) [data-inherited-from="27"] {
+  display: block;
+  transform: none;
+  opacity: 1;
+}
+.namedocs:has(input[data-parent-idx="27"]:checked):has(.inheritance[data-inherited-from="27"]:hover) [data-inherited-from]:not([data-inherited-from="27"]) {
+  opacity: 0.5;
+}
+.namedocs:has(input[data-parent-idx="28"]) [data-inherited-from="28"] {
+  display: none;
+  opacity: 0;
+}
+.namedocs:has(input[data-parent-idx="28"]:checked) [data-inherited-from="28"] {
+  display: block;
+  transform: none;
+  opacity: 1;
+}
+.namedocs:has(input[data-parent-idx="28"]:checked):has(.inheritance[data-inherited-from="28"]:hover) [data-inherited-from]:not([data-inherited-from="28"]) {
+  opacity: 0.5;
+}
+.namedocs:has(input[data-parent-idx="29"]) [data-inherited-from="29"] {
+  display: none;
+  opacity: 0;
+}
+.namedocs:has(input[data-parent-idx="29"]:checked) [data-inherited-from="29"] {
+  display: block;
+  transform: none;
+  opacity: 1;
+}
+.namedocs:has(input[data-parent-idx="29"]:checked):has(.inheritance[data-inherited-from="29"]:hover) [data-inherited-from]:not([data-inherited-from="29"]) {
+  opacity: 0.5;
+}
+.namedocs:has(input[data-parent-idx="30"]) [data-inherited-from="30"] {
+  display: none;
+  opacity: 0;
+}
+.namedocs:has(input[data-parent-idx="30"]:checked) [data-inherited-from="30"] {
+  display: block;
+  transform: none;
+  opacity: 1;
+}
+.namedocs:has(input[data-parent-idx="30"]:checked):has(.inheritance[data-inherited-from="30"]:hover) [data-inherited-from]:not([data-inherited-from="30"]) {
+  opacity: 0.5;
+}
+.namedocs:has(input[data-parent-idx="31"]) [data-inherited-from="31"] {
+  display: none;
+  opacity: 0;
+}
+.namedocs:has(input[data-parent-idx="31"]:checked) [data-inherited-from="31"] {
+  display: block;
+  transform: none;
+  opacity: 1;
+}
+.namedocs:has(input[data-parent-idx="31"]:checked):has(.inheritance[data-inherited-from="31"]:hover) [data-inherited-from]:not([data-inherited-from="31"]) {
+  opacity: 0.5;
+}
+.namedocs:has(input[data-parent-idx="32"]) [data-inherited-from="32"] {
+  display: none;
+  opacity: 0;
+}
+.namedocs:has(input[data-parent-idx="32"]:checked) [data-inherited-from="32"] {
+  display: block;
+  transform: none;
+  opacity: 1;
+}
+.namedocs:has(input[data-parent-idx="32"]:checked):has(.inheritance[data-inherited-from="32"]:hover) [data-inherited-from]:not([data-inherited-from="32"]) {
+  opacity: 0.5;
+}
+.namedocs:has(input[data-parent-idx="33"]) [data-inherited-from="33"] {
+  display: none;
+  opacity: 0;
+}
+.namedocs:has(input[data-parent-idx="33"]:checked) [data-inherited-from="33"] {
+  display: block;
+  transform: none;
+  opacity: 1;
+}
+.namedocs:has(input[data-parent-idx="33"]:checked):has(.inheritance[data-inherited-from="33"]:hover) [data-inherited-from]:not([data-inherited-from="33"]) {
+  opacity: 0.5;
+}
+.namedocs:has(input[data-parent-idx="34"]) [data-inherited-from="34"] {
+  display: none;
+  opacity: 0;
+}
+.namedocs:has(input[data-parent-idx="34"]:checked) [data-inherited-from="34"] {
+  display: block;
+  transform: none;
+  opacity: 1;
+}
+.namedocs:has(input[data-parent-idx="34"]:checked):has(.inheritance[data-inherited-from="34"]:hover) [data-inherited-from]:not([data-inherited-from="34"]) {
+  opacity: 0.5;
+}
+.namedocs:has(input[data-parent-idx="35"]) [data-inherited-from="35"] {
+  display: none;
+  opacity: 0;
+}
+.namedocs:has(input[data-parent-idx="35"]:checked) [data-inherited-from="35"] {
+  display: block;
+  transform: none;
+  opacity: 1;
+}
+.namedocs:has(input[data-parent-idx="35"]:checked):has(.inheritance[data-inherited-from="35"]:hover) [data-inherited-from]:not([data-inherited-from="35"]) {
+  opacity: 0.5;
+}
+.namedocs:has(input[data-parent-idx="36"]) [data-inherited-from="36"] {
+  display: none;
+  opacity: 0;
+}
+.namedocs:has(input[data-parent-idx="36"]:checked) [data-inherited-from="36"] {
+  display: block;
+  transform: none;
+  opacity: 1;
+}
+.namedocs:has(input[data-parent-idx="36"]:checked):has(.inheritance[data-inherited-from="36"]:hover) [data-inherited-from]:not([data-inherited-from="36"]) {
+  opacity: 0.5;
+}
+.namedocs:has(input[data-parent-idx="37"]) [data-inherited-from="37"] {
+  display: none;
+  opacity: 0;
+}
+.namedocs:has(input[data-parent-idx="37"]:checked) [data-inherited-from="37"] {
+  display: block;
+  transform: none;
+  opacity: 1;
+}
+.namedocs:has(input[data-parent-idx="37"]:checked):has(.inheritance[data-inherited-from="37"]:hover) [data-inherited-from]:not([data-inherited-from="37"]) {
+  opacity: 0.5;
+}
+.namedocs:has(input[data-parent-idx="38"]) [data-inherited-from="38"] {
+  display: none;
+  opacity: 0;
+}
+.namedocs:has(input[data-parent-idx="38"]:checked) [data-inherited-from="38"] {
+  display: block;
+  transform: none;
+  opacity: 1;
+}
+.namedocs:has(input[data-parent-idx="38"]:checked):has(.inheritance[data-inherited-from="38"]:hover) [data-inherited-from]:not([data-inherited-from="38"]) {
+  opacity: 0.5;
+}
+.namedocs:has(input[data-parent-idx="39"]) [data-inherited-from="39"] {
+  display: none;
+  opacity: 0;
+}
+.namedocs:has(input[data-parent-idx="39"]:checked) [data-inherited-from="39"] {
+  display: block;
+  transform: none;
+  opacity: 1;
+}
+.namedocs:has(input[data-parent-idx="39"]:checked):has(.inheritance[data-inherited-from="39"]:hover) [data-inherited-from]:not([data-inherited-from="39"]) {
+  opacity: 0.5;
+}
+.namedocs:has(input[data-parent-idx="40"]) [data-inherited-from="40"] {
+  display: none;
+  opacity: 0;
+}
+.namedocs:has(input[data-parent-idx="40"]:checked) [data-inherited-from="40"] {
+  display: block;
+  transform: none;
+  opacity: 1;
+}
+.namedocs:has(input[data-parent-idx="40"]:checked):has(.inheritance[data-inherited-from="40"]:hover) [data-inherited-from]:not([data-inherited-from="40"]) {
+  opacity: 0.5;
+}
+.namedocs:has(input[data-parent-idx="41"]) [data-inherited-from="41"] {
+  display: none;
+  opacity: 0;
+}
+.namedocs:has(input[data-parent-idx="41"]:checked) [data-inherited-from="41"] {
+  display: block;
+  transform: none;
+  opacity: 1;
+}
+.namedocs:has(input[data-parent-idx="41"]:checked):has(.inheritance[data-inherited-from="41"]:hover) [data-inherited-from]:not([data-inherited-from="41"]) {
+  opacity: 0.5;
+}
+.namedocs:has(input[data-parent-idx="42"]) [data-inherited-from="42"] {
+  display: none;
+  opacity: 0;
+}
+.namedocs:has(input[data-parent-idx="42"]:checked) [data-inherited-from="42"] {
+  display: block;
+  transform: none;
+  opacity: 1;
+}
+.namedocs:has(input[data-parent-idx="42"]:checked):has(.inheritance[data-inherited-from="42"]:hover) [data-inherited-from]:not([data-inherited-from="42"]) {
+  opacity: 0.5;
+}
+.namedocs:has(input[data-parent-idx="43"]) [data-inherited-from="43"] {
+  display: none;
+  opacity: 0;
+}
+.namedocs:has(input[data-parent-idx="43"]:checked) [data-inherited-from="43"] {
+  display: block;
+  transform: none;
+  opacity: 1;
+}
+.namedocs:has(input[data-parent-idx="43"]:checked):has(.inheritance[data-inherited-from="43"]:hover) [data-inherited-from]:not([data-inherited-from="43"]) {
+  opacity: 0.5;
+}
+.namedocs:has(input[data-parent-idx="44"]) [data-inherited-from="44"] {
+  display: none;
+  opacity: 0;
+}
+.namedocs:has(input[data-parent-idx="44"]:checked) [data-inherited-from="44"] {
+  display: block;
+  transform: none;
+  opacity: 1;
+}
+.namedocs:has(input[data-parent-idx="44"]:checked):has(.inheritance[data-inherited-from="44"]:hover) [data-inherited-from]:not([data-inherited-from="44"]) {
+  opacity: 0.5;
+}
+.namedocs:has(input[data-parent-idx="45"]) [data-inherited-from="45"] {
+  display: none;
+  opacity: 0;
+}
+.namedocs:has(input[data-parent-idx="45"]:checked) [data-inherited-from="45"] {
+  display: block;
+  transform: none;
+  opacity: 1;
+}
+.namedocs:has(input[data-parent-idx="45"]:checked):has(.inheritance[data-inherited-from="45"]:hover) [data-inherited-from]:not([data-inherited-from="45"]) {
+  opacity: 0.5;
+}
+.namedocs:has(input[data-parent-idx="46"]) [data-inherited-from="46"] {
+  display: none;
+  opacity: 0;
+}
+.namedocs:has(input[data-parent-idx="46"]:checked) [data-inherited-from="46"] {
+  display: block;
+  transform: none;
+  opacity: 1;
+}
+.namedocs:has(input[data-parent-idx="46"]:checked):has(.inheritance[data-inherited-from="46"]:hover) [data-inherited-from]:not([data-inherited-from="46"]) {
+  opacity: 0.5;
+}
+.namedocs:has(input[data-parent-idx="47"]) [data-inherited-from="47"] {
+  display: none;
+  opacity: 0;
+}
+.namedocs:has(input[data-parent-idx="47"]:checked) [data-inherited-from="47"] {
+  display: block;
+  transform: none;
+  opacity: 1;
+}
+.namedocs:has(input[data-parent-idx="47"]:checked):has(.inheritance[data-inherited-from="47"]:hover) [data-inherited-from]:not([data-inherited-from="47"]) {
+  opacity: 0.5;
+}
+.namedocs:has(input[data-parent-idx="48"]) [data-inherited-from="48"] {
+  display: none;
+  opacity: 0;
+}
+.namedocs:has(input[data-parent-idx="48"]:checked) [data-inherited-from="48"] {
+  display: block;
+  transform: none;
+  opacity: 1;
+}
+.namedocs:has(input[data-parent-idx="48"]:checked):has(.inheritance[data-inherited-from="48"]:hover) [data-inherited-from]:not([data-inherited-from="48"]) {
+  opacity: 0.5;
+}
+.namedocs:has(input[data-parent-idx="49"]) [data-inherited-from="49"] {
+  display: none;
+  opacity: 0;
+}
+.namedocs:has(input[data-parent-idx="49"]:checked) [data-inherited-from="49"] {
+  display: block;
+  transform: none;
+  opacity: 1;
+}
+.namedocs:has(input[data-parent-idx="49"]:checked):has(.inheritance[data-inherited-from="49"]:hover) [data-inherited-from]:not([data-inherited-from="49"]) {
+  opacity: 0.5;
+}
+</style><style>
+table.tabular {
+  margin: auto;
+  border-spacing: 1rem;
+}
+table.tabular.left-align {
+  margin-right: auto;
+  margin-left: 0;
+}
+table.tabular.center-align {
+  margin: auto;
+}
+table.tabular.right-align {
+  margin-left auto;
+  margin-right: 0;
+}
+table.tabular td, table.tabular th {
+  text-align: left;
+  vertical-align: top;
+}
+table.tabular td > p:first-child, table.tabular th > p:first-child {
+  margin-top: 0;
+}
+table.tabular td > p:last-child, table.tabular th > p:first-child {
+  margin-bottom: 0;
+}
+</style><style>/static/fonts/source-serif/source-serif-text.css</style><style>/static/fonts/source-sans/source-sans-3.css</style><style>
+.shell-command {
+
+}
+.shell-command.inline > * {
+  display: inline;
+  white-space: pre;
+}
+.shell-command.inline .command::before {
+  content: "$ ";
+  font-weight: 600;
+}
+</style><style>/static/fonts/noto-sans-mono/noto-sans-mono.css</style><style>
+div.paragraph > .eq-steps:not(:first-child) {
+  margin-top: 0.5rem;
+}
+
+div.paragraph > .eq-steps:not(:last-child) {
+  margin-bottom: 0.5rem;
+}
+</style><style>
+
+.hl.lean {
+  white-space: pre;
+  font-weight: normal;
+  font-style: normal;
+  font-size: inherit;
+}
+
+.hl.lean .keyword {
+  color: var(--verso-code-keyword-color,);
+  font-weight: var(--verso-code-keyword-weight, bold);
+  font-style: var(--verso-code-keyword-style, normal);
+  font-family: var(--verso-code-keyword-font-family,);
+}
+
+.hl.lean .const {
+  color: var(--verso-code-const-color,);
+  font-weight: var(--verso-code-const-weight, normal);
+  font-style: var(--verso-code-const-style, normal);
+  font-family: var(--verso-code-const-font-family,);
+}
+
+.hl.lean .var {
+  color: var(--verso-code-var-color,);
+  font-weight: var(--verso-code-var-weight, normal);
+  font-style: var(--verso-code-var-style, italic);
+  font-family: var(--verso-code-var-font-family,);
+
+  position: relative;
+}
+
+.hl.lean .literal, .hl.lean .unknown {
+  color: var(--verso-code-color,);
+  font-weight: normal;
+  font-style: normal;
+  font-family: var(--verso-code-font-family,);
+}
+
+.hover-container {
+  width: 0;
+  height: 0;
+  position: relative;
+  display: inline;
+}
+
+.hl.lean a {
+  color: inherit;
+  text-decoration: currentcolor underline dotted;
+}
+
+.hl.lean a:hover {
+  text-decoration: currentcolor underline solid;
+}
+
+.hl.lean .hover-info {
+  white-space: normal;
+}
+
+.hl.lean .token .hover-info {
+  display: none;
+  position: absolute;
+  background-color: #e5e5e5;
+  border: 1px solid black;
+  padding: 0.5rem;
+  z-index: 300;
+}
+
+.hl.lean .hover-info.messages {
+  max-height: 10rem;
+  overflow-y: auto;
+  overflow-x: hidden;
+  scrollbar-gutter: stable;
+  padding: 0 0.5rem 0 0;
+  display: block;
+}
+
+.hl.lean .hover-info code {
+  white-space: pre-wrap;
+  background: none;
+  color: black;
+}
+
+.hl.lean .hover-info.messages > code {
+  padding: 0.5rem;
+  display: block;
+  width: fit-content;
+}
+
+.hl.lean .hover-info.messages > code:only-child {
+  margin: 0;
+}
+
+.hl.lean .hover-info.messages > code {
+  margin: 0.1rem;
+}
+
+.hl.lean .hover-info.messages > code:not(:first-child) {
+  margin-top: 0rem;
+}
+
+.hl.lean {
+}
+
+.hl.lean.block {
+  display: block;
+}
+
+.hl.lean.inline {
+  display: inline;
+  white-space: pre-wrap;
+}
+
+.hl.lean * {
+}
+
+.hl.lean .token {
+  transition: all 0.25s; /* Slight fade for highlights */
+}
+
+@media (hover: hover) {
+  .hl.lean .token.binding-hl, .hl.lean .literal.string:hover, .hl.lean .token.typed:hover {
+    background-color: #eee;
+    border-radius: 2px;
+    transition: none;
+  }
+}
+
+
+.hl.lean .has-info .token:not(.tactic-state):not(.tactic-state *), .hl.lean .has-info .inter-text:not(.tactic-state):not(.tactic-state *) {
+  text-decoration-style: wavy;
+  text-decoration-line: underline;
+  text-decoration-thickness: from-font;
+  text-decoration-skip-ink: none;
+}
+
+.hl.lean .has-info .hover-info {
+  display: none;
+  position: absolute;
+  transform: translate(0.25rem, 0.3rem);
+  border: 1px solid black;
+  padding: 0.5rem;
+  z-index: 400;
+  text-align: left;
+}
+
+.hl.lean .has-info.error :not(.tactic-state):not(.tactic-state *){
+  text-decoration-color: red;
+}
+
+@media (hover: hover) {
+  .hl.lean .has-info.error:hover {
+    background-color: #ffb3b3;
+  }
+}
+
+.hl.lean .hover-info.messages > code.error {
+  background-color: #e5e5e5;
+  border-left: 0.2rem solid #ffb3b3;
+}
+
+.tippy-box[data-theme~='error'] .hl.lean .hover-info.messages > code.error {
+  background: none;
+  border: none;
+}
+
+.error .verso-message, .error .verso-message .token, .error .verso-message label {
+  color: var(--verso-error-color);
+}
+
+.error .verso-message .case-label:has(input[type="checkbox"])::before {
+  background-color: var(--verso-error-color) !important;
+}
+
+.hl.lean .has-info.warning :not(.tactic-state):not(.tactic-state *) {
+  text-decoration-color: var(--verso-warning-indicator-color);
+}
+
+@media (hover: hover) {
+  .hl.lean .has-info.warning:hover {
+    background-color:var(--verso-warning-color);
+  }
+}
+
+.hl.lean .hover-info.messages > code.warning {
+  background-color: var(--verso-warning-color);
+}
+
+.lean-output {
+  border-left: 0.2em solid transparent;
+  padding: 0 0 0 0.5em;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.lean-output.error {
+  border-color: var(--verso-error-indicator-color);
+}
+
+.lean-output.information {
+  border-color: var(--verso-info-indicator-color);
+}
+
+.lean-output.warning {
+  border-color: var(--verso-warning-indicator-color);
+}
+
+.hl.lean .hover-info.messages > code.error {
+  background-color: #e5e5e5;
+  border-left: 0.2rem solid var(--verso-warning-color);
+}
+
+.tippy-box[data-theme~='warning'] .hl.lean .hover-info.messages > code.warning {
+  background: none;
+  border: none;
+}
+
+
+.hl.lean .has-info.information :not(.tactic-state):not(.tactic-state *) {
+  text-decoration-color: var(--verso-info-indicator-color, blue);
+}
+
+@media (hover: hover) {
+  .hl.lean .has-info.information:hover {
+    background-color: #4777ff;
+  }
+}
+
+
+.hl.lean .hover-info.messages > code.information {
+  background-color: #e5e5e5;
+  border-left: 0.2rem solid #4777ff;
+}
+
+.tippy-box[data-theme~='info'] .hl.lean .hover-info.messages > code.information {
+  background: none;
+  border: none;
+}
+
+.hl.lean div.docstring {
+  font-family: var(--verso-text-font-family, sans-serif);
+  white-space: normal;
+  max-width: calc(min(40rem, 90vw));
+  width: max-content;
+}
+
+.hl.lean div.docstring > :last-child {
+  margin-bottom: 0;
+}
+
+.hl.lean div.docstring > :first-child {
+  margin-top: 0;
+}
+
+.hl.lean .hover-info .sep {
+  display: block;
+  width: auto;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  padding: 0;
+  height: 1px;
+  border-top: 1px solid #ccc;
+}
+
+.hl.lean code {
+  font-family: var(--verso-code-font-family);
+}
+
+.hl.lean .tactic-state {
+  display: none;
+  position: relative;
+  width: fit-content;
+  border: 1px solid #888888;
+  border-radius: 0.1rem;
+  padding: 0.5rem;
+  font-family: sans-serif;
+  background-color: #ffffff;
+}
+
+.hl.lean.popup .tactic-state {
+  position: static;
+  display: block;
+  width: auto;
+  border: none;
+  padding: 0.5rem;
+  font-family: sans-serif;
+  background-color: #ffffff;
+}
+
+
+.hl.lean .tactic {
+  position: relative;
+  display: inline;
+  vertical-align: top;
+  /* Without these, mobile Safari will start making font sizes inconsistent when its text size adjustment feature is triggered.*/
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+
+.hl.lean .tactic:has(.tactic-toggle:checked) {
+  display: inline-grid;
+  grid-template-columns: 1fr;
+}
+
+.hl.lean .tactic-toggle:checked ~ .tactic-state {
+  display: inline-block;
+  vertical-align: top;
+  grid-row: 2;
+  justify-self: start;
+}
+
+.hl.lean .tactic > label {
+  position: relative;
+  grid-row: 1;
+  display: inline;
+}
+
+@media (hover: hover) {
+  .hl.lean .tactic:has(.tactic-toggle:not(:checked)) > label:hover {
+    background-color: #eeeeee;
+  }
+}
+
+.hl.lean .tactic-toggle {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  height: 0;
+  width: 0;
+  z-index: -10;
+}
+
+.hl.lean .tactic > label::after {
+  content: "";
+  border: 1px solid #bbbbbb;
+  /* These need to be em, not rem, to scale with the font */
+  border-radius: 1em;
+  height: 0.25em;
+  vertical-align: middle;
+  width: 0.6em;
+  margin-left: 0.1em;
+  margin-right: 0.1em;
+  display: inline-block;
+  transition: all 0.5s;
+}
+
+/*
+@media (hover: hover) {
+  .hl.lean .tactic > label:hover::after {
+    border: 1px solid #aaaaaa;
+    background-color: #aaaaaa;
+    transition: all 0.5s;
+  }
+}
+*/
+
+.hl.lean .tactic > label:has(+ .tactic-toggle:checked)::after {
+  border: 1px solid #999999;
+  background-color: #999999;
+  transition: all 0.5s;
+}
+
+.hl.lean .tactic-state .goal + .goal {
+  margin-top: 1.5em;
+}
+
+/*
+Some CSS frameworks customize details/summary in ways not compatible with Verso's output.
+*/
+
+.hl.lean details {
+  display: block !important;
+  margin: 0;
+}
+
+.hl.lean details summary {
+  display: list-item !important;
+  margin: 0;
+}
+
+.hl.lean details summary:focus {
+  outline: none;
+  outline-offset: none;
+  color: inherit;
+}
+
+.hl.lean ul > li {
+  margin-bottom: 0;
+}
+
+.hl.lean details summary::marker {
+  display: inline !important;
+}
+
+.hl.lean details > summary:first-of-type {
+  list-style-type: disclosure-closed;
+  list-style-position: inside;
+}
+
+.hl.lean details[open] > summary:first-of-type {
+  list-style-type: disclosure-open;
+}
+
+.hl.lean details summary::before, .hl.lean details summary::after {
+  content: "" !important;
+  background: none;
+  display: none;
+}
+
+.hl.lean .tactic-state summary {
+  /* These need to be em, not rem, to scale with the font */
+  margin-left: -0.5em;
+}
+
+.hl.lean .tactic-state details {
+  /* These need to be em, not rem, to scale with the font */
+  padding-left: 0.5em;
+}
+
+.hl.lean .case-label {
+  display: block;
+  position: relative;
+}
+
+.hl.lean .case-label input[type="checkbox"] {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  height: 0;
+  width: 0;
+  z-index: -10;
+}
+
+.hl.lean .case-label:has(input[type="checkbox"])::before {
+  display: inline-block;
+  background-color: black;
+  content: ' ';
+  transition: ease 0.2s;
+  margin-right: 0.7em;
+  clip-path: polygon(100% 0, 0 0, 50% 100%);
+  width: 0.6em;
+  height: 0.6em;
+  vertical-align: middle;
+}
+
+.hl.lean .case-label:has(input[type="checkbox"]:not(:checked))::before {
+  transform: rotate(-90deg);
+}
+
+.hl.lean .case-label:has(input[type="checkbox"]) {
+
+}
+
+.hl.lean .case-label:has(input[type="checkbox"]:checked) {
+
+}
+
+
+.hl.lean .labeled-case > :not(:first-child) {
+  max-height: 0px;
+  display: block;
+  overflow: hidden;
+  transition: max-height 0.1s ease-in;
+  /* These need to be em, not rem, to scale with the font */
+  margin-left: 0.5em;
+  margin-top: 0.1em;
+}
+
+.hl.lean .labeled-case:has(.case-label input[type="checkbox"]:checked) > :not(:first-child) {
+  max-height: 100%;
+}
+
+
+.hl.lean .goal-name::before {
+  font-style: normal;
+  content: "case ";
+}
+
+.hl.lean .goal-name {
+  font-style: italic;
+  font-family: var(--verso-code-font-family);
+  color: inherit;
+}
+
+.hl.lean .hypotheses {
+  display: table;
+}
+
+.hl.lean .hypothesis {
+  display: table-row;
+}
+
+.hl.lean .hypothesis > * {
+  display: table-cell;
+}
+
+
+.hl.lean .hypotheses .colon {
+  text-align: center;
+  /* This needs to be em, not rem, to scale with the font */
+  min-width: 1em;
+}
+
+.hl.lean .hypotheses .name {
+  text-align: right;
+}
+
+.hl.lean .hypotheses .name,
+.hl.lean .hypotheses .type,
+.hl.lean .conclusion .type {
+  font-family: var(--verso-code-font-family);
+}
+
+.tippy-box {
+  /* Without these, mobile Safari will start making font sizes inconsistent when its text size adjustment feature is triggered.*/
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+
+}
+
+.tippy-box[data-theme~='lean'] {
+  background-color: #e5e5e5;
+  color: black;
+  border: 1px solid black;
+}
+.tippy-box[data-theme~='lean'][data-placement^='top'] > .tippy-arrow::before {
+  border-top-color: #e5e5e5;
+}
+.tippy-box[data-theme~='lean'][data-placement^='bottom'] > .tippy-arrow::before {
+  border-bottom-color: #e5e5e5;
+}
+.tippy-box[data-theme~='lean'][data-placement^='left'] > .tippy-arrow::before {
+  border-left-color: #e5e5e5;
+}
+.tippy-box[data-theme~='lean'][data-placement^='right'] > .tippy-arrow::before {
+  border-right-color: #e5e5e5;
+}
+
+.tippy-box[data-theme~='message'][data-placement^='top'] > .tippy-arrow::before {
+  border-top-color: #e5e5e5;
+  border-width: 11px 11px 0;
+}
+.tippy-box[data-theme~='message'][data-placement^='top'] > .tippy-arrow::after {
+  bottom: -11px;
+  border-width: 11px 11px 0;
+}
+.tippy-box[data-theme~='message'][data-placement^='bottom'] > .tippy-arrow::before {
+  border-width: 0 11px 11px;
+}
+.tippy-box[data-theme~='message'][data-placement^='bottom'] > .tippy-arrow::after {
+  top: -11px;
+  border-width: 0 11px 11px;
+}
+.tippy-box[data-theme~='message'][data-placement^='left'] > .tippy-arrow::before {
+  border-left-color: #e5e5e5;
+  border-width: 11px 0 11px 11px;
+}
+.tippy-box[data-theme~='message'][data-placement^='left'] > .tippy-arrow::after {
+  right: -11px;
+  border-width: 11px 0 11px 11px;
+}
+
+.tippy-box[data-theme~='message'][data-placement^='right'] > .tippy-arrow::before {
+  border-right-color: #e5e5e5;
+  border-width: 11px 11px 11px 0;
+}
+.tippy-box[data-theme~='message'][data-placement^='right'] > .tippy-arrow::after {
+  left: -11px;
+  border-width: 11px 11px 11px 0;
+}
+
+
+
+.tippy-box[data-theme~='warning'] {
+  background-color: #e5e5e5;
+  color: black;
+  border: 3px solid var(--verso-warning-color);
+}
+
+.tippy-box[data-theme~='error'] {
+  background-color: #e5e5e5;
+  color: black;
+  border: 3px solid #f7a7af;
+}
+
+.tippy-box[data-theme~='info'] {
+  background-color: #e5e5e5;
+  color: black;
+  border: 3px solid #99b3c2;
+}
+
+.tippy-box[data-theme~='tactic'] {
+  background-color: white;
+  color: black;
+  border: 1px solid black;
+}
+.tippy-box[data-theme~='tactic'][data-placement^='top'] > .tippy-arrow::before {
+  border-top-color: white;
+}
+.tippy-box[data-theme~='tactic'][data-placement^='bottom'] > .tippy-arrow::before {
+  border-bottom-color: white;
+}
+.tippy-box[data-theme~='tactic'][data-placement^='left'] > .tippy-arrow::before {
+  border-left-color: white;
+}
+.tippy-box[data-theme~='tactic'][data-placement^='right'] > .tippy-arrow::before {
+  border-right-color: white;
+}
+
+.extra-doc-links {
+  list-style-type: none;
+  margin-left: 0;
+  padding: 0;
+}
+
+.extra-doc-links > li {
+  display: inline-block;
+}
+
+.extra-doc-links > li:not(:last-child)::after {
+  content: '|';
+  display: inline-block;
+  margin: 0 0.25em;
+}
+
+.verso-message .trace {
+  display: block;
+}
+
+.verso-message .trace > summary::marker {
+  color: var(--verso-text-color);
+}
+
+.verso-message .trace-children {
+  margin: 0;
+  padding: 0;
+}
+
+.verso-message .trace-children > li {
+  list-style-type: none;
+  margin-left: 1.5em;
+}
+
+.verso-message .trace-children > li:not(:has(.trace)) {
+  margin-left: 0;
+}
+
+.verso-message .trace-class {
+  color: color-mix(in srgb, currentColor 70%, transparent);
+  font-weight: bold;
+  margin: 0;
+  padding: 0;
+}
+
+.verso-message .text {
+  white-space: pre-wrap;
+}
+
+</style><script>
+      
+window.onload = () => {
+
+    // Don't show hovers inside of closed tactic states
+    function blockedByTactic(elem) {
+      let parent = elem.parentNode;
+      while (parent && "classList" in parent) {
+        if (parent.classList.contains("tactic")) {
+          const toggle = parent.querySelector("input.tactic-toggle");
+          if (toggle) {
+            return !toggle.checked;
+          }
+        }
+        parent = parent.parentNode;
+      }
+      return false;
+    }
+
+    function blockedByTippy(elem) {
+      // Don't show a new hover until the old ones are all closed.
+      // Scoped to the nearest "top-level block" to avoid being O(n) in the size of the document.
+      var block = elem;
+      const topLevel = new Set(["section", "body", "html", "nav", "header"]);
+      while (block.parentNode && !topLevel.has(block.parentNode.nodeName.toLowerCase())) {
+        block = block.parentNode;
+      }
+      for (const child of block.querySelectorAll(".token, .has-info")) {
+        if (child._tippy && child._tippy.state.isVisible) { return true };
+      }
+      return false;
+    }
+
+    for (const c of document.querySelectorAll(".hl.lean .token")) {
+        if (c.dataset.binding != "") {
+            c.addEventListener("mouseover", (event) => {
+                if (blockedByTactic(c)) {return;}
+                const context = c.closest(".hl.lean").dataset.leanContext;
+                for (const example of document.querySelectorAll(".hl.lean")) {
+                    if (example.dataset.leanContext == context) {
+                        for (const tok of example.querySelectorAll(".token")) {
+                            if (c.dataset.binding == tok.dataset.binding) {
+                                tok.classList.add("binding-hl");
+                            }
+                        }
+                    }
+                }
+            });
+        }
+        c.addEventListener("mouseout", (event) => {
+            for (const tok of document.querySelectorAll(".hl.lean .token")) {
+                tok.classList.remove("binding-hl");
+            }
+        });
+    }
+    /* Render docstrings */
+    if ('undefined' !== typeof marked) {
+        for (const d of document.querySelectorAll("code.docstring, pre.docstring")) {
+            const str = d.innerText;
+            const html = marked.parse(str);
+            const rendered = document.createElement("div");
+            rendered.classList.add("docstring");
+            rendered.innerHTML = html;
+            d.parentNode.replaceChild(rendered, d);
+        }
+    }
+    // Add hovers
+    let docsJson = "-verso-docs.json";
+    fetch(docsJson).then((resp) => resp.json()).then((versoDocData) => {
+
+      function hideParentTooltips(element) {
+        let parent = element.parentElement;
+        while (parent) {
+          const tippyInstance = parent._tippy;
+          if (tippyInstance) {
+            tippyInstance.hide();
+          }
+          parent = parent.parentElement;
+        }
+      }
+
+
+
+      const defaultTippyProps = {
+        /* DEBUG -- remove the space: * /
+        onHide(any) { return false; },
+        trigger: "click",
+        // */
+        /* theme: "lean", */
+        maxWidth: "none",
+        appendTo: () => document.body,
+        interactive: true,
+        delay: [100, null],
+        /* ignoreAttributes: true, */
+        followCursor: 'initial',
+        onShow(inst) {
+          if (inst.reference.className == 'tactic') {
+
+            const toggle = inst.reference.querySelector("input.tactic-toggle");
+            if (toggle && toggle.checked) {
+              return false;
+            }
+            hideParentTooltips(inst.reference);
+            //if (blockedByTippy(inst.reference)) { return false; }
+
+          } else if (inst.reference.querySelector(".hover-info") || "versoHover" in inst.reference.dataset) {
+            if (blockedByTactic(inst.reference)) { return false };
+            if (blockedByTippy(inst.reference)) { return false; }
+          } else { // Nothing to show here!
+            return false;
+          }
+        },
+        content (tgt) {
+          const content = document.createElement("span");
+          if (tgt.className == 'tactic') {
+            const state = tgt.querySelector(".tactic-state").cloneNode(true);
+            state.style.display = "block";
+            content.appendChild(state);
+            content.style.display = "block";
+            content.className = "hl lean popup";
+          } else {
+            content.className = "hl lean";
+            content.style.display = "block";
+            content.style.maxHeight = "300px";
+            content.style.overflowY = "auto";
+            content.style.overflowX = "hidden";
+            const hoverId = tgt.dataset.versoHover;
+            const hoverInfo = tgt.querySelector(".hover-info");
+            if (hoverId) { // Docstrings from the table
+              // TODO stop doing an implicit conversion from string to number here
+              let data = versoDocData[hoverId];
+              if (data) {
+                const info = document.createElement("span");
+                info.className = "hover-info";
+                info.style.display = "block";
+                info.innerHTML = data;
+                content.appendChild(info);
+                /* Render docstrings - TODO server-side */
+                if ('undefined' !== typeof marked) {
+                    for (const d of content.querySelectorAll("code.docstring, pre.docstring")) {
+                        const str = d.innerText;
+                        const html = marked.parse(str);
+                        const rendered = document.createElement("div");
+                        rendered.classList.add("docstring");
+                        rendered.innerHTML = html;
+                        d.parentNode.replaceChild(rendered, d);
+                    }
+                }
+              } else {
+                content.innerHTML = "Failed to load doc ID: " + hoverId;
+              }
+            } else if (hoverInfo) { // The inline info, still used for compiler messages
+              content.appendChild(hoverInfo.cloneNode(true));
+            }
+            const extraLinks = tgt.parentElement.dataset['versoLinks'];
+            if (extraLinks) {
+              try {
+                const extras = JSON.parse(extraLinks);
+                const links = document.createElement('ul');
+                links.className = 'extra-doc-links';
+                extras.forEach((l) => {
+                  const li = document.createElement('li');
+                  li.innerHTML = "<a href=\"" + l['href'] + "\" title=\"" + l.long + "\">" + l.short + "</a>";
+                  links.appendChild(li);
+                });
+                content.appendChild(links);
+              } catch (error) {
+                console.error(error);
+              }
+            }
+          }
+          return content;
+        }
+      };
+
+
+      document.querySelectorAll('.hl.lean .const.token, .hl.lean .keyword.token, .hl.lean .literal.token, .hl.lean .option.token, .hl.lean .var.token, .hl.lean .typed.token, .hl.lean .level-var, .hl.lean .level-const, .hl.lean .level-op, .hl.lean .sort').forEach(element => {
+        element.setAttribute('data-tippy-theme', 'lean');
+      });
+      document.querySelectorAll('.hl.lean .has-info.warning').forEach(element => {
+        element.setAttribute('data-tippy-theme', 'warning message');
+      });
+      document.querySelectorAll('.hl.lean .has-info.information').forEach(element => {
+        element.setAttribute('data-tippy-theme', 'info message');
+      });
+      document.querySelectorAll('.hl.lean .has-info.error').forEach(element => {
+        element.setAttribute('data-tippy-theme', 'error message');
+      });
+      document.querySelectorAll('.hl.lean .tactic').forEach(element => {
+        element.setAttribute('data-tippy-theme', 'tactic');
+      });
+      let insts = tippy('.hl.lean .const.token, .hl.lean .keyword.token, .hl.lean .literal.token, .hl.lean .option.token, .hl.lean .var.token, .hl.lean .typed.token, .hl.lean .has-info, .hl.lean .tactic, .hl.lean .level-var, .hl.lean .level-const, .hl.lean .level-op, .hl.lean .sort', defaultTippyProps);
+  });
+}
+</script>
+    <script defer="defer" data-domain="lean-lang.org" src="https://plausible.io/js/script.outbound-links.js"></script>
+    <script src="-verso-search/search-highlight.js" defer="defer"></script>
+    </head>
+  <body>
+    <header>
+      <div class="header-logo-wrapper">
+        <a href="" id="logo"><img src="static/lean_logo.svg"></a></div>
+      <div class="header-title-wrapper">
+        <a href="" class="header-title"><h1>
+            Functional Programming in Lean</h1>
+          </a></div>
+      <div id="search-wrapper">
+  <div class="combobox combobox-list">
+    <div class="group">
+      <div id="cb1-input" class="cb_edit" contenteditable="true" role="searchbox" placeholder="Search..." aria-autocomplete="list" aria-expanded="false" aria-controls="cb1-listbox" aria-haspopup="listbox" aria-label="Search" spellcheck="false" autocorrect="false" autocapitalize="none" inputmode="search"></div>
+    </div>
+    <ul id="cb1-listbox" role="listbox" aria-label="Results"></ul>
+  </div>
+</div>
+</header>
+    <label for="toggle-toc" id="toggle-toc-click"><span class="line line1"></span><span class="line line2"></span><span class="line line3"></span></label><div class="with-toc">
+      <div class="toc-backdrop" onclick="document.getElementById('toggle-toc-click')?.click()"></div>
+      <nav id="toc">
+        <input type="checkbox" id="toggle-toc"><div class="first">
+          <a href="" class="toc-title"><h1>
+              Functional Programming in Lean</h1>
+            </a><div class="split-tocs">
+            <div class="split-toc book">
+              <div class="title">
+                <label for="--verso-manual-toc-----bookRoot" class="toggle-split-toc"><input type="checkbox" class="toggle-split-toc" id="--verso-manual-toc-----bookRoot"></label><span class="">Table of Contents</span></div>
+              <table><tbody><tr class="unnumbered"><td class="num"></td><td><a href="Introduction/#Functional-Programming-in-Lean--Introduction">Introduction</a></td></tr><tr class="unnumbered"><td class="num"></td><td><a href="Acknowledgments/#Functional-Programming-in-Lean--Acknowledgments">Acknowledgments</a></td></tr><tr class="numbered"><td class="num">1.</td><td><a href="Getting-to-Know-Lean/#getting-to-know">Getting to Know Lean</a></td></tr><tr class="numbered"><td class="num">2.</td><td><a href="Hello___-World___/#hello-world">Hello, World!</a></td></tr><tr class="unnumbered"><td class="num"></td><td><a href="Interlude___-Propositions___-Proofs___-and-Indexing/#props-proofs-indexing">Interlude: Propositions, Proofs, and Indexing</a></td></tr><tr class="numbered"><td class="num">3.</td><td><a href="Overloading-and-Type-Classes/#type-classes">Overloading and Type Classes</a></td></tr><tr class="numbered"><td class="num">4.</td><td><a href="Monads/#monads">Monads</a></td></tr><tr class="current numbered"><td class="num">5.</td><td><a href="Functors___-Applicative-Functors___-and-Monads/#Functional-Programming-in-Lean--Functors___-Applicative-Functors___-and-Monads">Functors, Applicative Functors, and Monads</a></td></tr><tr class="numbered"><td class="num">6.</td><td><a href="Monad-Transformers/#Functional-Programming-in-Lean--Monad-Transformers">Monad Transformers</a></td></tr><tr class="numbered"><td class="num">7.</td><td><a href="Programming-with-Dependent-Types/#Functional-Programming-in-Lean--Programming-with-Dependent-Types">Programming with Dependent Types</a></td></tr><tr class="unnumbered"><td class="num"></td><td><a href="Interlude___-Tactics___-Induction___-and-Proofs/#tactics-induction-proofs">Interlude: Tactics, Induction, and Proofs</a></td></tr><tr class="numbered"><td class="num">8.</td><td><a href="Programming___-Proving___-and-Performance/#Functional-Programming-in-Lean--Programming___-Proving___-and-Performance">Programming, Proving, and Performance</a></td></tr><tr class="numbered"><td class="num">9.</td><td><a href="Next-Steps/#next-steps">Next Steps</a></td></tr></tbody></table></div>
+            <div class="split-toc">
+              <div class="title">
+                <label for="--verso-manual-toc-Functional-Programming-in-Lean--Functors___-Applicative-Functors___-and-Monads" class="toggle-split-toc"><input type="checkbox" class="toggle-split-toc" id="--verso-manual-toc-Functional-Programming-in-Lean--Functors___-Applicative-Functors___-and-Monads" checked="checked"></label><span class="number">5.</span>&nbsp;<span class=""><a href="Functors___-Applicative-Functors___-and-Monads/#Functional-Programming-in-Lean--Functors___-Applicative-Functors___-and-Monads">Functors, Applicative Functors, and Monads</a></span></div>
+              <table><tbody><tr class="current numbered"><td class="num">5.1.</td><td><a href="Functors___-Applicative-Functors___-and-Monads/Structures-and-Inheritance/#structure-inheritance">Structures and Inheritance</a></td></tr><tr class="numbered"><td class="num">5.2.</td><td><a href="Functors___-Applicative-Functors___-and-Monads/Applicative-Functors/#applicative">Applicative Functors</a></td></tr><tr class="numbered"><td class="num">5.3.</td><td><a href="Functors___-Applicative-Functors___-and-Monads/The-Applicative-Contract/#applicative-laws">The Applicative Contract</a></td></tr><tr class="numbered"><td class="num">5.4.</td><td><a href="Functors___-Applicative-Functors___-and-Monads/Alternatives/#alternative">Alternatives</a></td></tr><tr class="numbered"><td class="num">5.5.</td><td><a href="Functors___-Applicative-Functors___-and-Monads/Universes/#universe-levels">Universes</a></td></tr><tr class="numbered"><td class="num">5.6.</td><td><a href="Functors___-Applicative-Functors___-and-Monads/The-Complete-Definitions/#complete-definitions">The Complete Definitions</a></td></tr><tr class="numbered"><td class="num">5.7.</td><td><a href="Functors___-Applicative-Functors___-and-Monads/Summary/#structure-applicative-monad-summary">Summary</a></td></tr></tbody></table></div>
+            <div class="split-toc">
+              <div class="title">
+                <label for="--verso-manual-toc-structure-inheritance" class="toggle-split-toc"><input type="checkbox" class="toggle-split-toc" id="--verso-manual-toc-structure-inheritance" checked="checked"></label><span class="number">5.1.</span>&nbsp;<span class="current"><a href="Functors___-Applicative-Functors___-and-Monads/Structures-and-Inheritance/#structure-inheritance">Structures and Inheritance</a></span></div>
+              <table><tbody><tr class="numbered"><td class="num">5.1.1.</td><td><a href="Functors___-Applicative-Functors___-and-Monads/Structures-and-Inheritance/#multiple-structure-inheritance">Multiple Inheritance</a></td></tr></tbody></table></div>
+            </div>
+          </div>
+        <div class="last">
+          <ul id="meta-links">
+            <li>
+              <a href="https://github.com/leanprover/fp-lean">Source Code</a></li>
+            <li>
+              <a href="https://github.com/leanprover/fp-lean/issues">Report Issues</a></li>
+            </ul>
+          </div>
+        </nav>
+      <main><div class="content-wrapper">
+          <nav class="prev-next-buttons">
+            <a class="local-button active" href="Functors___-Applicative-Functors___-and-Monads/#Functional-Programming-in-Lean--Functors___-Applicative-Functors___-and-Monads" rel="prev" title="5. Functors, Applicative Functors, and Monads"><span class="arrow">←</span><span class="where">5. Functors, Applicative Functors, and Monads</span></a><a class="local-button active" href="Functors___-Applicative-Functors___-and-Monads/Applicative-Functors/#applicative" rel="next" title="5.2. Applicative Functors"><span class="where">5.2. Applicative Functors</span><span class="arrow">→</span></a></nav>
+          <section>
+            <h1>
+              5.1.&nbsp;Structures and Inheritance<span class="permalink-widget inline"><a href="find/?domain=Verso.Genre.Manual.section&amp;name=structure-inheritance" title="Permalink">🔗</a></span></h1>
+            <p>
+              In order to understand the full definitions of <code class="hl lean inline" data-lean-context="examples"><a href="https://lean-lang.org/doc/reference/4.26.0/Functors___-Monads-and--do--Notation/#Functor___mk" title="Documentation for Functor in Lean Language Reference"><span class="const token" data-binding="const-Functor" data-verso-hover="597" data-tippy-theme="lean" aria-expanded="false">Functor</span></a></code>, <code class="hl lean inline" data-lean-context="examples"><a href="https://lean-lang.org/doc/reference/4.26.0/Functors___-Monads-and--do--Notation/#Applicative___mk" title="Documentation for Applicative in Lean Language Reference"><span class="const token" data-binding="const-Applicative" data-verso-hover="1043" data-tippy-theme="lean" aria-expanded="false">Applicative</span></a></code>, and <code class="hl lean inline" data-lean-context="examples"><a href="https://lean-lang.org/doc/reference/4.26.0/Functors___-Monads-and--do--Notation/#Monad___mk" title="Documentation for Monad in Lean Language Reference"><span class="const token" data-binding="const-Monad" data-verso-hover="752" data-tippy-theme="lean" aria-expanded="false">Monad</span></a></code>, another Lean feature is necessary: structure inheritance.
+Structure inheritance allows one structure type to provide the interface of another, along with additional fields.
+This can be useful when modeling concepts that have a clear taxonomic relationship.
+For example, take a model of mythical creatures.
+Some of them are large, and some are small:</p>
+            <code class="hl lean block" data-lean-context="examples"><span class="keyword token" data-binding="kw-occ-Lean.Parser.Command.structureTk-105" data-tippy-theme="lean" aria-expanded="false">structure</span><span class="inter-text"> </span><span class="const token" data-binding="const-MythicalCreature" data-verso-hover="1044" data-tippy-theme="lean" aria-expanded="false">MythicalCreature</span><span class="inter-text"> </span><span class="keyword token" data-binding="kw-occ-null-132" data-tippy-theme="lean" aria-expanded="false">where</span><span class="inter-text">
+  </span><span class="const token" data-binding="const-MythicalCreature.large" data-verso-hover="1045" data-tippy-theme="lean" aria-expanded="false">large</span><span class="inter-text"> </span><span class="unknown token" data-binding="">:</span><span class="inter-text"> </span><a href="https://lean-lang.org/doc/reference/4.26.0/Basic-Types/Booleans/#Bool___false" title="Documentation for Bool in Lean Language Reference"><span class="const token" data-binding="const-Bool" data-verso-hover="48" data-tippy-theme="lean" aria-expanded="false">Bool</span></a><span class="inter-text">
+</span><span class="keyword token" data-binding="kw-occ-null-153" data-tippy-theme="lean" aria-expanded="false">deriving</span><span class="inter-text"> </span><a href="https://lean-lang.org/doc/reference/4.26.0/Interacting-with-Lean/#Repr___mk" title="Documentation for Repr in Lean Language Reference"><span class="const token" data-binding="const-Repr" data-verso-hover="210" data-tippy-theme="lean" aria-expanded="false">Repr</span></a></code><p>
+              Behind the scenes, defining the <code class="hl lean inline" data-lean-context="examples"><span class="const token" data-binding="const-MythicalCreature" data-verso-hover="1044" data-tippy-theme="lean" aria-expanded="false">MythicalCreature</span></code> structure creates an inductive type with a single constructor called <code class="hl lean inline" data-lean-context="examples"><span class="const token" data-binding="const-MythicalCreature.mk" data-verso-hover="1046" data-tippy-theme="lean" aria-expanded="false">mk</span></code>:</p>
+            <code class="hl lean block" data-lean-context="examples"><span class="has-info information" data-tippy-theme="info message" aria-expanded="false"><span class="hover-container"><span class="hover-info messages"><code class="verso-message information"><span class="text"></span><span class="highlighted"><span class="inter-text"></span><span class="const token" data-binding="const-MythicalCreature.mk" data-verso-hover="1046" data-tippy-theme="lean" aria-expanded="false">MythicalCreature.mk</span><span class="inter-text"> </span><span class="unknown token" data-binding="">(</span><span class="var token" data-binding="var-_pp_uniq.1" data-verso-hover="333" data-tippy-theme="lean" aria-expanded="false">large</span><span class="inter-text"> </span><span class="unknown token" data-binding="">:</span><span class="inter-text"> </span><a href="https://lean-lang.org/doc/reference/4.26.0/Basic-Types/Booleans/#Bool___false" title="Documentation for Bool in Lean Language Reference"><span class="const token" data-binding="const-Bool" data-verso-hover="48" data-tippy-theme="lean" aria-expanded="false">Bool</span></a><span class="unknown token" data-binding="">)</span><span class="inter-text"> </span><span class="unknown token" data-binding="">:</span><span class="inter-text"> </span><span class="const token" data-binding="const-MythicalCreature" data-verso-hover="1044" data-tippy-theme="lean" aria-expanded="false">MythicalCreature</span></span></code></span></span><a href="https://lean-lang.org/doc/reference/4.26.0/Interacting-with-Lean/#Lean___Parser___Command___check" title="Documentation for syntax in Lean Language Reference"><span class="keyword token" data-binding="kw-occ-Lean.Parser.Command.check-562" data-tippy-theme="lean" aria-expanded="false">#check</span></a></span><span class="inter-text"> </span><span class="const token" data-binding="const-MythicalCreature.mk" data-verso-hover="1046" data-tippy-theme="lean" aria-expanded="false">MythicalCreature.mk</span></code><pre class="hl lean lean-output information"><span class="verso-message"><span class="text"></span><span class="highlighted"><span class="const token" data-binding="const-MythicalCreature.mk" data-verso-hover="1046" data-tippy-theme="lean" aria-expanded="false">MythicalCreature.mk</span><span class="inter-text"> </span><span class="unknown token" data-binding="">(</span><span class="var token" data-binding="var-_pp_uniq.1" data-verso-hover="333" data-tippy-theme="lean" aria-expanded="false">large</span><span class="inter-text"> </span><span class="unknown token" data-binding="">:</span><span class="inter-text"> </span><a href="https://lean-lang.org/doc/reference/4.26.0/Basic-Types/Booleans/#Bool___false" title="Documentation for Bool in Lean Language Reference"><span class="const token" data-binding="const-Bool" data-verso-hover="48" data-tippy-theme="lean" aria-expanded="false">Bool</span></a><span class="unknown token" data-binding="">)</span><span class="inter-text"> </span><span class="unknown token" data-binding="">:</span><span class="inter-text"> </span><span class="const token" data-binding="const-MythicalCreature" data-verso-hover="1044" data-tippy-theme="lean" aria-expanded="false">MythicalCreature</span></span></span></pre><p>
+              Similarly, a function <code class="hl lean inline" data-lean-context="examples"><span class="const token" data-binding="const-MythicalCreature.large" data-verso-hover="1045" data-tippy-theme="lean" aria-expanded="false">MythicalCreature.large</span></code> is created that actually extracts the field from the constructor:</p>
+            <code class="hl lean block" data-lean-context="examples"><span class="has-info information" data-tippy-theme="info message" aria-expanded="false"><span class="hover-container"><span class="hover-info messages"><code class="verso-message information"><span class="text"></span><span class="highlighted"><span class="inter-text"></span><span class="const token" data-binding="const-MythicalCreature.large" data-verso-hover="1045" data-tippy-theme="lean" aria-expanded="false">MythicalCreature.large</span><span class="inter-text"> </span><span class="unknown token" data-binding="">(</span><span class="var token" data-binding="var-_pp_uniq.1" data-verso-hover="1047" data-tippy-theme="lean" aria-expanded="false">self</span><span class="inter-text"> </span><span class="unknown token" data-binding="">:</span><span class="inter-text"> </span><span class="const token" data-binding="const-MythicalCreature" data-verso-hover="1044" data-tippy-theme="lean" aria-expanded="false">MythicalCreature</span><span class="unknown token" data-binding="">)</span><span class="inter-text"> </span><span class="unknown token" data-binding="">:</span><span class="inter-text"> </span><a href="https://lean-lang.org/doc/reference/4.26.0/Basic-Types/Booleans/#Bool___false" title="Documentation for Bool in Lean Language Reference"><span class="const token" data-binding="const-Bool" data-verso-hover="48" data-tippy-theme="lean" aria-expanded="false">Bool</span></a></span></code></span></span><a href="https://lean-lang.org/doc/reference/4.26.0/Interacting-with-Lean/#Lean___Parser___Command___check" title="Documentation for syntax in Lean Language Reference"><span class="keyword token" data-binding="kw-occ-Lean.Parser.Command.check-741" data-tippy-theme="lean" aria-expanded="false">#check</span></a></span><span class="inter-text"> </span><span class="const token" data-binding="const-MythicalCreature.large" data-verso-hover="1045" data-tippy-theme="lean" aria-expanded="false">MythicalCreature.large</span></code><pre class="hl lean lean-output information"><span class="verso-message"><span class="text"></span><span class="highlighted"><span class="const token" data-binding="const-MythicalCreature.large" data-verso-hover="1045" data-tippy-theme="lean" aria-expanded="false">MythicalCreature.large</span><span class="inter-text"> </span><span class="unknown token" data-binding="">(</span><span class="var token" data-binding="var-_pp_uniq.1" data-verso-hover="1047" data-tippy-theme="lean" aria-expanded="false">self</span><span class="inter-text"> </span><span class="unknown token" data-binding="">:</span><span class="inter-text"> </span><span class="const token" data-binding="const-MythicalCreature" data-verso-hover="1044" data-tippy-theme="lean" aria-expanded="false">MythicalCreature</span><span class="unknown token" data-binding="">)</span><span class="inter-text"> </span><span class="unknown token" data-binding="">:</span><span class="inter-text"> </span><a href="https://lean-lang.org/doc/reference/4.26.0/Basic-Types/Booleans/#Bool___false" title="Documentation for Bool in Lean Language Reference"><span class="const token" data-binding="const-Bool" data-verso-hover="48" data-tippy-theme="lean" aria-expanded="false">Bool</span></a></span></span></pre><p>
+              In most old stories, each monster can be defeated in some way.
+A description of a monster should include this information, along with whether it is large:</p>
+            <code class="hl lean block" data-lean-context="examples"><span class="keyword token" data-binding="kw-occ-Lean.Parser.Command.structureTk-337" data-tippy-theme="lean" aria-expanded="false">structure</span><span class="inter-text"> </span><span class="const token" data-binding="const-Monster" data-verso-hover="1048" data-tippy-theme="lean" aria-expanded="false">Monster</span><span class="inter-text"> </span><span class="keyword token" data-binding="kw-occ-Lean.Parser.Command.extends-355" data-tippy-theme="lean" aria-expanded="false">extends</span><span class="inter-text"> </span><span class="const token" data-binding="const-MythicalCreature" data-verso-hover="1044" data-tippy-theme="lean" aria-expanded="false">MythicalCreature</span><span class="inter-text"> </span><span class="keyword token" data-binding="kw-occ-null-380" data-tippy-theme="lean" aria-expanded="false">where</span><span class="inter-text">
+  </span><span class="const token" data-binding="const-Monster.vulnerability" data-verso-hover="1049" id="Monster___vulnerability" data-tippy-theme="lean" aria-expanded="false">vulnerability</span><span class="inter-text"> </span><span class="unknown token" data-binding="">:</span><span class="inter-text"> </span><a href="https://lean-lang.org/doc/reference/4.26.0/Basic-Types/Strings/#String___mk" title="Documentation for String in Lean Language Reference"><span class="const token" data-binding="const-String" data-verso-hover="9" data-tippy-theme="lean" aria-expanded="false">String</span></a><span class="inter-text">
+</span><span class="keyword token" data-binding="kw-occ-null-411" data-tippy-theme="lean" aria-expanded="false">deriving</span><span class="inter-text"> </span><a href="https://lean-lang.org/doc/reference/4.26.0/Interacting-with-Lean/#Repr___mk" title="Documentation for Repr in Lean Language Reference"><span class="const token" data-binding="const-Repr" data-verso-hover="210" data-tippy-theme="lean" aria-expanded="false">Repr</span></a></code><p>
+              The <code class="hl lean inline" data-lean-context="examples"><span class="keyword token" data-binding="kw-occ-Lean.Parser.Command.extends-355" data-tippy-theme="lean" aria-expanded="false">extends</span><span class="inter-text"> </span><span class="const token" data-binding="const-MythicalCreature" data-verso-hover="1044" data-tippy-theme="lean" aria-expanded="false">MythicalCreature</span></code> in the heading states that every monster is also mythical.
+To define a <code class="hl lean inline" data-lean-context="examples"><span class="const token" data-binding="const-Monster" data-verso-hover="1048" data-tippy-theme="lean" aria-expanded="false">Monster</span></code>, both the fields from <code class="hl lean inline" data-lean-context="examples"><span class="const token" data-binding="const-MythicalCreature" data-verso-hover="1044" data-tippy-theme="lean" aria-expanded="false">MythicalCreature</span></code> and the fields from <code class="hl lean inline" data-lean-context="examples"><span class="const token" data-binding="const-Monster" data-verso-hover="1048" data-tippy-theme="lean" aria-expanded="false">Monster</span></code> should be provided.
+A troll is a large monster that is vulnerable to sunlight:</p>
+            <code class="hl lean block" data-lean-context="examples"><span class="keyword token" data-binding="kw-occ-Lean.Parser.Command.definition-1284" data-tippy-theme="lean" aria-expanded="false">def</span><span class="inter-text"> </span><span class="const token" data-binding="const-troll" data-verso-hover="1050" id="troll" data-tippy-theme="lean" aria-expanded="false">troll</span><span class="inter-text"> </span><span class="unknown token" data-binding="">:</span><span class="inter-text"> </span><span class="const token" data-binding="const-Monster" data-verso-hover="1048" data-tippy-theme="lean" aria-expanded="false">Monster</span><span class="inter-text"> </span><span class="keyword token" data-binding="kw-occ-Lean.Parser.Command.whereStructInst-1304" data-tippy-theme="lean" aria-expanded="false">where</span><span class="inter-text">
+  </span><span class="const token" data-binding="const-MythicalCreature.large" data-verso-hover="1051" data-tippy-theme="lean" aria-expanded="false">large</span><span class="inter-text"> </span><span class="unknown token" data-binding="">:=</span><span class="inter-text"> </span><a href="https://lean-lang.org/doc/reference/4.26.0/Basic-Types/Booleans/#Bool___false" title="Documentation for Bool.true in Lean Language Reference"><span class="const token" data-binding="const-Bool.true" data-verso-hover="107" data-tippy-theme="lean" aria-expanded="false">true</span></a><span class="inter-text">
+  </span><a href="Functors___-Applicative-Functors___-and-Monads/Structures-and-Inheritance/#Monster___vulnerability" title="Definition of example"><span class="const token" data-binding="const-Monster.vulnerability" data-verso-hover="493" data-tippy-theme="lean" aria-expanded="false">vulnerability</span></a><span class="inter-text"> </span><span class="unknown token" data-binding="">:=</span><span class="inter-text"> </span><span class="literal string token" data-binding="" data-verso-hover="1052" data-tippy-theme="lean" aria-expanded="false">"sunlight"</span></code><p>
+              Behind the scenes, inheritance is implemented using composition.
+The constructor <code class="hl lean inline" data-lean-context="examples"><span class="const token" data-binding="const-Monster.mk" data-verso-hover="1053" data-tippy-theme="lean" aria-expanded="false">Monster.mk</span></code> takes a <code class="hl lean inline" data-lean-context="examples"><span class="const token" data-binding="const-MythicalCreature" data-verso-hover="1044" data-tippy-theme="lean" aria-expanded="false">MythicalCreature</span></code> as its argument:</p>
+            <code class="hl lean block" data-lean-context="examples"><span class="has-info information" data-tippy-theme="info message" aria-expanded="false"><span class="hover-container"><span class="hover-info messages"><code class="verso-message information"><span class="text"></span><span class="highlighted"><span class="inter-text"></span><span class="const token" data-binding="const-Monster.mk" data-verso-hover="1053" data-tippy-theme="lean" aria-expanded="false">Monster.mk</span><span class="inter-text"> </span><span class="unknown token" data-binding="">(</span><span class="var token" data-binding="var-_pp_uniq.1" data-verso-hover="1047" data-tippy-theme="lean" aria-expanded="false">toMythicalCreature</span><span class="inter-text"> </span><span class="unknown token" data-binding="">:</span><span class="inter-text"> </span><span class="const token" data-binding="const-MythicalCreature" data-verso-hover="1044" data-tippy-theme="lean" aria-expanded="false">MythicalCreature</span><span class="unknown token" data-binding="">)</span><span class="inter-text"> </span><span class="unknown token" data-binding="">(</span><span class="var token" data-binding="var-_pp_uniq.2" data-verso-hover="47" data-tippy-theme="lean" aria-expanded="false">vulnerability</span><span class="inter-text"> </span><span class="unknown token" data-binding="">:</span><span class="inter-text"> </span><a href="https://lean-lang.org/doc/reference/4.26.0/Basic-Types/Strings/#String___mk" title="Documentation for String in Lean Language Reference"><span class="const token" data-binding="const-String" data-verso-hover="9" data-tippy-theme="lean" aria-expanded="false">String</span></a><span class="unknown token" data-binding="">)</span><span class="inter-text"> </span><span class="unknown token" data-binding="">:</span><span class="inter-text"> </span><span class="const token" data-binding="const-Monster" data-verso-hover="1048" data-tippy-theme="lean" aria-expanded="false">Monster</span></span></code></span></span><a href="https://lean-lang.org/doc/reference/4.26.0/Interacting-with-Lean/#Lean___Parser___Command___check" title="Documentation for syntax in Lean Language Reference"><span class="keyword token" data-binding="kw-occ-Lean.Parser.Command.check-945" data-tippy-theme="lean" aria-expanded="false">#check</span></a></span><span class="inter-text"> </span><span class="const token" data-binding="const-Monster.mk" data-verso-hover="1053" data-tippy-theme="lean" aria-expanded="false">Monster.mk</span></code><pre class="hl lean lean-output information"><span class="verso-message"><span class="text"></span><span class="highlighted"><span class="const token" data-binding="const-Monster.mk" data-verso-hover="1053" data-tippy-theme="lean" aria-expanded="false">Monster.mk</span><span class="inter-text"> </span><span class="unknown token" data-binding="">(</span><span class="var token" data-binding="var-_pp_uniq.1" data-verso-hover="1047" data-tippy-theme="lean" aria-expanded="false">toMythicalCreature</span><span class="inter-text"> </span><span class="unknown token" data-binding="">:</span><span class="inter-text"> </span><span class="const token" data-binding="const-MythicalCreature" data-verso-hover="1044" data-tippy-theme="lean" aria-expanded="false">MythicalCreature</span><span class="unknown token" data-binding="">)</span><span class="inter-text"> </span><span class="unknown token" data-binding="">(</span><span class="var token" data-binding="var-_pp_uniq.2" data-verso-hover="47" data-tippy-theme="lean" aria-expanded="false">vulnerability</span><span class="inter-text"> </span><span class="unknown token" data-binding="">:</span><span class="inter-text"> </span><a href="https://lean-lang.org/doc/reference/4.26.0/Basic-Types/Strings/#String___mk" title="Documentation for String in Lean Language Reference"><span class="const token" data-binding="const-String" data-verso-hover="9" data-tippy-theme="lean" aria-expanded="false">String</span></a><span class="unknown token" data-binding="">)</span><span class="inter-text"> </span><span class="unknown token" data-binding="">:</span><span class="inter-text"> </span><span class="const token" data-binding="const-Monster" data-verso-hover="1048" data-tippy-theme="lean" aria-expanded="false">Monster</span></span></span></pre><p>
+              In addition to defining functions to extract the value of each new field, a function <code class="hl lean inline" data-lean-context="examples"><span class="const token" data-binding="const-Monster.toMythicalCreature" data-verso-hover="1054" data-tippy-theme="lean" aria-expanded="false">Monster.toMythicalCreature</span></code> is defined with type <code class="hl lean inline" data-lean-context="examples"><span class="const token" data-binding="const-Monster" data-verso-hover="1048" data-tippy-theme="lean" aria-expanded="false">Monster</span><span class="inter-text"> </span><span class="unknown token" data-binding="">→</span><span class="inter-text"> </span><span class="const token" data-binding="const-MythicalCreature" data-verso-hover="1044" data-tippy-theme="lean" aria-expanded="false">MythicalCreature</span></code>.
+This can be used to extract the underlying creature.</p>
+            <p>
+              Moving up the inheritance hierarchy in Lean is not the same thing as upcasting in object-oriented languages.
+An upcast operator causes a value from a derived class to be treated as an instance of the parent class, but the value retains its identity and structure.
+In Lean, however, moving up the inheritance hierarchy actually erases the underlying information.
+To see this in action, consider the result of evaluating <code class="hl lean inline" data-lean-context="examples"><a href="Functors___-Applicative-Functors___-and-Monads/Structures-and-Inheritance/#troll" title="Definition of example"><span class="const token" data-binding="const-troll" data-verso-hover="1050" data-tippy-theme="lean" aria-expanded="false">troll</span></a><span class="unknown token" data-binding="">.</span><span class="const token" data-binding="const-Monster.toMythicalCreature" data-verso-hover="1054" data-tippy-theme="lean" aria-expanded="false">toMythicalCreature</span></code>:</p>
+            <code class="hl lean block" data-lean-context="examples"><span class="has-info information" data-tippy-theme="info message" aria-expanded="false"><span class="hover-container"><span class="hover-info messages"><code class="verso-message information"><span class="text"></span><span class="text">{ large := true }</span></code></span></span><a href="https://lean-lang.org/doc/reference/4.26.0/Interacting-with-Lean/#Lean___Parser___Command___eval" title="Documentation for syntax in Lean Language Reference"><span class="keyword token" data-binding="kw-occ-Lean.Parser.Command.eval-1611" data-verso-hover="7" data-tippy-theme="lean" aria-expanded="false">#eval</span></a></span><span class="inter-text"> </span><a href="Functors___-Applicative-Functors___-and-Monads/Structures-and-Inheritance/#troll" title="Definition of example"><span class="const token" data-binding="const-troll" data-verso-hover="1050" data-tippy-theme="lean" aria-expanded="false">troll</span></a><span class="unknown token" data-binding="">.</span><span class="const token" data-binding="const-Monster.toMythicalCreature" data-verso-hover="1054" data-tippy-theme="lean" aria-expanded="false">toMythicalCreature</span></code><pre class="hl lean lean-output information"><span class="verso-message"><span class="text"></span><span class="text">{ large := true }</span></span></pre><p>
+              Only the fields of <code class="hl lean inline" data-lean-context="examples"><span class="const token" data-binding="const-MythicalCreature" data-verso-hover="1044" data-tippy-theme="lean" aria-expanded="false">MythicalCreature</span></code> remain.</p>
+            <p>
+              Just like the <code class="hl lean inline" data-lean-context="examples"><span class="keyword token" data-binding="" data-tippy-theme="lean" aria-expanded="false">where</span></code> syntax, curly-brace notation with field names also works with structure inheritance:</p>
+            <code class="hl lean block" data-lean-context="examples"><span class="keyword token" data-binding="kw-occ-Lean.Parser.Command.definition-1708" data-tippy-theme="lean" aria-expanded="false">def</span><span class="inter-text"> </span><span class="const token" data-binding="const-Blurble.troll" data-verso-hover="1050" id="Blurble___troll" data-tippy-theme="lean" aria-expanded="false">troll</span><span class="inter-text"> </span><span class="unknown token" data-binding="">:</span><span class="inter-text"> </span><span class="const token" data-binding="const-Monster" data-verso-hover="1048" data-tippy-theme="lean" aria-expanded="false">Monster</span><span class="inter-text"> </span><span class="unknown token" data-binding="">:=</span><span class="inter-text"> </span><span class="unknown token" data-binding="">{</span><span class="const token" data-binding="const-MythicalCreature.large" data-verso-hover="1051" data-tippy-theme="lean" aria-expanded="false">large</span><span class="inter-text"> </span><span class="unknown token" data-binding="">:=</span><span class="inter-text"> </span><a href="https://lean-lang.org/doc/reference/4.26.0/Basic-Types/Booleans/#Bool___false" title="Documentation for Bool.true in Lean Language Reference"><span class="const token" data-binding="const-Bool.true" data-verso-hover="107" data-tippy-theme="lean" aria-expanded="false">true</span></a><span class="unknown token" data-binding="">,</span><span class="inter-text"> </span><a href="Functors___-Applicative-Functors___-and-Monads/Structures-and-Inheritance/#Monster___vulnerability" title="Definition of example"><span class="const token" data-binding="const-Monster.vulnerability" data-verso-hover="493" data-tippy-theme="lean" aria-expanded="false">vulnerability</span></a><span class="inter-text"> </span><span class="unknown token" data-binding="">:=</span><span class="inter-text"> </span><span class="literal string token" data-binding="" data-verso-hover="1052" data-tippy-theme="lean" aria-expanded="false">"sunlight"</span><span class="unknown token" data-binding="">}</span></code><p>
+              However, the anonymous angle-bracket notation that delegates to the underlying constructor reveals the internal details:</p>
+            <code class="hl lean block" data-lean-context="examples"><span class="keyword token" data-binding="kw-occ-Lean.Parser.Command.definition-2037" data-tippy-theme="lean" aria-expanded="false">def</span><span class="inter-text"> </span><a href="Functors___-Applicative-Functors___-and-Monads/Structures-and-Inheritance/#Foo___troll" title="Definition of example"><span class="const token" data-binding="const-Foo.troll" data-verso-hover="1050" data-tippy-theme="lean" aria-expanded="false">troll</span></a><span class="inter-text"> </span><span class="unknown token" data-binding="">:</span><span class="inter-text"> </span><span class="const token" data-binding="const-Monster" data-verso-hover="1048" data-tippy-theme="lean" aria-expanded="false">Monster</span><span class="inter-text"> </span><span class="unknown token" data-binding="">:=</span><span class="inter-text"> </span><span class="unknown token" data-binding="const-Monster.mk" data-verso-hover="1053">⟨</span><span class="has-info error" data-tippy-theme="error message" aria-expanded="false"><span class="hover-container"><span class="hover-info messages"><code class="verso-message error"><span class="text"></span><span class="text">Application type mismatch: The </span><span class="text">argument</span><span class="text">
+  </span><span class="highlighted"><span class="inter-text"></span><a href="https://lean-lang.org/doc/reference/4.26.0/Basic-Types/Booleans/#Bool___false" title="Documentation for Bool.true in Lean Language Reference"><span class="const token" data-binding="const-Bool.true" data-verso-hover="107" data-tippy-theme="lean" aria-expanded="false">true</span></a><span class="inter-text"></span></span><span class="text"></span><span class="text">
+</span><span class="text"></span><span class="text">has type</span><span class="text">
+  </span><span class="highlighted"><span class="inter-text"></span><a href="https://lean-lang.org/doc/reference/4.26.0/Basic-Types/Booleans/#Bool___false" title="Documentation for Bool in Lean Language Reference"><span class="const token" data-binding="const-Bool" data-verso-hover="48" data-tippy-theme="lean" aria-expanded="false">Bool</span></a><span class="inter-text"></span></span><span class="text"></span><span class="text">
+</span><span class="text">but is expected to have type</span><span class="text">
+  </span><span class="highlighted"><span class="inter-text"></span><span class="const token" data-binding="const-MythicalCreature" data-verso-hover="1044" data-tippy-theme="lean" aria-expanded="false">MythicalCreature</span><span class="inter-text"></span></span><span class="text"></span><span class="text">
+</span><span class="text"></span><span class="text">in the application</span><span class="text">
+  </span><span class="highlighted"><span class="inter-text"></span><span class="const token" data-binding="const-Monster.mk" data-verso-hover="1053" data-tippy-theme="lean" aria-expanded="false">Monster.mk</span><span class="inter-text"> </span><a href="https://lean-lang.org/doc/reference/4.26.0/Basic-Types/Booleans/#Bool___false" title="Documentation for Bool.true in Lean Language Reference"><span class="const token" data-binding="const-Bool.true" data-verso-hover="107" data-tippy-theme="lean" aria-expanded="false">true</span></a></span><span class="text"></span></code></span></span><a href="https://lean-lang.org/doc/reference/4.26.0/Basic-Types/Booleans/#Bool___false" title="Documentation for Bool.true in Lean Language Reference"><span class="const token" data-binding="const-Bool.true" data-verso-hover="107" data-tippy-theme="lean" aria-expanded="false">true</span></a></span><span class="unknown token" data-binding="const-Monster.mk" data-verso-hover="1053">,</span><span class="inter-text"> </span><span class="literal string token" data-binding="" data-verso-hover="1052" data-tippy-theme="lean" aria-expanded="false">"sunlight"</span><span class="unknown token" data-binding="const-Monster.mk" data-verso-hover="1053">⟩</span></code><pre class="hl lean lean-output error"><span class="verso-message"><span class="text"></span><span class="text">Application type mismatch: The </span><span class="text">argument</span><span class="text">
+  </span><span class="highlighted"><a href="https://lean-lang.org/doc/reference/4.26.0/Basic-Types/Booleans/#Bool___false" title="Documentation for Bool.true in Lean Language Reference"><span class="const token" data-binding="const-Bool.true" data-verso-hover="107" data-tippy-theme="lean" aria-expanded="false">true</span></a></span><span class="text"></span><span class="text">
+</span><span class="text"></span><span class="text">has type</span><span class="text">
+  </span><span class="highlighted"><a href="https://lean-lang.org/doc/reference/4.26.0/Basic-Types/Booleans/#Bool___false" title="Documentation for Bool in Lean Language Reference"><span class="const token" data-binding="const-Bool" data-verso-hover="48" data-tippy-theme="lean" aria-expanded="false">Bool</span></a></span><span class="text"></span><span class="text">
+</span><span class="text">but is expected to have type</span><span class="text">
+  </span><span class="highlighted"><span class="const token" data-binding="const-MythicalCreature" data-verso-hover="1044" data-tippy-theme="lean" aria-expanded="false">MythicalCreature</span></span><span class="text"></span><span class="text">
+</span><span class="text"></span><span class="text">in the application</span><span class="text">
+  </span><span class="highlighted"><span class="const token" data-binding="const-Monster.mk" data-verso-hover="1053" data-tippy-theme="lean" aria-expanded="false">Monster.mk</span><span class="inter-text"> </span><a href="https://lean-lang.org/doc/reference/4.26.0/Basic-Types/Booleans/#Bool___false" title="Documentation for Bool.true in Lean Language Reference"><span class="const token" data-binding="const-Bool.true" data-verso-hover="107" data-tippy-theme="lean" aria-expanded="false">true</span></a></span><span class="text"></span></span></pre><p>
+              An extra set of angle brackets is required, which invokes <code class="hl lean inline" data-lean-context="examples"><span class="const token" data-binding="const-MythicalCreature.mk" data-verso-hover="1046" data-tippy-theme="lean" aria-expanded="false">MythicalCreature.mk</span></code> on <code class="hl lean inline" data-lean-context="examples"><a href="https://lean-lang.org/doc/reference/4.26.0/Basic-Types/Booleans/#Bool___false" title="Documentation for Bool.true in Lean Language Reference"><span class="const token" data-binding="const-Bool.true" data-verso-hover="107" data-tippy-theme="lean" aria-expanded="false">true</span></a></code>:</p>
+            <code class="hl lean block" data-lean-context="examples"><span class="keyword token" data-binding="kw-occ-Lean.Parser.Command.definition-2145" data-tippy-theme="lean" aria-expanded="false">def</span><span class="inter-text"> </span><span class="const token" data-binding="const-Foo.troll" data-verso-hover="1050" id="Foo___troll" data-tippy-theme="lean" aria-expanded="false">troll</span><span class="inter-text"> </span><span class="unknown token" data-binding="">:</span><span class="inter-text"> </span><span class="const token" data-binding="const-Monster" data-verso-hover="1048" data-tippy-theme="lean" aria-expanded="false">Monster</span><span class="inter-text"> </span><span class="unknown token" data-binding="">:=</span><span class="inter-text"> </span><span class="unknown token" data-binding="const-Monster.mk" data-verso-hover="1053">⟨</span><span class="unknown token" data-binding="const-MythicalCreature.mk" data-verso-hover="1046">⟨</span><a href="https://lean-lang.org/doc/reference/4.26.0/Basic-Types/Booleans/#Bool___false" title="Documentation for Bool.true in Lean Language Reference"><span class="const token" data-binding="const-Bool.true" data-verso-hover="107" data-tippy-theme="lean" aria-expanded="false">true</span></a><span class="unknown token" data-binding="const-MythicalCreature.mk" data-verso-hover="1046">⟩</span><span class="unknown token" data-binding="const-Monster.mk" data-verso-hover="1053">,</span><span class="inter-text"> </span><span class="literal string token" data-binding="" data-verso-hover="1052" data-tippy-theme="lean" aria-expanded="false">"sunlight"</span><span class="unknown token" data-binding="const-Monster.mk" data-verso-hover="1053">⟩</span></code><p>
+              Lean's dot notation is capable of taking inheritance into account.
+In other words, the existing <code class="hl lean inline" data-lean-context="examples"><span class="const token" data-binding="const-MythicalCreature.large" data-verso-hover="1045" data-tippy-theme="lean" aria-expanded="false">MythicalCreature.large</span></code> can be used with a <code class="hl lean inline" data-lean-context="examples"><span class="const token" data-binding="const-Monster" data-verso-hover="1048" data-tippy-theme="lean" aria-expanded="false">Monster</span></code>, and Lean automatically inserts the call to <code class="hl lean inline" data-lean-context="examples"><span class="const token" data-binding="const-Monster.toMythicalCreature" data-verso-hover="1054" data-tippy-theme="lean" aria-expanded="false">Monster.toMythicalCreature</span></code> before the call to <code class="hl lean inline" data-lean-context="examples"><span class="const token" data-binding="const-MythicalCreature.large" data-verso-hover="1045" data-tippy-theme="lean" aria-expanded="false">MythicalCreature.large</span></code>.
+However, this only occurs when using dot notation, and applying the field lookup function using normal function call syntax results in a type error:</p>
+            <code class="hl lean block" data-lean-context="examples"><a href="https://lean-lang.org/doc/reference/4.26.0/Interacting-with-Lean/#Lean___Parser___Command___eval" title="Documentation for syntax in Lean Language Reference"><span class="keyword token" data-binding="kw-occ-Lean.Parser.Command.eval-2450" data-verso-hover="7" data-tippy-theme="lean" aria-expanded="false">#eval</span></a><span class="inter-text"> </span><span class="const token" data-binding="const-MythicalCreature.large" data-verso-hover="1045" data-tippy-theme="lean" aria-expanded="false">MythicalCreature.large</span><span class="inter-text"> </span><span class="has-info error" data-tippy-theme="error message" aria-expanded="false"><span class="hover-container"><span class="hover-info messages"><code class="verso-message error"><span class="text"></span><span class="text">Application type mismatch: The </span><span class="text">argument</span><span class="text">
+  </span><span class="highlighted"><span class="inter-text"></span><a href="Functors___-Applicative-Functors___-and-Monads/Structures-and-Inheritance/#troll" title="Definition of example"><span class="const token" data-binding="const-troll" data-verso-hover="1050" data-tippy-theme="lean" aria-expanded="false">troll</span></a><span class="inter-text"></span></span><span class="text"></span><span class="text">
+</span><span class="text"></span><span class="text">has type</span><span class="text">
+  </span><span class="highlighted"><span class="inter-text"></span><span class="const token" data-binding="const-Monster" data-verso-hover="1048" data-tippy-theme="lean" aria-expanded="false">Monster</span><span class="inter-text"></span></span><span class="text"></span><span class="text">
+</span><span class="text">but is expected to have type</span><span class="text">
+  </span><span class="highlighted"><span class="inter-text"></span><span class="const token" data-binding="const-MythicalCreature" data-verso-hover="1044" data-tippy-theme="lean" aria-expanded="false">MythicalCreature</span><span class="inter-text"></span></span><span class="text"></span><span class="text">
+</span><span class="text"></span><span class="text">in the application</span><span class="text">
+  </span><span class="highlighted"><span class="inter-text"></span><span class="const token" data-binding="const-MythicalCreature.large" data-verso-hover="1045" data-tippy-theme="lean" aria-expanded="false">MythicalCreature.large</span><span class="inter-text"> </span><a href="Functors___-Applicative-Functors___-and-Monads/Structures-and-Inheritance/#troll" title="Definition of example"><span class="const token" data-binding="const-troll" data-verso-hover="1050" data-tippy-theme="lean" aria-expanded="false">troll</span></a></span><span class="text"></span></code></span></span><a href="Functors___-Applicative-Functors___-and-Monads/Structures-and-Inheritance/#troll" title="Definition of example"><span class="const token" data-binding="const-troll" data-verso-hover="1050" data-tippy-theme="lean" aria-expanded="false">troll</span></a></span></code><pre class="hl lean lean-output error"><span class="verso-message"><span class="text"></span><span class="text">Application type mismatch: The </span><span class="text">argument</span><span class="text">
+  </span><span class="highlighted"><a href="Functors___-Applicative-Functors___-and-Monads/Structures-and-Inheritance/#troll" title="Definition of example"><span class="const token" data-binding="const-troll" data-verso-hover="1050" data-tippy-theme="lean" aria-expanded="false">troll</span></a></span><span class="text"></span><span class="text">
+</span><span class="text"></span><span class="text">has type</span><span class="text">
+  </span><span class="highlighted"><span class="const token" data-binding="const-Monster" data-verso-hover="1048" data-tippy-theme="lean" aria-expanded="false">Monster</span></span><span class="text"></span><span class="text">
+</span><span class="text">but is expected to have type</span><span class="text">
+  </span><span class="highlighted"><span class="const token" data-binding="const-MythicalCreature" data-verso-hover="1044" data-tippy-theme="lean" aria-expanded="false">MythicalCreature</span></span><span class="text"></span><span class="text">
+</span><span class="text"></span><span class="text">in the application</span><span class="text">
+  </span><span class="highlighted"><span class="const token" data-binding="const-MythicalCreature.large" data-verso-hover="1045" data-tippy-theme="lean" aria-expanded="false">MythicalCreature.large</span><span class="inter-text"> </span><a href="Functors___-Applicative-Functors___-and-Monads/Structures-and-Inheritance/#troll" title="Definition of example"><span class="const token" data-binding="const-troll" data-verso-hover="1050" data-tippy-theme="lean" aria-expanded="false">troll</span></a></span><span class="text"></span></span></pre><p>
+              Dot notation can also take inheritance into account for user-defined functions.
+A small creature is one that is not large:</p>
+            <code class="hl lean block" data-lean-context="examples"><span class="keyword token" data-binding="kw-occ-Lean.Parser.Command.definition-4791" data-tippy-theme="lean" aria-expanded="false">def</span><span class="inter-text"> </span><span class="const token" data-binding="const-MythicalCreature.small" data-verso-hover="1055" id="MythicalCreature___small" data-tippy-theme="lean" aria-expanded="false">MythicalCreature.small</span><span class="inter-text"> </span><span class="unknown token" data-binding="">(</span><span class="var token" data-binding="var-_uniq.9355" data-verso-hover="1047" data-tippy-theme="lean" aria-expanded="false">c</span><span class="inter-text"> </span><span class="unknown token" data-binding="">:</span><span class="inter-text"> </span><span class="const token" data-binding="const-MythicalCreature" data-verso-hover="1044" data-tippy-theme="lean" aria-expanded="false">MythicalCreature</span><span class="unknown token" data-binding="">)</span><span class="inter-text"> </span><span class="unknown token" data-binding="">:</span><span class="inter-text"> </span><a href="https://lean-lang.org/doc/reference/4.26.0/Basic-Types/Booleans/#Bool___false" title="Documentation for Bool in Lean Language Reference"><span class="const token" data-binding="const-Bool" data-verso-hover="48" data-tippy-theme="lean" aria-expanded="false">Bool</span></a><span class="inter-text"> </span><span class="unknown token" data-binding="">:=</span><span class="inter-text"> </span><span class="unknown token" data-binding="">!</span><span class="var token" data-binding="var-_uniq.9355" data-verso-hover="1047" data-tippy-theme="lean" aria-expanded="false">c</span><span class="unknown token" data-binding="">.</span><span class="const token" data-binding="const-MythicalCreature.large" data-verso-hover="1045" data-tippy-theme="lean" aria-expanded="false">large</span></code><p>
+              Evaluating <code class="hl lean inline" data-lean-context="examples"><a href="Functors___-Applicative-Functors___-and-Monads/Structures-and-Inheritance/#troll" title="Definition of example"><span class="const token" data-binding="const-troll" data-verso-hover="1050" data-tippy-theme="lean" aria-expanded="false">troll</span></a><span class="unknown token" data-binding="">.</span><a href="Functors___-Applicative-Functors___-and-Monads/Structures-and-Inheritance/#MythicalCreature___small" title="Definition of example"><span class="const token" data-binding="const-MythicalCreature.small" data-verso-hover="1055" data-tippy-theme="lean" aria-expanded="false">small</span></a></code> yields <code class="hl lean inline" data-lean-context="examples"><a href="https://lean-lang.org/doc/reference/4.26.0/Basic-Types/Booleans/#Bool___false" title="Documentation for Bool.false in Lean Language Reference"><span class="const token" data-binding="const-Bool.false" data-verso-hover="24" data-tippy-theme="lean" aria-expanded="false">false</span></a></code>, while attempting to evaluate <code class="hl lean inline" data-lean-context="examples"><a href="Functors___-Applicative-Functors___-and-Monads/Structures-and-Inheritance/#MythicalCreature___small" title="Definition of example"><span class="const token" data-binding="const-MythicalCreature.small" data-verso-hover="1055" data-tippy-theme="lean" aria-expanded="false">MythicalCreature.small</span></a><span class="inter-text"> </span><a href="Functors___-Applicative-Functors___-and-Monads/Structures-and-Inheritance/#troll" title="Definition of example"><span class="const token" data-binding="const-troll" data-verso-hover="1050" data-tippy-theme="lean" aria-expanded="false">troll</span></a></code> results in:</p>
+            <pre class="hl lean lean-output error"><span class="verso-message"><span class="text"></span><span class="text">Application type mismatch: The </span><span class="text">argument</span><span class="text">
+  </span><span class="highlighted"><a href="Functors___-Applicative-Functors___-and-Monads/Structures-and-Inheritance/#troll" title="Definition of example"><span class="const token" data-binding="const-troll" data-verso-hover="1050" data-tippy-theme="lean" aria-expanded="false">troll</span></a></span><span class="text"></span><span class="text">
+</span><span class="text"></span><span class="text">has type</span><span class="text">
+  </span><span class="highlighted"><span class="const token" data-binding="const-Monster" data-verso-hover="1048" data-tippy-theme="lean" aria-expanded="false">Monster</span></span><span class="text"></span><span class="text">
+</span><span class="text">but is expected to have type</span><span class="text">
+  </span><span class="highlighted"><span class="const token" data-binding="const-MythicalCreature" data-verso-hover="1044" data-tippy-theme="lean" aria-expanded="false">MythicalCreature</span></span><span class="text"></span><span class="text">
+</span><span class="text"></span><span class="text">in the application</span><span class="text">
+  </span><span class="highlighted"><a href="Functors___-Applicative-Functors___-and-Monads/Structures-and-Inheritance/#MythicalCreature___small" title="Definition of example"><span class="const token" data-binding="const-MythicalCreature.small" data-verso-hover="1055" data-tippy-theme="lean" aria-expanded="false">MythicalCreature.small</span></a><span class="inter-text"> </span><a href="Functors___-Applicative-Functors___-and-Monads/Structures-and-Inheritance/#troll" title="Definition of example"><span class="const token" data-binding="const-troll" data-verso-hover="1050" data-tippy-theme="lean" aria-expanded="false">troll</span></a></span><span class="text"></span></span></pre><section>
+              <h2 id="multiple-structure-inheritance">
+                5.1.1.&nbsp;Multiple Inheritance<span class="permalink-widget inline"><a href="find/?domain=Verso.Genre.Manual.section&amp;name=multiple-structure-inheritance" title="Permalink">🔗</a></span></h2>
+              <p>
+                A helper is a mythical creature that can provide assistance when given the correct payment:</p>
+              <code class="hl lean block" data-lean-context="examples"><span class="keyword token" data-binding="kw-occ-Lean.Parser.Command.structureTk-1140" data-tippy-theme="lean" aria-expanded="false">structure</span><span class="inter-text"> </span><span class="const token" data-binding="const-Helper" data-verso-hover="1056" data-tippy-theme="lean" aria-expanded="false">Helper</span><span class="inter-text"> </span><span class="keyword token" data-binding="kw-occ-Lean.Parser.Command.extends-1157" data-tippy-theme="lean" aria-expanded="false">extends</span><span class="inter-text"> </span><span class="const token" data-binding="const-MythicalCreature" data-verso-hover="1044" data-tippy-theme="lean" aria-expanded="false">MythicalCreature</span><span class="inter-text"> </span><span class="keyword token" data-binding="kw-occ-null-1182" data-tippy-theme="lean" aria-expanded="false">where</span><span class="inter-text">
+  </span><span class="const token" data-binding="const-Helper.assistance" data-verso-hover="1057" id="Helper___assistance" data-tippy-theme="lean" aria-expanded="false">assistance</span><span class="inter-text"> </span><span class="unknown token" data-binding="">:</span><span class="inter-text"> </span><a href="https://lean-lang.org/doc/reference/4.26.0/Basic-Types/Strings/#String___mk" title="Documentation for String in Lean Language Reference"><span class="const token" data-binding="const-String" data-verso-hover="9" data-tippy-theme="lean" aria-expanded="false">String</span></a><span class="inter-text">
+  </span><span class="const token" data-binding="const-Helper.payment" data-verso-hover="1058" id="Helper___payment" data-tippy-theme="lean" aria-expanded="false">payment</span><span class="inter-text"> </span><span class="unknown token" data-binding="">:</span><span class="inter-text"> </span><a href="https://lean-lang.org/doc/reference/4.26.0/Basic-Types/Strings/#String___mk" title="Documentation for String in Lean Language Reference"><span class="const token" data-binding="const-String" data-verso-hover="9" data-tippy-theme="lean" aria-expanded="false">String</span></a><span class="inter-text">
+</span><span class="keyword token" data-binding="kw-occ-null-1229" data-tippy-theme="lean" aria-expanded="false">deriving</span><span class="inter-text"> </span><a href="https://lean-lang.org/doc/reference/4.26.0/Interacting-with-Lean/#Repr___mk" title="Documentation for Repr in Lean Language Reference"><span class="const token" data-binding="const-Repr" data-verso-hover="210" data-tippy-theme="lean" aria-expanded="false">Repr</span></a></code><p>
+                For example, a <em>nisse</em> is a kind of small elf that's known to help around the house when provided with tasty porridge:</p>
+              <code class="hl lean block" data-lean-context="examples"><span class="keyword token" data-binding="kw-occ-Lean.Parser.Command.definition-2685" data-tippy-theme="lean" aria-expanded="false">def</span><span class="inter-text"> </span><span class="const token" data-binding="const-nisse" data-verso-hover="1059" id="nisse" data-tippy-theme="lean" aria-expanded="false">nisse</span><span class="inter-text"> </span><span class="unknown token" data-binding="">:</span><span class="inter-text"> </span><span class="const token" data-binding="const-Helper" data-verso-hover="1056" data-tippy-theme="lean" aria-expanded="false">Helper</span><span class="inter-text"> </span><span class="keyword token" data-binding="kw-occ-Lean.Parser.Command.whereStructInst-2704" data-tippy-theme="lean" aria-expanded="false">where</span><span class="inter-text">
+  </span><span class="const token" data-binding="const-MythicalCreature.large" data-verso-hover="1051" data-tippy-theme="lean" aria-expanded="false">large</span><span class="inter-text"> </span><span class="unknown token" data-binding="">:=</span><span class="inter-text"> </span><a href="https://lean-lang.org/doc/reference/4.26.0/Basic-Types/Booleans/#Bool___false" title="Documentation for Bool.false in Lean Language Reference"><span class="const token" data-binding="const-Bool.false" data-verso-hover="24" data-tippy-theme="lean" aria-expanded="false">false</span></a><span class="inter-text">
+  </span><a href="Functors___-Applicative-Functors___-and-Monads/Structures-and-Inheritance/#Helper___assistance" title="Definition of example"><span class="const token" data-binding="const-Helper.assistance" data-verso-hover="493" data-tippy-theme="lean" aria-expanded="false">assistance</span></a><span class="inter-text"> </span><span class="unknown token" data-binding="">:=</span><span class="inter-text"> </span><span class="literal string token" data-binding="" data-verso-hover="1060" data-tippy-theme="lean" aria-expanded="false">"household tasks"</span><span class="inter-text">
+  </span><a href="Functors___-Applicative-Functors___-and-Monads/Structures-and-Inheritance/#Helper___payment" title="Definition of example"><span class="const token" data-binding="const-Helper.payment" data-verso-hover="493" data-tippy-theme="lean" aria-expanded="false">payment</span></a><span class="inter-text"> </span><span class="unknown token" data-binding="">:=</span><span class="inter-text"> </span><span class="literal string token" data-binding="" data-verso-hover="1061" data-tippy-theme="lean" aria-expanded="false">"porridge"</span></code><p>
+                If domesticated, trolls make excellent helpers.
+They are strong enough to plow a whole field in a single night, though they require model goats to keep them satisfied with their lot in life.
+A monstrous assistant is a monster that is also a helper:</p>
+              <code class="hl lean block" data-lean-context="examples"><span class="keyword token" data-binding="kw-occ-Lean.Parser.Command.structureTk-2836" data-tippy-theme="lean" aria-expanded="false">structure</span><span class="inter-text"> </span><span class="const token" data-binding="const-MonstrousAssistant" data-verso-hover="1062" data-tippy-theme="lean" aria-expanded="false">MonstrousAssistant</span><span class="inter-text"> </span><span class="keyword token" data-binding="kw-occ-Lean.Parser.Command.extends-2865" data-tippy-theme="lean" aria-expanded="false">extends</span><span class="inter-text"> </span><span class="const token" data-binding="const-Monster" data-verso-hover="1048" data-tippy-theme="lean" aria-expanded="false">Monster</span><span class="unknown token" data-binding="">,</span><span class="inter-text"> </span><span class="const token" data-binding="const-Helper" data-verso-hover="1056" data-tippy-theme="lean" aria-expanded="false">Helper</span><span class="inter-text"> </span><span class="keyword token" data-binding="kw-occ-null-2889" data-tippy-theme="lean" aria-expanded="false">where</span><span class="inter-text">
+</span><span class="keyword token" data-binding="kw-occ-null-2895" data-tippy-theme="lean" aria-expanded="false">deriving</span><span class="inter-text"> </span><a href="https://lean-lang.org/doc/reference/4.26.0/Interacting-with-Lean/#Repr___mk" title="Documentation for Repr in Lean Language Reference"><span class="const token" data-binding="const-Repr" data-verso-hover="210" data-tippy-theme="lean" aria-expanded="false">Repr</span></a></code><p>
+                A value of this structure type must fill in all of the fields from both parent structures:</p>
+              <code class="hl lean block" data-lean-context="examples"><span class="keyword token" data-binding="kw-occ-Lean.Parser.Command.definition-3951" data-tippy-theme="lean" aria-expanded="false">def</span><span class="inter-text"> </span><span class="const token" data-binding="const-domesticatedTroll" data-verso-hover="1063" id="domesticatedTroll" data-tippy-theme="lean" aria-expanded="false">domesticatedTroll</span><span class="inter-text"> </span><span class="unknown token" data-binding="">:</span><span class="inter-text"> </span><span class="const token" data-binding="const-MonstrousAssistant" data-verso-hover="1062" data-tippy-theme="lean" aria-expanded="false">MonstrousAssistant</span><span class="inter-text"> </span><span class="keyword token" data-binding="kw-occ-Lean.Parser.Command.whereStructInst-3994" data-tippy-theme="lean" aria-expanded="false">where</span><span class="inter-text">
+  </span><span class="const token" data-binding="const-MythicalCreature.large" data-verso-hover="1051" data-tippy-theme="lean" aria-expanded="false">large</span><span class="inter-text"> </span><span class="unknown token" data-binding="">:=</span><span class="inter-text"> </span><a href="https://lean-lang.org/doc/reference/4.26.0/Basic-Types/Booleans/#Bool___false" title="Documentation for Bool.true in Lean Language Reference"><span class="const token" data-binding="const-Bool.true" data-verso-hover="107" data-tippy-theme="lean" aria-expanded="false">true</span></a><span class="inter-text">
+  </span><span class="const token" data-binding="const-MonstrousAssistant.assistance" data-verso-hover="493" data-tippy-theme="lean" aria-expanded="false">assistance</span><span class="inter-text"> </span><span class="unknown token" data-binding="">:=</span><span class="inter-text"> </span><span class="literal string token" data-binding="" data-verso-hover="1064" data-tippy-theme="lean" aria-expanded="false">"heavy labor"</span><span class="inter-text">
+  </span><span class="const token" data-binding="const-MonstrousAssistant.payment" data-verso-hover="493" data-tippy-theme="lean" aria-expanded="false">payment</span><span class="inter-text"> </span><span class="unknown token" data-binding="">:=</span><span class="inter-text"> </span><span class="literal string token" data-binding="" data-verso-hover="1065" data-tippy-theme="lean" aria-expanded="false">"toy goats"</span><span class="inter-text">
+  </span><a href="Functors___-Applicative-Functors___-and-Monads/Structures-and-Inheritance/#Monster___vulnerability" title="Definition of example"><span class="const token" data-binding="const-Monster.vulnerability" data-verso-hover="493" data-tippy-theme="lean" aria-expanded="false">vulnerability</span></a><span class="inter-text"> </span><span class="unknown token" data-binding="">:=</span><span class="inter-text"> </span><span class="literal string token" data-binding="" data-verso-hover="1052" data-tippy-theme="lean" aria-expanded="false">"sunlight"</span></code><p>
+                Both of the parent structure types extend <code class="hl lean inline" data-lean-context="examples"><span class="const token" data-binding="const-MythicalCreature" data-verso-hover="1044" data-tippy-theme="lean" aria-expanded="false">MythicalCreature</span></code>.
+If multiple inheritance were implemented naïvely, then this could lead to a “diamond problem”, where it would be unclear which path to <code class="hl lean inline" data-lean-context="examples"><span class="const token" data-binding="const-MythicalCreature.large" data-verso-hover="1045" data-tippy-theme="lean" aria-expanded="false">large</span></code> should be taken from a given <code class="hl lean inline" data-lean-context="examples"><span class="const token" data-binding="const-MonstrousAssistant" data-verso-hover="1062" data-tippy-theme="lean" aria-expanded="false">MonstrousAssistant</span></code>.
+Should it take <code>large</code> from the contained <code class="hl lean inline" data-lean-context="examples"><span class="const token" data-binding="const-Monster" data-verso-hover="1048" data-tippy-theme="lean" aria-expanded="false">Monster</span></code> or from the contained <code class="hl lean inline" data-lean-context="examples"><span class="const token" data-binding="const-Helper" data-verso-hover="1056" data-tippy-theme="lean" aria-expanded="false">Helper</span></code>?
+In Lean, the answer is that the first specified path to the grandparent structure is taken, and the additional parent structures' fields are copied rather than having the new structure include both parents directly.</p>
+              <p>
+                This can be seen by examining the signature of the constructor for <code class="hl lean inline" data-lean-context="examples"><span class="const token" data-binding="const-MonstrousAssistant" data-verso-hover="1062" data-tippy-theme="lean" aria-expanded="false">MonstrousAssistant</span></code>:</p>
+              <code class="hl lean block" data-lean-context="examples"><span class="has-info information" data-tippy-theme="info message" aria-expanded="false"><span class="hover-container"><span class="hover-info messages"><code class="verso-message information"><span class="text"></span><span class="highlighted"><span class="inter-text"></span><span class="const token" data-binding="const-MonstrousAssistant.mk" data-verso-hover="1066" data-tippy-theme="lean" aria-expanded="false">MonstrousAssistant.mk</span><span class="inter-text"> </span><span class="unknown token" data-binding="">(</span><span class="var token" data-binding="var-_pp_uniq.1" data-verso-hover="1067" data-tippy-theme="lean" aria-expanded="false">toMonster</span><span class="inter-text"> </span><span class="unknown token" data-binding="">:</span><span class="inter-text"> </span><span class="const token" data-binding="const-Monster" data-verso-hover="1048" data-tippy-theme="lean" aria-expanded="false">Monster</span><span class="unknown token" data-binding="">)</span><span class="inter-text"> </span><span class="unknown token" data-binding="">(</span><span class="var token" data-binding="var-_pp_uniq.2" data-verso-hover="47" data-tippy-theme="lean" aria-expanded="false">assistance</span><span class="inter-text"> </span><span class="var token" data-binding="var-_pp_uniq.3" data-verso-hover="47" data-tippy-theme="lean" aria-expanded="false">payment</span><span class="inter-text"> </span><span class="unknown token" data-binding="">:</span><span class="inter-text"> </span><a href="https://lean-lang.org/doc/reference/4.26.0/Basic-Types/Strings/#String___mk" title="Documentation for String in Lean Language Reference"><span class="const token" data-binding="const-String" data-verso-hover="9" data-tippy-theme="lean" aria-expanded="false">String</span></a><span class="unknown token" data-binding="">)</span><span class="inter-text"> </span><span class="unknown token" data-binding="">:</span><span class="inter-text"> </span><span class="const token" data-binding="const-MonstrousAssistant" data-verso-hover="1062" data-tippy-theme="lean" aria-expanded="false">MonstrousAssistant</span></span></code></span></span><a href="https://lean-lang.org/doc/reference/4.26.0/Interacting-with-Lean/#Lean___Parser___Command___check" title="Documentation for syntax in Lean Language Reference"><span class="keyword token" data-binding="kw-occ-Lean.Parser.Command.check-3277" data-tippy-theme="lean" aria-expanded="false">#check</span></a></span><span class="inter-text"> </span><span class="const token" data-binding="const-MonstrousAssistant.mk" data-verso-hover="1066" data-tippy-theme="lean" aria-expanded="false">MonstrousAssistant.mk</span></code><pre class="hl lean lean-output information"><span class="verso-message"><span class="text"></span><span class="highlighted"><span class="const token" data-binding="const-MonstrousAssistant.mk" data-verso-hover="1066" data-tippy-theme="lean" aria-expanded="false">MonstrousAssistant.mk</span><span class="inter-text"> </span><span class="unknown token" data-binding="">(</span><span class="var token" data-binding="var-_pp_uniq.1" data-verso-hover="1067" data-tippy-theme="lean" aria-expanded="false">toMonster</span><span class="inter-text"> </span><span class="unknown token" data-binding="">:</span><span class="inter-text"> </span><span class="const token" data-binding="const-Monster" data-verso-hover="1048" data-tippy-theme="lean" aria-expanded="false">Monster</span><span class="unknown token" data-binding="">)</span><span class="inter-text"> </span><span class="unknown token" data-binding="">(</span><span class="var token" data-binding="var-_pp_uniq.2" data-verso-hover="47" data-tippy-theme="lean" aria-expanded="false">assistance</span><span class="inter-text"> </span><span class="var token" data-binding="var-_pp_uniq.3" data-verso-hover="47" data-tippy-theme="lean" aria-expanded="false">payment</span><span class="inter-text"> </span><span class="unknown token" data-binding="">:</span><span class="inter-text"> </span><a href="https://lean-lang.org/doc/reference/4.26.0/Basic-Types/Strings/#String___mk" title="Documentation for String in Lean Language Reference"><span class="const token" data-binding="const-String" data-verso-hover="9" data-tippy-theme="lean" aria-expanded="false">String</span></a><span class="unknown token" data-binding="">)</span><span class="inter-text"> </span><span class="unknown token" data-binding="">:</span><span class="inter-text"> </span><span class="const token" data-binding="const-MonstrousAssistant" data-verso-hover="1062" data-tippy-theme="lean" aria-expanded="false">MonstrousAssistant</span></span></span></pre><p>
+                It takes a <code class="hl lean inline" data-lean-context="examples"><span class="const token" data-binding="const-Monster" data-verso-hover="1048" data-tippy-theme="lean" aria-expanded="false">Monster</span></code> as an argument, along with the two fields that <code class="hl lean inline" data-lean-context="examples"><span class="const token" data-binding="const-Helper" data-verso-hover="1056" data-tippy-theme="lean" aria-expanded="false">Helper</span></code> introduces on top of <code class="hl lean inline" data-lean-context="examples"><span class="const token" data-binding="const-MythicalCreature" data-verso-hover="1044" data-tippy-theme="lean" aria-expanded="false">MythicalCreature</span></code>.
+Similarly, while <code class="hl lean inline" data-lean-context="examples"><span class="const token" data-binding="const-MonstrousAssistant.toMonster" data-verso-hover="1068" data-tippy-theme="lean" aria-expanded="false">MonstrousAssistant.toMonster</span></code> merely extracts the <code class="hl lean inline" data-lean-context="examples"><span class="const token" data-binding="const-Monster" data-verso-hover="1048" data-tippy-theme="lean" aria-expanded="false">Monster</span></code> from the constructor, <code class="hl lean inline" data-lean-context="examples"><span class="const token" data-binding="const-MonstrousAssistant.toHelper" data-verso-hover="1069" data-tippy-theme="lean" aria-expanded="false">MonstrousAssistant.toHelper</span></code> has no <code class="hl lean inline" data-lean-context="examples"><span class="const token" data-binding="const-Helper" data-verso-hover="1056" data-tippy-theme="lean" aria-expanded="false">Helper</span></code> to extract.
+The <code class="hl lean inline" data-lean-context="examples"><span class="keyword token" data-binding="" data-tippy-theme="lean" aria-expanded="false">#print</span></code> command exposes its implementation:</p>
+              <code class="hl lean block" data-lean-context="examples"><span class="has-info information" data-tippy-theme="info message" aria-expanded="false"><span class="hover-container"><span class="hover-info messages"><code class="verso-message information"><span class="text"></span><span class="text"></span><span class="text">@[</span><span class="text">reducible</span><span class="text">] </span><span class="text">def</span><span class="text"> </span><span class="text">MonstrousAssistant.toHelper</span><span class="text"></span><span class="text"> : </span><span class="highlighted"><span class="inter-text"></span><span class="const token" data-binding="const-MonstrousAssistant" data-verso-hover="1062" data-tippy-theme="lean" aria-expanded="false">MonstrousAssistant</span><span class="inter-text"> </span><span class="unknown token" data-binding="">→</span><span class="inter-text"> </span><span class="const token" data-binding="const-Helper" data-verso-hover="1056" data-tippy-theme="lean" aria-expanded="false">Helper</span></span><span class="text"> :=</span><span class="text">
+</span><span class="highlighted"><span class="keyword token" data-binding="" data-tippy-theme="lean" aria-expanded="false">fun</span><span class="inter-text"> </span><span class="var token" data-binding="var-_pp_uniq.1" data-verso-hover="1070" data-tippy-theme="lean" aria-expanded="false">self</span><span class="inter-text"> </span><span class="unknown token" data-binding="">=&gt;</span><span class="inter-text"> </span><span class="const token" data-binding="const-Helper.mk" data-verso-hover="1071" data-tippy-theme="lean" aria-expanded="false">{</span><span class="inter-text"> </span><span class="const token" data-binding="const-Helper.toMythicalCreature" data-verso-hover="1072" data-tippy-theme="lean" aria-expanded="false">toMythicalCreature</span><span class="inter-text"> </span><span class="const token" data-binding="const-Helper.mk" data-verso-hover="1071" data-tippy-theme="lean" aria-expanded="false">:=</span><span class="inter-text"> </span><span class="var token" data-binding="var-_pp_uniq.1" data-verso-hover="1070" data-tippy-theme="lean" aria-expanded="false">self</span><span class="unknown token" data-binding="">.</span><span class="const token" data-binding="const-Monster.toMythicalCreature" data-verso-hover="1054" data-tippy-theme="lean" aria-expanded="false">toMythicalCreature</span><span class="const token" data-binding="const-Helper.mk" data-verso-hover="1071" data-tippy-theme="lean" aria-expanded="false">,</span><span class="inter-text"> </span><a href="Functors___-Applicative-Functors___-and-Monads/Structures-and-Inheritance/#Helper___assistance" title="Definition of example"><span class="const token" data-binding="const-Helper.assistance" data-verso-hover="493" data-tippy-theme="lean" aria-expanded="false">assistance</span></a><span class="inter-text"> </span><span class="const token" data-binding="const-Helper.mk" data-verso-hover="1071" data-tippy-theme="lean" aria-expanded="false">:=</span><span class="inter-text"> </span><span class="var token" data-binding="var-_pp_uniq.1" data-verso-hover="1070" data-tippy-theme="lean" aria-expanded="false">self</span><span class="unknown token" data-binding="">.</span><span class="const token" data-binding="const-MonstrousAssistant.assistance" data-verso-hover="1073" data-tippy-theme="lean" aria-expanded="false">assistance</span><span class="const token" data-binding="const-Helper.mk" data-verso-hover="1071" data-tippy-theme="lean" aria-expanded="false">,</span><span class="inter-text"> </span><a href="Functors___-Applicative-Functors___-and-Monads/Structures-and-Inheritance/#Helper___payment" title="Definition of example"><span class="const token" data-binding="const-Helper.payment" data-verso-hover="493" data-tippy-theme="lean" aria-expanded="false">payment</span></a><span class="inter-text"> </span><span class="const token" data-binding="const-Helper.mk" data-verso-hover="1071" data-tippy-theme="lean" aria-expanded="false">:=</span><span class="inter-text"> </span><span class="var token" data-binding="var-_pp_uniq.1" data-verso-hover="1070" data-tippy-theme="lean" aria-expanded="false">self</span><span class="unknown token" data-binding="">.</span><span class="const token" data-binding="const-MonstrousAssistant.payment" data-verso-hover="1074" data-tippy-theme="lean" aria-expanded="false">payment</span><span class="inter-text"> </span><span class="const token" data-binding="const-Helper.mk" data-verso-hover="1071" data-tippy-theme="lean" aria-expanded="false">}</span></span></code></span></span><span class="keyword token" data-binding="kw-occ-Lean.Parser.Command.print-3839" data-tippy-theme="lean" aria-expanded="false">#print</span></span><span class="inter-text"> </span><span class="const token" data-binding="const-MonstrousAssistant.toHelper" data-verso-hover="1069" data-tippy-theme="lean" aria-expanded="false">MonstrousAssistant.toHelper</span></code><pre class="hl lean lean-output information"><span class="verso-message"><span class="text"></span><span class="text"></span><span class="text">@[</span><span class="text">reducible</span><span class="text">] </span><span class="text">def</span><span class="text"> </span><span class="text">MonstrousAssistant.toHelper</span><span class="text"></span><span class="text"> : </span><span class="highlighted"><span class="const token" data-binding="const-MonstrousAssistant" data-verso-hover="1062" data-tippy-theme="lean" aria-expanded="false">MonstrousAssistant</span><span class="inter-text"> </span><span class="unknown token" data-binding="">→</span><span class="inter-text"> </span><span class="const token" data-binding="const-Helper" data-verso-hover="1056" data-tippy-theme="lean" aria-expanded="false">Helper</span></span><span class="text"> :=</span><span class="text">
+</span><span class="highlighted"><span class="keyword token" data-binding="" data-tippy-theme="lean" aria-expanded="false">fun</span><span class="inter-text"> </span><span class="var token" data-binding="var-_pp_uniq.1" data-verso-hover="1070" data-tippy-theme="lean" aria-expanded="false">self</span><span class="inter-text"> </span><span class="unknown token" data-binding="">=&gt;</span><span class="inter-text"> </span><span class="const token" data-binding="const-Helper.mk" data-verso-hover="1071" data-tippy-theme="lean" aria-expanded="false">{</span><span class="inter-text"> </span><span class="const token" data-binding="const-Helper.toMythicalCreature" data-verso-hover="1072" data-tippy-theme="lean" aria-expanded="false">toMythicalCreature</span><span class="inter-text"> </span><span class="const token" data-binding="const-Helper.mk" data-verso-hover="1071" data-tippy-theme="lean" aria-expanded="false">:=</span><span class="inter-text"> </span><span class="var token" data-binding="var-_pp_uniq.1" data-verso-hover="1070" data-tippy-theme="lean" aria-expanded="false">self</span><span class="unknown token" data-binding="">.</span><span class="const token" data-binding="const-Monster.toMythicalCreature" data-verso-hover="1054" data-tippy-theme="lean" aria-expanded="false">toMythicalCreature</span><span class="const token" data-binding="const-Helper.mk" data-verso-hover="1071" data-tippy-theme="lean" aria-expanded="false">,</span><span class="inter-text"> </span><a href="Functors___-Applicative-Functors___-and-Monads/Structures-and-Inheritance/#Helper___assistance" title="Definition of example"><span class="const token" data-binding="const-Helper.assistance" data-verso-hover="493" data-tippy-theme="lean" aria-expanded="false">assistance</span></a><span class="inter-text"> </span><span class="const token" data-binding="const-Helper.mk" data-verso-hover="1071" data-tippy-theme="lean" aria-expanded="false">:=</span><span class="inter-text"> </span><span class="var token" data-binding="var-_pp_uniq.1" data-verso-hover="1070" data-tippy-theme="lean" aria-expanded="false">self</span><span class="unknown token" data-binding="">.</span><span class="const token" data-binding="const-MonstrousAssistant.assistance" data-verso-hover="1073" data-tippy-theme="lean" aria-expanded="false">assistance</span><span class="const token" data-binding="const-Helper.mk" data-verso-hover="1071" data-tippy-theme="lean" aria-expanded="false">,</span><span class="inter-text"> </span><a href="Functors___-Applicative-Functors___-and-Monads/Structures-and-Inheritance/#Helper___payment" title="Definition of example"><span class="const token" data-binding="const-Helper.payment" data-verso-hover="493" data-tippy-theme="lean" aria-expanded="false">payment</span></a><span class="inter-text"> </span><span class="const token" data-binding="const-Helper.mk" data-verso-hover="1071" data-tippy-theme="lean" aria-expanded="false">:=</span><span class="inter-text"> </span><span class="var token" data-binding="var-_pp_uniq.1" data-verso-hover="1070" data-tippy-theme="lean" aria-expanded="false">self</span><span class="unknown token" data-binding="">.</span><span class="const token" data-binding="const-MonstrousAssistant.payment" data-verso-hover="1074" data-tippy-theme="lean" aria-expanded="false">payment</span><span class="inter-text"> </span><span class="const token" data-binding="const-Helper.mk" data-verso-hover="1071" data-tippy-theme="lean" aria-expanded="false">}</span></span></span></pre><p>
+                This function constructs a <code class="hl lean inline" data-lean-context="examples"><span class="const token" data-binding="const-Helper" data-verso-hover="1056" data-tippy-theme="lean" aria-expanded="false">Helper</span></code> from the fields of <code class="hl lean inline" data-lean-context="examples"><span class="const token" data-binding="const-MonstrousAssistant" data-verso-hover="1062" data-tippy-theme="lean" aria-expanded="false">MonstrousAssistant</span></code>.
+The <code>@[reducible]</code> attribute has the same effect as writing <code class="hl lean inline" data-lean-context="examples"><span class="keyword token" data-binding="" data-tippy-theme="lean" aria-expanded="false">abbrev</span></code>.</p>
+              <section>
+                <h3 id="inheritance-defaults">
+                  5.1.1.1.&nbsp;Default Declarations<span class="permalink-widget inline"><a href="find/?domain=Verso.Genre.Manual.section&amp;name=inheritance-defaults" title="Permalink">🔗</a></span></h3>
+                <p>
+                  When one structure inherits from another, default field definitions can be used to instantiate the parent structure's fields based on the child structure's fields.
+If more size specificity is required than whether a creature is large or not, a dedicated datatype describing sizes can be used together with inheritance, yielding a structure in which the <code class="hl lean inline" data-lean-context="examples"><span class="const token" data-binding="const-MythicalCreature.large" data-verso-hover="1045" data-tippy-theme="lean" aria-expanded="false">large</span></code> field is computed from the contents of the <code class="hl lean inline" data-lean-context="examples"><span class="const token" data-binding="const-SizedCreature.size" data-verso-hover="1075" data-tippy-theme="lean" aria-expanded="false">size</span></code> field:</p>
+                <code class="hl lean block" data-lean-context="examples"><span class="keyword token" data-binding="kw-occ-Lean.Parser.Command.inductive-4160" data-verso-hover="106" data-tippy-theme="lean" aria-expanded="false">inductive</span><span class="inter-text"> </span><span class="const token" data-binding="const-Size" data-verso-hover="1076" id="Size" data-tippy-theme="lean" aria-expanded="false">Size</span><span class="inter-text"> </span><span class="keyword token" data-binding="kw-occ-null-4175" data-tippy-theme="lean" aria-expanded="false">where</span><span class="inter-text">
+  </span><span class="unknown token" data-binding="">|</span><span class="inter-text"> </span><span class="const token" data-binding="const-Size.small" data-verso-hover="1077" id="Size___small" data-tippy-theme="lean" aria-expanded="false">small</span><span class="inter-text">
+  </span><span class="unknown token" data-binding="">|</span><span class="inter-text"> </span><span class="const token" data-binding="const-Size.medium" data-verso-hover="1078" id="Size___medium" data-tippy-theme="lean" aria-expanded="false">medium</span><span class="inter-text">
+  </span><span class="unknown token" data-binding="">|</span><span class="inter-text"> </span><span class="const token" data-binding="const-Size.large" data-verso-hover="1079" id="Size___large" data-tippy-theme="lean" aria-expanded="false">large</span><span class="inter-text">
+</span><span class="keyword token" data-binding="kw-occ-null-4212" data-tippy-theme="lean" aria-expanded="false">deriving</span><span class="inter-text"> </span><a href="https://lean-lang.org/doc/reference/4.26.0/Type-Classes/Basic-Classes/#BEq___mk" title="Documentation for BEq in Lean Language Reference"><span class="const token" data-binding="const-BEq" data-verso-hover="542" data-tippy-theme="lean" aria-expanded="false">BEq</span></a><span class="inter-text">
+
+</span><span class="keyword token" data-binding="kw-occ-Lean.Parser.Command.structureTk-4226" data-tippy-theme="lean" aria-expanded="false">structure</span><span class="inter-text"> </span><span class="const token" data-binding="const-SizedCreature" data-verso-hover="1080" id="SizedCreature" data-tippy-theme="lean" aria-expanded="false">SizedCreature</span><span class="inter-text"> </span><span class="keyword token" data-binding="kw-occ-Lean.Parser.Command.extends-4250" data-tippy-theme="lean" aria-expanded="false">extends</span><span class="inter-text"> </span><span class="const token" data-binding="const-MythicalCreature" data-verso-hover="1044" data-tippy-theme="lean" aria-expanded="false">MythicalCreature</span><span class="inter-text"> </span><span class="keyword token" data-binding="kw-occ-null-4275" data-tippy-theme="lean" aria-expanded="false">where</span><span class="inter-text">
+  </span><span class="const token" data-binding="const-SizedCreature.size" data-verso-hover="1075" data-tippy-theme="lean" aria-expanded="false">size</span><span class="inter-text"> </span><span class="unknown token" data-binding="">:</span><span class="inter-text"> </span><a href="Functors___-Applicative-Functors___-and-Monads/Structures-and-Inheritance/#Size" title="Definition of example"><span class="const token" data-binding="const-Size" data-verso-hover="1076" data-tippy-theme="lean" aria-expanded="false">Size</span></a><span class="inter-text">
+  </span><span class="const token" data-binding="const-MythicalCreature.large" data-verso-hover="1045" data-tippy-theme="lean" aria-expanded="false">large</span><span class="inter-text"> </span><span class="unknown token" data-binding="">:=</span><span class="inter-text"> </span><span class="var token" data-binding="var-_uniq.8880" data-verso-hover="1081" data-tippy-theme="lean" aria-expanded="false">size</span><span class="inter-text"> </span><span class="unknown token" data-binding="">==</span><span class="inter-text"> </span><a href="Functors___-Applicative-Functors___-and-Monads/Structures-and-Inheritance/#Size___large" title="Definition of example"><span class="const token" data-binding="const-Size.large" data-verso-hover="1079" data-tippy-theme="lean" aria-expanded="false">Size.large</span></a></code><p>
+                  This default definition is only a default definition, however.
+Unlike property inheritance in a language like C# or Scala, the definitions in the child structure are only used when no specific value for <code class="hl lean inline" data-lean-context="examples"><span class="const token" data-binding="const-MythicalCreature.large" data-verso-hover="1045" data-tippy-theme="lean" aria-expanded="false">large</span></code> is provided, and nonsensical results can occur:</p>
+                <code class="hl lean block" data-lean-context="examples"><span class="keyword token" data-binding="kw-occ-Lean.Parser.Command.definition-4383" data-tippy-theme="lean" aria-expanded="false">def</span><span class="inter-text"> </span><span class="const token" data-binding="const-nonsenseCreature" data-verso-hover="1082" id="nonsenseCreature" data-tippy-theme="lean" aria-expanded="false">nonsenseCreature</span><span class="inter-text"> </span><span class="unknown token" data-binding="">:</span><span class="inter-text"> </span><a href="Functors___-Applicative-Functors___-and-Monads/Structures-and-Inheritance/#SizedCreature" title="Definition of example"><span class="const token" data-binding="const-SizedCreature" data-verso-hover="1080" data-tippy-theme="lean" aria-expanded="false">SizedCreature</span></a><span class="inter-text"> </span><span class="keyword token" data-binding="kw-occ-Lean.Parser.Command.whereStructInst-4420" data-tippy-theme="lean" aria-expanded="false">where</span><span class="inter-text">
+  </span><span class="const token" data-binding="const-MythicalCreature.large" data-verso-hover="1051" data-tippy-theme="lean" aria-expanded="false">large</span><span class="inter-text"> </span><span class="unknown token" data-binding="">:=</span><span class="inter-text"> </span><a href="https://lean-lang.org/doc/reference/4.26.0/Basic-Types/Booleans/#Bool___false" title="Documentation for Bool.false in Lean Language Reference"><span class="const token" data-binding="const-Bool.false" data-verso-hover="24" data-tippy-theme="lean" aria-expanded="false">false</span></a><span class="inter-text">
+  </span><span class="const token" data-binding="const-SizedCreature.size" data-verso-hover="1083" data-tippy-theme="lean" aria-expanded="false">size</span><span class="inter-text"> </span><span class="unknown token" data-binding="">:=</span><span class="inter-text"> </span><a href="Functors___-Applicative-Functors___-and-Monads/Structures-and-Inheritance/#Size___large" title="Definition of example"><span class="const token" data-binding="const-Size.large" data-verso-hover="1079" data-tippy-theme="lean" aria-expanded="false">.large</span></a></code><p>
+                  If the child structure should not deviate from the parent structure, there are a few options:</p>
+                <ol start="1">
+                  <li>
+                    <p>
+                      Documenting the relationship, as is done for <code class="hl lean inline" data-lean-context="examples"><a href="https://lean-lang.org/doc/reference/4.26.0/Type-Classes/Basic-Classes/#BEq___mk" title="Documentation for BEq in Lean Language Reference"><span class="const token" data-binding="const-BEq" data-verso-hover="542" data-tippy-theme="lean" aria-expanded="false">BEq</span></a></code> and <code class="hl lean inline" data-lean-context="examples"><a href="https://lean-lang.org/doc/reference/4.26.0/Type-Classes/Basic-Classes/#Hashable___mk" title="Documentation for Hashable in Lean Language Reference"><span class="const token" data-binding="const-Hashable" data-verso-hover="571" data-tippy-theme="lean" aria-expanded="false">Hashable</span></a></code></p>
+                    </li>
+                  <li>
+                    <p>
+                      Defining a proposition that the fields are related appropriately, and designing the API to require evidence that the proposition is true where it matters</p>
+                    </li>
+                  <li>
+                    <p>
+                      Not using inheritance at all</p>
+                    </li>
+                  </ol>
+                <p>
+                  The second option could look like this:</p>
+                <code class="hl lean block" data-lean-context="examples"><span class="keyword token" data-binding="kw-occ-Lean.Parser.Command.abbrev-4516" data-tippy-theme="lean" aria-expanded="false">abbrev</span><span class="inter-text"> </span><span class="const token" data-binding="const-SizesMatch" data-verso-hover="1084" data-tippy-theme="lean" aria-expanded="false">SizesMatch</span><span class="inter-text"> </span><span class="unknown token" data-binding="">(</span><span class="var token" data-binding="var-_uniq.9294" data-verso-hover="1085" data-tippy-theme="lean" aria-expanded="false">sc</span><span class="inter-text"> </span><span class="unknown token" data-binding="">:</span><span class="inter-text"> </span><a href="Functors___-Applicative-Functors___-and-Monads/Structures-and-Inheritance/#SizedCreature" title="Definition of example"><span class="const token" data-binding="const-SizedCreature" data-verso-hover="1080" data-tippy-theme="lean" aria-expanded="false">SizedCreature</span></a><span class="unknown token" data-binding="">)</span><span class="inter-text"> </span><span class="unknown token" data-binding="">:</span><span class="inter-text"> </span><span class="sort token" data-binding="sort-14430969920833713138" data-verso-hover="3" data-tippy-theme="lean" aria-expanded="false">Prop</span><span class="inter-text"> </span><span class="unknown token" data-binding="">:=</span><span class="inter-text">
+  </span><span class="var token" data-binding="var-_uniq.9294" data-verso-hover="1085" data-tippy-theme="lean" aria-expanded="false">sc</span><span class="unknown token" data-binding="">.</span><span class="const token" data-binding="const-MythicalCreature.large" data-verso-hover="1045" data-tippy-theme="lean" aria-expanded="false">large</span><span class="inter-text"> </span><span class="unknown token" data-binding="">=</span><span class="inter-text"> </span><span class="unknown token" data-binding="">(</span><span class="var token" data-binding="var-_uniq.9294" data-verso-hover="1085" data-tippy-theme="lean" aria-expanded="false">sc</span><span class="unknown token" data-binding="">.</span><span class="const token" data-binding="const-SizedCreature.size" data-verso-hover="1075" data-tippy-theme="lean" aria-expanded="false">size</span><span class="inter-text"> </span><span class="unknown token" data-binding="">==</span><span class="inter-text"> </span><a href="Functors___-Applicative-Functors___-and-Monads/Structures-and-Inheritance/#Size___large" title="Definition of example"><span class="const token" data-binding="const-Size.large" data-verso-hover="1079" data-tippy-theme="lean" aria-expanded="false">Size.large</span></a><span class="unknown token" data-binding="">)</span></code><p>
+                  Note that a single equality sign is used to indicate the equality <em>proposition</em>, while a double equality sign is used to indicate a function that checks equality and returns a <code class="hl lean inline" data-lean-context="examples"><a href="https://lean-lang.org/doc/reference/4.26.0/Basic-Types/Booleans/#Bool___false" title="Documentation for Bool in Lean Language Reference"><span class="const token" data-binding="const-Bool" data-verso-hover="48" data-tippy-theme="lean" aria-expanded="false">Bool</span></a></code>.
+<code class="hl lean inline" data-lean-context="examples"><span class="const token" data-binding="const-SizesMatch" data-verso-hover="1084" data-tippy-theme="lean" aria-expanded="false">SizesMatch</span></code> is defined as an <code class="hl lean inline" data-lean-context="examples"><span class="keyword token" data-binding="" data-tippy-theme="lean" aria-expanded="false">abbrev</span></code> because it should automatically be unfolded in proofs, so that <code class="hl lean inline" data-lean-context="examples"><a href="https://lean-lang.org/doc/reference/4.26.0/Tactic-Proofs/Tactic-Reference/#decide" title="Documentation for tactic in Lean Language Reference"><span class="keyword token" data-binding="" data-verso-hover="369" data-tippy-theme="lean" aria-expanded="false">decide</span></a></code> can see the equality that should be proven.</p>
+                <p>
+                  A <em>huldre</em> is a medium-sized mythical creature—in fact, they are the same size as humans.
+The two sized fields on <code class="hl lean inline" data-lean-context="examples"><span class="const token" data-binding="const-huldre" data-verso-hover="1086" data-tippy-theme="lean" aria-expanded="false">huldre</span></code> match one another:</p>
+                <code class="hl lean block" data-lean-context="examples"><span class="keyword token" data-binding="kw-occ-Lean.Parser.Command.definition-4652" data-tippy-theme="lean" aria-expanded="false">def</span><span class="inter-text"> </span><span class="const token" data-binding="const-huldre" data-verso-hover="1086" data-tippy-theme="lean" aria-expanded="false">huldre</span><span class="inter-text"> </span><span class="unknown token" data-binding="">:</span><span class="inter-text"> </span><a href="Functors___-Applicative-Functors___-and-Monads/Structures-and-Inheritance/#SizedCreature" title="Definition of example"><span class="const token" data-binding="const-SizedCreature" data-verso-hover="1080" data-tippy-theme="lean" aria-expanded="false">SizedCreature</span></a><span class="inter-text"> </span><span class="keyword token" data-binding="kw-occ-Lean.Parser.Command.whereStructInst-4679" data-tippy-theme="lean" aria-expanded="false">where</span><span class="inter-text">
+  </span><span class="const token" data-binding="const-SizedCreature.size" data-verso-hover="1083" data-tippy-theme="lean" aria-expanded="false">size</span><span class="inter-text"> </span><span class="unknown token" data-binding="">:=</span><span class="inter-text"> </span><a href="Functors___-Applicative-Functors___-and-Monads/Structures-and-Inheritance/#Size___medium" title="Definition of example"><span class="const token" data-binding="const-Size.medium" data-verso-hover="1078" data-tippy-theme="lean" aria-expanded="false">.medium</span></a><span class="inter-text">
+
+</span><span class="keyword token" data-binding="kw-occ-Lean.Parser.Command.example-4704" data-tippy-theme="lean" aria-expanded="false">example</span><span class="inter-text"> </span><span class="unknown token" data-binding="">:</span><span class="inter-text"> </span><span class="const token" data-binding="const-SizesMatch" data-verso-hover="1084" data-tippy-theme="lean" aria-expanded="false">SizesMatch</span><span class="inter-text"> </span><span class="const token" data-binding="const-huldre" data-verso-hover="1086" data-tippy-theme="lean" aria-expanded="false">huldre</span><span class="inter-text"> </span><span class="unknown token" data-binding="">:=</span><span class="inter-text"> </span><span class="tactic" data-tippy-theme="tactic" aria-expanded="false"><label for="tactic-state-8683707299605633226-4735-4737-65"><span class="keyword token" data-binding="kw-occ-Lean.Parser.Term.byTactic-4735" data-verso-hover="368" data-tippy-theme="lean" aria-expanded="false">by</span></label><input type="checkbox" class="tactic-toggle" id="tactic-state-8683707299605633226-4735-4737-65"><span class="tactic-state"><span class="goal"><span class="conclusion"><span class="prefix">⊢ </span><span class="type"><span class="inter-text"></span><span class="const token" data-binding="const-SizesMatch" data-verso-hover="1084" data-tippy-theme="lean" aria-expanded="false">SizesMatch</span><span class="inter-text"> </span><span class="const token" data-binding="const-huldre" data-verso-hover="1086" data-tippy-theme="lean" aria-expanded="false">huldre</span></span></span></span></span></span><span class="inter-text">
+  </span><span class="tactic" data-tippy-theme="tactic" aria-expanded="false"><label for="tactic-state-7-4740-4746-67"><a href="https://lean-lang.org/doc/reference/4.26.0/Tactic-Proofs/Tactic-Reference/#decide" title="Documentation for tactic in Lean Language Reference"><span class="keyword token" data-binding="kw-occ-Lean.Parser.Tactic.decide-4740" data-verso-hover="369" data-tippy-theme="lean" aria-expanded="false">decide</span></a></label><input type="checkbox" class="tactic-toggle" id="tactic-state-7-4740-4746-67"><span class="tactic-state">All goals completed! 🐙</span></span></code></section>
+              <section>
+                <h3 id="type-class-inheritance">
+                  5.1.1.2.&nbsp;Type Class Inheritance<span class="permalink-widget inline"><a href="find/?domain=Verso.Genre.Manual.section&amp;name=type-class-inheritance" title="Permalink">🔗</a></span></h3>
+                <p>
+                  Behind the scenes, type classes are structures.
+Defining a new type class defines a new structure, and defining an instance creates a value of that structure type.
+They are then added to internal tables in Lean that allow it to find the instances upon request.
+A consequence of this is that type classes may inherit from other type classes.</p>
+                <p>
+                  Because it uses precisely the same language features, type class inheritance supports all the features of structure inheritance, including multiple inheritance, default implementations of parent types' methods, and automatic collapsing of diamonds.
+This is useful in many of the same situations that multiple interface inheritance is useful in languages like Java, C# and Kotlin.
+By carefully designing type class inheritance hierarchies, programmers can get the best of both worlds: a fine-grained collection of independently-implementable abstractions, and automatic construction of these specific abstractions from larger, more general abstractions.
+</p>
+                </section>
+              </section>
+            </section>
+          <nav class="prev-next-buttons">
+            <a class="local-button active" href="Functors___-Applicative-Functors___-and-Monads/#Functional-Programming-in-Lean--Functors___-Applicative-Functors___-and-Monads" rel="prev" title="5. Functors, Applicative Functors, and Monads"><span class="arrow">←</span><span class="where">5. Functors, Applicative Functors, and Monads</span></a><a class="local-button active" href="Functors___-Applicative-Functors___-and-Monads/Applicative-Functors/#applicative" rel="next" title="5.2. Applicative Functors"><span class="where">5.2. Applicative Functors</span><span class="arrow">→</span></a></nav>
+          </div>
+        </main></div>
+    
+  
+
+</body></html>

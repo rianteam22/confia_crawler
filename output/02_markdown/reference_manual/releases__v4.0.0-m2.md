@@ -1,0 +1,4 @@
+[←Lean 4.0.0-m3 (2022-01-31)](releases/v4.0.0-m3/#release-v4___0___0-m3 "Lean 4.0.0-m3 \(2022-01-31\)")[Lean 4.0.0-m1 (2021-01-04)→](releases/v4.0.0-m1/#release-v4___0___0-m1 "Lean 4.0.0-m1 \(2021-01-04\)")
+#  Lean 4.0.0-m2 (2021-03-02)[🔗](find/?domain=Verso.Genre.Manual.section&name=release-v4___0___0-m2 "Permalink")
+This is the second milestone release of Lean 4. With too many improvements and bug fixes in almost all parts of the system to list, we would like to single out major improvements to `simp` and other built-in tactics as well as support for a goal view that make the proving experience more comfortable.
+[←Lean 4.0.0-m3 (2022-01-31)](releases/v4.0.0-m3/#release-v4___0___0-m3 "Lean 4.0.0-m3 \(2022-01-31\)")[Lean 4.0.0-m1 (2021-01-04)→](releases/v4.0.0-m1/#release-v4___0___0-m1 "Lean 4.0.0-m1 \(2021-01-04\)")

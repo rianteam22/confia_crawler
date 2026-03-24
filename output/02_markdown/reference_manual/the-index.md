@@ -1,0 +1,10590 @@
+[←Supported Platforms](platforms/#platforms "Supported Platforms")
+#  Index[🔗](find/?domain=Verso.Genre.Manual.section&name=The-Lean-Language-Reference--Index "Permalink")
+  1. [Symbols](the-index/#---index-hdr-#!%)
+  2. [A](the-index/#---index-hdr-A)
+  3. [B](the-index/#---index-hdr-B)
+  4. [C](the-index/#---index-hdr-C)
+  5. [D](the-index/#---index-hdr-D)
+  6. [E](the-index/#---index-hdr-E)
+  7. [F](the-index/#---index-hdr-F)
+  8. [G](the-index/#---index-hdr-G)
+  9. [H](the-index/#---index-hdr-H)
+  10. [I](the-index/#---index-hdr-I)
+  11. [J](the-index/#---index-hdr-J)
+  12. [K](the-index/#---index-hdr-K)
+  13. [L](the-index/#---index-hdr-L)
+  14. [M](the-index/#---index-hdr-M)
+  15. [N](the-index/#---index-hdr-N)
+  16. [O](the-index/#---index-hdr-O)
+  17. [P](the-index/#---index-hdr-P)
+  18. [Q](the-index/#---index-hdr-Q)
+  19. [R](the-index/#---index-hdr-R)
+  20. [S](the-index/#---index-hdr-S)
+  21. [T](the-index/#---index-hdr-T)
+  22. [U](the-index/#---index-hdr-U)
+  23. [V](the-index/#---index-hdr-V)
+  24. [W](the-index/#---index-hdr-W)
+  25. [X](the-index/#---index-hdr-X)
+  26. [Y](the-index/#---index-hdr-Y)
+  27. [Z](the-index/#---index-hdr-Z)
+
+
+##  Symbols
+  1. [`( ... )`](Tactic-Proofs/Targeted-Rewriting-with--conv/#Lean___Parser___Tactic___Conv___paren)
+  2. [`. ...`](Tactic-Proofs/Targeted-Rewriting-with--conv/#Lean___Parser___Tactic___Conv____FLQQ_conv________FLQQ_)
+  3. `<;>` [(0)](Tactic-Proofs/The-Tactic-Language/#_LT__SEMI__GT_) [(1)](Tactic-Proofs/Targeted-Rewriting-with--conv/#Lean___Parser___Tactic___Conv____FLQQ_conv__LT__SEMI__GT___FLQQ_)
+  4. [`{ ... }`](Tactic-Proofs/Targeted-Rewriting-with--conv/#Lean___Parser___Tactic___Conv___nestedConv)
+  5. [`·`](Tactic-Proofs/The-Tactic-Language/#___)
+  6. [`· ...`](Tactic-Proofs/Targeted-Rewriting-with--conv/#Lean___Parser___Tactic___Conv____FLQQ_conv________FLQQ_-next)
+  7. [Σ-types](Basic-Types/Tuples/#--index--next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next)
+  8. [ι-reduction](The-Type-System/Inductive-Types/#--index--next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next)
+  9. [`∎`](Tactic-Proofs/Tactic-Reference/#___-next)
+
+
+##  A
+  1. [`AR` (environment variable)](Build-Tools-and-Distribution/Lake/#AR)
+  2. [`Acc`](Definitions/Recursive-Definitions/#Acc___intro)
+  3. `Acc.intro`
+    1. [Constructor of `Acc`](Definitions/Recursive-Definitions/#Acc___intro)
+  4. `Access­Right`
+    1. [`IO.Access­Right`](IO/Files___-File-Handles___-and-Streams/#IO___AccessRight___mk)
+  5. [`Add`](Type-Classes/Basic-Classes/#Add___mk)
+  6. `Add.mk`
+    1. [Instance constructor of `Add`](Type-Classes/Basic-Classes/#Add___mk)
+  7. `Add­Right­Cancel`
+    1. [`Lean.Grind.Add­Right­Cancel`](The--grind--tactic/Algebraic-Solver-_LPAR_Commutative-Rings___-Fields_RPAR_/#Lean___Grind___AddRightCancel___mk)
+  8. [`Alternative`](Functors___-Monads-and--do--Notation/#Alternative___mk)
+  9. `Alternative.mk`
+    1. [Instance constructor of `Alternative`](Functors___-Monads-and--do--Notation/#Alternative___mk)
+  10. [`And`](Basic-Propositions/Logical-Connectives/#And___intro)
+  11. [`And.elim`](Basic-Propositions/Logical-Connectives/#And___elim)
+  12. `And.intro`
+    1. [Constructor of `And`](Basic-Propositions/Logical-Connectives/#And___intro)
+  13. [`And­Op`](Type-Classes/Basic-Classes/#AndOp___mk)
+  14. `AndOp.mk`
+    1. [Instance constructor of `And­Op`](Type-Classes/Basic-Classes/#AndOp___mk)
+  15. [`Append`](Type-Classes/Basic-Classes/#Append___mk)
+  16. `Append.mk`
+    1. [Instance constructor of `Append`](Type-Classes/Basic-Classes/#Append___mk)
+  17. [`Applicative`](Functors___-Monads-and--do--Notation/#Applicative___mk)
+  18. `Applicative.mk`
+    1. [Instance constructor of `Applicative`](Functors___-Monads-and--do--Notation/#Applicative___mk)
+  19. [`Array`](Basic-Types/Arrays/#Array___mk)
+  20. [`Array.all`](Basic-Types/Arrays/#Array___all)
+  21. [`Array.all­Diff`](Basic-Types/Arrays/#Array___allDiff)
+  22. [`Array.all­M`](Basic-Types/Arrays/#Array___allM)
+  23. [`Array.any`](Basic-Types/Arrays/#Array___any)
+  24. [`Array.any­M`](Basic-Types/Arrays/#Array___anyM)
+  25. [`Array.append`](Basic-Types/Arrays/#Array___append)
+  26. [`Array.append­List`](Basic-Types/Arrays/#Array___appendList)
+  27. [`Array.attach`](Basic-Types/Arrays/#Array___attach)
+  28. [`Array.attach­With`](Basic-Types/Arrays/#Array___attachWith)
+  29. [`Array.back`](Basic-Types/Arrays/#Array___back)
+  30. [`Array.back!`](Basic-Types/Arrays/#Array___back___-next)
+  31. [`Array.back?`](Basic-Types/Arrays/#Array___back___)
+  32. [`Array.bin­Insert`](Basic-Types/Arrays/#Array___binInsert)
+  33. [`Array.bin­Insert­M`](Basic-Types/Arrays/#Array___binInsertM)
+  34. [`Array.bin­Search`](Basic-Types/Arrays/#Array___binSearch)
+  35. [`Array.bin­Search­Contains`](Basic-Types/Arrays/#Array___binSearchContains)
+  36. [`Array.contains`](Basic-Types/Arrays/#Array___contains)
+  37. [`Array.count`](Basic-Types/Arrays/#Array___count)
+  38. [`Array.count­P`](Basic-Types/Arrays/#Array___countP)
+  39. [`Array.drop`](Basic-Types/Arrays/#Array___drop)
+  40. [`Array.elem`](Basic-Types/Arrays/#Array___elem)
+  41. [`Array.empty`](Basic-Types/Arrays/#Array___empty)
+  42. [`Array.empty­With­Capacity`](Basic-Types/Arrays/#Array___emptyWithCapacity)
+  43. [`Array.erase`](Basic-Types/Arrays/#Array___erase)
+  44. [`Array.erase­Idx`](Basic-Types/Arrays/#Array___eraseIdx)
+  45. [`Array.erase­Idx!`](Basic-Types/Arrays/#Array___eraseIdx___)
+  46. [`Array.erase­Idx­If­In­Bounds`](Basic-Types/Arrays/#Array___eraseIdxIfInBounds)
+  47. [`Array.erase­P`](Basic-Types/Arrays/#Array___eraseP)
+  48. [`Array.erase­Reps`](Basic-Types/Arrays/#Array___eraseReps)
+  49. [`Array.extract`](Basic-Types/Arrays/#Array___extract)
+  50. [`Array.filter`](Basic-Types/Arrays/#Array___filter)
+  51. [`Array.filter­M`](Basic-Types/Arrays/#Array___filterM)
+  52. [`Array.filter­Map`](Basic-Types/Arrays/#Array___filterMap)
+  53. [`Array.filter­Map­M`](Basic-Types/Arrays/#Array___filterMapM)
+  54. [`Array.filter­Rev­M`](Basic-Types/Arrays/#Array___filterRevM)
+  55. [`Array.filter­Sep­Elems`](Basic-Types/Arrays/#Array___filterSepElems)
+  56. [`Array.filter­Sep­Elems­M`](Basic-Types/Arrays/#Array___filterSepElemsM)
+  57. [`Array.fin­Idx­Of?`](Basic-Types/Arrays/#Array___finIdxOf___)
+  58. [`Array.fin­Range`](Basic-Types/Arrays/#Array___finRange)
+  59. [`Array.find?`](Basic-Types/Arrays/#Array___find___)
+  60. [`Array.find­Fin­Idx?`](Basic-Types/Arrays/#Array___findFinIdx___)
+  61. [`Array.find­Idx`](Basic-Types/Arrays/#Array___findIdx)
+  62. [`Array.find­Idx?`](Basic-Types/Arrays/#Array___findIdx___)
+  63. [`Array.find­Idx­M?`](Basic-Types/Arrays/#Array___findIdxM___)
+  64. [`Array.find­M?`](Basic-Types/Arrays/#Array___findM___)
+  65. [`Array.find­Rev?`](Basic-Types/Arrays/#Array___findRev___)
+  66. [`Array.find­Rev­M?`](Basic-Types/Arrays/#Array___findRevM___)
+  67. [`Array.find­Some!`](Basic-Types/Arrays/#Array___findSome___-next)
+  68. [`Array.find­Some?`](Basic-Types/Arrays/#Array___findSome___)
+  69. [`Array.find­Some­M?`](Basic-Types/Arrays/#Array___findSomeM___)
+  70. [`Array.find­Some­Rev?`](Basic-Types/Arrays/#Array___findSomeRev___)
+  71. [`Array.find­Some­Rev­M?`](Basic-Types/Arrays/#Array___findSomeRevM___)
+  72. [`Array.first­M`](Basic-Types/Arrays/#Array___firstM)
+  73. [`Array.flat­Map`](Basic-Types/Arrays/#Array___flatMap)
+  74. [`Array.flat­Map­M`](Basic-Types/Arrays/#Array___flatMapM)
+  75. [`Array.flatten`](Basic-Types/Arrays/#Array___flatten)
+  76. [`Array.foldl`](Basic-Types/Arrays/#Array___foldl)
+  77. [`Array.foldl­M`](Basic-Types/Arrays/#Array___foldlM)
+  78. [`Array.foldr`](Basic-Types/Arrays/#Array___foldr)
+  79. [`Array.foldr­M`](Basic-Types/Arrays/#Array___foldrM)
+  80. [`Array.for­M`](Basic-Types/Arrays/#Array___forM)
+  81. [`Array.for­Rev­M`](Basic-Types/Arrays/#Array___forRevM)
+  82. [`Array.get­D`](Basic-Types/Arrays/#Array___getD)
+  83. [`Array.get­Even­Elems`](Basic-Types/Arrays/#Array___getEvenElems)
+  84. [`Array.get­Max?`](Basic-Types/Arrays/#Array___getMax___)
+  85. [`Array.group­By­Key`](Basic-Types/Arrays/#Array___groupByKey)
+  86. [`Array.idx­Of`](Basic-Types/Arrays/#Array___idxOf)
+  87. [`Array.idx­Of?`](Basic-Types/Arrays/#Array___idxOf___)
+  88. [`Array.insert­Idx`](Basic-Types/Arrays/#Array___insertIdx)
+  89. [`Array.insert­Idx!`](Basic-Types/Arrays/#Array___insertIdx___)
+  90. [`Array.insert­Idx­If­In­Bounds`](Basic-Types/Arrays/#Array___insertIdxIfInBounds)
+  91. [`Array.insertion­Sort`](Basic-Types/Arrays/#Array___insertionSort)
+  92. [`Array.is­Empty`](Basic-Types/Arrays/#Array___isEmpty)
+  93. [`Array.is­Eqv`](Basic-Types/Arrays/#Array___isEqv)
+  94. [`Array.is­Prefix­Of`](Basic-Types/Arrays/#Array___isPrefixOf)
+  95. [`Array.iter`](Basic-Types/Arrays/#Array___iter)
+  96. [`Array.iter­From­Idx`](Basic-Types/Arrays/#Array___iterFromIdx)
+  97. [`Array.iter­From­Idx­M`](Basic-Types/Arrays/#Array___iterFromIdxM)
+  98. [`Array.iter­M`](Basic-Types/Arrays/#Array___iterM)
+  99. [`Array.leftpad`](Basic-Types/Arrays/#Array___leftpad)
+  100. [`Array.lex`](Basic-Types/Arrays/#Array___lex)
+  101. [`Array.map`](Basic-Types/Arrays/#Array___map)
+  102. [`Array.map­Fin­Idx`](Basic-Types/Arrays/#Array___mapFinIdx)
+  103. [`Array.map­Fin­Idx­M`](Basic-Types/Arrays/#Array___mapFinIdxM)
+  104. [`Array.map­Idx`](Basic-Types/Arrays/#Array___mapIdx)
+  105. [`Array.map­Idx­M`](Basic-Types/Arrays/#Array___mapIdxM)
+  106. [`Array.map­M`](Basic-Types/Arrays/#Array___mapM)
+  107. [`Array.map­M'`](Basic-Types/Arrays/#Array___mapM___)
+  108. [`Array.map­Mono`](Basic-Types/Arrays/#Array___mapMono)
+  109. [`Array.map­Mono­M`](Basic-Types/Arrays/#Array___mapMonoM)
+  110. `Array.mk`
+    1. [Constructor of `Array`](Basic-Types/Arrays/#Array___mk)
+  111. [`Array.modify`](Basic-Types/Arrays/#Array___modify)
+  112. [`Array.modify­M`](Basic-Types/Arrays/#Array___modifyM)
+  113. [`Array.modify­Op`](Basic-Types/Arrays/#Array___modifyOp)
+  114. [`Array.of­Fn`](Basic-Types/Arrays/#Array___ofFn)
+  115. [`Array.of­Subarray`](Basic-Types/Arrays/#Array___ofSubarray)
+  116. [`Array.partition`](Basic-Types/Arrays/#Array___partition)
+  117. [`Array.pmap`](Basic-Types/Arrays/#Array___pmap)
+  118. [`Array.pop`](Basic-Types/Arrays/#Array___pop)
+  119. [`Array.pop­While`](Basic-Types/Arrays/#Array___popWhile)
+  120. [`Array.push`](Basic-Types/Arrays/#Array___push)
+  121. [`Array.qsort`](Basic-Types/Arrays/#Array___qsort)
+  122. [`Array.qsort­Ord`](Basic-Types/Arrays/#Array___qsortOrd)
+  123. [`Array.range`](Basic-Types/Arrays/#Array___range)
+  124. [`Array.range'`](Basic-Types/Arrays/#Array___range___)
+  125. [`Array.replace`](Basic-Types/Arrays/#Array___replace)
+  126. [`Array.replicate`](Basic-Types/Arrays/#Array___replicate)
+  127. [`Array.reverse`](Basic-Types/Arrays/#Array___reverse)
+  128. [`Array.rightpad`](Basic-Types/Arrays/#Array___rightpad)
+  129. [`Array.set`](Basic-Types/Arrays/#Array___set)
+  130. [`Array.set!`](Basic-Types/Arrays/#Array___set___)
+  131. [`Array.set­If­In­Bounds`](Basic-Types/Arrays/#Array___setIfInBounds)
+  132. [`Array.shrink`](Basic-Types/Arrays/#Array___shrink)
+  133. [`Array.singleton`](Basic-Types/Arrays/#Array___singleton)
+  134. [`Array.size`](Basic-Types/Arrays/#Array___size)
+  135. [`Array.sum`](Basic-Types/Arrays/#Array___sum)
+  136. [`Array.swap`](Basic-Types/Arrays/#Array___swap)
+  137. [`Array.swap­At`](Basic-Types/Arrays/#Array___swapAt)
+  138. [`Array.swap­At!`](Basic-Types/Arrays/#Array___swapAt___)
+  139. [`Array.swap­If­In­Bounds`](Basic-Types/Arrays/#Array___swapIfInBounds)
+  140. [`Array.take`](Basic-Types/Arrays/#Array___take)
+  141. [`Array.take­While`](Basic-Types/Arrays/#Array___takeWhile)
+  142. [`Array.to­List`](Basic-Types/Arrays/#Array___toList)
+  143. [`Array.to­List­Append`](Basic-Types/Arrays/#Array___toListAppend)
+  144. [`Array.to­List­Rev`](Basic-Types/Arrays/#Array___toListRev)
+  145. [`Array.to­Subarray`](Basic-Types/Arrays/#Array___toSubarray)
+  146. [`Array.to­Vector`](Basic-Types/Arrays/#Array___toVector)
+  147. [`Array.uget`](Basic-Types/Arrays/#Array___uget)
+  148. [`Array.unattach`](Basic-Types/Arrays/#Array___unattach)
+  149. [`Array.unzip`](Basic-Types/Arrays/#Array___unzip)
+  150. [`Array.uset`](Basic-Types/Arrays/#Array___uset)
+  151. [`Array.usize`](Basic-Types/Arrays/#Array___usize)
+  152. [`Array.zip`](Basic-Types/Arrays/#Array___zip)
+  153. [`Array.zip­Idx`](Basic-Types/Arrays/#Array___zipIdx)
+  154. [`Array.zip­With`](Basic-Types/Arrays/#Array___zipWith)
+  155. [`Array.zip­With­All`](Basic-Types/Arrays/#Array___zipWithAll)
+  156. `Assertion`
+    1. [`Std.Do.Assertion`](The--mvcgen--tactic/Predicate-Transformers/#Std___Do___Assertion)
+  157. `Atomic­T`
+    1. [`Std.Atomic­T`](IO/Tasks-and-Threads/#Std___AtomicT)
+  158. `abs`
+    1. [`BitVec.abs`](Basic-Types/Bitvectors/#BitVec___abs)
+  159. `abs`
+    1. [`Float.abs`](Basic-Types/Floating-Point-Numbers/#Float___abs)
+  160. `abs`
+    1. [`Float32.abs`](Basic-Types/Floating-Point-Numbers/#Float32___abs)
+  161. `abs`
+    1. [`ISize.abs`](Basic-Types/Fixed-Precision-Integers/#ISize___abs)
+  162. `abs`
+    1. [`Int16.abs`](Basic-Types/Fixed-Precision-Integers/#Int16___abs)
+  163. `abs`
+    1. [`Int32.abs`](Basic-Types/Fixed-Precision-Integers/#Int32___abs)
+  164. `abs`
+    1. [`Int64.abs`](Basic-Types/Fixed-Precision-Integers/#Int64___abs)
+  165. `abs`
+    1. [`Int8.abs`](Basic-Types/Fixed-Precision-Integers/#Int8___abs)
+  166. [`absurd`](Basic-Propositions/Logical-Connectives/#absurd)
+  167. [`ac_nf`](Tactic-Proofs/Tactic-Reference/#ac_nf)
+  168. [`ac_nf0`](Tactic-Proofs/Tactic-Reference/#ac_nf0)
+  169. [`ac_rfl`](Tactic-Proofs/Tactic-Reference/#ac_rfl)
+  170. `accessed`
+    1. [`IO.FS.Metadata.accessed` (structure field)](IO/Files___-File-Handles___-and-Streams/#IO___FS___Metadata___mk)
+  171. `acos`
+    1. [`Float.acos`](Basic-Types/Floating-Point-Numbers/#Float___acos)
+  172. `acos`
+    1. [`Float32.acos`](Basic-Types/Floating-Point-Numbers/#Float32___acos)
+  173. `acosh`
+    1. [`Float.acosh`](Basic-Types/Floating-Point-Numbers/#Float___acosh)
+  174. `acosh`
+    1. [`Float32.acosh`](Basic-Types/Floating-Point-Numbers/#Float32___acosh)
+  175. `adapt`
+    1. [`ExceptT.adapt`](Functors___-Monads-and--do--Notation/Varieties-of-Monads/#ExceptT___adapt)
+  176. `adapt`
+    1. [`ReaderT.adapt`](Functors___-Monads-and--do--Notation/Varieties-of-Monads/#ReaderT___adapt)
+  177. `adapt­Except`
+    1. [`EStateM.adapt­Except`](Functors___-Monads-and--do--Notation/Varieties-of-Monads/#EStateM___adaptExcept)
+  178. `adc`
+    1. [`BitVec.adc`](Basic-Types/Bitvectors/#BitVec___adc)
+  179. `adcb`
+    1. [`BitVec.adcb`](Basic-Types/Bitvectors/#BitVec___adcb)
+  180. `add`
+    1. [`Add.add` (class method)](Type-Classes/Basic-Classes/#Add___mk)
+  181. `add`
+    1. [`BitVec.add`](Basic-Types/Bitvectors/#BitVec___add)
+  182. `add`
+    1. [`Fin.add`](Basic-Types/Finite-Natural-Numbers/#Fin___add)
+  183. `add`
+    1. [`Float.add`](Basic-Types/Floating-Point-Numbers/#Float___add)
+  184. `add`
+    1. [`Float32.add`](Basic-Types/Floating-Point-Numbers/#Float32___add)
+  185. `add`
+    1. [`ISize.add`](Basic-Types/Fixed-Precision-Integers/#ISize___add)
+  186. `add`
+    1. [`Int.add`](Basic-Types/Integers/#Int___add)
+  187. `add`
+    1. [`Int16.add`](Basic-Types/Fixed-Precision-Integers/#Int16___add)
+  188. `add`
+    1. [`Int32.add`](Basic-Types/Fixed-Precision-Integers/#Int32___add)
+  189. `add`
+    1. [`Int64.add`](Basic-Types/Fixed-Precision-Integers/#Int64___add)
+  190. `add`
+    1. [`Int8.add`](Basic-Types/Fixed-Precision-Integers/#Int8___add)
+  191. `add`
+    1. [`Nat.add`](Basic-Types/Natural-Numbers/#Nat___add)
+  192. `add`
+    1. [`UInt16.add`](Basic-Types/Fixed-Precision-Integers/#UInt16___add)
+  193. `add`
+    1. [`UInt32.add`](Basic-Types/Fixed-Precision-Integers/#UInt32___add)
+  194. `add`
+    1. [`UInt64.add`](Basic-Types/Fixed-Precision-Integers/#UInt64___add)
+  195. `add`
+    1. [`UInt8.add`](Basic-Types/Fixed-Precision-Integers/#UInt8___add)
+  196. `add`
+    1. [`USize.add`](Basic-Types/Fixed-Precision-Integers/#USize___add)
+  197. `add­App­Paren`
+    1. [`Repr.add­App­Paren`](Interacting-with-Lean/#Repr___addAppParen)
+  198. `add­Cases`
+    1. [`Fin.add­Cases`](Basic-Types/Finite-Natural-Numbers/#Fin___addCases)
+  199. `add­Extension`
+    1. [`System.FilePath.add­Extension`](IO/Files___-File-Handles___-and-Streams/#System___FilePath___addExtension)
+  200. `add­Heartbeats`
+    1. [`IO.add­Heartbeats`](IO/Timing/#IO___addHeartbeats)
+  201. `add­Macro­Scope`
+    1. [`Lean.Macro.add­Macro­Scope`](Notations-and-Macros/Macros/#Lean___Macro___addMacroScope)
+  202. `add­Nat`
+    1. [`Fin.add­Nat`](Basic-Types/Finite-Natural-Numbers/#Fin___addNat)
+  203. `add_assoc`
+    1. [`Lean.Grind.Semiring.add_zero` (class method)](The--grind--tactic/Algebraic-Solver-_LPAR_Commutative-Rings___-Fields_RPAR_/#Lean___Grind___Semiring___mk)
+  204. `add_comm`
+    1. [`Lean.Grind.Semiring.npow` (class method)](The--grind--tactic/Algebraic-Solver-_LPAR_Commutative-Rings___-Fields_RPAR_/#Lean___Grind___Semiring___mk)
+  205. `add_le_left_iff`
+    1. [`Lean.Grind.OrderedAdd.add_le_left_iff` (class method)](The--grind--tactic/Linear-Arithmetic-Solver/#Lean___Grind___OrderedAdd___mk)
+  206. `add_one_nsmul`
+    1. [`[anonymous]` (class method)](The--grind--tactic/Linear-Arithmetic-Solver/#Lean___Grind___NatModule___mk)
+  207. `add_right_cancel`
+    1. [`Lean.Grind.Add­RightCancel.add_right_cancel` (class method)](The--grind--tactic/Algebraic-Solver-_LPAR_Commutative-Rings___-Fields_RPAR_/#Lean___Grind___AddRightCancel___mk)
+  208. `add_zero`
+    1. [`Lean.Grind.Semiring.nsmul` (class method)](The--grind--tactic/Algebraic-Solver-_LPAR_Commutative-Rings___-Fields_RPAR_/#Lean___Grind___Semiring___mk)
+  209. `add_zsmul`
+    1. [`[anonymous]` (class method)](The--grind--tactic/Linear-Arithmetic-Solver/#Lean___Grind___IntModule___mk)
+  210. [`admit`](Tactic-Proofs/Tactic-Reference/#admit)
+  211. `all`
+    1. [`Array.all`](Basic-Types/Arrays/#Array___all)
+  212. `all`
+    1. [`List.all`](Basic-Types/Linked-Lists/#List___all)
+  213. `all`
+    1. [`Nat.all`](Basic-Types/Natural-Numbers/#Nat___all)
+  214. `all`
+    1. [`Option.all`](Basic-Types/Optional-Values/#Option___all)
+  215. `all`
+    1. [`Std.HashSet.all`](Basic-Types/Maps-and-Sets/#Std___HashSet___all)
+  216. `all`
+    1. [`Std.Iter.all`](Iterators/Consuming-Iterators/#Std___Iter___all)
+  217. `all`
+    1. [`Std.IterM.all`](Iterators/Consuming-Iterators/#Std___IterM___all)
+  218. `all`
+    1. [`Std.TreeMap.all`](Basic-Types/Maps-and-Sets/#Std___TreeMap___all)
+  219. `all`
+    1. [`Std.TreeSet.all`](Basic-Types/Maps-and-Sets/#Std___TreeSet___all)
+  220. `all`
+    1. [`String.Slice.all`](Basic-Types/Strings/#String___Slice___all)
+  221. `all`
+    1. [`String.all`](Basic-Types/Strings/#String___all)
+  222. `all`
+    1. [`Subarray.all`](Basic-Types/Arrays/#Subarray___all)
+  223. `all`
+    1. [`Substring.Raw.all`](Basic-Types/Strings/#Substring___Raw___all)
+  224. `all­Diff`
+    1. [`Array.all­Diff`](Basic-Types/Arrays/#Array___allDiff)
+  225. `all­Eq`
+    1. [`Subsingleton.all­Eq` (class method)](Type-Classes/Basic-Classes/#Subsingleton___intro)
+  226. `all­I`
+    1. [`Prod.all­I`](Basic-Types/Tuples/#Prod___allI)
+  227. `all­M`
+    1. [`Array.all­M`](Basic-Types/Arrays/#Array___allM)
+  228. `all­M`
+    1. [`List.all­M`](Basic-Types/Linked-Lists/#List___allM)
+  229. `all­M`
+    1. [`Nat.all­M`](Basic-Types/Natural-Numbers/#Nat___allM)
+  230. `all­M`
+    1. [`Std.Iter.all­M`](Iterators/Consuming-Iterators/#Std___Iter___allM)
+  231. `all­M`
+    1. [`Std.IterM.all­M`](Iterators/Consuming-Iterators/#Std___IterM___allM)
+  232. `all­M`
+    1. [`Subarray.all­M`](Basic-Types/Arrays/#Subarray___allM)
+  233. `all­Ones`
+    1. [`BitVec.all­Ones`](Basic-Types/Bitvectors/#BitVec___allOnes)
+  234. `all­TR`
+    1. [`Nat.all­TR`](Basic-Types/Natural-Numbers/#Nat___allTR)
+  235. `all_goals` [(0)](Tactic-Proofs/The-Tactic-Language/#all_goals) [(1)](Tactic-Proofs/Targeted-Rewriting-with--conv/#Lean___Parser___Tactic___Conv___allGoals)
+  236. `allow­Import­All`
+    1. [`[anonymous]` (structure field)](Build-Tools-and-Distribution/Lake/#Lake___LeanLibConfig___mk)
+  237. [`allow­Unsafe­Reducibility`](Definitions/Recursive-Definitions/#allowUnsafeReducibility)
+  238. `alter`
+    1. [`Std.DHashMap.alter`](Basic-Types/Maps-and-Sets/#Std___DHashMap___alter)
+  239. `alter`
+    1. [`Std.DTreeMap.alter`](Basic-Types/Maps-and-Sets/#Std___DTreeMap___alter)
+  240. `alter`
+    1. [`Std.Ext­DHashMap.alter`](Basic-Types/Maps-and-Sets/#Std___ExtDHashMap___alter)
+  241. `alter`
+    1. [`Std.Ext­HashMap.alter`](Basic-Types/Maps-and-Sets/#Std___ExtHashMap___alter)
+  242. `alter`
+    1. [`Std.HashMap.alter`](Basic-Types/Maps-and-Sets/#Std___HashMap___alter)
+  243. `alter`
+    1. [`Std.TreeMap.alter`](Basic-Types/Maps-and-Sets/#Std___TreeMap___alter)
+  244. `and`
+    1. [`AndOp.and` (class method)](Type-Classes/Basic-Classes/#AndOp___mk)
+  245. `and`
+    1. [`BitVec.and`](Basic-Types/Bitvectors/#BitVec___and)
+  246. `and`
+    1. [`Bool.and`](Basic-Types/Booleans/#Bool___and)
+  247. `and`
+    1. [`List.and`](Basic-Types/Linked-Lists/#List___and)
+  248. `and`
+    1. [`Std.Do.PostCond.and`](The--mvcgen--tactic/Predicate-Transformers/#Std___Do___PostCond___and)
+  249. `and`
+    1. [`Std.Do.SPred.and`](The--mvcgen--tactic/Predicate-Transformers/#Std___Do___SPred___and)
+  250. `and`
+    1. [`Std.Do.Triple.and`](The--mvcgen--tactic/Predicate-Transformers/#Std___Do___Triple___and)
+  251. [`and­M`](Functors___-Monads-and--do--Notation/API-Reference/#andM)
+  252. [`and_intros`](Tactic-Proofs/Tactic-Reference/#and_intros)
+  253. `any`
+    1. [`Array.any`](Basic-Types/Arrays/#Array___any)
+  254. `any`
+    1. [`List.any`](Basic-Types/Linked-Lists/#List___any)
+  255. `any`
+    1. [`Nat.any`](Basic-Types/Natural-Numbers/#Nat___any)
+  256. `any`
+    1. [`Option.any`](Basic-Types/Optional-Values/#Option___any)
+  257. `any`
+    1. [`Std.HashSet.any`](Basic-Types/Maps-and-Sets/#Std___HashSet___any)
+  258. `any`
+    1. [`Std.Iter.any`](Iterators/Consuming-Iterators/#Std___Iter___any)
+  259. `any`
+    1. [`Std.IterM.any`](Iterators/Consuming-Iterators/#Std___IterM___any)
+  260. `any`
+    1. [`Std.TreeMap.any`](Basic-Types/Maps-and-Sets/#Std___TreeMap___any)
+  261. `any`
+    1. [`Std.TreeSet.any`](Basic-Types/Maps-and-Sets/#Std___TreeSet___any)
+  262. `any`
+    1. [`String.any`](Basic-Types/Strings/#String___any)
+  263. `any`
+    1. [`Subarray.any`](Basic-Types/Arrays/#Subarray___any)
+  264. `any`
+    1. [`Substring.Raw.any`](Basic-Types/Strings/#Substring___Raw___any)
+  265. `any­I`
+    1. [`Prod.any­I`](Basic-Types/Tuples/#Prod___anyI)
+  266. `any­M`
+    1. [`Array.any­M`](Basic-Types/Arrays/#Array___anyM)
+  267. `any­M`
+    1. [`List.any­M`](Basic-Types/Linked-Lists/#List___anyM)
+  268. `any­M`
+    1. [`Nat.any­M`](Basic-Types/Natural-Numbers/#Nat___anyM)
+  269. `any­M`
+    1. [`Std.Iter.any­M`](Iterators/Consuming-Iterators/#Std___Iter___anyM)
+  270. `any­M`
+    1. [`Std.IterM.any­M`](Iterators/Consuming-Iterators/#Std___IterM___anyM)
+  271. `any­M`
+    1. [`Subarray.any­M`](Basic-Types/Arrays/#Subarray___anyM)
+  272. `any­TR`
+    1. [`Nat.any­TR`](Basic-Types/Natural-Numbers/#Nat___anyTR)
+  273. `any_goals` [(0)](Tactic-Proofs/The-Tactic-Language/#any_goals) [(1)](Tactic-Proofs/Targeted-Rewriting-with--conv/#Lean___Parser___Tactic___Conv___anyGoals)
+  274. `app­Dir`
+    1. [`IO.app­Dir`](IO/Files___-File-Handles___-and-Streams/#IO___appDir)
+  275. `app­Path`
+    1. [`IO.app­Path`](IO/Files___-File-Handles___-and-Streams/#IO___appPath)
+  276. `append`
+    1. [`Append.append` (class method)](Type-Classes/Basic-Classes/#Append___mk)
+  277. `append`
+    1. [`Array.append`](Basic-Types/Arrays/#Array___append)
+  278. `append`
+    1. [`BitVec.append`](Basic-Types/Bitvectors/#BitVec___append)
+  279. `append`
+    1. [`ByteArray.append`](Basic-Types/Byte-Arrays/#ByteArray___append)
+  280. `append`
+    1. [`List.append`](Basic-Types/Linked-Lists/#List___append)
+  281. `append`
+    1. [`String.append`](Basic-Types/Strings/#String___append)
+  282. `append­List`
+    1. [`Array.append­List`](Basic-Types/Arrays/#Array___appendList)
+  283. `append­TR`
+    1. [`List.append­TR`](Basic-Types/Linked-Lists/#List___appendTR)
+  284. `apply` [(0)](Tactic-Proofs/Tactic-Reference/#apply) [(1)](Tactic-Proofs/Targeted-Rewriting-with--conv/#Lean___Parser___Tactic___Conv___convApply_)
+  285. [`apply?`](Tactic-Proofs/Tactic-Reference/#apply___)
+  286. [`apply_assumption`](Tactic-Proofs/Tactic-Reference/#apply_assumption)
+  287. [`apply_ext_theorem`](Tactic-Proofs/Tactic-Reference/#apply_ext_theorem)
+  288. [`apply_mod_cast`](Tactic-Proofs/Tactic-Reference/#apply_mod_cast)
+  289. [`apply_rfl`](Tactic-Proofs/Tactic-Reference/#apply_rfl)
+  290. [`apply_rules`](Tactic-Proofs/Tactic-Reference/#apply_rules)
+  291. [`arg [@]i`](Tactic-Proofs/Targeted-Rewriting-with--conv/#Lean___Parser___Tactic___Conv___arg)
+  292. [`args`](Tactic-Proofs/Targeted-Rewriting-with--conv/#Lean___Parser___Tactic___Conv___convArgs)
+  293. `args`
+    1. [`Std.Do.PostShape.args`](The--mvcgen--tactic/Predicate-Transformers/#Std___Do___PostShape___args)
+  294. `args`
+    1. [`[anonymous]` (structure field)](IO/Processes/#IO___Process___SpawnArgs___mk)
+  295. `arith`
+    1. [`Lean.Meta.Simp.Config.arith` (structure field)](The-Simplifier/Configuring-Simplification/#Lean___Meta___Simp___Config___mk)
+  296. `array`
+    1. [`ByteArray.Iterator.array` (structure field)](Basic-Types/Byte-Arrays/#ByteArray___Iterator___mk)
+  297. `array`
+    1. [`Subarray.array`](Basic-Types/Arrays/#Subarray___array)
+  298. `as­Task`
+    1. [`BaseIO.as­Task`](IO/Tasks-and-Threads/#BaseIO___asTask)
+  299. `as­Task`
+    1. [`EIO.as­Task`](IO/Tasks-and-Threads/#EIO___asTask)
+  300. `as­Task`
+    1. [`IO.as­Task`](IO/Tasks-and-Threads/#IO___asTask)
+  301. [`as_aux_lemma`](Tactic-Proofs/Tactic-Reference/#as_aux_lemma)
+  302. `asin`
+    1. [`Float.asin`](Basic-Types/Floating-Point-Numbers/#Float___asin)
+  303. `asin`
+    1. [`Float32.asin`](Basic-Types/Floating-Point-Numbers/#Float32___asin)
+  304. `asinh`
+    1. [`Float.asinh`](Basic-Types/Floating-Point-Numbers/#Float___asinh)
+  305. `asinh`
+    1. [`Float32.asinh`](Basic-Types/Floating-Point-Numbers/#Float32___asinh)
+  306. [`assumption`](Tactic-Proofs/Tactic-Reference/#assumption)
+  307. assumption
+    1. [inaccessible](Tactic-Proofs/Reading-Proof-States/#--index--next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next)
+  308. [`assumption_mod_cast`](Tactic-Proofs/Tactic-Reference/#assumption_mod_cast)
+  309. `at`
+    1. [`List.Cursor.at`](The--mvcgen--tactic/Predicate-Transformers/#List___Cursor___at)
+  310. `at­End`
+    1. [`ByteArray.Iterator.at­End`](Basic-Types/Byte-Arrays/#ByteArray___Iterator___atEnd)
+  311. `at­End`
+    1. [`String.Legacy.Iterator.at­End`](Basic-Types/Strings/#String___Legacy___Iterator___atEnd)
+  312. `at­End`
+    1. [`String.Pos.Raw.at­End`](Basic-Types/Strings/#String___Pos___Raw___atEnd)
+  313. `at­End`
+    1. [`Substring.Raw.at­End`](Basic-Types/Strings/#Substring___Raw___atEnd)
+  314. `at­Idx!`
+    1. [`Std.TreeSet.at­Idx!`](Basic-Types/Maps-and-Sets/#Std___TreeSet___atIdx___)
+  315. `at­Idx`
+    1. [`Std.TreeSet.at­Idx`](Basic-Types/Maps-and-Sets/#Std___TreeSet___atIdx)
+  316. `at­Idx?`
+    1. [`Std.Iter.at­Idx?`](Iterators/Consuming-Iterators/#Std___Iter___atIdx___)
+  317. `at­Idx?`
+    1. [`Std.IterM.at­Idx?`](Iterators/Consuming-Iterators/#Std___IterM___atIdx___)
+  318. `at­Idx?`
+    1. [`Std.TreeSet.at­Idx?`](Basic-Types/Maps-and-Sets/#Std___TreeSet___atIdx___-next)
+  319. `at­Idx­D`
+    1. [`Std.TreeSet.at­Idx­D`](Basic-Types/Maps-and-Sets/#Std___TreeSet___atIdxD)
+  320. `at­Idx­Slow?`
+    1. [`Std.Iter.at­Idx­Slow?`](Iterators/Consuming-Iterators/#Std___Iter___atIdxSlow___)
+  321. `atan`
+    1. [`Float.atan`](Basic-Types/Floating-Point-Numbers/#Float___atan)
+  322. `atan`
+    1. [`Float32.atan`](Basic-Types/Floating-Point-Numbers/#Float32___atan)
+  323. `atan2`
+    1. [`Float.atan2`](Basic-Types/Floating-Point-Numbers/#Float___atan2)
+  324. `atan2`
+    1. [`Float32.atan2`](Basic-Types/Floating-Point-Numbers/#Float32___atan2)
+  325. `atanh`
+    1. [`Float.atanh`](Basic-Types/Floating-Point-Numbers/#Float___atanh)
+  326. `atanh`
+    1. [`Float32.atanh`](Basic-Types/Floating-Point-Numbers/#Float32___atanh)
+  327. `atomically`
+    1. [`Std.Mutex.atomically`](IO/Tasks-and-Threads/#Std___Mutex___atomically)
+  328. `atomically­Once`
+    1. [`Std.Mutex.atomically­Once`](IO/Tasks-and-Threads/#Std___Mutex___atomicallyOnce)
+  329. `attach`
+    1. [`Array.attach`](Basic-Types/Arrays/#Array___attach)
+  330. `attach`
+    1. [`List.attach`](Basic-Types/Linked-Lists/#List___attach)
+  331. `attach`
+    1. [`Option.attach`](Basic-Types/Optional-Values/#Option___attach)
+  332. `attach­With`
+    1. [`Array.attach­With`](Basic-Types/Arrays/#Array___attachWith)
+  333. `attach­With`
+    1. [`List.attach­With`](Basic-Types/Linked-Lists/#List___attachWith)
+  334. `attach­With`
+    1. [`Option.attach­With`](Basic-Types/Optional-Values/#Option___attachWith)
+  335. `attach­With`
+    1. [`Std.Iter.attach­With`](Iterators/Iterator-Combinators/#Std___Iter___attachWith)
+  336. `attach­With`
+    1. [`Std.IterM.attach­With`](Iterators/Iterator-Combinators/#Std___IterM___attachWith)
+  337. [`auto­Implicit`](Definitions/Headers-and-Signatures/#autoImplicit)
+  338. [`auto­Lift`](Functors___-Monads-and--do--Notation/Lifting-Monads/#autoLift)
+  339. [`auto­Param`](Terms/Function-Application/#autoParam)
+  340. `auto­Promote­Indices`
+    1. [`inductive.auto­Promote­Indices`](The-Type-System/Inductive-Types/#inductive___autoPromoteIndices)
+  341. `auto­Unfold`
+    1. [`Lean.Meta.DSimp.Config.auto­Unfold` (structure field)](The-Simplifier/Configuring-Simplification/#Lean___Meta___DSimp___Config___mk)
+  342. `auto­Unfold`
+    1. [`Lean.Meta.Simp.Config.auto­Unfold` (structure field)](The-Simplifier/Configuring-Simplification/#Lean___Meta___Simp___Config___mk)
+
+
+##  B
+  1. [`BEq`](Type-Classes/Basic-Classes/#BEq___mk)
+  2. `BEq.mk`
+    1. [Instance constructor of `BEq`](Type-Classes/Basic-Classes/#BEq___mk)
+  3. `Backend`
+    1. [`Lake.Backend`](Build-Tools-and-Distribution/Lake/#Lake___Backend___c)
+  4. `Backtrackable`
+    1. [`EStateM.Backtrackable`](Functors___-Monads-and--do--Notation/Varieties-of-Monads/#EStateM___Backtrackable___mk)
+  5. `Backward­Pattern`
+    1. [`String.Slice.Pattern.Backward­Pattern`](Basic-Types/Strings/#String___Slice___Pattern___BackwardPattern___mk)
+  6. [`Base­IO`](IO/Logical-Model/#BaseIO)
+  7. [`BaseIO.as­Task`](IO/Tasks-and-Threads/#BaseIO___asTask)
+  8. [`BaseIO.bind­Task`](IO/Tasks-and-Threads/#BaseIO___bindTask)
+  9. [`BaseIO.chain­Task`](IO/Tasks-and-Threads/#BaseIO___chainTask)
+  10. [`BaseIO.map­Task`](IO/Tasks-and-Threads/#BaseIO___mapTask)
+  11. [`BaseIO.map­Tasks`](IO/Tasks-and-Threads/#BaseIO___mapTasks)
+  12. [`BaseIO.to­EIO`](IO/Logical-Model/#BaseIO___toEIO)
+  13. [`BaseIO.to­IO`](IO/Logical-Model/#BaseIO___toIO)
+  14. [`Bind`](Functors___-Monads-and--do--Notation/#Bind___mk)
+  15. [`Bind.bind­Left`](Functors___-Monads-and--do--Notation/API-Reference/#Bind___bindLeft)
+  16. [`Bind.kleisli­Left`](Functors___-Monads-and--do--Notation/API-Reference/#Bind___kleisliLeft)
+  17. [`Bind.kleisli­Right`](Functors___-Monads-and--do--Notation/API-Reference/#Bind___kleisliRight)
+  18. `Bind.mk`
+    1. [Instance constructor of `Bind`](Functors___-Monads-and--do--Notation/#Bind___mk)
+  19. [`Bit­Vec`](Basic-Types/Bitvectors/#BitVec___ofFin)
+  20. [`BitVec.abs`](Basic-Types/Bitvectors/#BitVec___abs)
+  21. [`BitVec.adc`](Basic-Types/Bitvectors/#BitVec___adc)
+  22. [`BitVec.adcb`](Basic-Types/Bitvectors/#BitVec___adcb)
+  23. [`BitVec.add`](Basic-Types/Bitvectors/#BitVec___add)
+  24. [`BitVec.all­Ones`](Basic-Types/Bitvectors/#BitVec___allOnes)
+  25. [`BitVec.and`](Basic-Types/Bitvectors/#BitVec___and)
+  26. [`BitVec.append`](Basic-Types/Bitvectors/#BitVec___append)
+  27. [`BitVec.carry`](Basic-Types/Bitvectors/#BitVec___carry)
+  28. [`BitVec.cast`](Basic-Types/Bitvectors/#BitVec___cast)
+  29. [`BitVec.concat`](Basic-Types/Bitvectors/#BitVec___concat)
+  30. [`BitVec.cons`](Basic-Types/Bitvectors/#BitVec___cons)
+  31. [`BitVec.dec­Eq`](Basic-Types/Bitvectors/#BitVec___decEq)
+  32. [`BitVec.div­Rec`](Basic-Types/Bitvectors/#BitVec___divRec)
+  33. [`BitVec.div­Subtract­Shift`](Basic-Types/Bitvectors/#BitVec___divSubtractShift)
+  34. [`BitVec.extract­Lsb`](Basic-Types/Bitvectors/#BitVec___extractLsb)
+  35. [`BitVec.extract­Lsb'`](Basic-Types/Bitvectors/#BitVec___extractLsb___)
+  36. [`BitVec.fill`](Basic-Types/Bitvectors/#BitVec___fill)
+  37. [`BitVec.get­Lsb`](Basic-Types/Bitvectors/#BitVec___getLsb)
+  38. [`BitVec.get­Lsb?`](Basic-Types/Bitvectors/#BitVec___getLsb___)
+  39. [`BitVec.get­Lsb­D`](Basic-Types/Bitvectors/#BitVec___getLsbD)
+  40. [`BitVec.get­Msb`](Basic-Types/Bitvectors/#BitVec___getMsb)
+  41. [`BitVec.get­Msb?`](Basic-Types/Bitvectors/#BitVec___getMsb___)
+  42. [`BitVec.get­Msb­D`](Basic-Types/Bitvectors/#BitVec___getMsbD)
+  43. [`BitVec.hash`](Basic-Types/Bitvectors/#BitVec___hash)
+  44. [`BitVec.int­Max`](Basic-Types/Bitvectors/#BitVec___intMax)
+  45. [`BitVec.int­Min`](Basic-Types/Bitvectors/#BitVec___intMin)
+  46. [`BitVec.iunfoldr`](Basic-Types/Bitvectors/#BitVec___iunfoldr)
+  47. [`BitVec.iunfoldr_replace`](Basic-Types/Bitvectors/#BitVec___iunfoldr_replace)
+  48. [`BitVec.msb`](Basic-Types/Bitvectors/#BitVec___msb)
+  49. [`BitVec.mul`](Basic-Types/Bitvectors/#BitVec___mul)
+  50. [`BitVec.mul­Rec`](Basic-Types/Bitvectors/#BitVec___mulRec)
+  51. [`BitVec.neg`](Basic-Types/Bitvectors/#BitVec___neg)
+  52. [`BitVec.nil`](Basic-Types/Bitvectors/#BitVec___nil)
+  53. [`BitVec.not`](Basic-Types/Bitvectors/#BitVec___not)
+  54. [`BitVec.of­Bool`](Basic-Types/Bitvectors/#BitVec___ofBool)
+  55. [`BitVec.of­Bool­List­BE`](Basic-Types/Bitvectors/#BitVec___ofBoolListBE)
+  56. [`BitVec.of­Bool­List­LE`](Basic-Types/Bitvectors/#BitVec___ofBoolListLE)
+  57. `BitVec.of­Fin`
+    1. [Constructor of `Bit­Vec`](Basic-Types/Bitvectors/#BitVec___ofFin)
+  58. [`BitVec.of­Int`](Basic-Types/Bitvectors/#BitVec___ofInt)
+  59. [`BitVec.of­Nat`](Basic-Types/Bitvectors/#BitVec___ofNat)
+  60. [`BitVec.of­Nat­LT`](Basic-Types/Bitvectors/#BitVec___ofNatLT)
+  61. [`BitVec.or`](Basic-Types/Bitvectors/#BitVec___or)
+  62. [`BitVec.replicate`](Basic-Types/Bitvectors/#BitVec___replicate)
+  63. [`BitVec.reverse`](Basic-Types/Bitvectors/#BitVec___reverse)
+  64. [`BitVec.rotate­Left`](Basic-Types/Bitvectors/#BitVec___rotateLeft)
+  65. [`BitVec.rotate­Right`](Basic-Types/Bitvectors/#BitVec___rotateRight)
+  66. [`BitVec.sadd­Overflow`](Basic-Types/Bitvectors/#BitVec___saddOverflow)
+  67. [`BitVec.sdiv`](Basic-Types/Bitvectors/#BitVec___sdiv)
+  68. [`BitVec.set­Width`](Basic-Types/Bitvectors/#BitVec___setWidth)
+  69. [`BitVec.set­Width'`](Basic-Types/Bitvectors/#BitVec___setWidth___)
+  70. [`BitVec.shift­Concat`](Basic-Types/Bitvectors/#BitVec___shiftConcat)
+  71. [`BitVec.shift­Left`](Basic-Types/Bitvectors/#BitVec___shiftLeft)
+  72. [`BitVec.shift­Left­Rec`](Basic-Types/Bitvectors/#BitVec___shiftLeftRec)
+  73. [`BitVec.shift­Left­Zero­Extend`](Basic-Types/Bitvectors/#BitVec___shiftLeftZeroExtend)
+  74. [`BitVec.sign­Extend`](Basic-Types/Bitvectors/#BitVec___signExtend)
+  75. [`BitVec.sle`](Basic-Types/Bitvectors/#BitVec___sle)
+  76. [`BitVec.slt`](Basic-Types/Bitvectors/#BitVec___slt)
+  77. [`BitVec.smod`](Basic-Types/Bitvectors/#BitVec___smod)
+  78. [`BitVec.smt­SDiv`](Basic-Types/Bitvectors/#BitVec___smtSDiv)
+  79. [`BitVec.smt­UDiv`](Basic-Types/Bitvectors/#BitVec___smtUDiv)
+  80. [`BitVec.srem`](Basic-Types/Bitvectors/#BitVec___srem)
+  81. [`BitVec.sshift­Right`](Basic-Types/Bitvectors/#BitVec___sshiftRight)
+  82. [`BitVec.sshift­Right'`](Basic-Types/Bitvectors/#BitVec___sshiftRight___)
+  83. [`BitVec.sshift­Right­Rec`](Basic-Types/Bitvectors/#BitVec___sshiftRightRec)
+  84. [`BitVec.ssub­Overflow`](Basic-Types/Bitvectors/#BitVec___ssubOverflow)
+  85. [`BitVec.sub`](Basic-Types/Bitvectors/#BitVec___sub)
+  86. [`BitVec.to­Hex`](Basic-Types/Bitvectors/#BitVec___toHex)
+  87. [`BitVec.to­Int`](Basic-Types/Bitvectors/#BitVec___toInt)
+  88. [`BitVec.to­Nat`](Basic-Types/Bitvectors/#BitVec___toNat)
+  89. [`BitVec.truncate`](Basic-Types/Bitvectors/#BitVec___truncate)
+  90. [`BitVec.two­Pow`](Basic-Types/Bitvectors/#BitVec___twoPow)
+  91. [`BitVec.uadd­Overflow`](Basic-Types/Bitvectors/#BitVec___uaddOverflow)
+  92. [`BitVec.udiv`](Basic-Types/Bitvectors/#BitVec___udiv)
+  93. [`BitVec.ule`](Basic-Types/Bitvectors/#BitVec___ule)
+  94. [`BitVec.ult`](Basic-Types/Bitvectors/#BitVec___ult)
+  95. [`BitVec.umod`](Basic-Types/Bitvectors/#BitVec___umod)
+  96. [`BitVec.ushift­Right`](Basic-Types/Bitvectors/#BitVec___ushiftRight)
+  97. [`BitVec.ushift­Right­Rec`](Basic-Types/Bitvectors/#BitVec___ushiftRightRec)
+  98. [`BitVec.usub­Overflow`](Basic-Types/Bitvectors/#BitVec___usubOverflow)
+  99. [`BitVec.xor`](Basic-Types/Bitvectors/#BitVec___xor)
+  100. [`BitVec.zero`](Basic-Types/Bitvectors/#BitVec___zero)
+  101. [`BitVec.zero­Extend`](Basic-Types/Bitvectors/#BitVec___zeroExtend)
+  102. [`Bool`](Basic-Types/Booleans/#Bool___false)
+  103. [`Bool.and`](Basic-Types/Booleans/#Bool___and)
+  104. [`Bool.dcond`](Basic-Types/Booleans/#Bool___dcond)
+  105. [`Bool.dec­Eq`](Basic-Types/Booleans/#Bool___decEq)
+  106. `Bool.false`
+    1. [Constructor of `Bool`](Basic-Types/Booleans/#Bool___false)
+  107. [`Bool.not`](Basic-Types/Booleans/#Bool___not)
+  108. [`Bool.or`](Basic-Types/Booleans/#Bool___or)
+  109. [`Bool.to­ISize`](Basic-Types/Booleans/#Bool___toISize)
+  110. [`Bool.to­Int`](Basic-Types/Booleans/#Bool___toInt)
+  111. [`Bool.to­Int16`](Basic-Types/Booleans/#Bool___toInt16)
+  112. [`Bool.to­Int32`](Basic-Types/Booleans/#Bool___toInt32)
+  113. [`Bool.to­Int64`](Basic-Types/Booleans/#Bool___toInt64)
+  114. [`Bool.to­Int8`](Basic-Types/Booleans/#Bool___toInt8)
+  115. [`Bool.to­Nat`](Basic-Types/Booleans/#Bool___toNat)
+  116. [`Bool.to­UInt16`](Basic-Types/Booleans/#Bool___toUInt16)
+  117. [`Bool.to­UInt32`](Basic-Types/Booleans/#Bool___toUInt32)
+  118. [`Bool.to­UInt64`](Basic-Types/Booleans/#Bool___toUInt64)
+  119. [`Bool.to­UInt8`](Basic-Types/Booleans/#Bool___toUInt8)
+  120. [`Bool.to­USize`](Basic-Types/Booleans/#Bool___toUSize)
+  121. `Bool.true`
+    1. [Constructor of `Bool`](Basic-Types/Booleans/#Bool___false)
+  122. [`Bool.xor`](Basic-Types/Booleans/#Bool___xor)
+  123. `Buffer`
+    1. [`IO.FS.Stream.Buffer`](IO/Files___-File-Handles___-and-Streams/#IO___FS___Stream___Buffer___mk)
+  124. `Build­Type`
+    1. [`Lake.Build­Type`](Build-Tools-and-Distribution/Lake/#Lake___BuildType___debug)
+  125. [`Byte­Array`](Basic-Types/Byte-Arrays/#ByteArray___mk)
+  126. [`ByteArray.Iterator`](Basic-Types/Byte-Arrays/#ByteArray___Iterator___mk)
+  127. [`ByteArray.Iterator.at­End`](Basic-Types/Byte-Arrays/#ByteArray___Iterator___atEnd)
+  128. [`ByteArray.Iterator.curr`](Basic-Types/Byte-Arrays/#ByteArray___Iterator___curr)
+  129. [`ByteArray.Iterator.curr'`](Basic-Types/Byte-Arrays/#ByteArray___Iterator___curr___)
+  130. [`ByteArray.Iterator.forward`](Basic-Types/Byte-Arrays/#ByteArray___Iterator___forward)
+  131. [`ByteArray.Iterator.has­Next`](Basic-Types/Byte-Arrays/#ByteArray___Iterator___hasNext)
+  132. [`ByteArray.Iterator.has­Prev`](Basic-Types/Byte-Arrays/#ByteArray___Iterator___hasPrev)
+  133. `ByteArray.Iterator.mk`
+    1. [Constructor of `ByteArray.Iterator`](Basic-Types/Byte-Arrays/#ByteArray___Iterator___mk)
+  134. [`ByteArray.Iterator.next`](Basic-Types/Byte-Arrays/#ByteArray___Iterator___next)
+  135. [`ByteArray.Iterator.next'`](Basic-Types/Byte-Arrays/#ByteArray___Iterator___next___)
+  136. [`ByteArray.Iterator.nextn`](Basic-Types/Byte-Arrays/#ByteArray___Iterator___nextn)
+  137. [`ByteArray.Iterator.pos`](Basic-Types/Byte-Arrays/#ByteArray___Iterator___pos)
+  138. [`ByteArray.Iterator.prev`](Basic-Types/Byte-Arrays/#ByteArray___Iterator___prev)
+  139. [`ByteArray.Iterator.prevn`](Basic-Types/Byte-Arrays/#ByteArray___Iterator___prevn)
+  140. [`ByteArray.Iterator.remaining­Bytes`](Basic-Types/Byte-Arrays/#ByteArray___Iterator___remainingBytes)
+  141. [`ByteArray.Iterator.to­End`](Basic-Types/Byte-Arrays/#ByteArray___Iterator___toEnd)
+  142. [`ByteArray.append`](Basic-Types/Byte-Arrays/#ByteArray___append)
+  143. [`ByteArray.copy­Slice`](Basic-Types/Byte-Arrays/#ByteArray___copySlice)
+  144. [`ByteArray.empty`](Basic-Types/Byte-Arrays/#ByteArray___empty)
+  145. [`ByteArray.empty­With­Capacity`](Basic-Types/Byte-Arrays/#ByteArray___emptyWithCapacity)
+  146. [`ByteArray.extract`](Basic-Types/Byte-Arrays/#ByteArray___extract)
+  147. [`ByteArray.fast­Append`](Basic-Types/Byte-Arrays/#ByteArray___fastAppend)
+  148. [`ByteArray.find­Fin­Idx?`](Basic-Types/Byte-Arrays/#ByteArray___findFinIdx___)
+  149. [`ByteArray.find­Idx?`](Basic-Types/Byte-Arrays/#ByteArray___findIdx___)
+  150. [`ByteArray.foldl`](Basic-Types/Byte-Arrays/#ByteArray___foldl)
+  151. [`ByteArray.foldl­M`](Basic-Types/Byte-Arrays/#ByteArray___foldlM)
+  152. [`ByteArray.for­In`](Basic-Types/Byte-Arrays/#ByteArray___forIn)
+  153. [`ByteArray.get`](Basic-Types/Byte-Arrays/#ByteArray___get)
+  154. [`ByteArray.get!`](Basic-Types/Byte-Arrays/#ByteArray___get___)
+  155. [`ByteArray.is­Empty`](Basic-Types/Byte-Arrays/#ByteArray___isEmpty)
+  156. [`ByteArray.iter`](Basic-Types/Byte-Arrays/#ByteArray___iter)
+  157. `ByteArray.mk`
+    1. [Constructor of `Byte­Array`](Basic-Types/Byte-Arrays/#ByteArray___mk)
+  158. [`ByteArray.push`](Basic-Types/Byte-Arrays/#ByteArray___push)
+  159. [`ByteArray.set`](Basic-Types/Byte-Arrays/#ByteArray___set)
+  160. [`ByteArray.set!`](Basic-Types/Byte-Arrays/#ByteArray___set___)
+  161. [`ByteArray.size`](Basic-Types/Byte-Arrays/#ByteArray___size)
+  162. [`ByteArray.to­Byte­Slice`](Basic-Types/Byte-Arrays/#ByteArray___toByteSlice)
+  163. [`ByteArray.to­List`](Basic-Types/Byte-Arrays/#ByteArray___toList)
+  164. [`ByteArray.to­UInt64BE!`](Basic-Types/Byte-Arrays/#ByteArray___toUInt64BE___)
+  165. [`ByteArray.to­UInt64LE!`](Basic-Types/Byte-Arrays/#ByteArray___toUInt64LE___)
+  166. [`ByteArray.uget`](Basic-Types/Byte-Arrays/#ByteArray___uget)
+  167. [`ByteArray.uset`](Basic-Types/Byte-Arrays/#ByteArray___uset)
+  168. [`ByteArray.usize`](Basic-Types/Byte-Arrays/#ByteArray___usize)
+  169. [`ByteArray.utf8Decode?`](Basic-Types/Byte-Arrays/#ByteArray___utf8Decode___)
+  170. [`ByteArray.utf8Decode­Char`](Basic-Types/Byte-Arrays/#ByteArray___utf8DecodeChar)
+  171. [`ByteArray.utf8Decode­Char?`](Basic-Types/Byte-Arrays/#ByteArray___utf8DecodeChar___)
+  172. [`Byte­Slice`](Basic-Types/Byte-Arrays/#ByteSlice)
+  173. [`ByteSlice.beq`](Basic-Types/Byte-Arrays/#ByteSlice___beq)
+  174. [`ByteSlice.byte­Array`](Basic-Types/Byte-Arrays/#ByteSlice___byteArray)
+  175. [`ByteSlice.contains`](Basic-Types/Byte-Arrays/#ByteSlice___contains)
+  176. [`ByteSlice.empty`](Basic-Types/Byte-Arrays/#ByteSlice___empty)
+  177. [`ByteSlice.foldr`](Basic-Types/Byte-Arrays/#ByteSlice___foldr)
+  178. [`ByteSlice.foldr­M`](Basic-Types/Byte-Arrays/#ByteSlice___foldrM)
+  179. [`ByteSlice.for­M`](Basic-Types/Byte-Arrays/#ByteSlice___forM)
+  180. [`ByteSlice.get`](Basic-Types/Byte-Arrays/#ByteSlice___get)
+  181. [`ByteSlice.get!`](Basic-Types/Byte-Arrays/#ByteSlice___get___)
+  182. [`ByteSlice.get­D`](Basic-Types/Byte-Arrays/#ByteSlice___getD)
+  183. [`ByteSlice.of­Byte­Array`](Basic-Types/Byte-Arrays/#ByteSlice___ofByteArray)
+  184. [`ByteSlice.size`](Basic-Types/Byte-Arrays/#ByteSlice___size)
+  185. [`ByteSlice.slice`](Basic-Types/Byte-Arrays/#ByteSlice___slice)
+  186. [`ByteSlice.start`](Basic-Types/Byte-Arrays/#ByteSlice___start)
+  187. [`ByteSlice.stop`](Basic-Types/Byte-Arrays/#ByteSlice___stop)
+  188. [`ByteSlice.to­Byte­Array`](Basic-Types/Byte-Arrays/#ByteSlice___toByteArray)
+  189. `back!`
+    1. [`Array.back!`](Basic-Types/Arrays/#Array___back___-next)
+  190. `back`
+    1. [`Array.back`](Basic-Types/Arrays/#Array___back)
+  191. `back`
+    1. [`String.Slice.back`](Basic-Types/Strings/#String___Slice___back)
+  192. `back`
+    1. [`String.back`](Basic-Types/Strings/#String___back)
+  193. `back?`
+    1. [`Array.back?`](Basic-Types/Arrays/#Array___back___)
+  194. `back?`
+    1. [`String.Slice.back?`](Basic-Types/Strings/#String___Slice___back___)
+  195. [`backward.private­In­Public`](Source-Files-and-Modules/#backward___privateInPublic)
+  196. [`backward.private­InPublic.warn`](Source-Files-and-Modules/#backward___privateInPublic___warn)
+  197. [`backward.proofs­In­Public`](Source-Files-and-Modules/#backward___proofsInPublic)
+  198. [`backward.synthInstance.canon­Instances`](Type-Classes/Instance-Synthesis/#backward___synthInstance___canonInstances)
+  199. `bdiv`
+    1. [`Int.bdiv`](Basic-Types/Integers/#Int___bdiv)
+  200. `begin`
+    1. [`List.Cursor.begin`](The--mvcgen--tactic/Predicate-Transformers/#List___Cursor___begin)
+  201. `beq`
+    1. [`BEq.beq` (class method)](Type-Classes/Basic-Classes/#BEq___mk)
+  202. `beq`
+    1. [`ByteSlice.beq`](Basic-Types/Byte-Arrays/#ByteSlice___beq)
+  203. `beq`
+    1. [`Float.beq`](Basic-Types/Floating-Point-Numbers/#Float___beq)
+  204. `beq`
+    1. [`Float32.beq`](Basic-Types/Floating-Point-Numbers/#Float32___beq)
+  205. `beq`
+    1. [`List.beq`](Basic-Types/Linked-Lists/#List___beq)
+  206. `beq`
+    1. [`Nat.beq`](Basic-Types/Natural-Numbers/#Nat___beq)
+  207. `beq`
+    1. [`String.Slice.beq`](Basic-Types/Strings/#String___Slice___beq)
+  208. `beq`
+    1. [`Substring.Raw.beq`](Basic-Types/Strings/#Substring___Raw___beq)
+  209. `beta`
+    1. [`Lean.Meta.DSimp.Config.beta` (structure field)](The-Simplifier/Configuring-Simplification/#Lean___Meta___DSimp___Config___mk)
+  210. `beta`
+    1. [`Lean.Meta.Simp.Config.beta` (structure field)](The-Simplifier/Configuring-Simplification/#Lean___Meta___Simp___Config___mk)
+  211. `bientails`
+    1. [`Std.Do.SPred.bientails`](The--mvcgen--tactic/Predicate-Transformers/#Std___Do___SPred___bientails)
+  212. `bin­Insert`
+    1. [`Array.bin­Insert`](Basic-Types/Arrays/#Array___binInsert)
+  213. `bin­Insert­M`
+    1. [`Array.bin­Insert­M`](Basic-Types/Arrays/#Array___binInsertM)
+  214. `bin­Search`
+    1. [`Array.bin­Search`](Basic-Types/Arrays/#Array___binSearch)
+  215. `bin­Search­Contains`
+    1. [`Array.bin­Search­Contains`](Basic-Types/Arrays/#Array___binSearchContains)
+  216. `bind`
+    1. [`Bind.bind` (class method)](Functors___-Monads-and--do--Notation/#Bind___mk)
+  217. `bind`
+    1. [`EStateM.bind`](Functors___-Monads-and--do--Notation/Varieties-of-Monads/#EStateM___bind)
+  218. `bind`
+    1. [`Except.bind`](Functors___-Monads-and--do--Notation/Varieties-of-Monads/#Except___bind)
+  219. `bind`
+    1. [`ExceptT.bind`](Functors___-Monads-and--do--Notation/Varieties-of-Monads/#ExceptT___bind)
+  220. `bind`
+    1. [`Option.bind`](Basic-Types/Optional-Values/#Option___bind)
+  221. `bind`
+    1. [`OptionT.bind`](Functors___-Monads-and--do--Notation/Varieties-of-Monads/#OptionT___bind)
+  222. `bind`
+    1. [`ReaderT.bind`](Functors___-Monads-and--do--Notation/Varieties-of-Monads/#ReaderT___bind)
+  223. `bind`
+    1. [`StateT.bind`](Functors___-Monads-and--do--Notation/Varieties-of-Monads/#StateT___bind)
+  224. `bind`
+    1. [`Std.Do.PredTrans.bind`](The--mvcgen--tactic/Predicate-Transformers/#Std___Do___PredTrans___bind)
+  225. `bind`
+    1. [`Std.Iterators.HetT.bind`](Iterators/Reasoning-About-Iterators/#Std___Iterators___HetT___bind)
+  226. `bind`
+    1. [`Task.bind`](IO/Tasks-and-Threads/#Task___bind)
+  227. `bind`
+    1. [`Thunk.bind`](Basic-Types/Lazy-Computations/#Thunk___bind)
+  228. `bind­Cont`
+    1. [`ExceptT.bind­Cont`](Functors___-Monads-and--do--Notation/Varieties-of-Monads/#ExceptT___bindCont)
+  229. `bind­Left`
+    1. [`Bind.bind­Left`](Functors___-Monads-and--do--Notation/API-Reference/#Bind___bindLeft)
+  230. `bind­M`
+    1. [`Option.bind­M`](Basic-Types/Optional-Values/#Option___bindM)
+  231. `bind­Task`
+    1. [`BaseIO.bind­Task`](IO/Tasks-and-Threads/#BaseIO___bindTask)
+  232. `bind­Task`
+    1. [`EIO.bind­Task`](IO/Tasks-and-Threads/#EIO___bindTask)
+  233. `bind­Task`
+    1. [`IO.bind­Task`](IO/Tasks-and-Threads/#IO___bindTask)
+  234. `bind_assoc`
+    1. [`[anonymous]` (class method)](Functors___-Monads-and--do--Notation/Laws/#LawfulMonad___mk)
+  235. `bind_map`
+    1. [`[anonymous]` (class method)](Functors___-Monads-and--do--Notation/Laws/#LawfulMonad___mk)
+  236. `bind_pure_comp`
+    1. [`[anonymous]` (class method)](Functors___-Monads-and--do--Notation/Laws/#LawfulMonad___mk)
+  237. [`binder­Name­Hint`](Tactic-Proofs/Naming-Bound-Variables/#binderNameHint)
+  238. `bit­Vec­Of­Nat`
+    1. [`Lean.Meta.Simp.Config.bit­Vec­Of­Nat` (structure field)](The-Simplifier/Configuring-Simplification/#Lean___Meta___Simp___Config___mk)
+  239. `bitwise`
+    1. [`Nat.bitwise`](Basic-Types/Natural-Numbers/#Nat___bitwise)
+  240. `ble`
+    1. [`Nat.ble`](Basic-Types/Natural-Numbers/#Nat___ble)
+  241. `blt`
+    1. [`Nat.blt`](Basic-Types/Natural-Numbers/#Nat___blt)
+  242. `bmod`
+    1. [`Int.bmod`](Basic-Types/Integers/#Int___bmod)
+  243. [`bootstrap.inductive­Check­Resulting­Universe`](The-Type-System/Inductive-Types/#bootstrap___inductiveCheckResultingUniverse)
+  244. `bracket`
+    1. [`Std.Format.bracket`](Interacting-with-Lean/#Std___Format___bracket)
+  245. `bracket­Fill`
+    1. [`Std.Format.bracket­Fill`](Interacting-with-Lean/#Std___Format___bracketFill)
+  246. `bsize`
+    1. [`Substring.Raw.bsize`](Basic-Types/Strings/#Substring___Raw___bsize)
+  247. `buckets`
+    1. [`Std.DHashMap.Raw.buckets` (structure field)](Basic-Types/Maps-and-Sets/#Std___DHashMap___Raw___mk)
+  248. [`build` (Lake command)](Build-Tools-and-Distribution/Lake/#build)
+  249. [`bv_check`](Tactic-Proofs/Tactic-Reference/#bv_check)
+  250. [`bv_decide`](Tactic-Proofs/Tactic-Reference/#bv_decide)
+  251. [`bv_decide?`](Tactic-Proofs/Tactic-Reference/#bv_decide___)
+  252. [`bv_normalize`](Tactic-Proofs/Tactic-Reference/#bv_normalize)
+  253. [`bv_omega`](Tactic-Proofs/Tactic-Reference/#bv_omega)
+  254. `by­Cases`
+    1. [`Decidable.by­Cases`](Type-Classes/Basic-Classes/#Decidable___byCases)
+  255. [`by_cases`](Tactic-Proofs/Tactic-Reference/#by_cases)
+  256. `by_cases'`
+    1. [`Or.by_cases'`](Basic-Propositions/Logical-Connectives/#Or___by_cases___)
+  257. `by_cases`
+    1. [`Or.by_cases`](Basic-Propositions/Logical-Connectives/#Or___by_cases)
+  258. `byte`
+    1. [`String.Pos.byte`](Basic-Types/Strings/#String___Pos___byte)
+  259. `byte`
+    1. [`String.Slice.Pos.byte`](Basic-Types/Strings/#String___Slice___Pos___byte)
+  260. `byte­Array`
+    1. [`ByteSlice.byte­Array`](Basic-Types/Byte-Arrays/#ByteSlice___byteArray)
+  261. `byte­Distance`
+    1. [`String.Pos.Raw.byte­Distance`](Basic-Types/Strings/#String___Pos___Raw___byteDistance)
+  262. `byte­Idx`
+    1. [`String.Pos.Raw.byte­Idx` (structure field)](Basic-Types/Strings/#String___Pos___Raw___mk)
+  263. `byte­Size`
+    1. [`IO.FS.Metadata.byte­Size` (structure field)](IO/Files___-File-Handles___-and-Streams/#IO___FS___Metadata___mk)
+  264. `bytes`
+    1. [`String.Slice.bytes`](Basic-Types/Strings/#String___Slice___bytes)
+
+
+##  C
+  1. [`CC` (environment variable)](Build-Tools-and-Distribution/Lake/#CC)
+  2. `CCPO`
+    1. [`Lean.Order.CCPO`](Definitions/Recursive-Definitions/#Lean___Order___CCPO___mk)
+  3. `Channel`
+    1. [`Std.Channel`](IO/Tasks-and-Threads/#Std___Channel)
+  4. [`Char`](Basic-Types/Characters/#Char___mk)
+  5. [`Char.is­Alpha`](Basic-Types/Characters/#Char___isAlpha)
+  6. [`Char.is­Alphanum`](Basic-Types/Characters/#Char___isAlphanum)
+  7. [`Char.is­Digit`](Basic-Types/Characters/#Char___isDigit)
+  8. [`Char.is­Lower`](Basic-Types/Characters/#Char___isLower)
+  9. [`Char.is­Upper`](Basic-Types/Characters/#Char___isUpper)
+  10. [`Char.is­Valid­Char­Nat`](Basic-Types/Characters/#Char___isValidCharNat)
+  11. [`Char.is­Whitespace`](Basic-Types/Characters/#Char___isWhitespace)
+  12. [`Char.le`](Basic-Types/Characters/#Char___le)
+  13. [`Char.lt`](Basic-Types/Characters/#Char___lt)
+  14. `Char.mk`
+    1. [Constructor of `Char`](Basic-Types/Characters/#Char___mk)
+  15. [`Char.of­Nat`](Basic-Types/Characters/#Char___ofNat)
+  16. [`Char.of­UInt8`](Basic-Types/Characters/#Char___ofUInt8)
+  17. [`Char.quote`](Basic-Types/Characters/#Char___quote)
+  18. [`Char.to­Lower`](Basic-Types/Characters/#Char___toLower)
+  19. [`Char.to­Nat`](Basic-Types/Characters/#Char___toNat)
+  20. [`Char.to­String`](Basic-Types/Characters/#Char___toString)
+  21. [`Char.to­UInt8`](Basic-Types/Characters/#Char___toUInt8)
+  22. [`Char.to­Upper`](Basic-Types/Characters/#Char___toUpper)
+  23. [`Char.utf16Size`](Basic-Types/Characters/#Char___utf16Size)
+  24. [`Char.utf8Size`](Basic-Types/Characters/#Char___utf8Size)
+  25. `Char­Lit`
+    1. [`Lean.Syntax.Char­Lit`](Notations-and-Macros/Defining-New-Syntax/#Lean___Syntax___CharLit)
+  26. `Child`
+    1. [`IO.Process.Child`](IO/Processes/#IO___Process___Child___stdin)
+  27. `Closeable­Channel`
+    1. [`Std.Closeable­Channel`](IO/Tasks-and-Threads/#Std___CloseableChannel)
+  28. [`Coe`](Coercions/#Coe___mk)
+  29. `Coe.mk`
+    1. [Instance constructor of `Coe`](Coercions/#Coe___mk)
+  30. [`Coe­Dep`](Coercions/Coercing-Between-Types/#CoeDep___mk)
+  31. `CoeDep.mk`
+    1. [Instance constructor of `Coe­Dep`](Coercions/Coercing-Between-Types/#CoeDep___mk)
+  32. [`Coe­Fun`](Coercions/Coercing-to-Function-Types/#CoeFun___mk)
+  33. `CoeFun.mk`
+    1. [Instance constructor of `Coe­Fun`](Coercions/Coercing-to-Function-Types/#CoeFun___mk)
+  34. [`Coe­HTC`](Coercions/Implementation-Details/#CoeHTC___mk)
+  35. `CoeHTC.mk`
+    1. [Instance constructor of `Coe­HTC`](Coercions/Implementation-Details/#CoeHTC___mk)
+  36. [`Coe­HTCT`](Coercions/Implementation-Details/#CoeHTCT___mk)
+  37. `CoeHTCT.mk`
+    1. [Instance constructor of `Coe­HTCT`](Coercions/Implementation-Details/#CoeHTCT___mk)
+  38. [`Coe­Head`](Coercions/Coercing-Between-Types/#CoeHead___mk)
+  39. `CoeHead.mk`
+    1. [Instance constructor of `Coe­Head`](Coercions/Coercing-Between-Types/#CoeHead___mk)
+  40. [`Coe­OTC`](Coercions/Implementation-Details/#CoeOTC___mk)
+  41. `CoeOTC.mk`
+    1. [Instance constructor of `Coe­OTC`](Coercions/Implementation-Details/#CoeOTC___mk)
+  42. [`Coe­Out`](Coercions/Coercing-Between-Types/#CoeOut___mk)
+  43. `CoeOut.mk`
+    1. [Instance constructor of `Coe­Out`](Coercions/Coercing-Between-Types/#CoeOut___mk)
+  44. [`Coe­Sort`](Coercions/Coercing-to-Sorts/#CoeSort___mk)
+  45. `CoeSort.mk`
+    1. [Instance constructor of `Coe­Sort`](Coercions/Coercing-to-Sorts/#CoeSort___mk)
+  46. [`Coe­T`](Coercions/Coercing-Between-Types/#CoeT___mk)
+  47. `CoeT.mk`
+    1. [Instance constructor of `Coe­T`](Coercions/Coercing-Between-Types/#CoeT___mk)
+  48. [`Coe­TC`](Coercions/Implementation-Details/#CoeTC___mk)
+  49. `CoeTC.mk`
+    1. [Instance constructor of `Coe­TC`](Coercions/Implementation-Details/#CoeTC___mk)
+  50. [`Coe­Tail`](Coercions/Coercing-Between-Types/#CoeTail___mk)
+  51. `CoeTail.mk`
+    1. [Instance constructor of `Coe­Tail`](Coercions/Coercing-Between-Types/#CoeTail___mk)
+  52. `Comm­Ring`
+    1. [`Lean.Grind.Comm­Ring`](The--grind--tactic/Algebraic-Solver-_LPAR_Commutative-Rings___-Fields_RPAR_/#Lean___Grind___CommRing___mk)
+  53. `Comm­Semiring`
+    1. [`Lean.Grind.Comm­Semiring`](The--grind--tactic/Algebraic-Solver-_LPAR_Commutative-Rings___-Fields_RPAR_/#Lean___Grind___CommSemiring___mk)
+  54. `Command`
+    1. [`Lean.Syntax.Command`](Notations-and-Macros/Defining-New-Syntax/#Lean___Syntax___Command)
+  55. `Condvar`
+    1. [`Std.Condvar`](IO/Tasks-and-Threads/#Std___Condvar)
+  56. `Config`
+    1. [`Lean.Meta.DSimp.Config`](The-Simplifier/Configuring-Simplification/#Lean___Meta___DSimp___Config___mk)
+  57. `Config`
+    1. [`Lean.Meta.Rewrite.Config`](Tactic-Proofs/Tactic-Reference/#Lean___Meta___Rewrite___Config___mk)
+  58. `Config`
+    1. [`Lean.Meta.Simp.Config`](The-Simplifier/Configuring-Simplification/#Lean___Meta___Simp___Config___mk)
+  59. `Conjunctive`
+    1. [`Std.Do.PredTrans.Conjunctive`](The--mvcgen--tactic/Predicate-Transformers/#Std___Do___PredTrans___Conjunctive)
+  60. `Cursor`
+    1. [`List.Cursor`](The--mvcgen--tactic/Predicate-Transformers/#List___Cursor___mk)
+  61. [`cache clean` (Lake command)](Build-Tools-and-Distribution/Lake/#cache-clean)
+  62. [`cache get` (Lake command)](Build-Tools-and-Distribution/Lake/#cache-get)
+  63. [`cache put` (Lake command)](Build-Tools-and-Distribution/Lake/#cache-put)
+  64. [`cache services` (Lake command)](Build-Tools-and-Distribution/Lake/#cache-services)
+  65. [`calc`](Tactic-Proofs/Tactic-Reference/#calc)
+  66. [call-by-need](Basic-Types/Lazy-Computations/#--index--next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next)
+  67. `cancel`
+    1. [`IO.cancel`](IO/Tasks-and-Threads/#IO___cancel)
+  68. `canon­Instances`
+    1. [`backward.synthInstance.canon­Instances`](Type-Classes/Instance-Synthesis/#backward___synthInstance___canonInstances)
+  69. `capitalize`
+    1. [`String.capitalize`](Basic-Types/Strings/#String___capitalize)
+  70. `carry`
+    1. [`BitVec.carry`](Basic-Types/Bitvectors/#BitVec___carry)
+  71. [`case`](Tactic-Proofs/The-Tactic-Language/#case)
+  72. [`case ... => ...`](Tactic-Proofs/Targeted-Rewriting-with--conv/#Lean___Parser___Tactic___Conv___case)
+  73. [`case'`](Tactic-Proofs/The-Tactic-Language/#case___)
+  74. [`case' ... => ...`](Tactic-Proofs/Targeted-Rewriting-with--conv/#Lean___Parser___Tactic___Conv___case___)
+  75. `case­Strong­Rec­On`
+    1. [`Nat.case­Strong­Rec­On`](Basic-Types/Natural-Numbers/#Nat___caseStrongRecOn)
+  76. [`cases`](Tactic-Proofs/Tactic-Reference/#cases)
+  77. `cases`
+    1. [`Fin.cases`](Basic-Types/Finite-Natural-Numbers/#Fin___cases)
+  78. `cases­Aux­On`
+    1. [`Nat.cases­Aux­On`](Basic-Types/Natural-Numbers/#Nat___casesAuxOn)
+  79. [`cast`](Basic-Propositions/Propositional-Equality/#cast)
+  80. `cast`
+    1. [`BitVec.cast`](Basic-Types/Bitvectors/#BitVec___cast)
+  81. `cast`
+    1. [`Fin.cast`](Basic-Types/Finite-Natural-Numbers/#Fin___cast)
+  82. `cast`
+    1. [`Int.cast`](Coercions/Coercing-Between-Types/#Int___cast)
+  83. `cast`
+    1. [`Nat.cast`](Coercions/Coercing-Between-Types/#Nat___cast)
+  84. `cast`
+    1. [`String.Pos.cast`](Basic-Types/Strings/#String___Pos___cast)
+  85. `cast`
+    1. [`String.Slice.Pos.cast`](Basic-Types/Strings/#String___Slice___Pos___cast)
+  86. `cast­Add`
+    1. [`Fin.cast­Add`](Basic-Types/Finite-Natural-Numbers/#Fin___castAdd)
+  87. `cast­LE`
+    1. [`Fin.cast­LE`](Basic-Types/Finite-Natural-Numbers/#Fin___castLE)
+  88. `cast­LT`
+    1. [`Fin.cast­LT`](Basic-Types/Finite-Natural-Numbers/#Fin___castLT)
+  89. `cast­Succ`
+    1. [`Fin.cast­Succ`](Basic-Types/Finite-Natural-Numbers/#Fin___castSucc)
+  90. [`cast_heq`](Basic-Propositions/Propositional-Equality/#cast_heq)
+  91. `catch­Exceptions`
+    1. [`EIO.catch­Exceptions`](IO/Logical-Model/#EIO___catchExceptions)
+  92. `catch­Runtime`
+    1. [`Lean.Meta.Simp.Config.catch­Runtime` (structure field)](The-Simplifier/Configuring-Simplification/#Lean___Meta___Simp___Config___mk)
+  93. `cbrt`
+    1. [`Float.cbrt`](Basic-Types/Floating-Point-Numbers/#Float___cbrt)
+  94. `cbrt`
+    1. [`Float32.cbrt`](Basic-Types/Floating-Point-Numbers/#Float32___cbrt)
+  95. [`cbv`](Tactic-Proofs/Targeted-Rewriting-with--conv/#Lean___Parser___Tactic___Conv___cbv)
+  96. `ceil`
+    1. [`Float.ceil`](Basic-Types/Floating-Point-Numbers/#Float___ceil)
+  97. `ceil`
+    1. [`Float32.ceil`](Basic-Types/Floating-Point-Numbers/#Float32___ceil)
+  98. chain
+    1. [of coercions](Coercions/Coercing-Between-Types/#--index--next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next)
+  99. `chain­Task`
+    1. [`BaseIO.chain­Task`](IO/Tasks-and-Threads/#BaseIO___chainTask)
+  100. `chain­Task`
+    1. [`EIO.chain­Task`](IO/Tasks-and-Threads/#EIO___chainTask)
+  101. `chain­Task`
+    1. [`IO.chain­Task`](IO/Tasks-and-Threads/#IO___chainTask)
+  102. `change` [(0)](Tactic-Proofs/Tactic-Reference/#change) [(1)](Tactic-Proofs/Targeted-Rewriting-with--conv/#Lean___Parser___Tactic___Conv___change)
+  103. `char­Lit­Kind`
+    1. [`Lean.char­Lit­Kind`](Notations-and-Macros/Defining-New-Syntax/#Lean___charLitKind)
+  104. `chars`
+    1. [`String.Slice.chars`](Basic-Types/Strings/#String___Slice___chars)
+  105. [`check-build` (Lake command)](Build-Tools-and-Distribution/Lake/#check-build)
+  106. [`check-lint` (Lake command)](Build-Tools-and-Distribution/Lake/#check-lint)
+  107. [`check-test` (Lake command)](Build-Tools-and-Distribution/Lake/#check-test)
+  108. `check­Canceled`
+    1. [`IO.check­Canceled`](IO/Tasks-and-Threads/#IO___checkCanceled)
+  109. `choice`
+    1. [`Option.choice`](Basic-Types/Optional-Values/#Option___choice)
+  110. `choice­Kind`
+    1. [`Lean.choice­Kind`](Notations-and-Macros/Defining-New-Syntax/#Lean___choiceKind)
+  111. `choose`
+    1. [`Exists.choose`](Basic-Propositions/Quantifiers/#Exists___choose)
+  112. [`classical`](Tactic-Proofs/Tactic-Reference/#classical)
+  113. [`clean` (Lake command)](Build-Tools-and-Distribution/Lake/#clean)
+  114. [`clear`](Tactic-Proofs/The-Tactic-Language/#clear)
+  115. [`clear_value`](Tactic-Proofs/Tactic-Reference/#clear_value)
+  116. `cmd`
+    1. [`[anonymous]` (structure field)](IO/Processes/#IO___Process___SpawnArgs___mk)
+  117. `coe`
+    1. [`Coe.coe` (class method)](Coercions/#Coe___mk)
+  118. `coe`
+    1. [`CoeDep.coe` (class method)](Coercions/Coercing-Between-Types/#CoeDep___mk)
+  119. `coe`
+    1. [`CoeFun.coe` (class method)](Coercions/Coercing-to-Function-Types/#CoeFun___mk)
+  120. `coe`
+    1. [`CoeHTC.coe` (class method)](Coercions/Implementation-Details/#CoeHTC___mk)
+  121. `coe`
+    1. [`CoeHTCT.coe` (class method)](Coercions/Implementation-Details/#CoeHTCT___mk)
+  122. `coe`
+    1. [`CoeHead.coe` (class method)](Coercions/Coercing-Between-Types/#CoeHead___mk)
+  123. `coe`
+    1. [`CoeOTC.coe` (class method)](Coercions/Implementation-Details/#CoeOTC___mk)
+  124. `coe`
+    1. [`CoeOut.coe` (class method)](Coercions/Coercing-Between-Types/#CoeOut___mk)
+  125. `coe`
+    1. [`CoeSort.coe` (class method)](Coercions/Coercing-to-Sorts/#CoeSort___mk)
+  126. `coe`
+    1. [`CoeT.coe` (class method)](Coercions/Coercing-Between-Types/#CoeT___mk)
+  127. `coe`
+    1. [`CoeTC.coe` (class method)](Coercions/Implementation-Details/#CoeTC___mk)
+  128. `coe`
+    1. [`CoeTail.coe` (class method)](Coercions/Coercing-Between-Types/#CoeTail___mk)
+  129. [`col­Eq`](Notations-and-Macros/Defining-New-Syntax/#colEq)
+  130. [`col­Ge`](Notations-and-Macros/Defining-New-Syntax/#colGe)
+  131. [`col­Gt`](Notations-and-Macros/Defining-New-Syntax/#colGt)
+  132. comment
+    1. [block](Source-Files-and-Modules/#--index--next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next)
+  133. comment
+    1. [line](Source-Files-and-Modules/#--index--next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next)
+  134. `common­Prefix`
+    1. [`Substring.Raw.common­Prefix`](Basic-Types/Strings/#Substring___Raw___commonPrefix)
+  135. `common­Suffix`
+    1. [`Substring.Raw.common­Suffix`](Basic-Types/Strings/#Substring___Raw___commonSuffix)
+  136. `comp`
+    1. [`Function.comp`](The-Type-System/Functions/#Function___comp)
+  137. `comp_map`
+    1. [`LawfulFunctor.comp_map` (class method)](Functors___-Monads-and--do--Notation/Laws/#LawfulFunctor___mk)
+  138. `compare`
+    1. [`Ord.compare` (class method)](Type-Classes/Basic-Classes/#Ord___mk)
+  139. [`compare­Lex`](Type-Classes/Basic-Classes/#compareLex)
+  140. [`compare­Of­Less­And­BEq`](Type-Classes/Basic-Classes/#compareOfLessAndBEq)
+  141. [`compare­Of­Less­And­Eq`](Type-Classes/Basic-Classes/#compareOfLessAndEq)
+  142. [`compare­On`](Type-Classes/Basic-Classes/#compareOn)
+  143. `complement`
+    1. [`ISize.complement`](Basic-Types/Fixed-Precision-Integers/#ISize___complement)
+  144. `complement`
+    1. [`Int16.complement`](Basic-Types/Fixed-Precision-Integers/#Int16___complement)
+  145. `complement`
+    1. [`Int32.complement`](Basic-Types/Fixed-Precision-Integers/#Int32___complement)
+  146. `complement`
+    1. [`Int64.complement`](Basic-Types/Fixed-Precision-Integers/#Int64___complement)
+  147. `complement`
+    1. [`Int8.complement`](Basic-Types/Fixed-Precision-Integers/#Int8___complement)
+  148. `complement`
+    1. [`UInt16.complement`](Basic-Types/Fixed-Precision-Integers/#UInt16___complement)
+  149. `complement`
+    1. [`UInt32.complement`](Basic-Types/Fixed-Precision-Integers/#UInt32___complement)
+  150. `complement`
+    1. [`UInt64.complement`](Basic-Types/Fixed-Precision-Integers/#UInt64___complement)
+  151. `complement`
+    1. [`UInt8.complement`](Basic-Types/Fixed-Precision-Integers/#UInt8___complement)
+  152. `complement`
+    1. [`USize.complement`](Basic-Types/Fixed-Precision-Integers/#USize___complement)
+  153. [`completions` (Elan command)](Build-Tools-and-Distribution/Managing-Toolchains-with-Elan/#completions)
+  154. `components`
+    1. [`System.FilePath.components`](IO/Files___-File-Handles___-and-Streams/#System___FilePath___components)
+  155. `concat`
+    1. [`BitVec.concat`](Basic-Types/Bitvectors/#BitVec___concat)
+  156. `concat`
+    1. [`List.concat`](Basic-Types/Linked-Lists/#List___concat)
+  157. [`cond`](Basic-Types/Booleans/#cond)
+  158. configuration
+    1. [of tactics](Tactic-Proofs/The-Tactic-Language/#--index--next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next)
+  159. `congr` [(0)](Tactic-Proofs/Tactic-Reference/#congr) [(1)](Tactic-Proofs/Targeted-Rewriting-with--conv/#Lean___Parser___Tactic___Conv___congr) [(2)](Basic-Propositions/Propositional-Equality/#congr-next)
+  160. [`congr­Arg`](Basic-Propositions/Propositional-Equality/#congrArg)
+  161. `congr­Consts`
+    1. [`Lean.Meta.Simp.Config.congr­Consts` (structure field)](The-Simplifier/Configuring-Simplification/#Lean___Meta___Simp___Config___mk)
+  162. [`congr­Fun`](Basic-Propositions/Propositional-Equality/#congrFun)
+  163. `conjunction`
+    1. [`Std.Do.SPred.conjunction`](The--mvcgen--tactic/Predicate-Transformers/#Std___Do___SPred___conjunction)
+  164. `conjunctive­Raw`
+    1. [`Std.Do.PredTrans.conjunctive­Raw` (structure field)](The--mvcgen--tactic/Predicate-Transformers/#Std___Do___PredTrans___mk)
+  165. `cons`
+    1. [`BitVec.cons`](Basic-Types/Bitvectors/#BitVec___cons)
+  166. `const`
+    1. [`Function.const`](The-Type-System/Functions/#Function___const)
+  167. constructor [(0)](The-Type-System/Inductive-Types/#--index--next-next-next-next-next-next-next-next-next-next-next-next-next-next-next) [(1)](Tactic-Proofs/Tactic-Reference/#constructor)
+  168. `contains`
+    1. [`Array.contains`](Basic-Types/Arrays/#Array___contains)
+  169. `contains`
+    1. [`ByteSlice.contains`](Basic-Types/Byte-Arrays/#ByteSlice___contains)
+  170. `contains`
+    1. [`List.contains`](Basic-Types/Linked-Lists/#List___contains)
+  171. `contains`
+    1. [`Std.DHashMap.contains`](Basic-Types/Maps-and-Sets/#Std___DHashMap___contains)
+  172. `contains`
+    1. [`Std.DTreeMap.contains`](Basic-Types/Maps-and-Sets/#Std___DTreeMap___contains)
+  173. `contains`
+    1. [`Std.Ext­DHashMap.contains`](Basic-Types/Maps-and-Sets/#Std___ExtDHashMap___contains)
+  174. `contains`
+    1. [`Std.Ext­HashMap.contains`](Basic-Types/Maps-and-Sets/#Std___ExtHashMap___contains)
+  175. `contains`
+    1. [`Std.Ext­HashSet.contains`](Basic-Types/Maps-and-Sets/#Std___ExtHashSet___contains)
+  176. `contains`
+    1. [`Std.HashMap.contains`](Basic-Types/Maps-and-Sets/#Std___HashMap___contains)
+  177. `contains`
+    1. [`Std.HashSet.contains`](Basic-Types/Maps-and-Sets/#Std___HashSet___contains)
+  178. `contains`
+    1. [`Std.TreeMap.contains`](Basic-Types/Maps-and-Sets/#Std___TreeMap___contains)
+  179. `contains`
+    1. [`Std.TreeSet.contains`](Basic-Types/Maps-and-Sets/#Std___TreeSet___contains)
+  180. `contains`
+    1. [`String.Slice.contains`](Basic-Types/Strings/#String___Slice___contains)
+  181. `contains`
+    1. [`String.contains`](Basic-Types/Strings/#String___contains)
+  182. `contains`
+    1. [`Substring.Raw.contains`](Basic-Types/Strings/#Substring___Raw___contains)
+  183. `contains­Then­Insert`
+    1. [`Std.DHashMap.contains­Then­Insert`](Basic-Types/Maps-and-Sets/#Std___DHashMap___containsThenInsert)
+  184. `contains­Then­Insert`
+    1. [`Std.DTreeMap.contains­Then­Insert`](Basic-Types/Maps-and-Sets/#Std___DTreeMap___containsThenInsert)
+  185. `contains­Then­Insert`
+    1. [`Std.Ext­DHashMap.contains­Then­Insert`](Basic-Types/Maps-and-Sets/#Std___ExtDHashMap___containsThenInsert)
+  186. `contains­Then­Insert`
+    1. [`Std.Ext­HashMap.contains­Then­Insert`](Basic-Types/Maps-and-Sets/#Std___ExtHashMap___containsThenInsert)
+  187. `contains­Then­Insert`
+    1. [`Std.Ext­HashSet.contains­Then­Insert`](Basic-Types/Maps-and-Sets/#Std___ExtHashSet___containsThenInsert)
+  188. `contains­Then­Insert`
+    1. [`Std.HashMap.contains­Then­Insert`](Basic-Types/Maps-and-Sets/#Std___HashMap___containsThenInsert)
+  189. `contains­Then­Insert`
+    1. [`Std.HashSet.contains­Then­Insert`](Basic-Types/Maps-and-Sets/#Std___HashSet___containsThenInsert)
+  190. `contains­Then­Insert`
+    1. [`Std.TreeMap.contains­Then­Insert`](Basic-Types/Maps-and-Sets/#Std___TreeMap___containsThenInsert)
+  191. `contains­Then­Insert`
+    1. [`Std.TreeSet.contains­Then­Insert`](Basic-Types/Maps-and-Sets/#Std___TreeSet___containsThenInsert)
+  192. `contains­Then­Insert­If­New`
+    1. [`Std.DHashMap.contains­Then­Insert­If­New`](Basic-Types/Maps-and-Sets/#Std___DHashMap___containsThenInsertIfNew)
+  193. `contains­Then­Insert­If­New`
+    1. [`Std.DTreeMap.contains­Then­Insert­If­New`](Basic-Types/Maps-and-Sets/#Std___DTreeMap___containsThenInsertIfNew)
+  194. `contains­Then­Insert­If­New`
+    1. [`Std.Ext­DHashMap.contains­Then­Insert­If­New`](Basic-Types/Maps-and-Sets/#Std___ExtDHashMap___containsThenInsertIfNew)
+  195. `contains­Then­Insert­If­New`
+    1. [`Std.Ext­HashMap.contains­Then­Insert­If­New`](Basic-Types/Maps-and-Sets/#Std___ExtHashMap___containsThenInsertIfNew)
+  196. `contains­Then­Insert­If­New`
+    1. [`Std.HashMap.contains­Then­Insert­If­New`](Basic-Types/Maps-and-Sets/#Std___HashMap___containsThenInsertIfNew)
+  197. `contains­Then­Insert­If­New`
+    1. [`Std.TreeMap.contains­Then­Insert­If­New`](Basic-Types/Maps-and-Sets/#Std___TreeMap___containsThenInsertIfNew)
+  198. `contextual`
+    1. [`Lean.Meta.Simp.Config.contextual` (structure field)](The-Simplifier/Configuring-Simplification/#Lean___Meta___Simp___Config___mk)
+  199. [`contradiction`](Tactic-Proofs/Tactic-Reference/#contradiction)
+  200. [`control`](Functors___-Monads-and--do--Notation/Lifting-Monads/#control)
+  201. [`control­At`](Functors___-Monads-and--do--Notation/Lifting-Monads/#controlAt)
+  202. [`conv`](Tactic-Proofs/Targeted-Rewriting-with--conv/#conv-next)
+  203. [`conv => ...`](Tactic-Proofs/Targeted-Rewriting-with--conv/#Lean___Parser___Tactic___Conv___convConvSeq)
+  204. `conv'` [(0)](Tactic-Proofs/Targeted-Rewriting-with--conv/#conv___) [(1)](Tactic-Proofs/Targeted-Rewriting-with--conv/#conv___-next)
+  205. `copy`
+    1. [`String.Slice.Pos.copy`](Basic-Types/Strings/#String___Slice___Pos___copy)
+  206. `copy`
+    1. [`String.Slice.copy`](Basic-Types/Strings/#String___Slice___copy)
+  207. `copy­Slice`
+    1. [`ByteArray.copy­Slice`](Basic-Types/Byte-Arrays/#ByteArray___copySlice)
+  208. `cos`
+    1. [`Float.cos`](Basic-Types/Floating-Point-Numbers/#Float___cos)
+  209. `cos`
+    1. [`Float32.cos`](Basic-Types/Floating-Point-Numbers/#Float32___cos)
+  210. `cosh`
+    1. [`Float.cosh`](Basic-Types/Floating-Point-Numbers/#Float___cosh)
+  211. `cosh`
+    1. [`Float32.cosh`](Basic-Types/Floating-Point-Numbers/#Float32___cosh)
+  212. `count`
+    1. [`Array.count`](Basic-Types/Arrays/#Array___count)
+  213. `count`
+    1. [`List.count`](Basic-Types/Linked-Lists/#List___count)
+  214. `count­P`
+    1. [`Array.count­P`](Basic-Types/Arrays/#Array___countP)
+  215. `count­P`
+    1. [`List.count­P`](Basic-Types/Linked-Lists/#List___countP)
+  216. `create­Dir`
+    1. [`IO.FS.create­Dir`](IO/Files___-File-Handles___-and-Streams/#IO___FS___createDir)
+  217. `create­Dir­All`
+    1. [`IO.FS.create­Dir­All`](IO/Files___-File-Handles___-and-Streams/#IO___FS___createDirAll)
+  218. `create­Temp­Dir`
+    1. [`IO.FS.create­Temp­Dir`](IO/Files___-File-Handles___-and-Streams/#IO___FS___createTempDir)
+  219. `create­Temp­File`
+    1. [`IO.FS.create­Temp­File`](IO/Files___-File-Handles___-and-Streams/#IO___FS___createTempFile)
+  220. `crlf­To­Lf`
+    1. [`String.crlf­To­Lf`](Basic-Types/Strings/#String___crlfToLf)
+  221. [cumulativity](The-Type-System/Universes/#--index--next-next-next-next-next-next-next-next-next-next-next)
+  222. `curr'`
+    1. [`ByteArray.Iterator.curr'`](Basic-Types/Byte-Arrays/#ByteArray___Iterator___curr___)
+  223. `curr'`
+    1. [`String.Legacy.Iterator.curr'`](Basic-Types/Strings/#String___Legacy___Iterator___curr___)
+  224. `curr`
+    1. [`ByteArray.Iterator.curr`](Basic-Types/Byte-Arrays/#ByteArray___Iterator___curr)
+  225. `curr`
+    1. [`String.Legacy.Iterator.curr`](Basic-Types/Strings/#String___Legacy___Iterator___curr)
+  226. `curr­Column`
+    1. [`Std.Format.Monad­PrettyFormat.curr­Column` (class method)](Interacting-with-Lean/#Std___Format___MonadPrettyFormat___mk)
+  227. `current`
+    1. [`List.Cursor.current`](The--mvcgen--tactic/Predicate-Transformers/#List___Cursor___current)
+  228. `current­Dir`
+    1. [`IO.current­Dir`](IO/Files___-File-Handles___-and-Streams/#IO___currentDir)
+  229. `curry`
+    1. [`Function.curry`](The-Type-System/Functions/#Function___curry)
+  230. `curry`
+    1. [`Std.Do.SVal.curry`](The--mvcgen--tactic/Predicate-Transformers/#Std___Do___SVal___curry)
+  231. `custom­Eliminators`
+    1. [`tactic.custom­Eliminators`](Tactic-Proofs/Options/#tactic___customEliminators)
+  232. `cwd`
+    1. [`[anonymous]` (structure field)](IO/Processes/#IO___Process___SpawnArgs___mk)
+
+
+##  D
+  1. `DHash­Map`
+    1. [`Std.DHash­Map`](Basic-Types/Maps-and-Sets/#Std___DHashMap)
+  2. `DTree­Map`
+    1. [`Std.DTree­Map`](Basic-Types/Maps-and-Sets/#Std___DTreeMap)
+  3. [`Decidable`](Type-Classes/Basic-Classes/#Decidable___isFalse)
+  4. [`Decidable.by­Cases`](Type-Classes/Basic-Classes/#Decidable___byCases)
+  5. [`Decidable.decide`](Type-Classes/Basic-Classes/#Decidable___decide)
+  6. `Decidable.is­False`
+    1. [Constructor of `Decidable`](Type-Classes/Basic-Classes/#Decidable___isFalse)
+  7. `Decidable.is­True`
+    1. [Constructor of `Decidable`](Type-Classes/Basic-Classes/#Decidable___isFalse)
+  8. [`Decidable­Eq`](Type-Classes/Basic-Classes/#DecidableEq)
+  9. [`Decidable­LE`](Type-Classes/Basic-Classes/#DecidableLE)
+  10. [`Decidable­LT`](Type-Classes/Basic-Classes/#DecidableLT)
+  11. [`Decidable­Pred`](Type-Classes/Basic-Classes/#DecidablePred)
+  12. [`Decidable­Rel`](Type-Classes/Basic-Classes/#DecidableRel)
+  13. `Dir­Entry`
+    1. [`IO.FS.Dir­Entry`](IO/Files___-File-Handles___-and-Streams/#IO___FS___DirEntry___mk)
+  14. [`Div`](Type-Classes/Basic-Classes/#Div___mk)
+  15. `Div.mk`
+    1. [Instance constructor of `Div`](Type-Classes/Basic-Classes/#Div___mk)
+  16. [`Dvd`](Type-Classes/Basic-Classes/#Dvd___mk)
+  17. `Dvd.mk`
+    1. [Instance constructor of `Dvd`](Type-Classes/Basic-Classes/#Dvd___mk)
+  18. `data`
+    1. [`ByteArray.data` (structure field)](Basic-Types/Byte-Arrays/#ByteArray___mk)
+  19. `data`
+    1. [`IO.FS.Stream.Buffer.data` (structure field)](IO/Files___-File-Handles___-and-Streams/#IO___FS___Stream___Buffer___mk)
+  20. [`dbg­Trace­If­Shared`](Run-Time-Code/Reference-Counting/#dbgTraceIfShared)
+  21. [`dbg_trace`](Tactic-Proofs/Tactic-Reference/#dbg_trace)
+  22. `dcond`
+    1. [`Bool.dcond`](Basic-Types/Booleans/#Bool___dcond)
+  23. `dec`
+    1. [`String.Pos.Raw.dec`](Basic-Types/Strings/#String___Pos___Raw___dec)
+  24. `dec­Eq`
+    1. [`BitVec.dec­Eq`](Basic-Types/Bitvectors/#BitVec___decEq)
+  25. `dec­Eq`
+    1. [`Bool.dec­Eq`](Basic-Types/Booleans/#Bool___decEq)
+  26. `dec­Eq`
+    1. [`ISize.dec­Eq`](Basic-Types/Fixed-Precision-Integers/#ISize___decEq)
+  27. `dec­Eq`
+    1. [`Int.dec­Eq`](Basic-Types/Integers/#Int___decEq)
+  28. `dec­Eq`
+    1. [`Int16.dec­Eq`](Basic-Types/Fixed-Precision-Integers/#Int16___decEq)
+  29. `dec­Eq`
+    1. [`Int32.dec­Eq`](Basic-Types/Fixed-Precision-Integers/#Int32___decEq)
+  30. `dec­Eq`
+    1. [`Int64.dec­Eq`](Basic-Types/Fixed-Precision-Integers/#Int64___decEq)
+  31. `dec­Eq`
+    1. [`Int8.dec­Eq`](Basic-Types/Fixed-Precision-Integers/#Int8___decEq)
+  32. `dec­Eq`
+    1. [`Nat.dec­Eq`](Basic-Types/Natural-Numbers/#Nat___decEq)
+  33. `dec­Eq`
+    1. [`String.dec­Eq`](Basic-Types/Strings/#String___decEq)
+  34. `dec­Eq`
+    1. [`UInt16.dec­Eq`](Basic-Types/Fixed-Precision-Integers/#UInt16___decEq)
+  35. `dec­Eq`
+    1. [`UInt32.dec­Eq`](Basic-Types/Fixed-Precision-Integers/#UInt32___decEq)
+  36. `dec­Eq`
+    1. [`UInt64.dec­Eq`](Basic-Types/Fixed-Precision-Integers/#UInt64___decEq)
+  37. `dec­Eq`
+    1. [`UInt8.dec­Eq`](Basic-Types/Fixed-Precision-Integers/#UInt8___decEq)
+  38. `dec­Eq`
+    1. [`USize.dec­Eq`](Basic-Types/Fixed-Precision-Integers/#USize___decEq)
+  39. `dec­Le`
+    1. [`Float.dec­Le`](Basic-Types/Floating-Point-Numbers/#Float___decLe)
+  40. `dec­Le`
+    1. [`Float32.dec­Le`](Basic-Types/Floating-Point-Numbers/#Float32___decLe)
+  41. `dec­Le`
+    1. [`ISize.dec­Le`](Basic-Types/Fixed-Precision-Integers/#ISize___decLe)
+  42. `dec­Le`
+    1. [`Int16.dec­Le`](Basic-Types/Fixed-Precision-Integers/#Int16___decLe)
+  43. `dec­Le`
+    1. [`Int32.dec­Le`](Basic-Types/Fixed-Precision-Integers/#Int32___decLe)
+  44. `dec­Le`
+    1. [`Int64.dec­Le`](Basic-Types/Fixed-Precision-Integers/#Int64___decLe)
+  45. `dec­Le`
+    1. [`Int8.dec­Le`](Basic-Types/Fixed-Precision-Integers/#Int8___decLe)
+  46. `dec­Le`
+    1. [`Nat.dec­Le`](Basic-Types/Natural-Numbers/#Nat___decLe)
+  47. `dec­Le`
+    1. [`UInt16.dec­Le`](Basic-Types/Fixed-Precision-Integers/#UInt16___decLe)
+  48. `dec­Le`
+    1. [`UInt32.dec­Le`](Basic-Types/Fixed-Precision-Integers/#UInt32___decLe)
+  49. `dec­Le`
+    1. [`UInt64.dec­Le`](Basic-Types/Fixed-Precision-Integers/#UInt64___decLe)
+  50. `dec­Le`
+    1. [`UInt8.dec­Le`](Basic-Types/Fixed-Precision-Integers/#UInt8___decLe)
+  51. `dec­Le`
+    1. [`USize.dec­Le`](Basic-Types/Fixed-Precision-Integers/#USize___decLe)
+  52. `dec­Lt`
+    1. [`Float.dec­Lt`](Basic-Types/Floating-Point-Numbers/#Float___decLt)
+  53. `dec­Lt`
+    1. [`Float32.dec­Lt`](Basic-Types/Floating-Point-Numbers/#Float32___decLt)
+  54. `dec­Lt`
+    1. [`ISize.dec­Lt`](Basic-Types/Fixed-Precision-Integers/#ISize___decLt)
+  55. `dec­Lt`
+    1. [`Int16.dec­Lt`](Basic-Types/Fixed-Precision-Integers/#Int16___decLt)
+  56. `dec­Lt`
+    1. [`Int32.dec­Lt`](Basic-Types/Fixed-Precision-Integers/#Int32___decLt)
+  57. `dec­Lt`
+    1. [`Int64.dec­Lt`](Basic-Types/Fixed-Precision-Integers/#Int64___decLt)
+  58. `dec­Lt`
+    1. [`Int8.dec­Lt`](Basic-Types/Fixed-Precision-Integers/#Int8___decLt)
+  59. `dec­Lt`
+    1. [`Nat.dec­Lt`](Basic-Types/Natural-Numbers/#Nat___decLt)
+  60. `dec­Lt`
+    1. [`UInt16.dec­Lt`](Basic-Types/Fixed-Precision-Integers/#UInt16___decLt)
+  61. `dec­Lt`
+    1. [`UInt32.dec­Lt`](Basic-Types/Fixed-Precision-Integers/#UInt32___decLt)
+  62. `dec­Lt`
+    1. [`UInt64.dec­Lt`](Basic-Types/Fixed-Precision-Integers/#UInt64___decLt)
+  63. `dec­Lt`
+    1. [`UInt8.dec­Lt`](Basic-Types/Fixed-Precision-Integers/#UInt8___decLt)
+  64. `dec­Lt`
+    1. [`USize.dec­Lt`](Basic-Types/Fixed-Precision-Integers/#USize___decLt)
+  65. `decapitalize`
+    1. [`String.decapitalize`](Basic-Types/Strings/#String___decapitalize)
+  66. [decidable](Type-Classes/Basic-Classes/#--index--next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next)
+  67. `decidable­Eq­None`
+    1. [`Option.decidable­Eq­None`](Basic-Types/Optional-Values/#Option___decidableEqNone)
+  68. [`decide`](Tactic-Proofs/Tactic-Reference/#decide)
+  69. `decide`
+    1. [`Decidable.decide`](Type-Classes/Basic-Classes/#Decidable___decide)
+  70. `decide`
+    1. [`Lean.Meta.DSimp.Config.decide` (structure field)](The-Simplifier/Configuring-Simplification/#Lean___Meta___DSimp___Config___mk)
+  71. `decide`
+    1. [`Lean.Meta.Simp.Config.decide` (structure field)](The-Simplifier/Configuring-Simplification/#Lean___Meta___Simp___Config___mk)
+  72. `decrease­By`
+    1. [`String.Pos.Raw.decrease­By`](Basic-Types/Strings/#String___Pos___Raw___decreaseBy)
+  73. [`decreasing_tactic`](Definitions/Recursive-Definitions/#decreasing_tactic)
+  74. [`decreasing_trivial`](Definitions/Recursive-Definitions/#decreasing_trivial)
+  75. [`decreasing_with`](Tactic-Proofs/Tactic-Reference/#decreasing_with)
+  76. `dedicated`
+    1. [`Task.Priority.dedicated`](IO/Tasks-and-Threads/#Task___Priority___dedicated)
+  77. `deep­Terms`
+    1. [`pp.deep­Terms`](Tactic-Proofs/Reading-Proof-States/#pp___deepTerms)
+  78. `def­Indent`
+    1. [`Std.Format.def­Indent`](Interacting-with-Lean/#Std___Format___defIndent)
+  79. `def­Width`
+    1. [`Std.Format.def­Width`](Interacting-with-Lean/#Std___Format___defWidth)
+  80. [`default` (Elan command)](Build-Tools-and-Distribution/Managing-Toolchains-with-Elan/#default)
+  81. `default`
+    1. [`Inhabited.default` (class method)](Type-Classes/Basic-Classes/#Inhabited___mk)
+  82. `default`
+    1. [`Task.Priority.default`](IO/Tasks-and-Threads/#Task___Priority___default)
+  83. `default­Facets`
+    1. [`[anonymous]` (structure field)](Build-Tools-and-Distribution/Lake/#Lake___LeanLibConfig___mk)
+  84. `default­Implementation`
+    1. [`Std.IteratorLoop.default­Implementation`](Iterators/Iterator-Definitions/#Std___IteratorLoop___defaultImplementation)
+  85. `deflate`
+    1. [`Std.Shrink.deflate`](Iterators/Iterator-Definitions/#Std___Shrink___deflate)
+  86. `delta` [(0)](Tactic-Proofs/Tactic-Reference/#delta) [(1)](Tactic-Proofs/Targeted-Rewriting-with--conv/#Lean___Parser___Tactic___Conv___delta)
+  87. `diff`
+    1. [`guard_msgs.diff`](Interacting-with-Lean/#guard_msgs___diff)
+  88. `digit­Char`
+    1. [`Nat.digit­Char`](Basic-Types/Natural-Numbers/#Nat___digitChar)
+  89. `discard`
+    1. [`Functor.discard`](Functors___-Monads-and--do--Notation/API-Reference/#Functor___discard)
+  90. `discharge`
+    1. [`trace.Meta.Tactic.simp.discharge`](The-Simplifier/Configuring-Simplification/#trace___Meta___Tactic___simp___discharge)
+  91. `div`
+    1. [`Div.div` (class method)](Type-Classes/Basic-Classes/#Div___mk)
+  92. `div`
+    1. [`Fin.div`](Basic-Types/Finite-Natural-Numbers/#Fin___div)
+  93. `div`
+    1. [`Float.div`](Basic-Types/Floating-Point-Numbers/#Float___div)
+  94. `div`
+    1. [`Float32.div`](Basic-Types/Floating-Point-Numbers/#Float32___div)
+  95. `div`
+    1. [`ISize.div`](Basic-Types/Fixed-Precision-Integers/#ISize___div)
+  96. `div`
+    1. [`Int16.div`](Basic-Types/Fixed-Precision-Integers/#Int16___div)
+  97. `div`
+    1. [`Int32.div`](Basic-Types/Fixed-Precision-Integers/#Int32___div)
+  98. `div`
+    1. [`Int64.div`](Basic-Types/Fixed-Precision-Integers/#Int64___div)
+  99. `div`
+    1. [`Int8.div`](Basic-Types/Fixed-Precision-Integers/#Int8___div)
+  100. `div`
+    1. [`Nat.div`](Basic-Types/Natural-Numbers/#Nat___div)
+  101. `div`
+    1. [`UInt16.div`](Basic-Types/Fixed-Precision-Integers/#UInt16___div)
+  102. `div`
+    1. [`UInt32.div`](Basic-Types/Fixed-Precision-Integers/#UInt32___div)
+  103. `div`
+    1. [`UInt64.div`](Basic-Types/Fixed-Precision-Integers/#UInt64___div)
+  104. `div`
+    1. [`UInt8.div`](Basic-Types/Fixed-Precision-Integers/#UInt8___div)
+  105. `div`
+    1. [`USize.div`](Basic-Types/Fixed-Precision-Integers/#USize___div)
+  106. `div2Induction`
+    1. [`Nat.div2Induction`](Basic-Types/Natural-Numbers/#Nat___div2Induction)
+  107. `div­Rec`
+    1. [`BitVec.div­Rec`](Basic-Types/Bitvectors/#BitVec___divRec)
+  108. `div­Subtract­Shift`
+    1. [`BitVec.div­Subtract­Shift`](Basic-Types/Bitvectors/#BitVec___divSubtractShift)
+  109. `div_eq_mul_inv`
+    1. [`[anonymous]` (class method)](The--grind--tactic/Algebraic-Solver-_LPAR_Commutative-Rings___-Fields_RPAR_/#Lean___Grind___Field___mk)
+  110. `done` [(0)](Tactic-Proofs/Tactic-Reference/#done) [(1)](Tactic-Proofs/Targeted-Rewriting-with--conv/#Lean___Parser___Tactic___Conv___convDone)
+  111. `done`
+    1. [`Std.Plausible­IterStep.done`](Iterators/Iterator-Definitions/#Std___PlausibleIterStep___done)
+  112. `down`
+    1. [`PLift.down` (structure field)](The-Type-System/Universes/#PLift___up)
+  113. `down`
+    1. [`ULift.down` (structure field)](The-Type-System/Universes/#ULift___up)
+  114. `drain`
+    1. [`Std.IterM.drain`](Iterators/Consuming-Iterators/#Std___IterM___drain)
+  115. `drop`
+    1. [`Array.drop`](Basic-Types/Arrays/#Array___drop)
+  116. `drop`
+    1. [`List.drop`](Basic-Types/Linked-Lists/#List___drop)
+  117. `drop`
+    1. [`Std.Iter.drop`](Iterators/Iterator-Combinators/#Std___Iter___drop)
+  118. `drop`
+    1. [`Std.IterM.drop`](Iterators/Iterator-Combinators/#Std___IterM___drop)
+  119. `drop`
+    1. [`String.Slice.drop`](Basic-Types/Strings/#String___Slice___drop)
+  120. `drop`
+    1. [`String.drop`](Basic-Types/Strings/#String___drop)
+  121. `drop`
+    1. [`Subarray.drop`](Basic-Types/Arrays/#Subarray___drop)
+  122. `drop`
+    1. [`Substring.Raw.drop`](Basic-Types/Strings/#Substring___Raw___drop)
+  123. `drop­End`
+    1. [`String.Slice.drop­End`](Basic-Types/Strings/#String___Slice___dropEnd)
+  124. `drop­End`
+    1. [`String.drop­End`](Basic-Types/Strings/#String___dropEnd)
+  125. `drop­End­While`
+    1. [`String.Slice.drop­End­While`](Basic-Types/Strings/#String___Slice___dropEndWhile)
+  126. `drop­End­While`
+    1. [`String.drop­End­While`](Basic-Types/Strings/#String___dropEndWhile)
+  127. `drop­Last`
+    1. [`List.drop­Last`](Basic-Types/Linked-Lists/#List___dropLast)
+  128. `drop­Last­TR`
+    1. [`List.drop­Last­TR`](Basic-Types/Linked-Lists/#List___dropLastTR)
+  129. `drop­Prefix`
+    1. [`String.Slice.drop­Prefix`](Basic-Types/Strings/#String___Slice___dropPrefix)
+  130. `drop­Prefix`
+    1. [`String.drop­Prefix`](Basic-Types/Strings/#String___dropPrefix)
+  131. `drop­Prefix?`
+    1. [`String.Slice.Pattern.ForwardPattern.drop­Prefix?` (class method)](Basic-Types/Strings/#String___Slice___Pattern___ForwardPattern___mk)
+  132. `drop­Prefix?`
+    1. [`String.Slice.drop­Prefix?`](Basic-Types/Strings/#String___Slice___dropPrefix___)
+  133. `drop­Prefix?`
+    1. [`String.drop­Prefix?`](Basic-Types/Strings/#String___dropPrefix___)
+  134. `drop­Prefix?`
+    1. [`Substring.Raw.drop­Prefix?`](Basic-Types/Strings/#Substring___Raw___dropPrefix___)
+  135. `drop­Prefix­Of­Nonempty?`
+    1. [`String.Slice.Pattern.ForwardPattern.drop­Prefix­Of­Nonempty?` (class method)](Basic-Types/Strings/#String___Slice___Pattern___ForwardPattern___mk)
+  136. `drop­Right`
+    1. [`Substring.Raw.drop­Right`](Basic-Types/Strings/#Substring___Raw___dropRight)
+  137. `drop­Right­While`
+    1. [`Substring.Raw.drop­Right­While`](Basic-Types/Strings/#Substring___Raw___dropRightWhile)
+  138. `drop­Suffix`
+    1. [`String.Slice.drop­Suffix`](Basic-Types/Strings/#String___Slice___dropSuffix)
+  139. `drop­Suffix`
+    1. [`String.drop­Suffix`](Basic-Types/Strings/#String___dropSuffix)
+  140. `drop­Suffix?`
+    1. [`String.Slice.Pattern.BackwardPattern.drop­Suffix?` (class method)](Basic-Types/Strings/#String___Slice___Pattern___BackwardPattern___mk)
+  141. `drop­Suffix?`
+    1. [`String.Slice.drop­Suffix?`](Basic-Types/Strings/#String___Slice___dropSuffix___)
+  142. `drop­Suffix?`
+    1. [`String.drop­Suffix?`](Basic-Types/Strings/#String___dropSuffix___)
+  143. `drop­Suffix?`
+    1. [`Substring.Raw.drop­Suffix?`](Basic-Types/Strings/#Substring___Raw___dropSuffix___)
+  144. `drop­Suffix­Of­Nonempty?`
+    1. [`String.Slice.Pattern.BackwardPattern.drop­Suffix­Of­Nonempty?` (class method)](Basic-Types/Strings/#String___Slice___Pattern___BackwardPattern___mk)
+  145. `drop­While`
+    1. [`List.drop­While`](Basic-Types/Linked-Lists/#List___dropWhile)
+  146. `drop­While`
+    1. [`Std.Iter.drop­While`](Iterators/Iterator-Combinators/#Std___Iter___dropWhile)
+  147. `drop­While`
+    1. [`Std.IterM.drop­While`](Iterators/Iterator-Combinators/#Std___IterM___dropWhile)
+  148. `drop­While`
+    1. [`String.Slice.drop­While`](Basic-Types/Strings/#String___Slice___dropWhile)
+  149. `drop­While`
+    1. [`String.drop­While`](Basic-Types/Strings/#String___dropWhile)
+  150. `drop­While`
+    1. [`Substring.Raw.drop­While`](Basic-Types/Strings/#Substring___Raw___dropWhile)
+  151. `drop­While­M`
+    1. [`Std.IterM.drop­While­M`](Iterators/Iterator-Combinators/#Std___IterM___dropWhileM)
+  152. `drop­While­With­Postcondition`
+    1. [`Std.IterM.drop­While­With­Postcondition`](Iterators/Iterator-Combinators/#Std___IterM___dropWhileWithPostcondition)
+  153. `dsimp` [(0)](Tactic-Proofs/Tactic-Reference/#dsimp) [(1)](Tactic-Proofs/Targeted-Rewriting-with--conv/#Lean___Parser___Tactic___Conv___dsimp)
+  154. [`dsimp!`](Tactic-Proofs/Tactic-Reference/#dsimp___)
+  155. `dsimp`
+    1. [`Lean.Meta.Simp.Config.dsimp` (structure field)](The-Simplifier/Configuring-Simplification/#Lean___Meta___Simp___Config___mk)
+  156. [`dsimp?`](Tactic-Proofs/Tactic-Reference/#dsimp___-next)
+  157. [`dsimp?!`](Tactic-Proofs/Tactic-Reference/#dsimp______)
+  158. `dvd`
+    1. [`Dvd.dvd` (class method)](Type-Classes/Basic-Classes/#Dvd___mk)
+
+
+##  E
+  1. [`EIO`](IO/Logical-Model/#EIO)
+  2. [`EIO.as­Task`](IO/Tasks-and-Threads/#EIO___asTask)
+  3. [`EIO.bind­Task`](IO/Tasks-and-Threads/#EIO___bindTask)
+  4. [`EIO.catch­Exceptions`](IO/Logical-Model/#EIO___catchExceptions)
+  5. [`EIO.chain­Task`](IO/Tasks-and-Threads/#EIO___chainTask)
+  6. [`EIO.map­Task`](IO/Tasks-and-Threads/#EIO___mapTask)
+  7. [`EIO.map­Tasks`](IO/Tasks-and-Threads/#EIO___mapTasks)
+  8. [`EIO.to­Base­IO`](IO/Logical-Model/#EIO___toBaseIO)
+  9. [`EIO.to­IO`](IO/Logical-Model/#EIO___toIO)
+  10. [`EIO.to­IO'`](IO/Logical-Model/#EIO___toIO___)
+  11. [`ELAN` (environment variable)](Build-Tools-and-Distribution/Lake/#ELAN)
+  12. `ELAN_HOME` (environment variable) [(0)](Build-Tools-and-Distribution/Lake/#ELAN_HOME) [(1)](Build-Tools-and-Distribution/Managing-Toolchains-with-Elan/#ELAN_HOME-next)
+  13. [`EST`](IO/Mutable-References/#EST)
+  14. [`EState­M`](Functors___-Monads-and--do--Notation/Varieties-of-Monads/#EStateM)
+  15. [`EStateM.Backtrackable`](Functors___-Monads-and--do--Notation/Varieties-of-Monads/#EStateM___Backtrackable___mk)
+  16. `EStateM.Backtrackable.mk`
+    1. [Instance constructor of `EStateM.Backtrackable`](Functors___-Monads-and--do--Notation/Varieties-of-Monads/#EStateM___Backtrackable___mk)
+  17. [`EStateM.Result`](Functors___-Monads-and--do--Notation/Varieties-of-Monads/#EStateM___Result___ok)
+  18. `EStateM.Result.error`
+    1. [Constructor of `EStateM.Result`](Functors___-Monads-and--do--Notation/Varieties-of-Monads/#EStateM___Result___ok)
+  19. `EStateM.Result.ok`
+    1. [Constructor of `EStateM.Result`](Functors___-Monads-and--do--Notation/Varieties-of-Monads/#EStateM___Result___ok)
+  20. [`EStateM.adapt­Except`](Functors___-Monads-and--do--Notation/Varieties-of-Monads/#EStateM___adaptExcept)
+  21. [`EStateM.bind`](Functors___-Monads-and--do--Notation/Varieties-of-Monads/#EStateM___bind)
+  22. [`EStateM.from­State­M`](Functors___-Monads-and--do--Notation/Varieties-of-Monads/#EStateM___fromStateM)
+  23. [`EStateM.get`](Functors___-Monads-and--do--Notation/Varieties-of-Monads/#EStateM___get)
+  24. [`EStateM.map`](Functors___-Monads-and--do--Notation/Varieties-of-Monads/#EStateM___map)
+  25. [`EStateM.modify­Get`](Functors___-Monads-and--do--Notation/Varieties-of-Monads/#EStateM___modifyGet)
+  26. [`EStateM.non­Backtrackable`](Functors___-Monads-and--do--Notation/Varieties-of-Monads/#EStateM___nonBacktrackable)
+  27. [`EStateM.or­Else`](Functors___-Monads-and--do--Notation/Varieties-of-Monads/#EStateM___orElse)
+  28. [`EStateM.or­Else'`](Functors___-Monads-and--do--Notation/Varieties-of-Monads/#EStateM___orElse___)
+  29. [`EStateM.pure`](Functors___-Monads-and--do--Notation/Varieties-of-Monads/#EStateM___pure)
+  30. [`EStateM.run`](Functors___-Monads-and--do--Notation/Varieties-of-Monads/#EStateM___run)
+  31. [`EStateM.run'`](Functors___-Monads-and--do--Notation/Varieties-of-Monads/#EStateM___run___)
+  32. [`EStateM.seq­Right`](Functors___-Monads-and--do--Notation/Varieties-of-Monads/#EStateM___seqRight)
+  33. [`EStateM.set`](Functors___-Monads-and--do--Notation/Varieties-of-Monads/#EStateM___set)
+  34. [`EStateM.throw`](Functors___-Monads-and--do--Notation/Varieties-of-Monads/#EStateM___throw)
+  35. [`EStateM.try­Catch`](Functors___-Monads-and--do--Notation/Varieties-of-Monads/#EStateM___tryCatch)
+  36. [`Empty`](Basic-Types/The-Empty-Type/#Empty)
+  37. [`Empty.elim`](Basic-Types/The-Empty-Type/#Empty___elim)
+  38. [`Eq`](Basic-Propositions/Propositional-Equality/#Eq___refl)
+  39. [`Eq.mp`](Basic-Propositions/Propositional-Equality/#Eq___mp)
+  40. [`Eq.mpr`](Basic-Propositions/Propositional-Equality/#Eq___mpr)
+  41. `Eq.refl`
+    1. [Constructor of `Eq`](Basic-Propositions/Propositional-Equality/#Eq___refl)
+  42. [`Eq.subst`](Basic-Propositions/Propositional-Equality/#Eq___subst)
+  43. [`Eq.symm`](Basic-Propositions/Propositional-Equality/#Eq___symm)
+  44. [`Eq.trans`](Basic-Propositions/Propositional-Equality/#Eq___trans)
+  45. `Equiv`
+    1. [`HasEquiv.Equiv` (class method)](The-Type-System/Quotients/#HasEquiv___mk)
+  46. `Equiv`
+    1. [`Std.DHashMap.Equiv`](Basic-Types/Maps-and-Sets/#Std___DHashMap___Equiv___mk)
+  47. `Equiv`
+    1. [`Std.HashMap.Equiv`](Basic-Types/Maps-and-Sets/#Std___HashMap___Equiv___mk)
+  48. `Equiv`
+    1. [`Std.HashSet.Equiv`](Basic-Types/Maps-and-Sets/#Std___HashSet___Equiv___mk)
+  49. `Equiv`
+    1. [`Std.Iter.Equiv`](Iterators/Reasoning-About-Iterators/#Std___Iter___Equiv)
+  50. `Equiv`
+    1. [`Std.IterM.Equiv`](Iterators/Reasoning-About-Iterators/#Std___IterM___Equiv)
+  51. [`Equiv­BEq`](Type-Classes/Basic-Classes/#EquivBEq___mk)
+  52. `EquivBEq.mk`
+    1. [Instance constructor of `Equiv­BEq`](Type-Classes/Basic-Classes/#EquivBEq___mk)
+  53. [`Equivalence`](The-Type-System/Quotients/#Equivalence___mk)
+  54. `Equivalence.mk`
+    1. [Constructor of `Equivalence`](The-Type-System/Quotients/#Equivalence___mk)
+  55. `Error`
+    1. [`IO.Error`](IO/Logical-Model/#IO___Error___alreadyExists)
+  56. [`Even`](Introduction/#Even___zero-next)
+  57. `Even.plus­Two`
+    1. [Constructor of `Even`](Introduction/#Even___zero-next)
+  58. `Even.zero`
+    1. [Constructor of `Even`](Introduction/#Even___zero-next)
+  59. [`Except`](Functors___-Monads-and--do--Notation/Varieties-of-Monads/#Except___error)
+  60. [`Except.bind`](Functors___-Monads-and--do--Notation/Varieties-of-Monads/#Except___bind)
+  61. `Except.error`
+    1. [Constructor of `Except`](Functors___-Monads-and--do--Notation/Varieties-of-Monads/#Except___error)
+  62. [`Except.is­Ok`](Functors___-Monads-and--do--Notation/Varieties-of-Monads/#Except___isOk)
+  63. [`Except.map`](Functors___-Monads-and--do--Notation/Varieties-of-Monads/#Except___map)
+  64. [`Except.map­Error`](Functors___-Monads-and--do--Notation/Varieties-of-Monads/#Except___mapError)
+  65. `Except.ok`
+    1. [Constructor of `Except`](Functors___-Monads-and--do--Notation/Varieties-of-Monads/#Except___error)
+  66. [`Except.or­Else­Lazy`](Functors___-Monads-and--do--Notation/Varieties-of-Monads/#Except___orElseLazy)
+  67. [`Except.pure`](Functors___-Monads-and--do--Notation/Varieties-of-Monads/#Except___pure)
+  68. [`Except.to­Bool`](Functors___-Monads-and--do--Notation/Varieties-of-Monads/#Except___toBool)
+  69. [`Except.to­Option`](Functors___-Monads-and--do--Notation/Varieties-of-Monads/#Except___toOption)
+  70. [`Except.try­Catch`](Functors___-Monads-and--do--Notation/Varieties-of-Monads/#Except___tryCatch)
+  71. `Except­Conds`
+    1. [`Std.Do.Except­Conds`](The--mvcgen--tactic/Predicate-Transformers/#Std___Do___ExceptConds)
+  72. [`Except­Cps­T`](Functors___-Monads-and--do--Notation/Varieties-of-Monads/#ExceptCpsT)
+  73. [`Except­CpsT.lift`](Functors___-Monads-and--do--Notation/Varieties-of-Monads/#ExceptCpsT___lift)
+  74. [`Except­CpsT.run`](Functors___-Monads-and--do--Notation/Varieties-of-Monads/#ExceptCpsT___run)
+  75. [`Except­CpsT.run­Catch`](Functors___-Monads-and--do--Notation/Varieties-of-Monads/#ExceptCpsT___runCatch)
+  76. [`Except­CpsT.run­K`](Functors___-Monads-and--do--Notation/Varieties-of-Monads/#ExceptCpsT___runK)
+  77. [`Except­T`](Functors___-Monads-and--do--Notation/Varieties-of-Monads/#ExceptT)
+  78. [`ExceptT.adapt`](Functors___-Monads-and--do--Notation/Varieties-of-Monads/#ExceptT___adapt)
+  79. [`ExceptT.bind`](Functors___-Monads-and--do--Notation/Varieties-of-Monads/#ExceptT___bind)
+  80. [`ExceptT.bind­Cont`](Functors___-Monads-and--do--Notation/Varieties-of-Monads/#ExceptT___bindCont)
+  81. [`ExceptT.lift`](Functors___-Monads-and--do--Notation/Varieties-of-Monads/#ExceptT___lift)
+  82. [`ExceptT.map`](Functors___-Monads-and--do--Notation/Varieties-of-Monads/#ExceptT___map)
+  83. [`ExceptT.mk`](Functors___-Monads-and--do--Notation/Varieties-of-Monads/#ExceptT___mk)
+  84. [`ExceptT.pure`](Functors___-Monads-and--do--Notation/Varieties-of-Monads/#ExceptT___pure)
+  85. [`ExceptT.run`](Functors___-Monads-and--do--Notation/Varieties-of-Monads/#ExceptT___run)
+  86. [`ExceptT.try­Catch`](Functors___-Monads-and--do--Notation/Varieties-of-Monads/#ExceptT___tryCatch)
+  87. [`Exists`](Basic-Propositions/Quantifiers/#Exists___intro)
+  88. [`Exists.choose`](Basic-Propositions/Quantifiers/#Exists___choose)
+  89. `Exists.intro`
+    1. [Constructor of `Exists`](Basic-Propositions/Quantifiers/#Exists___intro)
+  90. `Ext­DHash­Map`
+    1. [`Std.Ext­DHash­Map`](Basic-Types/Maps-and-Sets/#Std___ExtDHashMap)
+  91. `Ext­Hash­Map`
+    1. [`Std.Ext­Hash­Map`](Basic-Types/Maps-and-Sets/#Std___ExtHashMap)
+  92. `Ext­Hash­Set`
+    1. [`Std.Ext­Hash­Set`](Basic-Types/Maps-and-Sets/#Std___ExtHashSet___mk)
+  93. `ediv`
+    1. [`Int.ediv`](Basic-Types/Integers/#Int___ediv)
+  94. `elem`
+    1. [`Array.elem`](Basic-Types/Arrays/#Array___elem)
+  95. `elem`
+    1. [`List.elem`](Basic-Types/Linked-Lists/#List___elem)
+  96. `elems­And­Seps`
+    1. [`Lean.Syntax.TSepArray.elems­And­Seps`](Notations-and-Macros/Defining-New-Syntax/#Lean___Syntax___TSepArray___elemsAndSeps)
+  97. `elems­And­Seps`
+    1. [`Lean.Syntax.TSepArray.elems­And­Seps` (structure field)](Notations-and-Macros/Defining-New-Syntax/#Lean___Syntax___TSepArray___mk)
+  98. `elim`
+    1. [`And.elim`](Basic-Propositions/Logical-Connectives/#And___elim)
+  99. `elim`
+    1. [`Empty.elim`](Basic-Types/The-Empty-Type/#Empty___elim)
+  100. `elim`
+    1. [`False.elim`](Basic-Propositions/Truth/#False___elim)
+  101. `elim`
+    1. [`HEq.elim`](Basic-Propositions/Propositional-Equality/#HEq___elim)
+  102. `elim`
+    1. [`Iff.elim`](Basic-Propositions/Logical-Connectives/#Iff___elim)
+  103. `elim`
+    1. [`Not.elim`](Basic-Propositions/Logical-Connectives/#Not___elim)
+  104. `elim`
+    1. [`Option.elim`](Basic-Types/Optional-Values/#Option___elim)
+  105. `elim`
+    1. [`PEmpty.elim`](Basic-Types/The-Empty-Type/#PEmpty___elim)
+  106. `elim`
+    1. [`Subsingleton.elim`](Type-Classes/Basic-Classes/#Subsingleton___elim)
+  107. `elim`
+    1. [`Sum.elim`](Basic-Types/Sum-Types/#Sum___elim)
+  108. `elim0`
+    1. [`Fin.elim0`](Basic-Types/Finite-Natural-Numbers/#Fin___elim0)
+  109. `elim­M`
+    1. [`Option.elim­M`](Basic-Types/Optional-Values/#Option___elimM)
+  110. `emod`
+    1. [`Int.emod`](Basic-Types/Integers/#Int___emod)
+  111. `empty`
+    1. [`Array.empty`](Basic-Types/Arrays/#Array___empty)
+  112. `empty`
+    1. [`ByteArray.empty`](Basic-Types/Byte-Arrays/#ByteArray___empty)
+  113. `empty`
+    1. [`ByteSlice.empty`](Basic-Types/Byte-Arrays/#ByteSlice___empty)
+  114. `empty`
+    1. [`Std.DTreeMap.empty`](Basic-Types/Maps-and-Sets/#Std___DTreeMap___empty)
+  115. `empty`
+    1. [`Std.Iter.empty`](Iterators/Iterator-Definitions/#Std___Iter___empty)
+  116. `empty`
+    1. [`Std.IterM.empty`](Iterators/Iterator-Definitions/#Std___IterM___empty)
+  117. `empty`
+    1. [`Std.TreeMap.empty`](Basic-Types/Maps-and-Sets/#Std___TreeMap___empty)
+  118. `empty`
+    1. [`Std.TreeSet.empty`](Basic-Types/Maps-and-Sets/#Std___TreeSet___empty)
+  119. `empty`
+    1. [`Subarray.empty`](Basic-Types/Arrays/#Subarray___empty)
+  120. `empty­With­Capacity`
+    1. [`Array.empty­With­Capacity`](Basic-Types/Arrays/#Array___emptyWithCapacity)
+  121. `empty­With­Capacity`
+    1. [`ByteArray.empty­With­Capacity`](Basic-Types/Byte-Arrays/#ByteArray___emptyWithCapacity)
+  122. `empty­With­Capacity`
+    1. [`Std.DHashMap.empty­With­Capacity`](Basic-Types/Maps-and-Sets/#Std___DHashMap___emptyWithCapacity)
+  123. `empty­With­Capacity`
+    1. [`Std.Ext­DHashMap.empty­With­Capacity`](Basic-Types/Maps-and-Sets/#Std___ExtDHashMap___emptyWithCapacity)
+  124. `empty­With­Capacity`
+    1. [`Std.Ext­HashMap.empty­With­Capacity`](Basic-Types/Maps-and-Sets/#Std___ExtHashMap___emptyWithCapacity)
+  125. `empty­With­Capacity`
+    1. [`Std.Ext­HashSet.empty­With­Capacity`](Basic-Types/Maps-and-Sets/#Std___ExtHashSet___emptyWithCapacity)
+  126. `empty­With­Capacity`
+    1. [`Std.HashMap.empty­With­Capacity`](Basic-Types/Maps-and-Sets/#Std___HashMap___emptyWithCapacity)
+  127. `empty­With­Capacity`
+    1. [`Std.HashSet.empty­With­Capacity`](Basic-Types/Maps-and-Sets/#Std___HashSet___emptyWithCapacity)
+  128. `end`
+    1. [`List.Cursor.end`](The--mvcgen--tactic/Predicate-Transformers/#List___Cursor___end)
+  129. `end­Exclusive`
+    1. [`String.Slice.end­Exclusive` (structure field)](Basic-Types/Strings/#String___Slice___mk)
+  130. `end­Pos`
+    1. [`String.Slice.end­Pos`](Basic-Types/Strings/#String___Slice___endPos)
+  131. `end­Pos`
+    1. [`String.end­Pos`](Basic-Types/Strings/#String___endPos)
+  132. `end­Tags`
+    1. [`Std.Format.Monad­PrettyFormat.end­Tags` (class method)](Interacting-with-Lean/#Std___Format___MonadPrettyFormat___mk)
+  133. `ends­With`
+    1. [`String.Slice.Pattern.BackwardPattern.ends­With` (class method)](Basic-Types/Strings/#String___Slice___Pattern___BackwardPattern___mk)
+  134. `ends­With`
+    1. [`String.Slice.ends­With`](Basic-Types/Strings/#String___Slice___endsWith)
+  135. `ends­With`
+    1. [`String.ends­With`](Basic-Types/Strings/#String___endsWith)
+  136. `ensure­Termination`
+    1. [`Std.Iter.ensure­Termination`](Iterators/Iterator-Definitions/#Std___Iter___ensureTermination)
+  137. `ensure­Termination`
+    1. [`Std.IterM.ensure­Termination`](Iterators/Iterator-Definitions/#Std___IterM___ensureTermination)
+  138. `entails`
+    1. [`Std.Do.PostCond.entails`](The--mvcgen--tactic/Predicate-Transformers/#Std___Do___PostCond___entails)
+  139. `entails`
+    1. [`Std.Do.SPred.entails`](The--mvcgen--tactic/Predicate-Transformers/#Std___Do___SPred___entails)
+  140. [`enter`](Tactic-Proofs/Targeted-Rewriting-with--conv/#Lean___Parser___Tactic___Conv___enter)
+  141. `entry­At­Idx!`
+    1. [`Std.TreeMap.entry­At­Idx!`](Basic-Types/Maps-and-Sets/#Std___TreeMap___entryAtIdx___)
+  142. `entry­At­Idx`
+    1. [`Std.TreeMap.entry­At­Idx`](Basic-Types/Maps-and-Sets/#Std___TreeMap___entryAtIdx)
+  143. `entry­At­Idx?`
+    1. [`Std.TreeMap.entry­At­Idx?`](Basic-Types/Maps-and-Sets/#Std___TreeMap___entryAtIdx___-next)
+  144. `entry­At­Idx­D`
+    1. [`Std.TreeMap.entry­At­Idx­D`](Basic-Types/Maps-and-Sets/#Std___TreeMap___entryAtIdxD)
+  145. [`env` (Lake command)](Build-Tools-and-Distribution/Lake/#env)
+  146. `env`
+    1. [`IO.Process.SpawnArgs.cmd` (structure field)](IO/Processes/#IO___Process___SpawnArgs___mk)
+  147. [environment variables](Build-Tools-and-Distribution/Lake/#--index--next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next)
+  148. `eprint`
+    1. [`IO.eprint`](IO/Console-Output/#IO___eprint)
+  149. `eprintln`
+    1. [`IO.eprintln`](IO/Console-Output/#IO___eprintln)
+  150. `eq­Ignore­Ascii­Case`
+    1. [`String.Slice.eq­Ignore­Ascii­Case`](Basic-Types/Strings/#String___Slice___eqIgnoreAsciiCase)
+  151. [`eq­Rec_heq`](Basic-Propositions/Propositional-Equality/#eqRec_heq)
+  152. `eq_of_beq`
+    1. [`[anonymous]` (class method)](Type-Classes/Basic-Classes/#LawfulBEq___mk)
+  153. [`eq_of_heq`](Basic-Propositions/Propositional-Equality/#eq_of_heq)
+  154. `eq_of_succ?_eq`
+    1. [`Std.PRange.Linearly­UpwardEnumerable.eq_of_succ?_eq` (class method)](Basic-Types/Ranges/#Std___PRange___LinearlyUpwardEnumerable___mk)
+  155. [`eq_refl`](Tactic-Proofs/Tactic-Reference/#eq_refl)
+  156. `erase`
+    1. [`Array.erase`](Basic-Types/Arrays/#Array___erase)
+  157. `erase`
+    1. [`List.erase`](Basic-Types/Linked-Lists/#List___erase)
+  158. `erase`
+    1. [`Std.DHashMap.erase`](Basic-Types/Maps-and-Sets/#Std___DHashMap___erase)
+  159. `erase`
+    1. [`Std.DTreeMap.erase`](Basic-Types/Maps-and-Sets/#Std___DTreeMap___erase)
+  160. `erase`
+    1. [`Std.Ext­DHashMap.erase`](Basic-Types/Maps-and-Sets/#Std___ExtDHashMap___erase)
+  161. `erase`
+    1. [`Std.Ext­HashMap.erase`](Basic-Types/Maps-and-Sets/#Std___ExtHashMap___erase)
+  162. `erase`
+    1. [`Std.Ext­HashSet.erase`](Basic-Types/Maps-and-Sets/#Std___ExtHashSet___erase)
+  163. `erase`
+    1. [`Std.HashMap.erase`](Basic-Types/Maps-and-Sets/#Std___HashMap___erase)
+  164. `erase`
+    1. [`Std.HashSet.erase`](Basic-Types/Maps-and-Sets/#Std___HashSet___erase)
+  165. `erase`
+    1. [`Std.TreeMap.erase`](Basic-Types/Maps-and-Sets/#Std___TreeMap___erase)
+  166. `erase`
+    1. [`Std.TreeSet.erase`](Basic-Types/Maps-and-Sets/#Std___TreeSet___erase)
+  167. `erase­Dups`
+    1. [`List.erase­Dups`](Basic-Types/Linked-Lists/#List___eraseDups)
+  168. `erase­Idx!`
+    1. [`Array.erase­Idx!`](Basic-Types/Arrays/#Array___eraseIdx___)
+  169. `erase­Idx`
+    1. [`Array.erase­Idx`](Basic-Types/Arrays/#Array___eraseIdx)
+  170. `erase­Idx`
+    1. [`List.erase­Idx`](Basic-Types/Linked-Lists/#List___eraseIdx)
+  171. `erase­Idx­If­In­Bounds`
+    1. [`Array.erase­Idx­If­In­Bounds`](Basic-Types/Arrays/#Array___eraseIdxIfInBounds)
+  172. `erase­Idx­TR`
+    1. [`List.erase­Idx­TR`](Basic-Types/Linked-Lists/#List___eraseIdxTR)
+  173. `erase­Many`
+    1. [`Std.TreeMap.erase­Many`](Basic-Types/Maps-and-Sets/#Std___TreeMap___eraseMany)
+  174. `erase­Many`
+    1. [`Std.TreeSet.erase­Many`](Basic-Types/Maps-and-Sets/#Std___TreeSet___eraseMany)
+  175. `erase­P`
+    1. [`Array.erase­P`](Basic-Types/Arrays/#Array___eraseP)
+  176. `erase­P`
+    1. [`List.erase­P`](Basic-Types/Linked-Lists/#List___eraseP)
+  177. `erase­PTR`
+    1. [`List.erase­PTR`](Basic-Types/Linked-Lists/#List___erasePTR)
+  178. `erase­Reps`
+    1. [`Array.erase­Reps`](Basic-Types/Arrays/#Array___eraseReps)
+  179. `erase­Reps`
+    1. [`List.erase­Reps`](Basic-Types/Linked-Lists/#List___eraseReps)
+  180. `erase­TR`
+    1. [`List.erase­TR`](Basic-Types/Linked-Lists/#List___eraseTR)
+  181. `erw` [(0)](Tactic-Proofs/Tactic-Reference/#erw) [(1)](Tactic-Proofs/Targeted-Rewriting-with--conv/#Lean___Parser___Tactic___Conv___convErw__)
+  182. `eta`
+    1. [`Lean.Meta.DSimp.Config.eta` (structure field)](The-Simplifier/Configuring-Simplification/#Lean___Meta___DSimp___Config___mk)
+  183. `eta`
+    1. [`Lean.Meta.Simp.Config.eta` (structure field)](The-Simplifier/Configuring-Simplification/#Lean___Meta___Simp___Config___mk)
+  184. `eta­Struct`
+    1. [`Lean.Meta.DSimp.Config.eta­Struct` (structure field)](The-Simplifier/Configuring-Simplification/#Lean___Meta___DSimp___Config___mk)
+  185. `eta­Struct`
+    1. [`Lean.Meta.Simp.Config.eta­Struct` (structure field)](The-Simplifier/Configuring-Simplification/#Lean___Meta___Simp___Config___mk)
+  186. [`eval.derive.repr`](Interacting-with-Lean/#eval___derive___repr)
+  187. [`eval.pp`](Interacting-with-Lean/#eval___pp)
+  188. [`eval.type`](Interacting-with-Lean/#eval___type)
+  189. [`exact`](Tactic-Proofs/Tactic-Reference/#exact)
+  190. `exact`
+    1. [`Quotient.exact`](The-Type-System/Quotients/#Quotient___exact)
+  191. [`exact?`](Tactic-Proofs/Tactic-Reference/#exact___)
+  192. [`exact_mod_cast`](Tactic-Proofs/Tactic-Reference/#exact_mod_cast)
+  193. [`exe` (Lake command)](Build-Tools-and-Distribution/Lake/#exe)
+  194. `exe­Extension`
+    1. [`System.FilePath.exe­Extension`](IO/Files___-File-Handles___-and-Streams/#System___FilePath___exeExtension)
+  195. `exe­Name`
+    1. [`[anonymous]` (structure field)](Build-Tools-and-Distribution/Lake/#Lake___LeanExeConfig___mk)
+  196. `execution`
+    1. [`IO.AccessRight.execution` (structure field)](IO/Files___-File-Handles___-and-Streams/#IO___AccessRight___mk)
+  197. [`exfalso`](Tactic-Proofs/Tactic-Reference/#exfalso)
+  198. [`exists`](Tactic-Proofs/Tactic-Reference/#exists)
+  199. `exists`
+    1. [`Std.Do.SPred.exists`](The--mvcgen--tactic/Predicate-Transformers/#Std___Do___SPred___exists)
+  200. `exit`
+    1. [`IO.Process.exit`](IO/Processes/#IO___Process___exit)
+  201. `exit­Code`
+    1. [`IO.Process.Output.exit­Code` (structure field)](IO/Processes/#IO___Process___Output___mk)
+  202. `exp`
+    1. [`Float.exp`](Basic-Types/Floating-Point-Numbers/#Float___exp)
+  203. `exp`
+    1. [`Float32.exp`](Basic-Types/Floating-Point-Numbers/#Float32___exp)
+  204. `exp2`
+    1. [`Float.exp2`](Basic-Types/Floating-Point-Numbers/#Float___exp2)
+  205. `exp2`
+    1. [`Float32.exp2`](Basic-Types/Floating-Point-Numbers/#Float32___exp2)
+  206. `expand­Macro?`
+    1. [`Lean.Macro.expand­Macro?`](Notations-and-Macros/Macros/#Lean___Macro___expandMacro___)
+  207. [`experimental.module`](Source-Files-and-Modules/#experimental___module)
+  208. [`expose_names`](Tactic-Proofs/Tactic-Reference/#expose_names)
+  209. `ext` [(0)](Tactic-Proofs/Tactic-Reference/#ext) [(1)](Tactic-Proofs/Targeted-Rewriting-with--conv/#Lean___Parser___Tactic___Conv___ext)
+  210. [`ext1`](Tactic-Proofs/Tactic-Reference/#ext1)
+  211. `ext­Separator`
+    1. [`System.FilePath.ext­Separator`](IO/Files___-File-Handles___-and-Streams/#System___FilePath___extSeparator)
+  212. `extension`
+    1. [`System.FilePath.extension`](IO/Files___-File-Handles___-and-Streams/#System___FilePath___extension)
+  213. extensionality
+    1. [of propositions](The-Type-System/Propositions/#--index--next)
+  214. `extra­Dep­Targets`
+    1. `[anonymous]` (structure field) [(0)](Build-Tools-and-Distribution/Lake/#Lake___LeanLibConfig___mk) [(1)](Build-Tools-and-Distribution/Lake/#Lake___LeanExeConfig___mk)
+  215. `extract`
+    1. [`Array.extract`](Basic-Types/Arrays/#Array___extract)
+  216. `extract`
+    1. [`ByteArray.extract`](Basic-Types/Byte-Arrays/#ByteArray___extract)
+  217. `extract`
+    1. [`List.extract`](Basic-Types/Linked-Lists/#List___extract)
+  218. `extract`
+    1. [`String.Legacy.Iterator.extract`](Basic-Types/Strings/#String___Legacy___Iterator___extract)
+  219. `extract`
+    1. [`String.Pos.Raw.extract`](Basic-Types/Strings/#String___Pos___Raw___extract)
+  220. `extract`
+    1. [`String.extract`](Basic-Types/Strings/#String___extract)
+  221. `extract`
+    1. [`Substring.Raw.extract`](Basic-Types/Strings/#Substring___Raw___extract)
+  222. `extract­Lsb'`
+    1. [`BitVec.extract­Lsb'`](Basic-Types/Bitvectors/#BitVec___extractLsb___)
+  223. `extract­Lsb`
+    1. [`BitVec.extract­Lsb`](Basic-Types/Bitvectors/#BitVec___extractLsb)
+  224. [`extract_lets`](Tactic-Proofs/Tactic-Reference/#extract_lets)
+
+
+##  F
+  1. [`False`](Basic-Propositions/Truth/#False)
+  2. [`False.elim`](Basic-Propositions/Truth/#False___elim)
+  3. `Field`
+    1. [`Lean.Grind.Field`](The--grind--tactic/Algebraic-Solver-_LPAR_Commutative-Rings___-Fields_RPAR_/#Lean___Grind___Field___mk)
+  4. `File­Path`
+    1. [`System.File­Path`](IO/Files___-File-Handles___-and-Streams/#System___FilePath___mk)
+  5. `File­Right`
+    1. [`IO.File­Right`](IO/Files___-File-Handles___-and-Streams/#IO___FileRight___mk)
+  6. [`Fin`](Basic-Types/Finite-Natural-Numbers/#Fin___mk)
+  7. [`Fin.add`](Basic-Types/Finite-Natural-Numbers/#Fin___add)
+  8. [`Fin.add­Cases`](Basic-Types/Finite-Natural-Numbers/#Fin___addCases)
+  9. [`Fin.add­Nat`](Basic-Types/Finite-Natural-Numbers/#Fin___addNat)
+  10. [`Fin.cases`](Basic-Types/Finite-Natural-Numbers/#Fin___cases)
+  11. [`Fin.cast`](Basic-Types/Finite-Natural-Numbers/#Fin___cast)
+  12. [`Fin.cast­Add`](Basic-Types/Finite-Natural-Numbers/#Fin___castAdd)
+  13. [`Fin.cast­LE`](Basic-Types/Finite-Natural-Numbers/#Fin___castLE)
+  14. [`Fin.cast­LT`](Basic-Types/Finite-Natural-Numbers/#Fin___castLT)
+  15. [`Fin.cast­Succ`](Basic-Types/Finite-Natural-Numbers/#Fin___castSucc)
+  16. [`Fin.div`](Basic-Types/Finite-Natural-Numbers/#Fin___div)
+  17. [`Fin.elim0`](Basic-Types/Finite-Natural-Numbers/#Fin___elim0)
+  18. [`Fin.foldl`](Basic-Types/Finite-Natural-Numbers/#Fin___foldl)
+  19. [`Fin.foldl­M`](Basic-Types/Finite-Natural-Numbers/#Fin___foldlM)
+  20. [`Fin.foldr`](Basic-Types/Finite-Natural-Numbers/#Fin___foldr)
+  21. [`Fin.foldr­M`](Basic-Types/Finite-Natural-Numbers/#Fin___foldrM)
+  22. [`Fin.h­Iterate`](Basic-Types/Finite-Natural-Numbers/#Fin___hIterate)
+  23. [`Fin.h­Iterate­From`](Basic-Types/Finite-Natural-Numbers/#Fin___hIterateFrom)
+  24. [`Fin.induction`](Basic-Types/Finite-Natural-Numbers/#Fin___induction)
+  25. [`Fin.induction­On`](Basic-Types/Finite-Natural-Numbers/#Fin___inductionOn)
+  26. [`Fin.land`](Basic-Types/Finite-Natural-Numbers/#Fin___land)
+  27. [`Fin.last`](Basic-Types/Finite-Natural-Numbers/#Fin___last)
+  28. [`Fin.last­Cases`](Basic-Types/Finite-Natural-Numbers/#Fin___lastCases)
+  29. [`Fin.log2`](Basic-Types/Finite-Natural-Numbers/#Fin___log2)
+  30. [`Fin.lor`](Basic-Types/Finite-Natural-Numbers/#Fin___lor)
+  31. `Fin.mk`
+    1. [Constructor of `Fin`](Basic-Types/Finite-Natural-Numbers/#Fin___mk)
+  32. [`Fin.mod`](Basic-Types/Finite-Natural-Numbers/#Fin___mod)
+  33. [`Fin.modn`](Basic-Types/Finite-Natural-Numbers/#Fin___modn)
+  34. [`Fin.mul`](Basic-Types/Finite-Natural-Numbers/#Fin___mul)
+  35. [`Fin.nat­Add`](Basic-Types/Finite-Natural-Numbers/#Fin___natAdd)
+  36. [`Fin.of­Nat`](Basic-Types/Finite-Natural-Numbers/#Fin___ofNat)
+  37. [`Fin.pred`](Basic-Types/Finite-Natural-Numbers/#Fin___pred)
+  38. [`Fin.rev`](Basic-Types/Finite-Natural-Numbers/#Fin___rev)
+  39. [`Fin.reverse­Induction`](Basic-Types/Finite-Natural-Numbers/#Fin___reverseInduction)
+  40. [`Fin.shift­Left`](Basic-Types/Finite-Natural-Numbers/#Fin___shiftLeft)
+  41. [`Fin.shift­Right`](Basic-Types/Finite-Natural-Numbers/#Fin___shiftRight)
+  42. [`Fin.sub`](Basic-Types/Finite-Natural-Numbers/#Fin___sub)
+  43. [`Fin.sub­Nat`](Basic-Types/Finite-Natural-Numbers/#Fin___subNat)
+  44. [`Fin.succ`](Basic-Types/Finite-Natural-Numbers/#Fin___succ)
+  45. [`Fin.succ­Rec`](Basic-Types/Finite-Natural-Numbers/#Fin___succRec)
+  46. [`Fin.succ­Rec­On`](Basic-Types/Finite-Natural-Numbers/#Fin___succRecOn)
+  47. [`Fin.to­Nat`](Basic-Types/Finite-Natural-Numbers/#Fin___toNat)
+  48. [`Fin.xor`](Basic-Types/Finite-Natural-Numbers/#Fin___xor)
+  49. `Finite`
+    1. [`Std.IterM.TerminationMeasures.Finite`](Iterators/Consuming-Iterators/#Std___IterM___TerminationMeasures___Finite___mk)
+  50. `Finite`
+    1. [`Std.Iterators.Finite`](Iterators/Iterator-Definitions/#Std___Iterators___Finite___mk)
+  51. `Flatten­Behavior`
+    1. [`Std.Format.Flatten­Behavior`](Interacting-with-Lean/#Std___Format___FlattenBehavior___allOrNone)
+  52. [`Float`](Basic-Types/Floating-Point-Numbers/#Float-next)
+  53. [`Float.abs`](Basic-Types/Floating-Point-Numbers/#Float___abs)
+  54. [`Float.acos`](Basic-Types/Floating-Point-Numbers/#Float___acos)
+  55. [`Float.acosh`](Basic-Types/Floating-Point-Numbers/#Float___acosh)
+  56. [`Float.add`](Basic-Types/Floating-Point-Numbers/#Float___add)
+  57. [`Float.asin`](Basic-Types/Floating-Point-Numbers/#Float___asin)
+  58. [`Float.asinh`](Basic-Types/Floating-Point-Numbers/#Float___asinh)
+  59. [`Float.atan`](Basic-Types/Floating-Point-Numbers/#Float___atan)
+  60. [`Float.atan2`](Basic-Types/Floating-Point-Numbers/#Float___atan2)
+  61. [`Float.atanh`](Basic-Types/Floating-Point-Numbers/#Float___atanh)
+  62. [`Float.beq`](Basic-Types/Floating-Point-Numbers/#Float___beq)
+  63. [`Float.cbrt`](Basic-Types/Floating-Point-Numbers/#Float___cbrt)
+  64. [`Float.ceil`](Basic-Types/Floating-Point-Numbers/#Float___ceil)
+  65. [`Float.cos`](Basic-Types/Floating-Point-Numbers/#Float___cos)
+  66. [`Float.cosh`](Basic-Types/Floating-Point-Numbers/#Float___cosh)
+  67. [`Float.dec­Le`](Basic-Types/Floating-Point-Numbers/#Float___decLe)
+  68. [`Float.dec­Lt`](Basic-Types/Floating-Point-Numbers/#Float___decLt)
+  69. [`Float.div`](Basic-Types/Floating-Point-Numbers/#Float___div)
+  70. [`Float.exp`](Basic-Types/Floating-Point-Numbers/#Float___exp)
+  71. [`Float.exp2`](Basic-Types/Floating-Point-Numbers/#Float___exp2)
+  72. [`Float.floor`](Basic-Types/Floating-Point-Numbers/#Float___floor)
+  73. [`Float.fr­Exp`](Basic-Types/Floating-Point-Numbers/#Float___frExp)
+  74. [`Float.is­Finite`](Basic-Types/Floating-Point-Numbers/#Float___isFinite)
+  75. [`Float.is­Inf`](Basic-Types/Floating-Point-Numbers/#Float___isInf)
+  76. [`Float.is­Na­N`](Basic-Types/Floating-Point-Numbers/#Float___isNaN)
+  77. [`Float.le`](Basic-Types/Floating-Point-Numbers/#Float___le)
+  78. [`Float.log`](Basic-Types/Floating-Point-Numbers/#Float___log)
+  79. [`Float.log10`](Basic-Types/Floating-Point-Numbers/#Float___log10)
+  80. [`Float.log2`](Basic-Types/Floating-Point-Numbers/#Float___log2)
+  81. [`Float.lt`](Basic-Types/Floating-Point-Numbers/#Float___lt)
+  82. [`Float.mul`](Basic-Types/Floating-Point-Numbers/#Float___mul)
+  83. [`Float.neg`](Basic-Types/Floating-Point-Numbers/#Float___neg)
+  84. [`Float.of­Binary­Scientific`](Basic-Types/Floating-Point-Numbers/#Float___ofBinaryScientific)
+  85. [`Float.of­Bits`](Basic-Types/Floating-Point-Numbers/#Float___ofBits)
+  86. [`Float.of­Int`](Basic-Types/Floating-Point-Numbers/#Float___ofInt)
+  87. [`Float.of­Nat`](Basic-Types/Floating-Point-Numbers/#Float___ofNat)
+  88. [`Float.of­Scientific`](Basic-Types/Floating-Point-Numbers/#Float___ofScientific)
+  89. [`Float.pow`](Basic-Types/Floating-Point-Numbers/#Float___pow)
+  90. [`Float.round`](Basic-Types/Floating-Point-Numbers/#Float___round)
+  91. [`Float.scale­B`](Basic-Types/Floating-Point-Numbers/#Float___scaleB)
+  92. [`Float.sin`](Basic-Types/Floating-Point-Numbers/#Float___sin)
+  93. [`Float.sinh`](Basic-Types/Floating-Point-Numbers/#Float___sinh)
+  94. [`Float.sqrt`](Basic-Types/Floating-Point-Numbers/#Float___sqrt)
+  95. [`Float.sub`](Basic-Types/Floating-Point-Numbers/#Float___sub)
+  96. [`Float.tan`](Basic-Types/Floating-Point-Numbers/#Float___tan)
+  97. [`Float.tanh`](Basic-Types/Floating-Point-Numbers/#Float___tanh)
+  98. [`Float.to­Bits`](Basic-Types/Floating-Point-Numbers/#Float___toBits)
+  99. [`Float.to­Float32`](Basic-Types/Floating-Point-Numbers/#Float___toFloat32)
+  100. [`Float.to­ISize`](Basic-Types/Floating-Point-Numbers/#Float___toISize)
+  101. [`Float.to­Int16`](Basic-Types/Floating-Point-Numbers/#Float___toInt16)
+  102. [`Float.to­Int32`](Basic-Types/Floating-Point-Numbers/#Float___toInt32)
+  103. [`Float.to­Int64`](Basic-Types/Floating-Point-Numbers/#Float___toInt64)
+  104. [`Float.to­Int8`](Basic-Types/Floating-Point-Numbers/#Float___toInt8)
+  105. [`Float.to­String`](Basic-Types/Floating-Point-Numbers/#Float___toString)
+  106. [`Float.to­UInt16`](Basic-Types/Floating-Point-Numbers/#Float___toUInt16)
+  107. [`Float.to­UInt32`](Basic-Types/Floating-Point-Numbers/#Float___toUInt32)
+  108. [`Float.to­UInt64`](Basic-Types/Floating-Point-Numbers/#Float___toUInt64)
+  109. [`Float.to­UInt8`](Basic-Types/Floating-Point-Numbers/#Float___toUInt8)
+  110. [`Float.to­USize`](Basic-Types/Floating-Point-Numbers/#Float___toUSize)
+  111. [`Float32`](Basic-Types/Floating-Point-Numbers/#Float32)
+  112. [`Float32.abs`](Basic-Types/Floating-Point-Numbers/#Float32___abs)
+  113. [`Float32.acos`](Basic-Types/Floating-Point-Numbers/#Float32___acos)
+  114. [`Float32.acosh`](Basic-Types/Floating-Point-Numbers/#Float32___acosh)
+  115. [`Float32.add`](Basic-Types/Floating-Point-Numbers/#Float32___add)
+  116. [`Float32.asin`](Basic-Types/Floating-Point-Numbers/#Float32___asin)
+  117. [`Float32.asinh`](Basic-Types/Floating-Point-Numbers/#Float32___asinh)
+  118. [`Float32.atan`](Basic-Types/Floating-Point-Numbers/#Float32___atan)
+  119. [`Float32.atan2`](Basic-Types/Floating-Point-Numbers/#Float32___atan2)
+  120. [`Float32.atanh`](Basic-Types/Floating-Point-Numbers/#Float32___atanh)
+  121. [`Float32.beq`](Basic-Types/Floating-Point-Numbers/#Float32___beq)
+  122. [`Float32.cbrt`](Basic-Types/Floating-Point-Numbers/#Float32___cbrt)
+  123. [`Float32.ceil`](Basic-Types/Floating-Point-Numbers/#Float32___ceil)
+  124. [`Float32.cos`](Basic-Types/Floating-Point-Numbers/#Float32___cos)
+  125. [`Float32.cosh`](Basic-Types/Floating-Point-Numbers/#Float32___cosh)
+  126. [`Float32.dec­Le`](Basic-Types/Floating-Point-Numbers/#Float32___decLe)
+  127. [`Float32.dec­Lt`](Basic-Types/Floating-Point-Numbers/#Float32___decLt)
+  128. [`Float32.div`](Basic-Types/Floating-Point-Numbers/#Float32___div)
+  129. [`Float32.exp`](Basic-Types/Floating-Point-Numbers/#Float32___exp)
+  130. [`Float32.exp2`](Basic-Types/Floating-Point-Numbers/#Float32___exp2)
+  131. [`Float32.floor`](Basic-Types/Floating-Point-Numbers/#Float32___floor)
+  132. [`Float32.fr­Exp`](Basic-Types/Floating-Point-Numbers/#Float32___frExp)
+  133. [`Float32.is­Finite`](Basic-Types/Floating-Point-Numbers/#Float32___isFinite)
+  134. [`Float32.is­Inf`](Basic-Types/Floating-Point-Numbers/#Float32___isInf)
+  135. [`Float32.is­Na­N`](Basic-Types/Floating-Point-Numbers/#Float32___isNaN)
+  136. [`Float32.le`](Basic-Types/Floating-Point-Numbers/#Float32___le)
+  137. [`Float32.log`](Basic-Types/Floating-Point-Numbers/#Float32___log)
+  138. [`Float32.log10`](Basic-Types/Floating-Point-Numbers/#Float32___log10)
+  139. [`Float32.log2`](Basic-Types/Floating-Point-Numbers/#Float32___log2)
+  140. [`Float32.lt`](Basic-Types/Floating-Point-Numbers/#Float32___lt)
+  141. [`Float32.mul`](Basic-Types/Floating-Point-Numbers/#Float32___mul)
+  142. [`Float32.neg`](Basic-Types/Floating-Point-Numbers/#Float32___neg)
+  143. [`Float32.of­Binary­Scientific`](Basic-Types/Floating-Point-Numbers/#Float32___ofBinaryScientific)
+  144. [`Float32.of­Bits`](Basic-Types/Floating-Point-Numbers/#Float32___ofBits)
+  145. [`Float32.of­Int`](Basic-Types/Floating-Point-Numbers/#Float32___ofInt)
+  146. [`Float32.of­Nat`](Basic-Types/Floating-Point-Numbers/#Float32___ofNat)
+  147. [`Float32.of­Scientific`](Basic-Types/Floating-Point-Numbers/#Float32___ofScientific)
+  148. [`Float32.pow`](Basic-Types/Floating-Point-Numbers/#Float32___pow)
+  149. [`Float32.round`](Basic-Types/Floating-Point-Numbers/#Float32___round)
+  150. [`Float32.scale­B`](Basic-Types/Floating-Point-Numbers/#Float32___scaleB)
+  151. [`Float32.sin`](Basic-Types/Floating-Point-Numbers/#Float32___sin)
+  152. [`Float32.sinh`](Basic-Types/Floating-Point-Numbers/#Float32___sinh)
+  153. [`Float32.sqrt`](Basic-Types/Floating-Point-Numbers/#Float32___sqrt)
+  154. [`Float32.sub`](Basic-Types/Floating-Point-Numbers/#Float32___sub)
+  155. [`Float32.tan`](Basic-Types/Floating-Point-Numbers/#Float32___tan)
+  156. [`Float32.tanh`](Basic-Types/Floating-Point-Numbers/#Float32___tanh)
+  157. [`Float32.to­Bits`](Basic-Types/Floating-Point-Numbers/#Float32___toBits)
+  158. [`Float32.to­Float`](Basic-Types/Floating-Point-Numbers/#Float32___toFloat)
+  159. [`Float32.to­ISize`](Basic-Types/Floating-Point-Numbers/#Float32___toISize)
+  160. [`Float32.to­Int16`](Basic-Types/Floating-Point-Numbers/#Float32___toInt16)
+  161. [`Float32.to­Int32`](Basic-Types/Floating-Point-Numbers/#Float32___toInt32)
+  162. [`Float32.to­Int64`](Basic-Types/Floating-Point-Numbers/#Float32___toInt64)
+  163. [`Float32.to­Int8`](Basic-Types/Floating-Point-Numbers/#Float32___toInt8)
+  164. [`Float32.to­String`](Basic-Types/Floating-Point-Numbers/#Float32___toString)
+  165. [`Float32.to­UInt16`](Basic-Types/Floating-Point-Numbers/#Float32___toUInt16)
+  166. [`Float32.to­UInt32`](Basic-Types/Floating-Point-Numbers/#Float32___toUInt32)
+  167. [`Float32.to­UInt64`](Basic-Types/Floating-Point-Numbers/#Float32___toUInt64)
+  168. [`Float32.to­UInt8`](Basic-Types/Floating-Point-Numbers/#Float32___toUInt8)
+  169. [`Float32.to­USize`](Basic-Types/Floating-Point-Numbers/#Float32___toUSize)
+  170. [`For­In`](Functors___-Monads-and--do--Notation/Syntax/#ForIn___mk)
+  171. [`For­In'`](Functors___-Monads-and--do--Notation/Syntax/#ForIn______mk)
+  172. `ForIn'.mk`
+    1. [Instance constructor of `For­In'`](Functors___-Monads-and--do--Notation/Syntax/#ForIn______mk)
+  173. `ForIn.mk`
+    1. [Instance constructor of `For­In`](Functors___-Monads-and--do--Notation/Syntax/#ForIn___mk)
+  174. [`For­In­Step`](Functors___-Monads-and--do--Notation/Syntax/#ForInStep___done)
+  175. `For­InStep.done`
+    1. [Constructor of `For­In­Step`](Functors___-Monads-and--do--Notation/Syntax/#ForInStep___done)
+  176. [`For­InStep.value`](Functors___-Monads-and--do--Notation/Syntax/#ForInStep___value)
+  177. `For­InStep.yield`
+    1. [Constructor of `For­In­Step`](Functors___-Monads-and--do--Notation/Syntax/#ForInStep___done)
+  178. [`For­M`](Functors___-Monads-and--do--Notation/Syntax/#ForM___mk)
+  179. [`ForM.for­In`](Functors___-Monads-and--do--Notation/Syntax/#ForM___forIn)
+  180. `ForM.mk`
+    1. [Instance constructor of `For­M`](Functors___-Monads-and--do--Notation/Syntax/#ForM___mk)
+  181. `Format`
+    1. [`Std.Format`](Interacting-with-Lean/#Std___Format___nil)
+  182. `Forward­Pattern`
+    1. [`String.Slice.Pattern.Forward­Pattern`](Basic-Types/Strings/#String___Slice___Pattern___ForwardPattern___mk)
+  183. [`Function.Has­Left­Inverse`](The-Type-System/Functions/#Function___HasLeftInverse)
+  184. [`Function.Has­Right­Inverse`](The-Type-System/Functions/#Function___HasRightInverse)
+  185. [`Function.Injective`](The-Type-System/Functions/#Function___Injective)
+  186. [`Function.Left­Inverse`](The-Type-System/Functions/#Function___LeftInverse)
+  187. [`Function.Right­Inverse`](The-Type-System/Functions/#Function___RightInverse)
+  188. [`Function.Surjective`](The-Type-System/Functions/#Function___Surjective)
+  189. [`Function.comp`](The-Type-System/Functions/#Function___comp)
+  190. [`Function.const`](The-Type-System/Functions/#Function___const)
+  191. [`Function.curry`](The-Type-System/Functions/#Function___curry)
+  192. [`Function.uncurry`](The-Type-System/Functions/#Function___uncurry)
+  193. [`Functor`](Functors___-Monads-and--do--Notation/#Functor___mk)
+  194. [`Functor.discard`](Functors___-Monads-and--do--Notation/API-Reference/#Functor___discard)
+  195. [`Functor.map­Rev`](Functors___-Monads-and--do--Notation/API-Reference/#Functor___mapRev)
+  196. `Functor.mk`
+    1. [Instance constructor of `Functor`](Functors___-Monads-and--do--Notation/#Functor___mk)
+  197. [`fail`](Tactic-Proofs/The-Tactic-Language/#fail)
+  198. `fail`
+    1. [`OptionT.fail`](Functors___-Monads-and--do--Notation/Varieties-of-Monads/#OptionT___fail)
+  199. `fail­If­Unchanged`
+    1. [`Lean.Meta.DSimp.Config.fail­If­Unchanged` (structure field)](The-Simplifier/Configuring-Simplification/#Lean___Meta___DSimp___Config___mk)
+  200. `fail­If­Unchanged`
+    1. [`Lean.Meta.Simp.Config.fail­If­Unchanged` (structure field)](The-Simplifier/Configuring-Simplification/#Lean___Meta___Simp___Config___mk)
+  201. `fail_if_success` [(0)](Tactic-Proofs/The-Tactic-Language/#fail_if_success) [(1)](Tactic-Proofs/Targeted-Rewriting-with--conv/#Lean___Parser___Tactic___Conv___failIfSuccess)
+  202. `failure`
+    1. [`ReaderT.failure`](Functors___-Monads-and--do--Notation/Varieties-of-Monads/#ReaderT___failure)
+  203. `failure`
+    1. [`StateT.failure`](Functors___-Monads-and--do--Notation/Varieties-of-Monads/#StateT___failure)
+  204. `failure`
+    1. [`[anonymous]` (class method)](Functors___-Monads-and--do--Notation/#Alternative___mk)
+  205. [`false_or_by_contra`](Tactic-Proofs/Tactic-Reference/#false_or_by_contra)
+  206. `fast­Append`
+    1. [`ByteArray.fast­Append`](Basic-Types/Byte-Arrays/#ByteArray___fastAppend)
+  207. `fdiv`
+    1. [`Int.fdiv`](Basic-Types/Integers/#Int___fdiv)
+  208. `field­Idx­Kind`
+    1. [`Lean.field­Idx­Kind`](Notations-and-Macros/Defining-New-Syntax/#Lean___fieldIdxKind)
+  209. `field­Notation`
+    1. [`pp.field­Notation`](Terms/Function-Application/#pp___fieldNotation)
+  210. `file­Name`
+    1. [`IO.FS.DirEntry.file­Name` (structure field)](IO/Files___-File-Handles___-and-Streams/#IO___FS___DirEntry___mk)
+  211. `file­Name`
+    1. [`System.FilePath.file­Name`](IO/Files___-File-Handles___-and-Streams/#System___FilePath___fileName)
+  212. `file­Stem`
+    1. [`System.FilePath.file­Stem`](IO/Files___-File-Handles___-and-Streams/#System___FilePath___fileStem)
+  213. `fill`
+    1. [`BitVec.fill`](Basic-Types/Bitvectors/#BitVec___fill)
+  214. `fill`
+    1. [`Std.Format.fill`](Interacting-with-Lean/#Std___Format___fill)
+  215. `filter`
+    1. [`Array.filter`](Basic-Types/Arrays/#Array___filter)
+  216. `filter`
+    1. [`List.filter`](Basic-Types/Linked-Lists/#List___filter)
+  217. `filter`
+    1. [`Option.filter`](Basic-Types/Optional-Values/#Option___filter)
+  218. `filter`
+    1. [`Std.DHashMap.filter`](Basic-Types/Maps-and-Sets/#Std___DHashMap___filter)
+  219. `filter`
+    1. [`Std.DTreeMap.filter`](Basic-Types/Maps-and-Sets/#Std___DTreeMap___filter)
+  220. `filter`
+    1. [`Std.Ext­DHashMap.filter`](Basic-Types/Maps-and-Sets/#Std___ExtDHashMap___filter)
+  221. `filter`
+    1. [`Std.Ext­HashMap.filter`](Basic-Types/Maps-and-Sets/#Std___ExtHashMap___filter)
+  222. `filter`
+    1. [`Std.Ext­HashSet.filter`](Basic-Types/Maps-and-Sets/#Std___ExtHashSet___filter)
+  223. `filter`
+    1. [`Std.HashMap.filter`](Basic-Types/Maps-and-Sets/#Std___HashMap___filter)
+  224. `filter`
+    1. [`Std.HashSet.filter`](Basic-Types/Maps-and-Sets/#Std___HashSet___filter)
+  225. `filter`
+    1. [`Std.Iter.filter`](Iterators/Iterator-Combinators/#Std___Iter___filter)
+  226. `filter`
+    1. [`Std.IterM.filter`](Iterators/Iterator-Combinators/#Std___IterM___filter)
+  227. `filter`
+    1. [`Std.TreeMap.filter`](Basic-Types/Maps-and-Sets/#Std___TreeMap___filter)
+  228. `filter`
+    1. [`Std.TreeSet.filter`](Basic-Types/Maps-and-Sets/#Std___TreeSet___filter)
+  229. `filter­M`
+    1. [`Array.filter­M`](Basic-Types/Arrays/#Array___filterM)
+  230. `filter­M`
+    1. [`List.filter­M`](Basic-Types/Linked-Lists/#List___filterM)
+  231. `filter­M`
+    1. [`Option.filter­M`](Basic-Types/Optional-Values/#Option___filterM)
+  232. `filter­M`
+    1. [`Std.Iter.filter­M`](Iterators/Iterator-Combinators/#Std___Iter___filterM)
+  233. `filter­M`
+    1. [`Std.IterM.filter­M`](Iterators/Iterator-Combinators/#Std___IterM___filterM)
+  234. `filter­Map`
+    1. [`Array.filter­Map`](Basic-Types/Arrays/#Array___filterMap)
+  235. `filter­Map`
+    1. [`List.filter­Map`](Basic-Types/Linked-Lists/#List___filterMap)
+  236. `filter­Map`
+    1. [`Std.DHashMap.filter­Map`](Basic-Types/Maps-and-Sets/#Std___DHashMap___filterMap)
+  237. `filter­Map`
+    1. [`Std.DTreeMap.filter­Map`](Basic-Types/Maps-and-Sets/#Std___DTreeMap___filterMap)
+  238. `filter­Map`
+    1. [`Std.Ext­DHashMap.filter­Map`](Basic-Types/Maps-and-Sets/#Std___ExtDHashMap___filterMap)
+  239. `filter­Map`
+    1. [`Std.Ext­HashMap.filter­Map`](Basic-Types/Maps-and-Sets/#Std___ExtHashMap___filterMap)
+  240. `filter­Map`
+    1. [`Std.HashMap.filter­Map`](Basic-Types/Maps-and-Sets/#Std___HashMap___filterMap)
+  241. `filter­Map`
+    1. [`Std.Iter.filter­Map`](Iterators/Iterator-Combinators/#Std___Iter___filterMap)
+  242. `filter­Map`
+    1. [`Std.IterM.filter­Map`](Iterators/Iterator-Combinators/#Std___IterM___filterMap)
+  243. `filter­Map`
+    1. [`Std.TreeMap.filter­Map`](Basic-Types/Maps-and-Sets/#Std___TreeMap___filterMap)
+  244. `filter­Map­M`
+    1. [`Array.filter­Map­M`](Basic-Types/Arrays/#Array___filterMapM)
+  245. `filter­Map­M`
+    1. [`List.filter­Map­M`](Basic-Types/Linked-Lists/#List___filterMapM)
+  246. `filter­Map­M`
+    1. [`Std.Iter.filter­Map­M`](Iterators/Iterator-Combinators/#Std___Iter___filterMapM)
+  247. `filter­Map­M`
+    1. [`Std.IterM.filter­Map­M`](Iterators/Iterator-Combinators/#Std___IterM___filterMapM)
+  248. `filter­Map­TR`
+    1. [`List.filter­Map­TR`](Basic-Types/Linked-Lists/#List___filterMapTR)
+  249. `filter­Map­With­Postcondition`
+    1. [`Std.Iter.filter­Map­With­Postcondition`](Iterators/Iterator-Combinators/#Std___Iter___filterMapWithPostcondition)
+  250. `filter­Map­With­Postcondition`
+    1. [`Std.IterM.filter­Map­With­Postcondition`](Iterators/Iterator-Combinators/#Std___IterM___filterMapWithPostcondition)
+  251. `filter­Rev­M`
+    1. [`Array.filter­Rev­M`](Basic-Types/Arrays/#Array___filterRevM)
+  252. `filter­Rev­M`
+    1. [`List.filter­Rev­M`](Basic-Types/Linked-Lists/#List___filterRevM)
+  253. `filter­Sep­Elems`
+    1. [`Array.filter­Sep­Elems`](Basic-Types/Arrays/#Array___filterSepElems)
+  254. `filter­Sep­Elems­M`
+    1. [`Array.filter­Sep­Elems­M`](Basic-Types/Arrays/#Array___filterSepElemsM)
+  255. `filter­TR`
+    1. [`List.filter­TR`](Basic-Types/Linked-Lists/#List___filterTR)
+  256. `filter­With­Postcondition`
+    1. [`Std.Iter.filter­With­Postcondition`](Iterators/Iterator-Combinators/#Std___Iter___filterWithPostcondition)
+  257. `filter­With­Postcondition`
+    1. [`Std.IterM.filter­With­Postcondition`](Iterators/Iterator-Combinators/#Std___IterM___filterWithPostcondition)
+  258. `fin­Idx­Of?`
+    1. [`Array.fin­Idx­Of?`](Basic-Types/Arrays/#Array___finIdxOf___)
+  259. `fin­Idx­Of?`
+    1. [`List.fin­Idx­Of?`](Basic-Types/Linked-Lists/#List___finIdxOf___)
+  260. `fin­Range`
+    1. [`Array.fin­Range`](Basic-Types/Arrays/#Array___finRange)
+  261. `fin­Range`
+    1. [`List.fin­Range`](Basic-Types/Linked-Lists/#List___finRange)
+  262. `find`
+    1. [`String.Legacy.Iterator.find`](Basic-Types/Strings/#String___Legacy___Iterator___find)
+  263. `find`
+    1. `String.find` [(0)](Basic-Types/Strings/#String___find) [(1)](Basic-Types/Strings/#String___find-next)
+  264. `find?`
+    1. [`Array.find?`](Basic-Types/Arrays/#Array___find___)
+  265. `find?`
+    1. [`List.find?`](Basic-Types/Linked-Lists/#List___find___)
+  266. `find?`
+    1. [`Std.Iter.find?`](Iterators/Consuming-Iterators/#Std___Iter___find___)
+  267. `find?`
+    1. [`Std.IterM.find?`](Iterators/Consuming-Iterators/#Std___IterM___find___)
+  268. `find?`
+    1. [`String.Slice.find?`](Basic-Types/Strings/#String___Slice___find___)
+  269. `find­Extern­Lib?`
+    1. [`Lake.find­Extern­Lib?`](Build-Tools-and-Distribution/Lake/#Lake___findExternLib___)
+  270. `find­Fin­Idx?`
+    1. [`Array.find­Fin­Idx?`](Basic-Types/Arrays/#Array___findFinIdx___)
+  271. `find­Fin­Idx?`
+    1. [`ByteArray.find­Fin­Idx?`](Basic-Types/Byte-Arrays/#ByteArray___findFinIdx___)
+  272. `find­Fin­Idx?`
+    1. [`List.find­Fin­Idx?`](Basic-Types/Linked-Lists/#List___findFinIdx___)
+  273. `find­Idx`
+    1. [`Array.find­Idx`](Basic-Types/Arrays/#Array___findIdx)
+  274. `find­Idx`
+    1. [`List.find­Idx`](Basic-Types/Linked-Lists/#List___findIdx)
+  275. `find­Idx?`
+    1. [`Array.find­Idx?`](Basic-Types/Arrays/#Array___findIdx___)
+  276. `find­Idx?`
+    1. [`ByteArray.find­Idx?`](Basic-Types/Byte-Arrays/#ByteArray___findIdx___)
+  277. `find­Idx?`
+    1. [`List.find­Idx?`](Basic-Types/Linked-Lists/#List___findIdx___)
+  278. `find­Idx­M?`
+    1. [`Array.find­Idx­M?`](Basic-Types/Arrays/#Array___findIdxM___)
+  279. `find­Lean­Exe?`
+    1. [`Lake.find­Lean­Exe?`](Build-Tools-and-Distribution/Lake/#Lake___findLeanExe___)
+  280. `find­Lean­Lib?`
+    1. [`Lake.find­Lean­Lib?`](Build-Tools-and-Distribution/Lake/#Lake___findLeanLib___)
+  281. `find­M?`
+    1. [`Array.find­M?`](Basic-Types/Arrays/#Array___findM___)
+  282. `find­M?`
+    1. [`List.find­M?`](Basic-Types/Linked-Lists/#List___findM___)
+  283. `find­M?`
+    1. [`Std.Iter.find­M?`](Iterators/Consuming-Iterators/#Std___Iter___findM___)
+  284. `find­M?`
+    1. [`Std.IterM.find­M?`](Iterators/Consuming-Iterators/#Std___IterM___findM___)
+  285. `find­Module?`
+    1. [`Lake.find­Module?`](Build-Tools-and-Distribution/Lake/#Lake___findModule___)
+  286. `find­Package­By­Key?`
+    1. [`Lake.find­Package­By­Key?`](Build-Tools-and-Distribution/Lake/#Lake___findPackageByKey___)
+  287. `find­Package­By­Name?`
+    1. [`Lake.find­Package­By­Name?`](Build-Tools-and-Distribution/Lake/#Lake___findPackageByName___)
+  288. `find­Rev?`
+    1. [`Array.find­Rev?`](Basic-Types/Arrays/#Array___findRev___)
+  289. `find­Rev?`
+    1. [`Subarray.find­Rev?`](Basic-Types/Arrays/#Subarray___findRev___)
+  290. `find­Rev­M?`
+    1. [`Array.find­Rev­M?`](Basic-Types/Arrays/#Array___findRevM___)
+  291. `find­Rev­M?`
+    1. [`Subarray.find­Rev­M?`](Basic-Types/Arrays/#Subarray___findRevM___)
+  292. `find­Some!`
+    1. [`Array.find­Some!`](Basic-Types/Arrays/#Array___findSome___-next)
+  293. `find­Some?`
+    1. [`Array.find­Some?`](Basic-Types/Arrays/#Array___findSome___)
+  294. `find­Some?`
+    1. [`List.find­Some?`](Basic-Types/Linked-Lists/#List___findSome___)
+  295. `find­Some?`
+    1. [`Std.Iter.find­Some?`](Iterators/Consuming-Iterators/#Std___Iter___findSome___)
+  296. `find­Some?`
+    1. [`Std.IterM.find­Some?`](Iterators/Consuming-Iterators/#Std___IterM___findSome___)
+  297. `find­Some­M?`
+    1. [`Array.find­Some­M?`](Basic-Types/Arrays/#Array___findSomeM___)
+  298. `find­Some­M?`
+    1. [`List.find­Some­M?`](Basic-Types/Linked-Lists/#List___findSomeM___)
+  299. `find­Some­M?`
+    1. [`Std.Iter.find­Some­M?`](Iterators/Consuming-Iterators/#Std___Iter___findSomeM___)
+  300. `find­Some­M?`
+    1. [`Std.IterM.find­Some­M?`](Iterators/Consuming-Iterators/#Std___IterM___findSomeM___)
+  301. `find­Some­Rev?`
+    1. [`Array.find­Some­Rev?`](Basic-Types/Arrays/#Array___findSomeRev___)
+  302. `find­Some­Rev­M?`
+    1. [`Array.find­Some­Rev­M?`](Basic-Types/Arrays/#Array___findSomeRevM___)
+  303. `find­Some­Rev­M?`
+    1. [`Subarray.find­Some­Rev­M?`](Basic-Types/Arrays/#Subarray___findSomeRevM___)
+  304. `finite`
+    1. [`Std.Rxc.Is­AlwaysFinite.finite` (class method)](Basic-Types/Ranges/#Std___Rxc___IsAlwaysFinite___mk)
+  305. `finite`
+    1. [`Std.Rxi.Is­AlwaysFinite.finite` (class method)](Basic-Types/Ranges/#Std___Rxi___IsAlwaysFinite___mk)
+  306. `finitely­Many­Skips`
+    1. [`Std.Iter.finitely­Many­Skips`](Iterators/Consuming-Iterators/#Std___Iter___finitelyManySkips)
+  307. `finitely­Many­Skips`
+    1. [`Std.IterM.finitely­Many­Skips`](Iterators/Consuming-Iterators/#Std___IterM___finitelyManySkips)
+  308. `finitely­Many­Steps`
+    1. [`Std.Iter.finitely­Many­Steps`](Iterators/Consuming-Iterators/#Std___Iter___finitelyManySteps)
+  309. `finitely­Many­Steps`
+    1. [`Std.IterM.finitely­Many­Steps`](Iterators/Consuming-Iterators/#Std___IterM___finitelyManySteps)
+  310. `first` [(0)](Tactic-Proofs/The-Tactic-Language/#first) [(1)](Tactic-Proofs/Targeted-Rewriting-with--conv/#Lean___Parser___Tactic___Conv___first)
+  311. `first­Diff­Pos`
+    1. [`String.first­Diff­Pos`](Basic-Types/Strings/#String___firstDiffPos)
+  312. `first­M`
+    1. [`Array.first­M`](Basic-Types/Arrays/#Array___firstM)
+  313. `first­M`
+    1. [`List.first­M`](Basic-Types/Linked-Lists/#List___firstM)
+  314. `fix`
+    1. [`Lean.Order.fix`](Definitions/Recursive-Definitions/#Lean___Order___fix)
+  315. `fix`
+    1. [`WellFounded.fix`](Definitions/Recursive-Definitions/#WellFounded___fix)
+  316. `fix_eq`
+    1. [`Lean.Order.fix_eq`](Definitions/Recursive-Definitions/#Lean___Order___fix_eq)
+  317. `flags`
+    1. [`IO.AccessRight.flags`](IO/Files___-File-Handles___-and-Streams/#IO___AccessRight___flags)
+  318. `flags`
+    1. [`IO.FileRight.flags`](IO/Files___-File-Handles___-and-Streams/#IO___FileRight___flags)
+  319. `flat­Map`
+    1. [`Array.flat­Map`](Basic-Types/Arrays/#Array___flatMap)
+  320. `flat­Map`
+    1. [`List.flat­Map`](Basic-Types/Linked-Lists/#List___flatMap)
+  321. `flat­Map`
+    1. [`Std.Iter.flat­Map`](Iterators/Iterator-Combinators/#Std___Iter___flatMap)
+  322. `flat­Map`
+    1. [`Std.IterM.flat­Map`](Iterators/Iterator-Combinators/#Std___IterM___flatMap)
+  323. `flat­Map­After`
+    1. [`Std.Iter.flat­Map­After`](Iterators/Iterator-Combinators/#Std___Iter___flatMapAfter)
+  324. `flat­Map­After`
+    1. [`Std.IterM.flat­Map­After`](Iterators/Iterator-Combinators/#Std___IterM___flatMapAfter)
+  325. `flat­Map­After­M`
+    1. [`Std.Iter.flat­Map­After­M`](Iterators/Iterator-Combinators/#Std___Iter___flatMapAfterM)
+  326. `flat­Map­After­M`
+    1. [`Std.IterM.flat­Map­After­M`](Iterators/Iterator-Combinators/#Std___IterM___flatMapAfterM)
+  327. `flat­Map­M`
+    1. [`Array.flat­Map­M`](Basic-Types/Arrays/#Array___flatMapM)
+  328. `flat­Map­M`
+    1. [`List.flat­Map­M`](Basic-Types/Linked-Lists/#List___flatMapM)
+  329. `flat­Map­M`
+    1. [`Std.Iter.flat­Map­M`](Iterators/Iterator-Combinators/#Std___Iter___flatMapM)
+  330. `flat­Map­M`
+    1. [`Std.IterM.flat­Map­M`](Iterators/Iterator-Combinators/#Std___IterM___flatMapM)
+  331. `flat­Map­TR`
+    1. [`List.flat­Map­TR`](Basic-Types/Linked-Lists/#List___flatMapTR)
+  332. `flatten`
+    1. [`Array.flatten`](Basic-Types/Arrays/#Array___flatten)
+  333. `flatten`
+    1. [`List.flatten`](Basic-Types/Linked-Lists/#List___flatten)
+  334. `flatten­TR`
+    1. [`List.flatten­TR`](Basic-Types/Linked-Lists/#List___flattenTR)
+  335. `floor`
+    1. [`Float.floor`](Basic-Types/Floating-Point-Numbers/#Float___floor)
+  336. `floor`
+    1. [`Float32.floor`](Basic-Types/Floating-Point-Numbers/#Float32___floor)
+  337. `flush`
+    1. [`IO.FS.Handle.flush`](IO/Files___-File-Handles___-and-Streams/#IO___FS___Handle___flush)
+  338. `flush`
+    1. [`IO.FS.Stream.flush` (structure field)](IO/Files___-File-Handles___-and-Streams/#IO___FS___Stream___mk)
+  339. `fmod`
+    1. [`Int.fmod`](Basic-Types/Integers/#Int___fmod)
+  340. `fn`
+    1. [`Thunk.fn` (structure field)](Basic-Types/Lazy-Computations/#Thunk___mk)
+  341. `focus` [(0)](Tactic-Proofs/The-Tactic-Language/#focus) [(1)](Tactic-Proofs/Targeted-Rewriting-with--conv/#Lean___Parser___Tactic___Conv___focus)
+  342. `fold`
+    1. [`Nat.fold`](Basic-Types/Natural-Numbers/#Nat___fold)
+  343. `fold`
+    1. [`Std.DHashMap.fold`](Basic-Types/Maps-and-Sets/#Std___DHashMap___fold)
+  344. `fold`
+    1. [`Std.HashMap.fold`](Basic-Types/Maps-and-Sets/#Std___HashMap___fold)
+  345. `fold`
+    1. [`Std.HashSet.fold`](Basic-Types/Maps-and-Sets/#Std___HashSet___fold)
+  346. `fold`
+    1. [`Std.Iter.fold`](Iterators/Consuming-Iterators/#Std___Iter___fold)
+  347. `fold`
+    1. [`Std.IterM.fold`](Iterators/Consuming-Iterators/#Std___IterM___fold)
+  348. `fold­I`
+    1. [`Prod.fold­I`](Basic-Types/Tuples/#Prod___foldI)
+  349. `fold­M`
+    1. [`Nat.fold­M`](Basic-Types/Natural-Numbers/#Nat___foldM)
+  350. `fold­M`
+    1. [`Std.DHashMap.fold­M`](Basic-Types/Maps-and-Sets/#Std___DHashMap___foldM)
+  351. `fold­M`
+    1. [`Std.HashMap.fold­M`](Basic-Types/Maps-and-Sets/#Std___HashMap___foldM)
+  352. `fold­M`
+    1. [`Std.HashSet.fold­M`](Basic-Types/Maps-and-Sets/#Std___HashSet___foldM)
+  353. `fold­M`
+    1. [`Std.Iter.fold­M`](Iterators/Consuming-Iterators/#Std___Iter___foldM)
+  354. `fold­M`
+    1. [`Std.IterM.fold­M`](Iterators/Consuming-Iterators/#Std___IterM___foldM)
+  355. `fold­Rev`
+    1. [`Nat.fold­Rev`](Basic-Types/Natural-Numbers/#Nat___foldRev)
+  356. `fold­Rev­M`
+    1. [`Nat.fold­Rev­M`](Basic-Types/Natural-Numbers/#Nat___foldRevM)
+  357. `fold­TR`
+    1. [`Nat.fold­TR`](Basic-Types/Natural-Numbers/#Nat___foldTR)
+  358. `fold­Until`
+    1. [`String.Legacy.Iterator.fold­Until`](Basic-Types/Strings/#String___Legacy___Iterator___foldUntil)
+  359. `foldl`
+    1. [`Array.foldl`](Basic-Types/Arrays/#Array___foldl)
+  360. `foldl`
+    1. [`ByteArray.foldl`](Basic-Types/Byte-Arrays/#ByteArray___foldl)
+  361. `foldl`
+    1. [`Fin.foldl`](Basic-Types/Finite-Natural-Numbers/#Fin___foldl)
+  362. `foldl`
+    1. [`List.foldl`](Basic-Types/Linked-Lists/#List___foldl)
+  363. `foldl`
+    1. [`Std.DTreeMap.foldl`](Basic-Types/Maps-and-Sets/#Std___DTreeMap___foldl)
+  364. `foldl`
+    1. [`Std.TreeMap.foldl`](Basic-Types/Maps-and-Sets/#Std___TreeMap___foldl)
+  365. `foldl`
+    1. [`Std.TreeSet.foldl`](Basic-Types/Maps-and-Sets/#Std___TreeSet___foldl)
+  366. `foldl`
+    1. [`String.Slice.foldl`](Basic-Types/Strings/#String___Slice___foldl)
+  367. `foldl`
+    1. [`String.foldl`](Basic-Types/Strings/#String___foldl)
+  368. `foldl`
+    1. [`Substring.Raw.foldl`](Basic-Types/Strings/#Substring___Raw___foldl)
+  369. `foldl­M`
+    1. [`Array.foldl­M`](Basic-Types/Arrays/#Array___foldlM)
+  370. `foldl­M`
+    1. [`ByteArray.foldl­M`](Basic-Types/Byte-Arrays/#ByteArray___foldlM)
+  371. `foldl­M`
+    1. [`Fin.foldl­M`](Basic-Types/Finite-Natural-Numbers/#Fin___foldlM)
+  372. `foldl­M`
+    1. [`List.foldl­M`](Basic-Types/Linked-Lists/#List___foldlM)
+  373. `foldl­M`
+    1. [`Std.DTreeMap.foldl­M`](Basic-Types/Maps-and-Sets/#Std___DTreeMap___foldlM)
+  374. `foldl­M`
+    1. [`Std.TreeMap.foldl­M`](Basic-Types/Maps-and-Sets/#Std___TreeMap___foldlM)
+  375. `foldl­M`
+    1. [`Std.TreeSet.foldl­M`](Basic-Types/Maps-and-Sets/#Std___TreeSet___foldlM)
+  376. `foldl­Rec­On`
+    1. [`List.foldl­Rec­On`](Basic-Types/Linked-Lists/#List___foldlRecOn)
+  377. `foldr`
+    1. [`Array.foldr`](Basic-Types/Arrays/#Array___foldr)
+  378. `foldr`
+    1. [`ByteSlice.foldr`](Basic-Types/Byte-Arrays/#ByteSlice___foldr)
+  379. `foldr`
+    1. [`Fin.foldr`](Basic-Types/Finite-Natural-Numbers/#Fin___foldr)
+  380. `foldr`
+    1. [`List.foldr`](Basic-Types/Linked-Lists/#List___foldr)
+  381. `foldr`
+    1. [`Std.TreeMap.foldr`](Basic-Types/Maps-and-Sets/#Std___TreeMap___foldr)
+  382. `foldr`
+    1. [`Std.TreeSet.foldr`](Basic-Types/Maps-and-Sets/#Std___TreeSet___foldr)
+  383. `foldr`
+    1. [`String.Slice.foldr`](Basic-Types/Strings/#String___Slice___foldr)
+  384. `foldr`
+    1. [`String.foldr`](Basic-Types/Strings/#String___foldr)
+  385. `foldr`
+    1. [`Subarray.foldr`](Basic-Types/Arrays/#Subarray___foldr)
+  386. `foldr`
+    1. [`Substring.Raw.foldr`](Basic-Types/Strings/#Substring___Raw___foldr)
+  387. `foldr­M`
+    1. [`Array.foldr­M`](Basic-Types/Arrays/#Array___foldrM)
+  388. `foldr­M`
+    1. [`ByteSlice.foldr­M`](Basic-Types/Byte-Arrays/#ByteSlice___foldrM)
+  389. `foldr­M`
+    1. [`Fin.foldr­M`](Basic-Types/Finite-Natural-Numbers/#Fin___foldrM)
+  390. `foldr­M`
+    1. [`List.foldr­M`](Basic-Types/Linked-Lists/#List___foldrM)
+  391. `foldr­M`
+    1. [`Std.TreeMap.foldr­M`](Basic-Types/Maps-and-Sets/#Std___TreeMap___foldrM)
+  392. `foldr­M`
+    1. [`Std.TreeSet.foldr­M`](Basic-Types/Maps-and-Sets/#Std___TreeSet___foldrM)
+  393. `foldr­M`
+    1. [`Subarray.foldr­M`](Basic-Types/Arrays/#Subarray___foldrM)
+  394. `foldr­Rec­On`
+    1. [`List.foldr­Rec­On`](Basic-Types/Linked-Lists/#List___foldrRecOn)
+  395. `foldr­TR`
+    1. [`List.foldr­TR`](Basic-Types/Linked-Lists/#List___foldrTR)
+  396. `for­A`
+    1. [`List.for­A`](Basic-Types/Linked-Lists/#List___forA)
+  397. `for­Async`
+    1. [`Std.Channel.for­Async`](IO/Tasks-and-Threads/#Std___Channel___forAsync)
+  398. `for­In'`
+    1. [`ForIn'.for­In'` (class method)](Functors___-Monads-and--do--Notation/Syntax/#ForIn______mk)
+  399. `for­In`
+    1. [`ByteArray.for­In`](Basic-Types/Byte-Arrays/#ByteArray___forIn)
+  400. `for­In`
+    1. [`ForIn.for­In` (class method)](Functors___-Monads-and--do--Notation/Syntax/#ForIn___mk)
+  401. `for­In`
+    1. [`ForM.for­In`](Functors___-Monads-and--do--Notation/Syntax/#ForM___forIn)
+  402. `for­In`
+    1. [`Std.DHashMap.for­In`](Basic-Types/Maps-and-Sets/#Std___DHashMap___forIn)
+  403. `for­In`
+    1. [`Std.DTreeMap.for­In`](Basic-Types/Maps-and-Sets/#Std___DTreeMap___forIn)
+  404. `for­In`
+    1. [`Std.HashMap.for­In`](Basic-Types/Maps-and-Sets/#Std___HashMap___forIn)
+  405. `for­In`
+    1. [`Std.HashSet.for­In`](Basic-Types/Maps-and-Sets/#Std___HashSet___forIn)
+  406. `for­In`
+    1. [`Std.IteratorLoop.for­In` (class method)](Iterators/Iterator-Definitions/#Std___IteratorLoop___mk)
+  407. `for­In`
+    1. [`Std.TreeMap.for­In`](Basic-Types/Maps-and-Sets/#Std___TreeMap___forIn)
+  408. `for­In`
+    1. [`Std.TreeSet.for­In`](Basic-Types/Maps-and-Sets/#Std___TreeSet___forIn)
+  409. `for­In`
+    1. [`Subarray.for­In`](Basic-Types/Arrays/#Subarray___forIn)
+  410. `for­M`
+    1. [`Array.for­M`](Basic-Types/Arrays/#Array___forM)
+  411. `for­M`
+    1. [`ByteSlice.for­M`](Basic-Types/Byte-Arrays/#ByteSlice___forM)
+  412. `for­M`
+    1. [`ForM.for­M` (class method)](Functors___-Monads-and--do--Notation/Syntax/#ForM___mk)
+  413. `for­M`
+    1. [`List.for­M`](Basic-Types/Linked-Lists/#List___forM)
+  414. `for­M`
+    1. [`Nat.for­M`](Basic-Types/Natural-Numbers/#Nat___forM)
+  415. `for­M`
+    1. [`Option.for­M`](Basic-Types/Optional-Values/#Option___forM)
+  416. `for­M`
+    1. [`Std.DHashMap.for­M`](Basic-Types/Maps-and-Sets/#Std___DHashMap___forM)
+  417. `for­M`
+    1. [`Std.DTreeMap.for­M`](Basic-Types/Maps-and-Sets/#Std___DTreeMap___forM)
+  418. `for­M`
+    1. [`Std.HashMap.for­M`](Basic-Types/Maps-and-Sets/#Std___HashMap___forM)
+  419. `for­M`
+    1. [`Std.HashSet.for­M`](Basic-Types/Maps-and-Sets/#Std___HashSet___forM)
+  420. `for­M`
+    1. [`Std.TreeMap.for­M`](Basic-Types/Maps-and-Sets/#Std___TreeMap___forM)
+  421. `for­M`
+    1. [`Std.TreeSet.for­M`](Basic-Types/Maps-and-Sets/#Std___TreeSet___forM)
+  422. `for­M`
+    1. [`Subarray.for­M`](Basic-Types/Arrays/#Subarray___forM)
+  423. `for­Rev­M`
+    1. [`Array.for­Rev­M`](Basic-Types/Arrays/#Array___forRevM)
+  424. `for­Rev­M`
+    1. [`Nat.for­Rev­M`](Basic-Types/Natural-Numbers/#Nat___forRevM)
+  425. `for­Rev­M`
+    1. [`Subarray.for­Rev­M`](Basic-Types/Arrays/#Subarray___forRevM)
+  426. `forall`
+    1. [`Std.Do.SPred.forall`](The--mvcgen--tactic/Predicate-Transformers/#Std___Do___SPred___forall)
+  427. `format`
+    1. [`Option.format`](Basic-Types/Optional-Values/#Option___format)
+  428. `format`
+    1. [`Std.ToFormat.format` (class method)](Interacting-with-Lean/#Std___ToFormat___mk)
+  429. `forward`
+    1. [`ByteArray.Iterator.forward`](Basic-Types/Byte-Arrays/#ByteArray___Iterator___forward)
+  430. `forward`
+    1. [`String.Legacy.Iterator.forward`](Basic-Types/Strings/#String___Legacy___Iterator___forward)
+  431. `fr­Exp`
+    1. [`Float.fr­Exp`](Basic-Types/Floating-Point-Numbers/#Float___frExp)
+  432. `fr­Exp`
+    1. [`Float32.fr­Exp`](Basic-Types/Floating-Point-Numbers/#Float32___frExp)
+  433. `from­State­M`
+    1. [`EStateM.from­State­M`](Functors___-Monads-and--do--Notation/Varieties-of-Monads/#EStateM___fromStateM)
+  434. `from­UTF8!`
+    1. [`String.from­UTF8!`](Basic-Types/Strings/#String___fromUTF8___-next)
+  435. `from­UTF8`
+    1. [`String.from­UTF8`](Basic-Types/Strings/#String___fromUTF8)
+  436. `from­UTF8?`
+    1. [`String.from­UTF8?`](Basic-Types/Strings/#String___fromUTF8___)
+  437. `front`
+    1. [`String.Slice.front`](Basic-Types/Strings/#String___Slice___front)
+  438. `front`
+    1. [`String.front`](Basic-Types/Strings/#String___front)
+  439. `front`
+    1. [`Substring.Raw.front`](Basic-Types/Strings/#Substring___Raw___front)
+  440. `front?`
+    1. [`String.Slice.front?`](Basic-Types/Strings/#String___Slice___front___)
+  441. `fst`
+    1. [`MProd.fst` (structure field)](Basic-Types/Tuples/#MProd___mk)
+  442. `fst`
+    1. [`PProd.fst` (structure field)](Basic-Types/Tuples/#PProd___mk)
+  443. `fst`
+    1. [`PSigma.fst` (structure field)](Basic-Types/Tuples/#PSigma___mk)
+  444. `fst`
+    1. [`Prod.fst` (structure field)](Basic-Types/Tuples/#Prod___mk)
+  445. `fst`
+    1. [`Sigma.fst` (structure field)](Basic-Types/Tuples/#Sigma___mk)
+  446. [`fun`](Tactic-Proofs/Targeted-Rewriting-with--conv/#Lean___Parser___Tactic___Conv___fun)
+  447. [`fun_cases`](Tactic-Proofs/Tactic-Reference/#fun_cases)
+  448. [`fun_induction`](Tactic-Proofs/Tactic-Reference/#fun_induction)
+  449. `funext` [(0)](The-Type-System/Functions/#funext) [(1)](Tactic-Proofs/Tactic-Reference/#funext-next)
+
+
+##  G
+  1. [`Get­Elem`](Type-Classes/Basic-Classes/#GetElem___mk)
+  2. `GetElem.mk`
+    1. [Instance constructor of `Get­Elem`](Type-Classes/Basic-Classes/#GetElem___mk)
+  3. [`Get­Elem?`](Type-Classes/Basic-Classes/#GetElem______mk)
+  4. `GetElem?.mk`
+    1. [Instance constructor of `Get­Elem?`](Type-Classes/Basic-Classes/#GetElem______mk)
+  5. `Glob`
+    1. [`Lake.Glob`](Build-Tools-and-Distribution/Lake/#Lake___Glob___one)
+  6. `gcd`
+    1. [`Int.gcd`](Basic-Types/Integers/#Int___gcd)
+  7. `gcd`
+    1. [`Nat.gcd`](Basic-Types/Natural-Numbers/#Nat___gcd)
+  8. [`generalize`](Tactic-Proofs/Tactic-Reference/#generalize)
+  9. `get!`
+    1. [`ByteArray.get!`](Basic-Types/Byte-Arrays/#ByteArray___get___)
+  10. `get!`
+    1. [`ByteSlice.get!`](Basic-Types/Byte-Arrays/#ByteSlice___get___)
+  11. `get!`
+    1. [`Option.get!`](Basic-Types/Optional-Values/#Option___get___)
+  12. `get!`
+    1. [`Std.DHashMap.get!`](Basic-Types/Maps-and-Sets/#Std___DHashMap___get___)
+  13. `get!`
+    1. [`Std.DTreeMap.get!`](Basic-Types/Maps-and-Sets/#Std___DTreeMap___get___)
+  14. `get!`
+    1. [`Std.Ext­DHashMap.get!`](Basic-Types/Maps-and-Sets/#Std___ExtDHashMap___get___)
+  15. `get!`
+    1. [`Std.Ext­HashMap.get!`](Basic-Types/Maps-and-Sets/#Std___ExtHashMap___get___)
+  16. `get!`
+    1. [`Std.Ext­HashSet.get!`](Basic-Types/Maps-and-Sets/#Std___ExtHashSet___get___)
+  17. `get!`
+    1. [`Std.HashMap.get!`](Basic-Types/Maps-and-Sets/#Std___HashMap___get___)
+  18. `get!`
+    1. [`Std.HashSet.get!`](Basic-Types/Maps-and-Sets/#Std___HashSet___get___)
+  19. `get!`
+    1. [`Std.TreeMap.get!`](Basic-Types/Maps-and-Sets/#Std___TreeMap___get___)
+  20. `get!`
+    1. [`Std.TreeSet.get!`](Basic-Types/Maps-and-Sets/#Std___TreeSet___get___)
+  21. `get!`
+    1. [`String.Pos.Raw.get!`](Basic-Types/Strings/#String___Pos___Raw___get___)
+  22. `get!`
+    1. [`String.Pos.get!`](Basic-Types/Strings/#String___Pos___get___)
+  23. `get!`
+    1. [`String.Slice.Pos.get!`](Basic-Types/Strings/#String___Slice___Pos___get___)
+  24. `get!`
+    1. [`Subarray.get!`](Basic-Types/Arrays/#Subarray___get___)
+  25. `get'`
+    1. [`String.Pos.Raw.get'`](Basic-Types/Strings/#String___Pos___Raw___get___-next)
+  26. `get`
+    1. [`ByteArray.get`](Basic-Types/Byte-Arrays/#ByteArray___get)
+  27. `get`
+    1. [`ByteSlice.get`](Basic-Types/Byte-Arrays/#ByteSlice___get)
+  28. `get`
+    1. [`EStateM.get`](Functors___-Monads-and--do--Notation/Varieties-of-Monads/#EStateM___get)
+  29. `get`
+    1. [`List.get`](Basic-Types/Linked-Lists/#List___get)
+  30. `get`
+    1. [`MonadState.get`](Functors___-Monads-and--do--Notation/Varieties-of-Monads/#MonadState___get)
+  31. `get`
+    1. [`MonadState.get` (class method)](Functors___-Monads-and--do--Notation/Varieties-of-Monads/#MonadState___mk)
+  32. `get`
+    1. [`Monad­StateOf.get` (class method)](Functors___-Monads-and--do--Notation/Varieties-of-Monads/#MonadStateOf___mk)
+  33. `get`
+    1. [`Option.get`](Basic-Types/Optional-Values/#Option___get)
+  34. `get`
+    1. [`ST.Ref.get`](IO/Mutable-References/#ST___Ref___get)
+  35. `get`
+    1. [`State­RefT'.get`](Functors___-Monads-and--do--Notation/Varieties-of-Monads/#StateRefT______get)
+  36. `get`
+    1. [`StateT.get`](Functors___-Monads-and--do--Notation/Varieties-of-Monads/#StateT___get)
+  37. `get`
+    1. [`Std.DHashMap.get`](Basic-Types/Maps-and-Sets/#Std___DHashMap___get)
+  38. `get`
+    1. [`Std.DTreeMap.get`](Basic-Types/Maps-and-Sets/#Std___DTreeMap___get)
+  39. `get`
+    1. [`Std.Ext­DHashMap.get`](Basic-Types/Maps-and-Sets/#Std___ExtDHashMap___get)
+  40. `get`
+    1. [`Std.Ext­HashMap.get`](Basic-Types/Maps-and-Sets/#Std___ExtHashMap___get)
+  41. `get`
+    1. [`Std.Ext­HashSet.get`](Basic-Types/Maps-and-Sets/#Std___ExtHashSet___get)
+  42. `get`
+    1. [`Std.HashMap.get`](Basic-Types/Maps-and-Sets/#Std___HashMap___get)
+  43. `get`
+    1. [`Std.HashSet.get`](Basic-Types/Maps-and-Sets/#Std___HashSet___get)
+  44. `get`
+    1. [`Std.TreeMap.get`](Basic-Types/Maps-and-Sets/#Std___TreeMap___get)
+  45. `get`
+    1. [`Std.TreeSet.get`](Basic-Types/Maps-and-Sets/#Std___TreeSet___get)
+  46. `get`
+    1. [`String.Pos.Raw.get`](Basic-Types/Strings/#String___Pos___Raw___get)
+  47. `get`
+    1. [`String.Pos.get`](Basic-Types/Strings/#String___Pos___get)
+  48. `get`
+    1. [`String.Slice.Pos.get`](Basic-Types/Strings/#String___Slice___Pos___get)
+  49. `get`
+    1. [`Subarray.get`](Basic-Types/Arrays/#Subarray___get)
+  50. `get`
+    1. [`Substring.Raw.get`](Basic-Types/Strings/#Substring___Raw___get)
+  51. `get`
+    1. [`Task.get`](IO/Tasks-and-Threads/#Task___get)
+  52. `get`
+    1. [`Thunk.get`](Basic-Types/Lazy-Computations/#Thunk___get)
+  53. `get?`
+    1. [`Std.DHashMap.get?`](Basic-Types/Maps-and-Sets/#Std___DHashMap___get___-next)
+  54. `get?`
+    1. [`Std.DTreeMap.get?`](Basic-Types/Maps-and-Sets/#Std___DTreeMap___get___-next)
+  55. `get?`
+    1. [`Std.Ext­DHashMap.get?`](Basic-Types/Maps-and-Sets/#Std___ExtDHashMap___get___-next)
+  56. `get?`
+    1. [`Std.Ext­HashMap.get?`](Basic-Types/Maps-and-Sets/#Std___ExtHashMap___get___-next)
+  57. `get?`
+    1. [`Std.Ext­HashSet.get?`](Basic-Types/Maps-and-Sets/#Std___ExtHashSet___get___-next)
+  58. `get?`
+    1. [`Std.HashMap.get?`](Basic-Types/Maps-and-Sets/#Std___HashMap___get___-next)
+  59. `get?`
+    1. [`Std.HashSet.get?`](Basic-Types/Maps-and-Sets/#Std___HashSet___get___-next)
+  60. `get?`
+    1. [`Std.TreeMap.get?`](Basic-Types/Maps-and-Sets/#Std___TreeMap___get___-next)
+  61. `get?`
+    1. [`Std.TreeSet.get?`](Basic-Types/Maps-and-Sets/#Std___TreeSet___get___-next)
+  62. `get?`
+    1. [`String.Pos.Raw.get?`](Basic-Types/Strings/#String___Pos___Raw___get___-next-next)
+  63. `get?`
+    1. [`String.Pos.get?`](Basic-Types/Strings/#String___Pos___get___-next)
+  64. `get?`
+    1. [`String.Slice.Pos.get?`](Basic-Types/Strings/#String___Slice___Pos___get___-next)
+  65. `get­Augmented­Env`
+    1. [`Lake.get­Augmented­Env`](Build-Tools-and-Distribution/Lake/#Lake___getAugmentedEnv)
+  66. `get­Augmented­Lean­Path`
+    1. [`Lake.get­Augmented­Lean­Path`](Build-Tools-and-Distribution/Lake/#Lake___getAugmentedLeanPath)
+  67. `get­Augmented­Lean­Src­Path`
+    1. [`Lake.get­Augmented­Lean­Src­Path`](Build-Tools-and-Distribution/Lake/#Lake___getAugmentedLeanSrcPath)
+  68. `get­Augmented­Shared­Lib­Path`
+    1. [`Lake.get­Augmented­Shared­Lib­Path`](Build-Tools-and-Distribution/Lake/#Lake___getAugmentedSharedLibPath)
+  69. `get­Char`
+    1. [`Lean.TSyntax.get­Char`](Notations-and-Macros/Defining-New-Syntax/#Lean___TSyntax___getChar)
+  70. `get­Curr­Namespace`
+    1. [`Lean.Macro.get­Curr­Namespace`](Notations-and-Macros/Macros/#Lean___Macro___getCurrNamespace)
+  71. `get­Current­Dir`
+    1. [`IO.Process.get­Current­Dir`](IO/Processes/#IO___Process___getCurrentDir)
+  72. `get­D`
+    1. [`Array.get­D`](Basic-Types/Arrays/#Array___getD)
+  73. `get­D`
+    1. [`ByteSlice.get­D`](Basic-Types/Byte-Arrays/#ByteSlice___getD)
+  74. `get­D`
+    1. [`List.get­D`](Basic-Types/Linked-Lists/#List___getD)
+  75. `get­D`
+    1. [`Option.get­D`](Basic-Types/Optional-Values/#Option___getD)
+  76. `get­D`
+    1. [`Std.DHashMap.get­D`](Basic-Types/Maps-and-Sets/#Std___DHashMap___getD)
+  77. `get­D`
+    1. [`Std.DTreeMap.get­D`](Basic-Types/Maps-and-Sets/#Std___DTreeMap___getD)
+  78. `get­D`
+    1. [`Std.Ext­DHashMap.get­D`](Basic-Types/Maps-and-Sets/#Std___ExtDHashMap___getD)
+  79. `get­D`
+    1. [`Std.Ext­HashMap.get­D`](Basic-Types/Maps-and-Sets/#Std___ExtHashMap___getD)
+  80. `get­D`
+    1. [`Std.Ext­HashSet.get­D`](Basic-Types/Maps-and-Sets/#Std___ExtHashSet___getD)
+  81. `get­D`
+    1. [`Std.HashMap.get­D`](Basic-Types/Maps-and-Sets/#Std___HashMap___getD)
+  82. `get­D`
+    1. [`Std.HashSet.get­D`](Basic-Types/Maps-and-Sets/#Std___HashSet___getD)
+  83. `get­D`
+    1. [`Std.TreeMap.get­D`](Basic-Types/Maps-and-Sets/#Std___TreeMap___getD)
+  84. `get­D`
+    1. [`Std.TreeSet.get­D`](Basic-Types/Maps-and-Sets/#Std___TreeSet___getD)
+  85. `get­D`
+    1. [`Subarray.get­D`](Basic-Types/Arrays/#Subarray___getD)
+  86. `get­DM`
+    1. [`Option.get­DM`](Basic-Types/Optional-Values/#Option___getDM)
+  87. `get­Elan?`
+    1. [`Lake.get­Elan?`](Build-Tools-and-Distribution/Lake/#Lake___getElan___)
+  88. `get­Elan­Home?`
+    1. [`Lake.get­Elan­Home?`](Build-Tools-and-Distribution/Lake/#Lake___getElanHome___)
+  89. `get­Elan­Install?`
+    1. [`Lake.get­Elan­Install?`](Build-Tools-and-Distribution/Lake/#Lake___getElanInstall___)
+  90. `get­Elan­Toolchain`
+    1. [`Lake.get­Elan­Toolchain`](Build-Tools-and-Distribution/Lake/#Lake___getElanToolchain)
+  91. `get­Elem!`
+    1. [`GetElem?.get­Elem?` (class method)](Type-Classes/Basic-Classes/#GetElem______mk)
+  92. `get­Elem!_def`
+    1. [`Lawful­GetElem.get­Elem!_def` (class method)](Type-Classes/Basic-Classes/#LawfulGetElem___mk)
+  93. `get­Elem`
+    1. [`GetElem.get­Elem` (class method)](Type-Classes/Basic-Classes/#GetElem___mk)
+  94. `get­Elem?`
+    1. [`[anonymous]` (class method)](Type-Classes/Basic-Classes/#GetElem______mk)
+  95. `get­Elem?_def`
+    1. [`Lawful­GetElem.get­Elem?_def` (class method)](Type-Classes/Basic-Classes/#LawfulGetElem___mk)
+  96. `get­Elems`
+    1. [`Lean.Syntax.TSepArray.get­Elems`](Notations-and-Macros/Defining-New-Syntax/#Lean___Syntax___TSepArray___getElems)
+  97. `get­Entry­GE!`
+    1. [`Std.TreeMap.get­Entry­GE!`](Basic-Types/Maps-and-Sets/#Std___TreeMap___getEntryGE___)
+  98. `get­Entry­GE`
+    1. [`Std.TreeMap.get­Entry­GE`](Basic-Types/Maps-and-Sets/#Std___TreeMap___getEntryGE)
+  99. `get­Entry­GE?`
+    1. [`Std.TreeMap.get­Entry­GE?`](Basic-Types/Maps-and-Sets/#Std___TreeMap___getEntryGE___-next)
+  100. `get­Entry­GED`
+    1. [`Std.TreeMap.get­Entry­GED`](Basic-Types/Maps-and-Sets/#Std___TreeMap___getEntryGED)
+  101. `get­Entry­GT!`
+    1. [`Std.TreeMap.get­Entry­GT!`](Basic-Types/Maps-and-Sets/#Std___TreeMap___getEntryGT___)
+  102. `get­Entry­GT`
+    1. [`Std.TreeMap.get­Entry­GT`](Basic-Types/Maps-and-Sets/#Std___TreeMap___getEntryGT)
+  103. `get­Entry­GT?`
+    1. [`Std.TreeMap.get­Entry­GT?`](Basic-Types/Maps-and-Sets/#Std___TreeMap___getEntryGT___-next)
+  104. `get­Entry­GTD`
+    1. [`Std.TreeMap.get­Entry­GTD`](Basic-Types/Maps-and-Sets/#Std___TreeMap___getEntryGTD)
+  105. `get­Entry­LE!`
+    1. [`Std.TreeMap.get­Entry­LE!`](Basic-Types/Maps-and-Sets/#Std___TreeMap___getEntryLE___)
+  106. `get­Entry­LE`
+    1. [`Std.TreeMap.get­Entry­LE`](Basic-Types/Maps-and-Sets/#Std___TreeMap___getEntryLE)
+  107. `get­Entry­LE?`
+    1. [`Std.TreeMap.get­Entry­LE?`](Basic-Types/Maps-and-Sets/#Std___TreeMap___getEntryLE___-next)
+  108. `get­Entry­LED`
+    1. [`Std.TreeMap.get­Entry­LED`](Basic-Types/Maps-and-Sets/#Std___TreeMap___getEntryLED)
+  109. `get­Entry­LT!`
+    1. [`Std.TreeMap.get­Entry­LT!`](Basic-Types/Maps-and-Sets/#Std___TreeMap___getEntryLT___)
+  110. `get­Entry­LT`
+    1. [`Std.TreeMap.get­Entry­LT`](Basic-Types/Maps-and-Sets/#Std___TreeMap___getEntryLT)
+  111. `get­Entry­LT?`
+    1. [`Std.TreeMap.get­Entry­LT?`](Basic-Types/Maps-and-Sets/#Std___TreeMap___getEntryLT___-next)
+  112. `get­Entry­LTD`
+    1. [`Std.TreeMap.get­Entry­LTD`](Basic-Types/Maps-and-Sets/#Std___TreeMap___getEntryLTD)
+  113. `get­Env`
+    1. [`IO.get­Env`](IO/Environment-Variables/#IO___getEnv)
+  114. `get­Env­Lean­Path`
+    1. [`Lake.get­Env­Lean­Path`](Build-Tools-and-Distribution/Lake/#Lake___getEnvLeanPath)
+  115. `get­Env­Lean­Src­Path`
+    1. [`Lake.get­Env­Lean­Src­Path`](Build-Tools-and-Distribution/Lake/#Lake___getEnvLeanSrcPath)
+  116. `get­Env­Shared­Lib­Path`
+    1. [`Lake.get­Env­Shared­Lib­Path`](Build-Tools-and-Distribution/Lake/#Lake___getEnvSharedLibPath)
+  117. `get­Even­Elems`
+    1. [`Array.get­Even­Elems`](Basic-Types/Arrays/#Array___getEvenElems)
+  118. `get­GE!`
+    1. [`Std.TreeSet.get­GE!`](Basic-Types/Maps-and-Sets/#Std___TreeSet___getGE___)
+  119. `get­GE`
+    1. [`Std.TreeSet.get­GE`](Basic-Types/Maps-and-Sets/#Std___TreeSet___getGE)
+  120. `get­GE?`
+    1. [`Std.TreeSet.get­GE?`](Basic-Types/Maps-and-Sets/#Std___TreeSet___getGE___-next)
+  121. `get­GED`
+    1. [`Std.TreeSet.get­GED`](Basic-Types/Maps-and-Sets/#Std___TreeSet___getGED)
+  122. `get­GT!`
+    1. [`Std.TreeSet.get­GT!`](Basic-Types/Maps-and-Sets/#Std___TreeSet___getGT___)
+  123. `get­GT`
+    1. [`Std.TreeSet.get­GT`](Basic-Types/Maps-and-Sets/#Std___TreeSet___getGT)
+  124. `get­GT?`
+    1. [`Std.TreeSet.get­GT?`](Basic-Types/Maps-and-Sets/#Std___TreeSet___getGT___-next)
+  125. `get­GTD`
+    1. [`Std.TreeSet.get­GTD`](Basic-Types/Maps-and-Sets/#Std___TreeSet___getGTD)
+  126. `get­Hygiene­Info`
+    1. [`Lean.TSyntax.get­Hygiene­Info`](Notations-and-Macros/Defining-New-Syntax/#Lean___TSyntax___getHygieneInfo)
+  127. `get­Id`
+    1. [`Lean.TSyntax.get­Id`](Notations-and-Macros/Defining-New-Syntax/#Lean___TSyntax___getId)
+  128. `get­Key!`
+    1. [`Std.DHashMap.get­Key!`](Basic-Types/Maps-and-Sets/#Std___DHashMap___getKey___)
+  129. `get­Key!`
+    1. [`Std.DTreeMap.get­Key!`](Basic-Types/Maps-and-Sets/#Std___DTreeMap___getKey___)
+  130. `get­Key!`
+    1. [`Std.Ext­DHashMap.get­Key!`](Basic-Types/Maps-and-Sets/#Std___ExtDHashMap___getKey___)
+  131. `get­Key!`
+    1. [`Std.Ext­HashMap.get­Key!`](Basic-Types/Maps-and-Sets/#Std___ExtHashMap___getKey___)
+  132. `get­Key!`
+    1. [`Std.HashMap.get­Key!`](Basic-Types/Maps-and-Sets/#Std___HashMap___getKey___)
+  133. `get­Key!`
+    1. [`Std.TreeMap.get­Key!`](Basic-Types/Maps-and-Sets/#Std___TreeMap___getKey___)
+  134. `get­Key`
+    1. [`Std.DHashMap.get­Key`](Basic-Types/Maps-and-Sets/#Std___DHashMap___getKey)
+  135. `get­Key`
+    1. [`Std.DTreeMap.get­Key`](Basic-Types/Maps-and-Sets/#Std___DTreeMap___getKey)
+  136. `get­Key`
+    1. [`Std.Ext­DHashMap.get­Key`](Basic-Types/Maps-and-Sets/#Std___ExtDHashMap___getKey)
+  137. `get­Key`
+    1. [`Std.Ext­HashMap.get­Key`](Basic-Types/Maps-and-Sets/#Std___ExtHashMap___getKey)
+  138. `get­Key`
+    1. [`Std.HashMap.get­Key`](Basic-Types/Maps-and-Sets/#Std___HashMap___getKey)
+  139. `get­Key`
+    1. [`Std.TreeMap.get­Key`](Basic-Types/Maps-and-Sets/#Std___TreeMap___getKey)
+  140. `get­Key?`
+    1. [`Std.DHashMap.get­Key?`](Basic-Types/Maps-and-Sets/#Std___DHashMap___getKey___-next)
+  141. `get­Key?`
+    1. [`Std.DTreeMap.get­Key?`](Basic-Types/Maps-and-Sets/#Std___DTreeMap___getKey___-next)
+  142. `get­Key?`
+    1. [`Std.Ext­DHashMap.get­Key?`](Basic-Types/Maps-and-Sets/#Std___ExtDHashMap___getKey___-next)
+  143. `get­Key?`
+    1. [`Std.Ext­HashMap.get­Key?`](Basic-Types/Maps-and-Sets/#Std___ExtHashMap___getKey___-next)
+  144. `get­Key?`
+    1. [`Std.HashMap.get­Key?`](Basic-Types/Maps-and-Sets/#Std___HashMap___getKey___-next)
+  145. `get­Key?`
+    1. [`Std.TreeMap.get­Key?`](Basic-Types/Maps-and-Sets/#Std___TreeMap___getKey___-next)
+  146. `get­Key­D`
+    1. [`Std.DHashMap.get­Key­D`](Basic-Types/Maps-and-Sets/#Std___DHashMap___getKeyD)
+  147. `get­Key­D`
+    1. [`Std.DTreeMap.get­Key­D`](Basic-Types/Maps-and-Sets/#Std___DTreeMap___getKeyD)
+  148. `get­Key­D`
+    1. [`Std.Ext­DHashMap.get­Key­D`](Basic-Types/Maps-and-Sets/#Std___ExtDHashMap___getKeyD)
+  149. `get­Key­D`
+    1. [`Std.Ext­HashMap.get­Key­D`](Basic-Types/Maps-and-Sets/#Std___ExtHashMap___getKeyD)
+  150. `get­Key­D`
+    1. [`Std.HashMap.get­Key­D`](Basic-Types/Maps-and-Sets/#Std___HashMap___getKeyD)
+  151. `get­Key­D`
+    1. [`Std.TreeMap.get­Key­D`](Basic-Types/Maps-and-Sets/#Std___TreeMap___getKeyD)
+  152. `get­Key­GE!`
+    1. [`Std.TreeMap.get­Key­GE!`](Basic-Types/Maps-and-Sets/#Std___TreeMap___getKeyGE___)
+  153. `get­Key­GE`
+    1. [`Std.TreeMap.get­Key­GE`](Basic-Types/Maps-and-Sets/#Std___TreeMap___getKeyGE)
+  154. `get­Key­GE?`
+    1. [`Std.TreeMap.get­Key­GE?`](Basic-Types/Maps-and-Sets/#Std___TreeMap___getKeyGE___-next)
+  155. `get­Key­GED`
+    1. [`Std.TreeMap.get­Key­GED`](Basic-Types/Maps-and-Sets/#Std___TreeMap___getKeyGED)
+  156. `get­Key­GT!`
+    1. [`Std.TreeMap.get­Key­GT!`](Basic-Types/Maps-and-Sets/#Std___TreeMap___getKeyGT___)
+  157. `get­Key­GT`
+    1. [`Std.TreeMap.get­Key­GT`](Basic-Types/Maps-and-Sets/#Std___TreeMap___getKeyGT)
+  158. `get­Key­GT?`
+    1. [`Std.TreeMap.get­Key­GT?`](Basic-Types/Maps-and-Sets/#Std___TreeMap___getKeyGT___-next)
+  159. `get­Key­GTD`
+    1. [`Std.TreeMap.get­Key­GTD`](Basic-Types/Maps-and-Sets/#Std___TreeMap___getKeyGTD)
+  160. `get­Key­LE!`
+    1. [`Std.TreeMap.get­Key­LE!`](Basic-Types/Maps-and-Sets/#Std___TreeMap___getKeyLE___)
+  161. `get­Key­LE`
+    1. [`Std.TreeMap.get­Key­LE`](Basic-Types/Maps-and-Sets/#Std___TreeMap___getKeyLE)
+  162. `get­Key­LE?`
+    1. [`Std.TreeMap.get­Key­LE?`](Basic-Types/Maps-and-Sets/#Std___TreeMap___getKeyLE___-next)
+  163. `get­Key­LED`
+    1. [`Std.TreeMap.get­Key­LED`](Basic-Types/Maps-and-Sets/#Std___TreeMap___getKeyLED)
+  164. `get­Key­LT!`
+    1. [`Std.TreeMap.get­Key­LT!`](Basic-Types/Maps-and-Sets/#Std___TreeMap___getKeyLT___)
+  165. `get­Key­LT`
+    1. [`Std.TreeMap.get­Key­LT`](Basic-Types/Maps-and-Sets/#Std___TreeMap___getKeyLT)
+  166. `get­Key­LT?`
+    1. [`Std.TreeMap.get­Key­LT?`](Basic-Types/Maps-and-Sets/#Std___TreeMap___getKeyLT___-next)
+  167. `get­Key­LTD`
+    1. [`Std.TreeMap.get­Key­LTD`](Basic-Types/Maps-and-Sets/#Std___TreeMap___getKeyLTD)
+  168. `get­Kind`
+    1. [`Lean.Syntax.get­Kind`](Notations-and-Macros/Defining-New-Syntax/#Lean___Syntax___getKind)
+  169. `get­LE!`
+    1. [`Std.TreeSet.get­LE!`](Basic-Types/Maps-and-Sets/#Std___TreeSet___getLE___)
+  170. `get­LE`
+    1. [`Std.TreeSet.get­LE`](Basic-Types/Maps-and-Sets/#Std___TreeSet___getLE)
+  171. `get­LE?`
+    1. [`Std.TreeSet.get­LE?`](Basic-Types/Maps-and-Sets/#Std___TreeSet___getLE___-next)
+  172. `get­LED`
+    1. [`Std.TreeSet.get­LED`](Basic-Types/Maps-and-Sets/#Std___TreeSet___getLED)
+  173. `get­LT!`
+    1. [`Std.TreeSet.get­LT!`](Basic-Types/Maps-and-Sets/#Std___TreeSet___getLT___)
+  174. `get­LT`
+    1. [`Std.TreeSet.get­LT`](Basic-Types/Maps-and-Sets/#Std___TreeSet___getLT)
+  175. `get­LT?`
+    1. [`Std.TreeSet.get­LT?`](Basic-Types/Maps-and-Sets/#Std___TreeSet___getLT___-next)
+  176. `get­LTD`
+    1. [`Std.TreeSet.get­LTD`](Basic-Types/Maps-and-Sets/#Std___TreeSet___getLTD)
+  177. `get­Lake`
+    1. [`Lake.get­Lake`](Build-Tools-and-Distribution/Lake/#Lake___getLake)
+  178. `get­Lake­Env`
+    1. [`Lake.get­Lake­Env`](Build-Tools-and-Distribution/Lake/#Lake___getLakeEnv)
+  179. `get­Lake­Home`
+    1. [`Lake.get­Lake­Home`](Build-Tools-and-Distribution/Lake/#Lake___getLakeHome)
+  180. `get­Lake­Install`
+    1. [`Lake.get­Lake­Install`](Build-Tools-and-Distribution/Lake/#Lake___getLakeInstall)
+  181. `get­Lake­Lib­Dir`
+    1. [`Lake.get­Lake­Lib­Dir`](Build-Tools-and-Distribution/Lake/#Lake___getLakeLibDir)
+  182. `get­Lake­Src­Dir`
+    1. [`Lake.get­Lake­Src­Dir`](Build-Tools-and-Distribution/Lake/#Lake___getLakeSrcDir)
+  183. `get­Last!`
+    1. [`List.get­Last!`](Basic-Types/Linked-Lists/#List___getLast___-next)
+  184. `get­Last`
+    1. [`List.get­Last`](Basic-Types/Linked-Lists/#List___getLast)
+  185. `get­Last?`
+    1. [`List.get­Last?`](Basic-Types/Linked-Lists/#List___getLast___)
+  186. `get­Last­D`
+    1. [`List.get­Last­D`](Basic-Types/Linked-Lists/#List___getLastD)
+  187. `get­Lean`
+    1. [`Lake.get­Lean`](Build-Tools-and-Distribution/Lake/#Lake___getLean)
+  188. `get­Lean­Ar`
+    1. [`Lake.get­Lean­Ar`](Build-Tools-and-Distribution/Lake/#Lake___getLeanAr)
+  189. `get­Lean­Cc`
+    1. [`Lake.get­Lean­Cc`](Build-Tools-and-Distribution/Lake/#Lake___getLeanCc)
+  190. `get­Lean­Cc?`
+    1. [`Lake.get­Lean­Cc?`](Build-Tools-and-Distribution/Lake/#Lake___getLeanCc___)
+  191. `get­Lean­Include­Dir`
+    1. [`Lake.get­Lean­Include­Dir`](Build-Tools-and-Distribution/Lake/#Lake___getLeanIncludeDir)
+  192. `get­Lean­Install`
+    1. [`Lake.get­Lean­Install`](Build-Tools-and-Distribution/Lake/#Lake___getLeanInstall)
+  193. `get­Lean­Lib­Dir`
+    1. [`Lake.get­Lean­Lib­Dir`](Build-Tools-and-Distribution/Lake/#Lake___getLeanLibDir)
+  194. `get­Lean­Path`
+    1. [`Lake.get­Lean­Path`](Build-Tools-and-Distribution/Lake/#Lake___getLeanPath)
+  195. `get­Lean­Shared­Lib`
+    1. [`Lake.get­Lean­Shared­Lib`](Build-Tools-and-Distribution/Lake/#Lake___getLeanSharedLib)
+  196. `get­Lean­Src­Dir`
+    1. [`Lake.get­Lean­Src­Dir`](Build-Tools-and-Distribution/Lake/#Lake___getLeanSrcDir)
+  197. `get­Lean­Src­Path`
+    1. [`Lake.get­Lean­Src­Path`](Build-Tools-and-Distribution/Lake/#Lake___getLeanSrcPath)
+  198. `get­Lean­Sysroot`
+    1. [`Lake.get­Lean­Sysroot`](Build-Tools-and-Distribution/Lake/#Lake___getLeanSysroot)
+  199. `get­Lean­System­Lib­Dir`
+    1. [`Lake.get­Lean­System­Lib­Dir`](Build-Tools-and-Distribution/Lake/#Lake___getLeanSystemLibDir)
+  200. `get­Leanc`
+    1. [`Lake.get­Leanc`](Build-Tools-and-Distribution/Lake/#Lake___getLeanc)
+  201. `get­Left`
+    1. [`Sum.get­Left`](Basic-Types/Sum-Types/#Sum___getLeft)
+  202. `get­Left?`
+    1. [`Sum.get­Left?`](Basic-Types/Sum-Types/#Sum___getLeft___)
+  203. `get­Line`
+    1. [`IO.FS.Handle.get­Line`](IO/Files___-File-Handles___-and-Streams/#IO___FS___Handle___getLine)
+  204. `get­Line`
+    1. [`IO.FS.Stream.get­Line` (structure field)](IO/Files___-File-Handles___-and-Streams/#IO___FS___Stream___mk)
+  205. `get­Lsb`
+    1. [`BitVec.get­Lsb`](Basic-Types/Bitvectors/#BitVec___getLsb)
+  206. `get­Lsb?`
+    1. [`BitVec.get­Lsb?`](Basic-Types/Bitvectors/#BitVec___getLsb___)
+  207. `get­Lsb­D`
+    1. [`BitVec.get­Lsb­D`](Basic-Types/Bitvectors/#BitVec___getLsbD)
+  208. `get­M`
+    1. [`Option.get­M`](Basic-Types/Optional-Values/#Option___getM)
+  209. `get­Max?`
+    1. [`Array.get­Max?`](Basic-Types/Arrays/#Array___getMax___)
+  210. [`get­Modify`](Functors___-Monads-and--do--Notation/Varieties-of-Monads/#getModify)
+  211. `get­Msb`
+    1. [`BitVec.get­Msb`](Basic-Types/Bitvectors/#BitVec___getMsb)
+  212. `get­Msb?`
+    1. [`BitVec.get­Msb?`](Basic-Types/Bitvectors/#BitVec___getMsb___)
+  213. `get­Msb­D`
+    1. [`BitVec.get­Msb­D`](Basic-Types/Bitvectors/#BitVec___getMsbD)
+  214. `get­Name`
+    1. [`Lean.TSyntax.get­Name`](Notations-and-Macros/Defining-New-Syntax/#Lean___TSyntax___getName)
+  215. `get­Nat`
+    1. [`Lean.TSyntax.get­Nat`](Notations-and-Macros/Defining-New-Syntax/#Lean___TSyntax___getNat)
+  216. `get­No­Cache`
+    1. [`Lake.get­No­Cache`](Build-Tools-and-Distribution/Lake/#Lake___getNoCache)
+  217. `get­Num­Heartbeats`
+    1. [`IO.get­Num­Heartbeats`](IO/Timing/#IO___getNumHeartbeats)
+  218. `get­PID`
+    1. [`IO.Process.get­PID`](IO/Processes/#IO___Process___getPID)
+  219. `get­Pkg­Url­Map`
+    1. [`Lake.get­Pkg­Url­Map`](Build-Tools-and-Distribution/Lake/#Lake___getPkgUrlMap)
+  220. `get­Random­Bytes`
+    1. [`IO.get­Random­Bytes`](IO/Random-Numbers/#IO___getRandomBytes)
+  221. `get­Right`
+    1. [`Sum.get­Right`](Basic-Types/Sum-Types/#Sum___getRight)
+  222. `get­Right?`
+    1. [`Sum.get­Right?`](Basic-Types/Sum-Types/#Sum___getRight___)
+  223. `get­Root­Package`
+    1. [`Lake.get­Root­Package`](Build-Tools-and-Distribution/Lake/#Lake___getRootPackage)
+  224. `get­Scientific`
+    1. [`Lean.TSyntax.get­Scientific`](Notations-and-Macros/Defining-New-Syntax/#Lean___TSyntax___getScientific)
+  225. `get­Shared­Lib­Path`
+    1. [`Lake.get­Shared­Lib­Path`](Build-Tools-and-Distribution/Lake/#Lake___getSharedLibPath)
+  226. `get­Stderr`
+    1. [`IO.get­Stderr`](IO/Files___-File-Handles___-and-Streams/#IO___getStderr)
+  227. `get­Stdin`
+    1. [`IO.get­Stdin`](IO/Files___-File-Handles___-and-Streams/#IO___getStdin)
+  228. `get­Stdout`
+    1. [`IO.get­Stdout`](IO/Files___-File-Handles___-and-Streams/#IO___getStdout)
+  229. `get­String`
+    1. [`Lean.TSyntax.get­String`](Notations-and-Macros/Defining-New-Syntax/#Lean___TSyntax___getString)
+  230. `get­TID`
+    1. [`IO.get­TID`](IO/Tasks-and-Threads/#IO___getTID)
+  231. `get­Task­State`
+    1. [`IO.get­Task­State`](IO/Tasks-and-Threads/#IO___getTaskState)
+  232. [`get­The`](Functors___-Monads-and--do--Notation/Varieties-of-Monads/#getThe)
+  233. `get­The`
+    1. [`Std.Do.SVal.get­The`](The--mvcgen--tactic/Predicate-Transformers/#Std___Do___SVal___getThe)
+  234. `get­Then­Insert­If­New?`
+    1. [`Std.DHashMap.get­Then­Insert­If­New?`](Basic-Types/Maps-and-Sets/#Std___DHashMap___getThenInsertIfNew___)
+  235. `get­Then­Insert­If­New?`
+    1. [`Std.DTreeMap.get­Then­Insert­If­New?`](Basic-Types/Maps-and-Sets/#Std___DTreeMap___getThenInsertIfNew___)
+  236. `get­Then­Insert­If­New?`
+    1. [`Std.Ext­DHashMap.get­Then­Insert­If­New?`](Basic-Types/Maps-and-Sets/#Std___ExtDHashMap___getThenInsertIfNew___)
+  237. `get­Then­Insert­If­New?`
+    1. [`Std.Ext­HashMap.get­Then­Insert­If­New?`](Basic-Types/Maps-and-Sets/#Std___ExtHashMap___getThenInsertIfNew___)
+  238. `get­Then­Insert­If­New?`
+    1. [`Std.HashMap.get­Then­Insert­If­New?`](Basic-Types/Maps-and-Sets/#Std___HashMap___getThenInsertIfNew___)
+  239. `get­Then­Insert­If­New?`
+    1. [`Std.TreeMap.get­Then­Insert­If­New?`](Basic-Types/Maps-and-Sets/#Std___TreeMap___getThenInsertIfNew___)
+  240. `get­Try­Cache`
+    1. [`Lake.get­Try­Cache`](Build-Tools-and-Distribution/Lake/#Lake___getTryCache)
+  241. `get­UTF8Byte!`
+    1. [`String.Slice.get­UTF8Byte!`](Basic-Types/Strings/#String___Slice___getUTF8Byte___)
+  242. `get­UTF8Byte`
+    1. [`String.Slice.get­UTF8Byte`](Basic-Types/Strings/#String___Slice___getUTF8Byte)
+  243. `get­UTF8Byte`
+    1. [`String.get­UTF8Byte`](Basic-Types/Strings/#String___getUTF8Byte)
+  244. `get­Workspace`
+    1. [`Lake.MonadWorkspace.get­Workspace` (class method)](Build-Tools-and-Distribution/Lake/#Lake___MonadWorkspace___mk)
+  245. [`get_elem_tactic`](Tactic-Proofs/Tactic-Reference/#get_elem_tactic)
+  246. [`get_elem_tactic_trivial`](Tactic-Proofs/Tactic-Reference/#get_elem_tactic_trivial)
+  247. `globs`
+    1. [`[anonymous]` (structure field)](Build-Tools-and-Distribution/Lake/#Lake___LeanLibConfig___mk)
+  248. goal
+    1. [main](Tactic-Proofs/#--index--next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next)
+  249. [`grind`](Tactic-Proofs/Tactic-Reference/#grind)
+  250. [`grind?`](Tactic-Proofs/Tactic-Reference/#grind___)
+  251. [`grobner`](Tactic-Proofs/Tactic-Reference/#grobner)
+  252. `ground`
+    1. [`Lean.Meta.Simp.Config.ground` (structure field)](The-Simplifier/Configuring-Simplification/#Lean___Meta___Simp___Config___mk)
+  253. `group`
+    1. [`IO.FileRight.group` (structure field)](IO/Files___-File-Handles___-and-Streams/#IO___FileRight___mk)
+  254. `group­By­Key`
+    1. [`Array.group­By­Key`](Basic-Types/Arrays/#Array___groupByKey)
+  255. `group­By­Key`
+    1. [`List.group­By­Key`](Basic-Types/Linked-Lists/#List___groupByKey)
+  256. `group­Kind`
+    1. [`Lean.group­Kind`](Notations-and-Macros/Defining-New-Syntax/#Lean___groupKind)
+  257. [`guard`](Functors___-Monads-and--do--Notation/API-Reference/#guard)
+  258. `guard`
+    1. [`Option.guard`](Basic-Types/Optional-Values/#Option___guard)
+  259. [`guard_expr`](Tactic-Proofs/Tactic-Reference/#guard_expr)
+  260. [`guard_hyp`](Tactic-Proofs/Tactic-Reference/#guard_hyp)
+  261. [`guard_msgs.diff`](Interacting-with-Lean/#guard_msgs___diff)
+  262. [`guard_target`](Tactic-Proofs/Tactic-Reference/#guard_target)
+
+
+##  H
+  1. [`HAdd`](Type-Classes/Basic-Classes/#HAdd___mk)
+  2. `HAdd.mk`
+    1. [Instance constructor of `HAdd`](Type-Classes/Basic-Classes/#HAdd___mk)
+  3. [`HAnd`](Type-Classes/Basic-Classes/#HAnd___mk)
+  4. `HAnd.mk`
+    1. [Instance constructor of `HAnd`](Type-Classes/Basic-Classes/#HAnd___mk)
+  5. [`HAppend`](Type-Classes/Basic-Classes/#HAppend___mk)
+  6. `HAppend.mk`
+    1. [Instance constructor of `HAppend`](Type-Classes/Basic-Classes/#HAppend___mk)
+  7. [`HDiv`](Type-Classes/Basic-Classes/#HDiv___mk)
+  8. `HDiv.mk`
+    1. [Instance constructor of `HDiv`](Type-Classes/Basic-Classes/#HDiv___mk)
+  9. [`HEq`](Basic-Propositions/Propositional-Equality/#HEq___refl)
+  10. [`HEq.elim`](Basic-Propositions/Propositional-Equality/#HEq___elim)
+  11. [`HEq.ndrec`](Basic-Propositions/Propositional-Equality/#HEq___ndrec)
+  12. [`HEq.ndrec­On`](Basic-Propositions/Propositional-Equality/#HEq___ndrecOn)
+  13. `HEq.refl`
+    1. [Constructor of `HEq`](Basic-Propositions/Propositional-Equality/#HEq___refl)
+  14. [`HEq.rfl`](Basic-Propositions/Propositional-Equality/#HEq___rfl)
+  15. [`HEq.subst`](Basic-Propositions/Propositional-Equality/#HEq___subst)
+  16. [`HMod`](Type-Classes/Basic-Classes/#HMod___mk)
+  17. `HMod.mk`
+    1. [Instance constructor of `HMod`](Type-Classes/Basic-Classes/#HMod___mk)
+  18. [`HMul`](Type-Classes/Basic-Classes/#HMul___mk)
+  19. `HMul.mk`
+    1. [Instance constructor of `HMul`](Type-Classes/Basic-Classes/#HMul___mk)
+  20. [`HOr`](Type-Classes/Basic-Classes/#HOr___mk)
+  21. `HOr.mk`
+    1. [Instance constructor of `HOr`](Type-Classes/Basic-Classes/#HOr___mk)
+  22. [`HPow`](Type-Classes/Basic-Classes/#HPow___mk)
+  23. `HPow.mk`
+    1. [Instance constructor of `HPow`](Type-Classes/Basic-Classes/#HPow___mk)
+  24. [`HShift­Left`](Type-Classes/Basic-Classes/#HShiftLeft___mk)
+  25. `HShiftLeft.mk`
+    1. [Instance constructor of `HShift­Left`](Type-Classes/Basic-Classes/#HShiftLeft___mk)
+  26. [`HShift­Right`](Type-Classes/Basic-Classes/#HShiftRight___mk)
+  27. `HShiftRight.mk`
+    1. [Instance constructor of `HShift­Right`](Type-Classes/Basic-Classes/#HShiftRight___mk)
+  28. [`HSub`](Type-Classes/Basic-Classes/#HSub___mk)
+  29. `HSub.mk`
+    1. [Instance constructor of `HSub`](Type-Classes/Basic-Classes/#HSub___mk)
+  30. [`HXor`](Type-Classes/Basic-Classes/#HXor___mk)
+  31. `HXor.mk`
+    1. [Instance constructor of `HXor`](Type-Classes/Basic-Classes/#HXor___mk)
+  32. `Handle`
+    1. [`IO.FS.Handle`](IO/Files___-File-Handles___-and-Streams/#IO___FS___Handle)
+  33. [`Has­Equiv`](The-Type-System/Quotients/#HasEquiv___mk)
+  34. `HasEquiv.mk`
+    1. [Instance constructor of `Has­Equiv`](The-Type-System/Quotients/#HasEquiv___mk)
+  35. `Has­Left­Inverse`
+    1. [`Function.Has­Left­Inverse`](The-Type-System/Functions/#Function___HasLeftInverse)
+  36. `Has­Right­Inverse`
+    1. [`Function.Has­Right­Inverse`](The-Type-System/Functions/#Function___HasRightInverse)
+  37. `Has­Size`
+    1. [`Std.Rxc.Has­Size`](Basic-Types/Ranges/#Std___Rxc___HasSize___mk)
+  38. `Has­Size`
+    1. [`Std.Rxi.Has­Size`](Basic-Types/Ranges/#Std___Rxi___HasSize___mk)
+  39. `Hash­Map`
+    1. [`Std.Hash­Map`](Basic-Types/Maps-and-Sets/#Std___HashMap)
+  40. `Hash­Set`
+    1. [`Std.Hash­Set`](Basic-Types/Maps-and-Sets/#Std___HashSet___mk)
+  41. [`Hashable`](Type-Classes/Basic-Classes/#Hashable___mk)
+  42. `Hashable.mk`
+    1. [Instance constructor of `Hashable`](Type-Classes/Basic-Classes/#Hashable___mk)
+  43. `Het­T`
+    1. [`Std.Iterators.Het­T`](Iterators/Reasoning-About-Iterators/#Std___Iterators___HetT___mk)
+  44. [`Homogeneous­Pow`](Type-Classes/Basic-Classes/#HomogeneousPow___mk)
+  45. `HomogeneousPow.mk`
+    1. [Instance constructor of `Homogeneous­Pow`](Type-Classes/Basic-Classes/#HomogeneousPow___mk)
+  46. `Hygiene­Info`
+    1. [`Lean.Syntax.Hygiene­Info`](Notations-and-Macros/Defining-New-Syntax/#Lean___Syntax___HygieneInfo)
+  47. `h­Add`
+    1. [`HAdd.h­Add` (class method)](Type-Classes/Basic-Classes/#HAdd___mk)
+  48. `h­And`
+    1. [`HAnd.h­And` (class method)](Type-Classes/Basic-Classes/#HAnd___mk)
+  49. `h­Append`
+    1. [`HAppend.h­Append` (class method)](Type-Classes/Basic-Classes/#HAppend___mk)
+  50. `h­Div`
+    1. [`HDiv.h­Div` (class method)](Type-Classes/Basic-Classes/#HDiv___mk)
+  51. `h­Iterate`
+    1. [`Fin.h­Iterate`](Basic-Types/Finite-Natural-Numbers/#Fin___hIterate)
+  52. `h­Iterate­From`
+    1. [`Fin.h­Iterate­From`](Basic-Types/Finite-Natural-Numbers/#Fin___hIterateFrom)
+  53. `h­Mod`
+    1. [`HMod.h­Mod` (class method)](Type-Classes/Basic-Classes/#HMod___mk)
+  54. `h­Mul`
+    1. [`HMul.h­Mul` (class method)](Type-Classes/Basic-Classes/#HMul___mk)
+  55. `h­Or`
+    1. [`HOr.h­Or` (class method)](Type-Classes/Basic-Classes/#HOr___mk)
+  56. `h­Pow`
+    1. [`HPow.h­Pow` (class method)](Type-Classes/Basic-Classes/#HPow___mk)
+  57. `h­Shift­Left`
+    1. [`HShiftLeft.h­Shift­Left` (class method)](Type-Classes/Basic-Classes/#HShiftLeft___mk)
+  58. `h­Shift­Right`
+    1. [`HShiftRight.h­Shift­Right` (class method)](Type-Classes/Basic-Classes/#HShiftRight___mk)
+  59. `h­Sub`
+    1. [`HSub.h­Sub` (class method)](Type-Classes/Basic-Classes/#HSub___mk)
+  60. `h­Xor`
+    1. [`HXor.h­Xor` (class method)](Type-Classes/Basic-Classes/#HXor___mk)
+  61. `has­Decl`
+    1. [`Lean.Macro.has­Decl`](Notations-and-Macros/Macros/#Lean___Macro___hasDecl)
+  62. `has­Finished`
+    1. [`IO.has­Finished`](IO/Tasks-and-Threads/#IO___hasFinished)
+  63. `has­Next`
+    1. [`ByteArray.Iterator.has­Next`](Basic-Types/Byte-Arrays/#ByteArray___Iterator___hasNext)
+  64. `has­Next`
+    1. [`String.Legacy.Iterator.has­Next`](Basic-Types/Strings/#String___Legacy___Iterator___hasNext)
+  65. `has­Prev`
+    1. [`ByteArray.Iterator.has­Prev`](Basic-Types/Byte-Arrays/#ByteArray___Iterator___hasPrev)
+  66. `has­Prev`
+    1. [`String.Legacy.Iterator.has­Prev`](Basic-Types/Strings/#String___Legacy___Iterator___hasPrev)
+  67. `has_csup`
+    1. [`[anonymous]` (class method)](Definitions/Recursive-Definitions/#Lean___Order___CCPO___mk)
+  68. `hash`
+    1. [`BitVec.hash`](Basic-Types/Bitvectors/#BitVec___hash)
+  69. `hash`
+    1. [`Hashable.hash` (class method)](Type-Classes/Basic-Classes/#Hashable___mk)
+  70. `hash`
+    1. [`String.hash`](Basic-Types/Strings/#String___hash)
+  71. [`hash_eq`](Type-Classes/Basic-Classes/#hash_eq)
+  72. `hash_eq`
+    1. [`LawfulHashable.hash_eq` (class method)](Type-Classes/Basic-Classes/#LawfulHashable___mk)
+  73. `have` [(0)](Tactic-Proofs/The-Tactic-Language/#have) [(1)](Tactic-Proofs/The-Tactic-Language/#have-next)
+  74. [`have'`](Tactic-Proofs/The-Tactic-Language/#have___)
+  75. `head!`
+    1. [`List.head!`](Basic-Types/Linked-Lists/#List___head___-next)
+  76. `head`
+    1. [`List.head`](Basic-Types/Linked-Lists/#List___head)
+  77. `head?`
+    1. [`List.head?`](Basic-Types/Linked-Lists/#List___head___)
+  78. `head­D`
+    1. [`List.head­D`](Basic-Types/Linked-Lists/#List___headD)
+  79. `helim`
+    1. [`Subsingleton.helim`](Type-Classes/Basic-Classes/#Subsingleton___helim)
+  80. [`heq_of_eq`](Basic-Propositions/Propositional-Equality/#heq_of_eq)
+  81. [`heq_of_eq­Rec_eq`](Basic-Propositions/Propositional-Equality/#heq_of_eqRec_eq)
+  82. [`heq_of_heq_of_eq`](Basic-Propositions/Propositional-Equality/#heq_of_heq_of_eq)
+  83. `hrec­On`
+    1. [`Quot.hrec­On`](The-Type-System/Quotients/#Quot___hrecOn)
+  84. `hrec­On`
+    1. [`Quotient.hrec­On`](The-Type-System/Quotients/#Quotient___hrecOn)
+  85. hygiene
+    1. [in tactics](Tactic-Proofs/The-Tactic-Language/#--index--next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next)
+  86. `hygiene­Info­Kind`
+    1. [`Lean.hygiene­Info­Kind`](Notations-and-Macros/Defining-New-Syntax/#Lean___hygieneInfoKind)
+  87. `hygienic`
+    1. [`tactic.hygienic`](Tactic-Proofs/The-Tactic-Language/#tactic___hygienic)
+
+
+##  I
+  1. [`IO`](IO/Logical-Model/#IO)
+  2. [`IO.Access­Right`](IO/Files___-File-Handles___-and-Streams/#IO___AccessRight___mk)
+  3. [`IO.AccessRight.flags`](IO/Files___-File-Handles___-and-Streams/#IO___AccessRight___flags)
+  4. `IO.AccessRight.mk`
+    1. [Constructor of `IO.Access­Right`](IO/Files___-File-Handles___-and-Streams/#IO___AccessRight___mk)
+  5. [`IO.Error`](IO/Logical-Model/#IO___Error___alreadyExists)
+  6. `IO.Error.already­Exists`
+    1. [Constructor of `IO.Error`](IO/Logical-Model/#IO___Error___alreadyExists)
+  7. `IO.Error.hardware­Fault`
+    1. [Constructor of `IO.Error`](IO/Logical-Model/#IO___Error___alreadyExists)
+  8. `IO.Error.illegal­Operation`
+    1. [Constructor of `IO.Error`](IO/Logical-Model/#IO___Error___alreadyExists)
+  9. `IO.Error.inappropriate­Type`
+    1. [Constructor of `IO.Error`](IO/Logical-Model/#IO___Error___alreadyExists)
+  10. `IO.Error.interrupted`
+    1. [Constructor of `IO.Error`](IO/Logical-Model/#IO___Error___alreadyExists)
+  11. `IO.Error.invalid­Argument`
+    1. [Constructor of `IO.Error`](IO/Logical-Model/#IO___Error___alreadyExists)
+  12. `IO.Error.no­File­Or­Directory`
+    1. [Constructor of `IO.Error`](IO/Logical-Model/#IO___Error___alreadyExists)
+  13. `IO.Error.no­Such­Thing`
+    1. [Constructor of `IO.Error`](IO/Logical-Model/#IO___Error___alreadyExists)
+  14. `IO.Error.other­Error`
+    1. [Constructor of `IO.Error`](IO/Logical-Model/#IO___Error___alreadyExists)
+  15. `IO.Error.permission­Denied`
+    1. [Constructor of `IO.Error`](IO/Logical-Model/#IO___Error___alreadyExists)
+  16. `IO.Error.protocol­Error`
+    1. [Constructor of `IO.Error`](IO/Logical-Model/#IO___Error___alreadyExists)
+  17. `IO.Error.resource­Busy`
+    1. [Constructor of `IO.Error`](IO/Logical-Model/#IO___Error___alreadyExists)
+  18. `IO.Error.resource­Exhausted`
+    1. [Constructor of `IO.Error`](IO/Logical-Model/#IO___Error___alreadyExists)
+  19. `IO.Error.resource­Vanished`
+    1. [Constructor of `IO.Error`](IO/Logical-Model/#IO___Error___alreadyExists)
+  20. `IO.Error.time­Expired`
+    1. [Constructor of `IO.Error`](IO/Logical-Model/#IO___Error___alreadyExists)
+  21. [`IO.Error.to­String`](IO/Logical-Model/#IO___Error___toString)
+  22. `IO.Error.unexpected­Eof`
+    1. [Constructor of `IO.Error`](IO/Logical-Model/#IO___Error___alreadyExists)
+  23. `IO.Error.unsatisfied­Constraints`
+    1. [Constructor of `IO.Error`](IO/Logical-Model/#IO___Error___alreadyExists)
+  24. `IO.Error.unsupported­Operation`
+    1. [Constructor of `IO.Error`](IO/Logical-Model/#IO___Error___alreadyExists)
+  25. `IO.Error.user­Error`
+    1. [Constructor of `IO.Error`](IO/Logical-Model/#IO___Error___alreadyExists)
+  26. [`IO.FS.Dir­Entry`](IO/Files___-File-Handles___-and-Streams/#IO___FS___DirEntry___mk)
+  27. `IO.FS.DirEntry.mk`
+    1. [Constructor of `IO.FS.Dir­Entry`](IO/Files___-File-Handles___-and-Streams/#IO___FS___DirEntry___mk)
+  28. [`IO.FS.DirEntry.path`](IO/Files___-File-Handles___-and-Streams/#IO___FS___DirEntry___path)
+  29. [`IO.FS.Handle`](IO/Files___-File-Handles___-and-Streams/#IO___FS___Handle)
+  30. [`IO.FS.Handle.flush`](IO/Files___-File-Handles___-and-Streams/#IO___FS___Handle___flush)
+  31. [`IO.FS.Handle.get­Line`](IO/Files___-File-Handles___-and-Streams/#IO___FS___Handle___getLine)
+  32. [`IO.FS.Handle.is­Tty`](IO/Files___-File-Handles___-and-Streams/#IO___FS___Handle___isTty)
+  33. [`IO.FS.Handle.lock`](IO/Files___-File-Handles___-and-Streams/#IO___FS___Handle___lock)
+  34. [`IO.FS.Handle.mk`](IO/Files___-File-Handles___-and-Streams/#IO___FS___Handle___mk)
+  35. [`IO.FS.Handle.put­Str`](IO/Files___-File-Handles___-and-Streams/#IO___FS___Handle___putStr)
+  36. [`IO.FS.Handle.put­Str­Ln`](IO/Files___-File-Handles___-and-Streams/#IO___FS___Handle___putStrLn)
+  37. [`IO.FS.Handle.read`](IO/Files___-File-Handles___-and-Streams/#IO___FS___Handle___read)
+  38. [`IO.FS.Handle.read­Bin­To­End`](IO/Files___-File-Handles___-and-Streams/#IO___FS___Handle___readBinToEnd)
+  39. [`IO.FS.Handle.read­Bin­To­End­Into`](IO/Files___-File-Handles___-and-Streams/#IO___FS___Handle___readBinToEndInto)
+  40. [`IO.FS.Handle.read­To­End`](IO/Files___-File-Handles___-and-Streams/#IO___FS___Handle___readToEnd)
+  41. [`IO.FS.Handle.rewind`](IO/Files___-File-Handles___-and-Streams/#IO___FS___Handle___rewind)
+  42. [`IO.FS.Handle.truncate`](IO/Files___-File-Handles___-and-Streams/#IO___FS___Handle___truncate)
+  43. [`IO.FS.Handle.try­Lock`](IO/Files___-File-Handles___-and-Streams/#IO___FS___Handle___tryLock)
+  44. [`IO.FS.Handle.unlock`](IO/Files___-File-Handles___-and-Streams/#IO___FS___Handle___unlock)
+  45. [`IO.FS.Handle.write`](IO/Files___-File-Handles___-and-Streams/#IO___FS___Handle___write)
+  46. [`IO.FS.Metadata`](IO/Files___-File-Handles___-and-Streams/#IO___FS___Metadata___mk)
+  47. `IO.FS.Metadata.mk`
+    1. [Constructor of `IO.FS.Metadata`](IO/Files___-File-Handles___-and-Streams/#IO___FS___Metadata___mk)
+  48. [`IO.FS.Mode`](IO/Files___-File-Handles___-and-Streams/#IO___FS___Mode___read)
+  49. `IO.FS.Mode.append`
+    1. [Constructor of `IO.FS.Mode`](IO/Files___-File-Handles___-and-Streams/#IO___FS___Mode___read)
+  50. `IO.FS.Mode.read`
+    1. [Constructor of `IO.FS.Mode`](IO/Files___-File-Handles___-and-Streams/#IO___FS___Mode___read)
+  51. `IO.FS.Mode.read­Write`
+    1. [Constructor of `IO.FS.Mode`](IO/Files___-File-Handles___-and-Streams/#IO___FS___Mode___read)
+  52. `IO.FS.Mode.write`
+    1. [Constructor of `IO.FS.Mode`](IO/Files___-File-Handles___-and-Streams/#IO___FS___Mode___read)
+  53. `IO.FS.Mode.write­New`
+    1. [Constructor of `IO.FS.Mode`](IO/Files___-File-Handles___-and-Streams/#IO___FS___Mode___read)
+  54. [`IO.FS.Stream`](IO/Files___-File-Handles___-and-Streams/#IO___FS___Stream___mk)
+  55. [`IO.FS.Stream.Buffer`](IO/Files___-File-Handles___-and-Streams/#IO___FS___Stream___Buffer___mk)
+  56. `IO.FS.Stream.Buffer.mk`
+    1. [Constructor of `IO.FS.Stream.Buffer`](IO/Files___-File-Handles___-and-Streams/#IO___FS___Stream___Buffer___mk)
+  57. `IO.FS.Stream.mk`
+    1. [Constructor of `IO.FS.Stream`](IO/Files___-File-Handles___-and-Streams/#IO___FS___Stream___mk)
+  58. [`IO.FS.Stream.of­Buffer`](IO/Files___-File-Handles___-and-Streams/#IO___FS___Stream___ofBuffer)
+  59. [`IO.FS.Stream.of­Handle`](IO/Files___-File-Handles___-and-Streams/#IO___FS___Stream___ofHandle)
+  60. [`IO.FS.Stream.put­Str­Ln`](IO/Files___-File-Handles___-and-Streams/#IO___FS___Stream___putStrLn)
+  61. [`IO.FS.create­Dir`](IO/Files___-File-Handles___-and-Streams/#IO___FS___createDir)
+  62. [`IO.FS.create­Dir­All`](IO/Files___-File-Handles___-and-Streams/#IO___FS___createDirAll)
+  63. [`IO.FS.create­Temp­Dir`](IO/Files___-File-Handles___-and-Streams/#IO___FS___createTempDir)
+  64. [`IO.FS.create­Temp­File`](IO/Files___-File-Handles___-and-Streams/#IO___FS___createTempFile)
+  65. [`IO.FS.lines`](IO/Files___-File-Handles___-and-Streams/#IO___FS___lines)
+  66. [`IO.FS.read­Bin­File`](IO/Files___-File-Handles___-and-Streams/#IO___FS___readBinFile)
+  67. [`IO.FS.read­File`](IO/Files___-File-Handles___-and-Streams/#IO___FS___readFile)
+  68. [`IO.FS.real­Path`](IO/Files___-File-Handles___-and-Streams/#IO___FS___realPath)
+  69. [`IO.FS.remove­Dir`](IO/Files___-File-Handles___-and-Streams/#IO___FS___removeDir)
+  70. [`IO.FS.remove­Dir­All`](IO/Files___-File-Handles___-and-Streams/#IO___FS___removeDirAll)
+  71. [`IO.FS.remove­File`](IO/Files___-File-Handles___-and-Streams/#IO___FS___removeFile)
+  72. [`IO.FS.rename`](IO/Files___-File-Handles___-and-Streams/#IO___FS___rename)
+  73. [`IO.FS.with­File`](IO/Files___-File-Handles___-and-Streams/#IO___FS___withFile)
+  74. [`IO.FS.with­Isolated­Streams`](IO/Files___-File-Handles___-and-Streams/#IO___FS___withIsolatedStreams)
+  75. [`IO.FS.with­Temp­Dir`](IO/Files___-File-Handles___-and-Streams/#IO___FS___withTempDir)
+  76. [`IO.FS.with­Temp­File`](IO/Files___-File-Handles___-and-Streams/#IO___FS___withTempFile)
+  77. [`IO.FS.write­Bin­File`](IO/Files___-File-Handles___-and-Streams/#IO___FS___writeBinFile)
+  78. [`IO.FS.write­File`](IO/Files___-File-Handles___-and-Streams/#IO___FS___writeFile)
+  79. [`IO.File­Right`](IO/Files___-File-Handles___-and-Streams/#IO___FileRight___mk)
+  80. [`IO.FileRight.flags`](IO/Files___-File-Handles___-and-Streams/#IO___FileRight___flags)
+  81. `IO.FileRight.mk`
+    1. [Constructor of `IO.File­Right`](IO/Files___-File-Handles___-and-Streams/#IO___FileRight___mk)
+  82. [`IO.Process.Child`](IO/Processes/#IO___Process___Child___stdin)
+  83. [`IO.Process.Child.kill`](IO/Processes/#IO___Process___Child___kill)
+  84. [`IO.Process.Child.take­Stdin`](IO/Processes/#IO___Process___Child___takeStdin)
+  85. [`IO.Process.Child.try­Wait`](IO/Processes/#IO___Process___Child___tryWait)
+  86. [`IO.Process.Child.wait`](IO/Processes/#IO___Process___Child___wait)
+  87. [`IO.Process.Output`](IO/Processes/#IO___Process___Output___mk)
+  88. `IO.Process.Output.mk`
+    1. [Constructor of `IO.Process.Output`](IO/Processes/#IO___Process___Output___mk)
+  89. [`IO.Process.Spawn­Args`](IO/Processes/#IO___Process___SpawnArgs___mk)
+  90. `IO.Process.SpawnArgs.mk`
+    1. [Constructor of `IO.Process.Spawn­Args`](IO/Processes/#IO___Process___SpawnArgs___mk)
+  91. [`IO.Process.Stdio`](IO/Processes/#IO___Process___Stdio___piped)
+  92. `IO.Process.Stdio.inherit`
+    1. [Constructor of `IO.Process.Stdio`](IO/Processes/#IO___Process___Stdio___piped)
+  93. `IO.Process.Stdio.null`
+    1. [Constructor of `IO.Process.Stdio`](IO/Processes/#IO___Process___Stdio___piped)
+  94. `IO.Process.Stdio.piped`
+    1. [Constructor of `IO.Process.Stdio`](IO/Processes/#IO___Process___Stdio___piped)
+  95. [`IO.Process.Stdio.to­Handle­Type`](IO/Processes/#IO___Process___Stdio___toHandleType)
+  96. [`IO.Process.Stdio­Config`](IO/Processes/#IO___Process___StdioConfig___mk)
+  97. `IO.Process.StdioConfig.mk`
+    1. [Constructor of `IO.Process.Stdio­Config`](IO/Processes/#IO___Process___StdioConfig___mk)
+  98. [`IO.Process.exit`](IO/Processes/#IO___Process___exit)
+  99. [`IO.Process.get­Current­Dir`](IO/Processes/#IO___Process___getCurrentDir)
+  100. [`IO.Process.get­PID`](IO/Processes/#IO___Process___getPID)
+  101. [`IO.Process.output`](IO/Processes/#IO___Process___output)
+  102. [`IO.Process.run`](IO/Processes/#IO___Process___run)
+  103. [`IO.Process.set­Current­Dir`](IO/Processes/#IO___Process___setCurrentDir)
+  104. [`IO.Process.spawn`](IO/Processes/#IO___Process___spawn)
+  105. [`IO.Promise`](IO/Tasks-and-Threads/#IO___Promise)
+  106. [`IO.Promise.is­Resolved`](IO/Tasks-and-Threads/#IO___Promise___isResolved)
+  107. [`IO.Promise.new`](IO/Tasks-and-Threads/#IO___Promise___new)
+  108. [`IO.Promise.resolve`](IO/Tasks-and-Threads/#IO___Promise___resolve)
+  109. [`IO.Promise.result!`](IO/Tasks-and-Threads/#IO___Promise___result___-next)
+  110. [`IO.Promise.result?`](IO/Tasks-and-Threads/#IO___Promise___result___)
+  111. [`IO.Promise.result­D`](IO/Tasks-and-Threads/#IO___Promise___resultD)
+  112. [`IO.Ref`](IO/Mutable-References/#IO___Ref)
+  113. [`IO.Task­State`](IO/Tasks-and-Threads/#IO___TaskState___waiting)
+  114. `IO.TaskState.finished`
+    1. [Constructor of `IO.Task­State`](IO/Tasks-and-Threads/#IO___TaskState___waiting)
+  115. `IO.TaskState.running`
+    1. [Constructor of `IO.Task­State`](IO/Tasks-and-Threads/#IO___TaskState___waiting)
+  116. `IO.TaskState.waiting`
+    1. [Constructor of `IO.Task­State`](IO/Tasks-and-Threads/#IO___TaskState___waiting)
+  117. [`IO.add­Heartbeats`](IO/Timing/#IO___addHeartbeats)
+  118. [`IO.app­Dir`](IO/Files___-File-Handles___-and-Streams/#IO___appDir)
+  119. [`IO.app­Path`](IO/Files___-File-Handles___-and-Streams/#IO___appPath)
+  120. [`IO.as­Task`](IO/Tasks-and-Threads/#IO___asTask)
+  121. [`IO.bind­Task`](IO/Tasks-and-Threads/#IO___bindTask)
+  122. [`IO.cancel`](IO/Tasks-and-Threads/#IO___cancel)
+  123. [`IO.chain­Task`](IO/Tasks-and-Threads/#IO___chainTask)
+  124. [`IO.check­Canceled`](IO/Tasks-and-Threads/#IO___checkCanceled)
+  125. [`IO.current­Dir`](IO/Files___-File-Handles___-and-Streams/#IO___currentDir)
+  126. [`IO.eprint`](IO/Console-Output/#IO___eprint)
+  127. [`IO.eprintln`](IO/Console-Output/#IO___eprintln)
+  128. [`IO.get­Env`](IO/Environment-Variables/#IO___getEnv)
+  129. [`IO.get­Num­Heartbeats`](IO/Timing/#IO___getNumHeartbeats)
+  130. [`IO.get­Random­Bytes`](IO/Random-Numbers/#IO___getRandomBytes)
+  131. [`IO.get­Stderr`](IO/Files___-File-Handles___-and-Streams/#IO___getStderr)
+  132. [`IO.get­Stdin`](IO/Files___-File-Handles___-and-Streams/#IO___getStdin)
+  133. [`IO.get­Stdout`](IO/Files___-File-Handles___-and-Streams/#IO___getStdout)
+  134. [`IO.get­TID`](IO/Tasks-and-Threads/#IO___getTID)
+  135. [`IO.get­Task­State`](IO/Tasks-and-Threads/#IO___getTaskState)
+  136. [`IO.has­Finished`](IO/Tasks-and-Threads/#IO___hasFinished)
+  137. [`IO.iterate`](IO/Control-Structures/#IO___iterate)
+  138. [`IO.lazy­Pure`](IO/Logical-Model/#IO___lazyPure)
+  139. [`IO.map­Task`](IO/Tasks-and-Threads/#IO___mapTask)
+  140. [`IO.map­Tasks`](IO/Tasks-and-Threads/#IO___mapTasks)
+  141. [`IO.mk­Ref`](IO/Mutable-References/#IO___mkRef)
+  142. [`IO.mono­Ms­Now`](IO/Timing/#IO___monoMsNow)
+  143. [`IO.mono­Nanos­Now`](IO/Timing/#IO___monoNanosNow)
+  144. [`IO.of­Except`](IO/Logical-Model/#IO___ofExcept)
+  145. [`IO.print`](IO/Console-Output/#IO___print)
+  146. [`IO.println`](IO/Console-Output/#IO___println)
+  147. [`IO.rand`](IO/Random-Numbers/#IO___rand)
+  148. [`IO.set­Access­Rights`](IO/Files___-File-Handles___-and-Streams/#IO___setAccessRights)
+  149. [`IO.set­Rand­Seed`](IO/Random-Numbers/#IO___setRandSeed)
+  150. [`IO.set­Stderr`](IO/Files___-File-Handles___-and-Streams/#IO___setStderr)
+  151. [`IO.set­Stdin`](IO/Files___-File-Handles___-and-Streams/#IO___setStdin)
+  152. [`IO.set­Stdout`](IO/Files___-File-Handles___-and-Streams/#IO___setStdout)
+  153. [`IO.sleep`](IO/Timing/#IO___sleep)
+  154. [`IO.to­EIO`](IO/Logical-Model/#IO___toEIO)
+  155. [`IO.user­Error`](IO/Logical-Model/#IO___userError)
+  156. [`IO.wait`](IO/Tasks-and-Threads/#IO___wait)
+  157. [`IO.wait­Any`](IO/Tasks-and-Threads/#IO___waitAny)
+  158. [`IO.with­Stderr`](IO/Files___-File-Handles___-and-Streams/#IO___withStderr)
+  159. [`IO.with­Stdin`](IO/Files___-File-Handles___-and-Streams/#IO___withStdin)
+  160. [`IO.with­Stdout`](IO/Files___-File-Handles___-and-Streams/#IO___withStdout)
+  161. [`ISize`](Basic-Types/Fixed-Precision-Integers/#ISize___ofUSize)
+  162. [`ISize.abs`](Basic-Types/Fixed-Precision-Integers/#ISize___abs)
+  163. [`ISize.add`](Basic-Types/Fixed-Precision-Integers/#ISize___add)
+  164. [`ISize.complement`](Basic-Types/Fixed-Precision-Integers/#ISize___complement)
+  165. [`ISize.dec­Eq`](Basic-Types/Fixed-Precision-Integers/#ISize___decEq)
+  166. [`ISize.dec­Le`](Basic-Types/Fixed-Precision-Integers/#ISize___decLe)
+  167. [`ISize.dec­Lt`](Basic-Types/Fixed-Precision-Integers/#ISize___decLt)
+  168. [`ISize.div`](Basic-Types/Fixed-Precision-Integers/#ISize___div)
+  169. [`ISize.land`](Basic-Types/Fixed-Precision-Integers/#ISize___land)
+  170. [`ISize.le`](Basic-Types/Fixed-Precision-Integers/#ISize___le)
+  171. [`ISize.lor`](Basic-Types/Fixed-Precision-Integers/#ISize___lor)
+  172. [`ISize.lt`](Basic-Types/Fixed-Precision-Integers/#ISize___lt)
+  173. [`ISize.max­Value`](Basic-Types/Fixed-Precision-Integers/#ISize___maxValue)
+  174. [`ISize.min­Value`](Basic-Types/Fixed-Precision-Integers/#ISize___minValue)
+  175. [`ISize.mod`](Basic-Types/Fixed-Precision-Integers/#ISize___mod)
+  176. [`ISize.mul`](Basic-Types/Fixed-Precision-Integers/#ISize___mul)
+  177. [`ISize.neg`](Basic-Types/Fixed-Precision-Integers/#ISize___neg)
+  178. [`ISize.of­Bit­Vec`](Basic-Types/Fixed-Precision-Integers/#ISize___ofBitVec)
+  179. [`ISize.of­Int`](Basic-Types/Fixed-Precision-Integers/#ISize___ofInt)
+  180. [`ISize.of­Int­LE`](Basic-Types/Fixed-Precision-Integers/#ISize___ofIntLE)
+  181. [`ISize.of­Int­Truncate`](Basic-Types/Fixed-Precision-Integers/#ISize___ofIntTruncate)
+  182. [`ISize.of­Nat`](Basic-Types/Fixed-Precision-Integers/#ISize___ofNat)
+  183. `ISize.of­USize`
+    1. [Constructor of `ISize`](Basic-Types/Fixed-Precision-Integers/#ISize___ofUSize)
+  184. [`ISize.shift­Left`](Basic-Types/Fixed-Precision-Integers/#ISize___shiftLeft)
+  185. [`ISize.shift­Right`](Basic-Types/Fixed-Precision-Integers/#ISize___shiftRight)
+  186. [`ISize.size`](Basic-Types/Fixed-Precision-Integers/#ISize___size)
+  187. [`ISize.sub`](Basic-Types/Fixed-Precision-Integers/#ISize___sub)
+  188. [`ISize.to­Bit­Vec`](Basic-Types/Fixed-Precision-Integers/#ISize___toBitVec)
+  189. [`ISize.to­Float`](Basic-Types/Fixed-Precision-Integers/#ISize___toFloat)
+  190. [`ISize.to­Float32`](Basic-Types/Fixed-Precision-Integers/#ISize___toFloat32)
+  191. [`ISize.to­Int`](Basic-Types/Fixed-Precision-Integers/#ISize___toInt)
+  192. [`ISize.to­Int16`](Basic-Types/Fixed-Precision-Integers/#ISize___toInt16)
+  193. [`ISize.to­Int32`](Basic-Types/Fixed-Precision-Integers/#ISize___toInt32)
+  194. [`ISize.to­Int64`](Basic-Types/Fixed-Precision-Integers/#ISize___toInt64)
+  195. [`ISize.to­Int8`](Basic-Types/Fixed-Precision-Integers/#ISize___toInt8)
+  196. [`ISize.to­Nat­Clamp­Neg`](Basic-Types/Fixed-Precision-Integers/#ISize___toNatClampNeg)
+  197. [`ISize.xor`](Basic-Types/Fixed-Precision-Integers/#ISize___xor)
+  198. [`Id`](Functors___-Monads-and--do--Notation/Varieties-of-Monads/#Id)
+  199. [`Id.run`](Functors___-Monads-and--do--Notation/Varieties-of-Monads/#Id___run)
+  200. `Ident`
+    1. [`Lean.Syntax.Ident`](Notations-and-Macros/Defining-New-Syntax/#Lean___Syntax___Ident)
+  201. [`Iff`](Basic-Propositions/Logical-Connectives/#Iff___intro)
+  202. [`Iff.elim`](Basic-Propositions/Logical-Connectives/#Iff___elim)
+  203. `Iff.intro`
+    1. [Constructor of `Iff`](Basic-Propositions/Logical-Connectives/#Iff___intro)
+  204. `Infinitely­Upward­Enumerable`
+    1. [`Std.PRange.Infinitely­Upward­Enumerable`](Basic-Types/Ranges/#Std___PRange___InfinitelyUpwardEnumerable___mk)
+  205. [`Inhabited`](Type-Classes/Basic-Classes/#Inhabited___mk)
+  206. `Inhabited.mk`
+    1. [Instance constructor of `Inhabited`](Type-Classes/Basic-Classes/#Inhabited___mk)
+  207. `Injective`
+    1. [`Function.Injective`](The-Type-System/Functions/#Function___Injective)
+  208. [`Int`](Basic-Types/Integers/#Int___ofNat)
+  209. [`Int.add`](Basic-Types/Integers/#Int___add)
+  210. [`Int.bdiv`](Basic-Types/Integers/#Int___bdiv)
+  211. [`Int.bmod`](Basic-Types/Integers/#Int___bmod)
+  212. [`Int.cast`](Coercions/Coercing-Between-Types/#Int___cast)
+  213. [`Int.dec­Eq`](Basic-Types/Integers/#Int___decEq)
+  214. [`Int.ediv`](Basic-Types/Integers/#Int___ediv)
+  215. [`Int.emod`](Basic-Types/Integers/#Int___emod)
+  216. [`Int.fdiv`](Basic-Types/Integers/#Int___fdiv)
+  217. [`Int.fmod`](Basic-Types/Integers/#Int___fmod)
+  218. [`Int.gcd`](Basic-Types/Integers/#Int___gcd)
+  219. [`Int.lcm`](Basic-Types/Integers/#Int___lcm)
+  220. [`Int.le`](Basic-Types/Integers/#Int___le)
+  221. [`Int.lt`](Basic-Types/Integers/#Int___lt)
+  222. [`Int.mul`](Basic-Types/Integers/#Int___mul)
+  223. [`Int.nat­Abs`](Basic-Types/Integers/#Int___natAbs)
+  224. [`Int.neg`](Basic-Types/Integers/#Int___neg)
+  225. [`Int.neg­Of­Nat`](Basic-Types/Integers/#Int___negOfNat)
+  226. `Int.neg­Succ`
+    1. [Constructor of `Int`](Basic-Types/Integers/#Int___ofNat)
+  227. [`Int.not`](Basic-Types/Integers/#Int___not)
+  228. `Int.of­Nat`
+    1. [Constructor of `Int`](Basic-Types/Integers/#Int___ofNat)
+  229. [`Int.pow`](Basic-Types/Integers/#Int___pow)
+  230. [`Int.repr`](Basic-Types/Integers/#Int___repr)
+  231. [`Int.shift­Right`](Basic-Types/Integers/#Int___shiftRight)
+  232. [`Int.sign`](Basic-Types/Integers/#Int___sign)
+  233. [`Int.sub`](Basic-Types/Integers/#Int___sub)
+  234. [`Int.sub­Nat­Nat`](Basic-Types/Integers/#Int___subNatNat)
+  235. [`Int.tdiv`](Basic-Types/Integers/#Int___tdiv)
+  236. [`Int.tmod`](Basic-Types/Integers/#Int___tmod)
+  237. [`Int.to­ISize`](Basic-Types/Integers/#Int___toISize)
+  238. [`Int.to­Int16`](Basic-Types/Integers/#Int___toInt16)
+  239. [`Int.to­Int32`](Basic-Types/Integers/#Int___toInt32)
+  240. [`Int.to­Int64`](Basic-Types/Integers/#Int___toInt64)
+  241. [`Int.to­Int8`](Basic-Types/Integers/#Int___toInt8)
+  242. [`Int.to­Nat`](Basic-Types/Integers/#Int___toNat)
+  243. [`Int.to­Nat?`](Basic-Types/Integers/#Int___toNat___)
+  244. [`Int16`](Basic-Types/Fixed-Precision-Integers/#Int16___ofUInt16)
+  245. [`Int16.abs`](Basic-Types/Fixed-Precision-Integers/#Int16___abs)
+  246. [`Int16.add`](Basic-Types/Fixed-Precision-Integers/#Int16___add)
+  247. [`Int16.complement`](Basic-Types/Fixed-Precision-Integers/#Int16___complement)
+  248. [`Int16.dec­Eq`](Basic-Types/Fixed-Precision-Integers/#Int16___decEq)
+  249. [`Int16.dec­Le`](Basic-Types/Fixed-Precision-Integers/#Int16___decLe)
+  250. [`Int16.dec­Lt`](Basic-Types/Fixed-Precision-Integers/#Int16___decLt)
+  251. [`Int16.div`](Basic-Types/Fixed-Precision-Integers/#Int16___div)
+  252. [`Int16.land`](Basic-Types/Fixed-Precision-Integers/#Int16___land)
+  253. [`Int16.le`](Basic-Types/Fixed-Precision-Integers/#Int16___le)
+  254. [`Int16.lor`](Basic-Types/Fixed-Precision-Integers/#Int16___lor)
+  255. [`Int16.lt`](Basic-Types/Fixed-Precision-Integers/#Int16___lt)
+  256. [`Int16.max­Value`](Basic-Types/Fixed-Precision-Integers/#Int16___maxValue)
+  257. [`Int16.min­Value`](Basic-Types/Fixed-Precision-Integers/#Int16___minValue)
+  258. [`Int16.mod`](Basic-Types/Fixed-Precision-Integers/#Int16___mod)
+  259. [`Int16.mul`](Basic-Types/Fixed-Precision-Integers/#Int16___mul)
+  260. [`Int16.neg`](Basic-Types/Fixed-Precision-Integers/#Int16___neg)
+  261. [`Int16.of­Bit­Vec`](Basic-Types/Fixed-Precision-Integers/#Int16___ofBitVec)
+  262. [`Int16.of­Int`](Basic-Types/Fixed-Precision-Integers/#Int16___ofInt)
+  263. [`Int16.of­Int­LE`](Basic-Types/Fixed-Precision-Integers/#Int16___ofIntLE)
+  264. [`Int16.of­Int­Truncate`](Basic-Types/Fixed-Precision-Integers/#Int16___ofIntTruncate)
+  265. [`Int16.of­Nat`](Basic-Types/Fixed-Precision-Integers/#Int16___ofNat)
+  266. `Int16.of­UInt16`
+    1. [Constructor of `Int16`](Basic-Types/Fixed-Precision-Integers/#Int16___ofUInt16)
+  267. [`Int16.shift­Left`](Basic-Types/Fixed-Precision-Integers/#Int16___shiftLeft)
+  268. [`Int16.shift­Right`](Basic-Types/Fixed-Precision-Integers/#Int16___shiftRight)
+  269. [`Int16.size`](Basic-Types/Fixed-Precision-Integers/#Int16___size)
+  270. [`Int16.sub`](Basic-Types/Fixed-Precision-Integers/#Int16___sub)
+  271. [`Int16.to­Bit­Vec`](Basic-Types/Fixed-Precision-Integers/#Int16___toBitVec)
+  272. [`Int16.to­Float`](Basic-Types/Fixed-Precision-Integers/#Int16___toFloat)
+  273. [`Int16.to­Float32`](Basic-Types/Fixed-Precision-Integers/#Int16___toFloat32)
+  274. [`Int16.to­ISize`](Basic-Types/Fixed-Precision-Integers/#Int16___toISize)
+  275. [`Int16.to­Int`](Basic-Types/Fixed-Precision-Integers/#Int16___toInt)
+  276. [`Int16.to­Int32`](Basic-Types/Fixed-Precision-Integers/#Int16___toInt32)
+  277. [`Int16.to­Int64`](Basic-Types/Fixed-Precision-Integers/#Int16___toInt64)
+  278. [`Int16.to­Int8`](Basic-Types/Fixed-Precision-Integers/#Int16___toInt8)
+  279. [`Int16.to­Nat­Clamp­Neg`](Basic-Types/Fixed-Precision-Integers/#Int16___toNatClampNeg)
+  280. [`Int16.xor`](Basic-Types/Fixed-Precision-Integers/#Int16___xor)
+  281. [`Int32`](Basic-Types/Fixed-Precision-Integers/#Int32___ofUInt32)
+  282. [`Int32.abs`](Basic-Types/Fixed-Precision-Integers/#Int32___abs)
+  283. [`Int32.add`](Basic-Types/Fixed-Precision-Integers/#Int32___add)
+  284. [`Int32.complement`](Basic-Types/Fixed-Precision-Integers/#Int32___complement)
+  285. [`Int32.dec­Eq`](Basic-Types/Fixed-Precision-Integers/#Int32___decEq)
+  286. [`Int32.dec­Le`](Basic-Types/Fixed-Precision-Integers/#Int32___decLe)
+  287. [`Int32.dec­Lt`](Basic-Types/Fixed-Precision-Integers/#Int32___decLt)
+  288. [`Int32.div`](Basic-Types/Fixed-Precision-Integers/#Int32___div)
+  289. [`Int32.land`](Basic-Types/Fixed-Precision-Integers/#Int32___land)
+  290. [`Int32.le`](Basic-Types/Fixed-Precision-Integers/#Int32___le)
+  291. [`Int32.lor`](Basic-Types/Fixed-Precision-Integers/#Int32___lor)
+  292. [`Int32.lt`](Basic-Types/Fixed-Precision-Integers/#Int32___lt)
+  293. [`Int32.max­Value`](Basic-Types/Fixed-Precision-Integers/#Int32___maxValue)
+  294. [`Int32.min­Value`](Basic-Types/Fixed-Precision-Integers/#Int32___minValue)
+  295. [`Int32.mod`](Basic-Types/Fixed-Precision-Integers/#Int32___mod)
+  296. [`Int32.mul`](Basic-Types/Fixed-Precision-Integers/#Int32___mul)
+  297. [`Int32.neg`](Basic-Types/Fixed-Precision-Integers/#Int32___neg)
+  298. [`Int32.of­Bit­Vec`](Basic-Types/Fixed-Precision-Integers/#Int32___ofBitVec)
+  299. [`Int32.of­Int`](Basic-Types/Fixed-Precision-Integers/#Int32___ofInt)
+  300. [`Int32.of­Int­LE`](Basic-Types/Fixed-Precision-Integers/#Int32___ofIntLE)
+  301. [`Int32.of­Int­Truncate`](Basic-Types/Fixed-Precision-Integers/#Int32___ofIntTruncate)
+  302. [`Int32.of­Nat`](Basic-Types/Fixed-Precision-Integers/#Int32___ofNat)
+  303. `Int32.of­UInt32`
+    1. [Constructor of `Int32`](Basic-Types/Fixed-Precision-Integers/#Int32___ofUInt32)
+  304. [`Int32.shift­Left`](Basic-Types/Fixed-Precision-Integers/#Int32___shiftLeft)
+  305. [`Int32.shift­Right`](Basic-Types/Fixed-Precision-Integers/#Int32___shiftRight)
+  306. [`Int32.size`](Basic-Types/Fixed-Precision-Integers/#Int32___size)
+  307. [`Int32.sub`](Basic-Types/Fixed-Precision-Integers/#Int32___sub)
+  308. [`Int32.to­Bit­Vec`](Basic-Types/Fixed-Precision-Integers/#Int32___toBitVec)
+  309. [`Int32.to­Float`](Basic-Types/Fixed-Precision-Integers/#Int32___toFloat)
+  310. [`Int32.to­Float32`](Basic-Types/Fixed-Precision-Integers/#Int32___toFloat32)
+  311. [`Int32.to­ISize`](Basic-Types/Fixed-Precision-Integers/#Int32___toISize)
+  312. [`Int32.to­Int`](Basic-Types/Fixed-Precision-Integers/#Int32___toInt)
+  313. [`Int32.to­Int16`](Basic-Types/Fixed-Precision-Integers/#Int32___toInt16)
+  314. [`Int32.to­Int64`](Basic-Types/Fixed-Precision-Integers/#Int32___toInt64)
+  315. [`Int32.to­Int8`](Basic-Types/Fixed-Precision-Integers/#Int32___toInt8)
+  316. [`Int32.to­Nat­Clamp­Neg`](Basic-Types/Fixed-Precision-Integers/#Int32___toNatClampNeg)
+  317. [`Int32.xor`](Basic-Types/Fixed-Precision-Integers/#Int32___xor)
+  318. [`Int64`](Basic-Types/Fixed-Precision-Integers/#Int64___ofUInt64)
+  319. [`Int64.abs`](Basic-Types/Fixed-Precision-Integers/#Int64___abs)
+  320. [`Int64.add`](Basic-Types/Fixed-Precision-Integers/#Int64___add)
+  321. [`Int64.complement`](Basic-Types/Fixed-Precision-Integers/#Int64___complement)
+  322. [`Int64.dec­Eq`](Basic-Types/Fixed-Precision-Integers/#Int64___decEq)
+  323. [`Int64.dec­Le`](Basic-Types/Fixed-Precision-Integers/#Int64___decLe)
+  324. [`Int64.dec­Lt`](Basic-Types/Fixed-Precision-Integers/#Int64___decLt)
+  325. [`Int64.div`](Basic-Types/Fixed-Precision-Integers/#Int64___div)
+  326. [`Int64.land`](Basic-Types/Fixed-Precision-Integers/#Int64___land)
+  327. [`Int64.le`](Basic-Types/Fixed-Precision-Integers/#Int64___le)
+  328. [`Int64.lor`](Basic-Types/Fixed-Precision-Integers/#Int64___lor)
+  329. [`Int64.lt`](Basic-Types/Fixed-Precision-Integers/#Int64___lt)
+  330. [`Int64.max­Value`](Basic-Types/Fixed-Precision-Integers/#Int64___maxValue)
+  331. [`Int64.min­Value`](Basic-Types/Fixed-Precision-Integers/#Int64___minValue)
+  332. [`Int64.mod`](Basic-Types/Fixed-Precision-Integers/#Int64___mod)
+  333. [`Int64.mul`](Basic-Types/Fixed-Precision-Integers/#Int64___mul)
+  334. [`Int64.neg`](Basic-Types/Fixed-Precision-Integers/#Int64___neg)
+  335. [`Int64.of­Bit­Vec`](Basic-Types/Fixed-Precision-Integers/#Int64___ofBitVec)
+  336. [`Int64.of­Int`](Basic-Types/Fixed-Precision-Integers/#Int64___ofInt)
+  337. [`Int64.of­Int­LE`](Basic-Types/Fixed-Precision-Integers/#Int64___ofIntLE)
+  338. [`Int64.of­Int­Truncate`](Basic-Types/Fixed-Precision-Integers/#Int64___ofIntTruncate)
+  339. [`Int64.of­Nat`](Basic-Types/Fixed-Precision-Integers/#Int64___ofNat)
+  340. `Int64.of­UInt64`
+    1. [Constructor of `Int64`](Basic-Types/Fixed-Precision-Integers/#Int64___ofUInt64)
+  341. [`Int64.shift­Left`](Basic-Types/Fixed-Precision-Integers/#Int64___shiftLeft)
+  342. [`Int64.shift­Right`](Basic-Types/Fixed-Precision-Integers/#Int64___shiftRight)
+  343. [`Int64.size`](Basic-Types/Fixed-Precision-Integers/#Int64___size)
+  344. [`Int64.sub`](Basic-Types/Fixed-Precision-Integers/#Int64___sub)
+  345. [`Int64.to­Bit­Vec`](Basic-Types/Fixed-Precision-Integers/#Int64___toBitVec)
+  346. [`Int64.to­Float`](Basic-Types/Fixed-Precision-Integers/#Int64___toFloat)
+  347. [`Int64.to­Float32`](Basic-Types/Fixed-Precision-Integers/#Int64___toFloat32)
+  348. [`Int64.to­ISize`](Basic-Types/Fixed-Precision-Integers/#Int64___toISize)
+  349. [`Int64.to­Int`](Basic-Types/Fixed-Precision-Integers/#Int64___toInt)
+  350. [`Int64.to­Int16`](Basic-Types/Fixed-Precision-Integers/#Int64___toInt16)
+  351. [`Int64.to­Int32`](Basic-Types/Fixed-Precision-Integers/#Int64___toInt32)
+  352. [`Int64.to­Int8`](Basic-Types/Fixed-Precision-Integers/#Int64___toInt8)
+  353. [`Int64.to­Nat­Clamp­Neg`](Basic-Types/Fixed-Precision-Integers/#Int64___toNatClampNeg)
+  354. [`Int64.xor`](Basic-Types/Fixed-Precision-Integers/#Int64___xor)
+  355. [`Int8`](Basic-Types/Fixed-Precision-Integers/#Int8___ofUInt8)
+  356. [`Int8.abs`](Basic-Types/Fixed-Precision-Integers/#Int8___abs)
+  357. [`Int8.add`](Basic-Types/Fixed-Precision-Integers/#Int8___add)
+  358. [`Int8.complement`](Basic-Types/Fixed-Precision-Integers/#Int8___complement)
+  359. [`Int8.dec­Eq`](Basic-Types/Fixed-Precision-Integers/#Int8___decEq)
+  360. [`Int8.dec­Le`](Basic-Types/Fixed-Precision-Integers/#Int8___decLe)
+  361. [`Int8.dec­Lt`](Basic-Types/Fixed-Precision-Integers/#Int8___decLt)
+  362. [`Int8.div`](Basic-Types/Fixed-Precision-Integers/#Int8___div)
+  363. [`Int8.land`](Basic-Types/Fixed-Precision-Integers/#Int8___land)
+  364. [`Int8.le`](Basic-Types/Fixed-Precision-Integers/#Int8___le)
+  365. [`Int8.lor`](Basic-Types/Fixed-Precision-Integers/#Int8___lor)
+  366. [`Int8.lt`](Basic-Types/Fixed-Precision-Integers/#Int8___lt)
+  367. [`Int8.max­Value`](Basic-Types/Fixed-Precision-Integers/#Int8___maxValue)
+  368. [`Int8.min­Value`](Basic-Types/Fixed-Precision-Integers/#Int8___minValue)
+  369. [`Int8.mod`](Basic-Types/Fixed-Precision-Integers/#Int8___mod)
+  370. [`Int8.mul`](Basic-Types/Fixed-Precision-Integers/#Int8___mul)
+  371. [`Int8.neg`](Basic-Types/Fixed-Precision-Integers/#Int8___neg)
+  372. [`Int8.of­Bit­Vec`](Basic-Types/Fixed-Precision-Integers/#Int8___ofBitVec)
+  373. [`Int8.of­Int`](Basic-Types/Fixed-Precision-Integers/#Int8___ofInt)
+  374. [`Int8.of­Int­LE`](Basic-Types/Fixed-Precision-Integers/#Int8___ofIntLE)
+  375. [`Int8.of­Int­Truncate`](Basic-Types/Fixed-Precision-Integers/#Int8___ofIntTruncate)
+  376. [`Int8.of­Nat`](Basic-Types/Fixed-Precision-Integers/#Int8___ofNat)
+  377. `Int8.of­UInt8`
+    1. [Constructor of `Int8`](Basic-Types/Fixed-Precision-Integers/#Int8___ofUInt8)
+  378. [`Int8.shift­Left`](Basic-Types/Fixed-Precision-Integers/#Int8___shiftLeft)
+  379. [`Int8.shift­Right`](Basic-Types/Fixed-Precision-Integers/#Int8___shiftRight)
+  380. [`Int8.size`](Basic-Types/Fixed-Precision-Integers/#Int8___size)
+  381. [`Int8.sub`](Basic-Types/Fixed-Precision-Integers/#Int8___sub)
+  382. [`Int8.to­Bit­Vec`](Basic-Types/Fixed-Precision-Integers/#Int8___toBitVec)
+  383. [`Int8.to­Float`](Basic-Types/Fixed-Precision-Integers/#Int8___toFloat)
+  384. [`Int8.to­Float32`](Basic-Types/Fixed-Precision-Integers/#Int8___toFloat32)
+  385. [`Int8.to­ISize`](Basic-Types/Fixed-Precision-Integers/#Int8___toISize)
+  386. [`Int8.to­Int`](Basic-Types/Fixed-Precision-Integers/#Int8___toInt)
+  387. [`Int8.to­Int16`](Basic-Types/Fixed-Precision-Integers/#Int8___toInt16)
+  388. [`Int8.to­Int32`](Basic-Types/Fixed-Precision-Integers/#Int8___toInt32)
+  389. [`Int8.to­Int64`](Basic-Types/Fixed-Precision-Integers/#Int8___toInt64)
+  390. [`Int8.to­Nat­Clamp­Neg`](Basic-Types/Fixed-Precision-Integers/#Int8___toNatClampNeg)
+  391. [`Int8.xor`](Basic-Types/Fixed-Precision-Integers/#Int8___xor)
+  392. [`Int­Cast`](Coercions/Coercing-Between-Types/#IntCast___mk)
+  393. `IntCast.mk`
+    1. [Instance constructor of `Int­Cast`](Coercions/Coercing-Between-Types/#IntCast___mk)
+  394. `Int­Interval`
+    1. [`Lean.Grind.Int­Interval`](The--grind--tactic/Linear-Integer-Arithmetic/#Lean___Grind___IntInterval___co)
+  395. `Int­Module`
+    1. [`Lean.Grind.Int­Module`](The--grind--tactic/Linear-Arithmetic-Solver/#Lean___Grind___IntModule___mk)
+  396. `Invariant`
+    1. [`Std.Do.Invariant`](The--mvcgen--tactic/Predicate-Transformers/#Std___Do___Invariant)
+  397. `Is­Always­Finite`
+    1. [`Std.Rxc.Is­Always­Finite`](Basic-Types/Ranges/#Std___Rxc___IsAlwaysFinite___mk)
+  398. `Is­Always­Finite`
+    1. [`Std.Rxi.Is­Always­Finite`](Basic-Types/Ranges/#Std___Rxi___IsAlwaysFinite___mk)
+  399. `Is­Char­P`
+    1. [`Lean.Grind.Is­Char­P`](The--grind--tactic/Algebraic-Solver-_LPAR_Commutative-Rings___-Fields_RPAR_/#Lean___Grind___IsCharP___mk)
+  400. `Is­Infix`
+    1. [`List.Is­Infix`](Basic-Types/Linked-Lists/#List___IsInfix)
+  401. `Is­Plausible­Indirect­Output`
+    1. [`Std.Iter.Is­Plausible­Indirect­Output`](Iterators/Reasoning-About-Iterators/#Std___Iter___IsPlausibleIndirectOutput___direct)
+  402. `Is­Plausible­Step`
+    1. [`Std.Iterator.Is­Plausible­Step` (class method)](Iterators/Iterator-Definitions/#Std___Iterator___mk)
+  403. `Is­Prefix`
+    1. [`List.Is­Prefix`](Basic-Types/Linked-Lists/#List___IsPrefix)
+  404. `Is­Suffix`
+    1. [`List.Is­Suffix`](Basic-Types/Linked-Lists/#List___IsSuffix)
+  405. `Iter`
+    1. [`Std.Iter`](Iterators/Iterator-Definitions/#Std___Iter___mk)
+  406. `Iter­M`
+    1. [`Std.Iter­M`](Iterators/Iterator-Definitions/#Std___IterM___mk)
+  407. `Iter­Step`
+    1. [`Std.Iter­Step`](Iterators/Iterator-Definitions/#Std___IterStep___yield)
+  408. `Iterator`
+    1. [`ByteArray.Iterator`](Basic-Types/Byte-Arrays/#ByteArray___Iterator___mk)
+  409. `Iterator`
+    1. [`Std.Iterator`](Iterators/Iterator-Definitions/#Std___Iterator___mk)
+  410. `Iterator`
+    1. [`String.Legacy.Iterator`](Basic-Types/Strings/#String___Legacy___Iterator___mk)
+  411. `Iterator­Access`
+    1. [`Std.Iterator­Access`](Iterators/Iterator-Definitions/#Std___IteratorAccess___mk)
+  412. `Iterator­Loop`
+    1. [`Std.Iterator­Loop`](Iterators/Iterator-Definitions/#Std___IteratorLoop___mk)
+  413. `i`
+    1. [`String.Legacy.Iterator.i` (structure field)](Basic-Types/Strings/#String___Legacy___Iterator___mk)
+  414. `id_map`
+    1. [`LawfulFunctor.id_map` (class method)](Functors___-Monads-and--do--Notation/Laws/#LawfulFunctor___mk)
+  415. `ident­Kind`
+    1. [`Lean.ident­Kind`](Notations-and-Macros/Defining-New-Syntax/#Lean___identKind)
+  416. [identifier](Source-Files-and-Modules/#--index--next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next)
+  417. identifier
+    1. [raw](Source-Files-and-Modules/#--index--next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next)
+  418. `idx`
+    1. [`ByteArray.Iterator.idx` (structure field)](Basic-Types/Byte-Arrays/#ByteArray___Iterator___mk)
+  419. `idx­Of`
+    1. [`Array.idx­Of`](Basic-Types/Arrays/#Array___idxOf)
+  420. `idx­Of`
+    1. [`List.idx­Of`](Basic-Types/Linked-Lists/#List___idxOf)
+  421. `idx­Of?`
+    1. [`Array.idx­Of?`](Basic-Types/Arrays/#Array___idxOf___)
+  422. `idx­Of?`
+    1. [`List.idx­Of?`](Basic-Types/Linked-Lists/#List___idxOf___)
+  423. [`if`](Tactic-Proofs/The-Tactic-Language/#if)
+  424. `iff`
+    1. [`Std.Do.SPred.iff`](The--mvcgen--tactic/Predicate-Transformers/#Std___Do___SPred___iff)
+  425. `imp`
+    1. [`Std.Do.PostCond.imp`](The--mvcgen--tactic/Predicate-Transformers/#Std___Do___PostCond___imp)
+  426. `imp`
+    1. [`Std.Do.SPred.imp`](The--mvcgen--tactic/Predicate-Transformers/#Std___Do___SPred___imp)
+  427. `implicit­Def­Eq­Proofs`
+    1. [`Lean.Meta.Simp.Config.implicit­Def­Eq­Proofs` (structure field)](The-Simplifier/Configuring-Simplification/#Lean___Meta___Simp___Config___mk)
+  428. [impredicative](The-Type-System/Universes/#--index--next-next-next-next-next-next-next)
+  429. [inaccessible](Tactic-Proofs/Reading-Proof-States/#--index--next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next)
+  430. `inc`
+    1. [`String.Pos.Raw.inc`](Basic-Types/Strings/#String___Pos___Raw___inc)
+  431. `increase­By`
+    1. [`String.Pos.Raw.increase­By`](Basic-Types/Strings/#String___Pos___Raw___increaseBy)
+  432. `ind`
+    1. [`Quot.ind`](The-Type-System/Quotients/#Quot___ind)
+  433. `ind`
+    1. [`Quotient.ind`](The-Type-System/Quotients/#Quotient___ind)
+  434. `ind`
+    1. [`Squash.ind`](The-Type-System/Quotients/#Squash___ind)
+  435. `indent­D`
+    1. [`Std.Format.indent­D`](Interacting-with-Lean/#Std___Format___indentD)
+  436. `index`
+    1. [`Lean.Meta.DSimp.Config.index` (structure field)](The-Simplifier/Configuring-Simplification/#Lean___Meta___DSimp___Config___mk)
+  437. `index`
+    1. [`Lean.Meta.Simp.Config.index` (structure field)](The-Simplifier/Configuring-Simplification/#Lean___Meta___Simp___Config___mk)
+  438. index
+    1. [of inductive type](The-Type-System/Inductive-Types/#--index--next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next)
+  439. indexed family
+    1. [of types](The-Type-System/Inductive-Types/#--index--next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next)
+  440. `induct­Skips`
+    1. [`Std.Iter.induct­Skips`](Iterators/Reasoning-About-Iterators/#Std___Iter___inductSkips)
+  441. `induct­Skips`
+    1. [`Std.IterM.induct­Skips`](Iterators/Reasoning-About-Iterators/#Std___IterM___inductSkips)
+  442. `induct­Steps`
+    1. [`Std.Iter.induct­Steps`](Iterators/Reasoning-About-Iterators/#Std___Iter___inductSteps)
+  443. `induct­Steps`
+    1. [`Std.IterM.induct­Steps`](Iterators/Reasoning-About-Iterators/#Std___IterM___inductSteps)
+  444. [`induction`](Tactic-Proofs/Tactic-Reference/#induction)
+  445. `induction`
+    1. [`Fin.induction`](Basic-Types/Finite-Natural-Numbers/#Fin___induction)
+  446. `induction­On`
+    1. [`Fin.induction­On`](Basic-Types/Finite-Natural-Numbers/#Fin___inductionOn)
+  447. `induction­On`
+    1. [`Nat.div.induction­On`](Basic-Types/Natural-Numbers/#Nat___div___inductionOn)
+  448. `induction­On`
+    1. [`Nat.mod.induction­On`](Basic-Types/Natural-Numbers/#Nat___mod___inductionOn)
+  449. [`inductive.auto­Promote­Indices`](The-Type-System/Inductive-Types/#inductive___autoPromoteIndices)
+  450. `inductive­Check­Resulting­Universe`
+    1. [`bootstrap.inductive­Check­Resulting­Universe`](The-Type-System/Inductive-Types/#bootstrap___inductiveCheckResultingUniverse)
+  451. [`infer­Instance`](Type-Classes/Instance-Synthesis/#inferInstance)
+  452. [`infer­Instance­As`](Type-Classes/Instance-Synthesis/#inferInstanceAs)
+  453. [`infer_instance`](Tactic-Proofs/Tactic-Reference/#infer_instance)
+  454. `inflate`
+    1. [`Std.Shrink.inflate`](Iterators/Iterator-Definitions/#Std___Shrink___inflate)
+  455. `inhabited­Left`
+    1. [`PSum.inhabited­Left`](Basic-Types/Sum-Types/#PSum___inhabitedLeft)
+  456. `inhabited­Left`
+    1. [`Sum.inhabited­Left`](Basic-Types/Sum-Types/#Sum___inhabitedLeft)
+  457. `inhabited­Right`
+    1. [`PSum.inhabited­Right`](Basic-Types/Sum-Types/#PSum___inhabitedRight)
+  458. `inhabited­Right`
+    1. [`Sum.inhabited­Right`](Basic-Types/Sum-Types/#Sum___inhabitedRight)
+  459. `inherit­Env`
+    1. [`IO.Process.SpawnArgs.args` (structure field)](IO/Processes/#IO___Process___SpawnArgs___mk)
+  460. [`init` (Lake command)](Build-Tools-and-Distribution/Lake/#init)
+  461. [`injection`](Tactic-Proofs/Tactic-Reference/#injection)
+  462. [`injections`](Tactic-Proofs/Tactic-Reference/#injections)
+  463. `inner`
+    1. [`Std.DHashMap.Equiv.inner` (structure field)](Basic-Types/Maps-and-Sets/#Std___DHashMap___Equiv___mk)
+  464. `inner`
+    1. [`Std.DTreeMap.Raw.inner` (structure field)](Basic-Types/Maps-and-Sets/#Std___DTreeMap___Raw___mk)
+  465. `inner`
+    1. [`Std.Ext­HashSet.inner` (structure field)](Basic-Types/Maps-and-Sets/#Std___ExtHashSet___mk)
+  466. `inner`
+    1. [`Std.HashMap.Equiv.inner` (structure field)](Basic-Types/Maps-and-Sets/#Std___HashMap___Equiv___mk)
+  467. `inner`
+    1. [`Std.HashMap.Raw.inner` (structure field)](Basic-Types/Maps-and-Sets/#Std___HashMap___Raw___mk)
+  468. `inner`
+    1. [`Std.HashSet.Equiv.inner` (structure field)](Basic-Types/Maps-and-Sets/#Std___HashSet___Equiv___mk)
+  469. `inner`
+    1. [`Std.HashSet.Raw.inner` (structure field)](Basic-Types/Maps-and-Sets/#Std___HashSet___Raw___mk)
+  470. `inner`
+    1. [`Std.HashSet.inner` (structure field)](Basic-Types/Maps-and-Sets/#Std___HashSet___mk)
+  471. `inner`
+    1. [`Std.TreeMap.Raw.inner` (structure field)](Basic-Types/Maps-and-Sets/#Std___TreeMap___Raw___mk)
+  472. `inner`
+    1. [`Std.TreeSet.Raw.inner` (structure field)](Basic-Types/Maps-and-Sets/#Std___TreeSet___Raw___mk)
+  473. `insert`
+    1. [`List.insert`](Basic-Types/Linked-Lists/#List___insert)
+  474. `insert`
+    1. [`Std.DHashMap.insert`](Basic-Types/Maps-and-Sets/#Std___DHashMap___insert)
+  475. `insert`
+    1. [`Std.DTreeMap.insert`](Basic-Types/Maps-and-Sets/#Std___DTreeMap___insert)
+  476. `insert`
+    1. [`Std.Ext­DHashMap.insert`](Basic-Types/Maps-and-Sets/#Std___ExtDHashMap___insert)
+  477. `insert`
+    1. [`Std.Ext­HashMap.insert`](Basic-Types/Maps-and-Sets/#Std___ExtHashMap___insert)
+  478. `insert`
+    1. [`Std.Ext­HashSet.insert`](Basic-Types/Maps-and-Sets/#Std___ExtHashSet___insert)
+  479. `insert`
+    1. [`Std.HashMap.insert`](Basic-Types/Maps-and-Sets/#Std___HashMap___insert)
+  480. `insert`
+    1. [`Std.HashSet.insert`](Basic-Types/Maps-and-Sets/#Std___HashSet___insert)
+  481. `insert`
+    1. [`Std.TreeMap.insert`](Basic-Types/Maps-and-Sets/#Std___TreeMap___insert)
+  482. `insert`
+    1. [`Std.TreeSet.insert`](Basic-Types/Maps-and-Sets/#Std___TreeSet___insert)
+  483. `insert­Idx!`
+    1. [`Array.insert­Idx!`](Basic-Types/Arrays/#Array___insertIdx___)
+  484. `insert­Idx`
+    1. [`Array.insert­Idx`](Basic-Types/Arrays/#Array___insertIdx)
+  485. `insert­Idx`
+    1. [`List.insert­Idx`](Basic-Types/Linked-Lists/#List___insertIdx)
+  486. `insert­Idx­If­In­Bounds`
+    1. [`Array.insert­Idx­If­In­Bounds`](Basic-Types/Arrays/#Array___insertIdxIfInBounds)
+  487. `insert­Idx­TR`
+    1. [`List.insert­Idx­TR`](Basic-Types/Linked-Lists/#List___insertIdxTR)
+  488. `insert­If­New`
+    1. [`Std.DHashMap.insert­If­New`](Basic-Types/Maps-and-Sets/#Std___DHashMap___insertIfNew)
+  489. `insert­If­New`
+    1. [`Std.DTreeMap.insert­If­New`](Basic-Types/Maps-and-Sets/#Std___DTreeMap___insertIfNew)
+  490. `insert­If­New`
+    1. [`Std.Ext­DHashMap.insert­If­New`](Basic-Types/Maps-and-Sets/#Std___ExtDHashMap___insertIfNew)
+  491. `insert­If­New`
+    1. [`Std.Ext­HashMap.insert­If­New`](Basic-Types/Maps-and-Sets/#Std___ExtHashMap___insertIfNew)
+  492. `insert­If­New`
+    1. [`Std.HashMap.insert­If­New`](Basic-Types/Maps-and-Sets/#Std___HashMap___insertIfNew)
+  493. `insert­If­New`
+    1. [`Std.TreeMap.insert­If­New`](Basic-Types/Maps-and-Sets/#Std___TreeMap___insertIfNew)
+  494. `insert­Many`
+    1. [`Std.DHashMap.insert­Many`](Basic-Types/Maps-and-Sets/#Std___DHashMap___insertMany)
+  495. `insert­Many`
+    1. [`Std.DTreeMap.insert­Many`](Basic-Types/Maps-and-Sets/#Std___DTreeMap___insertMany)
+  496. `insert­Many`
+    1. [`Std.Ext­DHashMap.insert­Many`](Basic-Types/Maps-and-Sets/#Std___ExtDHashMap___insertMany)
+  497. `insert­Many`
+    1. [`Std.Ext­HashMap.insert­Many`](Basic-Types/Maps-and-Sets/#Std___ExtHashMap___insertMany)
+  498. `insert­Many`
+    1. [`Std.Ext­HashSet.insert­Many`](Basic-Types/Maps-and-Sets/#Std___ExtHashSet___insertMany)
+  499. `insert­Many`
+    1. [`Std.HashMap.insert­Many`](Basic-Types/Maps-and-Sets/#Std___HashMap___insertMany)
+  500. `insert­Many`
+    1. [`Std.HashSet.insert­Many`](Basic-Types/Maps-and-Sets/#Std___HashSet___insertMany)
+  501. `insert­Many`
+    1. [`Std.TreeMap.insert­Many`](Basic-Types/Maps-and-Sets/#Std___TreeMap___insertMany)
+  502. `insert­Many`
+    1. [`Std.TreeSet.insert­Many`](Basic-Types/Maps-and-Sets/#Std___TreeSet___insertMany)
+  503. `insert­Many­If­New­Unit`
+    1. [`Std.Ext­HashMap.insert­Many­If­New­Unit`](Basic-Types/Maps-and-Sets/#Std___ExtHashMap___insertManyIfNewUnit)
+  504. `insert­Many­If­New­Unit`
+    1. [`Std.HashMap.insert­Many­If­New­Unit`](Basic-Types/Maps-and-Sets/#Std___HashMap___insertManyIfNewUnit)
+  505. `insert­Many­If­New­Unit`
+    1. [`Std.TreeMap.insert­Many­If­New­Unit`](Basic-Types/Maps-and-Sets/#Std___TreeMap___insertManyIfNewUnit)
+  506. `insertion­Sort`
+    1. [`Array.insertion­Sort`](Basic-Types/Arrays/#Array___insertionSort)
+  507. [instance synthesis](Type-Classes/#--index--next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next)
+  508. `instance`
+    1. [`trace.grind.ematch.instance`](The--grind--tactic/E___matching/#trace___grind___ematch___instance)
+  509. `instances`
+    1. [`Lean.Meta.DSimp.Config.instances` (structure field)](The-Simplifier/Configuring-Simplification/#Lean___Meta___DSimp___Config___mk)
+  510. `instances`
+    1. [`Lean.Meta.Simp.Config.instances` (structure field)](The-Simplifier/Configuring-Simplification/#Lean___Meta___Simp___Config___mk)
+  511. `int­Cast`
+    1. [`IntCast.int­Cast` (class method)](Coercions/Coercing-Between-Types/#IntCast___mk)
+  512. `int­Cast`
+    1. [`[anonymous]` (class method)](The--grind--tactic/Algebraic-Solver-_LPAR_Commutative-Rings___-Fields_RPAR_/#Lean___Grind___Ring___mk)
+  513. `int­Cast_neg`
+    1. [`[anonymous]` (class method)](The--grind--tactic/Algebraic-Solver-_LPAR_Commutative-Rings___-Fields_RPAR_/#Lean___Grind___Ring___mk)
+  514. `int­Cast_of­Nat`
+    1. [`[anonymous]` (class method)](The--grind--tactic/Algebraic-Solver-_LPAR_Commutative-Rings___-Fields_RPAR_/#Lean___Grind___Ring___mk)
+  515. `int­Max`
+    1. [`BitVec.int­Max`](Basic-Types/Bitvectors/#BitVec___intMax)
+  516. `int­Min`
+    1. [`BitVec.int­Min`](Basic-Types/Bitvectors/#BitVec___intMin)
+  517. `intercalate`
+    1. [`List.intercalate`](Basic-Types/Linked-Lists/#List___intercalate)
+  518. `intercalate`
+    1. [`String.intercalate`](Basic-Types/Strings/#String___intercalate)
+  519. `intercalate­TR`
+    1. [`List.intercalate­TR`](Basic-Types/Linked-Lists/#List___intercalateTR)
+  520. `internal­State`
+    1. [`Std.Iter.internal­State` (structure field)](Iterators/Iterator-Definitions/#Std___Iter___mk)
+  521. `internal­State`
+    1. [`Std.IterM.internal­State` (structure field)](Iterators/Iterator-Definitions/#Std___IterM___mk)
+  522. `interpolated­Str­Kind`
+    1. [`Lean.interpolated­Str­Kind`](Notations-and-Macros/Defining-New-Syntax/#Lean___interpolatedStrKind)
+  523. `interpolated­Str­Lit­Kind`
+    1. [`Lean.interpolated­Str­Lit­Kind`](Notations-and-Macros/Defining-New-Syntax/#Lean___interpolatedStrLitKind)
+  524. `intersperse`
+    1. [`List.intersperse`](Basic-Types/Linked-Lists/#List___intersperse)
+  525. `intersperse­TR`
+    1. [`List.intersperse­TR`](Basic-Types/Linked-Lists/#List___intersperseTR)
+  526. `intro` [(0)](Tactic-Proofs/Tactic-Reference/#intro) [(1)](Tactic-Proofs/Targeted-Rewriting-with--conv/#Lean___Parser___Tactic___Conv___convIntro___)
+  527. [`intros`](Tactic-Proofs/Tactic-Reference/#intros)
+  528. [`inv­Image`](Definitions/Recursive-Definitions/#invImage)
+  529. `inv_zero`
+    1. [`[anonymous]` (class method)](The--grind--tactic/Algebraic-Solver-_LPAR_Commutative-Rings___-Fields_RPAR_/#Lean___Grind___Field___mk)
+  530. `iota`
+    1. [`Lean.Meta.DSimp.Config.iota` (structure field)](The-Simplifier/Configuring-Simplification/#Lean___Meta___DSimp___Config___mk)
+  531. `iota`
+    1. [`Lean.Meta.Simp.Config.iota` (structure field)](The-Simplifier/Configuring-Simplification/#Lean___Meta___Simp___Config___mk)
+  532. `is­Absolute`
+    1. [`System.FilePath.is­Absolute`](IO/Files___-File-Handles___-and-Streams/#System___FilePath___isAbsolute)
+  533. `is­Alpha`
+    1. [`Char.is­Alpha`](Basic-Types/Characters/#Char___isAlpha)
+  534. `is­Alphanum`
+    1. [`Char.is­Alphanum`](Basic-Types/Characters/#Char___isAlphanum)
+  535. `is­Digit`
+    1. [`Char.is­Digit`](Basic-Types/Characters/#Char___isDigit)
+  536. `is­Dir`
+    1. [`System.FilePath.is­Dir`](IO/Files___-File-Handles___-and-Streams/#System___FilePath___isDir)
+  537. `is­Empty`
+    1. [`Array.is­Empty`](Basic-Types/Arrays/#Array___isEmpty)
+  538. `is­Empty`
+    1. [`ByteArray.is­Empty`](Basic-Types/Byte-Arrays/#ByteArray___isEmpty)
+  539. `is­Empty`
+    1. [`List.is­Empty`](Basic-Types/Linked-Lists/#List___isEmpty)
+  540. `is­Empty`
+    1. [`Std.DHashMap.is­Empty`](Basic-Types/Maps-and-Sets/#Std___DHashMap___isEmpty)
+  541. `is­Empty`
+    1. [`Std.DTreeMap.is­Empty`](Basic-Types/Maps-and-Sets/#Std___DTreeMap___isEmpty)
+  542. `is­Empty`
+    1. [`Std.Ext­DHashMap.is­Empty`](Basic-Types/Maps-and-Sets/#Std___ExtDHashMap___isEmpty)
+  543. `is­Empty`
+    1. [`Std.Ext­HashMap.is­Empty`](Basic-Types/Maps-and-Sets/#Std___ExtHashMap___isEmpty)
+  544. `is­Empty`
+    1. [`Std.Ext­HashSet.is­Empty`](Basic-Types/Maps-and-Sets/#Std___ExtHashSet___isEmpty)
+  545. `is­Empty`
+    1. [`Std.Format.is­Empty`](Interacting-with-Lean/#Std___Format___isEmpty)
+  546. `is­Empty`
+    1. [`Std.HashMap.is­Empty`](Basic-Types/Maps-and-Sets/#Std___HashMap___isEmpty)
+  547. `is­Empty`
+    1. [`Std.HashSet.is­Empty`](Basic-Types/Maps-and-Sets/#Std___HashSet___isEmpty)
+  548. `is­Empty`
+    1. [`Std.Rcc.is­Empty`](Basic-Types/Ranges/#Std___Rcc___isEmpty)
+  549. `is­Empty`
+    1. [`Std.Rci.is­Empty`](Basic-Types/Ranges/#Std___Rci___isEmpty)
+  550. `is­Empty`
+    1. [`Std.Rco.is­Empty`](Basic-Types/Ranges/#Std___Rco___isEmpty)
+  551. `is­Empty`
+    1. [`Std.Ric.is­Empty`](Basic-Types/Ranges/#Std___Ric___isEmpty)
+  552. `is­Empty`
+    1. [`Std.Rii.is­Empty`](Basic-Types/Ranges/#Std___Rii___isEmpty)
+  553. `is­Empty`
+    1. [`Std.Rio.is­Empty`](Basic-Types/Ranges/#Std___Rio___isEmpty)
+  554. `is­Empty`
+    1. [`Std.Roc.is­Empty`](Basic-Types/Ranges/#Std___Roc___isEmpty)
+  555. `is­Empty`
+    1. [`Std.Roi.is­Empty`](Basic-Types/Ranges/#Std___Roi___isEmpty)
+  556. `is­Empty`
+    1. [`Std.Roo.is­Empty`](Basic-Types/Ranges/#Std___Roo___isEmpty)
+  557. `is­Empty`
+    1. [`Std.TreeMap.is­Empty`](Basic-Types/Maps-and-Sets/#Std___TreeMap___isEmpty)
+  558. `is­Empty`
+    1. [`Std.TreeSet.is­Empty`](Basic-Types/Maps-and-Sets/#Std___TreeSet___isEmpty)
+  559. `is­Empty`
+    1. [`String.Slice.is­Empty`](Basic-Types/Strings/#String___Slice___isEmpty)
+  560. `is­Empty`
+    1. [`String.is­Empty`](Basic-Types/Strings/#String___isEmpty)
+  561. `is­Empty`
+    1. [`Substring.Raw.is­Empty`](Basic-Types/Strings/#Substring___Raw___isEmpty)
+  562. `is­Emscripten`
+    1. [`System.Platform.is­Emscripten`](IO/System-and-Platform-Information/#System___Platform___isEmscripten)
+  563. `is­Eq`
+    1. [`Ordering.is­Eq`](Type-Classes/Basic-Classes/#Ordering___isEq)
+  564. `is­Eq­Some`
+    1. [`Option.is­Eq­Some`](Basic-Types/Optional-Values/#Option___isEqSome)
+  565. `is­Eqv`
+    1. [`Array.is­Eqv`](Basic-Types/Arrays/#Array___isEqv)
+  566. `is­Eqv`
+    1. [`List.is­Eqv`](Basic-Types/Linked-Lists/#List___isEqv)
+  567. [`is­Exclusive­Unsafe`](Definitions/Recursive-Definitions/#isExclusiveUnsafe)
+  568. `is­Finite`
+    1. [`Float.is­Finite`](Basic-Types/Floating-Point-Numbers/#Float___isFinite)
+  569. `is­Finite`
+    1. [`Float32.is­Finite`](Basic-Types/Floating-Point-Numbers/#Float32___isFinite)
+  570. `is­GE`
+    1. [`Ordering.is­GE`](Type-Classes/Basic-Classes/#Ordering___isGE)
+  571. `is­GT`
+    1. [`Ordering.is­GT`](Type-Classes/Basic-Classes/#Ordering___isGT)
+  572. `is­Inf`
+    1. [`Float.is­Inf`](Basic-Types/Floating-Point-Numbers/#Float___isInf)
+  573. `is­Inf`
+    1. [`Float32.is­Inf`](Basic-Types/Floating-Point-Numbers/#Float32___isInf)
+  574. `is­Int`
+    1. [`String.is­Int`](Basic-Types/Strings/#String___isInt)
+  575. `is­LE`
+    1. [`Ordering.is­LE`](Type-Classes/Basic-Classes/#Ordering___isLE)
+  576. `is­LT`
+    1. [`Ordering.is­LT`](Type-Classes/Basic-Classes/#Ordering___isLT)
+  577. `is­Left`
+    1. [`Sum.is­Left`](Basic-Types/Sum-Types/#Sum___isLeft)
+  578. `is­Lower`
+    1. [`Char.is­Lower`](Basic-Types/Characters/#Char___isLower)
+  579. `is­Lt`
+    1. [`Fin.is­Lt` (structure field)](Basic-Types/Finite-Natural-Numbers/#Fin___mk)
+  580. `is­Na­N`
+    1. [`Float.is­Na­N`](Basic-Types/Floating-Point-Numbers/#Float___isNaN)
+  581. `is­Na­N`
+    1. [`Float32.is­Na­N`](Basic-Types/Floating-Point-Numbers/#Float32___isNaN)
+  582. `is­Nat`
+    1. [`String.Slice.is­Nat`](Basic-Types/Strings/#String___Slice___isNat)
+  583. `is­Nat`
+    1. [`String.is­Nat`](Basic-Types/Strings/#String___isNat)
+  584. `is­Nat`
+    1. [`Substring.Raw.is­Nat`](Basic-Types/Strings/#Substring___Raw___isNat)
+  585. `is­Ne`
+    1. [`Ordering.is­Ne`](Type-Classes/Basic-Classes/#Ordering___isNe)
+  586. `is­Nil`
+    1. [`Std.Format.is­Nil`](Interacting-with-Lean/#Std___Format___isNil)
+  587. `is­None`
+    1. [`Option.is­None`](Basic-Types/Optional-Values/#Option___isNone)
+  588. `is­OSX`
+    1. [`System.Platform.is­OSX`](IO/System-and-Platform-Information/#System___Platform___isOSX)
+  589. `is­Of­Kind`
+    1. [`Lean.Syntax.is­Of­Kind`](Notations-and-Macros/Defining-New-Syntax/#Lean___Syntax___isOfKind)
+  590. `is­Ok`
+    1. [`Except.is­Ok`](Functors___-Monads-and--do--Notation/Varieties-of-Monads/#Except___isOk)
+  591. `is­Perm`
+    1. [`List.is­Perm`](Basic-Types/Linked-Lists/#List___isPerm)
+  592. `is­Power­Of­Two`
+    1. [`Nat.is­Power­Of­Two`](Basic-Types/Natural-Numbers/#Nat___isPowerOfTwo)
+  593. `is­Prefix­Of`
+    1. [`Array.is­Prefix­Of`](Basic-Types/Arrays/#Array___isPrefixOf)
+  594. `is­Prefix­Of`
+    1. [`List.is­Prefix­Of`](Basic-Types/Linked-Lists/#List___isPrefixOf)
+  595. `is­Prefix­Of`
+    1. [`String.is­Prefix­Of`](Basic-Types/Strings/#String___isPrefixOf)
+  596. `is­Prefix­Of?`
+    1. [`List.is­Prefix­Of?`](Basic-Types/Linked-Lists/#List___isPrefixOf___)
+  597. `is­Relative`
+    1. [`System.FilePath.is­Relative`](IO/Files___-File-Handles___-and-Streams/#System___FilePath___isRelative)
+  598. `is­Resolved`
+    1. [`IO.Promise.is­Resolved`](IO/Tasks-and-Threads/#IO___Promise___isResolved)
+  599. `is­Right`
+    1. [`Sum.is­Right`](Basic-Types/Sum-Types/#Sum___isRight)
+  600. `is­Some`
+    1. [`Option.is­Some`](Basic-Types/Optional-Values/#Option___isSome)
+  601. `is­Some_succ?`
+    1. [`Std.PRange.Infinitely­UpwardEnumerable.is­Some_succ?` (class method)](Basic-Types/Ranges/#Std___PRange___InfinitelyUpwardEnumerable___mk)
+  602. `is­Sublist`
+    1. [`List.is­Sublist`](Basic-Types/Linked-Lists/#List___isSublist)
+  603. `is­Suffix­Of`
+    1. [`List.is­Suffix­Of`](Basic-Types/Linked-Lists/#List___isSuffixOf)
+  604. `is­Suffix­Of?`
+    1. [`List.is­Suffix­Of?`](Basic-Types/Linked-Lists/#List___isSuffixOf___)
+  605. `is­Tty`
+    1. [`IO.FS.Handle.is­Tty`](IO/Files___-File-Handles___-and-Streams/#IO___FS___Handle___isTty)
+  606. `is­Tty`
+    1. [`IO.FS.Stream.is­Tty` (structure field)](IO/Files___-File-Handles___-and-Streams/#IO___FS___Stream___mk)
+  607. `is­Upper`
+    1. [`Char.is­Upper`](Basic-Types/Characters/#Char___isUpper)
+  608. `is­Valid`
+    1. [`String.Pos.Raw.is­Valid`](Basic-Types/Strings/#String___Pos___Raw___isValid)
+  609. `is­Valid`
+    1. [`String.Pos.is­Valid` (structure field)](Basic-Types/Strings/#String___Pos___mk)
+  610. `is­Valid­Char`
+    1. [`Nat.is­Valid­Char`](Basic-Types/Natural-Numbers/#Nat___isValidChar)
+  611. `is­Valid­Char`
+    1. [`UInt32.is­Valid­Char`](Basic-Types/Fixed-Precision-Integers/#UInt32___isValidChar)
+  612. `is­Valid­Char­Nat`
+    1. [`Char.is­Valid­Char­Nat`](Basic-Types/Characters/#Char___isValidCharNat)
+  613. `is­Valid­For­Slice`
+    1. [`String.Pos.Raw.is­Valid­For­Slice`](Basic-Types/Strings/#String___Pos___Raw___isValidForSlice)
+  614. `is­Valid­For­Slice`
+    1. [`String.Slice.Pos.is­Valid­For­Slice` (structure field)](Basic-Types/Strings/#String___Slice___Pos___mk)
+  615. `is­Valid­UTF8`
+    1. [`String.is­Valid­UTF8` (structure field)](Basic-Types/Strings/#String___ofByteArray)
+  616. `is­Whitespace`
+    1. [`Char.is­Whitespace`](Basic-Types/Characters/#Char___isWhitespace)
+  617. `is­Windows`
+    1. [`System.Platform.is­Windows`](IO/System-and-Platform-Information/#System___Platform___isWindows)
+  618. `iseqv`
+    1. [`Setoid.iseqv` (class method)](The-Type-System/Quotients/#Setoid___mk)
+  619. `it`
+    1. [`Std.IterM.TerminationMeasures.Finite.it` (structure field)](Iterators/Consuming-Iterators/#Std___IterM___TerminationMeasures___Finite___mk)
+  620. `it`
+    1. [`Std.IterM.TerminationMeasures.Productive.it` (structure field)](Iterators/Consuming-Iterators/#Std___IterM___TerminationMeasures___Productive___mk)
+  621. `iter`
+    1. [`Array.iter`](Basic-Types/Arrays/#Array___iter)
+  622. `iter`
+    1. [`ByteArray.iter`](Basic-Types/Byte-Arrays/#ByteArray___iter)
+  623. `iter`
+    1. [`List.iter`](Basic-Types/Linked-Lists/#List___iter)
+  624. `iter`
+    1. [`Std.DHashMap.iter`](Basic-Types/Maps-and-Sets/#Std___DHashMap___iter)
+  625. `iter`
+    1. [`Std.DTreeMap.iter`](Basic-Types/Maps-and-Sets/#Std___DTreeMap___iter)
+  626. `iter`
+    1. [`Std.HashMap.iter`](Basic-Types/Maps-and-Sets/#Std___HashMap___iter)
+  627. `iter`
+    1. [`Std.HashSet.iter`](Basic-Types/Maps-and-Sets/#Std___HashSet___iter)
+  628. `iter`
+    1. [`Std.Rcc.iter`](Basic-Types/Ranges/#Std___Rcc___iter)
+  629. `iter`
+    1. [`Std.Rci.iter`](Basic-Types/Ranges/#Std___Rci___iter)
+  630. `iter`
+    1. [`Std.Rco.iter`](Basic-Types/Ranges/#Std___Rco___iter)
+  631. `iter`
+    1. [`Std.Ric.iter`](Basic-Types/Ranges/#Std___Ric___iter)
+  632. `iter`
+    1. [`Std.Rii.iter`](Basic-Types/Ranges/#Std___Rii___iter)
+  633. `iter`
+    1. [`Std.Rio.iter`](Basic-Types/Ranges/#Std___Rio___iter)
+  634. `iter`
+    1. [`Std.Roc.iter`](Basic-Types/Ranges/#Std___Roc___iter)
+  635. `iter`
+    1. [`Std.Roi.iter`](Basic-Types/Ranges/#Std___Roi___iter)
+  636. `iter`
+    1. [`Std.Roo.iter`](Basic-Types/Ranges/#Std___Roo___iter)
+  637. `iter`
+    1. [`Std.TreeMap.iter`](Basic-Types/Maps-and-Sets/#Std___TreeMap___iter)
+  638. `iter`
+    1. [`Std.TreeSet.iter`](Basic-Types/Maps-and-Sets/#Std___TreeSet___iter)
+  639. `iter`
+    1. [`String.Legacy.iter`](Basic-Types/Strings/#String___Legacy___iter)
+  640. `iter­From­Idx`
+    1. [`Array.iter­From­Idx`](Basic-Types/Arrays/#Array___iterFromIdx)
+  641. `iter­From­Idx­M`
+    1. [`Array.iter­From­Idx­M`](Basic-Types/Arrays/#Array___iterFromIdxM)
+  642. `iter­M`
+    1. [`Array.iter­M`](Basic-Types/Arrays/#Array___iterM)
+  643. `iter­M`
+    1. [`List.iter­M`](Basic-Types/Linked-Lists/#List___iterM)
+  644. [`iterate`](Tactic-Proofs/The-Tactic-Language/#iterate)
+  645. `iterate`
+    1. [`IO.iterate`](IO/Control-Structures/#IO___iterate)
+  646. `iunfoldr`
+    1. [`BitVec.iunfoldr`](Basic-Types/Bitvectors/#BitVec___iunfoldr)
+  647. `iunfoldr_replace`
+    1. [`BitVec.iunfoldr_replace`](Basic-Types/Bitvectors/#BitVec___iunfoldr_replace)
+
+
+##  J
+  1. `join`
+    1. [`Option.join`](Basic-Types/Optional-Values/#Option___join)
+  2. `join`
+    1. [`Std.Format.join`](Interacting-with-Lean/#Std___Format___join)
+  3. `join`
+    1. [`String.join`](Basic-Types/Strings/#String___join)
+  4. `join`
+    1. [`System.FilePath.join`](IO/Files___-File-Handles___-and-Streams/#System___FilePath___join)
+  5. `join­Sep`
+    1. [`Std.Format.join­Sep`](Interacting-with-Lean/#Std___Format___joinSep)
+  6. `join­Suffix`
+    1. [`Std.Format.join­Suffix`](Interacting-with-Lean/#Std___Format___joinSuffix)
+
+
+##  K
+  1. `key­At­Idx!`
+    1. [`Std.TreeMap.key­At­Idx!`](Basic-Types/Maps-and-Sets/#Std___TreeMap___keyAtIdx___)
+  2. `key­At­Idx`
+    1. [`Std.TreeMap.key­At­Idx`](Basic-Types/Maps-and-Sets/#Std___TreeMap___keyAtIdx)
+  3. `key­At­Idx?`
+    1. [`Std.TreeMap.key­At­Idx?`](Basic-Types/Maps-and-Sets/#Std___TreeMap___keyAtIdx___-next)
+  4. `key­At­Idx­D`
+    1. [`Std.TreeMap.key­At­Idx­D`](Basic-Types/Maps-and-Sets/#Std___TreeMap___keyAtIdxD)
+  5. `keys`
+    1. [`Std.DHashMap.keys`](Basic-Types/Maps-and-Sets/#Std___DHashMap___keys)
+  6. `keys`
+    1. [`Std.DTreeMap.keys`](Basic-Types/Maps-and-Sets/#Std___DTreeMap___keys)
+  7. `keys`
+    1. [`Std.HashMap.keys`](Basic-Types/Maps-and-Sets/#Std___HashMap___keys)
+  8. `keys`
+    1. [`Std.TreeMap.keys`](Basic-Types/Maps-and-Sets/#Std___TreeMap___keys)
+  9. `keys­Array`
+    1. [`Std.DHashMap.keys­Array`](Basic-Types/Maps-and-Sets/#Std___DHashMap___keysArray)
+  10. `keys­Array`
+    1. [`Std.DTreeMap.keys­Array`](Basic-Types/Maps-and-Sets/#Std___DTreeMap___keysArray)
+  11. `keys­Array`
+    1. [`Std.HashMap.keys­Array`](Basic-Types/Maps-and-Sets/#Std___HashMap___keysArray)
+  12. `keys­Array`
+    1. [`Std.TreeMap.keys­Array`](Basic-Types/Maps-and-Sets/#Std___TreeMap___keysArray)
+  13. `keys­Iter`
+    1. [`Std.DHashMap.keys­Iter`](Basic-Types/Maps-and-Sets/#Std___DHashMap___keysIter)
+  14. `keys­Iter`
+    1. [`Std.DTreeMap.keys­Iter`](Basic-Types/Maps-and-Sets/#Std___DTreeMap___keysIter)
+  15. `keys­Iter`
+    1. [`Std.HashMap.keys­Iter`](Basic-Types/Maps-and-Sets/#Std___HashMap___keysIter)
+  16. `keys­Iter`
+    1. [`Std.TreeMap.keys­Iter`](Basic-Types/Maps-and-Sets/#Std___TreeMap___keysIter)
+  17. `kill`
+    1. [`IO.Process.Child.kill`](IO/Processes/#IO___Process___Child___kill)
+  18. `kleisli­Left`
+    1. [`Bind.kleisli­Left`](Functors___-Monads-and--do--Notation/API-Reference/#Bind___kleisliLeft)
+  19. `kleisli­Right`
+    1. [`Bind.kleisli­Right`](Functors___-Monads-and--do--Notation/API-Reference/#Bind___kleisliRight)
+
+
+##  L
+  1. [`LAKE` (environment variable)](Build-Tools-and-Distribution/Lake/#LAKE)
+  2. [`LAKE_ARTIFACT_CACHE` (environment variable)](Build-Tools-and-Distribution/Lake/#LAKE_ARTIFACT_CACHE)
+  3. [`LAKE_CACHE_ARTIFACT_ENDPOINT` (environment variable)](Build-Tools-and-Distribution/Lake/#LAKE_CACHE_ARTIFACT_ENDPOINT)
+  4. [`LAKE_CACHE_KEY` (environment variable)](Build-Tools-and-Distribution/Lake/#LAKE_CACHE_KEY)
+  5. [`LAKE_CACHE_REVISION_ENDPOINT` (environment variable)](Build-Tools-and-Distribution/Lake/#LAKE_CACHE_REVISION_ENDPOINT)
+  6. [`LAKE_HOME` (environment variable)](Build-Tools-and-Distribution/Lake/#LAKE_HOME)
+  7. [`LAKE_NO_CACHE` (environment variable)](Build-Tools-and-Distribution/Lake/#LAKE_NO_CACHE)
+  8. [`LAKE_OVERRIDE_LEAN` (environment variable)](Build-Tools-and-Distribution/Lake/#LAKE_OVERRIDE_LEAN)
+  9. [`LE`](Type-Classes/Basic-Classes/#LE___mk)
+  10. `LE`
+    1. [`Std.PRange.UpwardEnumerable.LE`](Basic-Types/Ranges/#Std___PRange___UpwardEnumerable___LE)
+  11. `LE.mk`
+    1. [Instance constructor of `LE`](Type-Classes/Basic-Classes/#LE___mk)
+  12. [`LEAN` (environment variable)](Build-Tools-and-Distribution/Lake/#LEAN)
+  13. [`LEAN_AR` (environment variable)](Build-Tools-and-Distribution/Lake/#LEAN_AR)
+  14. [`LEAN_CC` (environment variable)](Build-Tools-and-Distribution/Lake/#LEAN_CC)
+  15. [`LEAN_NUM_THREADS` (environment variable)](IO/Tasks-and-Threads/#LEAN_NUM_THREADS)
+  16. [`LEAN_SYSROOT` (environment variable)](Build-Tools-and-Distribution/Lake/#LEAN_SYSROOT)
+  17. [`LT`](Type-Classes/Basic-Classes/#LT___mk)
+  18. `LT`
+    1. [`Std.PRange.UpwardEnumerable.LT`](Basic-Types/Ranges/#Std___PRange___UpwardEnumerable___LT)
+  19. `LT.mk`
+    1. [Instance constructor of `LT`](Type-Classes/Basic-Classes/#LT___mk)
+  20. [`Lake.Backend`](Build-Tools-and-Distribution/Lake/#Lake___Backend___c)
+  21. `Lake.Backend.c`
+    1. [Constructor of `Lake.Backend`](Build-Tools-and-Distribution/Lake/#Lake___Backend___c)
+  22. `Lake.Backend.default`
+    1. [Constructor of `Lake.Backend`](Build-Tools-and-Distribution/Lake/#Lake___Backend___c)
+  23. `Lake.Backend.llvm`
+    1. [Constructor of `Lake.Backend`](Build-Tools-and-Distribution/Lake/#Lake___Backend___c)
+  24. [`Lake.Build­Type`](Build-Tools-and-Distribution/Lake/#Lake___BuildType___debug)
+  25. `Lake.BuildType.debug`
+    1. [Constructor of `Lake.Build­Type`](Build-Tools-and-Distribution/Lake/#Lake___BuildType___debug)
+  26. `Lake.BuildType.min­Size­Rel`
+    1. [Constructor of `Lake.Build­Type`](Build-Tools-and-Distribution/Lake/#Lake___BuildType___debug)
+  27. `Lake.BuildType.rel­With­Deb­Info`
+    1. [Constructor of `Lake.Build­Type`](Build-Tools-and-Distribution/Lake/#Lake___BuildType___debug)
+  28. `Lake.BuildType.release`
+    1. [Constructor of `Lake.Build­Type`](Build-Tools-and-Distribution/Lake/#Lake___BuildType___debug)
+  29. [`Lake.Glob`](Build-Tools-and-Distribution/Lake/#Lake___Glob___one)
+  30. `Lake.Glob.and­Submodules`
+    1. [Constructor of `Lake.Glob`](Build-Tools-and-Distribution/Lake/#Lake___Glob___one)
+  31. `Lake.Glob.one`
+    1. [Constructor of `Lake.Glob`](Build-Tools-and-Distribution/Lake/#Lake___Glob___one)
+  32. `Lake.Glob.submodules`
+    1. [Constructor of `Lake.Glob`](Build-Tools-and-Distribution/Lake/#Lake___Glob___one)
+  33. [`Lake.Lean­Exe­Config`](Build-Tools-and-Distribution/Lake/#Lake___LeanExeConfig___mk)
+  34. `Lake.Lean­ExeConfig.mk`
+    1. [Constructor of `Lake.Lean­Exe­Config`](Build-Tools-and-Distribution/Lake/#Lake___LeanExeConfig___mk)
+  35. [`Lake.Lean­Lib­Config`](Build-Tools-and-Distribution/Lake/#Lake___LeanLibConfig___mk)
+  36. `Lake.Lean­LibConfig.mk`
+    1. [Constructor of `Lake.Lean­Lib­Config`](Build-Tools-and-Distribution/Lake/#Lake___LeanLibConfig___mk)
+  37. [`Lake.Monad­Lake­Env`](Build-Tools-and-Distribution/Lake/#Lake___MonadLakeEnv)
+  38. [`Lake.Monad­Workspace`](Build-Tools-and-Distribution/Lake/#Lake___MonadWorkspace___mk)
+  39. `Lake.MonadWorkspace.mk`
+    1. [Instance constructor of `Lake.Monad­Workspace`](Build-Tools-and-Distribution/Lake/#Lake___MonadWorkspace___mk)
+  40. `Lake.Script­M` [(0)](Build-Tools-and-Distribution/Lake/#Lake___ScriptM) [(1)](Build-Tools-and-Distribution/Lake/#Lake___ScriptM-next)
+  41. [`Lake.find­Extern­Lib?`](Build-Tools-and-Distribution/Lake/#Lake___findExternLib___)
+  42. [`Lake.find­Lean­Exe?`](Build-Tools-and-Distribution/Lake/#Lake___findLeanExe___)
+  43. [`Lake.find­Lean­Lib?`](Build-Tools-and-Distribution/Lake/#Lake___findLeanLib___)
+  44. [`Lake.find­Module?`](Build-Tools-and-Distribution/Lake/#Lake___findModule___)
+  45. [`Lake.find­Package­By­Key?`](Build-Tools-and-Distribution/Lake/#Lake___findPackageByKey___)
+  46. [`Lake.find­Package­By­Name?`](Build-Tools-and-Distribution/Lake/#Lake___findPackageByName___)
+  47. [`Lake.get­Augmented­Env`](Build-Tools-and-Distribution/Lake/#Lake___getAugmentedEnv)
+  48. [`Lake.get­Augmented­Lean­Path`](Build-Tools-and-Distribution/Lake/#Lake___getAugmentedLeanPath)
+  49. [`Lake.get­Augmented­Lean­Src­Path`](Build-Tools-and-Distribution/Lake/#Lake___getAugmentedLeanSrcPath)
+  50. [`Lake.get­Augmented­Shared­Lib­Path`](Build-Tools-and-Distribution/Lake/#Lake___getAugmentedSharedLibPath)
+  51. [`Lake.get­Elan?`](Build-Tools-and-Distribution/Lake/#Lake___getElan___)
+  52. [`Lake.get­Elan­Home?`](Build-Tools-and-Distribution/Lake/#Lake___getElanHome___)
+  53. [`Lake.get­Elan­Install?`](Build-Tools-and-Distribution/Lake/#Lake___getElanInstall___)
+  54. [`Lake.get­Elan­Toolchain`](Build-Tools-and-Distribution/Lake/#Lake___getElanToolchain)
+  55. [`Lake.get­Env­Lean­Path`](Build-Tools-and-Distribution/Lake/#Lake___getEnvLeanPath)
+  56. [`Lake.get­Env­Lean­Src­Path`](Build-Tools-and-Distribution/Lake/#Lake___getEnvLeanSrcPath)
+  57. [`Lake.get­Env­Shared­Lib­Path`](Build-Tools-and-Distribution/Lake/#Lake___getEnvSharedLibPath)
+  58. [`Lake.get­Lake`](Build-Tools-and-Distribution/Lake/#Lake___getLake)
+  59. [`Lake.get­Lake­Env`](Build-Tools-and-Distribution/Lake/#Lake___getLakeEnv)
+  60. [`Lake.get­Lake­Home`](Build-Tools-and-Distribution/Lake/#Lake___getLakeHome)
+  61. [`Lake.get­Lake­Install`](Build-Tools-and-Distribution/Lake/#Lake___getLakeInstall)
+  62. [`Lake.get­Lake­Lib­Dir`](Build-Tools-and-Distribution/Lake/#Lake___getLakeLibDir)
+  63. [`Lake.get­Lake­Src­Dir`](Build-Tools-and-Distribution/Lake/#Lake___getLakeSrcDir)
+  64. [`Lake.get­Lean`](Build-Tools-and-Distribution/Lake/#Lake___getLean)
+  65. [`Lake.get­Lean­Ar`](Build-Tools-and-Distribution/Lake/#Lake___getLeanAr)
+  66. [`Lake.get­Lean­Cc`](Build-Tools-and-Distribution/Lake/#Lake___getLeanCc)
+  67. [`Lake.get­Lean­Cc?`](Build-Tools-and-Distribution/Lake/#Lake___getLeanCc___)
+  68. [`Lake.get­Lean­Include­Dir`](Build-Tools-and-Distribution/Lake/#Lake___getLeanIncludeDir)
+  69. [`Lake.get­Lean­Install`](Build-Tools-and-Distribution/Lake/#Lake___getLeanInstall)
+  70. [`Lake.get­Lean­Lib­Dir`](Build-Tools-and-Distribution/Lake/#Lake___getLeanLibDir)
+  71. [`Lake.get­Lean­Path`](Build-Tools-and-Distribution/Lake/#Lake___getLeanPath)
+  72. [`Lake.get­Lean­Shared­Lib`](Build-Tools-and-Distribution/Lake/#Lake___getLeanSharedLib)
+  73. [`Lake.get­Lean­Src­Dir`](Build-Tools-and-Distribution/Lake/#Lake___getLeanSrcDir)
+  74. [`Lake.get­Lean­Src­Path`](Build-Tools-and-Distribution/Lake/#Lake___getLeanSrcPath)
+  75. [`Lake.get­Lean­Sysroot`](Build-Tools-and-Distribution/Lake/#Lake___getLeanSysroot)
+  76. [`Lake.get­Lean­System­Lib­Dir`](Build-Tools-and-Distribution/Lake/#Lake___getLeanSystemLibDir)
+  77. [`Lake.get­Leanc`](Build-Tools-and-Distribution/Lake/#Lake___getLeanc)
+  78. [`Lake.get­No­Cache`](Build-Tools-and-Distribution/Lake/#Lake___getNoCache)
+  79. [`Lake.get­Pkg­Url­Map`](Build-Tools-and-Distribution/Lake/#Lake___getPkgUrlMap)
+  80. [`Lake.get­Root­Package`](Build-Tools-and-Distribution/Lake/#Lake___getRootPackage)
+  81. [`Lake.get­Shared­Lib­Path`](Build-Tools-and-Distribution/Lake/#Lake___getSharedLibPath)
+  82. [`Lake.get­Try­Cache`](Build-Tools-and-Distribution/Lake/#Lake___getTryCache)
+  83. [`Lawful­Applicative`](Functors___-Monads-and--do--Notation/Laws/#LawfulApplicative___mk)
+  84. `LawfulApplicative.mk`
+    1. [Instance constructor of `Lawful­Applicative`](Functors___-Monads-and--do--Notation/Laws/#LawfulApplicative___mk)
+  85. [`Lawful­BEq`](Type-Classes/Basic-Classes/#LawfulBEq___mk)
+  86. `LawfulBEq.mk`
+    1. [Instance constructor of `Lawful­BEq`](Type-Classes/Basic-Classes/#LawfulBEq___mk)
+  87. [`Lawful­Functor`](Functors___-Monads-and--do--Notation/Laws/#LawfulFunctor___mk)
+  88. `LawfulFunctor.mk`
+    1. [Instance constructor of `Lawful­Functor`](Functors___-Monads-and--do--Notation/Laws/#LawfulFunctor___mk)
+  89. [`Lawful­Get­Elem`](Type-Classes/Basic-Classes/#LawfulGetElem___mk)
+  90. `Lawful­GetElem.mk`
+    1. [Instance constructor of `Lawful­Get­Elem`](Type-Classes/Basic-Classes/#LawfulGetElem___mk)
+  91. [`Lawful­Hashable`](Type-Classes/Basic-Classes/#LawfulHashable___mk)
+  92. `LawfulHashable.mk`
+    1. [Instance constructor of `Lawful­Hashable`](Type-Classes/Basic-Classes/#LawfulHashable___mk)
+  93. `Lawful­Iterator­Loop`
+    1. [`Std.Lawful­Iterator­Loop`](Iterators/Iterator-Definitions/#Std___LawfulIteratorLoop___mk)
+  94. [`Lawful­Monad`](Functors___-Monads-and--do--Notation/Laws/#LawfulMonad___mk)
+  95. [`LawfulMonad.mk'`](Functors___-Monads-and--do--Notation/Laws/#LawfulMonad___mk___)
+  96. `LawfulMonad.mk`
+    1. [Instance constructor of `Lawful­Monad`](Functors___-Monads-and--do--Notation/Laws/#LawfulMonad___mk)
+  97. `Lawful­Upward­Enumerable`
+    1. [`Std.PRange.Lawful­Upward­Enumerable`](Basic-Types/Ranges/#Std___PRange___LawfulUpwardEnumerable___mk)
+  98. `Leading­Ident­Behavior`
+    1. [`Lean.Parser.Leading­Ident­Behavior`](Notations-and-Macros/Defining-New-Syntax/#Lean___Parser___LeadingIdentBehavior___default)
+  99. [`Lean.Elab.register­Deriving­Handler`](Type-Classes/Deriving-Instances/#Lean___Elab___registerDerivingHandler)
+  100. [`Lean.Grind.Add­Right­Cancel`](The--grind--tactic/Algebraic-Solver-_LPAR_Commutative-Rings___-Fields_RPAR_/#Lean___Grind___AddRightCancel___mk)
+  101. `Lean.Grind.Add­RightCancel.mk`
+    1. [Instance constructor of `Lean.Grind.Add­Right­Cancel`](The--grind--tactic/Algebraic-Solver-_LPAR_Commutative-Rings___-Fields_RPAR_/#Lean___Grind___AddRightCancel___mk)
+  102. [`Lean.Grind.Comm­Ring`](The--grind--tactic/Algebraic-Solver-_LPAR_Commutative-Rings___-Fields_RPAR_/#Lean___Grind___CommRing___mk)
+  103. `Lean.Grind.CommRing.mk`
+    1. [Instance constructor of `Lean.Grind.Comm­Ring`](The--grind--tactic/Algebraic-Solver-_LPAR_Commutative-Rings___-Fields_RPAR_/#Lean___Grind___CommRing___mk)
+  104. [`Lean.Grind.Comm­Semiring`](The--grind--tactic/Algebraic-Solver-_LPAR_Commutative-Rings___-Fields_RPAR_/#Lean___Grind___CommSemiring___mk)
+  105. `Lean.Grind.CommSemiring.mk`
+    1. [Instance constructor of `Lean.Grind.Comm­Semiring`](The--grind--tactic/Algebraic-Solver-_LPAR_Commutative-Rings___-Fields_RPAR_/#Lean___Grind___CommSemiring___mk)
+  106. [`Lean.Grind.Field`](The--grind--tactic/Algebraic-Solver-_LPAR_Commutative-Rings___-Fields_RPAR_/#Lean___Grind___Field___mk)
+  107. `Lean.Grind.Field.mk`
+    1. [Instance constructor of `Lean.Grind.Field`](The--grind--tactic/Algebraic-Solver-_LPAR_Commutative-Rings___-Fields_RPAR_/#Lean___Grind___Field___mk)
+  108. [`Lean.Grind.Int­Interval`](The--grind--tactic/Linear-Integer-Arithmetic/#Lean___Grind___IntInterval___co)
+  109. `Lean.Grind.IntInterval.ci`
+    1. [Constructor of `Lean.Grind.Int­Interval`](The--grind--tactic/Linear-Integer-Arithmetic/#Lean___Grind___IntInterval___co)
+  110. `Lean.Grind.IntInterval.co`
+    1. [Constructor of `Lean.Grind.Int­Interval`](The--grind--tactic/Linear-Integer-Arithmetic/#Lean___Grind___IntInterval___co)
+  111. `Lean.Grind.IntInterval.ii`
+    1. [Constructor of `Lean.Grind.Int­Interval`](The--grind--tactic/Linear-Integer-Arithmetic/#Lean___Grind___IntInterval___co)
+  112. `Lean.Grind.IntInterval.io`
+    1. [Constructor of `Lean.Grind.Int­Interval`](The--grind--tactic/Linear-Integer-Arithmetic/#Lean___Grind___IntInterval___co)
+  113. [`Lean.Grind.Int­Module`](The--grind--tactic/Linear-Arithmetic-Solver/#Lean___Grind___IntModule___mk)
+  114. `Lean.Grind.IntModule.mk`
+    1. [Instance constructor of `Lean.Grind.Int­Module`](The--grind--tactic/Linear-Arithmetic-Solver/#Lean___Grind___IntModule___mk)
+  115. [`Lean.Grind.Is­Char­P`](The--grind--tactic/Algebraic-Solver-_LPAR_Commutative-Rings___-Fields_RPAR_/#Lean___Grind___IsCharP___mk)
+  116. `Lean.Grind.Is­CharP.mk`
+    1. [Instance constructor of `Lean.Grind.Is­Char­P`](The--grind--tactic/Algebraic-Solver-_LPAR_Commutative-Rings___-Fields_RPAR_/#Lean___Grind___IsCharP___mk)
+  117. [`Lean.Grind.Nat­Module`](The--grind--tactic/Linear-Arithmetic-Solver/#Lean___Grind___NatModule___mk)
+  118. `Lean.Grind.NatModule.mk`
+    1. [Instance constructor of `Lean.Grind.Nat­Module`](The--grind--tactic/Linear-Arithmetic-Solver/#Lean___Grind___NatModule___mk)
+  119. [`Lean.Grind.No­Nat­Zero­Divisors`](The--grind--tactic/Algebraic-Solver-_LPAR_Commutative-Rings___-Fields_RPAR_/#Lean___Grind___NoNatZeroDivisors___mk)
+  120. [`Lean.Grind.No­Nat­ZeroDivisors.mk'`](The--grind--tactic/Algebraic-Solver-_LPAR_Commutative-Rings___-Fields_RPAR_/#Lean___Grind___NoNatZeroDivisors___mk___)
+  121. `Lean.Grind.No­Nat­ZeroDivisors.mk`
+    1. [Instance constructor of `Lean.Grind.No­Nat­Zero­Divisors`](The--grind--tactic/Algebraic-Solver-_LPAR_Commutative-Rings___-Fields_RPAR_/#Lean___Grind___NoNatZeroDivisors___mk)
+  122. [`Lean.Grind.Ordered­Add`](The--grind--tactic/Linear-Arithmetic-Solver/#Lean___Grind___OrderedAdd___mk)
+  123. `Lean.Grind.OrderedAdd.mk`
+    1. [Instance constructor of `Lean.Grind.Ordered­Add`](The--grind--tactic/Linear-Arithmetic-Solver/#Lean___Grind___OrderedAdd___mk)
+  124. [`Lean.Grind.Ordered­Ring`](The--grind--tactic/Linear-Arithmetic-Solver/#Lean___Grind___OrderedRing___mk)
+  125. `Lean.Grind.OrderedRing.mk`
+    1. [Instance constructor of `Lean.Grind.Ordered­Ring`](The--grind--tactic/Linear-Arithmetic-Solver/#Lean___Grind___OrderedRing___mk)
+  126. [`Lean.Grind.Ring`](The--grind--tactic/Algebraic-Solver-_LPAR_Commutative-Rings___-Fields_RPAR_/#Lean___Grind___Ring___mk)
+  127. `Lean.Grind.Ring.mk`
+    1. [Instance constructor of `Lean.Grind.Ring`](The--grind--tactic/Algebraic-Solver-_LPAR_Commutative-Rings___-Fields_RPAR_/#Lean___Grind___Ring___mk)
+  128. [`Lean.Grind.Semiring`](The--grind--tactic/Algebraic-Solver-_LPAR_Commutative-Rings___-Fields_RPAR_/#Lean___Grind___Semiring___mk)
+  129. `Lean.Grind.Semiring.mk`
+    1. [Instance constructor of `Lean.Grind.Semiring`](The--grind--tactic/Algebraic-Solver-_LPAR_Commutative-Rings___-Fields_RPAR_/#Lean___Grind___Semiring___mk)
+  130. [`Lean.Grind.To­Int`](The--grind--tactic/Linear-Integer-Arithmetic/#Lean___Grind___ToInt___mk)
+  131. `Lean.Grind.ToInt.mk`
+    1. [Instance constructor of `Lean.Grind.To­Int`](The--grind--tactic/Linear-Integer-Arithmetic/#Lean___Grind___ToInt___mk)
+  132. [`Lean.Lean­Option`](Build-Tools-and-Distribution/Lake/#Lean___LeanOption___mk)
+  133. `Lean.LeanOption.mk`
+    1. [Constructor of `Lean.Lean­Option`](Build-Tools-and-Distribution/Lake/#Lean___LeanOption___mk)
+  134. [`Lean.Macro.Exception.unsupported­Syntax`](Notations-and-Macros/Macros/#Lean___Macro___Exception___unsupportedSyntax)
+  135. [`Lean.Macro.add­Macro­Scope`](Notations-and-Macros/Macros/#Lean___Macro___addMacroScope)
+  136. [`Lean.Macro.expand­Macro?`](Notations-and-Macros/Macros/#Lean___Macro___expandMacro___)
+  137. [`Lean.Macro.get­Curr­Namespace`](Notations-and-Macros/Macros/#Lean___Macro___getCurrNamespace)
+  138. [`Lean.Macro.has­Decl`](Notations-and-Macros/Macros/#Lean___Macro___hasDecl)
+  139. [`Lean.Macro.resolve­Global­Name`](Notations-and-Macros/Macros/#Lean___Macro___resolveGlobalName)
+  140. [`Lean.Macro.resolve­Namespace`](Notations-and-Macros/Macros/#Lean___Macro___resolveNamespace)
+  141. [`Lean.Macro.throw­Error`](Notations-and-Macros/Macros/#Lean___Macro___throwError)
+  142. [`Lean.Macro.throw­Error­At`](Notations-and-Macros/Macros/#Lean___Macro___throwErrorAt)
+  143. [`Lean.Macro.throw­Unsupported`](Notations-and-Macros/Macros/#Lean___Macro___throwUnsupported)
+  144. [`Lean.Macro.trace`](Notations-and-Macros/Macros/#Lean___Macro___trace)
+  145. [`Lean.Macro.with­Fresh­Macro­Scope`](Notations-and-Macros/Macros/#Lean___Macro___withFreshMacroScope)
+  146. [`Lean.Macro­M`](Notations-and-Macros/Macros/#Lean___MacroM)
+  147. [`Lean.Meta.DSimp.Config`](The-Simplifier/Configuring-Simplification/#Lean___Meta___DSimp___Config___mk)
+  148. `Lean.Meta.DSimp.Config.mk`
+    1. [Constructor of `Lean.Meta.DSimp.Config`](The-Simplifier/Configuring-Simplification/#Lean___Meta___DSimp___Config___mk)
+  149. [`Lean.Meta.Occurrences`](Tactic-Proofs/Tactic-Reference/#Lean___Meta___Occurrences___all)
+  150. `Lean.Meta.Occurrences.all`
+    1. [Constructor of `Lean.Meta.Occurrences`](Tactic-Proofs/Tactic-Reference/#Lean___Meta___Occurrences___all)
+  151. `Lean.Meta.Occurrences.neg`
+    1. [Constructor of `Lean.Meta.Occurrences`](Tactic-Proofs/Tactic-Reference/#Lean___Meta___Occurrences___all)
+  152. `Lean.Meta.Occurrences.pos`
+    1. [Constructor of `Lean.Meta.Occurrences`](Tactic-Proofs/Tactic-Reference/#Lean___Meta___Occurrences___all)
+  153. [`Lean.Meta.Rewrite.Config`](Tactic-Proofs/Tactic-Reference/#Lean___Meta___Rewrite___Config___mk)
+  154. `Lean.Meta.Rewrite.Config.mk`
+    1. [Constructor of `Lean.Meta.Rewrite.Config`](Tactic-Proofs/Tactic-Reference/#Lean___Meta___Rewrite___Config___mk)
+  155. [`Lean.Meta.Rewrite.New­Goals`](Tactic-Proofs/Tactic-Reference/#Lean___Meta___Rewrite___NewGoals)
+  156. [`Lean.Meta.Simp.Config`](The-Simplifier/Configuring-Simplification/#Lean___Meta___Simp___Config___mk)
+  157. `Lean.Meta.Simp.Config.mk`
+    1. [Constructor of `Lean.Meta.Simp.Config`](The-Simplifier/Configuring-Simplification/#Lean___Meta___Simp___Config___mk)
+  158. [`Lean.Meta.Simp.neutral­Config`](The-Simplifier/Configuring-Simplification/#Lean___Meta___Simp___neutralConfig)
+  159. [`Lean.Meta.Simp­Extension`](The-Simplifier/Simp-sets/#Lean___Meta___SimpExtension)
+  160. [`Lean.Meta.Transparency­Mode`](Tactic-Proofs/Tactic-Reference/#Lean___Meta___TransparencyMode___all)
+  161. `Lean.Meta.TransparencyMode.all`
+    1. [Constructor of `Lean.Meta.Transparency­Mode`](Tactic-Proofs/Tactic-Reference/#Lean___Meta___TransparencyMode___all)
+  162. `Lean.Meta.TransparencyMode.default`
+    1. [Constructor of `Lean.Meta.Transparency­Mode`](Tactic-Proofs/Tactic-Reference/#Lean___Meta___TransparencyMode___all)
+  163. `Lean.Meta.TransparencyMode.instances`
+    1. [Constructor of `Lean.Meta.Transparency­Mode`](Tactic-Proofs/Tactic-Reference/#Lean___Meta___TransparencyMode___all)
+  164. `Lean.Meta.TransparencyMode.none`
+    1. [Constructor of `Lean.Meta.Transparency­Mode`](Tactic-Proofs/Tactic-Reference/#Lean___Meta___TransparencyMode___all)
+  165. `Lean.Meta.TransparencyMode.reducible`
+    1. [Constructor of `Lean.Meta.Transparency­Mode`](Tactic-Proofs/Tactic-Reference/#Lean___Meta___TransparencyMode___all)
+  166. [`Lean.Meta.register­Simp­Attr`](The-Simplifier/Simp-sets/#Lean___Meta___registerSimpAttr)
+  167. [`Lean.Order.CCPO`](Definitions/Recursive-Definitions/#Lean___Order___CCPO___mk)
+  168. `Lean.Order.CCPO.mk`
+    1. [Instance constructor of `Lean.Order.CCPO`](Definitions/Recursive-Definitions/#Lean___Order___CCPO___mk)
+  169. [`Lean.Order.Partial­Order`](Definitions/Recursive-Definitions/#Lean___Order___PartialOrder___mk)
+  170. `Lean.Order.PartialOrder.mk`
+    1. [Instance constructor of `Lean.Order.Partial­Order`](Definitions/Recursive-Definitions/#Lean___Order___PartialOrder___mk)
+  171. [`Lean.Order.fix`](Definitions/Recursive-Definitions/#Lean___Order___fix)
+  172. [`Lean.Order.fix_eq`](Definitions/Recursive-Definitions/#Lean___Order___fix_eq)
+  173. [`Lean.Order.monotone`](Definitions/Recursive-Definitions/#Lean___Order___monotone)
+  174. [`Lean.Parser.Leading­Ident­Behavior`](Notations-and-Macros/Defining-New-Syntax/#Lean___Parser___LeadingIdentBehavior___default)
+  175. `Lean.Parser.Leading­IdentBehavior.both`
+    1. [Constructor of `Lean.Parser.Leading­Ident­Behavior`](Notations-and-Macros/Defining-New-Syntax/#Lean___Parser___LeadingIdentBehavior___default)
+  176. `Lean.Parser.Leading­IdentBehavior.default`
+    1. [Constructor of `Lean.Parser.Leading­Ident­Behavior`](Notations-and-Macros/Defining-New-Syntax/#Lean___Parser___LeadingIdentBehavior___default)
+  177. `Lean.Parser.Leading­IdentBehavior.symbol`
+    1. [Constructor of `Lean.Parser.Leading­Ident­Behavior`](Notations-and-Macros/Defining-New-Syntax/#Lean___Parser___LeadingIdentBehavior___default)
+  178. [`Lean.PrettyPrinter.Unexpand­M`](Notations-and-Macros/Extending-Lean___s-Output/#Lean___PrettyPrinter___UnexpandM)
+  179. [`Lean.PrettyPrinter.Unexpander`](Notations-and-Macros/Extending-Lean___s-Output/#Lean___PrettyPrinter___Unexpander)
+  180. [`Lean.Quote`](Notations-and-Macros/Defining-New-Syntax/#Lean___Quote___mk)
+  181. `Lean.Quote.mk`
+    1. [Instance constructor of `Lean.Quote`](Notations-and-Macros/Defining-New-Syntax/#Lean___Quote___mk)
+  182. [`Lean.Source­Info`](Notations-and-Macros/Defining-New-Syntax/#Lean___SourceInfo___original)
+  183. `Lean.SourceInfo.none`
+    1. [Constructor of `Lean.Source­Info`](Notations-and-Macros/Defining-New-Syntax/#Lean___SourceInfo___original)
+  184. `Lean.SourceInfo.original`
+    1. [Constructor of `Lean.Source­Info`](Notations-and-Macros/Defining-New-Syntax/#Lean___SourceInfo___original)
+  185. `Lean.SourceInfo.synthetic`
+    1. [Constructor of `Lean.Source­Info`](Notations-and-Macros/Defining-New-Syntax/#Lean___SourceInfo___original)
+  186. [`Lean.Syntax`](Notations-and-Macros/Defining-New-Syntax/#Lean___Syntax___missing)
+  187. [`Lean.Syntax.Char­Lit`](Notations-and-Macros/Defining-New-Syntax/#Lean___Syntax___CharLit)
+  188. [`Lean.Syntax.Command`](Notations-and-Macros/Defining-New-Syntax/#Lean___Syntax___Command)
+  189. [`Lean.Syntax.Hygiene­Info`](Notations-and-Macros/Defining-New-Syntax/#Lean___Syntax___HygieneInfo)
+  190. [`Lean.Syntax.Ident`](Notations-and-Macros/Defining-New-Syntax/#Lean___Syntax___Ident)
+  191. [`Lean.Syntax.Level`](Notations-and-Macros/Defining-New-Syntax/#Lean___Syntax___Level)
+  192. [`Lean.Syntax.Name­Lit`](Notations-and-Macros/Defining-New-Syntax/#Lean___Syntax___NameLit)
+  193. [`Lean.Syntax.Num­Lit`](Notations-and-Macros/Defining-New-Syntax/#Lean___Syntax___NumLit)
+  194. [`Lean.Syntax.Prec`](Notations-and-Macros/Defining-New-Syntax/#Lean___Syntax___Prec)
+  195. [`Lean.Syntax.Preresolved`](Notations-and-Macros/Defining-New-Syntax/#Lean___Syntax___Preresolved___namespace)
+  196. `Lean.Syntax.Preresolved.decl`
+    1. [Constructor of `Lean.Syntax.Preresolved`](Notations-and-Macros/Defining-New-Syntax/#Lean___Syntax___Preresolved___namespace)
+  197. `Lean.Syntax.Preresolved.namespace`
+    1. [Constructor of `Lean.Syntax.Preresolved`](Notations-and-Macros/Defining-New-Syntax/#Lean___Syntax___Preresolved___namespace)
+  198. [`Lean.Syntax.Prio`](Notations-and-Macros/Defining-New-Syntax/#Lean___Syntax___Prio)
+  199. [`Lean.Syntax.Scientific­Lit`](Notations-and-Macros/Defining-New-Syntax/#Lean___Syntax___ScientificLit)
+  200. [`Lean.Syntax.Str­Lit`](Notations-and-Macros/Defining-New-Syntax/#Lean___Syntax___StrLit)
+  201. [`Lean.Syntax.TSep­Array`](Notations-and-Macros/Defining-New-Syntax/#Lean___Syntax___TSepArray___mk)
+  202. [`Lean.Syntax.TSepArray.elems­And­Seps`](Notations-and-Macros/Defining-New-Syntax/#Lean___Syntax___TSepArray___elemsAndSeps)
+  203. [`Lean.Syntax.TSepArray.get­Elems`](Notations-and-Macros/Defining-New-Syntax/#Lean___Syntax___TSepArray___getElems)
+  204. `Lean.Syntax.TSepArray.mk`
+    1. [Constructor of `Lean.Syntax.TSep­Array`](Notations-and-Macros/Defining-New-Syntax/#Lean___Syntax___TSepArray___mk)
+  205. [`Lean.Syntax.TSepArray.of­Elems`](Notations-and-Macros/Defining-New-Syntax/#Lean___Syntax___TSepArray___ofElems)
+  206. [`Lean.Syntax.TSepArray.push`](Notations-and-Macros/Defining-New-Syntax/#Lean___Syntax___TSepArray___push)
+  207. [`Lean.Syntax.Tactic`](Notations-and-Macros/Defining-New-Syntax/#Lean___Syntax___Tactic)
+  208. [`Lean.Syntax.Term`](Notations-and-Macros/Defining-New-Syntax/#Lean___Syntax___Term)
+  209. `Lean.Syntax.atom`
+    1. [Constructor of `Lean.Syntax`](Notations-and-Macros/Defining-New-Syntax/#Lean___Syntax___missing)
+  210. [`Lean.Syntax.get­Kind`](Notations-and-Macros/Defining-New-Syntax/#Lean___Syntax___getKind)
+  211. `Lean.Syntax.ident`
+    1. [Constructor of `Lean.Syntax`](Notations-and-Macros/Defining-New-Syntax/#Lean___Syntax___missing)
+  212. [`Lean.Syntax.is­Of­Kind`](Notations-and-Macros/Defining-New-Syntax/#Lean___Syntax___isOfKind)
+  213. `Lean.Syntax.missing`
+    1. [Constructor of `Lean.Syntax`](Notations-and-Macros/Defining-New-Syntax/#Lean___Syntax___missing)
+  214. [`Lean.Syntax.mk­App`](Notations-and-Macros/Defining-New-Syntax/#Lean___Syntax___mkApp)
+  215. [`Lean.Syntax.mk­CApp`](Notations-and-Macros/Defining-New-Syntax/#Lean___Syntax___mkCApp)
+  216. [`Lean.Syntax.mk­Char­Lit`](Notations-and-Macros/Defining-New-Syntax/#Lean___Syntax___mkCharLit)
+  217. [`Lean.Syntax.mk­Lit`](Notations-and-Macros/Defining-New-Syntax/#Lean___Syntax___mkLit)
+  218. [`Lean.Syntax.mk­Name­Lit`](Notations-and-Macros/Defining-New-Syntax/#Lean___Syntax___mkNameLit)
+  219. [`Lean.Syntax.mk­Nat­Lit`](Notations-and-Macros/Defining-New-Syntax/#Lean___Syntax___mkNatLit)
+  220. [`Lean.Syntax.mk­Num­Lit`](Notations-and-Macros/Defining-New-Syntax/#Lean___Syntax___mkNumLit)
+  221. [`Lean.Syntax.mk­Scientific­Lit`](Notations-and-Macros/Defining-New-Syntax/#Lean___Syntax___mkScientificLit)
+  222. [`Lean.Syntax.mk­Str­Lit`](Notations-and-Macros/Defining-New-Syntax/#Lean___Syntax___mkStrLit)
+  223. `Lean.Syntax.node`
+    1. [Constructor of `Lean.Syntax`](Notations-and-Macros/Defining-New-Syntax/#Lean___Syntax___missing)
+  224. [`Lean.Syntax.set­Kind`](Notations-and-Macros/Defining-New-Syntax/#Lean___Syntax___setKind)
+  225. [`Lean.Syntax­Node­Kind`](Notations-and-Macros/Defining-New-Syntax/#Lean___SyntaxNodeKind)
+  226. [`Lean.Syntax­Node­Kinds`](Notations-and-Macros/Defining-New-Syntax/#Lean___SyntaxNodeKinds)
+  227. [`Lean.TSyntax`](Notations-and-Macros/Defining-New-Syntax/#Lean___TSyntax___mk)
+  228. [`Lean.TSyntax.get­Char`](Notations-and-Macros/Defining-New-Syntax/#Lean___TSyntax___getChar)
+  229. [`Lean.TSyntax.get­Hygiene­Info`](Notations-and-Macros/Defining-New-Syntax/#Lean___TSyntax___getHygieneInfo)
+  230. [`Lean.TSyntax.get­Id`](Notations-and-Macros/Defining-New-Syntax/#Lean___TSyntax___getId)
+  231. [`Lean.TSyntax.get­Name`](Notations-and-Macros/Defining-New-Syntax/#Lean___TSyntax___getName)
+  232. [`Lean.TSyntax.get­Nat`](Notations-and-Macros/Defining-New-Syntax/#Lean___TSyntax___getNat)
+  233. [`Lean.TSyntax.get­Scientific`](Notations-and-Macros/Defining-New-Syntax/#Lean___TSyntax___getScientific)
+  234. [`Lean.TSyntax.get­String`](Notations-and-Macros/Defining-New-Syntax/#Lean___TSyntax___getString)
+  235. `Lean.TSyntax.mk`
+    1. [Constructor of `Lean.TSyntax`](Notations-and-Macros/Defining-New-Syntax/#Lean___TSyntax___mk)
+  236. [`Lean.TSyntax­Array`](Notations-and-Macros/Defining-New-Syntax/#Lean___TSyntaxArray)
+  237. [`Lean.TSyntaxArray.raw`](Notations-and-Macros/Defining-New-Syntax/#Lean___TSyntaxArray___raw)
+  238. [`Lean.char­Lit­Kind`](Notations-and-Macros/Defining-New-Syntax/#Lean___charLitKind)
+  239. [`Lean.choice­Kind`](Notations-and-Macros/Defining-New-Syntax/#Lean___choiceKind)
+  240. [`Lean.field­Idx­Kind`](Notations-and-Macros/Defining-New-Syntax/#Lean___fieldIdxKind)
+  241. [`Lean.group­Kind`](Notations-and-Macros/Defining-New-Syntax/#Lean___groupKind)
+  242. [`Lean.hygiene­Info­Kind`](Notations-and-Macros/Defining-New-Syntax/#Lean___hygieneInfoKind)
+  243. [`Lean.ident­Kind`](Notations-and-Macros/Defining-New-Syntax/#Lean___identKind)
+  244. [`Lean.interpolated­Str­Kind`](Notations-and-Macros/Defining-New-Syntax/#Lean___interpolatedStrKind)
+  245. [`Lean.interpolated­Str­Lit­Kind`](Notations-and-Macros/Defining-New-Syntax/#Lean___interpolatedStrLitKind)
+  246. [`Lean.mk­CIdent`](Notations-and-Macros/Defining-New-Syntax/#Lean___mkCIdent)
+  247. [`Lean.mk­CIdent­From`](Notations-and-Macros/Defining-New-Syntax/#Lean___mkCIdentFrom)
+  248. [`Lean.mk­CIdent­From­Ref`](Notations-and-Macros/Defining-New-Syntax/#Lean___mkCIdentFromRef)
+  249. [`Lean.mk­Group­Node`](Notations-and-Macros/Defining-New-Syntax/#Lean___mkGroupNode)
+  250. [`Lean.mk­Hole`](Notations-and-Macros/Defining-New-Syntax/#Lean___mkHole)
+  251. [`Lean.mk­Ident`](Notations-and-Macros/Defining-New-Syntax/#Lean___mkIdent)
+  252. [`Lean.mk­Ident­From`](Notations-and-Macros/Defining-New-Syntax/#Lean___mkIdentFrom)
+  253. [`Lean.mk­Ident­From­Ref`](Notations-and-Macros/Defining-New-Syntax/#Lean___mkIdentFromRef)
+  254. [`Lean.mk­Optional­Node`](Notations-and-Macros/Defining-New-Syntax/#Lean___mkOptionalNode)
+  255. [`Lean.name­Lit­Kind`](Notations-and-Macros/Defining-New-Syntax/#Lean___nameLitKind)
+  256. [`Lean.null­Kind`](Notations-and-Macros/Defining-New-Syntax/#Lean___nullKind)
+  257. [`Lean.num­Lit­Kind`](Notations-and-Macros/Defining-New-Syntax/#Lean___numLitKind)
+  258. [`Lean.scientific­Lit­Kind`](Notations-and-Macros/Defining-New-Syntax/#Lean___scientificLitKind)
+  259. [`Lean.str­Lit­Kind`](Notations-and-Macros/Defining-New-Syntax/#Lean___strLitKind)
+  260. `Lean­Exe­Config`
+    1. [`Lake.Lean­Exe­Config`](Build-Tools-and-Distribution/Lake/#Lake___LeanExeConfig___mk)
+  261. `Lean­Lib­Config`
+    1. [`Lake.Lean­Lib­Config`](Build-Tools-and-Distribution/Lake/#Lake___LeanLibConfig___mk)
+  262. `Lean­Option`
+    1. [`Lean.Lean­Option`](Build-Tools-and-Distribution/Lake/#Lean___LeanOption___mk)
+  263. `Least?`
+    1. [`Std.PRange.Least?`](Basic-Types/Ranges/#Std___PRange___Least______mk)
+  264. `Left­Inverse`
+    1. [`Function.Left­Inverse`](The-Type-System/Functions/#Function___LeftInverse)
+  265. `Level`
+    1. [`Lean.Syntax.Level`](Notations-and-Macros/Defining-New-Syntax/#Lean___Syntax___Level)
+  266. `Lex`
+    1. [`List.Lex`](Basic-Types/Linked-Lists/#List___Lex___nil)
+  267. `Linearly­Upward­Enumerable`
+    1. [`Std.PRange.Linearly­Upward­Enumerable`](Basic-Types/Ranges/#Std___PRange___LinearlyUpwardEnumerable___mk)
+  268. [`List`](Basic-Types/Linked-Lists/#List___nil)
+  269. [`List.Cursor`](The--mvcgen--tactic/Predicate-Transformers/#List___Cursor___mk)
+  270. [`List.Cursor.at`](The--mvcgen--tactic/Predicate-Transformers/#List___Cursor___at)
+  271. [`List.Cursor.begin`](The--mvcgen--tactic/Predicate-Transformers/#List___Cursor___begin)
+  272. [`List.Cursor.current`](The--mvcgen--tactic/Predicate-Transformers/#List___Cursor___current)
+  273. [`List.Cursor.end`](The--mvcgen--tactic/Predicate-Transformers/#List___Cursor___end)
+  274. `List.Cursor.mk`
+    1. [Constructor of `List.Cursor`](The--mvcgen--tactic/Predicate-Transformers/#List___Cursor___mk)
+  275. [`List.Cursor.pos`](The--mvcgen--tactic/Predicate-Transformers/#List___Cursor___pos)
+  276. [`List.Cursor.tail`](The--mvcgen--tactic/Predicate-Transformers/#List___Cursor___tail)
+  277. [`List.Is­Infix`](Basic-Types/Linked-Lists/#List___IsInfix)
+  278. [`List.Is­Prefix`](Basic-Types/Linked-Lists/#List___IsPrefix)
+  279. [`List.Is­Suffix`](Basic-Types/Linked-Lists/#List___IsSuffix)
+  280. [`List.Lex`](Basic-Types/Linked-Lists/#List___Lex___nil)
+  281. `List.Lex.cons`
+    1. [Constructor of `List.Lex`](Basic-Types/Linked-Lists/#List___Lex___nil)
+  282. `List.Lex.nil`
+    1. [Constructor of `List.Lex`](Basic-Types/Linked-Lists/#List___Lex___nil)
+  283. `List.Lex.rel`
+    1. [Constructor of `List.Lex`](Basic-Types/Linked-Lists/#List___Lex___nil)
+  284. [`List.Mem`](Basic-Types/Linked-Lists/#List___Mem___head)
+  285. `List.Mem.head`
+    1. [Constructor of `List.Mem`](Basic-Types/Linked-Lists/#List___Mem___head)
+  286. `List.Mem.tail`
+    1. [Constructor of `List.Mem`](Basic-Types/Linked-Lists/#List___Mem___head)
+  287. [`List.Nodup`](Basic-Types/Linked-Lists/#List___Nodup)
+  288. [`List.Pairwise`](Basic-Types/Linked-Lists/#List___Pairwise___nil)
+  289. `List.Pairwise.cons`
+    1. [Constructor of `List.Pairwise`](Basic-Types/Linked-Lists/#List___Pairwise___nil)
+  290. `List.Pairwise.nil`
+    1. [Constructor of `List.Pairwise`](Basic-Types/Linked-Lists/#List___Pairwise___nil)
+  291. [`List.Perm`](Basic-Types/Linked-Lists/#List___Perm___nil)
+  292. `List.Perm.cons`
+    1. [Constructor of `List.Perm`](Basic-Types/Linked-Lists/#List___Perm___nil)
+  293. `List.Perm.nil`
+    1. [Constructor of `List.Perm`](Basic-Types/Linked-Lists/#List___Perm___nil)
+  294. `List.Perm.swap`
+    1. [Constructor of `List.Perm`](Basic-Types/Linked-Lists/#List___Perm___nil)
+  295. `List.Perm.trans`
+    1. [Constructor of `List.Perm`](Basic-Types/Linked-Lists/#List___Perm___nil)
+  296. [`List.Sublist`](Basic-Types/Linked-Lists/#List___Sublist___slnil)
+  297. `List.Sublist.cons`
+    1. [Constructor of `List.Sublist`](Basic-Types/Linked-Lists/#List___Sublist___slnil)
+  298. `List.Sublist.cons₂`
+    1. [Constructor of `List.Sublist`](Basic-Types/Linked-Lists/#List___Sublist___slnil)
+  299. `List.Sublist.slnil`
+    1. [Constructor of `List.Sublist`](Basic-Types/Linked-Lists/#List___Sublist___slnil)
+  300. [`List.all`](Basic-Types/Linked-Lists/#List___all)
+  301. [`List.all­M`](Basic-Types/Linked-Lists/#List___allM)
+  302. [`List.and`](Basic-Types/Linked-Lists/#List___and)
+  303. [`List.any`](Basic-Types/Linked-Lists/#List___any)
+  304. [`List.any­M`](Basic-Types/Linked-Lists/#List___anyM)
+  305. [`List.append`](Basic-Types/Linked-Lists/#List___append)
+  306. [`List.append­TR`](Basic-Types/Linked-Lists/#List___appendTR)
+  307. [`List.attach`](Basic-Types/Linked-Lists/#List___attach)
+  308. [`List.attach­With`](Basic-Types/Linked-Lists/#List___attachWith)
+  309. [`List.beq`](Basic-Types/Linked-Lists/#List___beq)
+  310. [`List.concat`](Basic-Types/Linked-Lists/#List___concat)
+  311. `List.cons`
+    1. [Constructor of `List`](Basic-Types/Linked-Lists/#List___nil)
+  312. [`List.contains`](Basic-Types/Linked-Lists/#List___contains)
+  313. [`List.count`](Basic-Types/Linked-Lists/#List___count)
+  314. [`List.count­P`](Basic-Types/Linked-Lists/#List___countP)
+  315. [`List.drop`](Basic-Types/Linked-Lists/#List___drop)
+  316. [`List.drop­Last`](Basic-Types/Linked-Lists/#List___dropLast)
+  317. [`List.drop­Last­TR`](Basic-Types/Linked-Lists/#List___dropLastTR)
+  318. [`List.drop­While`](Basic-Types/Linked-Lists/#List___dropWhile)
+  319. [`List.elem`](Basic-Types/Linked-Lists/#List___elem)
+  320. [`List.erase`](Basic-Types/Linked-Lists/#List___erase)
+  321. [`List.erase­Dups`](Basic-Types/Linked-Lists/#List___eraseDups)
+  322. [`List.erase­Idx`](Basic-Types/Linked-Lists/#List___eraseIdx)
+  323. [`List.erase­Idx­TR`](Basic-Types/Linked-Lists/#List___eraseIdxTR)
+  324. [`List.erase­P`](Basic-Types/Linked-Lists/#List___eraseP)
+  325. [`List.erase­PTR`](Basic-Types/Linked-Lists/#List___erasePTR)
+  326. [`List.erase­Reps`](Basic-Types/Linked-Lists/#List___eraseReps)
+  327. [`List.erase­TR`](Basic-Types/Linked-Lists/#List___eraseTR)
+  328. [`List.extract`](Basic-Types/Linked-Lists/#List___extract)
+  329. [`List.filter`](Basic-Types/Linked-Lists/#List___filter)
+  330. [`List.filter­M`](Basic-Types/Linked-Lists/#List___filterM)
+  331. [`List.filter­Map`](Basic-Types/Linked-Lists/#List___filterMap)
+  332. [`List.filter­Map­M`](Basic-Types/Linked-Lists/#List___filterMapM)
+  333. [`List.filter­Map­TR`](Basic-Types/Linked-Lists/#List___filterMapTR)
+  334. [`List.filter­Rev­M`](Basic-Types/Linked-Lists/#List___filterRevM)
+  335. [`List.filter­TR`](Basic-Types/Linked-Lists/#List___filterTR)
+  336. [`List.fin­Idx­Of?`](Basic-Types/Linked-Lists/#List___finIdxOf___)
+  337. [`List.fin­Range`](Basic-Types/Linked-Lists/#List___finRange)
+  338. [`List.find?`](Basic-Types/Linked-Lists/#List___find___)
+  339. [`List.find­Fin­Idx?`](Basic-Types/Linked-Lists/#List___findFinIdx___)
+  340. [`List.find­Idx`](Basic-Types/Linked-Lists/#List___findIdx)
+  341. [`List.find­Idx?`](Basic-Types/Linked-Lists/#List___findIdx___)
+  342. [`List.find­M?`](Basic-Types/Linked-Lists/#List___findM___)
+  343. [`List.find­Some?`](Basic-Types/Linked-Lists/#List___findSome___)
+  344. [`List.find­Some­M?`](Basic-Types/Linked-Lists/#List___findSomeM___)
+  345. [`List.first­M`](Basic-Types/Linked-Lists/#List___firstM)
+  346. [`List.flat­Map`](Basic-Types/Linked-Lists/#List___flatMap)
+  347. [`List.flat­Map­M`](Basic-Types/Linked-Lists/#List___flatMapM)
+  348. [`List.flat­Map­TR`](Basic-Types/Linked-Lists/#List___flatMapTR)
+  349. [`List.flatten`](Basic-Types/Linked-Lists/#List___flatten)
+  350. [`List.flatten­TR`](Basic-Types/Linked-Lists/#List___flattenTR)
+  351. [`List.foldl`](Basic-Types/Linked-Lists/#List___foldl)
+  352. [`List.foldl­M`](Basic-Types/Linked-Lists/#List___foldlM)
+  353. [`List.foldl­Rec­On`](Basic-Types/Linked-Lists/#List___foldlRecOn)
+  354. [`List.foldr`](Basic-Types/Linked-Lists/#List___foldr)
+  355. [`List.foldr­M`](Basic-Types/Linked-Lists/#List___foldrM)
+  356. [`List.foldr­Rec­On`](Basic-Types/Linked-Lists/#List___foldrRecOn)
+  357. [`List.foldr­TR`](Basic-Types/Linked-Lists/#List___foldrTR)
+  358. [`List.for­A`](Basic-Types/Linked-Lists/#List___forA)
+  359. [`List.for­M`](Basic-Types/Linked-Lists/#List___forM)
+  360. [`List.get`](Basic-Types/Linked-Lists/#List___get)
+  361. [`List.get­D`](Basic-Types/Linked-Lists/#List___getD)
+  362. [`List.get­Last`](Basic-Types/Linked-Lists/#List___getLast)
+  363. [`List.get­Last!`](Basic-Types/Linked-Lists/#List___getLast___-next)
+  364. [`List.get­Last?`](Basic-Types/Linked-Lists/#List___getLast___)
+  365. [`List.get­Last­D`](Basic-Types/Linked-Lists/#List___getLastD)
+  366. [`List.group­By­Key`](Basic-Types/Linked-Lists/#List___groupByKey)
+  367. [`List.head`](Basic-Types/Linked-Lists/#List___head)
+  368. [`List.head!`](Basic-Types/Linked-Lists/#List___head___-next)
+  369. [`List.head?`](Basic-Types/Linked-Lists/#List___head___)
+  370. [`List.head­D`](Basic-Types/Linked-Lists/#List___headD)
+  371. [`List.idx­Of`](Basic-Types/Linked-Lists/#List___idxOf)
+  372. [`List.idx­Of?`](Basic-Types/Linked-Lists/#List___idxOf___)
+  373. [`List.insert`](Basic-Types/Linked-Lists/#List___insert)
+  374. [`List.insert­Idx`](Basic-Types/Linked-Lists/#List___insertIdx)
+  375. [`List.insert­Idx­TR`](Basic-Types/Linked-Lists/#List___insertIdxTR)
+  376. [`List.intercalate`](Basic-Types/Linked-Lists/#List___intercalate)
+  377. [`List.intercalate­TR`](Basic-Types/Linked-Lists/#List___intercalateTR)
+  378. [`List.intersperse`](Basic-Types/Linked-Lists/#List___intersperse)
+  379. [`List.intersperse­TR`](Basic-Types/Linked-Lists/#List___intersperseTR)
+  380. [`List.is­Empty`](Basic-Types/Linked-Lists/#List___isEmpty)
+  381. [`List.is­Eqv`](Basic-Types/Linked-Lists/#List___isEqv)
+  382. [`List.is­Perm`](Basic-Types/Linked-Lists/#List___isPerm)
+  383. [`List.is­Prefix­Of`](Basic-Types/Linked-Lists/#List___isPrefixOf)
+  384. [`List.is­Prefix­Of?`](Basic-Types/Linked-Lists/#List___isPrefixOf___)
+  385. [`List.is­Sublist`](Basic-Types/Linked-Lists/#List___isSublist)
+  386. [`List.is­Suffix­Of`](Basic-Types/Linked-Lists/#List___isSuffixOf)
+  387. [`List.is­Suffix­Of?`](Basic-Types/Linked-Lists/#List___isSuffixOf___)
+  388. [`List.iter`](Basic-Types/Linked-Lists/#List___iter)
+  389. [`List.iter­M`](Basic-Types/Linked-Lists/#List___iterM)
+  390. [`List.le`](Basic-Types/Linked-Lists/#List___le)
+  391. [`List.leftpad`](Basic-Types/Linked-Lists/#List___leftpad)
+  392. [`List.leftpad­TR`](Basic-Types/Linked-Lists/#List___leftpadTR)
+  393. [`List.length`](Basic-Types/Linked-Lists/#List___length)
+  394. [`List.length­TR`](Basic-Types/Linked-Lists/#List___lengthTR)
+  395. [`List.lex`](Basic-Types/Linked-Lists/#List___lex)
+  396. [`List.lookup`](Basic-Types/Linked-Lists/#List___lookup)
+  397. [`List.lt`](Basic-Types/Linked-Lists/#List___lt)
+  398. [`List.map`](Basic-Types/Linked-Lists/#List___map)
+  399. [`List.map­A`](Basic-Types/Linked-Lists/#List___mapA)
+  400. [`List.map­Fin­Idx`](Basic-Types/Linked-Lists/#List___mapFinIdx)
+  401. [`List.map­Fin­Idx­M`](Basic-Types/Linked-Lists/#List___mapFinIdxM)
+  402. [`List.map­Idx`](Basic-Types/Linked-Lists/#List___mapIdx)
+  403. [`List.map­Idx­M`](Basic-Types/Linked-Lists/#List___mapIdxM)
+  404. [`List.map­M`](Basic-Types/Linked-Lists/#List___mapM)
+  405. [`List.map­M'`](Basic-Types/Linked-Lists/#List___mapM___)
+  406. [`List.map­Mono`](Basic-Types/Linked-Lists/#List___mapMono)
+  407. [`List.map­Mono­M`](Basic-Types/Linked-Lists/#List___mapMonoM)
+  408. [`List.map­TR`](Basic-Types/Linked-Lists/#List___mapTR)
+  409. [`List.max?`](Basic-Types/Linked-Lists/#List___max___)
+  410. [`List.merge`](Basic-Types/Linked-Lists/#List___merge)
+  411. [`List.merge­Sort`](Basic-Types/Linked-Lists/#List___mergeSort)
+  412. [`List.min?`](Basic-Types/Linked-Lists/#List___min___)
+  413. [`List.modify`](Basic-Types/Linked-Lists/#List___modify)
+  414. [`List.modify­Head`](Basic-Types/Linked-Lists/#List___modifyHead)
+  415. [`List.modify­TR`](Basic-Types/Linked-Lists/#List___modifyTR)
+  416. [`List.modify­Tail­Idx`](Basic-Types/Linked-Lists/#List___modifyTailIdx)
+  417. `List.nil`
+    1. [Constructor of `List`](Basic-Types/Linked-Lists/#List___nil)
+  418. [`List.of­Fn`](Basic-Types/Linked-Lists/#List___ofFn)
+  419. [`List.or`](Basic-Types/Linked-Lists/#List___or)
+  420. [`List.partition`](Basic-Types/Linked-Lists/#List___partition)
+  421. [`List.partition­M`](Basic-Types/Linked-Lists/#List___partitionM)
+  422. [`List.partition­Map`](Basic-Types/Linked-Lists/#List___partitionMap)
+  423. [`List.pmap`](Basic-Types/Linked-Lists/#List___pmap)
+  424. [`List.range`](Basic-Types/Linked-Lists/#List___range)
+  425. [`List.range'`](Basic-Types/Linked-Lists/#List___range___)
+  426. [`List.range'TR`](Basic-Types/Linked-Lists/#List___range___TR)
+  427. [`List.remove­All`](Basic-Types/Linked-Lists/#List___removeAll)
+  428. [`List.replace`](Basic-Types/Linked-Lists/#List___replace)
+  429. [`List.replace­TR`](Basic-Types/Linked-Lists/#List___replaceTR)
+  430. [`List.replicate`](Basic-Types/Linked-Lists/#List___replicate)
+  431. [`List.replicate­TR`](Basic-Types/Linked-Lists/#List___replicateTR)
+  432. [`List.reverse`](Basic-Types/Linked-Lists/#List___reverse)
+  433. [`List.rightpad`](Basic-Types/Linked-Lists/#List___rightpad)
+  434. [`List.rotate­Left`](Basic-Types/Linked-Lists/#List___rotateLeft)
+  435. [`List.rotate­Right`](Basic-Types/Linked-Lists/#List___rotateRight)
+  436. [`List.set`](Basic-Types/Linked-Lists/#List___set)
+  437. [`List.set­TR`](Basic-Types/Linked-Lists/#List___setTR)
+  438. [`List.singleton`](Basic-Types/Linked-Lists/#List___singleton)
+  439. [`List.span`](Basic-Types/Linked-Lists/#List___span)
+  440. [`List.split­At`](Basic-Types/Linked-Lists/#List___splitAt)
+  441. [`List.split­By`](Basic-Types/Linked-Lists/#List___splitBy)
+  442. [`List.sum`](Basic-Types/Linked-Lists/#List___sum)
+  443. [`List.tail`](Basic-Types/Linked-Lists/#List___tail)
+  444. [`List.tail!`](Basic-Types/Linked-Lists/#List___tail___)
+  445. [`List.tail?`](Basic-Types/Linked-Lists/#List___tail___-next)
+  446. [`List.tail­D`](Basic-Types/Linked-Lists/#List___tailD)
+  447. [`List.take`](Basic-Types/Linked-Lists/#List___take)
+  448. [`List.take­TR`](Basic-Types/Linked-Lists/#List___takeTR)
+  449. [`List.take­While`](Basic-Types/Linked-Lists/#List___takeWhile)
+  450. [`List.take­While­TR`](Basic-Types/Linked-Lists/#List___takeWhileTR)
+  451. [`List.to­Array`](Basic-Types/Linked-Lists/#List___toArray)
+  452. [`List.to­Array­Impl`](Basic-Types/Linked-Lists/#List___toArrayImpl)
+  453. [`List.to­Byte­Array`](Basic-Types/Linked-Lists/#List___toByteArray)
+  454. [`List.to­Float­Array`](Basic-Types/Linked-Lists/#List___toFloatArray)
+  455. [`List.to­String`](Basic-Types/Linked-Lists/#List___toString)
+  456. [`List.unattach`](Basic-Types/Linked-Lists/#List___unattach)
+  457. [`List.unzip`](Basic-Types/Linked-Lists/#List___unzip)
+  458. [`List.unzip­TR`](Basic-Types/Linked-Lists/#List___unzipTR)
+  459. [`List.zip`](Basic-Types/Linked-Lists/#List___zip)
+  460. [`List.zip­Idx`](Basic-Types/Linked-Lists/#List___zipIdx)
+  461. [`List.zip­Idx­TR`](Basic-Types/Linked-Lists/#List___zipIdxTR)
+  462. [`List.zip­With`](Basic-Types/Linked-Lists/#List___zipWith)
+  463. [`List.zip­With­All`](Basic-Types/Linked-Lists/#List___zipWithAll)
+  464. [`List.zip­With­TR`](Basic-Types/Linked-Lists/#List___zipWithTR)
+  465. `land`
+    1. [`Fin.land`](Basic-Types/Finite-Natural-Numbers/#Fin___land)
+  466. `land`
+    1. [`ISize.land`](Basic-Types/Fixed-Precision-Integers/#ISize___land)
+  467. `land`
+    1. [`Int16.land`](Basic-Types/Fixed-Precision-Integers/#Int16___land)
+  468. `land`
+    1. [`Int32.land`](Basic-Types/Fixed-Precision-Integers/#Int32___land)
+  469. `land`
+    1. [`Int64.land`](Basic-Types/Fixed-Precision-Integers/#Int64___land)
+  470. `land`
+    1. [`Int8.land`](Basic-Types/Fixed-Precision-Integers/#Int8___land)
+  471. `land`
+    1. [`Nat.land`](Basic-Types/Natural-Numbers/#Nat___land)
+  472. `land`
+    1. [`UInt16.land`](Basic-Types/Fixed-Precision-Integers/#UInt16___land)
+  473. `land`
+    1. [`UInt32.land`](Basic-Types/Fixed-Precision-Integers/#UInt32___land)
+  474. `land`
+    1. [`UInt64.land`](Basic-Types/Fixed-Precision-Integers/#UInt64___land)
+  475. `land`
+    1. [`UInt8.land`](Basic-Types/Fixed-Precision-Integers/#UInt8___land)
+  476. `land`
+    1. [`USize.land`](Basic-Types/Fixed-Precision-Integers/#USize___land)
+  477. `last`
+    1. [`Fin.last`](Basic-Types/Finite-Natural-Numbers/#Fin___last)
+  478. `last­Cases`
+    1. [`Fin.last­Cases`](Basic-Types/Finite-Natural-Numbers/#Fin___lastCases)
+  479. `lawful`
+    1. [`Std.Lawful­IteratorLoop.lawful` (class method)](Iterators/Iterator-Definitions/#Std___LawfulIteratorLoop___mk)
+  480. `lazy­Pure`
+    1. [`IO.lazy­Pure`](IO/Logical-Model/#IO___lazyPure)
+  481. `lcm`
+    1. [`Int.lcm`](Basic-Types/Integers/#Int___lcm)
+  482. `lcm`
+    1. [`Nat.lcm`](Basic-Types/Natural-Numbers/#Nat___lcm)
+  483. `le`
+    1. [`Char.le`](Basic-Types/Characters/#Char___le)
+  484. `le`
+    1. [`Float.le`](Basic-Types/Floating-Point-Numbers/#Float___le)
+  485. `le`
+    1. [`Float32.le`](Basic-Types/Floating-Point-Numbers/#Float32___le)
+  486. `le`
+    1. [`ISize.le`](Basic-Types/Fixed-Precision-Integers/#ISize___le)
+  487. `le`
+    1. [`Int.le`](Basic-Types/Integers/#Int___le)
+  488. `le`
+    1. [`Int16.le`](Basic-Types/Fixed-Precision-Integers/#Int16___le)
+  489. `le`
+    1. [`Int32.le`](Basic-Types/Fixed-Precision-Integers/#Int32___le)
+  490. `le`
+    1. [`Int64.le`](Basic-Types/Fixed-Precision-Integers/#Int64___le)
+  491. `le`
+    1. [`Int8.le`](Basic-Types/Fixed-Precision-Integers/#Int8___le)
+  492. `le`
+    1. [`LE.le` (class method)](Type-Classes/Basic-Classes/#LE___mk)
+  493. `le`
+    1. [`List.le`](Basic-Types/Linked-Lists/#List___le)
+  494. `le`
+    1. [`Nat.le`](Basic-Types/Natural-Numbers/#Nat___le___refl)
+  495. `le`
+    1. [`String.le`](Basic-Types/Strings/#String___le)
+  496. `le`
+    1. [`UInt16.le`](Basic-Types/Fixed-Precision-Integers/#UInt16___le)
+  497. `le`
+    1. [`UInt32.le`](Basic-Types/Fixed-Precision-Integers/#UInt32___le)
+  498. `le`
+    1. [`UInt64.le`](Basic-Types/Fixed-Precision-Integers/#UInt64___le)
+  499. `le`
+    1. [`UInt8.le`](Basic-Types/Fixed-Precision-Integers/#UInt8___le)
+  500. `le`
+    1. [`USize.le`](Basic-Types/Fixed-Precision-Integers/#USize___le)
+  501. [`le­Of­Ord`](Type-Classes/Basic-Classes/#leOfOrd)
+  502. [`lean` (Lake command)](Build-Tools-and-Distribution/Lake/#lean)
+  503. [`lean_is_array`](Basic-Types/Arrays/#lean_is_array)
+  504. [`lean_is_string`](Basic-Types/Strings/#lean_is_string)
+  505. `lean_string_object` [(0)](Basic-Types/Strings/#lean_string_object) [(1)](Basic-Types/Arrays/#lean_string_object-next)
+  506. [`lean_to_array`](Basic-Types/Arrays/#lean_to_array)
+  507. [`lean_to_string`](Basic-Types/Strings/#lean_to_string)
+  508. `least?`
+    1. [`Std.PRange.Least?.least?` (class method)](Basic-Types/Ranges/#Std___PRange___Least______mk)
+  509. `left` [(0)](Tactic-Proofs/Tactic-Reference/#left) [(1)](Tactic-Proofs/Targeted-Rewriting-with--conv/#Lean___Parser___Tactic___Conv___convLeft)
+  510. `left`
+    1. [`And.left` (structure field)](Basic-Propositions/Logical-Connectives/#And___intro)
+  511. `left_distrib`
+    1. [`Lean.Grind.Semiring.mul_one` (class method)](The--grind--tactic/Algebraic-Solver-_LPAR_Commutative-Rings___-Fields_RPAR_/#Lean___Grind___Semiring___mk)
+  512. `leftpad`
+    1. [`Array.leftpad`](Basic-Types/Arrays/#Array___leftpad)
+  513. `leftpad`
+    1. [`List.leftpad`](Basic-Types/Linked-Lists/#List___leftpad)
+  514. `leftpad­TR`
+    1. [`List.leftpad­TR`](Basic-Types/Linked-Lists/#List___leftpadTR)
+  515. `length`
+    1. [`List.length`](Basic-Types/Linked-Lists/#List___length)
+  516. `length`
+    1. [`Std.Iter.length`](Iterators/Consuming-Iterators/#Std___Iter___length)
+  517. `length`
+    1. [`Std.IterM.length`](Iterators/Consuming-Iterators/#Std___IterM___length)
+  518. `length`
+    1. [`String.length`](Basic-Types/Strings/#String___length)
+  519. `length­TR`
+    1. [`List.length­TR`](Basic-Types/Linked-Lists/#List___lengthTR)
+  520. [`let`](Tactic-Proofs/The-Tactic-Language/#let)
+  521. [`let rec`](Tactic-Proofs/The-Tactic-Language/#let-rec)
+  522. [`let'`](Tactic-Proofs/The-Tactic-Language/#let___)
+  523. [`let­I`](Tactic-Proofs/The-Tactic-Language/#letI)
+  524. `let­To­Have`
+    1. [`Lean.Meta.Simp.Config.let­To­Have` (structure field)](The-Simplifier/Configuring-Simplification/#Lean___Meta___Simp___Config___mk)
+  525. [`let_to_have`](Tactic-Proofs/Tactic-Reference/#let_to_have)
+  526. level
+    1. [of universe](The-Type-System/Universes/#--index--next-next-next)
+  527. `lex'`
+    1. [`Ord.lex'`](Type-Classes/Basic-Classes/#Ord___lex___)
+  528. `lex`
+    1. [`Array.lex`](Basic-Types/Arrays/#Array___lex)
+  529. `lex`
+    1. [`List.lex`](Basic-Types/Linked-Lists/#List___lex)
+  530. `lex`
+    1. [`Ord.lex`](Type-Classes/Basic-Classes/#Ord___lex)
+  531. `lex­Lt`
+    1. [`Prod.lex­Lt`](Basic-Types/Tuples/#Prod___lexLt)
+  532. [`lhs`](Tactic-Proofs/Targeted-Rewriting-with--conv/#Lean___Parser___Tactic___Conv___lhs)
+  533. [`lia`](Tactic-Proofs/Tactic-Reference/#lia)
+  534. `lib­Name`
+    1. [`[anonymous]` (structure field)](Build-Tools-and-Distribution/Lake/#Lake___LeanLibConfig___mk)
+  535. `lib­Prefix­On­Windows`
+    1. [`[anonymous]` (structure field)](Build-Tools-and-Distribution/Lake/#Lake___LeanLibConfig___mk)
+  536. `lift`
+    1. [`Except­CpsT.lift`](Functors___-Monads-and--do--Notation/Varieties-of-Monads/#ExceptCpsT___lift)
+  537. `lift`
+    1. [`ExceptT.lift`](Functors___-Monads-and--do--Notation/Varieties-of-Monads/#ExceptT___lift)
+  538. `lift`
+    1. [`OptionT.lift`](Functors___-Monads-and--do--Notation/Varieties-of-Monads/#OptionT___lift)
+  539. `lift`
+    1. [`Quot.lift`](The-Type-System/Quotients/#Quot___lift)
+  540. `lift`
+    1. [`Quotient.lift`](The-Type-System/Quotients/#Quotient___lift)
+  541. `lift`
+    1. [`Squash.lift`](The-Type-System/Quotients/#Squash___lift)
+  542. `lift`
+    1. [`State­CpsT.lift`](Functors___-Monads-and--do--Notation/Varieties-of-Monads/#StateCpsT___lift)
+  543. `lift`
+    1. [`State­RefT'.lift`](Functors___-Monads-and--do--Notation/Varieties-of-Monads/#StateRefT______lift)
+  544. `lift`
+    1. [`StateT.lift`](Functors___-Monads-and--do--Notation/Varieties-of-Monads/#StateT___lift)
+  545. `lift`
+    1. [`Std.Iterators.HetT.lift`](Iterators/Reasoning-About-Iterators/#Std___Iterators___HetT___lift)
+  546. `lift`
+    1. [`Std.Iterators.PostconditionT.lift`](Iterators/Reasoning-About-Iterators/#Std___Iterators___PostconditionT___lift)
+  547. `lift­On`
+    1. [`Quot.lift­On`](The-Type-System/Quotients/#Quot___liftOn)
+  548. `lift­On`
+    1. [`Quotient.lift­On`](The-Type-System/Quotients/#Quotient___liftOn)
+  549. `lift­On₂`
+    1. [`Quotient.lift­On₂`](The-Type-System/Quotients/#Quotient___liftOn___)
+  550. `lift­With`
+    1. [`MonadControl.lift­With` (class method)](Functors___-Monads-and--do--Notation/Lifting-Monads/#MonadControl___mk)
+  551. `lift­With`
+    1. [`Monad­ControlT.lift­With` (class method)](Functors___-Monads-and--do--Notation/Lifting-Monads/#MonadControlT___mk)
+  552. `lift­With­Property`
+    1. [`Std.Iterators.PostconditionT.lift­With­Property`](Iterators/Reasoning-About-Iterators/#Std___Iterators___PostconditionT___liftWithProperty)
+  553. [`lift_lets`](Tactic-Proofs/Tactic-Reference/#lift_lets)
+  554. `lift₂`
+    1. [`Quotient.lift₂`](The-Type-System/Quotients/#Quotient___lift___)
+  555. [`line­Eq`](Notations-and-Macros/Defining-New-Syntax/#lineEq)
+  556. `lines`
+    1. [`IO.FS.lines`](IO/Files___-File-Handles___-and-Streams/#IO___FS___lines)
+  557. `lines`
+    1. [`String.Slice.lines`](Basic-Types/Strings/#String___Slice___lines)
+  558. [`lint` (Lake command)](Build-Tools-and-Distribution/Lake/#lint)
+  559. [`linter.unnecessary­Simpa`](The-Simplifier/Configuring-Simplification/#linter___unnecessarySimpa)
+  560. literal
+    1. [raw string](Basic-Types/Strings/#--index--next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next)
+  561. literal
+    1. [string](Basic-Types/Strings/#--index--next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next)
+  562. `locals`
+    1. [`Lean.Meta.DSimp.Config.locals` (structure field)](The-Simplifier/Configuring-Simplification/#Lean___Meta___DSimp___Config___mk)
+  563. `locals`
+    1. [`Lean.Meta.Simp.Config.locals` (structure field)](The-Simplifier/Configuring-Simplification/#Lean___Meta___Simp___Config___mk)
+  564. `lock`
+    1. [`IO.FS.Handle.lock`](IO/Files___-File-Handles___-and-Streams/#IO___FS___Handle___lock)
+  565. `log`
+    1. [`Float.log`](Basic-Types/Floating-Point-Numbers/#Float___log)
+  566. `log`
+    1. [`Float32.log`](Basic-Types/Floating-Point-Numbers/#Float32___log)
+  567. `log10`
+    1. [`Float.log10`](Basic-Types/Floating-Point-Numbers/#Float___log10)
+  568. `log10`
+    1. [`Float32.log10`](Basic-Types/Floating-Point-Numbers/#Float32___log10)
+  569. `log2`
+    1. [`Fin.log2`](Basic-Types/Finite-Natural-Numbers/#Fin___log2)
+  570. `log2`
+    1. [`Float.log2`](Basic-Types/Floating-Point-Numbers/#Float___log2)
+  571. `log2`
+    1. [`Float32.log2`](Basic-Types/Floating-Point-Numbers/#Float32___log2)
+  572. `log2`
+    1. [`Nat.log2`](Basic-Types/Natural-Numbers/#Nat___log2)
+  573. `log2`
+    1. [`UInt16.log2`](Basic-Types/Fixed-Precision-Integers/#UInt16___log2)
+  574. `log2`
+    1. [`UInt32.log2`](Basic-Types/Fixed-Precision-Integers/#UInt32___log2)
+  575. `log2`
+    1. [`UInt64.log2`](Basic-Types/Fixed-Precision-Integers/#UInt64___log2)
+  576. `log2`
+    1. [`UInt8.log2`](Basic-Types/Fixed-Precision-Integers/#UInt8___log2)
+  577. `log2`
+    1. [`USize.log2`](Basic-Types/Fixed-Precision-Integers/#USize___log2)
+  578. `lookup`
+    1. [`List.lookup`](Basic-Types/Linked-Lists/#List___lookup)
+  579. `lor`
+    1. [`Fin.lor`](Basic-Types/Finite-Natural-Numbers/#Fin___lor)
+  580. `lor`
+    1. [`ISize.lor`](Basic-Types/Fixed-Precision-Integers/#ISize___lor)
+  581. `lor`
+    1. [`Int16.lor`](Basic-Types/Fixed-Precision-Integers/#Int16___lor)
+  582. `lor`
+    1. [`Int32.lor`](Basic-Types/Fixed-Precision-Integers/#Int32___lor)
+  583. `lor`
+    1. [`Int64.lor`](Basic-Types/Fixed-Precision-Integers/#Int64___lor)
+  584. `lor`
+    1. [`Int8.lor`](Basic-Types/Fixed-Precision-Integers/#Int8___lor)
+  585. `lor`
+    1. [`Nat.lor`](Basic-Types/Natural-Numbers/#Nat___lor)
+  586. `lor`
+    1. [`UInt16.lor`](Basic-Types/Fixed-Precision-Integers/#UInt16___lor)
+  587. `lor`
+    1. [`UInt32.lor`](Basic-Types/Fixed-Precision-Integers/#UInt32___lor)
+  588. `lor`
+    1. [`UInt64.lor`](Basic-Types/Fixed-Precision-Integers/#UInt64___lor)
+  589. `lor`
+    1. [`UInt8.lor`](Basic-Types/Fixed-Precision-Integers/#UInt8___lor)
+  590. `lor`
+    1. [`USize.lor`](Basic-Types/Fixed-Precision-Integers/#USize___lor)
+  591. `lower`
+    1. [`Std.Rcc.lower` (structure field)](Basic-Types/Ranges/#Std___Rcc___mk)
+  592. `lower`
+    1. [`Std.Rci.lower` (structure field)](Basic-Types/Ranges/#Std___Rci___mk)
+  593. `lower`
+    1. [`Std.Rco.lower` (structure field)](Basic-Types/Ranges/#Std___Rco___mk)
+  594. `lower`
+    1. [`Std.Roc.lower` (structure field)](Basic-Types/Ranges/#Std___Roc___mk)
+  595. `lower`
+    1. [`Std.Roi.lower` (structure field)](Basic-Types/Ranges/#Std___Roi___mk)
+  596. `lower`
+    1. [`Std.Roo.lower` (structure field)](Basic-Types/Ranges/#Std___Roo___mk)
+  597. `lt`
+    1. [`Char.lt`](Basic-Types/Characters/#Char___lt)
+  598. `lt`
+    1. [`Float.lt`](Basic-Types/Floating-Point-Numbers/#Float___lt)
+  599. `lt`
+    1. [`Float32.lt`](Basic-Types/Floating-Point-Numbers/#Float32___lt)
+  600. `lt`
+    1. [`ISize.lt`](Basic-Types/Fixed-Precision-Integers/#ISize___lt)
+  601. `lt`
+    1. [`Int.lt`](Basic-Types/Integers/#Int___lt)
+  602. `lt`
+    1. [`Int16.lt`](Basic-Types/Fixed-Precision-Integers/#Int16___lt)
+  603. `lt`
+    1. [`Int32.lt`](Basic-Types/Fixed-Precision-Integers/#Int32___lt)
+  604. `lt`
+    1. [`Int64.lt`](Basic-Types/Fixed-Precision-Integers/#Int64___lt)
+  605. `lt`
+    1. [`Int8.lt`](Basic-Types/Fixed-Precision-Integers/#Int8___lt)
+  606. `lt`
+    1. [`LT.lt` (class method)](Type-Classes/Basic-Classes/#LT___mk)
+  607. `lt`
+    1. [`List.lt`](Basic-Types/Linked-Lists/#List___lt)
+  608. `lt`
+    1. [`Nat.lt`](Basic-Types/Natural-Numbers/#Nat___lt)
+  609. `lt`
+    1. [`Option.lt`](Basic-Types/Optional-Values/#Option___lt)
+  610. `lt`
+    1. [`UInt16.lt`](Basic-Types/Fixed-Precision-Integers/#UInt16___lt)
+  611. `lt`
+    1. [`UInt32.lt`](Basic-Types/Fixed-Precision-Integers/#UInt32___lt)
+  612. `lt`
+    1. [`UInt64.lt`](Basic-Types/Fixed-Precision-Integers/#UInt64___lt)
+  613. `lt`
+    1. [`UInt8.lt`](Basic-Types/Fixed-Precision-Integers/#UInt8___lt)
+  614. `lt`
+    1. [`USize.lt`](Basic-Types/Fixed-Precision-Integers/#USize___lt)
+  615. [`lt­Of­Ord`](Type-Classes/Basic-Classes/#ltOfOrd)
+
+
+##  M
+  1. [`MProd`](Basic-Types/Tuples/#MProd___mk)
+  2. `MProd.mk`
+    1. [Constructor of `MProd`](Basic-Types/Tuples/#MProd___mk)
+  3. `Macro­M`
+    1. [`Lean.Macro­M`](Notations-and-Macros/Macros/#Lean___MacroM)
+  4. [`Max`](Type-Classes/Basic-Classes/#Max___mk)
+  5. `Max.mk`
+    1. [Instance constructor of `Max`](Type-Classes/Basic-Classes/#Max___mk)
+  6. `Mem`
+    1. [`List.Mem`](Basic-Types/Linked-Lists/#List___Mem___head)
+  7. `Metadata`
+    1. [`IO.FS.Metadata`](IO/Files___-File-Handles___-and-Streams/#IO___FS___Metadata___mk)
+  8. [`Min`](Type-Classes/Basic-Classes/#Min___mk)
+  9. `Min.mk`
+    1. [Instance constructor of `Min`](Type-Classes/Basic-Classes/#Min___mk)
+  10. [`Mod`](Type-Classes/Basic-Classes/#Mod___mk)
+  11. `Mod.mk`
+    1. [Instance constructor of `Mod`](Type-Classes/Basic-Classes/#Mod___mk)
+  12. `Mode`
+    1. [`IO.FS.Mode`](IO/Files___-File-Handles___-and-Streams/#IO___FS___Mode___read)
+  13. [`Monad`](Functors___-Monads-and--do--Notation/#Monad___mk)
+  14. `Monad.mk`
+    1. [Instance constructor of `Monad`](Functors___-Monads-and--do--Notation/#Monad___mk)
+  15. [`Monad­Control`](Functors___-Monads-and--do--Notation/Lifting-Monads/#MonadControl___mk)
+  16. `MonadControl.mk`
+    1. [Instance constructor of `Monad­Control`](Functors___-Monads-and--do--Notation/Lifting-Monads/#MonadControl___mk)
+  17. [`Monad­Control­T`](Functors___-Monads-and--do--Notation/Lifting-Monads/#MonadControlT___mk)
+  18. `Monad­ControlT.mk`
+    1. [Instance constructor of `Monad­Control­T`](Functors___-Monads-and--do--Notation/Lifting-Monads/#MonadControlT___mk)
+  19. [`Monad­Eval`](Interacting-with-Lean/#MonadEval___mk)
+  20. `MonadEval.mk`
+    1. [Instance constructor of `Monad­Eval`](Interacting-with-Lean/#MonadEval___mk)
+  21. [`Monad­Eval­T`](Interacting-with-Lean/#MonadEvalT___mk)
+  22. `Monad­EvalT.mk`
+    1. [Instance constructor of `Monad­Eval­T`](Interacting-with-Lean/#MonadEvalT___mk)
+  23. [`Monad­Except`](Functors___-Monads-and--do--Notation/Varieties-of-Monads/#MonadExcept___mk)
+  24. `MonadExcept.mk`
+    1. [Instance constructor of `Monad­Except`](Functors___-Monads-and--do--Notation/Varieties-of-Monads/#MonadExcept___mk)
+  25. [`MonadExcept.of­Except`](Functors___-Monads-and--do--Notation/Varieties-of-Monads/#MonadExcept___ofExcept)
+  26. [`MonadExcept.or­Else`](Functors___-Monads-and--do--Notation/Varieties-of-Monads/#MonadExcept___orElse)
+  27. [`MonadExcept.orelse'`](Functors___-Monads-and--do--Notation/Varieties-of-Monads/#MonadExcept___orelse___)
+  28. [`Monad­Except­Of`](Functors___-Monads-and--do--Notation/Varieties-of-Monads/#MonadExceptOf___mk)
+  29. `Monad­ExceptOf.mk`
+    1. [Instance constructor of `Monad­Except­Of`](Functors___-Monads-and--do--Notation/Varieties-of-Monads/#MonadExceptOf___mk)
+  30. [`Monad­Finally`](Functors___-Monads-and--do--Notation/Varieties-of-Monads/#MonadFinally___mk)
+  31. `MonadFinally.mk`
+    1. [Instance constructor of `Monad­Finally`](Functors___-Monads-and--do--Notation/Varieties-of-Monads/#MonadFinally___mk)
+  32. [`Monad­Functor`](Functors___-Monads-and--do--Notation/Lifting-Monads/#MonadFunctor___mk)
+  33. `MonadFunctor.mk`
+    1. [Instance constructor of `Monad­Functor`](Functors___-Monads-and--do--Notation/Lifting-Monads/#MonadFunctor___mk)
+  34. [`Monad­Functor­T`](Functors___-Monads-and--do--Notation/Lifting-Monads/#MonadFunctorT___mk)
+  35. `Monad­FunctorT.mk`
+    1. [Instance constructor of `Monad­Functor­T`](Functors___-Monads-and--do--Notation/Lifting-Monads/#MonadFunctorT___mk)
+  36. `Monad­Lake­Env`
+    1. [`Lake.Monad­Lake­Env`](Build-Tools-and-Distribution/Lake/#Lake___MonadLakeEnv)
+  37. [`Monad­Lift`](Functors___-Monads-and--do--Notation/Lifting-Monads/#MonadLift___mk)
+  38. `MonadLift.mk`
+    1. [Instance constructor of `Monad­Lift`](Functors___-Monads-and--do--Notation/Lifting-Monads/#MonadLift___mk)
+  39. [`Monad­Lift­T`](Functors___-Monads-and--do--Notation/Lifting-Monads/#MonadLiftT___mk)
+  40. `Monad­LiftT.mk`
+    1. [Instance constructor of `Monad­Lift­T`](Functors___-Monads-and--do--Notation/Lifting-Monads/#MonadLiftT___mk)
+  41. `Monad­Pretty­Format`
+    1. [`Std.Format.Monad­Pretty­Format`](Interacting-with-Lean/#Std___Format___MonadPrettyFormat___mk)
+  42. [`Monad­Reader`](Functors___-Monads-and--do--Notation/Varieties-of-Monads/#MonadReader___mk)
+  43. `MonadReader.mk`
+    1. [Instance constructor of `Monad­Reader`](Functors___-Monads-and--do--Notation/Varieties-of-Monads/#MonadReader___mk)
+  44. [`Monad­Reader­Of`](Functors___-Monads-and--do--Notation/Varieties-of-Monads/#MonadReaderOf___mk)
+  45. `Monad­ReaderOf.mk`
+    1. [Instance constructor of `Monad­Reader­Of`](Functors___-Monads-and--do--Notation/Varieties-of-Monads/#MonadReaderOf___mk)
+  46. [`Monad­State`](Functors___-Monads-and--do--Notation/Varieties-of-Monads/#MonadState___mk)
+  47. [`MonadState.get`](Functors___-Monads-and--do--Notation/Varieties-of-Monads/#MonadState___get)
+  48. `MonadState.mk`
+    1. [Instance constructor of `Monad­State`](Functors___-Monads-and--do--Notation/Varieties-of-Monads/#MonadState___mk)
+  49. [`MonadState.modify­Get`](Functors___-Monads-and--do--Notation/Varieties-of-Monads/#MonadState___modifyGet)
+  50. [`Monad­State­Of`](Functors___-Monads-and--do--Notation/Varieties-of-Monads/#MonadStateOf___mk)
+  51. `Monad­StateOf.mk`
+    1. [Instance constructor of `Monad­State­Of`](Functors___-Monads-and--do--Notation/Varieties-of-Monads/#MonadStateOf___mk)
+  52. [`Monad­With­Reader`](Functors___-Monads-and--do--Notation/Varieties-of-Monads/#MonadWithReader___mk)
+  53. `Monad­WithReader.mk`
+    1. [Instance constructor of `Monad­With­Reader`](Functors___-Monads-and--do--Notation/Varieties-of-Monads/#MonadWithReader___mk)
+  54. [`Monad­With­Reader­Of`](Functors___-Monads-and--do--Notation/Varieties-of-Monads/#MonadWithReaderOf___mk)
+  55. `Monad­With­ReaderOf.mk`
+    1. [Instance constructor of `Monad­With­Reader­Of`](Functors___-Monads-and--do--Notation/Varieties-of-Monads/#MonadWithReaderOf___mk)
+  56. `Monad­Workspace`
+    1. [`Lake.Monad­Workspace`](Build-Tools-and-Distribution/Lake/#Lake___MonadWorkspace___mk)
+  57. `Monotonic`
+    1. [`Std.Do.PredTrans.Monotonic`](The--mvcgen--tactic/Predicate-Transformers/#Std___Do___PredTrans___Monotonic)
+  58. [`Mul`](Type-Classes/Basic-Classes/#Mul___mk)
+  59. `Mul.mk`
+    1. [Instance constructor of `Mul`](Type-Classes/Basic-Classes/#Mul___mk)
+  60. `Mutex`
+    1. [`Std.Mutex`](IO/Tasks-and-Threads/#Std___Mutex)
+  61. [main goal](Tactic-Proofs/#--index--next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next)
+  62. `map`
+    1. [`Array.map`](Basic-Types/Arrays/#Array___map)
+  63. `map`
+    1. [`EStateM.map`](Functors___-Monads-and--do--Notation/Varieties-of-Monads/#EStateM___map)
+  64. `map`
+    1. [`Except.map`](Functors___-Monads-and--do--Notation/Varieties-of-Monads/#Except___map)
+  65. `map`
+    1. [`ExceptT.map`](Functors___-Monads-and--do--Notation/Varieties-of-Monads/#ExceptT___map)
+  66. `map`
+    1. [`Functor.map` (class method)](Functors___-Monads-and--do--Notation/#Functor___mk)
+  67. `map`
+    1. [`List.map`](Basic-Types/Linked-Lists/#List___map)
+  68. `map`
+    1. [`Option.map`](Basic-Types/Optional-Values/#Option___map)
+  69. `map`
+    1. [`Prod.map`](Basic-Types/Tuples/#Prod___map)
+  70. `map`
+    1. [`StateT.map`](Functors___-Monads-and--do--Notation/Varieties-of-Monads/#StateT___map)
+  71. `map`
+    1. [`Std.DHashMap.map`](Basic-Types/Maps-and-Sets/#Std___DHashMap___map)
+  72. `map`
+    1. [`Std.DTreeMap.map`](Basic-Types/Maps-and-Sets/#Std___DTreeMap___map)
+  73. `map`
+    1. [`Std.Ext­DHashMap.map`](Basic-Types/Maps-and-Sets/#Std___ExtDHashMap___map)
+  74. `map`
+    1. [`Std.Ext­HashMap.map`](Basic-Types/Maps-and-Sets/#Std___ExtHashMap___map)
+  75. `map`
+    1. [`Std.HashMap.map`](Basic-Types/Maps-and-Sets/#Std___HashMap___map)
+  76. `map`
+    1. [`Std.Iter.map`](Iterators/Iterator-Combinators/#Std___Iter___map)
+  77. `map`
+    1. [`Std.IterM.map`](Iterators/Iterator-Combinators/#Std___IterM___map)
+  78. `map`
+    1. [`Std.Iterators.HetT.map`](Iterators/Reasoning-About-Iterators/#Std___Iterators___HetT___map)
+  79. `map`
+    1. [`Std.TreeMap.map`](Basic-Types/Maps-and-Sets/#Std___TreeMap___map)
+  80. `map`
+    1. [`String.map`](Basic-Types/Strings/#String___map)
+  81. `map`
+    1. [`Sum.map`](Basic-Types/Sum-Types/#Sum___map)
+  82. `map`
+    1. [`Task.map`](IO/Tasks-and-Threads/#Task___map)
+  83. `map`
+    1. [`Thunk.map`](Basic-Types/Lazy-Computations/#Thunk___map)
+  84. map
+    1. [dependent](Basic-Types/Maps-and-Sets/#--index--next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next)
+  85. map
+    1. [extensional](Basic-Types/Maps-and-Sets/#--index--next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next)
+  86. `map­A`
+    1. [`List.map­A`](Basic-Types/Linked-Lists/#List___mapA)
+  87. `map­A`
+    1. [`Option.map­A`](Basic-Types/Optional-Values/#Option___mapA)
+  88. `map­Const`
+    1. [`Functor.map­Const` (class method)](Functors___-Monads-and--do--Notation/#Functor___mk)
+  89. `map­Error`
+    1. [`Except.map­Error`](Functors___-Monads-and--do--Notation/Varieties-of-Monads/#Except___mapError)
+  90. `map­Fin­Idx`
+    1. [`Array.map­Fin­Idx`](Basic-Types/Arrays/#Array___mapFinIdx)
+  91. `map­Fin­Idx`
+    1. [`List.map­Fin­Idx`](Basic-Types/Linked-Lists/#List___mapFinIdx)
+  92. `map­Fin­Idx­M`
+    1. [`Array.map­Fin­Idx­M`](Basic-Types/Arrays/#Array___mapFinIdxM)
+  93. `map­Fin­Idx­M`
+    1. [`List.map­Fin­Idx­M`](Basic-Types/Linked-Lists/#List___mapFinIdxM)
+  94. `map­Idx`
+    1. [`Array.map­Idx`](Basic-Types/Arrays/#Array___mapIdx)
+  95. `map­Idx`
+    1. [`List.map­Idx`](Basic-Types/Linked-Lists/#List___mapIdx)
+  96. `map­Idx­M`
+    1. [`Array.map­Idx­M`](Basic-Types/Arrays/#Array___mapIdxM)
+  97. `map­Idx­M`
+    1. [`List.map­Idx­M`](Basic-Types/Linked-Lists/#List___mapIdxM)
+  98. `map­List`
+    1. [`Task.map­List`](IO/Tasks-and-Threads/#Task___mapList)
+  99. `map­M'`
+    1. [`Array.map­M'`](Basic-Types/Arrays/#Array___mapM___)
+  100. `map­M'`
+    1. [`List.map­M'`](Basic-Types/Linked-Lists/#List___mapM___)
+  101. `map­M`
+    1. [`Array.map­M`](Basic-Types/Arrays/#Array___mapM)
+  102. `map­M`
+    1. [`List.map­M`](Basic-Types/Linked-Lists/#List___mapM)
+  103. `map­M`
+    1. [`Option.map­M`](Basic-Types/Optional-Values/#Option___mapM)
+  104. `map­M`
+    1. [`Std.Iter.map­M`](Iterators/Iterator-Combinators/#Std___Iter___mapM)
+  105. `map­M`
+    1. [`Std.IterM.map­M`](Iterators/Iterator-Combinators/#Std___IterM___mapM)
+  106. `map­Mono`
+    1. [`Array.map­Mono`](Basic-Types/Arrays/#Array___mapMono)
+  107. `map­Mono`
+    1. [`List.map­Mono`](Basic-Types/Linked-Lists/#List___mapMono)
+  108. `map­Mono­M`
+    1. [`Array.map­Mono­M`](Basic-Types/Arrays/#Array___mapMonoM)
+  109. `map­Mono­M`
+    1. [`List.map­Mono­M`](Basic-Types/Linked-Lists/#List___mapMonoM)
+  110. `map­Rev`
+    1. [`Functor.map­Rev`](Functors___-Monads-and--do--Notation/API-Reference/#Functor___mapRev)
+  111. `map­TR`
+    1. [`List.map­TR`](Basic-Types/Linked-Lists/#List___mapTR)
+  112. `map­Task`
+    1. [`BaseIO.map­Task`](IO/Tasks-and-Threads/#BaseIO___mapTask)
+  113. `map­Task`
+    1. [`EIO.map­Task`](IO/Tasks-and-Threads/#EIO___mapTask)
+  114. `map­Task`
+    1. [`IO.map­Task`](IO/Tasks-and-Threads/#IO___mapTask)
+  115. `map­Tasks`
+    1. [`BaseIO.map­Tasks`](IO/Tasks-and-Threads/#BaseIO___mapTasks)
+  116. `map­Tasks`
+    1. [`EIO.map­Tasks`](IO/Tasks-and-Threads/#EIO___mapTasks)
+  117. `map­Tasks`
+    1. [`IO.map­Tasks`](IO/Tasks-and-Threads/#IO___mapTasks)
+  118. `map­With­Postcondition`
+    1. [`Std.Iter.map­With­Postcondition`](Iterators/Iterator-Combinators/#Std___Iter___mapWithPostcondition)
+  119. `map­With­Postcondition`
+    1. [`Std.IterM.map­With­Postcondition`](Iterators/Iterator-Combinators/#Std___IterM___mapWithPostcondition)
+  120. `map_const`
+    1. [`LawfulFunctor.map_const` (class method)](Functors___-Monads-and--do--Notation/Laws/#LawfulFunctor___mk)
+  121. `map_pure`
+    1. [`LawfulApplicative.seq­Left_eq` (class method)](Functors___-Monads-and--do--Notation/Laws/#LawfulApplicative___mk)
+  122. [`massumption`](Tactic-Proofs/Tactic-Reference/#massumption)
+  123. [`match`](Tactic-Proofs/The-Tactic-Language/#match)
+  124. `match`
+    1. [`pp.match`](Elaboration-and-Compilation/#pp___match)
+  125. `max!`
+    1. [`Std.TreeSet.max!`](Basic-Types/Maps-and-Sets/#Std___TreeSet___max___)
+  126. `max`
+    1. [`Max.max` (class method)](Type-Classes/Basic-Classes/#Max___mk)
+  127. `max`
+    1. [`Nat.max`](Basic-Types/Natural-Numbers/#Nat___max)
+  128. `max`
+    1. [`Option.max`](Basic-Types/Optional-Values/#Option___max)
+  129. `max`
+    1. [`Std.TreeSet.max`](Basic-Types/Maps-and-Sets/#Std___TreeSet___max)
+  130. `max`
+    1. [`Task.Priority.max`](IO/Tasks-and-Threads/#Task___Priority___max)
+  131. `max?`
+    1. [`List.max?`](Basic-Types/Linked-Lists/#List___max___)
+  132. `max?`
+    1. [`Std.TreeSet.max?`](Basic-Types/Maps-and-Sets/#Std___TreeSet___max___-next)
+  133. `max­D`
+    1. [`Std.TreeSet.max­D`](Basic-Types/Maps-and-Sets/#Std___TreeSet___maxD)
+  134. `max­Discharge­Depth`
+    1. [`Lean.Meta.Simp.Config.max­Discharge­Depth` (structure field)](The-Simplifier/Configuring-Simplification/#Lean___Meta___Simp___Config___mk)
+  135. `max­Entry!`
+    1. [`Std.TreeMap.max­Entry!`](Basic-Types/Maps-and-Sets/#Std___TreeMap___maxEntry___)
+  136. `max­Entry`
+    1. [`Std.TreeMap.max­Entry`](Basic-Types/Maps-and-Sets/#Std___TreeMap___maxEntry)
+  137. `max­Entry?`
+    1. [`Std.TreeMap.max­Entry?`](Basic-Types/Maps-and-Sets/#Std___TreeMap___maxEntry___-next)
+  138. `max­Entry­D`
+    1. [`Std.TreeMap.max­Entry­D`](Basic-Types/Maps-and-Sets/#Std___TreeMap___maxEntryD)
+  139. `max­Heartbeats`
+    1. [`synthInstance.max­Heartbeats`](Type-Classes/Instance-Synthesis/#synthInstance___maxHeartbeats)
+  140. `max­Key!`
+    1. [`Std.TreeMap.max­Key!`](Basic-Types/Maps-and-Sets/#Std___TreeMap___maxKey___)
+  141. `max­Key`
+    1. [`Std.TreeMap.max­Key`](Basic-Types/Maps-and-Sets/#Std___TreeMap___maxKey)
+  142. `max­Key?`
+    1. [`Std.TreeMap.max­Key?`](Basic-Types/Maps-and-Sets/#Std___TreeMap___maxKey___-next)
+  143. `max­Key­D`
+    1. [`Std.TreeMap.max­Key­D`](Basic-Types/Maps-and-Sets/#Std___TreeMap___maxKeyD)
+  144. [`max­Of­Le`](Type-Classes/Basic-Classes/#maxOfLe)
+  145. `max­Size`
+    1. [`synthInstance.max­Size`](Type-Classes/Instance-Synthesis/#synthInstance___maxSize)
+  146. `max­Steps`
+    1. [`Lean.Meta.Simp.Config.max­Steps` (structure field)](The-Simplifier/Configuring-Simplification/#Lean___Meta___Simp___Config___mk)
+  147. `max­Steps`
+    1. [`pp.max­Steps`](Tactic-Proofs/Reading-Proof-States/#pp___maxSteps)
+  148. `max­Suggestions`
+    1. [`Lean.Meta.Simp.Config.max­Suggestions` (structure field)](The-Simplifier/Configuring-Simplification/#Lean___Meta___Simp___Config___mk)
+  149. `max­Value`
+    1. [`ISize.max­Value`](Basic-Types/Fixed-Precision-Integers/#ISize___maxValue)
+  150. `max­Value`
+    1. [`Int16.max­Value`](Basic-Types/Fixed-Precision-Integers/#Int16___maxValue)
+  151. `max­Value`
+    1. [`Int32.max­Value`](Basic-Types/Fixed-Precision-Integers/#Int32___maxValue)
+  152. `max­Value`
+    1. [`Int64.max­Value`](Basic-Types/Fixed-Precision-Integers/#Int64___maxValue)
+  153. `max­Value`
+    1. [`Int8.max­Value`](Basic-Types/Fixed-Precision-Integers/#Int8___maxValue)
+  154. `may­Throw`
+    1. [`Std.Do.PostCond.may­Throw`](The--mvcgen--tactic/Predicate-Transformers/#Std___Do___PostCond___mayThrow)
+  155. [`mcases`](Tactic-Proofs/Tactic-Reference/#mcases)
+  156. [`mclear`](Tactic-Proofs/Tactic-Reference/#mclear)
+  157. [`mconstructor`](Tactic-Proofs/Tactic-Reference/#mconstructor)
+  158. [`mdup`](Tactic-Proofs/Tactic-Reference/#mdup)
+  159. `memoize`
+    1. [`Lean.Meta.Simp.Config.memoize` (structure field)](The-Simplifier/Configuring-Simplification/#Lean___Meta___Simp___Config___mk)
+  160. `merge`
+    1. [`List.merge`](Basic-Types/Linked-Lists/#List___merge)
+  161. `merge`
+    1. [`Option.merge`](Basic-Types/Optional-Values/#Option___merge)
+  162. `merge`
+    1. [`Std.TreeSet.merge`](Basic-Types/Maps-and-Sets/#Std___TreeSet___merge)
+  163. `merge­Sort`
+    1. [`List.merge­Sort`](Basic-Types/Linked-Lists/#List___mergeSort)
+  164. `merge­With`
+    1. [`Std.TreeMap.merge­With`](Basic-Types/Maps-and-Sets/#Std___TreeMap___mergeWith)
+  165. `metadata`
+    1. [`System.FilePath.metadata`](IO/Files___-File-Handles___-and-Streams/#System___FilePath___metadata)
+  166. [`mexact`](Tactic-Proofs/Tactic-Reference/#mexact)
+  167. [`mexfalso`](Tactic-Proofs/Tactic-Reference/#mexfalso)
+  168. [`mexists`](Tactic-Proofs/Tactic-Reference/#mexists)
+  169. [`mframe`](Tactic-Proofs/Tactic-Reference/#mframe)
+  170. [`mhave`](Tactic-Proofs/Tactic-Reference/#mhave)
+  171. `min!`
+    1. [`Std.TreeSet.min!`](Basic-Types/Maps-and-Sets/#Std___TreeSet___min___)
+  172. `min`
+    1. [`Min.min` (class method)](Type-Classes/Basic-Classes/#Min___mk)
+  173. `min`
+    1. [`Nat.min`](Basic-Types/Natural-Numbers/#Nat___min)
+  174. `min`
+    1. [`Option.min`](Basic-Types/Optional-Values/#Option___min)
+  175. `min`
+    1. [`Std.TreeSet.min`](Basic-Types/Maps-and-Sets/#Std___TreeSet___min)
+  176. `min`
+    1. [`String.Pos.Raw.min`](Basic-Types/Strings/#String___Pos___Raw___min)
+  177. `min?`
+    1. [`List.min?`](Basic-Types/Linked-Lists/#List___min___)
+  178. `min?`
+    1. [`Std.TreeSet.min?`](Basic-Types/Maps-and-Sets/#Std___TreeSet___min___-next)
+  179. `min­D`
+    1. [`Std.TreeSet.min­D`](Basic-Types/Maps-and-Sets/#Std___TreeSet___minD)
+  180. `min­Entry!`
+    1. [`Std.TreeMap.min­Entry!`](Basic-Types/Maps-and-Sets/#Std___TreeMap___minEntry___)
+  181. `min­Entry`
+    1. [`Std.TreeMap.min­Entry`](Basic-Types/Maps-and-Sets/#Std___TreeMap___minEntry)
+  182. `min­Entry?`
+    1. [`Std.TreeMap.min­Entry?`](Basic-Types/Maps-and-Sets/#Std___TreeMap___minEntry___-next)
+  183. `min­Entry­D`
+    1. [`Std.TreeMap.min­Entry­D`](Basic-Types/Maps-and-Sets/#Std___TreeMap___minEntryD)
+  184. `min­Key!`
+    1. [`Std.TreeMap.min­Key!`](Basic-Types/Maps-and-Sets/#Std___TreeMap___minKey___)
+  185. `min­Key`
+    1. [`Std.TreeMap.min­Key`](Basic-Types/Maps-and-Sets/#Std___TreeMap___minKey)
+  186. `min­Key?`
+    1. [`Std.TreeMap.min­Key?`](Basic-Types/Maps-and-Sets/#Std___TreeMap___minKey___-next)
+  187. `min­Key­D`
+    1. [`Std.TreeMap.min­Key­D`](Basic-Types/Maps-and-Sets/#Std___TreeMap___minKeyD)
+  188. [`min­Of­Le`](Type-Classes/Basic-Classes/#minOfLe)
+  189. `min­Value`
+    1. [`ISize.min­Value`](Basic-Types/Fixed-Precision-Integers/#ISize___minValue)
+  190. `min­Value`
+    1. [`Int16.min­Value`](Basic-Types/Fixed-Precision-Integers/#Int16___minValue)
+  191. `min­Value`
+    1. [`Int32.min­Value`](Basic-Types/Fixed-Precision-Integers/#Int32___minValue)
+  192. `min­Value`
+    1. [`Int64.min­Value`](Basic-Types/Fixed-Precision-Integers/#Int64___minValue)
+  193. `min­Value`
+    1. [`Int8.min­Value`](Basic-Types/Fixed-Precision-Integers/#Int8___minValue)
+  194. [`mintro`](Tactic-Proofs/Tactic-Reference/#mintro)
+  195. [`mix­Hash`](Type-Classes/Basic-Classes/#mixHash)
+  196. `mk'`
+    1. [`LawfulMonad.mk'`](Functors___-Monads-and--do--Notation/Laws/#LawfulMonad___mk___)
+  197. `mk'`
+    1. [`Lean.Grind.No­Nat­ZeroDivisors.mk'`](The--grind--tactic/Algebraic-Solver-_LPAR_Commutative-Rings___-Fields_RPAR_/#Lean___Grind___NoNatZeroDivisors___mk___)
+  198. `mk'`
+    1. [`Quotient.mk'`](The-Type-System/Quotients/#Quotient___mk___)
+  199. `mk`
+    1. [`ExceptT.mk`](Functors___-Monads-and--do--Notation/Varieties-of-Monads/#ExceptT___mk)
+  200. `mk`
+    1. [`IO.FS.Handle.mk`](IO/Files___-File-Handles___-and-Streams/#IO___FS___Handle___mk)
+  201. `mk`
+    1. [`OptionT.mk`](Functors___-Monads-and--do--Notation/Varieties-of-Monads/#OptionT___mk)
+  202. `mk`
+    1. [`Quot.mk`](The-Type-System/Quotients/#Quot___mk)
+  203. `mk`
+    1. [`Quotient.mk`](The-Type-System/Quotients/#Quotient___mk)
+  204. `mk`
+    1. [`Squash.mk`](The-Type-System/Quotients/#Squash___mk)
+  205. `mk`
+    1. [`Std.IterM.mk`](Iterators/Iterator-Combinators/#Std___IterM___mk-next)
+  206. `mk­App`
+    1. [`Lean.Syntax.mk­App`](Notations-and-Macros/Defining-New-Syntax/#Lean___Syntax___mkApp)
+  207. `mk­CApp`
+    1. [`Lean.Syntax.mk­CApp`](Notations-and-Macros/Defining-New-Syntax/#Lean___Syntax___mkCApp)
+  208. `mk­CIdent`
+    1. [`Lean.mk­CIdent`](Notations-and-Macros/Defining-New-Syntax/#Lean___mkCIdent)
+  209. `mk­CIdent­From`
+    1. [`Lean.mk­CIdent­From`](Notations-and-Macros/Defining-New-Syntax/#Lean___mkCIdentFrom)
+  210. `mk­CIdent­From­Ref`
+    1. [`Lean.mk­CIdent­From­Ref`](Notations-and-Macros/Defining-New-Syntax/#Lean___mkCIdentFromRef)
+  211. `mk­Char­Lit`
+    1. [`Lean.Syntax.mk­Char­Lit`](Notations-and-Macros/Defining-New-Syntax/#Lean___Syntax___mkCharLit)
+  212. `mk­File­Path`
+    1. [`System.mk­File­Path`](IO/Files___-File-Handles___-and-Streams/#System___mkFilePath)
+  213. `mk­Group­Node`
+    1. [`Lean.mk­Group­Node`](Notations-and-Macros/Defining-New-Syntax/#Lean___mkGroupNode)
+  214. `mk­Hole`
+    1. [`Lean.mk­Hole`](Notations-and-Macros/Defining-New-Syntax/#Lean___mkHole)
+  215. `mk­Ident`
+    1. [`Lean.mk­Ident`](Notations-and-Macros/Defining-New-Syntax/#Lean___mkIdent)
+  216. `mk­Ident­From`
+    1. [`Lean.mk­Ident­From`](Notations-and-Macros/Defining-New-Syntax/#Lean___mkIdentFrom)
+  217. `mk­Ident­From­Ref`
+    1. [`Lean.mk­Ident­From­Ref`](Notations-and-Macros/Defining-New-Syntax/#Lean___mkIdentFromRef)
+  218. `mk­Iterator`
+    1. [`String.Legacy.mk­Iterator`](Basic-Types/Strings/#String___Legacy___mkIterator)
+  219. `mk­Lit`
+    1. [`Lean.Syntax.mk­Lit`](Notations-and-Macros/Defining-New-Syntax/#Lean___Syntax___mkLit)
+  220. `mk­Name­Lit`
+    1. [`Lean.Syntax.mk­Name­Lit`](Notations-and-Macros/Defining-New-Syntax/#Lean___Syntax___mkNameLit)
+  221. `mk­Nat­Lit`
+    1. [`Lean.Syntax.mk­Nat­Lit`](Notations-and-Macros/Defining-New-Syntax/#Lean___Syntax___mkNatLit)
+  222. `mk­Num­Lit`
+    1. [`Lean.Syntax.mk­Num­Lit`](Notations-and-Macros/Defining-New-Syntax/#Lean___Syntax___mkNumLit)
+  223. `mk­Optional­Node`
+    1. [`Lean.mk­Optional­Node`](Notations-and-Macros/Defining-New-Syntax/#Lean___mkOptionalNode)
+  224. `mk­Ref`
+    1. [`IO.mk­Ref`](IO/Mutable-References/#IO___mkRef)
+  225. `mk­Ref`
+    1. [`ST.mk­Ref`](IO/Mutable-References/#ST___mkRef)
+  226. `mk­Scientific­Lit`
+    1. [`Lean.Syntax.mk­Scientific­Lit`](Notations-and-Macros/Defining-New-Syntax/#Lean___Syntax___mkScientificLit)
+  227. `mk­Slice`
+    1. [`Std.Rcc.Sliceable.mk­Slice` (class method)](Basic-Types/Ranges/#Std___Rcc___Sliceable___mk)
+  228. `mk­Slice`
+    1. [`Std.Rci.Sliceable.mk­Slice` (class method)](Basic-Types/Ranges/#Std___Rci___Sliceable___mk)
+  229. `mk­Slice`
+    1. [`Std.Rco.Sliceable.mk­Slice` (class method)](Basic-Types/Ranges/#Std___Rco___Sliceable___mk)
+  230. `mk­Slice`
+    1. [`Std.Ric.Sliceable.mk­Slice` (class method)](Basic-Types/Ranges/#Std___Ric___Sliceable___mk)
+  231. `mk­Slice`
+    1. [`Std.Rii.Sliceable.mk­Slice` (class method)](Basic-Types/Ranges/#Std___Rii___Sliceable___mk)
+  232. `mk­Slice`
+    1. [`Std.Rio.Sliceable.mk­Slice` (class method)](Basic-Types/Ranges/#Std___Rio___Sliceable___mk)
+  233. `mk­Slice`
+    1. [`Std.Roc.Sliceable.mk­Slice` (class method)](Basic-Types/Ranges/#Std___Roc___Sliceable___mk)
+  234. `mk­Slice`
+    1. [`Std.Roi.Sliceable.mk­Slice` (class method)](Basic-Types/Ranges/#Std___Roi___Sliceable___mk)
+  235. `mk­Slice`
+    1. [`Std.Roo.Sliceable.mk­Slice` (class method)](Basic-Types/Ranges/#Std___Roo___Sliceable___mk)
+  236. [`mk­Std­Gen`](IO/Random-Numbers/#mkStdGen)
+  237. `mk­Str­Lit`
+    1. [`Lean.Syntax.mk­Str­Lit`](Notations-and-Macros/Defining-New-Syntax/#Lean___Syntax___mkStrLit)
+  238. [`mleave`](Tactic-Proofs/Tactic-Reference/#mleave)
+  239. [`mleft`](Tactic-Proofs/Tactic-Reference/#mleft)
+  240. `mod`
+    1. [`Fin.mod`](Basic-Types/Finite-Natural-Numbers/#Fin___mod)
+  241. `mod`
+    1. [`ISize.mod`](Basic-Types/Fixed-Precision-Integers/#ISize___mod)
+  242. `mod`
+    1. [`Int16.mod`](Basic-Types/Fixed-Precision-Integers/#Int16___mod)
+  243. `mod`
+    1. [`Int32.mod`](Basic-Types/Fixed-Precision-Integers/#Int32___mod)
+  244. `mod`
+    1. [`Int64.mod`](Basic-Types/Fixed-Precision-Integers/#Int64___mod)
+  245. `mod`
+    1. [`Int8.mod`](Basic-Types/Fixed-Precision-Integers/#Int8___mod)
+  246. `mod`
+    1. [`Mod.mod` (class method)](Type-Classes/Basic-Classes/#Mod___mk)
+  247. `mod`
+    1. [`Nat.mod`](Basic-Types/Natural-Numbers/#Nat___mod)
+  248. `mod`
+    1. [`UInt16.mod`](Basic-Types/Fixed-Precision-Integers/#UInt16___mod)
+  249. `mod`
+    1. [`UInt32.mod`](Basic-Types/Fixed-Precision-Integers/#UInt32___mod)
+  250. `mod`
+    1. [`UInt64.mod`](Basic-Types/Fixed-Precision-Integers/#UInt64___mod)
+  251. `mod`
+    1. [`UInt8.mod`](Basic-Types/Fixed-Precision-Integers/#UInt8___mod)
+  252. `mod`
+    1. [`USize.mod`](Basic-Types/Fixed-Precision-Integers/#USize___mod)
+  253. `mod­Core`
+    1. [`Nat.mod­Core`](Basic-Types/Natural-Numbers/#Nat___modCore)
+  254. `modified`
+    1. [`IO.FS.Metadata.modified` (structure field)](IO/Files___-File-Handles___-and-Streams/#IO___FS___Metadata___mk)
+  255. [`modify`](Functors___-Monads-and--do--Notation/Varieties-of-Monads/#modify)
+  256. `modify`
+    1. [`Array.modify`](Basic-Types/Arrays/#Array___modify)
+  257. `modify`
+    1. [`List.modify`](Basic-Types/Linked-Lists/#List___modify)
+  258. `modify`
+    1. [`ST.Ref.modify`](IO/Mutable-References/#ST___Ref___modify)
+  259. `modify`
+    1. [`Std.DHashMap.modify`](Basic-Types/Maps-and-Sets/#Std___DHashMap___modify)
+  260. `modify`
+    1. [`Std.DTreeMap.modify`](Basic-Types/Maps-and-Sets/#Std___DTreeMap___modify)
+  261. `modify`
+    1. [`Std.Ext­DHashMap.modify`](Basic-Types/Maps-and-Sets/#Std___ExtDHashMap___modify)
+  262. `modify`
+    1. [`Std.Ext­HashMap.modify`](Basic-Types/Maps-and-Sets/#Std___ExtHashMap___modify)
+  263. `modify`
+    1. [`Std.HashMap.modify`](Basic-Types/Maps-and-Sets/#Std___HashMap___modify)
+  264. `modify`
+    1. [`Std.TreeMap.modify`](Basic-Types/Maps-and-Sets/#Std___TreeMap___modify)
+  265. `modify`
+    1. [`String.Pos.Raw.modify`](Basic-Types/Strings/#String___Pos___Raw___modify)
+  266. `modify`
+    1. [`String.Pos.modify`](Basic-Types/Strings/#String___Pos___modify)
+  267. `modify­Get`
+    1. [`EStateM.modify­Get`](Functors___-Monads-and--do--Notation/Varieties-of-Monads/#EStateM___modifyGet)
+  268. `modify­Get`
+    1. [`MonadState.modify­Get`](Functors___-Monads-and--do--Notation/Varieties-of-Monads/#MonadState___modifyGet)
+  269. `modify­Get`
+    1. [`MonadState.modify­Get` (class method)](Functors___-Monads-and--do--Notation/Varieties-of-Monads/#MonadState___mk)
+  270. `modify­Get`
+    1. [`Monad­StateOf.modify­Get` (class method)](Functors___-Monads-and--do--Notation/Varieties-of-Monads/#MonadStateOf___mk)
+  271. `modify­Get`
+    1. [`ST.Ref.modify­Get`](IO/Mutable-References/#ST___Ref___modifyGet)
+  272. `modify­Get`
+    1. [`State­RefT'.modify­Get`](Functors___-Monads-and--do--Notation/Varieties-of-Monads/#StateRefT______modifyGet)
+  273. `modify­Get`
+    1. [`StateT.modify­Get`](Functors___-Monads-and--do--Notation/Varieties-of-Monads/#StateT___modifyGet)
+  274. [`modify­Get­The`](Functors___-Monads-and--do--Notation/Varieties-of-Monads/#modifyGetThe)
+  275. `modify­Head`
+    1. [`List.modify­Head`](Basic-Types/Linked-Lists/#List___modifyHead)
+  276. `modify­M`
+    1. [`Array.modify­M`](Basic-Types/Arrays/#Array___modifyM)
+  277. `modify­Op`
+    1. [`Array.modify­Op`](Basic-Types/Arrays/#Array___modifyOp)
+  278. `modify­TR`
+    1. [`List.modify­TR`](Basic-Types/Linked-Lists/#List___modifyTR)
+  279. `modify­Tail­Idx`
+    1. [`List.modify­Tail­Idx`](Basic-Types/Linked-Lists/#List___modifyTailIdx)
+  280. [`modify­The`](Functors___-Monads-and--do--Notation/Varieties-of-Monads/#modifyThe)
+  281. `modn`
+    1. [`Fin.modn`](Basic-Types/Finite-Natural-Numbers/#Fin___modn)
+  282. `module`
+    1. [`experimental.module`](Source-Files-and-Modules/#experimental___module)
+  283. `monad­Eval`
+    1. [`MonadEval.monad­Eval` (class method)](Interacting-with-Lean/#MonadEval___mk)
+  284. `monad­Eval`
+    1. [`Monad­EvalT.monad­Eval` (class method)](Interacting-with-Lean/#MonadEvalT___mk)
+  285. `monad­Lift`
+    1. [`MonadLift.monad­Lift` (class method)](Functors___-Monads-and--do--Notation/Lifting-Monads/#MonadLift___mk)
+  286. `monad­Lift`
+    1. [`Monad­LiftT.monad­Lift` (class method)](Functors___-Monads-and--do--Notation/Lifting-Monads/#MonadLiftT___mk)
+  287. `monad­Map`
+    1. [`MonadFunctor.monad­Map` (class method)](Functors___-Monads-and--do--Notation/Lifting-Monads/#MonadFunctor___mk)
+  288. `monad­Map`
+    1. [`Monad­FunctorT.monad­Map` (class method)](Functors___-Monads-and--do--Notation/Lifting-Monads/#MonadFunctorT___mk)
+  289. `mono­Ms­Now`
+    1. [`IO.mono­Ms­Now`](IO/Timing/#IO___monoMsNow)
+  290. `mono­Nanos­Now`
+    1. [`IO.mono­Nanos­Now`](IO/Timing/#IO___monoNanosNow)
+  291. `monotone`
+    1. [`Lean.Order.monotone`](Definitions/Recursive-Definitions/#Lean___Order___monotone)
+  292. `mp`
+    1. [`Eq.mp`](Basic-Propositions/Propositional-Equality/#Eq___mp)
+  293. `mp`
+    1. [`Iff.mp` (structure field)](Basic-Propositions/Logical-Connectives/#Iff___intro)
+  294. `mp`
+    1. [`Std.Do.Triple.mp`](The--mvcgen--tactic/Predicate-Transformers/#Std___Do___Triple___mp)
+  295. `mpr`
+    1. [`Eq.mpr`](Basic-Propositions/Propositional-Equality/#Eq___mpr)
+  296. `mpr`
+    1. [`Iff.mpr` (structure field)](Basic-Propositions/Logical-Connectives/#Iff___intro)
+  297. [`mpure`](Tactic-Proofs/Tactic-Reference/#mpure)
+  298. [`mpure_intro`](Tactic-Proofs/Tactic-Reference/#mpure_intro)
+  299. [`mrefine`](Tactic-Proofs/Tactic-Reference/#mrefine)
+  300. [`mrename_i`](Tactic-Proofs/Tactic-Reference/#mrename_i)
+  301. [`mreplace`](Tactic-Proofs/Tactic-Reference/#mreplace)
+  302. [`mright`](Tactic-Proofs/Tactic-Reference/#mright)
+  303. `msb`
+    1. [`BitVec.msb`](Basic-Types/Bitvectors/#BitVec___msb)
+  304. [`mspec`](Tactic-Proofs/Tactic-Reference/#mspec)
+  305. [`mspecialize`](Tactic-Proofs/Tactic-Reference/#mspecialize)
+  306. [`mspecialize_pure`](Tactic-Proofs/Tactic-Reference/#mspecialize_pure)
+  307. [`mstart`](Tactic-Proofs/Tactic-Reference/#mstart)
+  308. [`mstop`](Tactic-Proofs/Tactic-Reference/#mstop)
+  309. `mul`
+    1. [`BitVec.mul`](Basic-Types/Bitvectors/#BitVec___mul)
+  310. `mul`
+    1. [`Fin.mul`](Basic-Types/Finite-Natural-Numbers/#Fin___mul)
+  311. `mul`
+    1. [`Float.mul`](Basic-Types/Floating-Point-Numbers/#Float___mul)
+  312. `mul`
+    1. [`Float32.mul`](Basic-Types/Floating-Point-Numbers/#Float32___mul)
+  313. `mul`
+    1. [`ISize.mul`](Basic-Types/Fixed-Precision-Integers/#ISize___mul)
+  314. `mul`
+    1. [`Int.mul`](Basic-Types/Integers/#Int___mul)
+  315. `mul`
+    1. [`Int16.mul`](Basic-Types/Fixed-Precision-Integers/#Int16___mul)
+  316. `mul`
+    1. [`Int32.mul`](Basic-Types/Fixed-Precision-Integers/#Int32___mul)
+  317. `mul`
+    1. [`Int64.mul`](Basic-Types/Fixed-Precision-Integers/#Int64___mul)
+  318. `mul`
+    1. [`Int8.mul`](Basic-Types/Fixed-Precision-Integers/#Int8___mul)
+  319. `mul`
+    1. [`Mul.mul` (class method)](Type-Classes/Basic-Classes/#Mul___mk)
+  320. `mul`
+    1. [`Nat.mul`](Basic-Types/Natural-Numbers/#Nat___mul)
+  321. `mul`
+    1. [`UInt16.mul`](Basic-Types/Fixed-Precision-Integers/#UInt16___mul)
+  322. `mul`
+    1. [`UInt32.mul`](Basic-Types/Fixed-Precision-Integers/#UInt32___mul)
+  323. `mul`
+    1. [`UInt64.mul`](Basic-Types/Fixed-Precision-Integers/#UInt64___mul)
+  324. `mul`
+    1. [`UInt8.mul`](Basic-Types/Fixed-Precision-Integers/#UInt8___mul)
+  325. `mul`
+    1. [`USize.mul`](Basic-Types/Fixed-Precision-Integers/#USize___mul)
+  326. `mul­Rec`
+    1. [`BitVec.mul­Rec`](Basic-Types/Bitvectors/#BitVec___mulRec)
+  327. `mul_assoc`
+    1. [`Lean.Grind.Semiring.add_comm` (class method)](The--grind--tactic/Algebraic-Solver-_LPAR_Commutative-Rings___-Fields_RPAR_/#Lean___Grind___Semiring___mk)
+  328. `mul_comm`
+    1. `[anonymous]` (class method) [(0)](The--grind--tactic/Algebraic-Solver-_LPAR_Commutative-Rings___-Fields_RPAR_/#Lean___Grind___CommSemiring___mk) [(1)](The--grind--tactic/Algebraic-Solver-_LPAR_Commutative-Rings___-Fields_RPAR_/#Lean___Grind___CommRing___mk)
+  329. `mul_inv_cancel`
+    1. [`[anonymous]` (class method)](The--grind--tactic/Algebraic-Solver-_LPAR_Commutative-Rings___-Fields_RPAR_/#Lean___Grind___Field___mk)
+  330. `mul_lt_mul_of_pos_left`
+    1. [`Lean.Grind.OrderedRing.zero_lt_one` (class method)](The--grind--tactic/Linear-Arithmetic-Solver/#Lean___Grind___OrderedRing___mk)
+  331. `mul_lt_mul_of_pos_right`
+    1. [`Lean.Grind.OrderedRing.mul_lt_mul_of_pos_left` (class method)](The--grind--tactic/Linear-Arithmetic-Solver/#Lean___Grind___OrderedRing___mk)
+  332. `mul_one`
+    1. [`Lean.Grind.Semiring.add_assoc` (class method)](The--grind--tactic/Algebraic-Solver-_LPAR_Commutative-Rings___-Fields_RPAR_/#Lean___Grind___Semiring___mk)
+  333. `mul_zero`
+    1. [`Lean.Grind.Semiring.right_distrib` (class method)](The--grind--tactic/Algebraic-Solver-_LPAR_Commutative-Rings___-Fields_RPAR_/#Lean___Grind___Semiring___mk)
+  334. `mvars`
+    1. [`pp.mvars`](Tactic-Proofs/Reading-Proof-States/#pp___mvars)
+  335. [`mvcgen`](Tactic-Proofs/Tactic-Reference/#mvcgen)
+
+
+##  N
+  1. `Name­Lit`
+    1. [`Lean.Syntax.Name­Lit`](Notations-and-Macros/Defining-New-Syntax/#Lean___Syntax___NameLit)
+  2. [`Nat`](Basic-Types/Natural-Numbers/#Nat___zero)
+  3. [`Nat.add`](Basic-Types/Natural-Numbers/#Nat___add)
+  4. [`Nat.all`](Basic-Types/Natural-Numbers/#Nat___all)
+  5. [`Nat.all­M`](Basic-Types/Natural-Numbers/#Nat___allM)
+  6. [`Nat.all­TR`](Basic-Types/Natural-Numbers/#Nat___allTR)
+  7. [`Nat.any`](Basic-Types/Natural-Numbers/#Nat___any)
+  8. [`Nat.any­M`](Basic-Types/Natural-Numbers/#Nat___anyM)
+  9. [`Nat.any­TR`](Basic-Types/Natural-Numbers/#Nat___anyTR)
+  10. [`Nat.beq`](Basic-Types/Natural-Numbers/#Nat___beq)
+  11. [`Nat.bitwise`](Basic-Types/Natural-Numbers/#Nat___bitwise)
+  12. [`Nat.ble`](Basic-Types/Natural-Numbers/#Nat___ble)
+  13. [`Nat.blt`](Basic-Types/Natural-Numbers/#Nat___blt)
+  14. [`Nat.case­Strong­Rec­On`](Basic-Types/Natural-Numbers/#Nat___caseStrongRecOn)
+  15. [`Nat.cases­Aux­On`](Basic-Types/Natural-Numbers/#Nat___casesAuxOn)
+  16. [`Nat.cast`](Coercions/Coercing-Between-Types/#Nat___cast)
+  17. [`Nat.dec­Eq`](Basic-Types/Natural-Numbers/#Nat___decEq)
+  18. [`Nat.dec­Le`](Basic-Types/Natural-Numbers/#Nat___decLe)
+  19. [`Nat.dec­Lt`](Basic-Types/Natural-Numbers/#Nat___decLt)
+  20. [`Nat.digit­Char`](Basic-Types/Natural-Numbers/#Nat___digitChar)
+  21. [`Nat.div`](Basic-Types/Natural-Numbers/#Nat___div)
+  22. [`Nat.div.induction­On`](Basic-Types/Natural-Numbers/#Nat___div___inductionOn)
+  23. [`Nat.div2Induction`](Basic-Types/Natural-Numbers/#Nat___div2Induction)
+  24. [`Nat.fold`](Basic-Types/Natural-Numbers/#Nat___fold)
+  25. [`Nat.fold­M`](Basic-Types/Natural-Numbers/#Nat___foldM)
+  26. [`Nat.fold­Rev`](Basic-Types/Natural-Numbers/#Nat___foldRev)
+  27. [`Nat.fold­Rev­M`](Basic-Types/Natural-Numbers/#Nat___foldRevM)
+  28. [`Nat.fold­TR`](Basic-Types/Natural-Numbers/#Nat___foldTR)
+  29. [`Nat.for­M`](Basic-Types/Natural-Numbers/#Nat___forM)
+  30. [`Nat.for­Rev­M`](Basic-Types/Natural-Numbers/#Nat___forRevM)
+  31. [`Nat.gcd`](Basic-Types/Natural-Numbers/#Nat___gcd)
+  32. [`Nat.is­Power­Of­Two`](Basic-Types/Natural-Numbers/#Nat___isPowerOfTwo)
+  33. [`Nat.is­Valid­Char`](Basic-Types/Natural-Numbers/#Nat___isValidChar)
+  34. [`Nat.land`](Basic-Types/Natural-Numbers/#Nat___land)
+  35. [`Nat.lcm`](Basic-Types/Natural-Numbers/#Nat___lcm)
+  36. [`Nat.le`](Basic-Types/Natural-Numbers/#Nat___le___refl)
+  37. `Nat.le.refl`
+    1. [Constructor of `Nat.le`](Basic-Types/Natural-Numbers/#Nat___le___refl)
+  38. `Nat.le.step`
+    1. [Constructor of `Nat.le`](Basic-Types/Natural-Numbers/#Nat___le___refl)
+  39. [`Nat.log2`](Basic-Types/Natural-Numbers/#Nat___log2)
+  40. [`Nat.lor`](Basic-Types/Natural-Numbers/#Nat___lor)
+  41. [`Nat.lt`](Basic-Types/Natural-Numbers/#Nat___lt)
+  42. [`Nat.max`](Basic-Types/Natural-Numbers/#Nat___max)
+  43. [`Nat.min`](Basic-Types/Natural-Numbers/#Nat___min)
+  44. [`Nat.mod`](Basic-Types/Natural-Numbers/#Nat___mod)
+  45. [`Nat.mod.induction­On`](Basic-Types/Natural-Numbers/#Nat___mod___inductionOn)
+  46. [`Nat.mod­Core`](Basic-Types/Natural-Numbers/#Nat___modCore)
+  47. [`Nat.mul`](Basic-Types/Natural-Numbers/#Nat___mul)
+  48. [`Nat.next­Power­Of­Two`](Basic-Types/Natural-Numbers/#Nat___nextPowerOfTwo)
+  49. [`Nat.pow`](Basic-Types/Natural-Numbers/#Nat___pow)
+  50. [`Nat.pred`](Basic-Types/Natural-Numbers/#Nat___pred)
+  51. [`Nat.rec­Aux`](Basic-Types/Natural-Numbers/#Nat___recAux)
+  52. [`Nat.repeat`](Basic-Types/Natural-Numbers/#Nat___repeat)
+  53. [`Nat.repeat­TR`](Basic-Types/Natural-Numbers/#Nat___repeatTR)
+  54. [`Nat.repr`](Basic-Types/Natural-Numbers/#Nat___repr)
+  55. [`Nat.shift­Left`](Basic-Types/Natural-Numbers/#Nat___shiftLeft)
+  56. [`Nat.shift­Right`](Basic-Types/Natural-Numbers/#Nat___shiftRight)
+  57. [`Nat.strong­Rec­On`](Basic-Types/Natural-Numbers/#Nat___strongRecOn)
+  58. [`Nat.sub`](Basic-Types/Natural-Numbers/#Nat___sub)
+  59. [`Nat.sub­Digit­Char`](Basic-Types/Natural-Numbers/#Nat___subDigitChar)
+  60. `Nat.succ`
+    1. [Constructor of `Nat`](Basic-Types/Natural-Numbers/#Nat___zero)
+  61. [`Nat.super­Digit­Char`](Basic-Types/Natural-Numbers/#Nat___superDigitChar)
+  62. [`Nat.test­Bit`](Basic-Types/Natural-Numbers/#Nat___testBit)
+  63. [`Nat.to­Digits`](Basic-Types/Natural-Numbers/#Nat___toDigits)
+  64. [`Nat.to­Float`](Basic-Types/Natural-Numbers/#Nat___toFloat)
+  65. [`Nat.to­Float32`](Basic-Types/Natural-Numbers/#Nat___toFloat32)
+  66. [`Nat.to­ISize`](Basic-Types/Natural-Numbers/#Nat___toISize)
+  67. [`Nat.to­Int16`](Basic-Types/Natural-Numbers/#Nat___toInt16)
+  68. [`Nat.to­Int32`](Basic-Types/Natural-Numbers/#Nat___toInt32)
+  69. [`Nat.to­Int64`](Basic-Types/Natural-Numbers/#Nat___toInt64)
+  70. [`Nat.to­Int8`](Basic-Types/Natural-Numbers/#Nat___toInt8)
+  71. [`Nat.to­Sub­Digits`](Basic-Types/Natural-Numbers/#Nat___toSubDigits)
+  72. [`Nat.to­Subscript­String`](Basic-Types/Natural-Numbers/#Nat___toSubscriptString)
+  73. [`Nat.to­Super­Digits`](Basic-Types/Natural-Numbers/#Nat___toSuperDigits)
+  74. [`Nat.to­Superscript­String`](Basic-Types/Natural-Numbers/#Nat___toSuperscriptString)
+  75. [`Nat.to­UInt16`](Basic-Types/Natural-Numbers/#Nat___toUInt16)
+  76. [`Nat.to­UInt32`](Basic-Types/Natural-Numbers/#Nat___toUInt32)
+  77. [`Nat.to­UInt64`](Basic-Types/Natural-Numbers/#Nat___toUInt64)
+  78. [`Nat.to­UInt8`](Basic-Types/Natural-Numbers/#Nat___toUInt8)
+  79. [`Nat.to­USize`](Basic-Types/Natural-Numbers/#Nat___toUSize)
+  80. [`Nat.xor`](Basic-Types/Natural-Numbers/#Nat___xor)
+  81. `Nat.zero`
+    1. [Constructor of `Nat`](Basic-Types/Natural-Numbers/#Nat___zero)
+  82. [`Nat­Cast`](Coercions/Coercing-Between-Types/#NatCast___mk)
+  83. `NatCast.mk`
+    1. [Instance constructor of `Nat­Cast`](Coercions/Coercing-Between-Types/#NatCast___mk)
+  84. `Nat­Module`
+    1. [`Lean.Grind.Nat­Module`](The--grind--tactic/Linear-Arithmetic-Solver/#Lean___Grind___NatModule___mk)
+  85. [`Nat­Pow`](Type-Classes/Basic-Classes/#NatPow___mk)
+  86. `NatPow.mk`
+    1. [Instance constructor of `Nat­Pow`](Type-Classes/Basic-Classes/#NatPow___mk)
+  87. [`Ne­Zero`](Type-Classes/Basic-Classes/#NeZero___mk)
+  88. `NeZero.mk`
+    1. [Instance constructor of `Ne­Zero`](Type-Classes/Basic-Classes/#NeZero___mk)
+  89. [`Neg`](Type-Classes/Basic-Classes/#Neg___mk)
+  90. `Neg.mk`
+    1. [Instance constructor of `Neg`](Type-Classes/Basic-Classes/#Neg___mk)
+  91. `New­Goals`
+    1. [`Lean.Meta.Rewrite.New­Goals`](Tactic-Proofs/Tactic-Reference/#Lean___Meta___Rewrite___NewGoals)
+  92. `No­Nat­Zero­Divisors`
+    1. [`Lean.Grind.No­Nat­Zero­Divisors`](The--grind--tactic/Algebraic-Solver-_LPAR_Commutative-Rings___-Fields_RPAR_/#Lean___Grind___NoNatZeroDivisors___mk)
+  93. `Nodup`
+    1. [`List.Nodup`](Basic-Types/Linked-Lists/#List___Nodup)
+  94. [`Nonempty`](Type-Classes/Basic-Classes/#Nonempty___intro)
+  95. `Nonempty.intro`
+    1. [Constructor of `Nonempty`](Type-Classes/Basic-Classes/#Nonempty___intro)
+  96. [`Not`](Basic-Propositions/Logical-Connectives/#Not)
+  97. [`Not.elim`](Basic-Propositions/Logical-Connectives/#Not___elim)
+  98. `Num­Lit`
+    1. [`Lean.Syntax.Num­Lit`](Notations-and-Macros/Defining-New-Syntax/#Lean___Syntax___NumLit)
+  99. `name`
+    1. [`Lean.LeanOption.name` (structure field)](Build-Tools-and-Distribution/Lake/#Lean___LeanOption___mk)
+  100. `name­Lit­Kind`
+    1. [`Lean.name­Lit­Kind`](Notations-and-Macros/Defining-New-Syntax/#Lean___nameLitKind)
+  101. namespace
+    1. [of inductive type](The-Type-System/Inductive-Types/#--index--next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next)
+  102. `nat­Abs`
+    1. [`Int.nat­Abs`](Basic-Types/Integers/#Int___natAbs)
+  103. `nat­Add`
+    1. [`Fin.nat­Add`](Basic-Types/Finite-Natural-Numbers/#Fin___natAdd)
+  104. `nat­Cast`
+    1. [`Lean.Grind.Semiring.to­Mul` (class method)](The--grind--tactic/Algebraic-Solver-_LPAR_Commutative-Rings___-Fields_RPAR_/#Lean___Grind___Semiring___mk)
+  105. `nat­Cast`
+    1. [`NatCast.nat­Cast` (class method)](Coercions/Coercing-Between-Types/#NatCast___mk)
+  106. `native­Facets`
+    1. `[anonymous]` (structure field) [(0)](Build-Tools-and-Distribution/Lake/#Lake___LeanLibConfig___mk) [(1)](Build-Tools-and-Distribution/Lake/#Lake___LeanExeConfig___mk)
+  107. [`native_decide`](Tactic-Proofs/Tactic-Reference/#native_decide)
+  108. `ndrec`
+    1. [`HEq.ndrec`](Basic-Propositions/Propositional-Equality/#HEq___ndrec)
+  109. `ndrec­On`
+    1. [`HEq.ndrec­On`](Basic-Propositions/Propositional-Equality/#HEq___ndrecOn)
+  110. `ne_of_lt`
+    1. [`Std.PRange.Lawful­UpwardEnumerable.ne_of_lt` (class method)](Basic-Types/Ranges/#Std___PRange___LawfulUpwardEnumerable___mk)
+  111. `needs`
+    1. `[anonymous]` (structure field) [(0)](Build-Tools-and-Distribution/Lake/#Lake___LeanLibConfig___mk) [(1)](Build-Tools-and-Distribution/Lake/#Lake___LeanExeConfig___mk)
+  112. `neg`
+    1. [`BitVec.neg`](Basic-Types/Bitvectors/#BitVec___neg)
+  113. `neg`
+    1. [`Float.neg`](Basic-Types/Floating-Point-Numbers/#Float___neg)
+  114. `neg`
+    1. [`Float32.neg`](Basic-Types/Floating-Point-Numbers/#Float32___neg)
+  115. `neg`
+    1. [`ISize.neg`](Basic-Types/Fixed-Precision-Integers/#ISize___neg)
+  116. `neg`
+    1. [`Int.neg`](Basic-Types/Integers/#Int___neg)
+  117. `neg`
+    1. [`Int16.neg`](Basic-Types/Fixed-Precision-Integers/#Int16___neg)
+  118. `neg`
+    1. [`Int32.neg`](Basic-Types/Fixed-Precision-Integers/#Int32___neg)
+  119. `neg`
+    1. [`Int64.neg`](Basic-Types/Fixed-Precision-Integers/#Int64___neg)
+  120. `neg`
+    1. [`Int8.neg`](Basic-Types/Fixed-Precision-Integers/#Int8___neg)
+  121. `neg`
+    1. [`Neg.neg` (class method)](Type-Classes/Basic-Classes/#Neg___mk)
+  122. `neg`
+    1. [`UInt16.neg`](Basic-Types/Fixed-Precision-Integers/#UInt16___neg)
+  123. `neg`
+    1. [`UInt32.neg`](Basic-Types/Fixed-Precision-Integers/#UInt32___neg)
+  124. `neg`
+    1. [`UInt64.neg`](Basic-Types/Fixed-Precision-Integers/#UInt64___neg)
+  125. `neg`
+    1. [`UInt8.neg`](Basic-Types/Fixed-Precision-Integers/#UInt8___neg)
+  126. `neg`
+    1. [`USize.neg`](Basic-Types/Fixed-Precision-Integers/#USize___neg)
+  127. `neg­Of­Nat`
+    1. [`Int.neg­Of­Nat`](Basic-Types/Integers/#Int___negOfNat)
+  128. `neg_add_cancel`
+    1. [`[anonymous]` (class method)](The--grind--tactic/Algebraic-Solver-_LPAR_Commutative-Rings___-Fields_RPAR_/#Lean___Grind___Ring___mk)
+  129. `neg_zsmul`
+    1. [`[anonymous]` (class method)](The--grind--tactic/Algebraic-Solver-_LPAR_Commutative-Rings___-Fields_RPAR_/#Lean___Grind___Ring___mk)
+  130. `nest­D`
+    1. [`Std.Format.nest­D`](Interacting-with-Lean/#Std___Format___nestD)
+  131. `neutral­Config`
+    1. [`Lean.Meta.Simp.neutral­Config`](The-Simplifier/Configuring-Simplification/#Lean___Meta___Simp___neutralConfig)
+  132. [`new` (Lake command)](Build-Tools-and-Distribution/Lake/#new)
+  133. `new`
+    1. [`IO.Promise.new`](IO/Tasks-and-Threads/#IO___Promise___new)
+  134. `new`
+    1. [`Std.Channel.new`](IO/Tasks-and-Threads/#Std___Channel___new)
+  135. `new`
+    1. [`Std.CloseableChannel.new`](IO/Tasks-and-Threads/#Std___CloseableChannel___new)
+  136. `new`
+    1. [`Std.Condvar.new`](IO/Tasks-and-Threads/#Std___Condvar___new)
+  137. `new`
+    1. [`Std.Mutex.new`](IO/Tasks-and-Threads/#Std___Mutex___new)
+  138. `new­Goals`
+    1. [`Lean.Meta.Rewrite.Config.new­Goals` (structure field)](Tactic-Proofs/Tactic-Reference/#Lean___Meta___Rewrite___Config___mk)
+  139. [`next`](Tactic-Proofs/The-Tactic-Language/#next)
+  140. [`next ... => ...`](Tactic-Proofs/Targeted-Rewriting-with--conv/#Lean___Parser___Tactic___Conv____FLQQ_convNext______GT___FLQQ_)
+  141. `next!`
+    1. [`String.Pos.next!`](Basic-Types/Strings/#String___Pos___next___)
+  142. `next!`
+    1. [`String.Slice.Pos.next!`](Basic-Types/Strings/#String___Slice___Pos___next___)
+  143. `next'`
+    1. [`ByteArray.Iterator.next'`](Basic-Types/Byte-Arrays/#ByteArray___Iterator___next___)
+  144. `next'`
+    1. [`String.Legacy.Iterator.next'`](Basic-Types/Strings/#String___Legacy___Iterator___next___)
+  145. `next'`
+    1. [`String.Pos.Raw.next'`](Basic-Types/Strings/#String___Pos___Raw___next___)
+  146. `next`
+    1. [`ByteArray.Iterator.next`](Basic-Types/Byte-Arrays/#ByteArray___Iterator___next)
+  147. `next`
+    1. [`RandomGen.next` (class method)](IO/Random-Numbers/#RandomGen___mk)
+  148. `next`
+    1. [`String.Legacy.Iterator.next`](Basic-Types/Strings/#String___Legacy___Iterator___next)
+  149. `next`
+    1. [`String.Pos.Raw.next`](Basic-Types/Strings/#String___Pos___Raw___next)
+  150. `next`
+    1. [`String.Pos.next`](Basic-Types/Strings/#String___Pos___next)
+  151. `next`
+    1. [`String.Slice.Pos.next`](Basic-Types/Strings/#String___Slice___Pos___next)
+  152. `next`
+    1. [`Substring.Raw.next`](Basic-Types/Strings/#Substring___Raw___next)
+  153. `next?`
+    1. [`String.Pos.next?`](Basic-Types/Strings/#String___Pos___next___-next)
+  154. `next?`
+    1. [`String.Slice.Pos.next?`](Basic-Types/Strings/#String___Slice___Pos___next___-next)
+  155. `next­At­Idx?`
+    1. [`Std.IterM.next­At­Idx?`](Iterators/Iterator-Definitions/#Std___IterM___nextAtIdx___)
+  156. `next­At­Idx?`
+    1. [`Std.IteratorAccess.next­At­Idx?` (class method)](Iterators/Iterator-Definitions/#Std___IteratorAccess___mk)
+  157. `next­Power­Of­Two`
+    1. [`Nat.next­Power­Of­Two`](Basic-Types/Natural-Numbers/#Nat___nextPowerOfTwo)
+  158. `next­Until`
+    1. [`String.Pos.Raw.next­Until`](Basic-Types/Strings/#String___Pos___Raw___nextUntil)
+  159. `next­While`
+    1. [`String.Pos.Raw.next­While`](Basic-Types/Strings/#String___Pos___Raw___nextWhile)
+  160. `nextn`
+    1. [`ByteArray.Iterator.nextn`](Basic-Types/Byte-Arrays/#ByteArray___Iterator___nextn)
+  161. `nextn`
+    1. [`String.Legacy.Iterator.nextn`](Basic-Types/Strings/#String___Legacy___Iterator___nextn)
+  162. `nextn`
+    1. [`String.Slice.Pos.nextn`](Basic-Types/Strings/#String___Slice___Pos___nextn)
+  163. `nextn`
+    1. [`Substring.Raw.nextn`](Basic-Types/Strings/#Substring___Raw___nextn)
+  164. `nil`
+    1. [`BitVec.nil`](Basic-Types/Bitvectors/#BitVec___nil)
+  165. `no­Throw`
+    1. [`Std.Do.PostCond.no­Throw`](The--mvcgen--tactic/Predicate-Transformers/#Std___Do___PostCond___noThrow)
+  166. `no_nat_zero_divisors`
+    1. [`Lean.Grind.No­Nat­ZeroDivisors.no_nat_zero_divisors` (class method)](The--grind--tactic/Algebraic-Solver-_LPAR_Commutative-Rings___-Fields_RPAR_/#Lean___Grind___NoNatZeroDivisors___mk)
+  167. [`nofun`](Tactic-Proofs/Tactic-Reference/#nofun)
+  168. [`nomatch`](Tactic-Proofs/Tactic-Reference/#nomatch)
+  169. `non­Backtrackable`
+    1. [`EStateM.non­Backtrackable`](Functors___-Monads-and--do--Notation/Varieties-of-Monads/#EStateM___nonBacktrackable)
+  170. `norm_cast` [(0)](Tactic-Proofs/Tactic-Reference/#norm_cast) [(1)](Tactic-Proofs/Targeted-Rewriting-with--conv/#Lean___Parser___Tactic___Conv___normCast)
+  171. `normalize`
+    1. [`System.FilePath.normalize`](IO/Files___-File-Handles___-and-Streams/#System___FilePath___normalize)
+  172. `not`
+    1. [`BitVec.not`](Basic-Types/Bitvectors/#BitVec___not)
+  173. `not`
+    1. [`Bool.not`](Basic-Types/Booleans/#Bool___not)
+  174. `not`
+    1. [`Int.not`](Basic-Types/Integers/#Int___not)
+  175. `not`
+    1. [`Std.Do.SPred.not`](The--mvcgen--tactic/Predicate-Transformers/#Std___Do___SPred___not)
+  176. [`not­M`](Functors___-Monads-and--do--Notation/API-Reference/#notM)
+  177. `notify­All`
+    1. [`Std.Condvar.notify­All`](IO/Tasks-and-Threads/#Std___Condvar___notifyAll)
+  178. `notify­One`
+    1. [`Std.Condvar.notify­One`](IO/Tasks-and-Threads/#Std___Condvar___notifyOne)
+  179. `npow`
+    1. [`Lean.Grind.Semiring.of­Nat` (class method)](The--grind--tactic/Algebraic-Solver-_LPAR_Commutative-Rings___-Fields_RPAR_/#Lean___Grind___Semiring___mk)
+  180. `nsmul`
+    1. [`Lean.Grind.Semiring.nat­Cast` (class method)](The--grind--tactic/Algebraic-Solver-_LPAR_Commutative-Rings___-Fields_RPAR_/#Lean___Grind___Semiring___mk)
+  181. `nsmul`
+    1. `[anonymous]` (class method) [(0)](The--grind--tactic/Linear-Arithmetic-Solver/#Lean___Grind___NatModule___mk) [(1)](The--grind--tactic/Linear-Arithmetic-Solver/#Lean___Grind___IntModule___mk)
+  182. `nsmul_eq_nat­Cast_mul`
+    1. [`Lean.Grind.Semiring.of­Nat_succ` (class method)](The--grind--tactic/Algebraic-Solver-_LPAR_Commutative-Rings___-Fields_RPAR_/#Lean___Grind___Semiring___mk)
+  183. `null­Kind`
+    1. [`Lean.null­Kind`](Notations-and-Macros/Defining-New-Syntax/#Lean___nullKind)
+  184. `num­Bits`
+    1. [`System.Platform.num­Bits`](IO/System-and-Platform-Information/#System___Platform___numBits)
+  185. `num­Links`
+    1. [`IO.FS.Metadata.num­Links` (structure field)](IO/Files___-File-Handles___-and-Streams/#IO___FS___Metadata___mk)
+  186. `num­Lit­Kind`
+    1. [`Lean.num­Lit­Kind`](Notations-and-Macros/Defining-New-Syntax/#Lean___numLitKind)
+
+
+##  O
+  1. `Occurrences`
+    1. [`Lean.Meta.Occurrences`](Tactic-Proofs/Tactic-Reference/#Lean___Meta___Occurrences___all)
+  2. [`Of­Nat`](Terms/Numeric-Literals/#OfNat___mk)
+  3. `OfNat.mk`
+    1. [Instance constructor of `Of­Nat`](Terms/Numeric-Literals/#OfNat___mk)
+  4. [`Of­Scientific`](Terms/Numeric-Literals/#OfScientific___mk)
+  5. `OfScientific.mk`
+    1. [Instance constructor of `Of­Scientific`](Terms/Numeric-Literals/#OfScientific___mk)
+  6. [`Option`](Basic-Types/Optional-Values/#Option___none)
+  7. [`Option.all`](Basic-Types/Optional-Values/#Option___all)
+  8. [`Option.any`](Basic-Types/Optional-Values/#Option___any)
+  9. [`Option.attach`](Basic-Types/Optional-Values/#Option___attach)
+  10. [`Option.attach­With`](Basic-Types/Optional-Values/#Option___attachWith)
+  11. [`Option.bind`](Basic-Types/Optional-Values/#Option___bind)
+  12. [`Option.bind­M`](Basic-Types/Optional-Values/#Option___bindM)
+  13. [`Option.choice`](Basic-Types/Optional-Values/#Option___choice)
+  14. [`Option.decidable­Eq­None`](Basic-Types/Optional-Values/#Option___decidableEqNone)
+  15. [`Option.elim`](Basic-Types/Optional-Values/#Option___elim)
+  16. [`Option.elim­M`](Basic-Types/Optional-Values/#Option___elimM)
+  17. [`Option.filter`](Basic-Types/Optional-Values/#Option___filter)
+  18. [`Option.filter­M`](Basic-Types/Optional-Values/#Option___filterM)
+  19. [`Option.for­M`](Basic-Types/Optional-Values/#Option___forM)
+  20. [`Option.format`](Basic-Types/Optional-Values/#Option___format)
+  21. [`Option.get`](Basic-Types/Optional-Values/#Option___get)
+  22. [`Option.get!`](Basic-Types/Optional-Values/#Option___get___)
+  23. [`Option.get­D`](Basic-Types/Optional-Values/#Option___getD)
+  24. [`Option.get­DM`](Basic-Types/Optional-Values/#Option___getDM)
+  25. [`Option.get­M`](Basic-Types/Optional-Values/#Option___getM)
+  26. [`Option.guard`](Basic-Types/Optional-Values/#Option___guard)
+  27. [`Option.is­Eq­Some`](Basic-Types/Optional-Values/#Option___isEqSome)
+  28. [`Option.is­None`](Basic-Types/Optional-Values/#Option___isNone)
+  29. [`Option.is­Some`](Basic-Types/Optional-Values/#Option___isSome)
+  30. [`Option.join`](Basic-Types/Optional-Values/#Option___join)
+  31. [`Option.lt`](Basic-Types/Optional-Values/#Option___lt)
+  32. [`Option.map`](Basic-Types/Optional-Values/#Option___map)
+  33. [`Option.map­A`](Basic-Types/Optional-Values/#Option___mapA)
+  34. [`Option.map­M`](Basic-Types/Optional-Values/#Option___mapM)
+  35. [`Option.max`](Basic-Types/Optional-Values/#Option___max)
+  36. [`Option.merge`](Basic-Types/Optional-Values/#Option___merge)
+  37. [`Option.min`](Basic-Types/Optional-Values/#Option___min)
+  38. `Option.none`
+    1. [Constructor of `Option`](Basic-Types/Optional-Values/#Option___none)
+  39. [`Option.or`](Basic-Types/Optional-Values/#Option___or)
+  40. [`Option.or­Else`](Basic-Types/Optional-Values/#Option___orElse)
+  41. [`Option.pbind`](Basic-Types/Optional-Values/#Option___pbind)
+  42. [`Option.pelim`](Basic-Types/Optional-Values/#Option___pelim)
+  43. [`Option.pmap`](Basic-Types/Optional-Values/#Option___pmap)
+  44. [`Option.repr`](Basic-Types/Optional-Values/#Option___repr)
+  45. [`Option.sequence`](Basic-Types/Optional-Values/#Option___sequence)
+  46. `Option.some`
+    1. [Constructor of `Option`](Basic-Types/Optional-Values/#Option___none)
+  47. [`Option.to­Array`](Basic-Types/Optional-Values/#Option___toArray)
+  48. [`Option.to­List`](Basic-Types/Optional-Values/#Option___toList)
+  49. [`Option.try­Catch`](Basic-Types/Optional-Values/#Option___tryCatch)
+  50. [`Option.unattach`](Basic-Types/Optional-Values/#Option___unattach)
+  51. [`Option­T`](Functors___-Monads-and--do--Notation/Varieties-of-Monads/#OptionT)
+  52. [`OptionT.bind`](Functors___-Monads-and--do--Notation/Varieties-of-Monads/#OptionT___bind)
+  53. [`OptionT.fail`](Functors___-Monads-and--do--Notation/Varieties-of-Monads/#OptionT___fail)
+  54. [`OptionT.lift`](Functors___-Monads-and--do--Notation/Varieties-of-Monads/#OptionT___lift)
+  55. [`OptionT.mk`](Functors___-Monads-and--do--Notation/Varieties-of-Monads/#OptionT___mk)
+  56. [`OptionT.or­Else`](Functors___-Monads-and--do--Notation/Varieties-of-Monads/#OptionT___orElse)
+  57. [`OptionT.pure`](Functors___-Monads-and--do--Notation/Varieties-of-Monads/#OptionT___pure)
+  58. [`OptionT.run`](Functors___-Monads-and--do--Notation/Varieties-of-Monads/#OptionT___run)
+  59. [`OptionT.try­Catch`](Functors___-Monads-and--do--Notation/Varieties-of-Monads/#OptionT___tryCatch)
+  60. [`Or`](Basic-Propositions/Logical-Connectives/#Or___inl)
+  61. [`Or.by_cases`](Basic-Propositions/Logical-Connectives/#Or___by_cases)
+  62. [`Or.by_cases'`](Basic-Propositions/Logical-Connectives/#Or___by_cases___)
+  63. `Or.inl`
+    1. [Constructor of `Or`](Basic-Propositions/Logical-Connectives/#Or___inl)
+  64. `Or.inr`
+    1. [Constructor of `Or`](Basic-Propositions/Logical-Connectives/#Or___inl)
+  65. [`Or­Op`](Type-Classes/Basic-Classes/#OrOp___mk)
+  66. `OrOp.mk`
+    1. [Instance constructor of `Or­Op`](Type-Classes/Basic-Classes/#OrOp___mk)
+  67. [`Ord`](Type-Classes/Basic-Classes/#Ord___mk)
+  68. [`Ord.lex`](Type-Classes/Basic-Classes/#Ord___lex)
+  69. [`Ord.lex'`](Type-Classes/Basic-Classes/#Ord___lex___)
+  70. `Ord.mk`
+    1. [Instance constructor of `Ord`](Type-Classes/Basic-Classes/#Ord___mk)
+  71. [`Ord.on`](Type-Classes/Basic-Classes/#Ord___on)
+  72. [`Ord.opposite`](Type-Classes/Basic-Classes/#Ord___opposite)
+  73. [`Ord.to­BEq`](Type-Classes/Basic-Classes/#Ord___toBEq)
+  74. [`Ord.to­LE`](Type-Classes/Basic-Classes/#Ord___toLE)
+  75. [`Ord.to­LT`](Type-Classes/Basic-Classes/#Ord___toLT)
+  76. `Ordered­Add`
+    1. [`Lean.Grind.Ordered­Add`](The--grind--tactic/Linear-Arithmetic-Solver/#Lean___Grind___OrderedAdd___mk)
+  77. `Ordered­Ring`
+    1. [`Lean.Grind.Ordered­Ring`](The--grind--tactic/Linear-Arithmetic-Solver/#Lean___Grind___OrderedRing___mk)
+  78. [`Ordering`](Type-Classes/Basic-Classes/#Ordering___lt)
+  79. `Ordering.eq`
+    1. [Constructor of `Ordering`](Type-Classes/Basic-Classes/#Ordering___lt)
+  80. `Ordering.gt`
+    1. [Constructor of `Ordering`](Type-Classes/Basic-Classes/#Ordering___lt)
+  81. [`Ordering.is­Eq`](Type-Classes/Basic-Classes/#Ordering___isEq)
+  82. [`Ordering.is­GE`](Type-Classes/Basic-Classes/#Ordering___isGE)
+  83. [`Ordering.is­GT`](Type-Classes/Basic-Classes/#Ordering___isGT)
+  84. [`Ordering.is­LE`](Type-Classes/Basic-Classes/#Ordering___isLE)
+  85. [`Ordering.is­LT`](Type-Classes/Basic-Classes/#Ordering___isLT)
+  86. [`Ordering.is­Ne`](Type-Classes/Basic-Classes/#Ordering___isNe)
+  87. `Ordering.lt`
+    1. [Constructor of `Ordering`](Type-Classes/Basic-Classes/#Ordering___lt)
+  88. [`Ordering.swap`](Type-Classes/Basic-Classes/#Ordering___swap)
+  89. [`Ordering.then`](Type-Classes/Basic-Classes/#Ordering___then)
+  90. `Output`
+    1. [`IO.Process.Output`](IO/Processes/#IO___Process___Output___mk)
+  91. [`obtain`](Tactic-Proofs/Tactic-Reference/#obtain)
+  92. `occs`
+    1. [`Lean.Meta.Rewrite.Config.occs` (structure field)](Tactic-Proofs/Tactic-Reference/#Lean___Meta___Rewrite___Config___mk)
+  93. `of­Array`
+    1. [`Std.Ext­HashSet.of­Array`](Basic-Types/Maps-and-Sets/#Std___ExtHashSet___ofArray)
+  94. `of­Array`
+    1. [`Std.HashSet.of­Array`](Basic-Types/Maps-and-Sets/#Std___HashSet___ofArray)
+  95. `of­Array`
+    1. [`Std.TreeMap.of­Array`](Basic-Types/Maps-and-Sets/#Std___TreeMap___ofArray)
+  96. `of­Array`
+    1. [`Std.TreeSet.of­Array`](Basic-Types/Maps-and-Sets/#Std___TreeSet___ofArray)
+  97. `of­Binary­Scientific`
+    1. [`Float.of­Binary­Scientific`](Basic-Types/Floating-Point-Numbers/#Float___ofBinaryScientific)
+  98. `of­Binary­Scientific`
+    1. [`Float32.of­Binary­Scientific`](Basic-Types/Floating-Point-Numbers/#Float32___ofBinaryScientific)
+  99. `of­Bit­Vec`
+    1. [`ISize.of­Bit­Vec`](Basic-Types/Fixed-Precision-Integers/#ISize___ofBitVec)
+  100. `of­Bit­Vec`
+    1. [`Int16.of­Bit­Vec`](Basic-Types/Fixed-Precision-Integers/#Int16___ofBitVec)
+  101. `of­Bit­Vec`
+    1. [`Int32.of­Bit­Vec`](Basic-Types/Fixed-Precision-Integers/#Int32___ofBitVec)
+  102. `of­Bit­Vec`
+    1. [`Int64.of­Bit­Vec`](Basic-Types/Fixed-Precision-Integers/#Int64___ofBitVec)
+  103. `of­Bit­Vec`
+    1. [`Int8.of­Bit­Vec`](Basic-Types/Fixed-Precision-Integers/#Int8___ofBitVec)
+  104. `of­Bits`
+    1. [`Float.of­Bits`](Basic-Types/Floating-Point-Numbers/#Float___ofBits)
+  105. `of­Bits`
+    1. [`Float32.of­Bits`](Basic-Types/Floating-Point-Numbers/#Float32___ofBits)
+  106. `of­Bool`
+    1. [`BitVec.of­Bool`](Basic-Types/Bitvectors/#BitVec___ofBool)
+  107. `of­Bool­List­BE`
+    1. [`BitVec.of­Bool­List­BE`](Basic-Types/Bitvectors/#BitVec___ofBoolListBE)
+  108. `of­Bool­List­LE`
+    1. [`BitVec.of­Bool­List­LE`](Basic-Types/Bitvectors/#BitVec___ofBoolListLE)
+  109. `of­Buffer`
+    1. [`IO.FS.Stream.of­Buffer`](IO/Files___-File-Handles___-and-Streams/#IO___FS___Stream___ofBuffer)
+  110. `of­Byte­Array`
+    1. [`ByteSlice.of­Byte­Array`](Basic-Types/Byte-Arrays/#ByteSlice___ofByteArray)
+  111. `of­Copy`
+    1. [`String.Pos.of­Copy`](Basic-Types/Strings/#String___Pos___ofCopy)
+  112. `of­Elems`
+    1. [`Lean.Syntax.TSepArray.of­Elems`](Notations-and-Macros/Defining-New-Syntax/#Lean___Syntax___TSepArray___ofElems)
+  113. `of­Except`
+    1. [`IO.of­Except`](IO/Logical-Model/#IO___ofExcept)
+  114. `of­Except`
+    1. [`MonadExcept.of­Except`](Functors___-Monads-and--do--Notation/Varieties-of-Monads/#MonadExcept___ofExcept)
+  115. `of­Fin`
+    1. [`UInt16.of­Fin`](Basic-Types/Fixed-Precision-Integers/#UInt16___ofFin)
+  116. `of­Fin`
+    1. [`UInt32.of­Fin`](Basic-Types/Fixed-Precision-Integers/#UInt32___ofFin)
+  117. `of­Fin`
+    1. [`UInt64.of­Fin`](Basic-Types/Fixed-Precision-Integers/#UInt64___ofFin)
+  118. `of­Fin`
+    1. [`UInt8.of­Fin`](Basic-Types/Fixed-Precision-Integers/#UInt8___ofFin)
+  119. `of­Fin`
+    1. [`USize.of­Fin`](Basic-Types/Fixed-Precision-Integers/#USize___ofFin)
+  120. `of­Fn`
+    1. [`Array.of­Fn`](Basic-Types/Arrays/#Array___ofFn)
+  121. `of­Fn`
+    1. [`List.of­Fn`](Basic-Types/Linked-Lists/#List___ofFn)
+  122. `of­Handle`
+    1. [`IO.FS.Stream.of­Handle`](IO/Files___-File-Handles___-and-Streams/#IO___FS___Stream___ofHandle)
+  123. `of­Int`
+    1. [`BitVec.of­Int`](Basic-Types/Bitvectors/#BitVec___ofInt)
+  124. `of­Int`
+    1. [`Float.of­Int`](Basic-Types/Floating-Point-Numbers/#Float___ofInt)
+  125. `of­Int`
+    1. [`Float32.of­Int`](Basic-Types/Floating-Point-Numbers/#Float32___ofInt)
+  126. `of­Int`
+    1. [`ISize.of­Int`](Basic-Types/Fixed-Precision-Integers/#ISize___ofInt)
+  127. `of­Int`
+    1. [`Int16.of­Int`](Basic-Types/Fixed-Precision-Integers/#Int16___ofInt)
+  128. `of­Int`
+    1. [`Int32.of­Int`](Basic-Types/Fixed-Precision-Integers/#Int32___ofInt)
+  129. `of­Int`
+    1. [`Int64.of­Int`](Basic-Types/Fixed-Precision-Integers/#Int64___ofInt)
+  130. `of­Int`
+    1. [`Int8.of­Int`](Basic-Types/Fixed-Precision-Integers/#Int8___ofInt)
+  131. `of­Int­LE`
+    1. [`ISize.of­Int­LE`](Basic-Types/Fixed-Precision-Integers/#ISize___ofIntLE)
+  132. `of­Int­LE`
+    1. [`Int16.of­Int­LE`](Basic-Types/Fixed-Precision-Integers/#Int16___ofIntLE)
+  133. `of­Int­LE`
+    1. [`Int32.of­Int­LE`](Basic-Types/Fixed-Precision-Integers/#Int32___ofIntLE)
+  134. `of­Int­LE`
+    1. [`Int64.of­Int­LE`](Basic-Types/Fixed-Precision-Integers/#Int64___ofIntLE)
+  135. `of­Int­LE`
+    1. [`Int8.of­Int­LE`](Basic-Types/Fixed-Precision-Integers/#Int8___ofIntLE)
+  136. `of­Int­Truncate`
+    1. [`ISize.of­Int­Truncate`](Basic-Types/Fixed-Precision-Integers/#ISize___ofIntTruncate)
+  137. `of­Int­Truncate`
+    1. [`Int16.of­Int­Truncate`](Basic-Types/Fixed-Precision-Integers/#Int16___ofIntTruncate)
+  138. `of­Int­Truncate`
+    1. [`Int32.of­Int­Truncate`](Basic-Types/Fixed-Precision-Integers/#Int32___ofIntTruncate)
+  139. `of­Int­Truncate`
+    1. [`Int64.of­Int­Truncate`](Basic-Types/Fixed-Precision-Integers/#Int64___ofIntTruncate)
+  140. `of­Int­Truncate`
+    1. [`Int8.of­Int­Truncate`](Basic-Types/Fixed-Precision-Integers/#Int8___ofIntTruncate)
+  141. `of­List`
+    1. [`Std.DHashMap.of­List`](Basic-Types/Maps-and-Sets/#Std___DHashMap___ofList)
+  142. `of­List`
+    1. [`Std.DTreeMap.of­List`](Basic-Types/Maps-and-Sets/#Std___DTreeMap___ofList)
+  143. `of­List`
+    1. [`Std.Ext­DHashMap.of­List`](Basic-Types/Maps-and-Sets/#Std___ExtDHashMap___ofList)
+  144. `of­List`
+    1. [`Std.Ext­HashMap.of­List`](Basic-Types/Maps-and-Sets/#Std___ExtHashMap___ofList)
+  145. `of­List`
+    1. [`Std.Ext­HashSet.of­List`](Basic-Types/Maps-and-Sets/#Std___ExtHashSet___ofList)
+  146. `of­List`
+    1. [`Std.HashMap.of­List`](Basic-Types/Maps-and-Sets/#Std___HashMap___ofList)
+  147. `of­List`
+    1. [`Std.HashSet.of­List`](Basic-Types/Maps-and-Sets/#Std___HashSet___ofList)
+  148. `of­List`
+    1. [`Std.TreeMap.of­List`](Basic-Types/Maps-and-Sets/#Std___TreeMap___ofList)
+  149. `of­List`
+    1. [`Std.TreeSet.of­List`](Basic-Types/Maps-and-Sets/#Std___TreeSet___ofList)
+  150. `of­List`
+    1. [`String.of­List`](Basic-Types/Strings/#String___ofList)
+  151. `of­Nat`
+    1. [`BitVec.of­Nat`](Basic-Types/Bitvectors/#BitVec___ofNat)
+  152. `of­Nat`
+    1. [`Char.of­Nat`](Basic-Types/Characters/#Char___ofNat)
+  153. `of­Nat`
+    1. [`Fin.of­Nat`](Basic-Types/Finite-Natural-Numbers/#Fin___ofNat)
+  154. `of­Nat`
+    1. [`Float.of­Nat`](Basic-Types/Floating-Point-Numbers/#Float___ofNat)
+  155. `of­Nat`
+    1. [`Float32.of­Nat`](Basic-Types/Floating-Point-Numbers/#Float32___ofNat)
+  156. `of­Nat`
+    1. [`ISize.of­Nat`](Basic-Types/Fixed-Precision-Integers/#ISize___ofNat)
+  157. `of­Nat`
+    1. [`Int16.of­Nat`](Basic-Types/Fixed-Precision-Integers/#Int16___ofNat)
+  158. `of­Nat`
+    1. [`Int32.of­Nat`](Basic-Types/Fixed-Precision-Integers/#Int32___ofNat)
+  159. `of­Nat`
+    1. [`Int64.of­Nat`](Basic-Types/Fixed-Precision-Integers/#Int64___ofNat)
+  160. `of­Nat`
+    1. [`Int8.of­Nat`](Basic-Types/Fixed-Precision-Integers/#Int8___ofNat)
+  161. `of­Nat`
+    1. [`OfNat.of­Nat` (class method)](Terms/Numeric-Literals/#OfNat___mk)
+  162. `of­Nat`
+    1. [`UInt16.of­Nat`](Basic-Types/Fixed-Precision-Integers/#UInt16___ofNat)
+  163. `of­Nat`
+    1. [`UInt32.of­Nat`](Basic-Types/Fixed-Precision-Integers/#UInt32___ofNat)
+  164. `of­Nat`
+    1. [`UInt64.of­Nat`](Basic-Types/Fixed-Precision-Integers/#UInt64___ofNat)
+  165. `of­Nat`
+    1. [`UInt8.of­Nat`](Basic-Types/Fixed-Precision-Integers/#UInt8___ofNat)
+  166. `of­Nat`
+    1. [`USize.of­Nat`](Basic-Types/Fixed-Precision-Integers/#USize___ofNat)
+  167. `of­Nat`
+    1. [`[anonymous]` (class method)](The--grind--tactic/Algebraic-Solver-_LPAR_Commutative-Rings___-Fields_RPAR_/#Lean___Grind___Semiring___mk)
+  168. `of­Nat32`
+    1. [`USize.of­Nat32`](Basic-Types/Fixed-Precision-Integers/#USize___ofNat32)
+  169. `of­Nat­LT`
+    1. [`BitVec.of­Nat­LT`](Basic-Types/Bitvectors/#BitVec___ofNatLT)
+  170. `of­Nat­LT`
+    1. [`UInt16.of­Nat­LT`](Basic-Types/Fixed-Precision-Integers/#UInt16___ofNatLT)
+  171. `of­Nat­LT`
+    1. [`UInt32.of­Nat­LT`](Basic-Types/Fixed-Precision-Integers/#UInt32___ofNatLT)
+  172. `of­Nat­LT`
+    1. [`UInt64.of­Nat­LT`](Basic-Types/Fixed-Precision-Integers/#UInt64___ofNatLT)
+  173. `of­Nat­LT`
+    1. [`UInt8.of­Nat­LT`](Basic-Types/Fixed-Precision-Integers/#UInt8___ofNatLT)
+  174. `of­Nat­LT`
+    1. [`USize.of­Nat­LT`](Basic-Types/Fixed-Precision-Integers/#USize___ofNatLT)
+  175. `of­Nat­Truncate`
+    1. [`UInt16.of­Nat­Truncate`](Basic-Types/Fixed-Precision-Integers/#UInt16___ofNatTruncate)
+  176. `of­Nat­Truncate`
+    1. [`UInt32.of­Nat­Truncate`](Basic-Types/Fixed-Precision-Integers/#UInt32___ofNatTruncate)
+  177. `of­Nat­Truncate`
+    1. [`UInt64.of­Nat­Truncate`](Basic-Types/Fixed-Precision-Integers/#UInt64___ofNatTruncate)
+  178. `of­Nat­Truncate`
+    1. [`UInt8.of­Nat­Truncate`](Basic-Types/Fixed-Precision-Integers/#UInt8___ofNatTruncate)
+  179. `of­Nat­Truncate`
+    1. [`USize.of­Nat­Truncate`](Basic-Types/Fixed-Precision-Integers/#USize___ofNatTruncate)
+  180. `of­Nat_eq_nat­Cast`
+    1. [`Lean.Grind.Semiring.pow_succ` (class method)](The--grind--tactic/Algebraic-Solver-_LPAR_Commutative-Rings___-Fields_RPAR_/#Lean___Grind___Semiring___mk)
+  181. `of­Nat_ext_iff`
+    1. [`Lean.Grind.Is­CharP.of­Nat_ext_iff` (class method)](The--grind--tactic/Algebraic-Solver-_LPAR_Commutative-Rings___-Fields_RPAR_/#Lean___Grind___IsCharP___mk)
+  182. `of­Nat_succ`
+    1. [`Lean.Grind.Semiring.pow_zero` (class method)](The--grind--tactic/Algebraic-Solver-_LPAR_Commutative-Rings___-Fields_RPAR_/#Lean___Grind___Semiring___mk)
+  183. `of­Scientific`
+    1. [`Float.of­Scientific`](Basic-Types/Floating-Point-Numbers/#Float___ofScientific)
+  184. `of­Scientific`
+    1. [`Float32.of­Scientific`](Basic-Types/Floating-Point-Numbers/#Float32___ofScientific)
+  185. `of­Scientific`
+    1. [`OfScientific.of­Scientific` (class method)](Terms/Numeric-Literals/#OfScientific___mk)
+  186. `of­Slice`
+    1. [`String.Slice.Pos.of­Slice`](Basic-Types/Strings/#String___Slice___Pos___ofSlice)
+  187. `of­Slice­From`
+    1. [`String.Slice.Pos.of­Slice­From`](Basic-Types/Strings/#String___Slice___Pos___ofSliceFrom)
+  188. `of­Slice­To`
+    1. [`String.Slice.Pos.of­Slice­To`](Basic-Types/Strings/#String___Slice___Pos___ofSliceTo)
+  189. `of­Subarray`
+    1. [`Array.of­Subarray`](Basic-Types/Arrays/#Array___ofSubarray)
+  190. `of­UInt8`
+    1. [`Char.of­UInt8`](Basic-Types/Characters/#Char___ofUInt8)
+  191. `of_wp_eq`
+    1. [`Std.Do.Except.of_wp_eq`](The--mvcgen--tactic/Predicate-Transformers/#Std___Do___Except___of_wp_eq)
+  192. `of_wp_run'_eq`
+    1. [`Std.Do.StateM.of_wp_run'_eq`](The--mvcgen--tactic/Predicate-Transformers/#Std___Do___StateM___of_wp_run____eq)
+  193. `of_wp_run_eq`
+    1. [`Std.Do.EStateM.of_wp_run_eq`](The--mvcgen--tactic/Predicate-Transformers/#Std___Do___EStateM___of_wp_run_eq)
+  194. `of_wp_run_eq`
+    1. [`Std.Do.Id.of_wp_run_eq`](The--mvcgen--tactic/Predicate-Transformers/#Std___Do___Id___of_wp_run_eq)
+  195. `of_wp_run_eq`
+    1. [`Std.Do.ReaderM.of_wp_run_eq`](The--mvcgen--tactic/Predicate-Transformers/#Std___Do___ReaderM___of_wp_run_eq)
+  196. `of_wp_run_eq`
+    1. [`Std.Do.StateM.of_wp_run_eq`](The--mvcgen--tactic/Predicate-Transformers/#Std___Do___StateM___of_wp_run_eq)
+  197. `offset`
+    1. [`String.Pos.offset` (structure field)](Basic-Types/Strings/#String___Pos___mk)
+  198. `offset`
+    1. [`String.Slice.Pos.offset` (structure field)](Basic-Types/Strings/#String___Slice___Pos___mk)
+  199. `offset­By`
+    1. [`String.Pos.Raw.offset­By`](Basic-Types/Strings/#String___Pos___Raw___offsetBy)
+  200. `offset­Cnstrs`
+    1. [`Lean.Meta.Rewrite.Config.offset­Cnstrs` (structure field)](Tactic-Proofs/Tactic-Reference/#Lean___Meta___Rewrite___Config___mk)
+  201. `offset­Of­Pos`
+    1. [`String.Pos.Raw.offset­Of­Pos`](Basic-Types/Strings/#String___Pos___Raw___offsetOfPos)
+  202. [`omega`](Tactic-Proofs/Tactic-Reference/#omega)
+  203. `on`
+    1. [`Ord.on`](Type-Classes/Basic-Classes/#Ord___on)
+  204. `one_mul`
+    1. [`Lean.Grind.Semiring.mul_assoc` (class method)](The--grind--tactic/Algebraic-Solver-_LPAR_Commutative-Rings___-Fields_RPAR_/#Lean___Grind___Semiring___mk)
+  205. `one_zsmul`
+    1. [`[anonymous]` (class method)](The--grind--tactic/Linear-Arithmetic-Solver/#Lean___Grind___IntModule___mk)
+  206. [`open`](Tactic-Proofs/The-Tactic-Language/#open)
+  207. `operation`
+    1. [`Std.Iterators.HetT.operation` (structure field)](Iterators/Reasoning-About-Iterators/#Std___Iterators___HetT___mk)
+  208. `operation`
+    1. [`Std.Iterators.PostconditionT.operation` (structure field)](Iterators/Reasoning-About-Iterators/#Std___Iterators___PostconditionT___mk)
+  209. `opposite`
+    1. [`Ord.opposite`](Type-Classes/Basic-Classes/#Ord___opposite)
+  210. [`opt­Param`](Terms/Function-Application/#optParam)
+  211. [`optional`](Functors___-Monads-and--do--Notation/API-Reference/#optional)
+  212. `or`
+    1. [`BitVec.or`](Basic-Types/Bitvectors/#BitVec___or)
+  213. `or`
+    1. [`Bool.or`](Basic-Types/Booleans/#Bool___or)
+  214. `or`
+    1. [`List.or`](Basic-Types/Linked-Lists/#List___or)
+  215. `or`
+    1. [`Option.or`](Basic-Types/Optional-Values/#Option___or)
+  216. `or`
+    1. [`OrOp.or` (class method)](Type-Classes/Basic-Classes/#OrOp___mk)
+  217. `or`
+    1. [`Std.Do.SPred.or`](The--mvcgen--tactic/Predicate-Transformers/#Std___Do___SPred___or)
+  218. `or­Else'`
+    1. [`EStateM.or­Else'`](Functors___-Monads-and--do--Notation/Varieties-of-Monads/#EStateM___orElse___)
+  219. `or­Else`
+    1. [`EStateM.or­Else`](Functors___-Monads-and--do--Notation/Varieties-of-Monads/#EStateM___orElse)
+  220. `or­Else`
+    1. [`MonadExcept.or­Else`](Functors___-Monads-and--do--Notation/Varieties-of-Monads/#MonadExcept___orElse)
+  221. `or­Else`
+    1. [`Option.or­Else`](Basic-Types/Optional-Values/#Option___orElse)
+  222. `or­Else`
+    1. [`OptionT.or­Else`](Functors___-Monads-and--do--Notation/Varieties-of-Monads/#OptionT___orElse)
+  223. `or­Else`
+    1. [`ReaderT.or­Else`](Functors___-Monads-and--do--Notation/Varieties-of-Monads/#ReaderT___orElse)
+  224. `or­Else`
+    1. [`StateT.or­Else`](Functors___-Monads-and--do--Notation/Varieties-of-Monads/#StateT___orElse)
+  225. `or­Else`
+    1. [`[anonymous]` (class method)](Functors___-Monads-and--do--Notation/#Alternative___mk)
+  226. `or­Else­Lazy`
+    1. [`Except.or­Else­Lazy`](Functors___-Monads-and--do--Notation/Varieties-of-Monads/#Except___orElseLazy)
+  227. [`or­M`](Functors___-Monads-and--do--Notation/API-Reference/#orM)
+  228. `orelse'`
+    1. [`MonadExcept.orelse'`](Functors___-Monads-and--do--Notation/Varieties-of-Monads/#MonadExcept___orelse___)
+  229. `other`
+    1. [`IO.FileRight.other` (structure field)](IO/Files___-File-Handles___-and-Streams/#IO___FileRight___mk)
+  230. `out`
+    1. [`NeZero.out` (class method)](Type-Classes/Basic-Classes/#NeZero___mk)
+  231. `out`
+    1. [`Std.DTreeMap.Raw.WF.out` (structure field)](Basic-Types/Maps-and-Sets/#Std___DTreeMap___Raw___WF___mk)
+  232. `out`
+    1. [`Std.HashMap.Raw.WF.out` (structure field)](Basic-Types/Maps-and-Sets/#Std___HashMap___Raw___WF___mk)
+  233. `out`
+    1. [`Std.HashSet.Raw.WF.out` (structure field)](Basic-Types/Maps-and-Sets/#Std___HashSet___Raw___WF___mk)
+  234. `out`
+    1. [`Std.TreeMap.Raw.WF.out` (structure field)](Basic-Types/Maps-and-Sets/#Std___TreeMap___Raw___WF___mk)
+  235. `out`
+    1. [`Std.TreeSet.Raw.WF.out` (structure field)](Basic-Types/Maps-and-Sets/#Std___TreeSet___Raw___WF___mk)
+  236. [`out­Param`](Type-Classes/Instance-Synthesis/#outParam)
+  237. `output`
+    1. [`IO.Process.output`](IO/Processes/#IO___Process___output)
+  238. [`override list` (Elan command)](Build-Tools-and-Distribution/Managing-Toolchains-with-Elan/#override-list)
+  239. [`override set` (Elan command)](Build-Tools-and-Distribution/Managing-Toolchains-with-Elan/#override-set)
+  240. [`override unset` (Elan command)](Build-Tools-and-Distribution/Managing-Toolchains-with-Elan/#override-unset)
+
+
+##  P
+  1. [`PEmpty`](Basic-Types/The-Empty-Type/#PEmpty)
+  2. [`PEmpty.elim`](Basic-Types/The-Empty-Type/#PEmpty___elim)
+  3. [`PLift`](The-Type-System/Universes/#PLift___up)
+  4. `PLift.up`
+    1. [Constructor of `PLift`](The-Type-System/Universes/#PLift___up)
+  5. [`PProd`](Basic-Types/Tuples/#PProd___mk)
+  6. `PProd.mk`
+    1. [Constructor of `PProd`](Basic-Types/Tuples/#PProd___mk)
+  7. [`PSigma`](Basic-Types/Tuples/#PSigma___mk)
+  8. `PSigma.mk`
+    1. [Constructor of `PSigma`](Basic-Types/Tuples/#PSigma___mk)
+  9. [`PSum`](Basic-Types/Sum-Types/#PSum___inl)
+  10. [`PSum.inhabited­Left`](Basic-Types/Sum-Types/#PSum___inhabitedLeft)
+  11. [`PSum.inhabited­Right`](Basic-Types/Sum-Types/#PSum___inhabitedRight)
+  12. `PSum.inl`
+    1. [Constructor of `PSum`](Basic-Types/Sum-Types/#PSum___inl)
+  13. `PSum.inr`
+    1. [Constructor of `PSum`](Basic-Types/Sum-Types/#PSum___inl)
+  14. [`PUnit`](Basic-Types/The-Unit-Type/#PUnit___unit)
+  15. `PUnit.unit`
+    1. [Constructor of `PUnit`](Basic-Types/The-Unit-Type/#PUnit___unit)
+  16. `Pairwise`
+    1. [`List.Pairwise`](Basic-Types/Linked-Lists/#List___Pairwise___nil)
+  17. `Partial­Order`
+    1. [`Lean.Order.Partial­Order`](Definitions/Recursive-Definitions/#Lean___Order___PartialOrder___mk)
+  18. `Perm`
+    1. [`List.Perm`](Basic-Types/Linked-Lists/#List___Perm___nil)
+  19. `Plausible­Iter­Step`
+    1. [`Std.Plausible­Iter­Step`](Iterators/Iterator-Definitions/#Std___PlausibleIterStep)
+  20. `Pos`
+    1. [`String.Pos`](Basic-Types/Strings/#String___Pos___mk)
+  21. `Pos`
+    1. [`String.Slice.Pos`](Basic-Types/Strings/#String___Slice___Pos___mk)
+  22. `Post­Cond`
+    1. [`Std.Do.Post­Cond`](The--mvcgen--tactic/Predicate-Transformers/#Std___Do___PostCond)
+  23. `Post­Shape`
+    1. [`Std.Do.Post­Shape`](The--mvcgen--tactic/Predicate-Transformers/#Std___Do___PostShape___pure)
+  24. `Postcondition­T`
+    1. [`Std.Iterators.Postcondition­T`](Iterators/Reasoning-About-Iterators/#Std___Iterators___PostconditionT___mk)
+  25. [`Pow`](Type-Classes/Basic-Classes/#Pow___mk)
+  26. `Pow.mk`
+    1. [Instance constructor of `Pow`](Type-Classes/Basic-Classes/#Pow___mk)
+  27. `Prec`
+    1. [`Lean.Syntax.Prec`](Notations-and-Macros/Defining-New-Syntax/#Lean___Syntax___Prec)
+  28. `Pred­Trans`
+    1. [`Std.Do.Pred­Trans`](The--mvcgen--tactic/Predicate-Transformers/#Std___Do___PredTrans___mk)
+  29. `Preresolved`
+    1. [`Lean.Syntax.Preresolved`](Notations-and-Macros/Defining-New-Syntax/#Lean___Syntax___Preresolved___namespace)
+  30. `Prio`
+    1. [`Lean.Syntax.Prio`](Notations-and-Macros/Defining-New-Syntax/#Lean___Syntax___Prio)
+  31. `Priority`
+    1. [`Task.Priority`](IO/Tasks-and-Threads/#Task___Priority)
+  32. [`Prod`](Basic-Types/Tuples/#Prod___mk)
+  33. [`Prod.all­I`](Basic-Types/Tuples/#Prod___allI)
+  34. [`Prod.any­I`](Basic-Types/Tuples/#Prod___anyI)
+  35. [`Prod.fold­I`](Basic-Types/Tuples/#Prod___foldI)
+  36. [`Prod.lex­Lt`](Basic-Types/Tuples/#Prod___lexLt)
+  37. [`Prod.map`](Basic-Types/Tuples/#Prod___map)
+  38. `Prod.mk`
+    1. [Constructor of `Prod`](Basic-Types/Tuples/#Prod___mk)
+  39. [`Prod.swap`](Basic-Types/Tuples/#Prod___swap)
+  40. `Productive`
+    1. [`Std.IterM.TerminationMeasures.Productive`](Iterators/Consuming-Iterators/#Std___IterM___TerminationMeasures___Productive___mk)
+  41. `Productive`
+    1. [`Std.Iterators.Productive`](Iterators/Iterator-Definitions/#Std___Iterators___Productive___mk)
+  42. `Promise`
+    1. [`IO.Promise`](IO/Tasks-and-Threads/#IO___Promise)
+  43. [`Prop`](The-Type-System/Universes/#--index--next-next-next-next-next-next)
+  44. `Property`
+    1. [`Std.Iterators.HetT.Property` (structure field)](Iterators/Reasoning-About-Iterators/#Std___Iterators___HetT___mk)
+  45. `Property`
+    1. [`Std.Iterators.PostconditionT.Property` (structure field)](Iterators/Reasoning-About-Iterators/#Std___Iterators___PostconditionT___mk)
+  46. [`Pure`](Functors___-Monads-and--do--Notation/#Pure___mk)
+  47. `Pure.mk`
+    1. [Instance constructor of `Pure`](Functors___-Monads-and--do--Notation/#Pure___mk)
+  48. [`pack` (Lake command)](Build-Tools-and-Distribution/Lake/#pack)
+  49. parameter
+    1. [of inductive type](The-Type-System/Inductive-Types/#--index--next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next)
+  50. `paren`
+    1. [`Std.Format.paren`](Interacting-with-Lean/#Std___Format___paren)
+  51. `parent`
+    1. [`System.FilePath.parent`](IO/Files___-File-Handles___-and-Streams/#System___FilePath___parent)
+  52. [parser](Notations-and-Macros/#--index--next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next)
+  53. `partition`
+    1. [`Array.partition`](Basic-Types/Arrays/#Array___partition)
+  54. `partition`
+    1. [`List.partition`](Basic-Types/Linked-Lists/#List___partition)
+  55. `partition`
+    1. [`Std.DHashMap.partition`](Basic-Types/Maps-and-Sets/#Std___DHashMap___partition)
+  56. `partition`
+    1. [`Std.DTreeMap.partition`](Basic-Types/Maps-and-Sets/#Std___DTreeMap___partition)
+  57. `partition`
+    1. [`Std.HashMap.partition`](Basic-Types/Maps-and-Sets/#Std___HashMap___partition)
+  58. `partition`
+    1. [`Std.HashSet.partition`](Basic-Types/Maps-and-Sets/#Std___HashSet___partition)
+  59. `partition`
+    1. [`Std.TreeMap.partition`](Basic-Types/Maps-and-Sets/#Std___TreeMap___partition)
+  60. `partition`
+    1. [`Std.TreeSet.partition`](Basic-Types/Maps-and-Sets/#Std___TreeSet___partition)
+  61. `partition­M`
+    1. [`List.partition­M`](Basic-Types/Linked-Lists/#List___partitionM)
+  62. `partition­Map`
+    1. [`List.partition­Map`](Basic-Types/Linked-Lists/#List___partitionMap)
+  63. `path`
+    1. [`IO.FS.DirEntry.path`](IO/Files___-File-Handles___-and-Streams/#IO___FS___DirEntry___path)
+  64. `path­Exists`
+    1. [`System.FilePath.path­Exists`](IO/Files___-File-Handles___-and-Streams/#System___FilePath___pathExists)
+  65. `path­Separator`
+    1. [`System.FilePath.path­Separator`](IO/Files___-File-Handles___-and-Streams/#System___FilePath___pathSeparator)
+  66. `path­Separators`
+    1. [`System.FilePath.path­Separators`](IO/Files___-File-Handles___-and-Streams/#System___FilePath___pathSeparators)
+  67. [`pattern`](Tactic-Proofs/Targeted-Rewriting-with--conv/#Lean___Parser___Tactic___Conv___pattern)
+  68. `pbind`
+    1. [`Option.pbind`](Basic-Types/Optional-Values/#Option___pbind)
+  69. `pbind`
+    1. [`Std.Iterators.HetT.pbind`](Iterators/Reasoning-About-Iterators/#Std___Iterators___HetT___pbind)
+  70. `pelim`
+    1. [`Option.pelim`](Basic-Types/Optional-Values/#Option___pelim)
+  71. [placeholder term](Terms/Holes/#--index--next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next)
+  72. `pmap`
+    1. [`Array.pmap`](Basic-Types/Arrays/#Array___pmap)
+  73. `pmap`
+    1. [`List.pmap`](Basic-Types/Linked-Lists/#List___pmap)
+  74. `pmap`
+    1. [`Option.pmap`](Basic-Types/Optional-Values/#Option___pmap)
+  75. `pmap`
+    1. [`Std.Iterators.HetT.pmap`](Iterators/Reasoning-About-Iterators/#Std___Iterators___HetT___pmap)
+  76. polymorphism
+    1. [universe](The-Type-System/Universes/#--index--next-next-next-next-next-next-next-next-next-next-next-next)
+  77. `pop`
+    1. [`Array.pop`](Basic-Types/Arrays/#Array___pop)
+  78. `pop­Front`
+    1. [`Subarray.pop­Front`](Basic-Types/Arrays/#Subarray___popFront)
+  79. `pop­While`
+    1. [`Array.pop­While`](Basic-Types/Arrays/#Array___popWhile)
+  80. `pos!`
+    1. [`String.Slice.pos!`](Basic-Types/Strings/#String___Slice___pos___)
+  81. `pos!`
+    1. [`String.pos!`](Basic-Types/Strings/#String___pos___-next)
+  82. `pos`
+    1. [`ByteArray.Iterator.pos`](Basic-Types/Byte-Arrays/#ByteArray___Iterator___pos)
+  83. `pos`
+    1. [`IO.FS.Stream.Buffer.pos` (structure field)](IO/Files___-File-Handles___-and-Streams/#IO___FS___Stream___Buffer___mk)
+  84. `pos`
+    1. [`List.Cursor.pos`](The--mvcgen--tactic/Predicate-Transformers/#List___Cursor___pos)
+  85. `pos`
+    1. [`String.Legacy.Iterator.pos`](Basic-Types/Strings/#String___Legacy___Iterator___pos)
+  86. `pos`
+    1. [`String.Slice.pos`](Basic-Types/Strings/#String___Slice___pos)
+  87. `pos`
+    1. [`String.pos`](Basic-Types/Strings/#String___pos)
+  88. `pos?`
+    1. [`String.Slice.pos?`](Basic-Types/Strings/#String___Slice___pos___-next)
+  89. `pos?`
+    1. [`String.pos?`](Basic-Types/Strings/#String___pos___)
+  90. `pos­GE`
+    1. [`String.Slice.pos­GE`](Basic-Types/Strings/#String___Slice___posGE)
+  91. `pos­GT`
+    1. [`String.Slice.pos­GT`](Basic-Types/Strings/#String___Slice___posGT)
+  92. `pos­Of`
+    1. [`Substring.Raw.pos­Of`](Basic-Types/Strings/#Substring___Raw___posOf)
+  93. `positions`
+    1. [`String.Slice.positions`](Basic-Types/Strings/#String___Slice___positions)
+  94. `pow`
+    1. [`Float.pow`](Basic-Types/Floating-Point-Numbers/#Float___pow)
+  95. `pow`
+    1. [`Float32.pow`](Basic-Types/Floating-Point-Numbers/#Float32___pow)
+  96. `pow`
+    1. [`HomogeneousPow.pow` (class method)](Type-Classes/Basic-Classes/#HomogeneousPow___mk)
+  97. `pow`
+    1. [`Int.pow`](Basic-Types/Integers/#Int___pow)
+  98. `pow`
+    1. [`Nat.pow`](Basic-Types/Natural-Numbers/#Nat___pow)
+  99. `pow`
+    1. [`NatPow.pow` (class method)](Type-Classes/Basic-Classes/#NatPow___mk)
+  100. `pow`
+    1. [`Pow.pow` (class method)](Type-Classes/Basic-Classes/#Pow___mk)
+  101. `pow_succ`
+    1. [`Lean.Grind.Semiring.mul_zero` (class method)](The--grind--tactic/Algebraic-Solver-_LPAR_Commutative-Rings___-Fields_RPAR_/#Lean___Grind___Semiring___mk)
+  102. `pow_zero`
+    1. [`Lean.Grind.Semiring.zero_mul` (class method)](The--grind--tactic/Algebraic-Solver-_LPAR_Commutative-Rings___-Fields_RPAR_/#Lean___Grind___Semiring___mk)
+  103. `pp`
+    1. [`eval.pp`](Interacting-with-Lean/#eval___pp)
+  104. [`pp.deep­Terms`](Tactic-Proofs/Reading-Proof-States/#pp___deepTerms)
+  105. [`pp.deepTerms.threshold`](Tactic-Proofs/Reading-Proof-States/#pp___deepTerms___threshold)
+  106. [`pp.field­Notation`](Terms/Function-Application/#pp___fieldNotation)
+  107. [`pp.match`](Elaboration-and-Compilation/#pp___match)
+  108. [`pp.max­Steps`](Tactic-Proofs/Reading-Proof-States/#pp___maxSteps)
+  109. [`pp.mvars`](Tactic-Proofs/Reading-Proof-States/#pp___mvars)
+  110. [`pp.proofs`](Tactic-Proofs/Reading-Proof-States/#pp___proofs)
+  111. [`pp.proofs.threshold`](Tactic-Proofs/Reading-Proof-States/#pp___proofs___threshold)
+  112. `precompile­Modules`
+    1. [`[anonymous]` (structure field)](Build-Tools-and-Distribution/Lake/#Lake___LeanLibConfig___mk)
+  113. `pred`
+    1. [`Fin.pred`](Basic-Types/Finite-Natural-Numbers/#Fin___pred)
+  114. `pred`
+    1. [`Nat.pred`](Basic-Types/Natural-Numbers/#Nat___pred)
+  115. [predicative](The-Type-System/Universes/#--index--next-next-next-next-next-next-next-next-next)
+  116. `prefix`
+    1. [`List.Cursor.prefix` (structure field)](The--mvcgen--tactic/Predicate-Transformers/#List___Cursor___mk)
+  117. `prefix­Join`
+    1. [`Std.Format.prefix­Join`](Interacting-with-Lean/#Std___Format___prefixJoin)
+  118. `pretty`
+    1. [`Std.Format.pretty`](Interacting-with-Lean/#Std___Format___pretty)
+  119. `pretty­M`
+    1. [`Std.Format.pretty­M`](Interacting-with-Lean/#Std___Format___prettyM)
+  120. `prev!`
+    1. [`String.Pos.prev!`](Basic-Types/Strings/#String___Pos___prev___)
+  121. `prev!`
+    1. [`String.Slice.Pos.prev!`](Basic-Types/Strings/#String___Slice___Pos___prev___)
+  122. `prev`
+    1. [`ByteArray.Iterator.prev`](Basic-Types/Byte-Arrays/#ByteArray___Iterator___prev)
+  123. `prev`
+    1. [`String.Legacy.Iterator.prev`](Basic-Types/Strings/#String___Legacy___Iterator___prev)
+  124. `prev`
+    1. [`String.Pos.Raw.prev`](Basic-Types/Strings/#String___Pos___Raw___prev)
+  125. `prev`
+    1. [`String.Pos.prev`](Basic-Types/Strings/#String___Pos___prev)
+  126. `prev`
+    1. [`String.Slice.Pos.prev`](Basic-Types/Strings/#String___Slice___Pos___prev)
+  127. `prev`
+    1. [`Substring.Raw.prev`](Basic-Types/Strings/#Substring___Raw___prev)
+  128. `prev?`
+    1. [`String.Pos.prev?`](Basic-Types/Strings/#String___Pos___prev___-next)
+  129. `prev?`
+    1. [`String.Slice.Pos.prev?`](Basic-Types/Strings/#String___Slice___Pos___prev___-next)
+  130. `prevn`
+    1. [`ByteArray.Iterator.prevn`](Basic-Types/Byte-Arrays/#ByteArray___Iterator___prevn)
+  131. `prevn`
+    1. [`String.Legacy.Iterator.prevn`](Basic-Types/Strings/#String___Legacy___Iterator___prevn)
+  132. `prevn`
+    1. [`String.Slice.Pos.prevn`](Basic-Types/Strings/#String___Slice___Pos___prevn)
+  133. `prevn`
+    1. [`Substring.Raw.prevn`](Basic-Types/Strings/#Substring___Raw___prevn)
+  134. `print`
+    1. [`IO.print`](IO/Console-Output/#IO___print)
+  135. `println`
+    1. [`IO.println`](IO/Console-Output/#IO___println)
+  136. `private­In­Public`
+    1. [`backward.private­In­Public`](Source-Files-and-Modules/#backward___privateInPublic)
+  137. `proj`
+    1. [`Lean.Meta.DSimp.Config.proj` (structure field)](The-Simplifier/Configuring-Simplification/#Lean___Meta___DSimp___Config___mk)
+  138. `proj`
+    1. [`Lean.Meta.Simp.Config.proj` (structure field)](The-Simplifier/Configuring-Simplification/#Lean___Meta___Simp___Config___mk)
+  139. [proof state](Tactic-Proofs/#--index--next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next)
+  140. `proofs`
+    1. [`pp.proofs`](Tactic-Proofs/Reading-Proof-States/#pp___proofs)
+  141. `proofs­In­Public`
+    1. [`backward.proofs­In­Public`](Source-Files-and-Modules/#backward___proofsInPublic)
+  142. `property`
+    1. [`List.Cursor.property` (structure field)](The--mvcgen--tactic/Predicate-Transformers/#List___Cursor___mk)
+  143. `property`
+    1. [`Subtype.property` (structure field)](Basic-Types/Subtypes/#Subtype___mk)
+  144. [`propext`](The-Type-System/Propositions/#propext)
+  145. [proposition](The-Type-System/Propositions/#--index-)
+  146. proposition
+    1. [decidable](Type-Classes/Basic-Classes/#--index--next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next)
+  147. `prun`
+    1. [`Std.Iterators.HetT.prun`](Iterators/Reasoning-About-Iterators/#Std___Iterators___HetT___prun)
+  148. [`ptr­Addr­Unsafe`](Definitions/Recursive-Definitions/#ptrAddrUnsafe)
+  149. [`ptr­Eq`](Definitions/Recursive-Definitions/#ptrEq)
+  150. `ptr­Eq`
+    1. [`ST.Ref.ptr­Eq`](IO/Mutable-References/#ST___Ref___ptrEq)
+  151. [`ptr­Eq­List`](Definitions/Recursive-Definitions/#ptrEqList)
+  152. `pure`
+    1. [`EStateM.pure`](Functors___-Monads-and--do--Notation/Varieties-of-Monads/#EStateM___pure)
+  153. `pure`
+    1. [`Except.pure`](Functors___-Monads-and--do--Notation/Varieties-of-Monads/#Except___pure)
+  154. `pure`
+    1. [`ExceptT.pure`](Functors___-Monads-and--do--Notation/Varieties-of-Monads/#ExceptT___pure)
+  155. `pure`
+    1. [`OptionT.pure`](Functors___-Monads-and--do--Notation/Varieties-of-Monads/#OptionT___pure)
+  156. `pure`
+    1. [`Pure.pure` (class method)](Functors___-Monads-and--do--Notation/#Pure___mk)
+  157. `pure`
+    1. [`ReaderT.pure`](Functors___-Monads-and--do--Notation/Varieties-of-Monads/#ReaderT___pure)
+  158. `pure`
+    1. [`StateT.pure`](Functors___-Monads-and--do--Notation/Varieties-of-Monads/#StateT___pure)
+  159. `pure`
+    1. [`Std.Do.PredTrans.pure`](The--mvcgen--tactic/Predicate-Transformers/#Std___Do___PredTrans___pure)
+  160. `pure`
+    1. [`Std.Do.SPred.pure`](The--mvcgen--tactic/Predicate-Transformers/#Std___Do___SPred___pure)
+  161. `pure`
+    1. [`Std.Iterators.HetT.pure`](Iterators/Reasoning-About-Iterators/#Std___Iterators___HetT___pure)
+  162. `pure`
+    1. [`Task.pure`](IO/Tasks-and-Threads/#Task___pure)
+  163. `pure`
+    1. [`Thunk.pure`](Basic-Types/Lazy-Computations/#Thunk___pure)
+  164. `pure_bind`
+    1. [`[anonymous]` (class method)](Functors___-Monads-and--do--Notation/Laws/#LawfulMonad___mk)
+  165. `pure_seq`
+    1. [`[anonymous]` (class method)](Functors___-Monads-and--do--Notation/Laws/#LawfulApplicative___mk)
+  166. `push`
+    1. [`Array.push`](Basic-Types/Arrays/#Array___push)
+  167. `push`
+    1. [`ByteArray.push`](Basic-Types/Byte-Arrays/#ByteArray___push)
+  168. `push`
+    1. [`Lean.Syntax.TSepArray.push`](Notations-and-Macros/Defining-New-Syntax/#Lean___Syntax___TSepArray___push)
+  169. `push`
+    1. [`String.push`](Basic-Types/Strings/#String___push)
+  170. `push­Arg`
+    1. [`Std.Do.PredTrans.push­Arg`](The--mvcgen--tactic/Predicate-Transformers/#Std___Do___PredTrans___pushArg)
+  171. `push­Except`
+    1. [`Std.Do.PredTrans.push­Except`](The--mvcgen--tactic/Predicate-Transformers/#Std___Do___PredTrans___pushExcept)
+  172. `push­Newline`
+    1. [`Std.Format.Monad­PrettyFormat.push­Newline` (class method)](Interacting-with-Lean/#Std___Format___MonadPrettyFormat___mk)
+  173. `push­Option`
+    1. [`Std.Do.PredTrans.push­Option`](The--mvcgen--tactic/Predicate-Transformers/#Std___Do___PredTrans___pushOption)
+  174. `push­Output`
+    1. [`Std.Format.Monad­PrettyFormat.push­Output` (class method)](Interacting-with-Lean/#Std___Format___MonadPrettyFormat___mk)
+  175. [`push_cast`](Tactic-Proofs/Tactic-Reference/#push_cast)
+  176. `pushn`
+    1. [`String.pushn`](Basic-Types/Strings/#String___pushn)
+  177. `put­Str`
+    1. [`IO.FS.Handle.put­Str`](IO/Files___-File-Handles___-and-Streams/#IO___FS___Handle___putStr)
+  178. `put­Str`
+    1. [`IO.FS.Stream.put­Str` (structure field)](IO/Files___-File-Handles___-and-Streams/#IO___FS___Stream___mk)
+  179. `put­Str­Ln`
+    1. [`IO.FS.Handle.put­Str­Ln`](IO/Files___-File-Handles___-and-Streams/#IO___FS___Handle___putStrLn)
+  180. `put­Str­Ln`
+    1. [`IO.FS.Stream.put­Str­Ln`](IO/Files___-File-Handles___-and-Streams/#IO___FS___Stream___putStrLn)
+
+
+##  Q
+  1. [`Quot`](The-Type-System/Quotients/#Quot)
+  2. [`Quot.hrec­On`](The-Type-System/Quotients/#Quot___hrecOn)
+  3. [`Quot.ind`](The-Type-System/Quotients/#Quot___ind)
+  4. [`Quot.lift`](The-Type-System/Quotients/#Quot___lift)
+  5. [`Quot.lift­On`](The-Type-System/Quotients/#Quot___liftOn)
+  6. [`Quot.mk`](The-Type-System/Quotients/#Quot___mk)
+  7. [`Quot.rec`](The-Type-System/Quotients/#Quot___rec)
+  8. [`Quot.rec­On`](The-Type-System/Quotients/#Quot___recOn)
+  9. [`Quot.rec­On­Subsingleton`](The-Type-System/Quotients/#Quot___recOnSubsingleton)
+  10. [`Quot.sound`](The-Type-System/Quotients/#Quot___sound)
+  11. `Quote`
+    1. [`Lean.Quote`](Notations-and-Macros/Defining-New-Syntax/#Lean___Quote___mk)
+  12. [`Quotient`](The-Type-System/Quotients/#Quotient)
+  13. [`Quotient.exact`](The-Type-System/Quotients/#Quotient___exact)
+  14. [`Quotient.hrec­On`](The-Type-System/Quotients/#Quotient___hrecOn)
+  15. [`Quotient.ind`](The-Type-System/Quotients/#Quotient___ind)
+  16. [`Quotient.lift`](The-Type-System/Quotients/#Quotient___lift)
+  17. [`Quotient.lift­On`](The-Type-System/Quotients/#Quotient___liftOn)
+  18. [`Quotient.lift­On₂`](The-Type-System/Quotients/#Quotient___liftOn___)
+  19. [`Quotient.lift₂`](The-Type-System/Quotients/#Quotient___lift___)
+  20. [`Quotient.mk`](The-Type-System/Quotients/#Quotient___mk)
+  21. [`Quotient.mk'`](The-Type-System/Quotients/#Quotient___mk___)
+  22. [`Quotient.rec`](The-Type-System/Quotients/#Quotient___rec)
+  23. [`Quotient.rec­On`](The-Type-System/Quotients/#Quotient___recOn)
+  24. [`Quotient.rec­On­Subsingleton`](The-Type-System/Quotients/#Quotient___recOnSubsingleton)
+  25. [`Quotient.rec­On­Subsingleton₂`](The-Type-System/Quotients/#Quotient___recOnSubsingleton___)
+  26. [`Quotient.sound`](The-Type-System/Quotients/#Quotient___sound)
+  27. `qsort`
+    1. [`Array.qsort`](Basic-Types/Arrays/#Array___qsort)
+  28. `qsort­Ord`
+    1. [`Array.qsort­Ord`](Basic-Types/Arrays/#Array___qsortOrd)
+  29. quantification
+    1. [impredicative](The-Type-System/Universes/#--index--next-next-next-next-next-next-next-next)
+  30. quantification
+    1. [predicative](The-Type-System/Universes/#--index--next-next-next-next-next-next-next-next-next-next)
+  31. [`query` (Lake command)](Build-Tools-and-Distribution/Lake/#query)
+  32. `quote`
+    1. [`Char.quote`](Basic-Types/Characters/#Char___quote)
+  33. `quote`
+    1. [`Lean.Quote.quote` (class method)](Notations-and-Macros/Defining-New-Syntax/#Lean___Quote___mk)
+  34. `quote`
+    1. [`String.quote`](Basic-Types/Strings/#String___quote)
+
+
+##  R
+  1. [`Random­Gen`](IO/Random-Numbers/#RandomGen___mk)
+  2. `RandomGen.mk`
+    1. [Instance constructor of `Random­Gen`](IO/Random-Numbers/#RandomGen___mk)
+  3. `Raw`
+    1. [`Std.DHashMap.Raw`](Basic-Types/Maps-and-Sets/#Std___DHashMap___Raw___mk)
+  4. `Raw`
+    1. [`Std.DTreeMap.Raw`](Basic-Types/Maps-and-Sets/#Std___DTreeMap___Raw___mk)
+  5. `Raw`
+    1. [`Std.HashMap.Raw`](Basic-Types/Maps-and-Sets/#Std___HashMap___Raw___mk)
+  6. `Raw`
+    1. [`Std.HashSet.Raw`](Basic-Types/Maps-and-Sets/#Std___HashSet___Raw___mk)
+  7. `Raw`
+    1. [`Std.TreeMap.Raw`](Basic-Types/Maps-and-Sets/#Std___TreeMap___Raw___mk)
+  8. `Raw`
+    1. [`Std.TreeSet.Raw`](Basic-Types/Maps-and-Sets/#Std___TreeSet___Raw___mk)
+  9. `Raw`
+    1. [`String.Pos.Raw`](Basic-Types/Strings/#String___Pos___Raw___mk)
+  10. `Raw`
+    1. [`Substring.Raw`](Basic-Types/Strings/#Substring___Raw___mk)
+  11. `Rcc`
+    1. [`Std.Rcc`](Basic-Types/Ranges/#Std___Rcc___mk)
+  12. `Rci`
+    1. [`Std.Rci`](Basic-Types/Ranges/#Std___Rci___mk)
+  13. `Rco`
+    1. [`Std.Rco`](Basic-Types/Ranges/#Std___Rco___mk)
+  14. [`Reader­M`](Functors___-Monads-and--do--Notation/Varieties-of-Monads/#ReaderM)
+  15. [`Reader­T`](Functors___-Monads-and--do--Notation/Varieties-of-Monads/#ReaderT)
+  16. [`ReaderT.adapt`](Functors___-Monads-and--do--Notation/Varieties-of-Monads/#ReaderT___adapt)
+  17. [`ReaderT.bind`](Functors___-Monads-and--do--Notation/Varieties-of-Monads/#ReaderT___bind)
+  18. [`ReaderT.failure`](Functors___-Monads-and--do--Notation/Varieties-of-Monads/#ReaderT___failure)
+  19. [`ReaderT.or­Else`](Functors___-Monads-and--do--Notation/Varieties-of-Monads/#ReaderT___orElse)
+  20. [`ReaderT.pure`](Functors___-Monads-and--do--Notation/Varieties-of-Monads/#ReaderT___pure)
+  21. [`ReaderT.read`](Functors___-Monads-and--do--Notation/Varieties-of-Monads/#ReaderT___read)
+  22. [`ReaderT.run`](Functors___-Monads-and--do--Notation/Varieties-of-Monads/#ReaderT___run)
+  23. `Ref`
+    1. [`IO.Ref`](IO/Mutable-References/#IO___Ref)
+  24. `Ref`
+    1. [`ST.Ref`](IO/Mutable-References/#ST___Ref___mk)
+  25. [`Refl­BEq`](Type-Classes/Basic-Classes/#ReflBEq___mk)
+  26. `ReflBEq.mk`
+    1. [Instance constructor of `Refl­BEq`](Type-Classes/Basic-Classes/#ReflBEq___mk)
+  27. [`Repr`](Interacting-with-Lean/#Repr___mk)
+  28. [`Repr.add­App­Paren`](Interacting-with-Lean/#Repr___addAppParen)
+  29. `Repr.mk`
+    1. [Instance constructor of `Repr`](Interacting-with-Lean/#Repr___mk)
+  30. [`Repr­Atom`](Interacting-with-Lean/#ReprAtom___mk)
+  31. `ReprAtom.mk`
+    1. [Instance constructor of `Repr­Atom`](Interacting-with-Lean/#ReprAtom___mk)
+  32. `Result`
+    1. [`EStateM.Result`](Functors___-Monads-and--do--Notation/Varieties-of-Monads/#EStateM___Result___ok)
+  33. `Ric`
+    1. [`Std.Ric`](Basic-Types/Ranges/#Std___Ric___mk)
+  34. `Right­Inverse`
+    1. [`Function.Right­Inverse`](The-Type-System/Functions/#Function___RightInverse)
+  35. `Rii`
+    1. [`Std.Rii`](Basic-Types/Ranges/#Std___Rii___mk)
+  36. `Ring`
+    1. [`Lean.Grind.Ring`](The--grind--tactic/Algebraic-Solver-_LPAR_Commutative-Rings___-Fields_RPAR_/#Lean___Grind___Ring___mk)
+  37. `Rio`
+    1. [`Std.Rio`](Basic-Types/Ranges/#Std___Rio___mk)
+  38. `Roc`
+    1. [`Std.Roc`](Basic-Types/Ranges/#Std___Roc___mk)
+  39. `Roi`
+    1. [`Std.Roi`](Basic-Types/Ranges/#Std___Roi___mk)
+  40. `Roo`
+    1. [`Std.Roo`](Basic-Types/Ranges/#Std___Roo___mk)
+  41. `r`
+    1. [`Setoid.r` (class method)](The-Type-System/Quotients/#Setoid___mk)
+  42. `rand`
+    1. [`IO.rand`](IO/Random-Numbers/#IO___rand)
+  43. [`rand­Bool`](IO/Random-Numbers/#randBool)
+  44. [`rand­Nat`](IO/Random-Numbers/#randNat)
+  45. `range'`
+    1. [`Array.range'`](Basic-Types/Arrays/#Array___range___)
+  46. `range'`
+    1. [`List.range'`](Basic-Types/Linked-Lists/#List___range___)
+  47. `range'TR`
+    1. [`List.range'TR`](Basic-Types/Linked-Lists/#List___range___TR)
+  48. `range`
+    1. [`Array.range`](Basic-Types/Arrays/#Array___range)
+  49. `range`
+    1. [`List.range`](Basic-Types/Linked-Lists/#List___range)
+  50. `range`
+    1. [`RandomGen.range` (class method)](IO/Random-Numbers/#RandomGen___mk)
+  51. `raw`
+    1. [`Lean.TSyntax.raw` (structure field)](Notations-and-Macros/Defining-New-Syntax/#Lean___TSyntax___mk)
+  52. `raw`
+    1. [`Lean.TSyntaxArray.raw`](Notations-and-Macros/Defining-New-Syntax/#Lean___TSyntaxArray___raw)
+  53. `raw­End­Pos`
+    1. [`String.Slice.raw­End­Pos`](Basic-Types/Strings/#String___Slice___rawEndPos)
+  54. `raw­End­Pos`
+    1. [`String.raw­End­Pos`](Basic-Types/Strings/#String___rawEndPos)
+  55. [`rcases`](Tactic-Proofs/Tactic-Reference/#rcases)
+  56. `read`
+    1. [`IO.AccessRight.read` (structure field)](IO/Files___-File-Handles___-and-Streams/#IO___AccessRight___mk)
+  57. `read`
+    1. [`IO.FS.Handle.read`](IO/Files___-File-Handles___-and-Streams/#IO___FS___Handle___read)
+  58. `read`
+    1. [`IO.FS.Stream.read` (structure field)](IO/Files___-File-Handles___-and-Streams/#IO___FS___Stream___mk)
+  59. `read`
+    1. [`MonadReader.read` (class method)](Functors___-Monads-and--do--Notation/Varieties-of-Monads/#MonadReader___mk)
+  60. `read`
+    1. [`Monad­ReaderOf.read` (class method)](Functors___-Monads-and--do--Notation/Varieties-of-Monads/#MonadReaderOf___mk)
+  61. `read`
+    1. [`ReaderT.read`](Functors___-Monads-and--do--Notation/Varieties-of-Monads/#ReaderT___read)
+  62. `read­Bin­File`
+    1. [`IO.FS.read­Bin­File`](IO/Files___-File-Handles___-and-Streams/#IO___FS___readBinFile)
+  63. `read­Bin­To­End`
+    1. [`IO.FS.Handle.read­Bin­To­End`](IO/Files___-File-Handles___-and-Streams/#IO___FS___Handle___readBinToEnd)
+  64. `read­Bin­To­End­Into`
+    1. [`IO.FS.Handle.read­Bin­To­End­Into`](IO/Files___-File-Handles___-and-Streams/#IO___FS___Handle___readBinToEndInto)
+  65. `read­Dir`
+    1. [`System.FilePath.read­Dir`](IO/Files___-File-Handles___-and-Streams/#System___FilePath___readDir)
+  66. `read­File`
+    1. [`IO.FS.read­File`](IO/Files___-File-Handles___-and-Streams/#IO___FS___readFile)
+  67. [`read­The`](Functors___-Monads-and--do--Notation/Varieties-of-Monads/#readThe)
+  68. `read­To­End`
+    1. [`IO.FS.Handle.read­To­End`](IO/Files___-File-Handles___-and-Streams/#IO___FS___Handle___readToEnd)
+  69. `real­Path`
+    1. [`IO.FS.real­Path`](IO/Files___-File-Handles___-and-Streams/#IO___FS___realPath)
+  70. `rec`
+    1. [`Quot.rec`](The-Type-System/Quotients/#Quot___rec)
+  71. `rec`
+    1. [`Quotient.rec`](The-Type-System/Quotients/#Quotient___rec)
+  72. `rec­Aux`
+    1. [`Nat.rec­Aux`](Basic-Types/Natural-Numbers/#Nat___recAux)
+  73. `rec­On`
+    1. [`Quot.rec­On`](The-Type-System/Quotients/#Quot___recOn)
+  74. `rec­On`
+    1. [`Quotient.rec­On`](The-Type-System/Quotients/#Quotient___recOn)
+  75. `rec­On­Subsingleton`
+    1. [`Quot.rec­On­Subsingleton`](The-Type-System/Quotients/#Quot___recOnSubsingleton)
+  76. `rec­On­Subsingleton`
+    1. [`Quotient.rec­On­Subsingleton`](The-Type-System/Quotients/#Quotient___recOnSubsingleton)
+  77. `rec­On­Subsingleton₂`
+    1. [`Quotient.rec­On­Subsingleton₂`](The-Type-System/Quotients/#Quotient___recOnSubsingleton___)
+  78. [recursor](The-Type-System/Inductive-Types/#--index--next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next)
+  79. `recv`
+    1. [`Std.Channel.recv`](IO/Tasks-and-Threads/#Std___Channel___recv)
+  80. [`reduce`](Tactic-Proofs/Targeted-Rewriting-with--conv/#Lean___Parser___Tactic___Conv___reduce)
+  81. reduction
+    1. [ι (iota)](The-Type-System/Inductive-Types/#--index--next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next)
+  82. [`refine`](Tactic-Proofs/Tactic-Reference/#refine)
+  83. [`refine'`](Tactic-Proofs/Tactic-Reference/#refine___)
+  84. `refl`
+    1. [`Equivalence.refl` (structure field)](The-Type-System/Quotients/#Equivalence___mk)
+  85. `refl`
+    1. [`Setoid.refl`](The-Type-System/Quotients/#Setoid___refl)
+  86. `register­Deriving­Handler`
+    1. [`Lean.Elab.register­Deriving­Handler`](Type-Classes/Deriving-Instances/#Lean___Elab___registerDerivingHandler)
+  87. `register­Simp­Attr`
+    1. [`Lean.Meta.register­Simp­Attr`](The-Simplifier/Simp-sets/#Lean___Meta___registerSimpAttr)
+  88. `rel`
+    1. [`Lean.Order.PartialOrder.rel` (class method)](Definitions/Recursive-Definitions/#Lean___Order___PartialOrder___mk)
+  89. `rel`
+    1. [`Well­FoundedRelation.rel` (class method)](Definitions/Recursive-Definitions/#WellFoundedRelation___mk)
+  90. `rel_antisymm`
+    1. [`Lean.Order.PartialOrder.rel_antisymm` (class method)](Definitions/Recursive-Definitions/#Lean___Order___PartialOrder___mk)
+  91. `rel_refl`
+    1. [`Lean.Order.PartialOrder.rel_refl` (class method)](Definitions/Recursive-Definitions/#Lean___Order___PartialOrder___mk)
+  92. `rel_trans`
+    1. [`Lean.Order.PartialOrder.rel_trans` (class method)](Definitions/Recursive-Definitions/#Lean___Order___PartialOrder___mk)
+  93. [`relaxed­Auto­Implicit`](Definitions/Headers-and-Signatures/#relaxedAutoImplicit)
+  94. `remaining­Bytes`
+    1. [`ByteArray.Iterator.remaining­Bytes`](Basic-Types/Byte-Arrays/#ByteArray___Iterator___remainingBytes)
+  95. `remaining­Bytes`
+    1. [`String.Legacy.Iterator.remaining­Bytes`](Basic-Types/Strings/#String___Legacy___Iterator___remainingBytes)
+  96. `remaining­To­String`
+    1. [`String.Legacy.Iterator.remaining­To­String`](Basic-Types/Strings/#String___Legacy___Iterator___remainingToString)
+  97. `remove­All`
+    1. [`List.remove­All`](Basic-Types/Linked-Lists/#List___removeAll)
+  98. `remove­Dir`
+    1. [`IO.FS.remove­Dir`](IO/Files___-File-Handles___-and-Streams/#IO___FS___removeDir)
+  99. `remove­Dir­All`
+    1. [`IO.FS.remove­Dir­All`](IO/Files___-File-Handles___-and-Streams/#IO___FS___removeDirAll)
+  100. `remove­File`
+    1. [`IO.FS.remove­File`](IO/Files___-File-Handles___-and-Streams/#IO___FS___removeFile)
+  101. `remove­Leading­Spaces`
+    1. [`String.remove­Leading­Spaces`](Basic-Types/Strings/#String___removeLeadingSpaces)
+  102. [`rename`](Tactic-Proofs/The-Tactic-Language/#rename)
+  103. `rename`
+    1. [`IO.FS.rename`](IO/Files___-File-Handles___-and-Streams/#IO___FS___rename)
+  104. [`rename_i`](Tactic-Proofs/The-Tactic-Language/#rename_i)
+  105. `repair`
+    1. [`Substring.Raw.repair`](Basic-Types/Strings/#Substring___Raw___repair)
+  106. `repeat` [(0)](Tactic-Proofs/The-Tactic-Language/#repeat) [(1)](Tactic-Proofs/Targeted-Rewriting-with--conv/#Lean___Parser___Tactic___Conv___convRepeat_)
+  107. [`repeat'`](Tactic-Proofs/The-Tactic-Language/#repeat___)
+  108. `repeat`
+    1. [`Nat.repeat`](Basic-Types/Natural-Numbers/#Nat___repeat)
+  109. `repeat`
+    1. [`Std.Iter.repeat`](Iterators/Iterator-Definitions/#Std___Iter___repeat)
+  110. [`repeat1'`](Tactic-Proofs/The-Tactic-Language/#repeat1___)
+  111. `repeat­TR`
+    1. [`Nat.repeat­TR`](Basic-Types/Natural-Numbers/#Nat___repeatTR)
+  112. [`replace`](Tactic-Proofs/Tactic-Reference/#replace)
+  113. `replace`
+    1. [`Array.replace`](Basic-Types/Arrays/#Array___replace)
+  114. `replace`
+    1. [`List.replace`](Basic-Types/Linked-Lists/#List___replace)
+  115. `replace`
+    1. [`String.replace`](Basic-Types/Strings/#String___replace)
+  116. `replace­TR`
+    1. [`List.replace­TR`](Basic-Types/Linked-Lists/#List___replaceTR)
+  117. `replicate`
+    1. [`Array.replicate`](Basic-Types/Arrays/#Array___replicate)
+  118. `replicate`
+    1. [`BitVec.replicate`](Basic-Types/Bitvectors/#BitVec___replicate)
+  119. `replicate`
+    1. [`List.replicate`](Basic-Types/Linked-Lists/#List___replicate)
+  120. `replicate­TR`
+    1. [`List.replicate­TR`](Basic-Types/Linked-Lists/#List___replicateTR)
+  121. [`repr`](Interacting-with-Lean/#repr-next)
+  122. `repr`
+    1. [`Int.repr`](Basic-Types/Integers/#Int___repr)
+  123. `repr`
+    1. [`Nat.repr`](Basic-Types/Natural-Numbers/#Nat___repr)
+  124. `repr`
+    1. [`Option.repr`](Basic-Types/Optional-Values/#Option___repr)
+  125. `repr`
+    1. [`USize.repr`](Basic-Types/Fixed-Precision-Integers/#USize___repr)
+  126. `repr`
+    1. [`eval.derive.repr`](Interacting-with-Lean/#eval___derive___repr)
+  127. [`repr­Arg`](Interacting-with-Lean/#reprArg)
+  128. `repr­Prec`
+    1. [`Repr.repr­Prec` (class method)](Interacting-with-Lean/#Repr___mk)
+  129. [`repr­Str`](Interacting-with-Lean/#reprStr)
+  130. `resolve`
+    1. [`IO.Promise.resolve`](IO/Tasks-and-Threads/#IO___Promise___resolve)
+  131. `resolve­Global­Name`
+    1. [`Lean.Macro.resolve­Global­Name`](Notations-and-Macros/Macros/#Lean___Macro___resolveGlobalName)
+  132. `resolve­Namespace`
+    1. [`Lean.Macro.resolve­Namespace`](Notations-and-Macros/Macros/#Lean___Macro___resolveNamespace)
+  133. `restore`
+    1. [`EStateM.Backtrackable.restore` (class method)](Functors___-Monads-and--do--Notation/Varieties-of-Monads/#EStateM___Backtrackable___mk)
+  134. `restore­M`
+    1. [`MonadControl.restore­M` (class method)](Functors___-Monads-and--do--Notation/Lifting-Monads/#MonadControl___mk)
+  135. `restore­M`
+    1. [`Monad­ControlT.restore­M` (class method)](Functors___-Monads-and--do--Notation/Lifting-Monads/#MonadControlT___mk)
+  136. `result!`
+    1. [`IO.Promise.result!`](IO/Tasks-and-Threads/#IO___Promise___result___-next)
+  137. `result`
+    1. [`trace.compiler.ir.result`](Run-Time-Code/Reference-Counting/#trace___compiler___ir___result)
+  138. `result?`
+    1. [`IO.Promise.result?`](IO/Tasks-and-Threads/#IO___Promise___result___)
+  139. `result­D`
+    1. [`IO.Promise.result­D`](IO/Tasks-and-Threads/#IO___Promise___resultD)
+  140. `rev`
+    1. [`Fin.rev`](Basic-Types/Finite-Natural-Numbers/#Fin___rev)
+  141. `rev­Bytes`
+    1. [`String.Slice.rev­Bytes`](Basic-Types/Strings/#String___Slice___revBytes)
+  142. `rev­Chars`
+    1. [`String.Slice.rev­Chars`](Basic-Types/Strings/#String___Slice___revChars)
+  143. `rev­Find?`
+    1. [`String.Slice.rev­Find?`](Basic-Types/Strings/#String___Slice___revFind___)
+  144. `rev­Find?`
+    1. [`String.rev­Find?`](Basic-Types/Strings/#String___revFind___)
+  145. `rev­Positions`
+    1. [`String.Slice.rev­Positions`](Basic-Types/Strings/#String___Slice___revPositions)
+  146. `rev­Split`
+    1. [`String.Slice.rev­Split`](Basic-Types/Strings/#String___Slice___revSplit)
+  147. `reverse`
+    1. [`Array.reverse`](Basic-Types/Arrays/#Array___reverse)
+  148. `reverse`
+    1. [`BitVec.reverse`](Basic-Types/Bitvectors/#BitVec___reverse)
+  149. `reverse`
+    1. [`List.reverse`](Basic-Types/Linked-Lists/#List___reverse)
+  150. `reverse­Induction`
+    1. [`Fin.reverse­Induction`](Basic-Types/Finite-Natural-Numbers/#Fin___reverseInduction)
+  151. [`revert`](Tactic-Proofs/The-Tactic-Language/#revert)
+  152. `rewind`
+    1. [`IO.FS.Handle.rewind`](IO/Files___-File-Handles___-and-Streams/#IO___FS___Handle___rewind)
+  153. `rewrite` [(0)](Tactic-Proofs/Tactic-Reference/#rewrite) [(1)](Tactic-Proofs/Targeted-Rewriting-with--conv/#Lean___Parser___Tactic___Conv___rewrite)
+  154. `rewrite`
+    1. [`trace.Meta.Tactic.simp.rewrite`](The-Simplifier/Configuring-Simplification/#trace___Meta___Tactic___simp___rewrite)
+  155. `rfl` [(0)](Tactic-Proofs/Tactic-Reference/#rfl) [(1)](Tactic-Proofs/Targeted-Rewriting-with--conv/#Lean___Parser___Tactic___Conv___convRfl) [(2)](Basic-Propositions/Propositional-Equality/#rfl-next)
+  156. [`rfl'`](Tactic-Proofs/Tactic-Reference/#rfl___)
+  157. `rfl`
+    1. [`HEq.rfl`](Basic-Propositions/Propositional-Equality/#HEq___rfl)
+  158. `rfl`
+    1. [`ReflBEq.rfl` (class method)](Type-Classes/Basic-Classes/#ReflBEq___mk)
+  159. [`rhs`](Tactic-Proofs/Targeted-Rewriting-with--conv/#Lean___Parser___Tactic___Conv___rhs)
+  160. `right` [(0)](Tactic-Proofs/Tactic-Reference/#right) [(1)](Tactic-Proofs/Targeted-Rewriting-with--conv/#Lean___Parser___Tactic___Conv___convRight)
+  161. `right`
+    1. [`And.right` (structure field)](Basic-Propositions/Logical-Connectives/#And___intro)
+  162. `right_distrib`
+    1. [`Lean.Grind.Semiring.one_mul` (class method)](The--grind--tactic/Algebraic-Solver-_LPAR_Commutative-Rings___-Fields_RPAR_/#Lean___Grind___Semiring___mk)
+  163. `rightpad`
+    1. [`Array.rightpad`](Basic-Types/Arrays/#Array___rightpad)
+  164. `rightpad`
+    1. [`List.rightpad`](Basic-Types/Linked-Lists/#List___rightpad)
+  165. [`rintro`](Tactic-Proofs/Tactic-Reference/#rintro)
+  166. `root`
+    1. [`IO.FS.DirEntry.root` (structure field)](IO/Files___-File-Handles___-and-Streams/#IO___FS___DirEntry___mk)
+  167. `root`
+    1. [`[anonymous]` (structure field)](Build-Tools-and-Distribution/Lake/#Lake___LeanExeConfig___mk)
+  168. `roots`
+    1. [`[anonymous]` (structure field)](Build-Tools-and-Distribution/Lake/#Lake___LeanLibConfig___mk)
+  169. `rotate­Left`
+    1. [`BitVec.rotate­Left`](Basic-Types/Bitvectors/#BitVec___rotateLeft)
+  170. `rotate­Left`
+    1. [`List.rotate­Left`](Basic-Types/Linked-Lists/#List___rotateLeft)
+  171. `rotate­Right`
+    1. [`BitVec.rotate­Right`](Basic-Types/Bitvectors/#BitVec___rotateRight)
+  172. `rotate­Right`
+    1. [`List.rotate­Right`](Basic-Types/Linked-Lists/#List___rotateRight)
+  173. [`rotate_left`](Tactic-Proofs/The-Tactic-Language/#rotate_left)
+  174. [`rotate_right`](Tactic-Proofs/The-Tactic-Language/#rotate_right)
+  175. `round`
+    1. [`Float.round`](Basic-Types/Floating-Point-Numbers/#Float___round)
+  176. `round`
+    1. [`Float32.round`](Basic-Types/Floating-Point-Numbers/#Float32___round)
+  177. [`run` (Elan command)](Build-Tools-and-Distribution/Managing-Toolchains-with-Elan/#run)
+  178. `run'`
+    1. [`EStateM.run'`](Functors___-Monads-and--do--Notation/Varieties-of-Monads/#EStateM___run___)
+  179. `run'`
+    1. [`State­CpsT.run'`](Functors___-Monads-and--do--Notation/Varieties-of-Monads/#StateCpsT___run___)
+  180. `run'`
+    1. [`State­RefT'.run'`](Functors___-Monads-and--do--Notation/Varieties-of-Monads/#StateRefT______run___)
+  181. `run'`
+    1. [`StateT.run'`](Functors___-Monads-and--do--Notation/Varieties-of-Monads/#StateT___run___)
+  182. `run`
+    1. [`EStateM.run`](Functors___-Monads-and--do--Notation/Varieties-of-Monads/#EStateM___run)
+  183. `run`
+    1. [`Except­CpsT.run`](Functors___-Monads-and--do--Notation/Varieties-of-Monads/#ExceptCpsT___run)
+  184. `run`
+    1. [`ExceptT.run`](Functors___-Monads-and--do--Notation/Varieties-of-Monads/#ExceptT___run)
+  185. `run`
+    1. [`IO.Process.run`](IO/Processes/#IO___Process___run)
+  186. `run`
+    1. [`Id.run`](Functors___-Monads-and--do--Notation/Varieties-of-Monads/#Id___run)
+  187. `run`
+    1. [`OptionT.run`](Functors___-Monads-and--do--Notation/Varieties-of-Monads/#OptionT___run)
+  188. `run`
+    1. [`ReaderT.run`](Functors___-Monads-and--do--Notation/Varieties-of-Monads/#ReaderT___run)
+  189. `run`
+    1. [`State­CpsT.run`](Functors___-Monads-and--do--Notation/Varieties-of-Monads/#StateCpsT___run)
+  190. `run`
+    1. [`State­RefT'.run`](Functors___-Monads-and--do--Notation/Varieties-of-Monads/#StateRefT______run)
+  191. `run`
+    1. [`StateT.run`](Functors___-Monads-and--do--Notation/Varieties-of-Monads/#StateT___run)
+  192. `run`
+    1. [`Std.Iterators.PostconditionT.run`](Iterators/Reasoning-About-Iterators/#Std___Iterators___PostconditionT___run)
+  193. `run­Catch`
+    1. [`Except­CpsT.run­Catch`](Functors___-Monads-and--do--Notation/Varieties-of-Monads/#ExceptCpsT___runCatch)
+  194. [`run­EST`](IO/Mutable-References/#runEST)
+  195. `run­K`
+    1. [`Except­CpsT.run­K`](Functors___-Monads-and--do--Notation/Varieties-of-Monads/#ExceptCpsT___runK)
+  196. `run­K`
+    1. [`State­CpsT.run­K`](Functors___-Monads-and--do--Notation/Varieties-of-Monads/#StateCpsT___runK)
+  197. [`run­ST`](IO/Mutable-References/#runST)
+  198. [`run_tac`](Tactic-Proofs/Tactic-Reference/#run_tac)
+  199. `rw` [(0)](Tactic-Proofs/Tactic-Reference/#rw) [(1)](Tactic-Proofs/Targeted-Rewriting-with--conv/#Lean___Parser___Tactic___Conv___convRw__)
+  200. [`rw?`](Tactic-Proofs/Tactic-Reference/#rw___)
+  201. [`rw_mod_cast`](Tactic-Proofs/Tactic-Reference/#rw_mod_cast)
+  202. [`rwa`](Tactic-Proofs/Tactic-Reference/#rwa)
+
+
+##  S
+  1. [`SMul`](Type-Classes/Basic-Classes/#SMul___mk)
+  2. `SMul.mk`
+    1. [Instance constructor of `SMul`](Type-Classes/Basic-Classes/#SMul___mk)
+  3. `SPred`
+    1. [`Std.Do.SPred`](The--mvcgen--tactic/Predicate-Transformers/#Std___Do___SPred)
+  4. [`ST`](IO/Mutable-References/#ST)
+  5. [`ST.Ref`](IO/Mutable-References/#ST___Ref___mk)
+  6. [`ST.Ref.get`](IO/Mutable-References/#ST___Ref___get)
+  7. `ST.Ref.mk`
+    1. [Constructor of `ST.Ref`](IO/Mutable-References/#ST___Ref___mk)
+  8. [`ST.Ref.modify`](IO/Mutable-References/#ST___Ref___modify)
+  9. [`ST.Ref.modify­Get`](IO/Mutable-References/#ST___Ref___modifyGet)
+  10. [`ST.Ref.ptr­Eq`](IO/Mutable-References/#ST___Ref___ptrEq)
+  11. [`ST.Ref.set`](IO/Mutable-References/#ST___Ref___set)
+  12. [`ST.Ref.swap`](IO/Mutable-References/#ST___Ref___swap)
+  13. [`ST.Ref.take`](IO/Mutable-References/#ST___Ref___take)
+  14. [`ST.Ref.to­Monad­State­Of`](IO/Mutable-References/#ST___Ref___toMonadStateOf)
+  15. [`ST.mk­Ref`](IO/Mutable-References/#ST___mkRef)
+  16. [`STWorld`](Functors___-Monads-and--do--Notation/Varieties-of-Monads/#STWorld___mk)
+  17. `STWorld.mk`
+    1. [Instance constructor of `STWorld`](Functors___-Monads-and--do--Notation/Varieties-of-Monads/#STWorld___mk)
+  18. `SVal`
+    1. [`Std.Do.SVal`](The--mvcgen--tactic/Predicate-Transformers/#Std___Do___SVal)
+  19. `Scientific­Lit`
+    1. [`Lean.Syntax.Scientific­Lit`](Notations-and-Macros/Defining-New-Syntax/#Lean___Syntax___ScientificLit)
+  20. `Script­M`
+    1. `Lake.Script­M` [(0)](Build-Tools-and-Distribution/Lake/#Lake___ScriptM) [(1)](Build-Tools-and-Distribution/Lake/#Lake___ScriptM-next)
+  21. `Semiring`
+    1. [`Lean.Grind.Semiring`](The--grind--tactic/Algebraic-Solver-_LPAR_Commutative-Rings___-Fields_RPAR_/#Lean___Grind___Semiring___mk)
+  22. [`Seq`](Functors___-Monads-and--do--Notation/#Seq___mk)
+  23. `Seq.mk`
+    1. [Instance constructor of `Seq`](Functors___-Monads-and--do--Notation/#Seq___mk)
+  24. [`Seq­Left`](Functors___-Monads-and--do--Notation/#SeqLeft___mk)
+  25. `SeqLeft.mk`
+    1. [Instance constructor of `Seq­Left`](Functors___-Monads-and--do--Notation/#SeqLeft___mk)
+  26. [`Seq­Right`](Functors___-Monads-and--do--Notation/#SeqRight___mk)
+  27. `SeqRight.mk`
+    1. [Instance constructor of `Seq­Right`](Functors___-Monads-and--do--Notation/#SeqRight___mk)
+  28. [`Setoid`](The-Type-System/Quotients/#Setoid___mk)
+  29. `Setoid.mk`
+    1. [Instance constructor of `Setoid`](The-Type-System/Quotients/#Setoid___mk)
+  30. [`Setoid.refl`](The-Type-System/Quotients/#Setoid___refl)
+  31. [`Setoid.symm`](The-Type-System/Quotients/#Setoid___symm)
+  32. [`Setoid.trans`](The-Type-System/Quotients/#Setoid___trans)
+  33. [`Shift­Left`](Type-Classes/Basic-Classes/#ShiftLeft___mk)
+  34. `ShiftLeft.mk`
+    1. [Instance constructor of `Shift­Left`](Type-Classes/Basic-Classes/#ShiftLeft___mk)
+  35. [`Shift­Right`](Type-Classes/Basic-Classes/#ShiftRight___mk)
+  36. `ShiftRight.mk`
+    1. [Instance constructor of `Shift­Right`](Type-Classes/Basic-Classes/#ShiftRight___mk)
+  37. `Shrink`
+    1. [`Std.Shrink`](Iterators/Iterator-Definitions/#Std___Shrink)
+  38. [`Sigma`](Basic-Types/Tuples/#Sigma___mk)
+  39. `Sigma.mk`
+    1. [Constructor of `Sigma`](Basic-Types/Tuples/#Sigma___mk)
+  40. `Simp­Extension`
+    1. [`Lean.Meta.Simp­Extension`](The-Simplifier/Simp-sets/#Lean___Meta___SimpExtension)
+  41. [`Size­Of`](The-Type-System/Inductive-Types/#SizeOf___mk)
+  42. `SizeOf.mk`
+    1. [Instance constructor of `Size­Of`](The-Type-System/Inductive-Types/#SizeOf___mk)
+  43. `Slice`
+    1. [`String.Slice`](Basic-Types/Strings/#String___Slice___mk)
+  44. `Sliceable`
+    1. [`Std.Rcc.Sliceable`](Basic-Types/Ranges/#Std___Rcc___Sliceable___mk)
+  45. `Sliceable`
+    1. [`Std.Rci.Sliceable`](Basic-Types/Ranges/#Std___Rci___Sliceable___mk)
+  46. `Sliceable`
+    1. [`Std.Rco.Sliceable`](Basic-Types/Ranges/#Std___Rco___Sliceable___mk)
+  47. `Sliceable`
+    1. [`Std.Ric.Sliceable`](Basic-Types/Ranges/#Std___Ric___Sliceable___mk)
+  48. `Sliceable`
+    1. [`Std.Rii.Sliceable`](Basic-Types/Ranges/#Std___Rii___Sliceable___mk)
+  49. `Sliceable`
+    1. [`Std.Rio.Sliceable`](Basic-Types/Ranges/#Std___Rio___Sliceable___mk)
+  50. `Sliceable`
+    1. [`Std.Roc.Sliceable`](Basic-Types/Ranges/#Std___Roc___Sliceable___mk)
+  51. `Sliceable`
+    1. [`Std.Roi.Sliceable`](Basic-Types/Ranges/#Std___Roi___Sliceable___mk)
+  52. `Sliceable`
+    1. [`Std.Roo.Sliceable`](Basic-Types/Ranges/#Std___Roo___Sliceable___mk)
+  53. [`Sort`](The-Type-System/Universes/#--index--next-next-next-next)
+  54. `Source­Info`
+    1. [`Lean.Source­Info`](Notations-and-Macros/Defining-New-Syntax/#Lean___SourceInfo___original)
+  55. `Spawn­Args`
+    1. [`IO.Process.Spawn­Args`](IO/Processes/#IO___Process___SpawnArgs___mk)
+  56. [`Squash`](The-Type-System/Quotients/#Squash)
+  57. [`Squash.ind`](The-Type-System/Quotients/#Squash___ind)
+  58. [`Squash.lift`](The-Type-System/Quotients/#Squash___lift)
+  59. [`Squash.mk`](The-Type-System/Quotients/#Squash___mk)
+  60. [`State­Cps­T`](Functors___-Monads-and--do--Notation/Varieties-of-Monads/#StateCpsT)
+  61. [`State­CpsT.lift`](Functors___-Monads-and--do--Notation/Varieties-of-Monads/#StateCpsT___lift)
+  62. [`State­CpsT.run`](Functors___-Monads-and--do--Notation/Varieties-of-Monads/#StateCpsT___run)
+  63. [`State­CpsT.run'`](Functors___-Monads-and--do--Notation/Varieties-of-Monads/#StateCpsT___run___)
+  64. [`State­CpsT.run­K`](Functors___-Monads-and--do--Notation/Varieties-of-Monads/#StateCpsT___runK)
+  65. [`State­M`](Functors___-Monads-and--do--Notation/Varieties-of-Monads/#StateM)
+  66. [`State­Ref­T'`](Functors___-Monads-and--do--Notation/Varieties-of-Monads/#StateRefT___)
+  67. [`State­RefT'.get`](Functors___-Monads-and--do--Notation/Varieties-of-Monads/#StateRefT______get)
+  68. [`State­RefT'.lift`](Functors___-Monads-and--do--Notation/Varieties-of-Monads/#StateRefT______lift)
+  69. [`State­RefT'.modify­Get`](Functors___-Monads-and--do--Notation/Varieties-of-Monads/#StateRefT______modifyGet)
+  70. [`State­RefT'.run`](Functors___-Monads-and--do--Notation/Varieties-of-Monads/#StateRefT______run)
+  71. [`State­RefT'.run'`](Functors___-Monads-and--do--Notation/Varieties-of-Monads/#StateRefT______run___)
+  72. [`State­RefT'.set`](Functors___-Monads-and--do--Notation/Varieties-of-Monads/#StateRefT______set)
+  73. [`State­T`](Functors___-Monads-and--do--Notation/Varieties-of-Monads/#StateT)
+  74. [`StateT.bind`](Functors___-Monads-and--do--Notation/Varieties-of-Monads/#StateT___bind)
+  75. [`StateT.failure`](Functors___-Monads-and--do--Notation/Varieties-of-Monads/#StateT___failure)
+  76. [`StateT.get`](Functors___-Monads-and--do--Notation/Varieties-of-Monads/#StateT___get)
+  77. [`StateT.lift`](Functors___-Monads-and--do--Notation/Varieties-of-Monads/#StateT___lift)
+  78. [`StateT.map`](Functors___-Monads-and--do--Notation/Varieties-of-Monads/#StateT___map)
+  79. [`StateT.modify­Get`](Functors___-Monads-and--do--Notation/Varieties-of-Monads/#StateT___modifyGet)
+  80. [`StateT.or­Else`](Functors___-Monads-and--do--Notation/Varieties-of-Monads/#StateT___orElse)
+  81. [`StateT.pure`](Functors___-Monads-and--do--Notation/Varieties-of-Monads/#StateT___pure)
+  82. [`StateT.run`](Functors___-Monads-and--do--Notation/Varieties-of-Monads/#StateT___run)
+  83. [`StateT.run'`](Functors___-Monads-and--do--Notation/Varieties-of-Monads/#StateT___run___)
+  84. [`StateT.set`](Functors___-Monads-and--do--Notation/Varieties-of-Monads/#StateT___set)
+  85. `State­Tuple`
+    1. [`Std.Do.SVal.State­Tuple`](The--mvcgen--tactic/Predicate-Transformers/#Std___Do___SVal___StateTuple)
+  86. [`Std.Atomic­T`](IO/Tasks-and-Threads/#Std___AtomicT)
+  87. [`Std.Channel`](IO/Tasks-and-Threads/#Std___Channel)
+  88. [`Std.Channel.Sync`](IO/Tasks-and-Threads/#Std___Channel___Sync)
+  89. [`Std.Channel.for­Async`](IO/Tasks-and-Threads/#Std___Channel___forAsync)
+  90. [`Std.Channel.new`](IO/Tasks-and-Threads/#Std___Channel___new)
+  91. [`Std.Channel.recv`](IO/Tasks-and-Threads/#Std___Channel___recv)
+  92. [`Std.Channel.send`](IO/Tasks-and-Threads/#Std___Channel___send)
+  93. [`Std.Channel.sync`](IO/Tasks-and-Threads/#Std___Channel___sync)
+  94. [`Std.Closeable­Channel`](IO/Tasks-and-Threads/#Std___CloseableChannel)
+  95. [`Std.CloseableChannel.new`](IO/Tasks-and-Threads/#Std___CloseableChannel___new)
+  96. [`Std.Condvar`](IO/Tasks-and-Threads/#Std___Condvar)
+  97. [`Std.Condvar.new`](IO/Tasks-and-Threads/#Std___Condvar___new)
+  98. [`Std.Condvar.notify­All`](IO/Tasks-and-Threads/#Std___Condvar___notifyAll)
+  99. [`Std.Condvar.notify­One`](IO/Tasks-and-Threads/#Std___Condvar___notifyOne)
+  100. [`Std.Condvar.wait`](IO/Tasks-and-Threads/#Std___Condvar___wait)
+  101. [`Std.Condvar.wait­Until`](IO/Tasks-and-Threads/#Std___Condvar___waitUntil)
+  102. [`Std.DHash­Map`](Basic-Types/Maps-and-Sets/#Std___DHashMap)
+  103. [`Std.DHashMap.Equiv`](Basic-Types/Maps-and-Sets/#Std___DHashMap___Equiv___mk)
+  104. `Std.DHashMap.Equiv.mk`
+    1. [Constructor of `Std.DHashMap.Equiv`](Basic-Types/Maps-and-Sets/#Std___DHashMap___Equiv___mk)
+  105. [`Std.DHashMap.Raw`](Basic-Types/Maps-and-Sets/#Std___DHashMap___Raw___mk)
+  106. [`Std.DHashMap.Raw.WF`](Basic-Types/Maps-and-Sets/#Std___DHashMap___Raw___WF___wf)
+  107. `Std.DHashMap.Raw.WF.alter₀`
+    1. [Constructor of `Std.DHashMap.Raw.WF`](Basic-Types/Maps-and-Sets/#Std___DHashMap___Raw___WF___wf)
+  108. `Std.DHashMap.Raw.WF.const­Alter₀`
+    1. [Constructor of `Std.DHashMap.Raw.WF`](Basic-Types/Maps-and-Sets/#Std___DHashMap___Raw___WF___wf)
+  109. `Std.DHashMap.Raw.WF.const­Get­Then­Insert­If­New?₀`
+    1. [Constructor of `Std.DHashMap.Raw.WF`](Basic-Types/Maps-and-Sets/#Std___DHashMap___Raw___WF___wf)
+  110. `Std.DHashMap.Raw.WF.const­Modify₀`
+    1. [Constructor of `Std.DHashMap.Raw.WF`](Basic-Types/Maps-and-Sets/#Std___DHashMap___Raw___WF___wf)
+  111. `Std.DHashMap.Raw.WF.contains­Then­Insert­If­New₀`
+    1. [Constructor of `Std.DHashMap.Raw.WF`](Basic-Types/Maps-and-Sets/#Std___DHashMap___Raw___WF___wf)
+  112. `Std.DHashMap.Raw.WF.contains­Then­Insert₀`
+    1. [Constructor of `Std.DHashMap.Raw.WF`](Basic-Types/Maps-and-Sets/#Std___DHashMap___Raw___WF___wf)
+  113. `Std.DHashMap.Raw.WF.empty­With­Capacity₀`
+    1. [Constructor of `Std.DHashMap.Raw.WF`](Basic-Types/Maps-and-Sets/#Std___DHashMap___Raw___WF___wf)
+  114. `Std.DHashMap.Raw.WF.erase₀`
+    1. [Constructor of `Std.DHashMap.Raw.WF`](Basic-Types/Maps-and-Sets/#Std___DHashMap___Raw___WF___wf)
+  115. `Std.DHashMap.Raw.WF.filter₀`
+    1. [Constructor of `Std.DHashMap.Raw.WF`](Basic-Types/Maps-and-Sets/#Std___DHashMap___Raw___WF___wf)
+  116. `Std.DHashMap.Raw.WF.get­Then­Insert­If­New?₀`
+    1. [Constructor of `Std.DHashMap.Raw.WF`](Basic-Types/Maps-and-Sets/#Std___DHashMap___Raw___WF___wf)
+  117. `Std.DHashMap.Raw.WF.insert­If­New₀`
+    1. [Constructor of `Std.DHashMap.Raw.WF`](Basic-Types/Maps-and-Sets/#Std___DHashMap___Raw___WF___wf)
+  118. `Std.DHashMap.Raw.WF.insert₀`
+    1. [Constructor of `Std.DHashMap.Raw.WF`](Basic-Types/Maps-and-Sets/#Std___DHashMap___Raw___WF___wf)
+  119. `Std.DHashMap.Raw.WF.inter₀`
+    1. [Constructor of `Std.DHashMap.Raw.WF`](Basic-Types/Maps-and-Sets/#Std___DHashMap___Raw___WF___wf)
+  120. `Std.DHashMap.Raw.WF.modify₀`
+    1. [Constructor of `Std.DHashMap.Raw.WF`](Basic-Types/Maps-and-Sets/#Std___DHashMap___Raw___WF___wf)
+  121. `Std.DHashMap.Raw.WF.wf`
+    1. [Constructor of `Std.DHashMap.Raw.WF`](Basic-Types/Maps-and-Sets/#Std___DHashMap___Raw___WF___wf)
+  122. `Std.DHashMap.Raw.mk`
+    1. [Constructor of `Std.DHashMap.Raw`](Basic-Types/Maps-and-Sets/#Std___DHashMap___Raw___mk)
+  123. [`Std.DHashMap.alter`](Basic-Types/Maps-and-Sets/#Std___DHashMap___alter)
+  124. [`Std.DHashMap.contains`](Basic-Types/Maps-and-Sets/#Std___DHashMap___contains)
+  125. [`Std.DHashMap.contains­Then­Insert`](Basic-Types/Maps-and-Sets/#Std___DHashMap___containsThenInsert)
+  126. [`Std.DHashMap.contains­Then­Insert­If­New`](Basic-Types/Maps-and-Sets/#Std___DHashMap___containsThenInsertIfNew)
+  127. [`Std.DHashMap.empty­With­Capacity`](Basic-Types/Maps-and-Sets/#Std___DHashMap___emptyWithCapacity)
+  128. [`Std.DHashMap.erase`](Basic-Types/Maps-and-Sets/#Std___DHashMap___erase)
+  129. [`Std.DHashMap.filter`](Basic-Types/Maps-and-Sets/#Std___DHashMap___filter)
+  130. [`Std.DHashMap.filter­Map`](Basic-Types/Maps-and-Sets/#Std___DHashMap___filterMap)
+  131. [`Std.DHashMap.fold`](Basic-Types/Maps-and-Sets/#Std___DHashMap___fold)
+  132. [`Std.DHashMap.fold­M`](Basic-Types/Maps-and-Sets/#Std___DHashMap___foldM)
+  133. [`Std.DHashMap.for­In`](Basic-Types/Maps-and-Sets/#Std___DHashMap___forIn)
+  134. [`Std.DHashMap.for­M`](Basic-Types/Maps-and-Sets/#Std___DHashMap___forM)
+  135. [`Std.DHashMap.get`](Basic-Types/Maps-and-Sets/#Std___DHashMap___get)
+  136. [`Std.DHashMap.get!`](Basic-Types/Maps-and-Sets/#Std___DHashMap___get___)
+  137. [`Std.DHashMap.get?`](Basic-Types/Maps-and-Sets/#Std___DHashMap___get___-next)
+  138. [`Std.DHashMap.get­D`](Basic-Types/Maps-and-Sets/#Std___DHashMap___getD)
+  139. [`Std.DHashMap.get­Key`](Basic-Types/Maps-and-Sets/#Std___DHashMap___getKey)
+  140. [`Std.DHashMap.get­Key!`](Basic-Types/Maps-and-Sets/#Std___DHashMap___getKey___)
+  141. [`Std.DHashMap.get­Key?`](Basic-Types/Maps-and-Sets/#Std___DHashMap___getKey___-next)
+  142. [`Std.DHashMap.get­Key­D`](Basic-Types/Maps-and-Sets/#Std___DHashMap___getKeyD)
+  143. [`Std.DHashMap.get­Then­Insert­If­New?`](Basic-Types/Maps-and-Sets/#Std___DHashMap___getThenInsertIfNew___)
+  144. [`Std.DHashMap.insert`](Basic-Types/Maps-and-Sets/#Std___DHashMap___insert)
+  145. [`Std.DHashMap.insert­If­New`](Basic-Types/Maps-and-Sets/#Std___DHashMap___insertIfNew)
+  146. [`Std.DHashMap.insert­Many`](Basic-Types/Maps-and-Sets/#Std___DHashMap___insertMany)
+  147. [`Std.DHashMap.is­Empty`](Basic-Types/Maps-and-Sets/#Std___DHashMap___isEmpty)
+  148. [`Std.DHashMap.iter`](Basic-Types/Maps-and-Sets/#Std___DHashMap___iter)
+  149. [`Std.DHashMap.keys`](Basic-Types/Maps-and-Sets/#Std___DHashMap___keys)
+  150. [`Std.DHashMap.keys­Array`](Basic-Types/Maps-and-Sets/#Std___DHashMap___keysArray)
+  151. [`Std.DHashMap.keys­Iter`](Basic-Types/Maps-and-Sets/#Std___DHashMap___keysIter)
+  152. [`Std.DHashMap.map`](Basic-Types/Maps-and-Sets/#Std___DHashMap___map)
+  153. [`Std.DHashMap.modify`](Basic-Types/Maps-and-Sets/#Std___DHashMap___modify)
+  154. [`Std.DHashMap.of­List`](Basic-Types/Maps-and-Sets/#Std___DHashMap___ofList)
+  155. [`Std.DHashMap.partition`](Basic-Types/Maps-and-Sets/#Std___DHashMap___partition)
+  156. [`Std.DHashMap.size`](Basic-Types/Maps-and-Sets/#Std___DHashMap___size)
+  157. [`Std.DHashMap.to­Array`](Basic-Types/Maps-and-Sets/#Std___DHashMap___toArray)
+  158. [`Std.DHashMap.to­List`](Basic-Types/Maps-and-Sets/#Std___DHashMap___toList)
+  159. [`Std.DHashMap.union`](Basic-Types/Maps-and-Sets/#Std___DHashMap___union)
+  160. [`Std.DHashMap.values`](Basic-Types/Maps-and-Sets/#Std___DHashMap___values)
+  161. [`Std.DHashMap.values­Array`](Basic-Types/Maps-and-Sets/#Std___DHashMap___valuesArray)
+  162. [`Std.DHashMap.values­Iter`](Basic-Types/Maps-and-Sets/#Std___DHashMap___valuesIter)
+  163. [`Std.DTree­Map`](Basic-Types/Maps-and-Sets/#Std___DTreeMap)
+  164. [`Std.DTreeMap.Raw`](Basic-Types/Maps-and-Sets/#Std___DTreeMap___Raw___mk)
+  165. [`Std.DTreeMap.Raw.WF`](Basic-Types/Maps-and-Sets/#Std___DTreeMap___Raw___WF___mk)
+  166. `Std.DTreeMap.Raw.WF.mk`
+    1. [Constructor of `Std.DTreeMap.Raw.WF`](Basic-Types/Maps-and-Sets/#Std___DTreeMap___Raw___WF___mk)
+  167. `Std.DTreeMap.Raw.mk`
+    1. [Constructor of `Std.DTreeMap.Raw`](Basic-Types/Maps-and-Sets/#Std___DTreeMap___Raw___mk)
+  168. [`Std.DTreeMap.alter`](Basic-Types/Maps-and-Sets/#Std___DTreeMap___alter)
+  169. [`Std.DTreeMap.contains`](Basic-Types/Maps-and-Sets/#Std___DTreeMap___contains)
+  170. [`Std.DTreeMap.contains­Then­Insert`](Basic-Types/Maps-and-Sets/#Std___DTreeMap___containsThenInsert)
+  171. [`Std.DTreeMap.contains­Then­Insert­If­New`](Basic-Types/Maps-and-Sets/#Std___DTreeMap___containsThenInsertIfNew)
+  172. [`Std.DTreeMap.empty`](Basic-Types/Maps-and-Sets/#Std___DTreeMap___empty)
+  173. [`Std.DTreeMap.erase`](Basic-Types/Maps-and-Sets/#Std___DTreeMap___erase)
+  174. [`Std.DTreeMap.filter`](Basic-Types/Maps-and-Sets/#Std___DTreeMap___filter)
+  175. [`Std.DTreeMap.filter­Map`](Basic-Types/Maps-and-Sets/#Std___DTreeMap___filterMap)
+  176. [`Std.DTreeMap.foldl`](Basic-Types/Maps-and-Sets/#Std___DTreeMap___foldl)
+  177. [`Std.DTreeMap.foldl­M`](Basic-Types/Maps-and-Sets/#Std___DTreeMap___foldlM)
+  178. [`Std.DTreeMap.for­In`](Basic-Types/Maps-and-Sets/#Std___DTreeMap___forIn)
+  179. [`Std.DTreeMap.for­M`](Basic-Types/Maps-and-Sets/#Std___DTreeMap___forM)
+  180. [`Std.DTreeMap.get`](Basic-Types/Maps-and-Sets/#Std___DTreeMap___get)
+  181. [`Std.DTreeMap.get!`](Basic-Types/Maps-and-Sets/#Std___DTreeMap___get___)
+  182. [`Std.DTreeMap.get?`](Basic-Types/Maps-and-Sets/#Std___DTreeMap___get___-next)
+  183. [`Std.DTreeMap.get­D`](Basic-Types/Maps-and-Sets/#Std___DTreeMap___getD)
+  184. [`Std.DTreeMap.get­Key`](Basic-Types/Maps-and-Sets/#Std___DTreeMap___getKey)
+  185. [`Std.DTreeMap.get­Key!`](Basic-Types/Maps-and-Sets/#Std___DTreeMap___getKey___)
+  186. [`Std.DTreeMap.get­Key?`](Basic-Types/Maps-and-Sets/#Std___DTreeMap___getKey___-next)
+  187. [`Std.DTreeMap.get­Key­D`](Basic-Types/Maps-and-Sets/#Std___DTreeMap___getKeyD)
+  188. [`Std.DTreeMap.get­Then­Insert­If­New?`](Basic-Types/Maps-and-Sets/#Std___DTreeMap___getThenInsertIfNew___)
+  189. [`Std.DTreeMap.insert`](Basic-Types/Maps-and-Sets/#Std___DTreeMap___insert)
+  190. [`Std.DTreeMap.insert­If­New`](Basic-Types/Maps-and-Sets/#Std___DTreeMap___insertIfNew)
+  191. [`Std.DTreeMap.insert­Many`](Basic-Types/Maps-and-Sets/#Std___DTreeMap___insertMany)
+  192. [`Std.DTreeMap.is­Empty`](Basic-Types/Maps-and-Sets/#Std___DTreeMap___isEmpty)
+  193. [`Std.DTreeMap.iter`](Basic-Types/Maps-and-Sets/#Std___DTreeMap___iter)
+  194. [`Std.DTreeMap.keys`](Basic-Types/Maps-and-Sets/#Std___DTreeMap___keys)
+  195. [`Std.DTreeMap.keys­Array`](Basic-Types/Maps-and-Sets/#Std___DTreeMap___keysArray)
+  196. [`Std.DTreeMap.keys­Iter`](Basic-Types/Maps-and-Sets/#Std___DTreeMap___keysIter)
+  197. [`Std.DTreeMap.map`](Basic-Types/Maps-and-Sets/#Std___DTreeMap___map)
+  198. [`Std.DTreeMap.modify`](Basic-Types/Maps-and-Sets/#Std___DTreeMap___modify)
+  199. [`Std.DTreeMap.of­List`](Basic-Types/Maps-and-Sets/#Std___DTreeMap___ofList)
+  200. [`Std.DTreeMap.partition`](Basic-Types/Maps-and-Sets/#Std___DTreeMap___partition)
+  201. [`Std.DTreeMap.size`](Basic-Types/Maps-and-Sets/#Std___DTreeMap___size)
+  202. [`Std.DTreeMap.to­Array`](Basic-Types/Maps-and-Sets/#Std___DTreeMap___toArray)
+  203. [`Std.DTreeMap.to­List`](Basic-Types/Maps-and-Sets/#Std___DTreeMap___toList)
+  204. [`Std.DTreeMap.values`](Basic-Types/Maps-and-Sets/#Std___DTreeMap___values)
+  205. [`Std.DTreeMap.values­Array`](Basic-Types/Maps-and-Sets/#Std___DTreeMap___valuesArray)
+  206. [`Std.DTreeMap.values­Iter`](Basic-Types/Maps-and-Sets/#Std___DTreeMap___valuesIter)
+  207. [`Std.Do.Assertion`](The--mvcgen--tactic/Predicate-Transformers/#Std___Do___Assertion)
+  208. [`Std.Do.EStateM.of_wp_run_eq`](The--mvcgen--tactic/Predicate-Transformers/#Std___Do___EStateM___of_wp_run_eq)
+  209. [`Std.Do.Except.of_wp_eq`](The--mvcgen--tactic/Predicate-Transformers/#Std___Do___Except___of_wp_eq)
+  210. [`Std.Do.Except­Conds`](The--mvcgen--tactic/Predicate-Transformers/#Std___Do___ExceptConds)
+  211. [`Std.Do.Id.of_wp_run_eq`](The--mvcgen--tactic/Predicate-Transformers/#Std___Do___Id___of_wp_run_eq)
+  212. [`Std.Do.Invariant`](The--mvcgen--tactic/Predicate-Transformers/#Std___Do___Invariant)
+  213. [`Std.Do.Invariant.with­Early­Return`](The--mvcgen--tactic/Predicate-Transformers/#Std___Do___Invariant___withEarlyReturn)
+  214. [`Std.Do.Post­Cond`](The--mvcgen--tactic/Predicate-Transformers/#Std___Do___PostCond)
+  215. [`Std.Do.PostCond.and`](The--mvcgen--tactic/Predicate-Transformers/#Std___Do___PostCond___and)
+  216. [`Std.Do.PostCond.entails`](The--mvcgen--tactic/Predicate-Transformers/#Std___Do___PostCond___entails)
+  217. [`Std.Do.PostCond.imp`](The--mvcgen--tactic/Predicate-Transformers/#Std___Do___PostCond___imp)
+  218. [`Std.Do.PostCond.may­Throw`](The--mvcgen--tactic/Predicate-Transformers/#Std___Do___PostCond___mayThrow)
+  219. [`Std.Do.PostCond.no­Throw`](The--mvcgen--tactic/Predicate-Transformers/#Std___Do___PostCond___noThrow)
+  220. [`Std.Do.Post­Shape`](The--mvcgen--tactic/Predicate-Transformers/#Std___Do___PostShape___pure)
+  221. `Std.Do.PostShape.arg`
+    1. [Constructor of `Std.Do.Post­Shape`](The--mvcgen--tactic/Predicate-Transformers/#Std___Do___PostShape___pure)
+  222. [`Std.Do.PostShape.args`](The--mvcgen--tactic/Predicate-Transformers/#Std___Do___PostShape___args)
+  223. `Std.Do.PostShape.except`
+    1. [Constructor of `Std.Do.Post­Shape`](The--mvcgen--tactic/Predicate-Transformers/#Std___Do___PostShape___pure)
+  224. `Std.Do.PostShape.pure`
+    1. [Constructor of `Std.Do.Post­Shape`](The--mvcgen--tactic/Predicate-Transformers/#Std___Do___PostShape___pure)
+  225. [`Std.Do.Pred­Trans`](The--mvcgen--tactic/Predicate-Transformers/#Std___Do___PredTrans___mk)
+  226. [`Std.Do.PredTrans.Conjunctive`](The--mvcgen--tactic/Predicate-Transformers/#Std___Do___PredTrans___Conjunctive)
+  227. [`Std.Do.PredTrans.Monotonic`](The--mvcgen--tactic/Predicate-Transformers/#Std___Do___PredTrans___Monotonic)
+  228. [`Std.Do.PredTrans.bind`](The--mvcgen--tactic/Predicate-Transformers/#Std___Do___PredTrans___bind)
+  229. `Std.Do.PredTrans.mk`
+    1. [Constructor of `Std.Do.Pred­Trans`](The--mvcgen--tactic/Predicate-Transformers/#Std___Do___PredTrans___mk)
+  230. [`Std.Do.PredTrans.pure`](The--mvcgen--tactic/Predicate-Transformers/#Std___Do___PredTrans___pure)
+  231. [`Std.Do.PredTrans.push­Arg`](The--mvcgen--tactic/Predicate-Transformers/#Std___Do___PredTrans___pushArg)
+  232. [`Std.Do.PredTrans.push­Except`](The--mvcgen--tactic/Predicate-Transformers/#Std___Do___PredTrans___pushExcept)
+  233. [`Std.Do.PredTrans.push­Option`](The--mvcgen--tactic/Predicate-Transformers/#Std___Do___PredTrans___pushOption)
+  234. [`Std.Do.ReaderM.of_wp_run_eq`](The--mvcgen--tactic/Predicate-Transformers/#Std___Do___ReaderM___of_wp_run_eq)
+  235. [`Std.Do.SPred`](The--mvcgen--tactic/Predicate-Transformers/#Std___Do___SPred)
+  236. [`Std.Do.SPred.and`](The--mvcgen--tactic/Predicate-Transformers/#Std___Do___SPred___and)
+  237. [`Std.Do.SPred.bientails`](The--mvcgen--tactic/Predicate-Transformers/#Std___Do___SPred___bientails)
+  238. [`Std.Do.SPred.conjunction`](The--mvcgen--tactic/Predicate-Transformers/#Std___Do___SPred___conjunction)
+  239. [`Std.Do.SPred.entails`](The--mvcgen--tactic/Predicate-Transformers/#Std___Do___SPred___entails)
+  240. [`Std.Do.SPred.exists`](The--mvcgen--tactic/Predicate-Transformers/#Std___Do___SPred___exists)
+  241. [`Std.Do.SPred.forall`](The--mvcgen--tactic/Predicate-Transformers/#Std___Do___SPred___forall)
+  242. [`Std.Do.SPred.iff`](The--mvcgen--tactic/Predicate-Transformers/#Std___Do___SPred___iff)
+  243. [`Std.Do.SPred.imp`](The--mvcgen--tactic/Predicate-Transformers/#Std___Do___SPred___imp)
+  244. [`Std.Do.SPred.not`](The--mvcgen--tactic/Predicate-Transformers/#Std___Do___SPred___not)
+  245. [`Std.Do.SPred.or`](The--mvcgen--tactic/Predicate-Transformers/#Std___Do___SPred___or)
+  246. [`Std.Do.SPred.pure`](The--mvcgen--tactic/Predicate-Transformers/#Std___Do___SPred___pure)
+  247. [`Std.Do.SVal`](The--mvcgen--tactic/Predicate-Transformers/#Std___Do___SVal)
+  248. [`Std.Do.SVal.State­Tuple`](The--mvcgen--tactic/Predicate-Transformers/#Std___Do___SVal___StateTuple)
+  249. [`Std.Do.SVal.curry`](The--mvcgen--tactic/Predicate-Transformers/#Std___Do___SVal___curry)
+  250. [`Std.Do.SVal.get­The`](The--mvcgen--tactic/Predicate-Transformers/#Std___Do___SVal___getThe)
+  251. [`Std.Do.SVal.uncurry`](The--mvcgen--tactic/Predicate-Transformers/#Std___Do___SVal___uncurry)
+  252. [`Std.Do.StateM.of_wp_run'_eq`](The--mvcgen--tactic/Predicate-Transformers/#Std___Do___StateM___of_wp_run____eq)
+  253. [`Std.Do.StateM.of_wp_run_eq`](The--mvcgen--tactic/Predicate-Transformers/#Std___Do___StateM___of_wp_run_eq)
+  254. [`Std.Do.Triple`](The--mvcgen--tactic/Predicate-Transformers/#Std___Do___Triple)
+  255. [`Std.Do.Triple.and`](The--mvcgen--tactic/Predicate-Transformers/#Std___Do___Triple___and)
+  256. [`Std.Do.Triple.mp`](The--mvcgen--tactic/Predicate-Transformers/#Std___Do___Triple___mp)
+  257. [`Std.Do.WP`](The--mvcgen--tactic/Predicate-Transformers/#Std___Do___WP___mk)
+  258. `Std.Do.WP.mk`
+    1. [Instance constructor of `Std.Do.WP`](The--mvcgen--tactic/Predicate-Transformers/#Std___Do___WP___mk)
+  259. [`Std.Do.WPMonad`](The--mvcgen--tactic/Predicate-Transformers/#Std___Do___WPMonad___mk)
+  260. `Std.Do.WPMonad.mk`
+    1. [Instance constructor of `Std.Do.WPMonad`](The--mvcgen--tactic/Predicate-Transformers/#Std___Do___WPMonad___mk)
+  261. [`Std.Ext­DHash­Map`](Basic-Types/Maps-and-Sets/#Std___ExtDHashMap)
+  262. [`Std.Ext­DHashMap.alter`](Basic-Types/Maps-and-Sets/#Std___ExtDHashMap___alter)
+  263. [`Std.Ext­DHashMap.contains`](Basic-Types/Maps-and-Sets/#Std___ExtDHashMap___contains)
+  264. [`Std.Ext­DHashMap.contains­Then­Insert`](Basic-Types/Maps-and-Sets/#Std___ExtDHashMap___containsThenInsert)
+  265. [`Std.Ext­DHashMap.contains­Then­Insert­If­New`](Basic-Types/Maps-and-Sets/#Std___ExtDHashMap___containsThenInsertIfNew)
+  266. [`Std.Ext­DHashMap.empty­With­Capacity`](Basic-Types/Maps-and-Sets/#Std___ExtDHashMap___emptyWithCapacity)
+  267. [`Std.Ext­DHashMap.erase`](Basic-Types/Maps-and-Sets/#Std___ExtDHashMap___erase)
+  268. [`Std.Ext­DHashMap.filter`](Basic-Types/Maps-and-Sets/#Std___ExtDHashMap___filter)
+  269. [`Std.Ext­DHashMap.filter­Map`](Basic-Types/Maps-and-Sets/#Std___ExtDHashMap___filterMap)
+  270. [`Std.Ext­DHashMap.get`](Basic-Types/Maps-and-Sets/#Std___ExtDHashMap___get)
+  271. [`Std.Ext­DHashMap.get!`](Basic-Types/Maps-and-Sets/#Std___ExtDHashMap___get___)
+  272. [`Std.Ext­DHashMap.get?`](Basic-Types/Maps-and-Sets/#Std___ExtDHashMap___get___-next)
+  273. [`Std.Ext­DHashMap.get­D`](Basic-Types/Maps-and-Sets/#Std___ExtDHashMap___getD)
+  274. [`Std.Ext­DHashMap.get­Key`](Basic-Types/Maps-and-Sets/#Std___ExtDHashMap___getKey)
+  275. [`Std.Ext­DHashMap.get­Key!`](Basic-Types/Maps-and-Sets/#Std___ExtDHashMap___getKey___)
+  276. [`Std.Ext­DHashMap.get­Key?`](Basic-Types/Maps-and-Sets/#Std___ExtDHashMap___getKey___-next)
+  277. [`Std.Ext­DHashMap.get­Key­D`](Basic-Types/Maps-and-Sets/#Std___ExtDHashMap___getKeyD)
+  278. [`Std.Ext­DHashMap.get­Then­Insert­If­New?`](Basic-Types/Maps-and-Sets/#Std___ExtDHashMap___getThenInsertIfNew___)
+  279. [`Std.Ext­DHashMap.insert`](Basic-Types/Maps-and-Sets/#Std___ExtDHashMap___insert)
+  280. [`Std.Ext­DHashMap.insert­If­New`](Basic-Types/Maps-and-Sets/#Std___ExtDHashMap___insertIfNew)
+  281. [`Std.Ext­DHashMap.insert­Many`](Basic-Types/Maps-and-Sets/#Std___ExtDHashMap___insertMany)
+  282. [`Std.Ext­DHashMap.is­Empty`](Basic-Types/Maps-and-Sets/#Std___ExtDHashMap___isEmpty)
+  283. [`Std.Ext­DHashMap.map`](Basic-Types/Maps-and-Sets/#Std___ExtDHashMap___map)
+  284. [`Std.Ext­DHashMap.modify`](Basic-Types/Maps-and-Sets/#Std___ExtDHashMap___modify)
+  285. [`Std.Ext­DHashMap.of­List`](Basic-Types/Maps-and-Sets/#Std___ExtDHashMap___ofList)
+  286. [`Std.Ext­DHashMap.size`](Basic-Types/Maps-and-Sets/#Std___ExtDHashMap___size)
+  287. [`Std.Ext­Hash­Map`](Basic-Types/Maps-and-Sets/#Std___ExtHashMap)
+  288. [`Std.Ext­HashMap.alter`](Basic-Types/Maps-and-Sets/#Std___ExtHashMap___alter)
+  289. [`Std.Ext­HashMap.contains`](Basic-Types/Maps-and-Sets/#Std___ExtHashMap___contains)
+  290. [`Std.Ext­HashMap.contains­Then­Insert`](Basic-Types/Maps-and-Sets/#Std___ExtHashMap___containsThenInsert)
+  291. [`Std.Ext­HashMap.contains­Then­Insert­If­New`](Basic-Types/Maps-and-Sets/#Std___ExtHashMap___containsThenInsertIfNew)
+  292. [`Std.Ext­HashMap.empty­With­Capacity`](Basic-Types/Maps-and-Sets/#Std___ExtHashMap___emptyWithCapacity)
+  293. [`Std.Ext­HashMap.erase`](Basic-Types/Maps-and-Sets/#Std___ExtHashMap___erase)
+  294. [`Std.Ext­HashMap.filter`](Basic-Types/Maps-and-Sets/#Std___ExtHashMap___filter)
+  295. [`Std.Ext­HashMap.filter­Map`](Basic-Types/Maps-and-Sets/#Std___ExtHashMap___filterMap)
+  296. [`Std.Ext­HashMap.get`](Basic-Types/Maps-and-Sets/#Std___ExtHashMap___get)
+  297. [`Std.Ext­HashMap.get!`](Basic-Types/Maps-and-Sets/#Std___ExtHashMap___get___)
+  298. [`Std.Ext­HashMap.get?`](Basic-Types/Maps-and-Sets/#Std___ExtHashMap___get___-next)
+  299. [`Std.Ext­HashMap.get­D`](Basic-Types/Maps-and-Sets/#Std___ExtHashMap___getD)
+  300. [`Std.Ext­HashMap.get­Key`](Basic-Types/Maps-and-Sets/#Std___ExtHashMap___getKey)
+  301. [`Std.Ext­HashMap.get­Key!`](Basic-Types/Maps-and-Sets/#Std___ExtHashMap___getKey___)
+  302. [`Std.Ext­HashMap.get­Key?`](Basic-Types/Maps-and-Sets/#Std___ExtHashMap___getKey___-next)
+  303. [`Std.Ext­HashMap.get­Key­D`](Basic-Types/Maps-and-Sets/#Std___ExtHashMap___getKeyD)
+  304. [`Std.Ext­HashMap.get­Then­Insert­If­New?`](Basic-Types/Maps-and-Sets/#Std___ExtHashMap___getThenInsertIfNew___)
+  305. [`Std.Ext­HashMap.insert`](Basic-Types/Maps-and-Sets/#Std___ExtHashMap___insert)
+  306. [`Std.Ext­HashMap.insert­If­New`](Basic-Types/Maps-and-Sets/#Std___ExtHashMap___insertIfNew)
+  307. [`Std.Ext­HashMap.insert­Many`](Basic-Types/Maps-and-Sets/#Std___ExtHashMap___insertMany)
+  308. [`Std.Ext­HashMap.insert­Many­If­New­Unit`](Basic-Types/Maps-and-Sets/#Std___ExtHashMap___insertManyIfNewUnit)
+  309. [`Std.Ext­HashMap.is­Empty`](Basic-Types/Maps-and-Sets/#Std___ExtHashMap___isEmpty)
+  310. [`Std.Ext­HashMap.map`](Basic-Types/Maps-and-Sets/#Std___ExtHashMap___map)
+  311. [`Std.Ext­HashMap.modify`](Basic-Types/Maps-and-Sets/#Std___ExtHashMap___modify)
+  312. [`Std.Ext­HashMap.of­List`](Basic-Types/Maps-and-Sets/#Std___ExtHashMap___ofList)
+  313. [`Std.Ext­HashMap.size`](Basic-Types/Maps-and-Sets/#Std___ExtHashMap___size)
+  314. [`Std.Ext­HashMap.unit­Of­Array`](Basic-Types/Maps-and-Sets/#Std___ExtHashMap___unitOfArray)
+  315. [`Std.Ext­HashMap.unit­Of­List`](Basic-Types/Maps-and-Sets/#Std___ExtHashMap___unitOfList)
+  316. [`Std.Ext­Hash­Set`](Basic-Types/Maps-and-Sets/#Std___ExtHashSet___mk)
+  317. [`Std.Ext­HashSet.contains`](Basic-Types/Maps-and-Sets/#Std___ExtHashSet___contains)
+  318. [`Std.Ext­HashSet.contains­Then­Insert`](Basic-Types/Maps-and-Sets/#Std___ExtHashSet___containsThenInsert)
+  319. [`Std.Ext­HashSet.empty­With­Capacity`](Basic-Types/Maps-and-Sets/#Std___ExtHashSet___emptyWithCapacity)
+  320. [`Std.Ext­HashSet.erase`](Basic-Types/Maps-and-Sets/#Std___ExtHashSet___erase)
+  321. [`Std.Ext­HashSet.filter`](Basic-Types/Maps-and-Sets/#Std___ExtHashSet___filter)
+  322. [`Std.Ext­HashSet.get`](Basic-Types/Maps-and-Sets/#Std___ExtHashSet___get)
+  323. [`Std.Ext­HashSet.get!`](Basic-Types/Maps-and-Sets/#Std___ExtHashSet___get___)
+  324. [`Std.Ext­HashSet.get?`](Basic-Types/Maps-and-Sets/#Std___ExtHashSet___get___-next)
+  325. [`Std.Ext­HashSet.get­D`](Basic-Types/Maps-and-Sets/#Std___ExtHashSet___getD)
+  326. [`Std.Ext­HashSet.insert`](Basic-Types/Maps-and-Sets/#Std___ExtHashSet___insert)
+  327. [`Std.Ext­HashSet.insert­Many`](Basic-Types/Maps-and-Sets/#Std___ExtHashSet___insertMany)
+  328. [`Std.Ext­HashSet.is­Empty`](Basic-Types/Maps-and-Sets/#Std___ExtHashSet___isEmpty)
+  329. `Std.Ext­HashSet.mk`
+    1. [Constructor of `Std.Ext­Hash­Set`](Basic-Types/Maps-and-Sets/#Std___ExtHashSet___mk)
+  330. [`Std.Ext­HashSet.of­Array`](Basic-Types/Maps-and-Sets/#Std___ExtHashSet___ofArray)
+  331. [`Std.Ext­HashSet.of­List`](Basic-Types/Maps-and-Sets/#Std___ExtHashSet___ofList)
+  332. [`Std.Ext­HashSet.size`](Basic-Types/Maps-and-Sets/#Std___ExtHashSet___size)
+  333. [`Std.Format`](Interacting-with-Lean/#Std___Format___nil)
+  334. [`Std.Format.Flatten­Behavior`](Interacting-with-Lean/#Std___Format___FlattenBehavior___allOrNone)
+  335. `Std.Format.FlattenBehavior.all­Or­None`
+    1. [Constructor of `Std.Format.Flatten­Behavior`](Interacting-with-Lean/#Std___Format___FlattenBehavior___allOrNone)
+  336. `Std.Format.FlattenBehavior.fill`
+    1. [Constructor of `Std.Format.Flatten­Behavior`](Interacting-with-Lean/#Std___Format___FlattenBehavior___allOrNone)
+  337. [`Std.Format.Monad­Pretty­Format`](Interacting-with-Lean/#Std___Format___MonadPrettyFormat___mk)
+  338. `Std.Format.Monad­PrettyFormat.mk`
+    1. [Instance constructor of `Std.Format.Monad­Pretty­Format`](Interacting-with-Lean/#Std___Format___MonadPrettyFormat___mk)
+  339. `Std.Format.align`
+    1. [Constructor of `Std.Format`](Interacting-with-Lean/#Std___Format___nil)
+  340. `Std.Format.append`
+    1. [Constructor of `Std.Format`](Interacting-with-Lean/#Std___Format___nil)
+  341. [`Std.Format.bracket`](Interacting-with-Lean/#Std___Format___bracket)
+  342. [`Std.Format.bracket­Fill`](Interacting-with-Lean/#Std___Format___bracketFill)
+  343. [`Std.Format.def­Indent`](Interacting-with-Lean/#Std___Format___defIndent)
+  344. [`Std.Format.def­Width`](Interacting-with-Lean/#Std___Format___defWidth)
+  345. [`Std.Format.fill`](Interacting-with-Lean/#Std___Format___fill)
+  346. `Std.Format.group`
+    1. [Constructor of `Std.Format`](Interacting-with-Lean/#Std___Format___nil)
+  347. [`Std.Format.indent­D`](Interacting-with-Lean/#Std___Format___indentD)
+  348. [`Std.Format.is­Empty`](Interacting-with-Lean/#Std___Format___isEmpty)
+  349. [`Std.Format.is­Nil`](Interacting-with-Lean/#Std___Format___isNil)
+  350. [`Std.Format.join`](Interacting-with-Lean/#Std___Format___join)
+  351. [`Std.Format.join­Sep`](Interacting-with-Lean/#Std___Format___joinSep)
+  352. [`Std.Format.join­Suffix`](Interacting-with-Lean/#Std___Format___joinSuffix)
+  353. `Std.Format.line`
+    1. [Constructor of `Std.Format`](Interacting-with-Lean/#Std___Format___nil)
+  354. `Std.Format.nest`
+    1. [Constructor of `Std.Format`](Interacting-with-Lean/#Std___Format___nil)
+  355. [`Std.Format.nest­D`](Interacting-with-Lean/#Std___Format___nestD)
+  356. `Std.Format.nil`
+    1. [Constructor of `Std.Format`](Interacting-with-Lean/#Std___Format___nil)
+  357. [`Std.Format.paren`](Interacting-with-Lean/#Std___Format___paren)
+  358. [`Std.Format.prefix­Join`](Interacting-with-Lean/#Std___Format___prefixJoin)
+  359. [`Std.Format.pretty`](Interacting-with-Lean/#Std___Format___pretty)
+  360. [`Std.Format.pretty­M`](Interacting-with-Lean/#Std___Format___prettyM)
+  361. [`Std.Format.sbracket`](Interacting-with-Lean/#Std___Format___sbracket)
+  362. `Std.Format.tag`
+    1. [Constructor of `Std.Format`](Interacting-with-Lean/#Std___Format___nil)
+  363. `Std.Format.text`
+    1. [Constructor of `Std.Format`](Interacting-with-Lean/#Std___Format___nil)
+  364. [`Std.Hash­Map`](Basic-Types/Maps-and-Sets/#Std___HashMap)
+  365. [`Std.HashMap.Equiv`](Basic-Types/Maps-and-Sets/#Std___HashMap___Equiv___mk)
+  366. `Std.HashMap.Equiv.mk`
+    1. [Constructor of `Std.HashMap.Equiv`](Basic-Types/Maps-and-Sets/#Std___HashMap___Equiv___mk)
+  367. [`Std.HashMap.Raw`](Basic-Types/Maps-and-Sets/#Std___HashMap___Raw___mk)
+  368. [`Std.HashMap.Raw.WF`](Basic-Types/Maps-and-Sets/#Std___HashMap___Raw___WF___mk)
+  369. `Std.HashMap.Raw.WF.mk`
+    1. [Constructor of `Std.HashMap.Raw.WF`](Basic-Types/Maps-and-Sets/#Std___HashMap___Raw___WF___mk)
+  370. `Std.HashMap.Raw.mk`
+    1. [Constructor of `Std.HashMap.Raw`](Basic-Types/Maps-and-Sets/#Std___HashMap___Raw___mk)
+  371. [`Std.HashMap.alter`](Basic-Types/Maps-and-Sets/#Std___HashMap___alter)
+  372. [`Std.HashMap.contains`](Basic-Types/Maps-and-Sets/#Std___HashMap___contains)
+  373. [`Std.HashMap.contains­Then­Insert`](Basic-Types/Maps-and-Sets/#Std___HashMap___containsThenInsert)
+  374. [`Std.HashMap.contains­Then­Insert­If­New`](Basic-Types/Maps-and-Sets/#Std___HashMap___containsThenInsertIfNew)
+  375. [`Std.HashMap.empty­With­Capacity`](Basic-Types/Maps-and-Sets/#Std___HashMap___emptyWithCapacity)
+  376. [`Std.HashMap.erase`](Basic-Types/Maps-and-Sets/#Std___HashMap___erase)
+  377. [`Std.HashMap.filter`](Basic-Types/Maps-and-Sets/#Std___HashMap___filter)
+  378. [`Std.HashMap.filter­Map`](Basic-Types/Maps-and-Sets/#Std___HashMap___filterMap)
+  379. [`Std.HashMap.fold`](Basic-Types/Maps-and-Sets/#Std___HashMap___fold)
+  380. [`Std.HashMap.fold­M`](Basic-Types/Maps-and-Sets/#Std___HashMap___foldM)
+  381. [`Std.HashMap.for­In`](Basic-Types/Maps-and-Sets/#Std___HashMap___forIn)
+  382. [`Std.HashMap.for­M`](Basic-Types/Maps-and-Sets/#Std___HashMap___forM)
+  383. [`Std.HashMap.get`](Basic-Types/Maps-and-Sets/#Std___HashMap___get)
+  384. [`Std.HashMap.get!`](Basic-Types/Maps-and-Sets/#Std___HashMap___get___)
+  385. [`Std.HashMap.get?`](Basic-Types/Maps-and-Sets/#Std___HashMap___get___-next)
+  386. [`Std.HashMap.get­D`](Basic-Types/Maps-and-Sets/#Std___HashMap___getD)
+  387. [`Std.HashMap.get­Key`](Basic-Types/Maps-and-Sets/#Std___HashMap___getKey)
+  388. [`Std.HashMap.get­Key!`](Basic-Types/Maps-and-Sets/#Std___HashMap___getKey___)
+  389. [`Std.HashMap.get­Key?`](Basic-Types/Maps-and-Sets/#Std___HashMap___getKey___-next)
+  390. [`Std.HashMap.get­Key­D`](Basic-Types/Maps-and-Sets/#Std___HashMap___getKeyD)
+  391. [`Std.HashMap.get­Then­Insert­If­New?`](Basic-Types/Maps-and-Sets/#Std___HashMap___getThenInsertIfNew___)
+  392. [`Std.HashMap.insert`](Basic-Types/Maps-and-Sets/#Std___HashMap___insert)
+  393. [`Std.HashMap.insert­If­New`](Basic-Types/Maps-and-Sets/#Std___HashMap___insertIfNew)
+  394. [`Std.HashMap.insert­Many`](Basic-Types/Maps-and-Sets/#Std___HashMap___insertMany)
+  395. [`Std.HashMap.insert­Many­If­New­Unit`](Basic-Types/Maps-and-Sets/#Std___HashMap___insertManyIfNewUnit)
+  396. [`Std.HashMap.is­Empty`](Basic-Types/Maps-and-Sets/#Std___HashMap___isEmpty)
+  397. [`Std.HashMap.iter`](Basic-Types/Maps-and-Sets/#Std___HashMap___iter)
+  398. [`Std.HashMap.keys`](Basic-Types/Maps-and-Sets/#Std___HashMap___keys)
+  399. [`Std.HashMap.keys­Array`](Basic-Types/Maps-and-Sets/#Std___HashMap___keysArray)
+  400. [`Std.HashMap.keys­Iter`](Basic-Types/Maps-and-Sets/#Std___HashMap___keysIter)
+  401. [`Std.HashMap.map`](Basic-Types/Maps-and-Sets/#Std___HashMap___map)
+  402. [`Std.HashMap.modify`](Basic-Types/Maps-and-Sets/#Std___HashMap___modify)
+  403. [`Std.HashMap.of­List`](Basic-Types/Maps-and-Sets/#Std___HashMap___ofList)
+  404. [`Std.HashMap.partition`](Basic-Types/Maps-and-Sets/#Std___HashMap___partition)
+  405. [`Std.HashMap.size`](Basic-Types/Maps-and-Sets/#Std___HashMap___size)
+  406. [`Std.HashMap.to­Array`](Basic-Types/Maps-and-Sets/#Std___HashMap___toArray)
+  407. [`Std.HashMap.to­List`](Basic-Types/Maps-and-Sets/#Std___HashMap___toList)
+  408. [`Std.HashMap.union`](Basic-Types/Maps-and-Sets/#Std___HashMap___union)
+  409. [`Std.HashMap.unit­Of­Array`](Basic-Types/Maps-and-Sets/#Std___HashMap___unitOfArray)
+  410. [`Std.HashMap.unit­Of­List`](Basic-Types/Maps-and-Sets/#Std___HashMap___unitOfList)
+  411. [`Std.HashMap.values`](Basic-Types/Maps-and-Sets/#Std___HashMap___values)
+  412. [`Std.HashMap.values­Array`](Basic-Types/Maps-and-Sets/#Std___HashMap___valuesArray)
+  413. [`Std.HashMap.values­Iter`](Basic-Types/Maps-and-Sets/#Std___HashMap___valuesIter)
+  414. [`Std.Hash­Set`](Basic-Types/Maps-and-Sets/#Std___HashSet___mk)
+  415. [`Std.HashSet.Equiv`](Basic-Types/Maps-and-Sets/#Std___HashSet___Equiv___mk)
+  416. `Std.HashSet.Equiv.mk`
+    1. [Constructor of `Std.HashSet.Equiv`](Basic-Types/Maps-and-Sets/#Std___HashSet___Equiv___mk)
+  417. [`Std.HashSet.Raw`](Basic-Types/Maps-and-Sets/#Std___HashSet___Raw___mk)
+  418. [`Std.HashSet.Raw.WF`](Basic-Types/Maps-and-Sets/#Std___HashSet___Raw___WF___mk)
+  419. `Std.HashSet.Raw.WF.mk`
+    1. [Constructor of `Std.HashSet.Raw.WF`](Basic-Types/Maps-and-Sets/#Std___HashSet___Raw___WF___mk)
+  420. `Std.HashSet.Raw.mk`
+    1. [Constructor of `Std.HashSet.Raw`](Basic-Types/Maps-and-Sets/#Std___HashSet___Raw___mk)
+  421. [`Std.HashSet.all`](Basic-Types/Maps-and-Sets/#Std___HashSet___all)
+  422. [`Std.HashSet.any`](Basic-Types/Maps-and-Sets/#Std___HashSet___any)
+  423. [`Std.HashSet.contains`](Basic-Types/Maps-and-Sets/#Std___HashSet___contains)
+  424. [`Std.HashSet.contains­Then­Insert`](Basic-Types/Maps-and-Sets/#Std___HashSet___containsThenInsert)
+  425. [`Std.HashSet.empty­With­Capacity`](Basic-Types/Maps-and-Sets/#Std___HashSet___emptyWithCapacity)
+  426. [`Std.HashSet.erase`](Basic-Types/Maps-and-Sets/#Std___HashSet___erase)
+  427. [`Std.HashSet.filter`](Basic-Types/Maps-and-Sets/#Std___HashSet___filter)
+  428. [`Std.HashSet.fold`](Basic-Types/Maps-and-Sets/#Std___HashSet___fold)
+  429. [`Std.HashSet.fold­M`](Basic-Types/Maps-and-Sets/#Std___HashSet___foldM)
+  430. [`Std.HashSet.for­In`](Basic-Types/Maps-and-Sets/#Std___HashSet___forIn)
+  431. [`Std.HashSet.for­M`](Basic-Types/Maps-and-Sets/#Std___HashSet___forM)
+  432. [`Std.HashSet.get`](Basic-Types/Maps-and-Sets/#Std___HashSet___get)
+  433. [`Std.HashSet.get!`](Basic-Types/Maps-and-Sets/#Std___HashSet___get___)
+  434. [`Std.HashSet.get?`](Basic-Types/Maps-and-Sets/#Std___HashSet___get___-next)
+  435. [`Std.HashSet.get­D`](Basic-Types/Maps-and-Sets/#Std___HashSet___getD)
+  436. [`Std.HashSet.insert`](Basic-Types/Maps-and-Sets/#Std___HashSet___insert)
+  437. [`Std.HashSet.insert­Many`](Basic-Types/Maps-and-Sets/#Std___HashSet___insertMany)
+  438. [`Std.HashSet.is­Empty`](Basic-Types/Maps-and-Sets/#Std___HashSet___isEmpty)
+  439. [`Std.HashSet.iter`](Basic-Types/Maps-and-Sets/#Std___HashSet___iter)
+  440. `Std.HashSet.mk`
+    1. [Constructor of `Std.Hash­Set`](Basic-Types/Maps-and-Sets/#Std___HashSet___mk)
+  441. [`Std.HashSet.of­Array`](Basic-Types/Maps-and-Sets/#Std___HashSet___ofArray)
+  442. [`Std.HashSet.of­List`](Basic-Types/Maps-and-Sets/#Std___HashSet___ofList)
+  443. [`Std.HashSet.partition`](Basic-Types/Maps-and-Sets/#Std___HashSet___partition)
+  444. [`Std.HashSet.size`](Basic-Types/Maps-and-Sets/#Std___HashSet___size)
+  445. [`Std.HashSet.to­Array`](Basic-Types/Maps-and-Sets/#Std___HashSet___toArray)
+  446. [`Std.HashSet.to­List`](Basic-Types/Maps-and-Sets/#Std___HashSet___toList)
+  447. [`Std.HashSet.union`](Basic-Types/Maps-and-Sets/#Std___HashSet___union)
+  448. [`Std.Iter`](Iterators/Iterator-Definitions/#Std___Iter___mk)
+  449. [`Std.Iter.Equiv`](Iterators/Reasoning-About-Iterators/#Std___Iter___Equiv)
+  450. [`Std.Iter.Is­Plausible­Indirect­Output`](Iterators/Reasoning-About-Iterators/#Std___Iter___IsPlausibleIndirectOutput___direct)
+  451. `Std.Iter.Is­Plausible­IndirectOutput.direct`
+    1. [Constructor of `Std.Iter.Is­Plausible­Indirect­Output`](Iterators/Reasoning-About-Iterators/#Std___Iter___IsPlausibleIndirectOutput___direct)
+  452. `Std.Iter.Is­Plausible­IndirectOutput.indirect`
+    1. [Constructor of `Std.Iter.Is­Plausible­Indirect­Output`](Iterators/Reasoning-About-Iterators/#Std___Iter___IsPlausibleIndirectOutput___direct)
+  453. [`Std.Iter.Step`](Iterators/Iterator-Definitions/#Std___Iter___Step)
+  454. [`Std.Iter.all`](Iterators/Consuming-Iterators/#Std___Iter___all)
+  455. [`Std.Iter.all­M`](Iterators/Consuming-Iterators/#Std___Iter___allM)
+  456. [`Std.Iter.any`](Iterators/Consuming-Iterators/#Std___Iter___any)
+  457. [`Std.Iter.any­M`](Iterators/Consuming-Iterators/#Std___Iter___anyM)
+  458. [`Std.Iter.at­Idx?`](Iterators/Consuming-Iterators/#Std___Iter___atIdx___)
+  459. [`Std.Iter.at­Idx­Slow?`](Iterators/Consuming-Iterators/#Std___Iter___atIdxSlow___)
+  460. [`Std.Iter.attach­With`](Iterators/Iterator-Combinators/#Std___Iter___attachWith)
+  461. [`Std.Iter.drop`](Iterators/Iterator-Combinators/#Std___Iter___drop)
+  462. [`Std.Iter.drop­While`](Iterators/Iterator-Combinators/#Std___Iter___dropWhile)
+  463. [`Std.Iter.empty`](Iterators/Iterator-Definitions/#Std___Iter___empty)
+  464. [`Std.Iter.ensure­Termination`](Iterators/Iterator-Definitions/#Std___Iter___ensureTermination)
+  465. [`Std.Iter.filter`](Iterators/Iterator-Combinators/#Std___Iter___filter)
+  466. [`Std.Iter.filter­M`](Iterators/Iterator-Combinators/#Std___Iter___filterM)
+  467. [`Std.Iter.filter­Map`](Iterators/Iterator-Combinators/#Std___Iter___filterMap)
+  468. [`Std.Iter.filter­Map­M`](Iterators/Iterator-Combinators/#Std___Iter___filterMapM)
+  469. [`Std.Iter.filter­Map­With­Postcondition`](Iterators/Iterator-Combinators/#Std___Iter___filterMapWithPostcondition)
+  470. [`Std.Iter.filter­With­Postcondition`](Iterators/Iterator-Combinators/#Std___Iter___filterWithPostcondition)
+  471. [`Std.Iter.find?`](Iterators/Consuming-Iterators/#Std___Iter___find___)
+  472. [`Std.Iter.find­M?`](Iterators/Consuming-Iterators/#Std___Iter___findM___)
+  473. [`Std.Iter.find­Some?`](Iterators/Consuming-Iterators/#Std___Iter___findSome___)
+  474. [`Std.Iter.find­Some­M?`](Iterators/Consuming-Iterators/#Std___Iter___findSomeM___)
+  475. [`Std.Iter.finitely­Many­Skips`](Iterators/Consuming-Iterators/#Std___Iter___finitelyManySkips)
+  476. [`Std.Iter.finitely­Many­Steps`](Iterators/Consuming-Iterators/#Std___Iter___finitelyManySteps)
+  477. [`Std.Iter.flat­Map`](Iterators/Iterator-Combinators/#Std___Iter___flatMap)
+  478. [`Std.Iter.flat­Map­After`](Iterators/Iterator-Combinators/#Std___Iter___flatMapAfter)
+  479. [`Std.Iter.flat­Map­After­M`](Iterators/Iterator-Combinators/#Std___Iter___flatMapAfterM)
+  480. [`Std.Iter.flat­Map­M`](Iterators/Iterator-Combinators/#Std___Iter___flatMapM)
+  481. [`Std.Iter.fold`](Iterators/Consuming-Iterators/#Std___Iter___fold)
+  482. [`Std.Iter.fold­M`](Iterators/Consuming-Iterators/#Std___Iter___foldM)
+  483. [`Std.Iter.induct­Skips`](Iterators/Reasoning-About-Iterators/#Std___Iter___inductSkips)
+  484. [`Std.Iter.induct­Steps`](Iterators/Reasoning-About-Iterators/#Std___Iter___inductSteps)
+  485. [`Std.Iter.length`](Iterators/Consuming-Iterators/#Std___Iter___length)
+  486. [`Std.Iter.map`](Iterators/Iterator-Combinators/#Std___Iter___map)
+  487. [`Std.Iter.map­M`](Iterators/Iterator-Combinators/#Std___Iter___mapM)
+  488. [`Std.Iter.map­With­Postcondition`](Iterators/Iterator-Combinators/#Std___Iter___mapWithPostcondition)
+  489. `Std.Iter.mk`
+    1. [Constructor of `Std.Iter`](Iterators/Iterator-Definitions/#Std___Iter___mk)
+  490. [`Std.Iter.repeat`](Iterators/Iterator-Definitions/#Std___Iter___repeat)
+  491. [`Std.Iter.step`](Iterators/Consuming-Iterators/#Std___Iter___step)
+  492. [`Std.Iter.step­Size`](Iterators/Iterator-Combinators/#Std___Iter___stepSize)
+  493. [`Std.Iter.take`](Iterators/Iterator-Combinators/#Std___Iter___take)
+  494. [`Std.Iter.take­While`](Iterators/Iterator-Combinators/#Std___Iter___takeWhile)
+  495. [`Std.Iter.to­Array`](Iterators/Consuming-Iterators/#Std___Iter___toArray)
+  496. [`Std.Iter.to­Iter­M`](Iterators/Iterator-Combinators/#Std___Iter___toIterM)
+  497. [`Std.Iter.to­List`](Iterators/Consuming-Iterators/#Std___Iter___toList)
+  498. [`Std.Iter.to­List­Rev`](Iterators/Consuming-Iterators/#Std___Iter___toListRev)
+  499. [`Std.Iter.to­Take`](Iterators/Iterator-Combinators/#Std___Iter___toTake)
+  500. [`Std.Iter.u­Lift`](Iterators/Iterator-Combinators/#Std___Iter___uLift)
+  501. [`Std.Iter.zip`](Iterators/Iterator-Combinators/#Std___Iter___zip)
+  502. [`Std.Iter­M`](Iterators/Iterator-Definitions/#Std___IterM___mk)
+  503. [`Std.IterM.Equiv`](Iterators/Reasoning-About-Iterators/#Std___IterM___Equiv)
+  504. [`Std.IterM.Step`](Iterators/Iterator-Definitions/#Std___IterM___Step)
+  505. [`Std.IterM.TerminationMeasures.Finite`](Iterators/Consuming-Iterators/#Std___IterM___TerminationMeasures___Finite___mk)
+  506. `Std.IterM.TerminationMeasures.Finite.mk`
+    1. [Constructor of `Std.IterM.TerminationMeasures.Finite`](Iterators/Consuming-Iterators/#Std___IterM___TerminationMeasures___Finite___mk)
+  507. [`Std.IterM.TerminationMeasures.Productive`](Iterators/Consuming-Iterators/#Std___IterM___TerminationMeasures___Productive___mk)
+  508. `Std.IterM.TerminationMeasures.Productive.mk`
+    1. [Constructor of `Std.IterM.TerminationMeasures.Productive`](Iterators/Consuming-Iterators/#Std___IterM___TerminationMeasures___Productive___mk)
+  509. [`Std.IterM.all`](Iterators/Consuming-Iterators/#Std___IterM___all)
+  510. [`Std.IterM.all­M`](Iterators/Consuming-Iterators/#Std___IterM___allM)
+  511. [`Std.IterM.any`](Iterators/Consuming-Iterators/#Std___IterM___any)
+  512. [`Std.IterM.any­M`](Iterators/Consuming-Iterators/#Std___IterM___anyM)
+  513. [`Std.IterM.at­Idx?`](Iterators/Consuming-Iterators/#Std___IterM___atIdx___)
+  514. [`Std.IterM.attach­With`](Iterators/Iterator-Combinators/#Std___IterM___attachWith)
+  515. [`Std.IterM.drain`](Iterators/Consuming-Iterators/#Std___IterM___drain)
+  516. [`Std.IterM.drop`](Iterators/Iterator-Combinators/#Std___IterM___drop)
+  517. [`Std.IterM.drop­While`](Iterators/Iterator-Combinators/#Std___IterM___dropWhile)
+  518. [`Std.IterM.drop­While­M`](Iterators/Iterator-Combinators/#Std___IterM___dropWhileM)
+  519. [`Std.IterM.drop­While­With­Postcondition`](Iterators/Iterator-Combinators/#Std___IterM___dropWhileWithPostcondition)
+  520. [`Std.IterM.empty`](Iterators/Iterator-Definitions/#Std___IterM___empty)
+  521. [`Std.IterM.ensure­Termination`](Iterators/Iterator-Definitions/#Std___IterM___ensureTermination)
+  522. [`Std.IterM.filter`](Iterators/Iterator-Combinators/#Std___IterM___filter)
+  523. [`Std.IterM.filter­M`](Iterators/Iterator-Combinators/#Std___IterM___filterM)
+  524. [`Std.IterM.filter­Map`](Iterators/Iterator-Combinators/#Std___IterM___filterMap)
+  525. [`Std.IterM.filter­Map­M`](Iterators/Iterator-Combinators/#Std___IterM___filterMapM)
+  526. [`Std.IterM.filter­Map­With­Postcondition`](Iterators/Iterator-Combinators/#Std___IterM___filterMapWithPostcondition)
+  527. [`Std.IterM.filter­With­Postcondition`](Iterators/Iterator-Combinators/#Std___IterM___filterWithPostcondition)
+  528. [`Std.IterM.find?`](Iterators/Consuming-Iterators/#Std___IterM___find___)
+  529. [`Std.IterM.find­M?`](Iterators/Consuming-Iterators/#Std___IterM___findM___)
+  530. [`Std.IterM.find­Some?`](Iterators/Consuming-Iterators/#Std___IterM___findSome___)
+  531. [`Std.IterM.find­Some­M?`](Iterators/Consuming-Iterators/#Std___IterM___findSomeM___)
+  532. [`Std.IterM.finitely­Many­Skips`](Iterators/Consuming-Iterators/#Std___IterM___finitelyManySkips)
+  533. [`Std.IterM.finitely­Many­Steps`](Iterators/Consuming-Iterators/#Std___IterM___finitelyManySteps)
+  534. [`Std.IterM.flat­Map`](Iterators/Iterator-Combinators/#Std___IterM___flatMap)
+  535. [`Std.IterM.flat­Map­After`](Iterators/Iterator-Combinators/#Std___IterM___flatMapAfter)
+  536. [`Std.IterM.flat­Map­After­M`](Iterators/Iterator-Combinators/#Std___IterM___flatMapAfterM)
+  537. [`Std.IterM.flat­Map­M`](Iterators/Iterator-Combinators/#Std___IterM___flatMapM)
+  538. [`Std.IterM.fold`](Iterators/Consuming-Iterators/#Std___IterM___fold)
+  539. [`Std.IterM.fold­M`](Iterators/Consuming-Iterators/#Std___IterM___foldM)
+  540. [`Std.IterM.induct­Skips`](Iterators/Reasoning-About-Iterators/#Std___IterM___inductSkips)
+  541. [`Std.IterM.induct­Steps`](Iterators/Reasoning-About-Iterators/#Std___IterM___inductSteps)
+  542. [`Std.IterM.length`](Iterators/Consuming-Iterators/#Std___IterM___length)
+  543. [`Std.IterM.map`](Iterators/Iterator-Combinators/#Std___IterM___map)
+  544. [`Std.IterM.map­M`](Iterators/Iterator-Combinators/#Std___IterM___mapM)
+  545. [`Std.IterM.map­With­Postcondition`](Iterators/Iterator-Combinators/#Std___IterM___mapWithPostcondition)
+  546. [`Std.IterM.mk`](Iterators/Iterator-Combinators/#Std___IterM___mk-next)
+  547. `Std.IterM.mk`
+    1. [Constructor of `Std.Iter­M`](Iterators/Iterator-Definitions/#Std___IterM___mk)
+  548. [`Std.IterM.next­At­Idx?`](Iterators/Iterator-Definitions/#Std___IterM___nextAtIdx___)
+  549. [`Std.IterM.step`](Iterators/Consuming-Iterators/#Std___IterM___step)
+  550. [`Std.IterM.step­As­Het­T`](Iterators/Reasoning-About-Iterators/#Std___IterM___stepAsHetT)
+  551. [`Std.IterM.step­Size`](Iterators/Iterator-Combinators/#Std___IterM___stepSize)
+  552. [`Std.IterM.take`](Iterators/Iterator-Combinators/#Std___IterM___take)
+  553. [`Std.IterM.take­While`](Iterators/Iterator-Combinators/#Std___IterM___takeWhile)
+  554. [`Std.IterM.take­While­M`](Iterators/Iterator-Combinators/#Std___IterM___takeWhileM)
+  555. [`Std.IterM.take­While­With­Postcondition`](Iterators/Iterator-Combinators/#Std___IterM___takeWhileWithPostcondition)
+  556. [`Std.IterM.to­Array`](Iterators/Consuming-Iterators/#Std___IterM___toArray)
+  557. [`Std.IterM.to­Iter`](Iterators/Iterator-Combinators/#Std___IterM___toIter)
+  558. [`Std.IterM.to­List`](Iterators/Consuming-Iterators/#Std___IterM___toList)
+  559. [`Std.IterM.to­List­Rev`](Iterators/Consuming-Iterators/#Std___IterM___toListRev)
+  560. [`Std.IterM.to­Take`](Iterators/Iterator-Combinators/#Std___IterM___toTake)
+  561. [`Std.IterM.u­Lift`](Iterators/Iterator-Combinators/#Std___IterM___uLift)
+  562. [`Std.IterM.zip`](Iterators/Iterator-Combinators/#Std___IterM___zip)
+  563. [`Std.Iter­Step`](Iterators/Iterator-Definitions/#Std___IterStep___yield)
+  564. `Std.IterStep.done`
+    1. [Constructor of `Std.Iter­Step`](Iterators/Iterator-Definitions/#Std___IterStep___yield)
+  565. `Std.IterStep.skip`
+    1. [Constructor of `Std.Iter­Step`](Iterators/Iterator-Definitions/#Std___IterStep___yield)
+  566. `Std.IterStep.yield`
+    1. [Constructor of `Std.Iter­Step`](Iterators/Iterator-Definitions/#Std___IterStep___yield)
+  567. [`Std.Iterator`](Iterators/Iterator-Definitions/#Std___Iterator___mk)
+  568. `Std.Iterator.mk`
+    1. [Instance constructor of `Std.Iterator`](Iterators/Iterator-Definitions/#Std___Iterator___mk)
+  569. [`Std.Iterator­Access`](Iterators/Iterator-Definitions/#Std___IteratorAccess___mk)
+  570. `Std.IteratorAccess.mk`
+    1. [Instance constructor of `Std.Iterator­Access`](Iterators/Iterator-Definitions/#Std___IteratorAccess___mk)
+  571. [`Std.Iterator­Loop`](Iterators/Iterator-Definitions/#Std___IteratorLoop___mk)
+  572. [`Std.IteratorLoop.default­Implementation`](Iterators/Iterator-Definitions/#Std___IteratorLoop___defaultImplementation)
+  573. `Std.IteratorLoop.mk`
+    1. [Instance constructor of `Std.Iterator­Loop`](Iterators/Iterator-Definitions/#Std___IteratorLoop___mk)
+  574. [`Std.Iterators.Finite`](Iterators/Iterator-Definitions/#Std___Iterators___Finite___mk)
+  575. `Std.Iterators.Finite.mk`
+    1. [Instance constructor of `Std.Iterators.Finite`](Iterators/Iterator-Definitions/#Std___Iterators___Finite___mk)
+  576. [`Std.Iterators.Het­T`](Iterators/Reasoning-About-Iterators/#Std___Iterators___HetT___mk)
+  577. [`Std.Iterators.HetT.bind`](Iterators/Reasoning-About-Iterators/#Std___Iterators___HetT___bind)
+  578. [`Std.Iterators.HetT.lift`](Iterators/Reasoning-About-Iterators/#Std___Iterators___HetT___lift)
+  579. [`Std.Iterators.HetT.map`](Iterators/Reasoning-About-Iterators/#Std___Iterators___HetT___map)
+  580. `Std.Iterators.HetT.mk`
+    1. [Constructor of `Std.Iterators.Het­T`](Iterators/Reasoning-About-Iterators/#Std___Iterators___HetT___mk)
+  581. [`Std.Iterators.HetT.pbind`](Iterators/Reasoning-About-Iterators/#Std___Iterators___HetT___pbind)
+  582. [`Std.Iterators.HetT.pmap`](Iterators/Reasoning-About-Iterators/#Std___Iterators___HetT___pmap)
+  583. [`Std.Iterators.HetT.prun`](Iterators/Reasoning-About-Iterators/#Std___Iterators___HetT___prun)
+  584. [`Std.Iterators.HetT.pure`](Iterators/Reasoning-About-Iterators/#Std___Iterators___HetT___pure)
+  585. [`Std.Iterators.Postcondition­T`](Iterators/Reasoning-About-Iterators/#Std___Iterators___PostconditionT___mk)
+  586. [`Std.Iterators.PostconditionT.lift`](Iterators/Reasoning-About-Iterators/#Std___Iterators___PostconditionT___lift)
+  587. [`Std.Iterators.PostconditionT.lift­With­Property`](Iterators/Reasoning-About-Iterators/#Std___Iterators___PostconditionT___liftWithProperty)
+  588. `Std.Iterators.PostconditionT.mk`
+    1. [Constructor of `Std.Iterators.Postcondition­T`](Iterators/Reasoning-About-Iterators/#Std___Iterators___PostconditionT___mk)
+  589. [`Std.Iterators.PostconditionT.run`](Iterators/Reasoning-About-Iterators/#Std___Iterators___PostconditionT___run)
+  590. [`Std.Iterators.Productive`](Iterators/Iterator-Definitions/#Std___Iterators___Productive___mk)
+  591. `Std.Iterators.Productive.mk`
+    1. [Instance constructor of `Std.Iterators.Productive`](Iterators/Iterator-Definitions/#Std___Iterators___Productive___mk)
+  592. [`Std.Lawful­Iterator­Loop`](Iterators/Iterator-Definitions/#Std___LawfulIteratorLoop___mk)
+  593. `Std.Lawful­IteratorLoop.mk`
+    1. [Instance constructor of `Std.Lawful­Iterator­Loop`](Iterators/Iterator-Definitions/#Std___LawfulIteratorLoop___mk)
+  594. [`Std.Mutex`](IO/Tasks-and-Threads/#Std___Mutex)
+  595. [`Std.Mutex.atomically`](IO/Tasks-and-Threads/#Std___Mutex___atomically)
+  596. [`Std.Mutex.atomically­Once`](IO/Tasks-and-Threads/#Std___Mutex___atomicallyOnce)
+  597. [`Std.Mutex.new`](IO/Tasks-and-Threads/#Std___Mutex___new)
+  598. [`Std.PRange.Infinitely­Upward­Enumerable`](Basic-Types/Ranges/#Std___PRange___InfinitelyUpwardEnumerable___mk)
+  599. `Std.PRange.Infinitely­UpwardEnumerable.mk`
+    1. [Instance constructor of `Std.PRange.Infinitely­Upward­Enumerable`](Basic-Types/Ranges/#Std___PRange___InfinitelyUpwardEnumerable___mk)
+  600. [`Std.PRange.Lawful­Upward­Enumerable`](Basic-Types/Ranges/#Std___PRange___LawfulUpwardEnumerable___mk)
+  601. `Std.PRange.Lawful­UpwardEnumerable.mk`
+    1. [Instance constructor of `Std.PRange.Lawful­Upward­Enumerable`](Basic-Types/Ranges/#Std___PRange___LawfulUpwardEnumerable___mk)
+  602. [`Std.PRange.Least?`](Basic-Types/Ranges/#Std___PRange___Least______mk)
+  603. `Std.PRange.Least?.mk`
+    1. [Instance constructor of `Std.PRange.Least?`](Basic-Types/Ranges/#Std___PRange___Least______mk)
+  604. [`Std.PRange.Linearly­Upward­Enumerable`](Basic-Types/Ranges/#Std___PRange___LinearlyUpwardEnumerable___mk)
+  605. `Std.PRange.Linearly­UpwardEnumerable.mk`
+    1. [Instance constructor of `Std.PRange.Linearly­Upward­Enumerable`](Basic-Types/Ranges/#Std___PRange___LinearlyUpwardEnumerable___mk)
+  606. [`Std.PRange.Upward­Enumerable`](Basic-Types/Ranges/#Std___PRange___UpwardEnumerable___mk)
+  607. [`Std.PRange.UpwardEnumerable.LE`](Basic-Types/Ranges/#Std___PRange___UpwardEnumerable___LE)
+  608. [`Std.PRange.UpwardEnumerable.LT`](Basic-Types/Ranges/#Std___PRange___UpwardEnumerable___LT)
+  609. `Std.PRange.UpwardEnumerable.mk`
+    1. [Instance constructor of `Std.PRange.Upward­Enumerable`](Basic-Types/Ranges/#Std___PRange___UpwardEnumerable___mk)
+  610. [`Std.Plausible­Iter­Step`](Iterators/Iterator-Definitions/#Std___PlausibleIterStep)
+  611. [`Std.Plausible­IterStep.done`](Iterators/Iterator-Definitions/#Std___PlausibleIterStep___done)
+  612. [`Std.Plausible­IterStep.skip`](Iterators/Iterator-Definitions/#Std___PlausibleIterStep___skip)
+  613. [`Std.Plausible­IterStep.yield`](Iterators/Iterator-Definitions/#Std___PlausibleIterStep___yield)
+  614. [`Std.Rcc`](Basic-Types/Ranges/#Std___Rcc___mk)
+  615. [`Std.Rcc.Sliceable`](Basic-Types/Ranges/#Std___Rcc___Sliceable___mk)
+  616. `Std.Rcc.Sliceable.mk`
+    1. [Instance constructor of `Std.Rcc.Sliceable`](Basic-Types/Ranges/#Std___Rcc___Sliceable___mk)
+  617. [`Std.Rcc.is­Empty`](Basic-Types/Ranges/#Std___Rcc___isEmpty)
+  618. [`Std.Rcc.iter`](Basic-Types/Ranges/#Std___Rcc___iter)
+  619. `Std.Rcc.mk`
+    1. [Constructor of `Std.Rcc`](Basic-Types/Ranges/#Std___Rcc___mk)
+  620. [`Std.Rcc.size`](Basic-Types/Ranges/#Std___Rcc___size)
+  621. [`Std.Rcc.to­Array`](Basic-Types/Ranges/#Std___Rcc___toArray)
+  622. [`Std.Rcc.to­List`](Basic-Types/Ranges/#Std___Rcc___toList)
+  623. [`Std.Rci`](Basic-Types/Ranges/#Std___Rci___mk)
+  624. [`Std.Rci.Sliceable`](Basic-Types/Ranges/#Std___Rci___Sliceable___mk)
+  625. `Std.Rci.Sliceable.mk`
+    1. [Instance constructor of `Std.Rci.Sliceable`](Basic-Types/Ranges/#Std___Rci___Sliceable___mk)
+  626. [`Std.Rci.is­Empty`](Basic-Types/Ranges/#Std___Rci___isEmpty)
+  627. [`Std.Rci.iter`](Basic-Types/Ranges/#Std___Rci___iter)
+  628. `Std.Rci.mk`
+    1. [Constructor of `Std.Rci`](Basic-Types/Ranges/#Std___Rci___mk)
+  629. [`Std.Rci.size`](Basic-Types/Ranges/#Std___Rci___size)
+  630. [`Std.Rci.to­Array`](Basic-Types/Ranges/#Std___Rci___toArray)
+  631. [`Std.Rci.to­List`](Basic-Types/Ranges/#Std___Rci___toList)
+  632. [`Std.Rco`](Basic-Types/Ranges/#Std___Rco___mk)
+  633. [`Std.Rco.Sliceable`](Basic-Types/Ranges/#Std___Rco___Sliceable___mk)
+  634. `Std.Rco.Sliceable.mk`
+    1. [Instance constructor of `Std.Rco.Sliceable`](Basic-Types/Ranges/#Std___Rco___Sliceable___mk)
+  635. [`Std.Rco.is­Empty`](Basic-Types/Ranges/#Std___Rco___isEmpty)
+  636. [`Std.Rco.iter`](Basic-Types/Ranges/#Std___Rco___iter)
+  637. `Std.Rco.mk`
+    1. [Constructor of `Std.Rco`](Basic-Types/Ranges/#Std___Rco___mk)
+  638. [`Std.Rco.size`](Basic-Types/Ranges/#Std___Rco___size)
+  639. [`Std.Rco.to­Array`](Basic-Types/Ranges/#Std___Rco___toArray)
+  640. [`Std.Rco.to­List`](Basic-Types/Ranges/#Std___Rco___toList)
+  641. [`Std.Ric`](Basic-Types/Ranges/#Std___Ric___mk)
+  642. [`Std.Ric.Sliceable`](Basic-Types/Ranges/#Std___Ric___Sliceable___mk)
+  643. `Std.Ric.Sliceable.mk`
+    1. [Instance constructor of `Std.Ric.Sliceable`](Basic-Types/Ranges/#Std___Ric___Sliceable___mk)
+  644. [`Std.Ric.is­Empty`](Basic-Types/Ranges/#Std___Ric___isEmpty)
+  645. [`Std.Ric.iter`](Basic-Types/Ranges/#Std___Ric___iter)
+  646. `Std.Ric.mk`
+    1. [Constructor of `Std.Ric`](Basic-Types/Ranges/#Std___Ric___mk)
+  647. [`Std.Ric.size`](Basic-Types/Ranges/#Std___Ric___size)
+  648. [`Std.Ric.to­Array`](Basic-Types/Ranges/#Std___Ric___toArray)
+  649. [`Std.Ric.to­List`](Basic-Types/Ranges/#Std___Ric___toList)
+  650. [`Std.Rii`](Basic-Types/Ranges/#Std___Rii___mk)
+  651. [`Std.Rii.Sliceable`](Basic-Types/Ranges/#Std___Rii___Sliceable___mk)
+  652. `Std.Rii.Sliceable.mk`
+    1. [Instance constructor of `Std.Rii.Sliceable`](Basic-Types/Ranges/#Std___Rii___Sliceable___mk)
+  653. [`Std.Rii.is­Empty`](Basic-Types/Ranges/#Std___Rii___isEmpty)
+  654. [`Std.Rii.iter`](Basic-Types/Ranges/#Std___Rii___iter)
+  655. `Std.Rii.mk`
+    1. [Constructor of `Std.Rii`](Basic-Types/Ranges/#Std___Rii___mk)
+  656. [`Std.Rii.size`](Basic-Types/Ranges/#Std___Rii___size)
+  657. [`Std.Rii.to­Array`](Basic-Types/Ranges/#Std___Rii___toArray)
+  658. [`Std.Rii.to­List`](Basic-Types/Ranges/#Std___Rii___toList)
+  659. [`Std.Rio`](Basic-Types/Ranges/#Std___Rio___mk)
+  660. [`Std.Rio.Sliceable`](Basic-Types/Ranges/#Std___Rio___Sliceable___mk)
+  661. `Std.Rio.Sliceable.mk`
+    1. [Instance constructor of `Std.Rio.Sliceable`](Basic-Types/Ranges/#Std___Rio___Sliceable___mk)
+  662. [`Std.Rio.is­Empty`](Basic-Types/Ranges/#Std___Rio___isEmpty)
+  663. [`Std.Rio.iter`](Basic-Types/Ranges/#Std___Rio___iter)
+  664. `Std.Rio.mk`
+    1. [Constructor of `Std.Rio`](Basic-Types/Ranges/#Std___Rio___mk)
+  665. [`Std.Rio.size`](Basic-Types/Ranges/#Std___Rio___size)
+  666. [`Std.Rio.to­Array`](Basic-Types/Ranges/#Std___Rio___toArray)
+  667. [`Std.Rio.to­List`](Basic-Types/Ranges/#Std___Rio___toList)
+  668. [`Std.Roc`](Basic-Types/Ranges/#Std___Roc___mk)
+  669. [`Std.Roc.Sliceable`](Basic-Types/Ranges/#Std___Roc___Sliceable___mk)
+  670. `Std.Roc.Sliceable.mk`
+    1. [Instance constructor of `Std.Roc.Sliceable`](Basic-Types/Ranges/#Std___Roc___Sliceable___mk)
+  671. [`Std.Roc.is­Empty`](Basic-Types/Ranges/#Std___Roc___isEmpty)
+  672. [`Std.Roc.iter`](Basic-Types/Ranges/#Std___Roc___iter)
+  673. `Std.Roc.mk`
+    1. [Constructor of `Std.Roc`](Basic-Types/Ranges/#Std___Roc___mk)
+  674. [`Std.Roc.size`](Basic-Types/Ranges/#Std___Roc___size)
+  675. [`Std.Roc.to­Array`](Basic-Types/Ranges/#Std___Roc___toArray)
+  676. [`Std.Roc.to­List`](Basic-Types/Ranges/#Std___Roc___toList)
+  677. [`Std.Roi`](Basic-Types/Ranges/#Std___Roi___mk)
+  678. [`Std.Roi.Sliceable`](Basic-Types/Ranges/#Std___Roi___Sliceable___mk)
+  679. `Std.Roi.Sliceable.mk`
+    1. [Instance constructor of `Std.Roi.Sliceable`](Basic-Types/Ranges/#Std___Roi___Sliceable___mk)
+  680. [`Std.Roi.is­Empty`](Basic-Types/Ranges/#Std___Roi___isEmpty)
+  681. [`Std.Roi.iter`](Basic-Types/Ranges/#Std___Roi___iter)
+  682. `Std.Roi.mk`
+    1. [Constructor of `Std.Roi`](Basic-Types/Ranges/#Std___Roi___mk)
+  683. [`Std.Roi.size`](Basic-Types/Ranges/#Std___Roi___size)
+  684. [`Std.Roi.to­Array`](Basic-Types/Ranges/#Std___Roi___toArray)
+  685. [`Std.Roi.to­List`](Basic-Types/Ranges/#Std___Roi___toList)
+  686. [`Std.Roo`](Basic-Types/Ranges/#Std___Roo___mk)
+  687. [`Std.Roo.Sliceable`](Basic-Types/Ranges/#Std___Roo___Sliceable___mk)
+  688. `Std.Roo.Sliceable.mk`
+    1. [Instance constructor of `Std.Roo.Sliceable`](Basic-Types/Ranges/#Std___Roo___Sliceable___mk)
+  689. [`Std.Roo.is­Empty`](Basic-Types/Ranges/#Std___Roo___isEmpty)
+  690. [`Std.Roo.iter`](Basic-Types/Ranges/#Std___Roo___iter)
+  691. `Std.Roo.mk`
+    1. [Constructor of `Std.Roo`](Basic-Types/Ranges/#Std___Roo___mk)
+  692. [`Std.Roo.size`](Basic-Types/Ranges/#Std___Roo___size)
+  693. [`Std.Roo.to­Array`](Basic-Types/Ranges/#Std___Roo___toArray)
+  694. [`Std.Roo.to­List`](Basic-Types/Ranges/#Std___Roo___toList)
+  695. [`Std.Rxc.Has­Size`](Basic-Types/Ranges/#Std___Rxc___HasSize___mk)
+  696. `Std.Rxc.HasSize.mk`
+    1. [Instance constructor of `Std.Rxc.Has­Size`](Basic-Types/Ranges/#Std___Rxc___HasSize___mk)
+  697. [`Std.Rxc.Is­Always­Finite`](Basic-Types/Ranges/#Std___Rxc___IsAlwaysFinite___mk)
+  698. `Std.Rxc.Is­AlwaysFinite.mk`
+    1. [Instance constructor of `Std.Rxc.Is­Always­Finite`](Basic-Types/Ranges/#Std___Rxc___IsAlwaysFinite___mk)
+  699. [`Std.Rxi.Has­Size`](Basic-Types/Ranges/#Std___Rxi___HasSize___mk)
+  700. `Std.Rxi.HasSize.mk`
+    1. [Instance constructor of `Std.Rxi.Has­Size`](Basic-Types/Ranges/#Std___Rxi___HasSize___mk)
+  701. [`Std.Rxi.Is­Always­Finite`](Basic-Types/Ranges/#Std___Rxi___IsAlwaysFinite___mk)
+  702. `Std.Rxi.Is­AlwaysFinite.mk`
+    1. [Instance constructor of `Std.Rxi.Is­Always­Finite`](Basic-Types/Ranges/#Std___Rxi___IsAlwaysFinite___mk)
+  703. [`Std.Shrink`](Iterators/Iterator-Definitions/#Std___Shrink)
+  704. [`Std.Shrink.deflate`](Iterators/Iterator-Definitions/#Std___Shrink___deflate)
+  705. [`Std.Shrink.inflate`](Iterators/Iterator-Definitions/#Std___Shrink___inflate)
+  706. [`Std.To­Format`](Interacting-with-Lean/#Std___ToFormat___mk)
+  707. `Std.ToFormat.mk`
+    1. [Instance constructor of `Std.To­Format`](Interacting-with-Lean/#Std___ToFormat___mk)
+  708. [`Std.Tree­Map`](Basic-Types/Maps-and-Sets/#Std___TreeMap)
+  709. [`Std.TreeMap.Raw`](Basic-Types/Maps-and-Sets/#Std___TreeMap___Raw___mk)
+  710. [`Std.TreeMap.Raw.WF`](Basic-Types/Maps-and-Sets/#Std___TreeMap___Raw___WF___mk)
+  711. `Std.TreeMap.Raw.WF.mk`
+    1. [Constructor of `Std.TreeMap.Raw.WF`](Basic-Types/Maps-and-Sets/#Std___TreeMap___Raw___WF___mk)
+  712. `Std.TreeMap.Raw.mk`
+    1. [Constructor of `Std.TreeMap.Raw`](Basic-Types/Maps-and-Sets/#Std___TreeMap___Raw___mk)
+  713. [`Std.TreeMap.all`](Basic-Types/Maps-and-Sets/#Std___TreeMap___all)
+  714. [`Std.TreeMap.alter`](Basic-Types/Maps-and-Sets/#Std___TreeMap___alter)
+  715. [`Std.TreeMap.any`](Basic-Types/Maps-and-Sets/#Std___TreeMap___any)
+  716. [`Std.TreeMap.contains`](Basic-Types/Maps-and-Sets/#Std___TreeMap___contains)
+  717. [`Std.TreeMap.contains­Then­Insert`](Basic-Types/Maps-and-Sets/#Std___TreeMap___containsThenInsert)
+  718. [`Std.TreeMap.contains­Then­Insert­If­New`](Basic-Types/Maps-and-Sets/#Std___TreeMap___containsThenInsertIfNew)
+  719. [`Std.TreeMap.empty`](Basic-Types/Maps-and-Sets/#Std___TreeMap___empty)
+  720. [`Std.TreeMap.entry­At­Idx`](Basic-Types/Maps-and-Sets/#Std___TreeMap___entryAtIdx)
+  721. [`Std.TreeMap.entry­At­Idx!`](Basic-Types/Maps-and-Sets/#Std___TreeMap___entryAtIdx___)
+  722. [`Std.TreeMap.entry­At­Idx?`](Basic-Types/Maps-and-Sets/#Std___TreeMap___entryAtIdx___-next)
+  723. [`Std.TreeMap.entry­At­Idx­D`](Basic-Types/Maps-and-Sets/#Std___TreeMap___entryAtIdxD)
+  724. [`Std.TreeMap.erase`](Basic-Types/Maps-and-Sets/#Std___TreeMap___erase)
+  725. [`Std.TreeMap.erase­Many`](Basic-Types/Maps-and-Sets/#Std___TreeMap___eraseMany)
+  726. [`Std.TreeMap.filter`](Basic-Types/Maps-and-Sets/#Std___TreeMap___filter)
+  727. [`Std.TreeMap.filter­Map`](Basic-Types/Maps-and-Sets/#Std___TreeMap___filterMap)
+  728. [`Std.TreeMap.foldl`](Basic-Types/Maps-and-Sets/#Std___TreeMap___foldl)
+  729. [`Std.TreeMap.foldl­M`](Basic-Types/Maps-and-Sets/#Std___TreeMap___foldlM)
+  730. [`Std.TreeMap.foldr`](Basic-Types/Maps-and-Sets/#Std___TreeMap___foldr)
+  731. [`Std.TreeMap.foldr­M`](Basic-Types/Maps-and-Sets/#Std___TreeMap___foldrM)
+  732. [`Std.TreeMap.for­In`](Basic-Types/Maps-and-Sets/#Std___TreeMap___forIn)
+  733. [`Std.TreeMap.for­M`](Basic-Types/Maps-and-Sets/#Std___TreeMap___forM)
+  734. [`Std.TreeMap.get`](Basic-Types/Maps-and-Sets/#Std___TreeMap___get)
+  735. [`Std.TreeMap.get!`](Basic-Types/Maps-and-Sets/#Std___TreeMap___get___)
+  736. [`Std.TreeMap.get?`](Basic-Types/Maps-and-Sets/#Std___TreeMap___get___-next)
+  737. [`Std.TreeMap.get­D`](Basic-Types/Maps-and-Sets/#Std___TreeMap___getD)
+  738. [`Std.TreeMap.get­Entry­GE`](Basic-Types/Maps-and-Sets/#Std___TreeMap___getEntryGE)
+  739. [`Std.TreeMap.get­Entry­GE!`](Basic-Types/Maps-and-Sets/#Std___TreeMap___getEntryGE___)
+  740. [`Std.TreeMap.get­Entry­GE?`](Basic-Types/Maps-and-Sets/#Std___TreeMap___getEntryGE___-next)
+  741. [`Std.TreeMap.get­Entry­GED`](Basic-Types/Maps-and-Sets/#Std___TreeMap___getEntryGED)
+  742. [`Std.TreeMap.get­Entry­GT`](Basic-Types/Maps-and-Sets/#Std___TreeMap___getEntryGT)
+  743. [`Std.TreeMap.get­Entry­GT!`](Basic-Types/Maps-and-Sets/#Std___TreeMap___getEntryGT___)
+  744. [`Std.TreeMap.get­Entry­GT?`](Basic-Types/Maps-and-Sets/#Std___TreeMap___getEntryGT___-next)
+  745. [`Std.TreeMap.get­Entry­GTD`](Basic-Types/Maps-and-Sets/#Std___TreeMap___getEntryGTD)
+  746. [`Std.TreeMap.get­Entry­LE`](Basic-Types/Maps-and-Sets/#Std___TreeMap___getEntryLE)
+  747. [`Std.TreeMap.get­Entry­LE!`](Basic-Types/Maps-and-Sets/#Std___TreeMap___getEntryLE___)
+  748. [`Std.TreeMap.get­Entry­LE?`](Basic-Types/Maps-and-Sets/#Std___TreeMap___getEntryLE___-next)
+  749. [`Std.TreeMap.get­Entry­LED`](Basic-Types/Maps-and-Sets/#Std___TreeMap___getEntryLED)
+  750. [`Std.TreeMap.get­Entry­LT`](Basic-Types/Maps-and-Sets/#Std___TreeMap___getEntryLT)
+  751. [`Std.TreeMap.get­Entry­LT!`](Basic-Types/Maps-and-Sets/#Std___TreeMap___getEntryLT___)
+  752. [`Std.TreeMap.get­Entry­LT?`](Basic-Types/Maps-and-Sets/#Std___TreeMap___getEntryLT___-next)
+  753. [`Std.TreeMap.get­Entry­LTD`](Basic-Types/Maps-and-Sets/#Std___TreeMap___getEntryLTD)
+  754. [`Std.TreeMap.get­Key`](Basic-Types/Maps-and-Sets/#Std___TreeMap___getKey)
+  755. [`Std.TreeMap.get­Key!`](Basic-Types/Maps-and-Sets/#Std___TreeMap___getKey___)
+  756. [`Std.TreeMap.get­Key?`](Basic-Types/Maps-and-Sets/#Std___TreeMap___getKey___-next)
+  757. [`Std.TreeMap.get­Key­D`](Basic-Types/Maps-and-Sets/#Std___TreeMap___getKeyD)
+  758. [`Std.TreeMap.get­Key­GE`](Basic-Types/Maps-and-Sets/#Std___TreeMap___getKeyGE)
+  759. [`Std.TreeMap.get­Key­GE!`](Basic-Types/Maps-and-Sets/#Std___TreeMap___getKeyGE___)
+  760. [`Std.TreeMap.get­Key­GE?`](Basic-Types/Maps-and-Sets/#Std___TreeMap___getKeyGE___-next)
+  761. [`Std.TreeMap.get­Key­GED`](Basic-Types/Maps-and-Sets/#Std___TreeMap___getKeyGED)
+  762. [`Std.TreeMap.get­Key­GT`](Basic-Types/Maps-and-Sets/#Std___TreeMap___getKeyGT)
+  763. [`Std.TreeMap.get­Key­GT!`](Basic-Types/Maps-and-Sets/#Std___TreeMap___getKeyGT___)
+  764. [`Std.TreeMap.get­Key­GT?`](Basic-Types/Maps-and-Sets/#Std___TreeMap___getKeyGT___-next)
+  765. [`Std.TreeMap.get­Key­GTD`](Basic-Types/Maps-and-Sets/#Std___TreeMap___getKeyGTD)
+  766. [`Std.TreeMap.get­Key­LE`](Basic-Types/Maps-and-Sets/#Std___TreeMap___getKeyLE)
+  767. [`Std.TreeMap.get­Key­LE!`](Basic-Types/Maps-and-Sets/#Std___TreeMap___getKeyLE___)
+  768. [`Std.TreeMap.get­Key­LE?`](Basic-Types/Maps-and-Sets/#Std___TreeMap___getKeyLE___-next)
+  769. [`Std.TreeMap.get­Key­LED`](Basic-Types/Maps-and-Sets/#Std___TreeMap___getKeyLED)
+  770. [`Std.TreeMap.get­Key­LT`](Basic-Types/Maps-and-Sets/#Std___TreeMap___getKeyLT)
+  771. [`Std.TreeMap.get­Key­LT!`](Basic-Types/Maps-and-Sets/#Std___TreeMap___getKeyLT___)
+  772. [`Std.TreeMap.get­Key­LT?`](Basic-Types/Maps-and-Sets/#Std___TreeMap___getKeyLT___-next)
+  773. [`Std.TreeMap.get­Key­LTD`](Basic-Types/Maps-and-Sets/#Std___TreeMap___getKeyLTD)
+  774. [`Std.TreeMap.get­Then­Insert­If­New?`](Basic-Types/Maps-and-Sets/#Std___TreeMap___getThenInsertIfNew___)
+  775. [`Std.TreeMap.insert`](Basic-Types/Maps-and-Sets/#Std___TreeMap___insert)
+  776. [`Std.TreeMap.insert­If­New`](Basic-Types/Maps-and-Sets/#Std___TreeMap___insertIfNew)
+  777. [`Std.TreeMap.insert­Many`](Basic-Types/Maps-and-Sets/#Std___TreeMap___insertMany)
+  778. [`Std.TreeMap.insert­Many­If­New­Unit`](Basic-Types/Maps-and-Sets/#Std___TreeMap___insertManyIfNewUnit)
+  779. [`Std.TreeMap.is­Empty`](Basic-Types/Maps-and-Sets/#Std___TreeMap___isEmpty)
+  780. [`Std.TreeMap.iter`](Basic-Types/Maps-and-Sets/#Std___TreeMap___iter)
+  781. [`Std.TreeMap.key­At­Idx`](Basic-Types/Maps-and-Sets/#Std___TreeMap___keyAtIdx)
+  782. [`Std.TreeMap.key­At­Idx!`](Basic-Types/Maps-and-Sets/#Std___TreeMap___keyAtIdx___)
+  783. [`Std.TreeMap.key­At­Idx?`](Basic-Types/Maps-and-Sets/#Std___TreeMap___keyAtIdx___-next)
+  784. [`Std.TreeMap.key­At­Idx­D`](Basic-Types/Maps-and-Sets/#Std___TreeMap___keyAtIdxD)
+  785. [`Std.TreeMap.keys`](Basic-Types/Maps-and-Sets/#Std___TreeMap___keys)
+  786. [`Std.TreeMap.keys­Array`](Basic-Types/Maps-and-Sets/#Std___TreeMap___keysArray)
+  787. [`Std.TreeMap.keys­Iter`](Basic-Types/Maps-and-Sets/#Std___TreeMap___keysIter)
+  788. [`Std.TreeMap.map`](Basic-Types/Maps-and-Sets/#Std___TreeMap___map)
+  789. [`Std.TreeMap.max­Entry`](Basic-Types/Maps-and-Sets/#Std___TreeMap___maxEntry)
+  790. [`Std.TreeMap.max­Entry!`](Basic-Types/Maps-and-Sets/#Std___TreeMap___maxEntry___)
+  791. [`Std.TreeMap.max­Entry?`](Basic-Types/Maps-and-Sets/#Std___TreeMap___maxEntry___-next)
+  792. [`Std.TreeMap.max­Entry­D`](Basic-Types/Maps-and-Sets/#Std___TreeMap___maxEntryD)
+  793. [`Std.TreeMap.max­Key`](Basic-Types/Maps-and-Sets/#Std___TreeMap___maxKey)
+  794. [`Std.TreeMap.max­Key!`](Basic-Types/Maps-and-Sets/#Std___TreeMap___maxKey___)
+  795. [`Std.TreeMap.max­Key?`](Basic-Types/Maps-and-Sets/#Std___TreeMap___maxKey___-next)
+  796. [`Std.TreeMap.max­Key­D`](Basic-Types/Maps-and-Sets/#Std___TreeMap___maxKeyD)
+  797. [`Std.TreeMap.merge­With`](Basic-Types/Maps-and-Sets/#Std___TreeMap___mergeWith)
+  798. [`Std.TreeMap.min­Entry`](Basic-Types/Maps-and-Sets/#Std___TreeMap___minEntry)
+  799. [`Std.TreeMap.min­Entry!`](Basic-Types/Maps-and-Sets/#Std___TreeMap___minEntry___)
+  800. [`Std.TreeMap.min­Entry?`](Basic-Types/Maps-and-Sets/#Std___TreeMap___minEntry___-next)
+  801. [`Std.TreeMap.min­Entry­D`](Basic-Types/Maps-and-Sets/#Std___TreeMap___minEntryD)
+  802. [`Std.TreeMap.min­Key`](Basic-Types/Maps-and-Sets/#Std___TreeMap___minKey)
+  803. [`Std.TreeMap.min­Key!`](Basic-Types/Maps-and-Sets/#Std___TreeMap___minKey___)
+  804. [`Std.TreeMap.min­Key?`](Basic-Types/Maps-and-Sets/#Std___TreeMap___minKey___-next)
+  805. [`Std.TreeMap.min­Key­D`](Basic-Types/Maps-and-Sets/#Std___TreeMap___minKeyD)
+  806. [`Std.TreeMap.modify`](Basic-Types/Maps-and-Sets/#Std___TreeMap___modify)
+  807. [`Std.TreeMap.of­Array`](Basic-Types/Maps-and-Sets/#Std___TreeMap___ofArray)
+  808. [`Std.TreeMap.of­List`](Basic-Types/Maps-and-Sets/#Std___TreeMap___ofList)
+  809. [`Std.TreeMap.partition`](Basic-Types/Maps-and-Sets/#Std___TreeMap___partition)
+  810. [`Std.TreeMap.size`](Basic-Types/Maps-and-Sets/#Std___TreeMap___size)
+  811. [`Std.TreeMap.to­Array`](Basic-Types/Maps-and-Sets/#Std___TreeMap___toArray)
+  812. [`Std.TreeMap.to­List`](Basic-Types/Maps-and-Sets/#Std___TreeMap___toList)
+  813. [`Std.TreeMap.unit­Of­Array`](Basic-Types/Maps-and-Sets/#Std___TreeMap___unitOfArray)
+  814. [`Std.TreeMap.unit­Of­List`](Basic-Types/Maps-and-Sets/#Std___TreeMap___unitOfList)
+  815. [`Std.TreeMap.values`](Basic-Types/Maps-and-Sets/#Std___TreeMap___values)
+  816. [`Std.TreeMap.values­Array`](Basic-Types/Maps-and-Sets/#Std___TreeMap___valuesArray)
+  817. [`Std.TreeMap.values­Iter`](Basic-Types/Maps-and-Sets/#Std___TreeMap___valuesIter)
+  818. [`Std.Tree­Set`](Basic-Types/Maps-and-Sets/#Std___TreeSet)
+  819. [`Std.TreeSet.Raw`](Basic-Types/Maps-and-Sets/#Std___TreeSet___Raw___mk)
+  820. [`Std.TreeSet.Raw.WF`](Basic-Types/Maps-and-Sets/#Std___TreeSet___Raw___WF___mk)
+  821. `Std.TreeSet.Raw.WF.mk`
+    1. [Constructor of `Std.TreeSet.Raw.WF`](Basic-Types/Maps-and-Sets/#Std___TreeSet___Raw___WF___mk)
+  822. `Std.TreeSet.Raw.mk`
+    1. [Constructor of `Std.TreeSet.Raw`](Basic-Types/Maps-and-Sets/#Std___TreeSet___Raw___mk)
+  823. [`Std.TreeSet.all`](Basic-Types/Maps-and-Sets/#Std___TreeSet___all)
+  824. [`Std.TreeSet.any`](Basic-Types/Maps-and-Sets/#Std___TreeSet___any)
+  825. [`Std.TreeSet.at­Idx`](Basic-Types/Maps-and-Sets/#Std___TreeSet___atIdx)
+  826. [`Std.TreeSet.at­Idx!`](Basic-Types/Maps-and-Sets/#Std___TreeSet___atIdx___)
+  827. [`Std.TreeSet.at­Idx?`](Basic-Types/Maps-and-Sets/#Std___TreeSet___atIdx___-next)
+  828. [`Std.TreeSet.at­Idx­D`](Basic-Types/Maps-and-Sets/#Std___TreeSet___atIdxD)
+  829. [`Std.TreeSet.contains`](Basic-Types/Maps-and-Sets/#Std___TreeSet___contains)
+  830. [`Std.TreeSet.contains­Then­Insert`](Basic-Types/Maps-and-Sets/#Std___TreeSet___containsThenInsert)
+  831. [`Std.TreeSet.empty`](Basic-Types/Maps-and-Sets/#Std___TreeSet___empty)
+  832. [`Std.TreeSet.erase`](Basic-Types/Maps-and-Sets/#Std___TreeSet___erase)
+  833. [`Std.TreeSet.erase­Many`](Basic-Types/Maps-and-Sets/#Std___TreeSet___eraseMany)
+  834. [`Std.TreeSet.filter`](Basic-Types/Maps-and-Sets/#Std___TreeSet___filter)
+  835. [`Std.TreeSet.foldl`](Basic-Types/Maps-and-Sets/#Std___TreeSet___foldl)
+  836. [`Std.TreeSet.foldl­M`](Basic-Types/Maps-and-Sets/#Std___TreeSet___foldlM)
+  837. [`Std.TreeSet.foldr`](Basic-Types/Maps-and-Sets/#Std___TreeSet___foldr)
+  838. [`Std.TreeSet.foldr­M`](Basic-Types/Maps-and-Sets/#Std___TreeSet___foldrM)
+  839. [`Std.TreeSet.for­In`](Basic-Types/Maps-and-Sets/#Std___TreeSet___forIn)
+  840. [`Std.TreeSet.for­M`](Basic-Types/Maps-and-Sets/#Std___TreeSet___forM)
+  841. [`Std.TreeSet.get`](Basic-Types/Maps-and-Sets/#Std___TreeSet___get)
+  842. [`Std.TreeSet.get!`](Basic-Types/Maps-and-Sets/#Std___TreeSet___get___)
+  843. [`Std.TreeSet.get?`](Basic-Types/Maps-and-Sets/#Std___TreeSet___get___-next)
+  844. [`Std.TreeSet.get­D`](Basic-Types/Maps-and-Sets/#Std___TreeSet___getD)
+  845. [`Std.TreeSet.get­GE`](Basic-Types/Maps-and-Sets/#Std___TreeSet___getGE)
+  846. [`Std.TreeSet.get­GE!`](Basic-Types/Maps-and-Sets/#Std___TreeSet___getGE___)
+  847. [`Std.TreeSet.get­GE?`](Basic-Types/Maps-and-Sets/#Std___TreeSet___getGE___-next)
+  848. [`Std.TreeSet.get­GED`](Basic-Types/Maps-and-Sets/#Std___TreeSet___getGED)
+  849. [`Std.TreeSet.get­GT`](Basic-Types/Maps-and-Sets/#Std___TreeSet___getGT)
+  850. [`Std.TreeSet.get­GT!`](Basic-Types/Maps-and-Sets/#Std___TreeSet___getGT___)
+  851. [`Std.TreeSet.get­GT?`](Basic-Types/Maps-and-Sets/#Std___TreeSet___getGT___-next)
+  852. [`Std.TreeSet.get­GTD`](Basic-Types/Maps-and-Sets/#Std___TreeSet___getGTD)
+  853. [`Std.TreeSet.get­LE`](Basic-Types/Maps-and-Sets/#Std___TreeSet___getLE)
+  854. [`Std.TreeSet.get­LE!`](Basic-Types/Maps-and-Sets/#Std___TreeSet___getLE___)
+  855. [`Std.TreeSet.get­LE?`](Basic-Types/Maps-and-Sets/#Std___TreeSet___getLE___-next)
+  856. [`Std.TreeSet.get­LED`](Basic-Types/Maps-and-Sets/#Std___TreeSet___getLED)
+  857. [`Std.TreeSet.get­LT`](Basic-Types/Maps-and-Sets/#Std___TreeSet___getLT)
+  858. [`Std.TreeSet.get­LT!`](Basic-Types/Maps-and-Sets/#Std___TreeSet___getLT___)
+  859. [`Std.TreeSet.get­LT?`](Basic-Types/Maps-and-Sets/#Std___TreeSet___getLT___-next)
+  860. [`Std.TreeSet.get­LTD`](Basic-Types/Maps-and-Sets/#Std___TreeSet___getLTD)
+  861. [`Std.TreeSet.insert`](Basic-Types/Maps-and-Sets/#Std___TreeSet___insert)
+  862. [`Std.TreeSet.insert­Many`](Basic-Types/Maps-and-Sets/#Std___TreeSet___insertMany)
+  863. [`Std.TreeSet.is­Empty`](Basic-Types/Maps-and-Sets/#Std___TreeSet___isEmpty)
+  864. [`Std.TreeSet.iter`](Basic-Types/Maps-and-Sets/#Std___TreeSet___iter)
+  865. [`Std.TreeSet.max`](Basic-Types/Maps-and-Sets/#Std___TreeSet___max)
+  866. [`Std.TreeSet.max!`](Basic-Types/Maps-and-Sets/#Std___TreeSet___max___)
+  867. [`Std.TreeSet.max?`](Basic-Types/Maps-and-Sets/#Std___TreeSet___max___-next)
+  868. [`Std.TreeSet.max­D`](Basic-Types/Maps-and-Sets/#Std___TreeSet___maxD)
+  869. [`Std.TreeSet.merge`](Basic-Types/Maps-and-Sets/#Std___TreeSet___merge)
+  870. [`Std.TreeSet.min`](Basic-Types/Maps-and-Sets/#Std___TreeSet___min)
+  871. [`Std.TreeSet.min!`](Basic-Types/Maps-and-Sets/#Std___TreeSet___min___)
+  872. [`Std.TreeSet.min?`](Basic-Types/Maps-and-Sets/#Std___TreeSet___min___-next)
+  873. [`Std.TreeSet.min­D`](Basic-Types/Maps-and-Sets/#Std___TreeSet___minD)
+  874. [`Std.TreeSet.of­Array`](Basic-Types/Maps-and-Sets/#Std___TreeSet___ofArray)
+  875. [`Std.TreeSet.of­List`](Basic-Types/Maps-and-Sets/#Std___TreeSet___ofList)
+  876. [`Std.TreeSet.partition`](Basic-Types/Maps-and-Sets/#Std___TreeSet___partition)
+  877. [`Std.TreeSet.size`](Basic-Types/Maps-and-Sets/#Std___TreeSet___size)
+  878. [`Std.TreeSet.to­Array`](Basic-Types/Maps-and-Sets/#Std___TreeSet___toArray)
+  879. [`Std.TreeSet.to­List`](Basic-Types/Maps-and-Sets/#Std___TreeSet___toList)
+  880. [`Std­Gen`](IO/Random-Numbers/#StdGen)
+  881. `Stdio`
+    1. [`IO.Process.Stdio`](IO/Processes/#IO___Process___Stdio___piped)
+  882. `Stdio­Config`
+    1. [`IO.Process.Stdio­Config`](IO/Processes/#IO___Process___StdioConfig___mk)
+  883. `Step`
+    1. [`Std.Iter.Step`](Iterators/Iterator-Definitions/#Std___Iter___Step)
+  884. `Step`
+    1. [`Std.IterM.Step`](Iterators/Iterator-Definitions/#Std___IterM___Step)
+  885. `Str­Lit`
+    1. [`Lean.Syntax.Str­Lit`](Notations-and-Macros/Defining-New-Syntax/#Lean___Syntax___StrLit)
+  886. `Stream`
+    1. [`IO.FS.Stream`](IO/Files___-File-Handles___-and-Streams/#IO___FS___Stream___mk)
+  887. [`String`](Basic-Types/Strings/#String___ofByteArray)
+  888. [`String.Legacy.Iterator`](Basic-Types/Strings/#String___Legacy___Iterator___mk)
+  889. [`String.Legacy.Iterator.at­End`](Basic-Types/Strings/#String___Legacy___Iterator___atEnd)
+  890. [`String.Legacy.Iterator.curr`](Basic-Types/Strings/#String___Legacy___Iterator___curr)
+  891. [`String.Legacy.Iterator.curr'`](Basic-Types/Strings/#String___Legacy___Iterator___curr___)
+  892. [`String.Legacy.Iterator.extract`](Basic-Types/Strings/#String___Legacy___Iterator___extract)
+  893. [`String.Legacy.Iterator.find`](Basic-Types/Strings/#String___Legacy___Iterator___find)
+  894. [`String.Legacy.Iterator.fold­Until`](Basic-Types/Strings/#String___Legacy___Iterator___foldUntil)
+  895. [`String.Legacy.Iterator.forward`](Basic-Types/Strings/#String___Legacy___Iterator___forward)
+  896. [`String.Legacy.Iterator.has­Next`](Basic-Types/Strings/#String___Legacy___Iterator___hasNext)
+  897. [`String.Legacy.Iterator.has­Prev`](Basic-Types/Strings/#String___Legacy___Iterator___hasPrev)
+  898. `String.Legacy.Iterator.mk`
+    1. [Constructor of `String.Legacy.Iterator`](Basic-Types/Strings/#String___Legacy___Iterator___mk)
+  899. [`String.Legacy.Iterator.next`](Basic-Types/Strings/#String___Legacy___Iterator___next)
+  900. [`String.Legacy.Iterator.next'`](Basic-Types/Strings/#String___Legacy___Iterator___next___)
+  901. [`String.Legacy.Iterator.nextn`](Basic-Types/Strings/#String___Legacy___Iterator___nextn)
+  902. [`String.Legacy.Iterator.pos`](Basic-Types/Strings/#String___Legacy___Iterator___pos)
+  903. [`String.Legacy.Iterator.prev`](Basic-Types/Strings/#String___Legacy___Iterator___prev)
+  904. [`String.Legacy.Iterator.prevn`](Basic-Types/Strings/#String___Legacy___Iterator___prevn)
+  905. [`String.Legacy.Iterator.remaining­Bytes`](Basic-Types/Strings/#String___Legacy___Iterator___remainingBytes)
+  906. [`String.Legacy.Iterator.remaining­To­String`](Basic-Types/Strings/#String___Legacy___Iterator___remainingToString)
+  907. [`String.Legacy.Iterator.set­Curr`](Basic-Types/Strings/#String___Legacy___Iterator___setCurr)
+  908. [`String.Legacy.Iterator.to­End`](Basic-Types/Strings/#String___Legacy___Iterator___toEnd)
+  909. [`String.Legacy.Iterator.to­String`](Basic-Types/Strings/#String___Legacy___Iterator___toString)
+  910. [`String.Legacy.iter`](Basic-Types/Strings/#String___Legacy___iter)
+  911. [`String.Legacy.mk­Iterator`](Basic-Types/Strings/#String___Legacy___mkIterator)
+  912. [`String.Pos`](Basic-Types/Strings/#String___Pos___mk)
+  913. [`String.Pos.Raw`](Basic-Types/Strings/#String___Pos___Raw___mk)
+  914. [`String.Pos.Raw.at­End`](Basic-Types/Strings/#String___Pos___Raw___atEnd)
+  915. [`String.Pos.Raw.byte­Distance`](Basic-Types/Strings/#String___Pos___Raw___byteDistance)
+  916. [`String.Pos.Raw.dec`](Basic-Types/Strings/#String___Pos___Raw___dec)
+  917. [`String.Pos.Raw.decrease­By`](Basic-Types/Strings/#String___Pos___Raw___decreaseBy)
+  918. [`String.Pos.Raw.extract`](Basic-Types/Strings/#String___Pos___Raw___extract)
+  919. [`String.Pos.Raw.get`](Basic-Types/Strings/#String___Pos___Raw___get)
+  920. [`String.Pos.Raw.get!`](Basic-Types/Strings/#String___Pos___Raw___get___)
+  921. [`String.Pos.Raw.get'`](Basic-Types/Strings/#String___Pos___Raw___get___-next)
+  922. [`String.Pos.Raw.get?`](Basic-Types/Strings/#String___Pos___Raw___get___-next-next)
+  923. [`String.Pos.Raw.inc`](Basic-Types/Strings/#String___Pos___Raw___inc)
+  924. [`String.Pos.Raw.increase­By`](Basic-Types/Strings/#String___Pos___Raw___increaseBy)
+  925. [`String.Pos.Raw.is­Valid`](Basic-Types/Strings/#String___Pos___Raw___isValid)
+  926. [`String.Pos.Raw.is­Valid­For­Slice`](Basic-Types/Strings/#String___Pos___Raw___isValidForSlice)
+  927. [`String.Pos.Raw.min`](Basic-Types/Strings/#String___Pos___Raw___min)
+  928. `String.Pos.Raw.mk`
+    1. [Constructor of `String.Pos.Raw`](Basic-Types/Strings/#String___Pos___Raw___mk)
+  929. [`String.Pos.Raw.modify`](Basic-Types/Strings/#String___Pos___Raw___modify)
+  930. [`String.Pos.Raw.next`](Basic-Types/Strings/#String___Pos___Raw___next)
+  931. [`String.Pos.Raw.next'`](Basic-Types/Strings/#String___Pos___Raw___next___)
+  932. [`String.Pos.Raw.next­Until`](Basic-Types/Strings/#String___Pos___Raw___nextUntil)
+  933. [`String.Pos.Raw.next­While`](Basic-Types/Strings/#String___Pos___Raw___nextWhile)
+  934. [`String.Pos.Raw.offset­By`](Basic-Types/Strings/#String___Pos___Raw___offsetBy)
+  935. [`String.Pos.Raw.offset­Of­Pos`](Basic-Types/Strings/#String___Pos___Raw___offsetOfPos)
+  936. [`String.Pos.Raw.prev`](Basic-Types/Strings/#String___Pos___Raw___prev)
+  937. [`String.Pos.Raw.set`](Basic-Types/Strings/#String___Pos___Raw___set)
+  938. [`String.Pos.Raw.substr­Eq`](Basic-Types/Strings/#String___Pos___Raw___substrEq)
+  939. [`String.Pos.Raw.unoffset­By`](Basic-Types/Strings/#String___Pos___Raw___unoffsetBy)
+  940. [`String.Pos.byte`](Basic-Types/Strings/#String___Pos___byte)
+  941. [`String.Pos.cast`](Basic-Types/Strings/#String___Pos___cast)
+  942. [`String.Pos.get`](Basic-Types/Strings/#String___Pos___get)
+  943. [`String.Pos.get!`](Basic-Types/Strings/#String___Pos___get___)
+  944. [`String.Pos.get?`](Basic-Types/Strings/#String___Pos___get___-next)
+  945. `String.Pos.mk`
+    1. [Constructor of `String.Pos`](Basic-Types/Strings/#String___Pos___mk)
+  946. [`String.Pos.modify`](Basic-Types/Strings/#String___Pos___modify)
+  947. [`String.Pos.next`](Basic-Types/Strings/#String___Pos___next)
+  948. [`String.Pos.next!`](Basic-Types/Strings/#String___Pos___next___)
+  949. [`String.Pos.next?`](Basic-Types/Strings/#String___Pos___next___-next)
+  950. [`String.Pos.of­Copy`](Basic-Types/Strings/#String___Pos___ofCopy)
+  951. [`String.Pos.prev`](Basic-Types/Strings/#String___Pos___prev)
+  952. [`String.Pos.prev!`](Basic-Types/Strings/#String___Pos___prev___)
+  953. [`String.Pos.prev?`](Basic-Types/Strings/#String___Pos___prev___-next)
+  954. [`String.Pos.set`](Basic-Types/Strings/#String___Pos___set)
+  955. [`String.Pos.to­Modify­Of­LE`](Basic-Types/Strings/#String___Pos___toModifyOfLE)
+  956. [`String.Pos.to­Set­Of­LE`](Basic-Types/Strings/#String___Pos___toSetOfLE)
+  957. [`String.Pos.to­Slice`](Basic-Types/Strings/#String___Pos___toSlice)
+  958. [`String.Slice`](Basic-Types/Strings/#String___Slice___mk)
+  959. [`String.Slice.Pattern.Backward­Pattern`](Basic-Types/Strings/#String___Slice___Pattern___BackwardPattern___mk)
+  960. `String.Slice.Pattern.BackwardPattern.mk`
+    1. [Instance constructor of `String.Slice.Pattern.Backward­Pattern`](Basic-Types/Strings/#String___Slice___Pattern___BackwardPattern___mk)
+  961. [`String.Slice.Pattern.Forward­Pattern`](Basic-Types/Strings/#String___Slice___Pattern___ForwardPattern___mk)
+  962. `String.Slice.Pattern.ForwardPattern.mk`
+    1. [Instance constructor of `String.Slice.Pattern.Forward­Pattern`](Basic-Types/Strings/#String___Slice___Pattern___ForwardPattern___mk)
+  963. [`String.Slice.Pattern.To­Backward­Searcher`](Basic-Types/Strings/#String___Slice___Pattern___ToBackwardSearcher___mk)
+  964. `String.Slice.Pattern.To­BackwardSearcher.mk`
+    1. [Instance constructor of `String.Slice.Pattern.To­Backward­Searcher`](Basic-Types/Strings/#String___Slice___Pattern___ToBackwardSearcher___mk)
+  965. [`String.Slice.Pattern.To­Forward­Searcher`](Basic-Types/Strings/#String___Slice___Pattern___ToForwardSearcher___mk)
+  966. `String.Slice.Pattern.To­ForwardSearcher.mk`
+    1. [Instance constructor of `String.Slice.Pattern.To­Forward­Searcher`](Basic-Types/Strings/#String___Slice___Pattern___ToForwardSearcher___mk)
+  967. [`String.Slice.Pos`](Basic-Types/Strings/#String___Slice___Pos___mk)
+  968. [`String.Slice.Pos.byte`](Basic-Types/Strings/#String___Slice___Pos___byte)
+  969. [`String.Slice.Pos.cast`](Basic-Types/Strings/#String___Slice___Pos___cast)
+  970. [`String.Slice.Pos.copy`](Basic-Types/Strings/#String___Slice___Pos___copy)
+  971. [`String.Slice.Pos.get`](Basic-Types/Strings/#String___Slice___Pos___get)
+  972. [`String.Slice.Pos.get!`](Basic-Types/Strings/#String___Slice___Pos___get___)
+  973. [`String.Slice.Pos.get?`](Basic-Types/Strings/#String___Slice___Pos___get___-next)
+  974. `String.Slice.Pos.mk`
+    1. [Constructor of `String.Slice.Pos`](Basic-Types/Strings/#String___Slice___Pos___mk)
+  975. [`String.Slice.Pos.next`](Basic-Types/Strings/#String___Slice___Pos___next)
+  976. [`String.Slice.Pos.next!`](Basic-Types/Strings/#String___Slice___Pos___next___)
+  977. [`String.Slice.Pos.next?`](Basic-Types/Strings/#String___Slice___Pos___next___-next)
+  978. [`String.Slice.Pos.nextn`](Basic-Types/Strings/#String___Slice___Pos___nextn)
+  979. [`String.Slice.Pos.of­Slice`](Basic-Types/Strings/#String___Slice___Pos___ofSlice)
+  980. [`String.Slice.Pos.of­Slice­From`](Basic-Types/Strings/#String___Slice___Pos___ofSliceFrom)
+  981. [`String.Slice.Pos.of­Slice­To`](Basic-Types/Strings/#String___Slice___Pos___ofSliceTo)
+  982. [`String.Slice.Pos.prev`](Basic-Types/Strings/#String___Slice___Pos___prev)
+  983. [`String.Slice.Pos.prev!`](Basic-Types/Strings/#String___Slice___Pos___prev___)
+  984. [`String.Slice.Pos.prev?`](Basic-Types/Strings/#String___Slice___Pos___prev___-next)
+  985. [`String.Slice.Pos.prevn`](Basic-Types/Strings/#String___Slice___Pos___prevn)
+  986. [`String.Slice.Pos.str`](Basic-Types/Strings/#String___Slice___Pos___str)
+  987. [`String.Slice.all`](Basic-Types/Strings/#String___Slice___all)
+  988. [`String.Slice.back`](Basic-Types/Strings/#String___Slice___back)
+  989. [`String.Slice.back?`](Basic-Types/Strings/#String___Slice___back___)
+  990. [`String.Slice.beq`](Basic-Types/Strings/#String___Slice___beq)
+  991. [`String.Slice.bytes`](Basic-Types/Strings/#String___Slice___bytes)
+  992. [`String.Slice.chars`](Basic-Types/Strings/#String___Slice___chars)
+  993. [`String.Slice.contains`](Basic-Types/Strings/#String___Slice___contains)
+  994. [`String.Slice.copy`](Basic-Types/Strings/#String___Slice___copy)
+  995. [`String.Slice.drop`](Basic-Types/Strings/#String___Slice___drop)
+  996. [`String.Slice.drop­End`](Basic-Types/Strings/#String___Slice___dropEnd)
+  997. [`String.Slice.drop­End­While`](Basic-Types/Strings/#String___Slice___dropEndWhile)
+  998. [`String.Slice.drop­Prefix`](Basic-Types/Strings/#String___Slice___dropPrefix)
+  999. [`String.Slice.drop­Prefix?`](Basic-Types/Strings/#String___Slice___dropPrefix___)
+  1000. [`String.Slice.drop­Suffix`](Basic-Types/Strings/#String___Slice___dropSuffix)
+  1001. [`String.Slice.drop­Suffix?`](Basic-Types/Strings/#String___Slice___dropSuffix___)
+  1002. [`String.Slice.drop­While`](Basic-Types/Strings/#String___Slice___dropWhile)
+  1003. [`String.Slice.end­Pos`](Basic-Types/Strings/#String___Slice___endPos)
+  1004. [`String.Slice.ends­With`](Basic-Types/Strings/#String___Slice___endsWith)
+  1005. [`String.Slice.eq­Ignore­Ascii­Case`](Basic-Types/Strings/#String___Slice___eqIgnoreAsciiCase)
+  1006. [`String.Slice.find?`](Basic-Types/Strings/#String___Slice___find___)
+  1007. [`String.Slice.foldl`](Basic-Types/Strings/#String___Slice___foldl)
+  1008. [`String.Slice.foldr`](Basic-Types/Strings/#String___Slice___foldr)
+  1009. [`String.Slice.front`](Basic-Types/Strings/#String___Slice___front)
+  1010. [`String.Slice.front?`](Basic-Types/Strings/#String___Slice___front___)
+  1011. [`String.Slice.get­UTF8Byte`](Basic-Types/Strings/#String___Slice___getUTF8Byte)
+  1012. [`String.Slice.get­UTF8Byte!`](Basic-Types/Strings/#String___Slice___getUTF8Byte___)
+  1013. [`String.Slice.is­Empty`](Basic-Types/Strings/#String___Slice___isEmpty)
+  1014. [`String.Slice.is­Nat`](Basic-Types/Strings/#String___Slice___isNat)
+  1015. [`String.Slice.lines`](Basic-Types/Strings/#String___Slice___lines)
+  1016. `String.Slice.mk`
+    1. [Constructor of `String.Slice`](Basic-Types/Strings/#String___Slice___mk)
+  1017. [`String.Slice.pos`](Basic-Types/Strings/#String___Slice___pos)
+  1018. [`String.Slice.pos!`](Basic-Types/Strings/#String___Slice___pos___)
+  1019. [`String.Slice.pos?`](Basic-Types/Strings/#String___Slice___pos___-next)
+  1020. [`String.Slice.pos­GE`](Basic-Types/Strings/#String___Slice___posGE)
+  1021. [`String.Slice.pos­GT`](Basic-Types/Strings/#String___Slice___posGT)
+  1022. [`String.Slice.positions`](Basic-Types/Strings/#String___Slice___positions)
+  1023. [`String.Slice.raw­End­Pos`](Basic-Types/Strings/#String___Slice___rawEndPos)
+  1024. [`String.Slice.rev­Bytes`](Basic-Types/Strings/#String___Slice___revBytes)
+  1025. [`String.Slice.rev­Chars`](Basic-Types/Strings/#String___Slice___revChars)
+  1026. [`String.Slice.rev­Find?`](Basic-Types/Strings/#String___Slice___revFind___)
+  1027. [`String.Slice.rev­Positions`](Basic-Types/Strings/#String___Slice___revPositions)
+  1028. [`String.Slice.rev­Split`](Basic-Types/Strings/#String___Slice___revSplit)
+  1029. [`String.Slice.slice`](Basic-Types/Strings/#String___Slice___slice)
+  1030. [`String.Slice.slice!`](Basic-Types/Strings/#String___Slice___slice___)
+  1031. [`String.Slice.slice­From`](Basic-Types/Strings/#String___Slice___sliceFrom)
+  1032. [`String.Slice.slice­To`](Basic-Types/Strings/#String___Slice___sliceTo)
+  1033. [`String.Slice.split`](Basic-Types/Strings/#String___Slice___split)
+  1034. [`String.Slice.split­Inclusive`](Basic-Types/Strings/#String___Slice___splitInclusive)
+  1035. [`String.Slice.start­Pos`](Basic-Types/Strings/#String___Slice___startPos)
+  1036. [`String.Slice.starts­With`](Basic-Types/Strings/#String___Slice___startsWith)
+  1037. [`String.Slice.take`](Basic-Types/Strings/#String___Slice___take)
+  1038. [`String.Slice.take­End`](Basic-Types/Strings/#String___Slice___takeEnd)
+  1039. [`String.Slice.take­End­While`](Basic-Types/Strings/#String___Slice___takeEndWhile)
+  1040. [`String.Slice.take­While`](Basic-Types/Strings/#String___Slice___takeWhile)
+  1041. [`String.Slice.to­Nat!`](Basic-Types/Strings/#String___Slice___toNat___)
+  1042. [`String.Slice.to­Nat?`](Basic-Types/Strings/#String___Slice___toNat___-next)
+  1043. [`String.Slice.trim­Ascii`](Basic-Types/Strings/#String___Slice___trimAscii)
+  1044. [`String.Slice.trim­Ascii­End`](Basic-Types/Strings/#String___Slice___trimAsciiEnd)
+  1045. [`String.Slice.trim­Ascii­Start`](Basic-Types/Strings/#String___Slice___trimAsciiStart)
+  1046. [`String.Slice.utf8Byte­Size`](Basic-Types/Strings/#String___Slice___utf8ByteSize)
+  1047. [`String.all`](Basic-Types/Strings/#String___all)
+  1048. [`String.any`](Basic-Types/Strings/#String___any)
+  1049. [`String.append`](Basic-Types/Strings/#String___append)
+  1050. [`String.back`](Basic-Types/Strings/#String___back)
+  1051. [`String.capitalize`](Basic-Types/Strings/#String___capitalize)
+  1052. [`String.contains`](Basic-Types/Strings/#String___contains)
+  1053. [`String.crlf­To­Lf`](Basic-Types/Strings/#String___crlfToLf)
+  1054. [`String.dec­Eq`](Basic-Types/Strings/#String___decEq)
+  1055. [`String.decapitalize`](Basic-Types/Strings/#String___decapitalize)
+  1056. [`String.drop`](Basic-Types/Strings/#String___drop)
+  1057. [`String.drop­End`](Basic-Types/Strings/#String___dropEnd)
+  1058. [`String.drop­End­While`](Basic-Types/Strings/#String___dropEndWhile)
+  1059. [`String.drop­Prefix`](Basic-Types/Strings/#String___dropPrefix)
+  1060. [`String.drop­Prefix?`](Basic-Types/Strings/#String___dropPrefix___)
+  1061. [`String.drop­Suffix`](Basic-Types/Strings/#String___dropSuffix)
+  1062. [`String.drop­Suffix?`](Basic-Types/Strings/#String___dropSuffix___)
+  1063. [`String.drop­While`](Basic-Types/Strings/#String___dropWhile)
+  1064. [`String.end­Pos`](Basic-Types/Strings/#String___endPos)
+  1065. [`String.ends­With`](Basic-Types/Strings/#String___endsWith)
+  1066. [`String.extract`](Basic-Types/Strings/#String___extract)
+  1067. `String.find` [(0)](Basic-Types/Strings/#String___find) [(1)](Basic-Types/Strings/#String___find-next)
+  1068. [`String.first­Diff­Pos`](Basic-Types/Strings/#String___firstDiffPos)
+  1069. [`String.foldl`](Basic-Types/Strings/#String___foldl)
+  1070. [`String.foldr`](Basic-Types/Strings/#String___foldr)
+  1071. [`String.from­UTF8`](Basic-Types/Strings/#String___fromUTF8)
+  1072. [`String.from­UTF8!`](Basic-Types/Strings/#String___fromUTF8___-next)
+  1073. [`String.from­UTF8?`](Basic-Types/Strings/#String___fromUTF8___)
+  1074. [`String.front`](Basic-Types/Strings/#String___front)
+  1075. [`String.get­UTF8Byte`](Basic-Types/Strings/#String___getUTF8Byte)
+  1076. [`String.hash`](Basic-Types/Strings/#String___hash)
+  1077. [`String.intercalate`](Basic-Types/Strings/#String___intercalate)
+  1078. [`String.is­Empty`](Basic-Types/Strings/#String___isEmpty)
+  1079. [`String.is­Int`](Basic-Types/Strings/#String___isInt)
+  1080. [`String.is­Nat`](Basic-Types/Strings/#String___isNat)
+  1081. [`String.is­Prefix­Of`](Basic-Types/Strings/#String___isPrefixOf)
+  1082. [`String.join`](Basic-Types/Strings/#String___join)
+  1083. [`String.le`](Basic-Types/Strings/#String___le)
+  1084. [`String.length`](Basic-Types/Strings/#String___length)
+  1085. [`String.map`](Basic-Types/Strings/#String___map)
+  1086. `String.of­Byte­Array`
+    1. [Constructor of `String`](Basic-Types/Strings/#String___ofByteArray)
+  1087. [`String.of­List`](Basic-Types/Strings/#String___ofList)
+  1088. [`String.pos`](Basic-Types/Strings/#String___pos)
+  1089. [`String.pos!`](Basic-Types/Strings/#String___pos___-next)
+  1090. [`String.pos?`](Basic-Types/Strings/#String___pos___)
+  1091. [`String.push`](Basic-Types/Strings/#String___push)
+  1092. [`String.pushn`](Basic-Types/Strings/#String___pushn)
+  1093. [`String.quote`](Basic-Types/Strings/#String___quote)
+  1094. [`String.raw­End­Pos`](Basic-Types/Strings/#String___rawEndPos)
+  1095. [`String.remove­Leading­Spaces`](Basic-Types/Strings/#String___removeLeadingSpaces)
+  1096. [`String.replace`](Basic-Types/Strings/#String___replace)
+  1097. [`String.rev­Find?`](Basic-Types/Strings/#String___revFind___)
+  1098. [`String.singleton`](Basic-Types/Strings/#String___singleton)
+  1099. [`String.slice­From`](Basic-Types/Strings/#String___sliceFrom)
+  1100. [`String.slice­To`](Basic-Types/Strings/#String___sliceTo)
+  1101. [`String.split­On`](Basic-Types/Strings/#String___splitOn)
+  1102. [`String.split­To­List`](Basic-Types/Strings/#String___splitToList)
+  1103. [`String.start­Pos`](Basic-Types/Strings/#String___startPos)
+  1104. [`String.starts­With`](Basic-Types/Strings/#String___startsWith)
+  1105. [`String.take`](Basic-Types/Strings/#String___take)
+  1106. [`String.take­End`](Basic-Types/Strings/#String___takeEnd)
+  1107. [`String.take­End­While`](Basic-Types/Strings/#String___takeEndWhile)
+  1108. [`String.take­While`](Basic-Types/Strings/#String___takeWhile)
+  1109. [`String.to­Format`](Basic-Types/Strings/#String___toFormat)
+  1110. [`String.to­Int!`](Basic-Types/Strings/#String___toInt___-next)
+  1111. [`String.to­Int?`](Basic-Types/Strings/#String___toInt___)
+  1112. `String.to­List` [(0)](Basic-Types/Strings/#String___toList) [(1)](Basic-Types/Strings/#String___toList-next)
+  1113. [`String.to­Lower`](Basic-Types/Strings/#String___toLower)
+  1114. [`String.to­Name`](Basic-Types/Strings/#String___toName)
+  1115. [`String.to­Nat!`](Basic-Types/Strings/#String___toNat___-next)
+  1116. [`String.to­Nat?`](Basic-Types/Strings/#String___toNat___)
+  1117. [`String.to­Raw­Substring`](Basic-Types/Strings/#String___toRawSubstring)
+  1118. [`String.to­Raw­Substring'`](Basic-Types/Strings/#String___toRawSubstring___)
+  1119. [`String.to­Slice`](Basic-Types/Strings/#String___toSlice)
+  1120. [`String.to­UTF8`](Basic-Types/Strings/#String___toUTF8)
+  1121. [`String.to­Upper`](Basic-Types/Strings/#String___toUpper)
+  1122. [`String.trim­Ascii`](Basic-Types/Strings/#String___trimAscii)
+  1123. [`String.trim­Ascii­End`](Basic-Types/Strings/#String___trimAsciiEnd)
+  1124. [`String.trim­Ascii­Start`](Basic-Types/Strings/#String___trimAsciiStart)
+  1125. [`String.utf8Byte­Size`](Basic-Types/Strings/#String___utf8ByteSize)
+  1126. [`String.utf8Encode­Char`](Basic-Types/Strings/#String___utf8EncodeChar)
+  1127. [`Sub`](Type-Classes/Basic-Classes/#Sub___mk)
+  1128. `Sub.mk`
+    1. [Instance constructor of `Sub`](Type-Classes/Basic-Classes/#Sub___mk)
+  1129. [`Subarray`](Basic-Types/Arrays/#Subarray)
+  1130. [`Subarray.all`](Basic-Types/Arrays/#Subarray___all)
+  1131. [`Subarray.all­M`](Basic-Types/Arrays/#Subarray___allM)
+  1132. [`Subarray.any`](Basic-Types/Arrays/#Subarray___any)
+  1133. [`Subarray.any­M`](Basic-Types/Arrays/#Subarray___anyM)
+  1134. [`Subarray.array`](Basic-Types/Arrays/#Subarray___array)
+  1135. [`Subarray.drop`](Basic-Types/Arrays/#Subarray___drop)
+  1136. [`Subarray.empty`](Basic-Types/Arrays/#Subarray___empty)
+  1137. [`Subarray.find­Rev?`](Basic-Types/Arrays/#Subarray___findRev___)
+  1138. [`Subarray.find­Rev­M?`](Basic-Types/Arrays/#Subarray___findRevM___)
+  1139. [`Subarray.find­Some­Rev­M?`](Basic-Types/Arrays/#Subarray___findSomeRevM___)
+  1140. [`Subarray.foldr`](Basic-Types/Arrays/#Subarray___foldr)
+  1141. [`Subarray.foldr­M`](Basic-Types/Arrays/#Subarray___foldrM)
+  1142. [`Subarray.for­In`](Basic-Types/Arrays/#Subarray___forIn)
+  1143. [`Subarray.for­M`](Basic-Types/Arrays/#Subarray___forM)
+  1144. [`Subarray.for­Rev­M`](Basic-Types/Arrays/#Subarray___forRevM)
+  1145. [`Subarray.get`](Basic-Types/Arrays/#Subarray___get)
+  1146. [`Subarray.get!`](Basic-Types/Arrays/#Subarray___get___)
+  1147. [`Subarray.get­D`](Basic-Types/Arrays/#Subarray___getD)
+  1148. [`Subarray.pop­Front`](Basic-Types/Arrays/#Subarray___popFront)
+  1149. [`Subarray.split`](Basic-Types/Arrays/#Subarray___split)
+  1150. [`Subarray.start`](Basic-Types/Arrays/#Subarray___start)
+  1151. [`Subarray.start_le_stop`](Basic-Types/Arrays/#Subarray___start_le_stop)
+  1152. [`Subarray.stop`](Basic-Types/Arrays/#Subarray___stop)
+  1153. [`Subarray.stop_le_array_size`](Basic-Types/Arrays/#Subarray___stop_le_array_size)
+  1154. [`Subarray.take`](Basic-Types/Arrays/#Subarray___take)
+  1155. `Sublist`
+    1. [`List.Sublist`](Basic-Types/Linked-Lists/#List___Sublist___slnil)
+  1156. [`Subsingleton`](Type-Classes/Basic-Classes/#Subsingleton___intro)
+  1157. [`Subsingleton.elim`](Type-Classes/Basic-Classes/#Subsingleton___elim)
+  1158. [`Subsingleton.helim`](Type-Classes/Basic-Classes/#Subsingleton___helim)
+  1159. `Subsingleton.intro`
+    1. [Instance constructor of `Subsingleton`](Type-Classes/Basic-Classes/#Subsingleton___intro)
+  1160. [`Substring.Raw`](Basic-Types/Strings/#Substring___Raw___mk)
+  1161. [`Substring.Raw.all`](Basic-Types/Strings/#Substring___Raw___all)
+  1162. [`Substring.Raw.any`](Basic-Types/Strings/#Substring___Raw___any)
+  1163. [`Substring.Raw.at­End`](Basic-Types/Strings/#Substring___Raw___atEnd)
+  1164. [`Substring.Raw.beq`](Basic-Types/Strings/#Substring___Raw___beq)
+  1165. [`Substring.Raw.bsize`](Basic-Types/Strings/#Substring___Raw___bsize)
+  1166. [`Substring.Raw.common­Prefix`](Basic-Types/Strings/#Substring___Raw___commonPrefix)
+  1167. [`Substring.Raw.common­Suffix`](Basic-Types/Strings/#Substring___Raw___commonSuffix)
+  1168. [`Substring.Raw.contains`](Basic-Types/Strings/#Substring___Raw___contains)
+  1169. [`Substring.Raw.drop`](Basic-Types/Strings/#Substring___Raw___drop)
+  1170. [`Substring.Raw.drop­Prefix?`](Basic-Types/Strings/#Substring___Raw___dropPrefix___)
+  1171. [`Substring.Raw.drop­Right`](Basic-Types/Strings/#Substring___Raw___dropRight)
+  1172. [`Substring.Raw.drop­Right­While`](Basic-Types/Strings/#Substring___Raw___dropRightWhile)
+  1173. [`Substring.Raw.drop­Suffix?`](Basic-Types/Strings/#Substring___Raw___dropSuffix___)
+  1174. [`Substring.Raw.drop­While`](Basic-Types/Strings/#Substring___Raw___dropWhile)
+  1175. [`Substring.Raw.extract`](Basic-Types/Strings/#Substring___Raw___extract)
+  1176. [`Substring.Raw.foldl`](Basic-Types/Strings/#Substring___Raw___foldl)
+  1177. [`Substring.Raw.foldr`](Basic-Types/Strings/#Substring___Raw___foldr)
+  1178. [`Substring.Raw.front`](Basic-Types/Strings/#Substring___Raw___front)
+  1179. [`Substring.Raw.get`](Basic-Types/Strings/#Substring___Raw___get)
+  1180. [`Substring.Raw.is­Empty`](Basic-Types/Strings/#Substring___Raw___isEmpty)
+  1181. [`Substring.Raw.is­Nat`](Basic-Types/Strings/#Substring___Raw___isNat)
+  1182. `Substring.Raw.mk`
+    1. [Constructor of `Substring.Raw`](Basic-Types/Strings/#Substring___Raw___mk)
+  1183. [`Substring.Raw.next`](Basic-Types/Strings/#Substring___Raw___next)
+  1184. [`Substring.Raw.nextn`](Basic-Types/Strings/#Substring___Raw___nextn)
+  1185. [`Substring.Raw.pos­Of`](Basic-Types/Strings/#Substring___Raw___posOf)
+  1186. [`Substring.Raw.prev`](Basic-Types/Strings/#Substring___Raw___prev)
+  1187. [`Substring.Raw.prevn`](Basic-Types/Strings/#Substring___Raw___prevn)
+  1188. [`Substring.Raw.repair`](Basic-Types/Strings/#Substring___Raw___repair)
+  1189. [`Substring.Raw.same­As`](Basic-Types/Strings/#Substring___Raw___sameAs)
+  1190. [`Substring.Raw.split­On`](Basic-Types/Strings/#Substring___Raw___splitOn)
+  1191. [`Substring.Raw.take`](Basic-Types/Strings/#Substring___Raw___take)
+  1192. [`Substring.Raw.take­Right`](Basic-Types/Strings/#Substring___Raw___takeRight)
+  1193. [`Substring.Raw.take­Right­While`](Basic-Types/Strings/#Substring___Raw___takeRightWhile)
+  1194. [`Substring.Raw.take­While`](Basic-Types/Strings/#Substring___Raw___takeWhile)
+  1195. [`Substring.Raw.to­Legacy­Iterator`](Basic-Types/Strings/#Substring___Raw___toLegacyIterator)
+  1196. [`Substring.Raw.to­Name`](Basic-Types/Strings/#Substring___Raw___toName)
+  1197. [`Substring.Raw.to­Nat?`](Basic-Types/Strings/#Substring___Raw___toNat___)
+  1198. [`Substring.Raw.to­String`](Basic-Types/Strings/#Substring___Raw___toString)
+  1199. [`Substring.Raw.trim`](Basic-Types/Strings/#Substring___Raw___trim)
+  1200. [`Substring.Raw.trim­Left`](Basic-Types/Strings/#Substring___Raw___trimLeft)
+  1201. [`Substring.Raw.trim­Right`](Basic-Types/Strings/#Substring___Raw___trimRight)
+  1202. [`Subtype`](Basic-Types/Subtypes/#Subtype___mk)
+  1203. `Subtype.mk`
+    1. [Constructor of `Subtype`](Basic-Types/Subtypes/#Subtype___mk)
+  1204. [`Sum`](Basic-Types/Sum-Types/#Sum___inl)
+  1205. [`Sum.elim`](Basic-Types/Sum-Types/#Sum___elim)
+  1206. [`Sum.get­Left`](Basic-Types/Sum-Types/#Sum___getLeft)
+  1207. [`Sum.get­Left?`](Basic-Types/Sum-Types/#Sum___getLeft___)
+  1208. [`Sum.get­Right`](Basic-Types/Sum-Types/#Sum___getRight)
+  1209. [`Sum.get­Right?`](Basic-Types/Sum-Types/#Sum___getRight___)
+  1210. [`Sum.inhabited­Left`](Basic-Types/Sum-Types/#Sum___inhabitedLeft)
+  1211. [`Sum.inhabited­Right`](Basic-Types/Sum-Types/#Sum___inhabitedRight)
+  1212. `Sum.inl`
+    1. [Constructor of `Sum`](Basic-Types/Sum-Types/#Sum___inl)
+  1213. `Sum.inr`
+    1. [Constructor of `Sum`](Basic-Types/Sum-Types/#Sum___inl)
+  1214. [`Sum.is­Left`](Basic-Types/Sum-Types/#Sum___isLeft)
+  1215. [`Sum.is­Right`](Basic-Types/Sum-Types/#Sum___isRight)
+  1216. [`Sum.map`](Basic-Types/Sum-Types/#Sum___map)
+  1217. [`Sum.swap`](Basic-Types/Sum-Types/#Sum___swap)
+  1218. `Surjective`
+    1. [`Function.Surjective`](The-Type-System/Functions/#Function___Surjective)
+  1219. `Sync`
+    1. [`Std.Channel.Sync`](IO/Tasks-and-Threads/#Std___Channel___Sync)
+  1220. `Syntax`
+    1. [`Lean.Syntax`](Notations-and-Macros/Defining-New-Syntax/#Lean___Syntax___missing)
+  1221. `Syntax­Node­Kind`
+    1. [`Lean.Syntax­Node­Kind`](Notations-and-Macros/Defining-New-Syntax/#Lean___SyntaxNodeKind)
+  1222. `Syntax­Node­Kinds`
+    1. [`Lean.Syntax­Node­Kinds`](Notations-and-Macros/Defining-New-Syntax/#Lean___SyntaxNodeKinds)
+  1223. [`System.File­Path`](IO/Files___-File-Handles___-and-Streams/#System___FilePath___mk)
+  1224. [`System.FilePath.add­Extension`](IO/Files___-File-Handles___-and-Streams/#System___FilePath___addExtension)
+  1225. [`System.FilePath.components`](IO/Files___-File-Handles___-and-Streams/#System___FilePath___components)
+  1226. [`System.FilePath.exe­Extension`](IO/Files___-File-Handles___-and-Streams/#System___FilePath___exeExtension)
+  1227. [`System.FilePath.ext­Separator`](IO/Files___-File-Handles___-and-Streams/#System___FilePath___extSeparator)
+  1228. [`System.FilePath.extension`](IO/Files___-File-Handles___-and-Streams/#System___FilePath___extension)
+  1229. [`System.FilePath.file­Name`](IO/Files___-File-Handles___-and-Streams/#System___FilePath___fileName)
+  1230. [`System.FilePath.file­Stem`](IO/Files___-File-Handles___-and-Streams/#System___FilePath___fileStem)
+  1231. [`System.FilePath.is­Absolute`](IO/Files___-File-Handles___-and-Streams/#System___FilePath___isAbsolute)
+  1232. [`System.FilePath.is­Dir`](IO/Files___-File-Handles___-and-Streams/#System___FilePath___isDir)
+  1233. [`System.FilePath.is­Relative`](IO/Files___-File-Handles___-and-Streams/#System___FilePath___isRelative)
+  1234. [`System.FilePath.join`](IO/Files___-File-Handles___-and-Streams/#System___FilePath___join)
+  1235. [`System.FilePath.metadata`](IO/Files___-File-Handles___-and-Streams/#System___FilePath___metadata)
+  1236. `System.FilePath.mk`
+    1. [Constructor of `System.File­Path`](IO/Files___-File-Handles___-and-Streams/#System___FilePath___mk)
+  1237. [`System.FilePath.normalize`](IO/Files___-File-Handles___-and-Streams/#System___FilePath___normalize)
+  1238. [`System.FilePath.parent`](IO/Files___-File-Handles___-and-Streams/#System___FilePath___parent)
+  1239. [`System.FilePath.path­Exists`](IO/Files___-File-Handles___-and-Streams/#System___FilePath___pathExists)
+  1240. [`System.FilePath.path­Separator`](IO/Files___-File-Handles___-and-Streams/#System___FilePath___pathSeparator)
+  1241. [`System.FilePath.path­Separators`](IO/Files___-File-Handles___-and-Streams/#System___FilePath___pathSeparators)
+  1242. [`System.FilePath.read­Dir`](IO/Files___-File-Handles___-and-Streams/#System___FilePath___readDir)
+  1243. [`System.FilePath.symlink­Metadata`](IO/Files___-File-Handles___-and-Streams/#System___FilePath___symlinkMetadata)
+  1244. [`System.FilePath.walk­Dir`](IO/Files___-File-Handles___-and-Streams/#System___FilePath___walkDir)
+  1245. [`System.FilePath.with­Extension`](IO/Files___-File-Handles___-and-Streams/#System___FilePath___withExtension)
+  1246. [`System.FilePath.with­File­Name`](IO/Files___-File-Handles___-and-Streams/#System___FilePath___withFileName)
+  1247. [`System.Platform.is­Emscripten`](IO/System-and-Platform-Information/#System___Platform___isEmscripten)
+  1248. [`System.Platform.is­OSX`](IO/System-and-Platform-Information/#System___Platform___isOSX)
+  1249. [`System.Platform.is­Windows`](IO/System-and-Platform-Information/#System___Platform___isWindows)
+  1250. [`System.Platform.num­Bits`](IO/System-and-Platform-Information/#System___Platform___numBits)
+  1251. [`System.Platform.target`](IO/System-and-Platform-Information/#System___Platform___target)
+  1252. [`System.mk­File­Path`](IO/Files___-File-Handles___-and-Streams/#System___mkFilePath)
+  1253. `s`
+    1. [`String.Legacy.Iterator.s` (structure field)](Basic-Types/Strings/#String___Legacy___Iterator___mk)
+  1254. `sadd­Overflow`
+    1. [`BitVec.sadd­Overflow`](Basic-Types/Bitvectors/#BitVec___saddOverflow)
+  1255. `same­As`
+    1. [`Substring.Raw.same­As`](Basic-Types/Strings/#Substring___Raw___sameAs)
+  1256. `save`
+    1. [`EStateM.Backtrackable.save` (class method)](Functors___-Monads-and--do--Notation/Varieties-of-Monads/#EStateM___Backtrackable___mk)
+  1257. `sbracket`
+    1. [`Std.Format.sbracket`](Interacting-with-Lean/#Std___Format___sbracket)
+  1258. `scale­B`
+    1. [`Float.scale­B`](Basic-Types/Floating-Point-Numbers/#Float___scaleB)
+  1259. `scale­B`
+    1. [`Float32.scale­B`](Basic-Types/Floating-Point-Numbers/#Float32___scaleB)
+  1260. `scientific­Lit­Kind`
+    1. [`Lean.scientific­Lit­Kind`](Notations-and-Macros/Defining-New-Syntax/#Lean___scientificLitKind)
+  1261. [`script doc` (Lake command)](Build-Tools-and-Distribution/Lake/#script-doc)
+  1262. [`script list` (Lake command)](Build-Tools-and-Distribution/Lake/#script-list)
+  1263. [`script run` (Lake command)](Build-Tools-and-Distribution/Lake/#script-run)
+  1264. `sdiv`
+    1. [`BitVec.sdiv`](Basic-Types/Bitvectors/#BitVec___sdiv)
+  1265. [`self uninstall` (Elan command)](Build-Tools-and-Distribution/Managing-Toolchains-with-Elan/#self-uninstall)
+  1266. [`self update` (Elan command)](Build-Tools-and-Distribution/Managing-Toolchains-with-Elan/#self-update)
+  1267. [`semi­Out­Param`](Type-Classes/Instance-Synthesis/#semiOutParam)
+  1268. `send`
+    1. [`Std.Channel.send`](IO/Tasks-and-Threads/#Std___Channel___send)
+  1269. `seq`
+    1. [`Seq.seq` (class method)](Functors___-Monads-and--do--Notation/#Seq___mk)
+  1270. `seq­Left`
+    1. [`SeqLeft.seq­Left` (class method)](Functors___-Monads-and--do--Notation/#SeqLeft___mk)
+  1271. `seq­Left_eq`
+    1. [`[anonymous]` (class method)](Functors___-Monads-and--do--Notation/Laws/#LawfulApplicative___mk)
+  1272. `seq­Right`
+    1. [`EStateM.seq­Right`](Functors___-Monads-and--do--Notation/Varieties-of-Monads/#EStateM___seqRight)
+  1273. `seq­Right`
+    1. [`SeqRight.seq­Right` (class method)](Functors___-Monads-and--do--Notation/#SeqRight___mk)
+  1274. `seq­Right_eq`
+    1. [`[anonymous]` (class method)](Functors___-Monads-and--do--Notation/Laws/#LawfulApplicative___mk)
+  1275. `seq_assoc`
+    1. [`LawfulApplicative.pure_seq` (class method)](Functors___-Monads-and--do--Notation/Laws/#LawfulApplicative___mk)
+  1276. `seq_pure`
+    1. [`LawfulApplicative.seq­Right_eq` (class method)](Functors___-Monads-and--do--Notation/Laws/#LawfulApplicative___mk)
+  1277. `sequence`
+    1. [`Option.sequence`](Basic-Types/Optional-Values/#Option___sequence)
+  1278. [`serve` (Lake command)](Build-Tools-and-Distribution/Lake/#serve)
+  1279. `set!`
+    1. [`Array.set!`](Basic-Types/Arrays/#Array___set___)
+  1280. `set!`
+    1. [`ByteArray.set!`](Basic-Types/Byte-Arrays/#ByteArray___set___)
+  1281. `set`
+    1. [`Array.set`](Basic-Types/Arrays/#Array___set)
+  1282. `set`
+    1. [`ByteArray.set`](Basic-Types/Byte-Arrays/#ByteArray___set)
+  1283. `set`
+    1. [`EStateM.set`](Functors___-Monads-and--do--Notation/Varieties-of-Monads/#EStateM___set)
+  1284. `set`
+    1. [`List.set`](Basic-Types/Linked-Lists/#List___set)
+  1285. `set`
+    1. [`MonadState.set` (class method)](Functors___-Monads-and--do--Notation/Varieties-of-Monads/#MonadState___mk)
+  1286. `set`
+    1. [`Monad­StateOf.set` (class method)](Functors___-Monads-and--do--Notation/Varieties-of-Monads/#MonadStateOf___mk)
+  1287. `set`
+    1. [`ST.Ref.set`](IO/Mutable-References/#ST___Ref___set)
+  1288. `set`
+    1. [`State­RefT'.set`](Functors___-Monads-and--do--Notation/Varieties-of-Monads/#StateRefT______set)
+  1289. `set`
+    1. [`StateT.set`](Functors___-Monads-and--do--Notation/Varieties-of-Monads/#StateT___set)
+  1290. `set`
+    1. [`String.Pos.Raw.set`](Basic-Types/Strings/#String___Pos___Raw___set)
+  1291. `set`
+    1. [`String.Pos.set`](Basic-Types/Strings/#String___Pos___set)
+  1292. `set­Access­Rights`
+    1. [`IO.set­Access­Rights`](IO/Files___-File-Handles___-and-Streams/#IO___setAccessRights)
+  1293. `set­Curr`
+    1. [`String.Legacy.Iterator.set­Curr`](Basic-Types/Strings/#String___Legacy___Iterator___setCurr)
+  1294. `set­Current­Dir`
+    1. [`IO.Process.set­Current­Dir`](IO/Processes/#IO___Process___setCurrentDir)
+  1295. `set­If­In­Bounds`
+    1. [`Array.set­If­In­Bounds`](Basic-Types/Arrays/#Array___setIfInBounds)
+  1296. `set­Kind`
+    1. [`Lean.Syntax.set­Kind`](Notations-and-Macros/Defining-New-Syntax/#Lean___Syntax___setKind)
+  1297. `set­Rand­Seed`
+    1. [`IO.set­Rand­Seed`](IO/Random-Numbers/#IO___setRandSeed)
+  1298. `set­Stderr`
+    1. [`IO.set­Stderr`](IO/Files___-File-Handles___-and-Streams/#IO___setStderr)
+  1299. `set­Stdin`
+    1. [`IO.set­Stdin`](IO/Files___-File-Handles___-and-Streams/#IO___setStdin)
+  1300. `set­Stdout`
+    1. [`IO.set­Stdout`](IO/Files___-File-Handles___-and-Streams/#IO___setStdout)
+  1301. `set­TR`
+    1. [`List.set­TR`](Basic-Types/Linked-Lists/#List___setTR)
+  1302. `set­Width'`
+    1. [`BitVec.set­Width'`](Basic-Types/Bitvectors/#BitVec___setWidth___)
+  1303. `set­Width`
+    1. [`BitVec.set­Width`](Basic-Types/Bitvectors/#BitVec___setWidth)
+  1304. [`set_option`](Tactic-Proofs/The-Tactic-Language/#set_option)
+  1305. `setsid`
+    1. [`IO.Process.SpawnArgs.cwd` (structure field)](IO/Processes/#IO___Process___SpawnArgs___mk)
+  1306. [`shake` (Lake command)](Build-Tools-and-Distribution/Lake/#shake)
+  1307. `shift­Concat`
+    1. [`BitVec.shift­Concat`](Basic-Types/Bitvectors/#BitVec___shiftConcat)
+  1308. `shift­Left`
+    1. [`BitVec.shift­Left`](Basic-Types/Bitvectors/#BitVec___shiftLeft)
+  1309. `shift­Left`
+    1. [`Fin.shift­Left`](Basic-Types/Finite-Natural-Numbers/#Fin___shiftLeft)
+  1310. `shift­Left`
+    1. [`ISize.shift­Left`](Basic-Types/Fixed-Precision-Integers/#ISize___shiftLeft)
+  1311. `shift­Left`
+    1. [`Int16.shift­Left`](Basic-Types/Fixed-Precision-Integers/#Int16___shiftLeft)
+  1312. `shift­Left`
+    1. [`Int32.shift­Left`](Basic-Types/Fixed-Precision-Integers/#Int32___shiftLeft)
+  1313. `shift­Left`
+    1. [`Int64.shift­Left`](Basic-Types/Fixed-Precision-Integers/#Int64___shiftLeft)
+  1314. `shift­Left`
+    1. [`Int8.shift­Left`](Basic-Types/Fixed-Precision-Integers/#Int8___shiftLeft)
+  1315. `shift­Left`
+    1. [`Nat.shift­Left`](Basic-Types/Natural-Numbers/#Nat___shiftLeft)
+  1316. `shift­Left`
+    1. [`ShiftLeft.shift­Left` (class method)](Type-Classes/Basic-Classes/#ShiftLeft___mk)
+  1317. `shift­Left`
+    1. [`UInt16.shift­Left`](Basic-Types/Fixed-Precision-Integers/#UInt16___shiftLeft)
+  1318. `shift­Left`
+    1. [`UInt32.shift­Left`](Basic-Types/Fixed-Precision-Integers/#UInt32___shiftLeft)
+  1319. `shift­Left`
+    1. [`UInt64.shift­Left`](Basic-Types/Fixed-Precision-Integers/#UInt64___shiftLeft)
+  1320. `shift­Left`
+    1. [`UInt8.shift­Left`](Basic-Types/Fixed-Precision-Integers/#UInt8___shiftLeft)
+  1321. `shift­Left`
+    1. [`USize.shift­Left`](Basic-Types/Fixed-Precision-Integers/#USize___shiftLeft)
+  1322. `shift­Left­Rec`
+    1. [`BitVec.shift­Left­Rec`](Basic-Types/Bitvectors/#BitVec___shiftLeftRec)
+  1323. `shift­Left­Zero­Extend`
+    1. [`BitVec.shift­Left­Zero­Extend`](Basic-Types/Bitvectors/#BitVec___shiftLeftZeroExtend)
+  1324. `shift­Right`
+    1. [`Fin.shift­Right`](Basic-Types/Finite-Natural-Numbers/#Fin___shiftRight)
+  1325. `shift­Right`
+    1. [`ISize.shift­Right`](Basic-Types/Fixed-Precision-Integers/#ISize___shiftRight)
+  1326. `shift­Right`
+    1. [`Int.shift­Right`](Basic-Types/Integers/#Int___shiftRight)
+  1327. `shift­Right`
+    1. [`Int16.shift­Right`](Basic-Types/Fixed-Precision-Integers/#Int16___shiftRight)
+  1328. `shift­Right`
+    1. [`Int32.shift­Right`](Basic-Types/Fixed-Precision-Integers/#Int32___shiftRight)
+  1329. `shift­Right`
+    1. [`Int64.shift­Right`](Basic-Types/Fixed-Precision-Integers/#Int64___shiftRight)
+  1330. `shift­Right`
+    1. [`Int8.shift­Right`](Basic-Types/Fixed-Precision-Integers/#Int8___shiftRight)
+  1331. `shift­Right`
+    1. [`Nat.shift­Right`](Basic-Types/Natural-Numbers/#Nat___shiftRight)
+  1332. `shift­Right`
+    1. [`ShiftRight.shift­Right` (class method)](Type-Classes/Basic-Classes/#ShiftRight___mk)
+  1333. `shift­Right`
+    1. [`UInt16.shift­Right`](Basic-Types/Fixed-Precision-Integers/#UInt16___shiftRight)
+  1334. `shift­Right`
+    1. [`UInt32.shift­Right`](Basic-Types/Fixed-Precision-Integers/#UInt32___shiftRight)
+  1335. `shift­Right`
+    1. [`UInt64.shift­Right`](Basic-Types/Fixed-Precision-Integers/#UInt64___shiftRight)
+  1336. `shift­Right`
+    1. [`UInt8.shift­Right`](Basic-Types/Fixed-Precision-Integers/#UInt8___shiftRight)
+  1337. `shift­Right`
+    1. [`USize.shift­Right`](Basic-Types/Fixed-Precision-Integers/#USize___shiftRight)
+  1338. [`show`](Tactic-Proofs/Tactic-Reference/#show)
+  1339. [`show` (Elan command)](Build-Tools-and-Distribution/Managing-Toolchains-with-Elan/#show-next)
+  1340. [`show_term`](Tactic-Proofs/Tactic-Reference/#show_term)
+  1341. `shrink`
+    1. [`Array.shrink`](Basic-Types/Arrays/#Array___shrink)
+  1342. `sign`
+    1. [`Int.sign`](Basic-Types/Integers/#Int___sign)
+  1343. `sign­Extend`
+    1. [`BitVec.sign­Extend`](Basic-Types/Bitvectors/#BitVec___signExtend)
+  1344. `simp` [(0)](Tactic-Proofs/Tactic-Reference/#simp) [(1)](Tactic-Proofs/Targeted-Rewriting-with--conv/#Lean___Parser___Tactic___Conv___simp)
+  1345. [`simp!`](Tactic-Proofs/Tactic-Reference/#simp___)
+  1346. [`simp?`](Tactic-Proofs/Tactic-Reference/#simp___-next)
+  1347. [`simp?!`](Tactic-Proofs/Tactic-Reference/#simp______)
+  1348. [`simp_all`](Tactic-Proofs/Tactic-Reference/#simp_all)
+  1349. [`simp_all!`](Tactic-Proofs/Tactic-Reference/#simp_all___)
+  1350. [`simp_all?`](Tactic-Proofs/Tactic-Reference/#simp_all___-next)
+  1351. [`simp_all?!`](Tactic-Proofs/Tactic-Reference/#simp_all______)
+  1352. [`simp_all_arith`](Tactic-Proofs/Tactic-Reference/#simp_all_arith)
+  1353. [`simp_all_arith!`](Tactic-Proofs/Tactic-Reference/#simp_all_arith___)
+  1354. [`simp_arith`](Tactic-Proofs/Tactic-Reference/#simp_arith)
+  1355. [`simp_arith!`](Tactic-Proofs/Tactic-Reference/#simp_arith___)
+  1356. [`simp_match`](Tactic-Proofs/Targeted-Rewriting-with--conv/#Lean___Parser___Tactic___Conv___simpMatch)
+  1357. [`simp_wf`](Tactic-Proofs/Tactic-Reference/#simp_wf)
+  1358. [`simpa`](Tactic-Proofs/Tactic-Reference/#simpa)
+  1359. [`simpa!`](Tactic-Proofs/Tactic-Reference/#simpa___)
+  1360. [`simpa?`](Tactic-Proofs/Tactic-Reference/#simpa___-next)
+  1361. [`simpa?!`](Tactic-Proofs/Tactic-Reference/#simpa______)
+  1362. [`simprocs`](The-Simplifier/Configuring-Simplification/#simprocs)
+  1363. `sin`
+    1. [`Float.sin`](Basic-Types/Floating-Point-Numbers/#Float___sin)
+  1364. `sin`
+    1. [`Float32.sin`](Basic-Types/Floating-Point-Numbers/#Float32___sin)
+  1365. `single­Pass`
+    1. [`Lean.Meta.Simp.Config.single­Pass` (structure field)](The-Simplifier/Configuring-Simplification/#Lean___Meta___Simp___Config___mk)
+  1366. `singleton`
+    1. [`Array.singleton`](Basic-Types/Arrays/#Array___singleton)
+  1367. `singleton`
+    1. [`List.singleton`](Basic-Types/Linked-Lists/#List___singleton)
+  1368. `singleton`
+    1. [`String.singleton`](Basic-Types/Strings/#String___singleton)
+  1369. `sinh`
+    1. [`Float.sinh`](Basic-Types/Floating-Point-Numbers/#Float___sinh)
+  1370. `sinh`
+    1. [`Float32.sinh`](Basic-Types/Floating-Point-Numbers/#Float32___sinh)
+  1371. `size`
+    1. [`Array.size`](Basic-Types/Arrays/#Array___size)
+  1372. `size`
+    1. [`ByteArray.size`](Basic-Types/Byte-Arrays/#ByteArray___size)
+  1373. `size`
+    1. [`ByteSlice.size`](Basic-Types/Byte-Arrays/#ByteSlice___size)
+  1374. `size`
+    1. [`ISize.size`](Basic-Types/Fixed-Precision-Integers/#ISize___size)
+  1375. `size`
+    1. [`Int16.size`](Basic-Types/Fixed-Precision-Integers/#Int16___size)
+  1376. `size`
+    1. [`Int32.size`](Basic-Types/Fixed-Precision-Integers/#Int32___size)
+  1377. `size`
+    1. [`Int64.size`](Basic-Types/Fixed-Precision-Integers/#Int64___size)
+  1378. `size`
+    1. [`Int8.size`](Basic-Types/Fixed-Precision-Integers/#Int8___size)
+  1379. `size`
+    1. [`Std.DHashMap.Raw.size` (structure field)](Basic-Types/Maps-and-Sets/#Std___DHashMap___Raw___mk)
+  1380. `size`
+    1. [`Std.DHashMap.size`](Basic-Types/Maps-and-Sets/#Std___DHashMap___size)
+  1381. `size`
+    1. [`Std.DTreeMap.size`](Basic-Types/Maps-and-Sets/#Std___DTreeMap___size)
+  1382. `size`
+    1. [`Std.Ext­DHashMap.size`](Basic-Types/Maps-and-Sets/#Std___ExtDHashMap___size)
+  1383. `size`
+    1. [`Std.Ext­HashMap.size`](Basic-Types/Maps-and-Sets/#Std___ExtHashMap___size)
+  1384. `size`
+    1. [`Std.Ext­HashSet.size`](Basic-Types/Maps-and-Sets/#Std___ExtHashSet___size)
+  1385. `size`
+    1. [`Std.HashMap.size`](Basic-Types/Maps-and-Sets/#Std___HashMap___size)
+  1386. `size`
+    1. [`Std.HashSet.size`](Basic-Types/Maps-and-Sets/#Std___HashSet___size)
+  1387. `size`
+    1. [`Std.Rcc.size`](Basic-Types/Ranges/#Std___Rcc___size)
+  1388. `size`
+    1. [`Std.Rci.size`](Basic-Types/Ranges/#Std___Rci___size)
+  1389. `size`
+    1. [`Std.Rco.size`](Basic-Types/Ranges/#Std___Rco___size)
+  1390. `size`
+    1. [`Std.Ric.size`](Basic-Types/Ranges/#Std___Ric___size)
+  1391. `size`
+    1. [`Std.Rii.size`](Basic-Types/Ranges/#Std___Rii___size)
+  1392. `size`
+    1. [`Std.Rio.size`](Basic-Types/Ranges/#Std___Rio___size)
+  1393. `size`
+    1. [`Std.Roc.size`](Basic-Types/Ranges/#Std___Roc___size)
+  1394. `size`
+    1. [`Std.Roi.size`](Basic-Types/Ranges/#Std___Roi___size)
+  1395. `size`
+    1. [`Std.Roo.size`](Basic-Types/Ranges/#Std___Roo___size)
+  1396. `size`
+    1. [`Std.Rxc.HasSize.size` (class method)](Basic-Types/Ranges/#Std___Rxc___HasSize___mk)
+  1397. `size`
+    1. [`Std.Rxi.HasSize.size` (class method)](Basic-Types/Ranges/#Std___Rxi___HasSize___mk)
+  1398. `size`
+    1. [`Std.TreeMap.size`](Basic-Types/Maps-and-Sets/#Std___TreeMap___size)
+  1399. `size`
+    1. [`Std.TreeSet.size`](Basic-Types/Maps-and-Sets/#Std___TreeSet___size)
+  1400. `size`
+    1. [`UInt16.size`](Basic-Types/Fixed-Precision-Integers/#UInt16___size)
+  1401. `size`
+    1. [`UInt32.size`](Basic-Types/Fixed-Precision-Integers/#UInt32___size)
+  1402. `size`
+    1. [`UInt64.size`](Basic-Types/Fixed-Precision-Integers/#UInt64___size)
+  1403. `size`
+    1. [`UInt8.size`](Basic-Types/Fixed-Precision-Integers/#UInt8___size)
+  1404. `size`
+    1. [`USize.size`](Basic-Types/Fixed-Precision-Integers/#USize___size)
+  1405. `size­Of`
+    1. [`SizeOf.size­Of` (class method)](The-Type-System/Inductive-Types/#SizeOf___mk)
+  1406. `skip` [(0)](Tactic-Proofs/Tactic-Reference/#skip) [(1)](Tactic-Proofs/Targeted-Rewriting-with--conv/#Lean___Parser___Tactic___Conv___skip)
+  1407. `skip`
+    1. [`Std.Plausible­IterStep.skip`](Iterators/Iterator-Definitions/#Std___PlausibleIterStep___skip)
+  1408. `skip­Assigned­Instances`
+    1. [`tactic.skip­Assigned­Instances`](Tactic-Proofs/Options/#tactic___skipAssignedInstances)
+  1409. `sle`
+    1. [`BitVec.sle`](Basic-Types/Bitvectors/#BitVec___sle)
+  1410. [`sleep`](Tactic-Proofs/Tactic-Reference/#sleep)
+  1411. `sleep`
+    1. [`IO.sleep`](IO/Timing/#IO___sleep)
+  1412. `slice!`
+    1. [`String.Slice.slice!`](Basic-Types/Strings/#String___Slice___slice___)
+  1413. `slice`
+    1. [`ByteSlice.slice`](Basic-Types/Byte-Arrays/#ByteSlice___slice)
+  1414. `slice`
+    1. [`String.Slice.slice`](Basic-Types/Strings/#String___Slice___slice)
+  1415. `slice­From`
+    1. [`String.Slice.slice­From`](Basic-Types/Strings/#String___Slice___sliceFrom)
+  1416. `slice­From`
+    1. [`String.slice­From`](Basic-Types/Strings/#String___sliceFrom)
+  1417. `slice­To`
+    1. [`String.Slice.slice­To`](Basic-Types/Strings/#String___Slice___sliceTo)
+  1418. `slice­To`
+    1. [`String.slice­To`](Basic-Types/Strings/#String___sliceTo)
+  1419. `slt`
+    1. [`BitVec.slt`](Basic-Types/Bitvectors/#BitVec___slt)
+  1420. `small`
+    1. [`Std.Iterators.HetT.small` (structure field)](Iterators/Reasoning-About-Iterators/#Std___Iterators___HetT___mk)
+  1421. `smod`
+    1. [`BitVec.smod`](Basic-Types/Bitvectors/#BitVec___smod)
+  1422. `smt­SDiv`
+    1. [`BitVec.smt­SDiv`](Basic-Types/Bitvectors/#BitVec___smtSDiv)
+  1423. `smt­UDiv`
+    1. [`BitVec.smt­UDiv`](Basic-Types/Bitvectors/#BitVec___smtUDiv)
+  1424. `smul`
+    1. [`SMul.smul` (class method)](Type-Classes/Basic-Classes/#SMul___mk)
+  1425. `snd`
+    1. [`MProd.snd` (structure field)](Basic-Types/Tuples/#MProd___mk)
+  1426. `snd`
+    1. [`PProd.snd` (structure field)](Basic-Types/Tuples/#PProd___mk)
+  1427. `snd`
+    1. [`PSigma.snd` (structure field)](Basic-Types/Tuples/#PSigma___mk)
+  1428. `snd`
+    1. [`Prod.snd` (structure field)](Basic-Types/Tuples/#Prod___mk)
+  1429. `snd`
+    1. [`Sigma.snd` (structure field)](Basic-Types/Tuples/#Sigma___mk)
+  1430. [`solve`](Tactic-Proofs/Tactic-Reference/#solve)
+  1431. [`solve_by_elim`](Tactic-Proofs/Tactic-Reference/#solve_by_elim)
+  1432. [`sorry`](Tactic-Proofs/Tactic-Reference/#sorry)
+  1433. `sound`
+    1. [`Quot.sound`](The-Type-System/Quotients/#Quot___sound)
+  1434. `sound`
+    1. [`Quotient.sound`](The-Type-System/Quotients/#Quotient___sound)
+  1435. `span`
+    1. [`List.span`](Basic-Types/Linked-Lists/#List___span)
+  1436. `spawn`
+    1. [`IO.Process.spawn`](IO/Processes/#IO___Process___spawn)
+  1437. `spawn`
+    1. [`Task.spawn`](IO/Tasks-and-Threads/#Task___spawn)
+  1438. [`specialize`](Tactic-Proofs/Tactic-Reference/#specialize)
+  1439. [`split`](Tactic-Proofs/Tactic-Reference/#split)
+  1440. `split`
+    1. [`RandomGen.split` (class method)](IO/Random-Numbers/#RandomGen___mk)
+  1441. `split`
+    1. [`String.Slice.split`](Basic-Types/Strings/#String___Slice___split)
+  1442. `split`
+    1. [`Subarray.split`](Basic-Types/Arrays/#Subarray___split)
+  1443. `split`
+    1. [`trace.grind.split`](The--grind--tactic/Case-Analysis/#trace___grind___split)
+  1444. `split­At`
+    1. [`List.split­At`](Basic-Types/Linked-Lists/#List___splitAt)
+  1445. `split­By`
+    1. [`List.split­By`](Basic-Types/Linked-Lists/#List___splitBy)
+  1446. `split­Inclusive`
+    1. [`String.Slice.split­Inclusive`](Basic-Types/Strings/#String___Slice___splitInclusive)
+  1447. `split­On`
+    1. [`String.split­On`](Basic-Types/Strings/#String___splitOn)
+  1448. `split­On`
+    1. [`Substring.Raw.split­On`](Basic-Types/Strings/#Substring___Raw___splitOn)
+  1449. `split­To­List`
+    1. [`String.split­To­List`](Basic-Types/Strings/#String___splitToList)
+  1450. `sqrt`
+    1. [`Float.sqrt`](Basic-Types/Floating-Point-Numbers/#Float___sqrt)
+  1451. `sqrt`
+    1. [`Float32.sqrt`](Basic-Types/Floating-Point-Numbers/#Float32___sqrt)
+  1452. `src­Dir`
+    1. `[anonymous]` (structure field) [(0)](Build-Tools-and-Distribution/Lake/#Lake___LeanLibConfig___mk) [(1)](Build-Tools-and-Distribution/Lake/#Lake___LeanExeConfig___mk)
+  1453. `srem`
+    1. [`BitVec.srem`](Basic-Types/Bitvectors/#BitVec___srem)
+  1454. `sshift­Right'`
+    1. [`BitVec.sshift­Right'`](Basic-Types/Bitvectors/#BitVec___sshiftRight___)
+  1455. `sshift­Right`
+    1. [`BitVec.sshift­Right`](Basic-Types/Bitvectors/#BitVec___sshiftRight)
+  1456. `sshift­Right­Rec`
+    1. [`BitVec.sshift­Right­Rec`](Basic-Types/Bitvectors/#BitVec___sshiftRightRec)
+  1457. `ssub­Overflow`
+    1. [`BitVec.ssub­Overflow`](Basic-Types/Bitvectors/#BitVec___ssubOverflow)
+  1458. `st­M`
+    1. [`MonadControl.st­M` (class method)](Functors___-Monads-and--do--Notation/Lifting-Monads/#MonadControl___mk)
+  1459. `st­M`
+    1. [`Monad­ControlT.st­M` (class method)](Functors___-Monads-and--do--Notation/Lifting-Monads/#MonadControlT___mk)
+  1460. `start`
+    1. [`ByteSlice.start`](Basic-Types/Byte-Arrays/#ByteSlice___start)
+  1461. `start`
+    1. [`Subarray.start`](Basic-Types/Arrays/#Subarray___start)
+  1462. `start­Inclusive`
+    1. [`String.Slice.start­Inclusive` (structure field)](Basic-Types/Strings/#String___Slice___mk)
+  1463. `start­Inclusive_le_end­Exclusive`
+    1. [`String.Slice.start­Inclusive_le_end­Exclusive` (structure field)](Basic-Types/Strings/#String___Slice___mk)
+  1464. `start­Pos`
+    1. [`String.Slice.start­Pos`](Basic-Types/Strings/#String___Slice___startPos)
+  1465. `start­Pos`
+    1. [`String.start­Pos`](Basic-Types/Strings/#String___startPos)
+  1466. `start­Pos`
+    1. [`Substring.Raw.start­Pos` (structure field)](Basic-Types/Strings/#Substring___Raw___mk)
+  1467. `start­Tag`
+    1. [`Std.Format.Monad­PrettyFormat.start­Tag` (class method)](Interacting-with-Lean/#Std___Format___MonadPrettyFormat___mk)
+  1468. `start_le_stop`
+    1. [`Subarray.start_le_stop`](Basic-Types/Arrays/#Subarray___start_le_stop)
+  1469. `starts­With`
+    1. [`String.Slice.Pattern.ForwardPattern.starts­With` (class method)](Basic-Types/Strings/#String___Slice___Pattern___ForwardPattern___mk)
+  1470. `starts­With`
+    1. [`String.Slice.starts­With`](Basic-Types/Strings/#String___Slice___startsWith)
+  1471. `starts­With`
+    1. [`String.starts­With`](Basic-Types/Strings/#String___startsWith)
+  1472. [`std­Next`](IO/Random-Numbers/#stdNext)
+  1473. [`std­Range`](IO/Random-Numbers/#stdRange)
+  1474. [`std­Split`](IO/Random-Numbers/#stdSplit)
+  1475. `stderr`
+    1. [`IO.Process.Child.stderr` (structure field)](IO/Processes/#IO___Process___Child___stdin)
+  1476. `stderr`
+    1. [`IO.Process.Output.stderr` (structure field)](IO/Processes/#IO___Process___Output___mk)
+  1477. `stderr`
+    1. [`IO.Process.StdioConfig.stderr` (structure field)](IO/Processes/#IO___Process___StdioConfig___mk)
+  1478. `stdin`
+    1. [`IO.Process.Child.stdin` (structure field)](IO/Processes/#IO___Process___Child___stdin)
+  1479. `stdin`
+    1. [`IO.Process.StdioConfig.stdin` (structure field)](IO/Processes/#IO___Process___StdioConfig___mk)
+  1480. `stdout`
+    1. [`IO.Process.Child.stdout` (structure field)](IO/Processes/#IO___Process___Child___stdin)
+  1481. `stdout`
+    1. [`IO.Process.Output.stdout` (structure field)](IO/Processes/#IO___Process___Output___mk)
+  1482. `stdout`
+    1. [`IO.Process.StdioConfig.stdout` (structure field)](IO/Processes/#IO___Process___StdioConfig___mk)
+  1483. `step`
+    1. [`Std.Iter.step`](Iterators/Consuming-Iterators/#Std___Iter___step)
+  1484. `step`
+    1. [`Std.IterM.step`](Iterators/Consuming-Iterators/#Std___IterM___step)
+  1485. `step`
+    1. [`Std.Iterator.step` (class method)](Iterators/Iterator-Definitions/#Std___Iterator___mk)
+  1486. `step­As­Het­T`
+    1. [`Std.IterM.step­As­Het­T`](Iterators/Reasoning-About-Iterators/#Std___IterM___stepAsHetT)
+  1487. `step­Size`
+    1. [`Std.Iter.step­Size`](Iterators/Iterator-Combinators/#Std___Iter___stepSize)
+  1488. `step­Size`
+    1. [`Std.IterM.step­Size`](Iterators/Iterator-Combinators/#Std___IterM___stepSize)
+  1489. [`stop`](Tactic-Proofs/Tactic-Reference/#stop)
+  1490. `stop`
+    1. [`ByteSlice.stop`](Basic-Types/Byte-Arrays/#ByteSlice___stop)
+  1491. `stop`
+    1. [`Subarray.stop`](Basic-Types/Arrays/#Subarray___stop)
+  1492. `stop­Pos`
+    1. [`Substring.Raw.stop­Pos` (structure field)](Basic-Types/Strings/#Substring___Raw___mk)
+  1493. `stop_le_array_size`
+    1. [`Subarray.stop_le_array_size`](Basic-Types/Arrays/#Subarray___stop_le_array_size)
+  1494. `str`
+    1. [`String.Slice.Pos.str`](Basic-Types/Strings/#String___Slice___Pos___str)
+  1495. `str`
+    1. [`String.Slice.str` (structure field)](Basic-Types/Strings/#String___Slice___mk)
+  1496. `str`
+    1. [`Substring.Raw.str` (structure field)](Basic-Types/Strings/#Substring___Raw___mk)
+  1497. `str­Lit­Kind`
+    1. [`Lean.str­Lit­Kind`](Notations-and-Macros/Defining-New-Syntax/#Lean___strLitKind)
+  1498. `strong­Rec­On`
+    1. [`Nat.strong­Rec­On`](Basic-Types/Natural-Numbers/#Nat___strongRecOn)
+  1499. `sub`
+    1. [`BitVec.sub`](Basic-Types/Bitvectors/#BitVec___sub)
+  1500. `sub`
+    1. [`Fin.sub`](Basic-Types/Finite-Natural-Numbers/#Fin___sub)
+  1501. `sub`
+    1. [`Float.sub`](Basic-Types/Floating-Point-Numbers/#Float___sub)
+  1502. `sub`
+    1. [`Float32.sub`](Basic-Types/Floating-Point-Numbers/#Float32___sub)
+  1503. `sub`
+    1. [`ISize.sub`](Basic-Types/Fixed-Precision-Integers/#ISize___sub)
+  1504. `sub`
+    1. [`Int.sub`](Basic-Types/Integers/#Int___sub)
+  1505. `sub`
+    1. [`Int16.sub`](Basic-Types/Fixed-Precision-Integers/#Int16___sub)
+  1506. `sub`
+    1. [`Int32.sub`](Basic-Types/Fixed-Precision-Integers/#Int32___sub)
+  1507. `sub`
+    1. [`Int64.sub`](Basic-Types/Fixed-Precision-Integers/#Int64___sub)
+  1508. `sub`
+    1. [`Int8.sub`](Basic-Types/Fixed-Precision-Integers/#Int8___sub)
+  1509. `sub`
+    1. [`Nat.sub`](Basic-Types/Natural-Numbers/#Nat___sub)
+  1510. `sub`
+    1. [`Sub.sub` (class method)](Type-Classes/Basic-Classes/#Sub___mk)
+  1511. `sub`
+    1. [`UInt16.sub`](Basic-Types/Fixed-Precision-Integers/#UInt16___sub)
+  1512. `sub`
+    1. [`UInt32.sub`](Basic-Types/Fixed-Precision-Integers/#UInt32___sub)
+  1513. `sub`
+    1. [`UInt64.sub`](Basic-Types/Fixed-Precision-Integers/#UInt64___sub)
+  1514. `sub`
+    1. [`UInt8.sub`](Basic-Types/Fixed-Precision-Integers/#UInt8___sub)
+  1515. `sub`
+    1. [`USize.sub`](Basic-Types/Fixed-Precision-Integers/#USize___sub)
+  1516. `sub­Digit­Char`
+    1. [`Nat.sub­Digit­Char`](Basic-Types/Natural-Numbers/#Nat___subDigitChar)
+  1517. `sub­Nat`
+    1. [`Fin.sub­Nat`](Basic-Types/Finite-Natural-Numbers/#Fin___subNat)
+  1518. `sub­Nat­Nat`
+    1. [`Int.sub­Nat­Nat`](Basic-Types/Integers/#Int___subNatNat)
+  1519. `sub_eq_add_neg`
+    1. [`[anonymous]` (class method)](The--grind--tactic/Algebraic-Solver-_LPAR_Commutative-Rings___-Fields_RPAR_/#Lean___Grind___Ring___mk)
+  1520. [`subst`](Tactic-Proofs/Tactic-Reference/#subst)
+  1521. `subst`
+    1. [`Eq.subst`](Basic-Propositions/Propositional-Equality/#Eq___subst)
+  1522. `subst`
+    1. [`HEq.subst`](Basic-Propositions/Propositional-Equality/#HEq___subst)
+  1523. [`subst_eqs`](Tactic-Proofs/Tactic-Reference/#subst_eqs)
+  1524. [`subst_vars`](Tactic-Proofs/Tactic-Reference/#subst_vars)
+  1525. `substr­Eq`
+    1. [`String.Pos.Raw.substr­Eq`](Basic-Types/Strings/#String___Pos___Raw___substrEq)
+  1526. `succ`
+    1. [`Fin.succ`](Basic-Types/Finite-Natural-Numbers/#Fin___succ)
+  1527. `succ?`
+    1. [`Std.PRange.UpwardEnumerable.succ?` (class method)](Basic-Types/Ranges/#Std___PRange___UpwardEnumerable___mk)
+  1528. `succ­Many?`
+    1. [`Std.PRange.UpwardEnumerable.succ­Many?` (class method)](Basic-Types/Ranges/#Std___PRange___UpwardEnumerable___mk)
+  1529. `succ­Many?_add_one`
+    1. [`Std.PRange.Lawful­UpwardEnumerable.succ­Many?_add_one` (class method)](Basic-Types/Ranges/#Std___PRange___LawfulUpwardEnumerable___mk)
+  1530. `succ­Many?_zero`
+    1. [`Std.PRange.Lawful­UpwardEnumerable.succ­Many?_zero` (class method)](Basic-Types/Ranges/#Std___PRange___LawfulUpwardEnumerable___mk)
+  1531. `succ­Rec`
+    1. [`Fin.succ­Rec`](Basic-Types/Finite-Natural-Numbers/#Fin___succRec)
+  1532. `succ­Rec­On`
+    1. [`Fin.succ­Rec­On`](Basic-Types/Finite-Natural-Numbers/#Fin___succRecOn)
+  1533. [`suffices`](Tactic-Proofs/Tactic-Reference/#suffices)
+  1534. `suffix`
+    1. [`List.Cursor.suffix` (structure field)](The--mvcgen--tactic/Predicate-Transformers/#List___Cursor___mk)
+  1535. [`suggestions`](Tactic-Proofs/Tactic-Reference/#suggestions)
+  1536. `suggestions`
+    1. [`Lean.Meta.Simp.Config.suggestions` (structure field)](The-Simplifier/Configuring-Simplification/#Lean___Meta___Simp___Config___mk)
+  1537. `sum`
+    1. [`Array.sum`](Basic-Types/Arrays/#Array___sum)
+  1538. `sum`
+    1. [`List.sum`](Basic-Types/Linked-Lists/#List___sum)
+  1539. `super­Digit­Char`
+    1. [`Nat.super­Digit­Char`](Basic-Types/Natural-Numbers/#Nat___superDigitChar)
+  1540. `support­Interpreter`
+    1. [`[anonymous]` (structure field)](Build-Tools-and-Distribution/Lake/#Lake___LeanExeConfig___mk)
+  1541. `swap`
+    1. [`Array.swap`](Basic-Types/Arrays/#Array___swap)
+  1542. `swap`
+    1. [`Ordering.swap`](Type-Classes/Basic-Classes/#Ordering___swap)
+  1543. `swap`
+    1. [`Prod.swap`](Basic-Types/Tuples/#Prod___swap)
+  1544. `swap`
+    1. [`ST.Ref.swap`](IO/Mutable-References/#ST___Ref___swap)
+  1545. `swap`
+    1. [`Sum.swap`](Basic-Types/Sum-Types/#Sum___swap)
+  1546. `swap­At!`
+    1. [`Array.swap­At!`](Basic-Types/Arrays/#Array___swapAt___)
+  1547. `swap­At`
+    1. [`Array.swap­At`](Basic-Types/Arrays/#Array___swapAt)
+  1548. `swap­If­In­Bounds`
+    1. [`Array.swap­If­In­Bounds`](Basic-Types/Arrays/#Array___swapIfInBounds)
+  1549. `symlink­Metadata`
+    1. [`System.FilePath.symlink­Metadata`](IO/Files___-File-Handles___-and-Streams/#System___FilePath___symlinkMetadata)
+  1550. [`symm`](Tactic-Proofs/Tactic-Reference/#symm)
+  1551. `symm`
+    1. [`Eq.symm`](Basic-Propositions/Propositional-Equality/#Eq___symm)
+  1552. `symm`
+    1. [`Equivalence.symm` (structure field)](The-Type-System/Quotients/#Equivalence___mk)
+  1553. `symm`
+    1. [`Setoid.symm`](The-Type-System/Quotients/#Setoid___symm)
+  1554. [`symm_saturate`](Tactic-Proofs/Tactic-Reference/#symm_saturate)
+  1555. `sync`
+    1. [`Std.Channel.sync`](IO/Tasks-and-Threads/#Std___Channel___sync)
+  1556. [`synthInstance.max­Heartbeats`](Type-Classes/Instance-Synthesis/#synthInstance___maxHeartbeats)
+  1557. [`synthInstance.max­Size`](Type-Classes/Instance-Synthesis/#synthInstance___maxSize)
+  1558. synthesis
+    1. [of type class instances](Type-Classes/#--index--next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next)
+
+
+##  T
+  1. `TSep­Array`
+    1. [`Lean.Syntax.TSep­Array`](Notations-and-Macros/Defining-New-Syntax/#Lean___Syntax___TSepArray___mk)
+  2. `TSyntax`
+    1. [`Lean.TSyntax`](Notations-and-Macros/Defining-New-Syntax/#Lean___TSyntax___mk)
+  3. `TSyntax­Array`
+    1. [`Lean.TSyntax­Array`](Notations-and-Macros/Defining-New-Syntax/#Lean___TSyntaxArray)
+  4. `Tactic`
+    1. [`Lean.Syntax.Tactic`](Notations-and-Macros/Defining-New-Syntax/#Lean___Syntax___Tactic)
+  5. [`Task`](IO/Tasks-and-Threads/#Task)
+  6. [`Task.Priority`](IO/Tasks-and-Threads/#Task___Priority)
+  7. [`Task.Priority.dedicated`](IO/Tasks-and-Threads/#Task___Priority___dedicated)
+  8. [`Task.Priority.default`](IO/Tasks-and-Threads/#Task___Priority___default)
+  9. [`Task.Priority.max`](IO/Tasks-and-Threads/#Task___Priority___max)
+  10. [`Task.bind`](IO/Tasks-and-Threads/#Task___bind)
+  11. [`Task.get`](IO/Tasks-and-Threads/#Task___get)
+  12. [`Task.map`](IO/Tasks-and-Threads/#Task___map)
+  13. [`Task.map­List`](IO/Tasks-and-Threads/#Task___mapList)
+  14. [`Task.pure`](IO/Tasks-and-Threads/#Task___pure)
+  15. [`Task.spawn`](IO/Tasks-and-Threads/#Task___spawn)
+  16. `Task­State`
+    1. [`IO.Task­State`](IO/Tasks-and-Threads/#IO___TaskState___waiting)
+  17. `Term`
+    1. [`Lean.Syntax.Term`](Notations-and-Macros/Defining-New-Syntax/#Lean___Syntax___Term)
+  18. [`Thunk`](Basic-Types/Lazy-Computations/#Thunk___mk)
+  19. [`Thunk.bind`](Basic-Types/Lazy-Computations/#Thunk___bind)
+  20. [`Thunk.get`](Basic-Types/Lazy-Computations/#Thunk___get)
+  21. [`Thunk.map`](Basic-Types/Lazy-Computations/#Thunk___map)
+  22. `Thunk.mk`
+    1. [Constructor of `Thunk`](Basic-Types/Lazy-Computations/#Thunk___mk)
+  23. [`Thunk.pure`](Basic-Types/Lazy-Computations/#Thunk___pure)
+  24. `To­Backward­Searcher`
+    1. [`String.Slice.Pattern.To­Backward­Searcher`](Basic-Types/Strings/#String___Slice___Pattern___ToBackwardSearcher___mk)
+  25. `To­Format`
+    1. [`Std.To­Format`](Interacting-with-Lean/#Std___ToFormat___mk)
+  26. `To­Forward­Searcher`
+    1. [`String.Slice.Pattern.To­Forward­Searcher`](Basic-Types/Strings/#String___Slice___Pattern___ToForwardSearcher___mk)
+  27. `To­Int`
+    1. [`Lean.Grind.To­Int`](The--grind--tactic/Linear-Integer-Arithmetic/#Lean___Grind___ToInt___mk)
+  28. [`Trans`](Tactic-Proofs/Tactic-Reference/#Trans___mk)
+  29. `Trans.mk`
+    1. [Instance constructor of `Trans`](Tactic-Proofs/Tactic-Reference/#Trans___mk)
+  30. `Transparency­Mode`
+    1. [`Lean.Meta.Transparency­Mode`](Tactic-Proofs/Tactic-Reference/#Lean___Meta___TransparencyMode___all)
+  31. `Tree­Map`
+    1. [`Std.Tree­Map`](Basic-Types/Maps-and-Sets/#Std___TreeMap)
+  32. `Tree­Set`
+    1. [`Std.Tree­Set`](Basic-Types/Maps-and-Sets/#Std___TreeSet)
+  33. `Triple`
+    1. [`Std.Do.Triple`](The--mvcgen--tactic/Predicate-Transformers/#Std___Do___Triple)
+  34. [`True`](Basic-Propositions/Truth/#True___intro)
+  35. `True.intro`
+    1. [Constructor of `True`](Basic-Propositions/Truth/#True___intro)
+  36. [`Type`](The-Type-System/Universes/#--index--next-next-next-next-next)
+  37. [`tactic`](Tactic-Proofs/Targeted-Rewriting-with--conv/#Lean___Parser___Tactic___Conv___nestedTactic)
+  38. [`tactic'`](Tactic-Proofs/Targeted-Rewriting-with--conv/#Lean___Parser___Tactic___Conv___nestedTacticCore)
+  39. [`tactic.custom­Eliminators`](Tactic-Proofs/Options/#tactic___customEliminators)
+  40. [`tactic.hygienic`](Tactic-Proofs/The-Tactic-Language/#tactic___hygienic)
+  41. `tactic.simp.trace` [(0)](Tactic-Proofs/Options/#tactic___simp___trace) [(1)](The-Simplifier/Configuring-Simplification/#tactic___simp___trace-next)
+  42. [`tactic.skip­Assigned­Instances`](Tactic-Proofs/Options/#tactic___skipAssignedInstances)
+  43. `tail!`
+    1. [`List.tail!`](Basic-Types/Linked-Lists/#List___tail___)
+  44. `tail`
+    1. [`List.Cursor.tail`](The--mvcgen--tactic/Predicate-Transformers/#List___Cursor___tail)
+  45. `tail`
+    1. [`List.tail`](Basic-Types/Linked-Lists/#List___tail)
+  46. `tail?`
+    1. [`List.tail?`](Basic-Types/Linked-Lists/#List___tail___-next)
+  47. `tail­D`
+    1. [`List.tail­D`](Basic-Types/Linked-Lists/#List___tailD)
+  48. `take`
+    1. [`Array.take`](Basic-Types/Arrays/#Array___take)
+  49. `take`
+    1. [`List.take`](Basic-Types/Linked-Lists/#List___take)
+  50. `take`
+    1. [`ST.Ref.take`](IO/Mutable-References/#ST___Ref___take)
+  51. `take`
+    1. [`Std.Iter.take`](Iterators/Iterator-Combinators/#Std___Iter___take)
+  52. `take`
+    1. [`Std.IterM.take`](Iterators/Iterator-Combinators/#Std___IterM___take)
+  53. `take`
+    1. [`String.Slice.take`](Basic-Types/Strings/#String___Slice___take)
+  54. `take`
+    1. [`String.take`](Basic-Types/Strings/#String___take)
+  55. `take`
+    1. [`Subarray.take`](Basic-Types/Arrays/#Subarray___take)
+  56. `take`
+    1. [`Substring.Raw.take`](Basic-Types/Strings/#Substring___Raw___take)
+  57. `take­End`
+    1. [`String.Slice.take­End`](Basic-Types/Strings/#String___Slice___takeEnd)
+  58. `take­End`
+    1. [`String.take­End`](Basic-Types/Strings/#String___takeEnd)
+  59. `take­End­While`
+    1. [`String.Slice.take­End­While`](Basic-Types/Strings/#String___Slice___takeEndWhile)
+  60. `take­End­While`
+    1. [`String.take­End­While`](Basic-Types/Strings/#String___takeEndWhile)
+  61. `take­Right`
+    1. [`Substring.Raw.take­Right`](Basic-Types/Strings/#Substring___Raw___takeRight)
+  62. `take­Right­While`
+    1. [`Substring.Raw.take­Right­While`](Basic-Types/Strings/#Substring___Raw___takeRightWhile)
+  63. `take­Stdin`
+    1. [`IO.Process.Child.take­Stdin`](IO/Processes/#IO___Process___Child___takeStdin)
+  64. `take­TR`
+    1. [`List.take­TR`](Basic-Types/Linked-Lists/#List___takeTR)
+  65. `take­While`
+    1. [`Array.take­While`](Basic-Types/Arrays/#Array___takeWhile)
+  66. `take­While`
+    1. [`List.take­While`](Basic-Types/Linked-Lists/#List___takeWhile)
+  67. `take­While`
+    1. [`Std.Iter.take­While`](Iterators/Iterator-Combinators/#Std___Iter___takeWhile)
+  68. `take­While`
+    1. [`Std.IterM.take­While`](Iterators/Iterator-Combinators/#Std___IterM___takeWhile)
+  69. `take­While`
+    1. [`String.Slice.take­While`](Basic-Types/Strings/#String___Slice___takeWhile)
+  70. `take­While`
+    1. [`String.take­While`](Basic-Types/Strings/#String___takeWhile)
+  71. `take­While`
+    1. [`Substring.Raw.take­While`](Basic-Types/Strings/#Substring___Raw___takeWhile)
+  72. `take­While­M`
+    1. [`Std.IterM.take­While­M`](Iterators/Iterator-Combinators/#Std___IterM___takeWhileM)
+  73. `take­While­TR`
+    1. [`List.take­While­TR`](Basic-Types/Linked-Lists/#List___takeWhileTR)
+  74. `take­While­With­Postcondition`
+    1. [`Std.IterM.take­While­With­Postcondition`](Iterators/Iterator-Combinators/#Std___IterM___takeWhileWithPostcondition)
+  75. `tan`
+    1. [`Float.tan`](Basic-Types/Floating-Point-Numbers/#Float___tan)
+  76. `tan`
+    1. [`Float32.tan`](Basic-Types/Floating-Point-Numbers/#Float32___tan)
+  77. `tanh`
+    1. [`Float.tanh`](Basic-Types/Floating-Point-Numbers/#Float___tanh)
+  78. `tanh`
+    1. [`Float32.tanh`](Basic-Types/Floating-Point-Numbers/#Float32___tanh)
+  79. `target`
+    1. [`System.Platform.target`](IO/System-and-Platform-Information/#System___Platform___target)
+  80. `tdiv`
+    1. [`Int.tdiv`](Basic-Types/Integers/#Int___tdiv)
+  81. term
+    1. [placeholder](Terms/Holes/#--index--next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next)
+  82. [`test` (Lake command)](Build-Tools-and-Distribution/Lake/#test)
+  83. `test­Bit`
+    1. [`Nat.test­Bit`](Basic-Types/Natural-Numbers/#Nat___testBit)
+  84. `then`
+    1. [`Ordering.then`](Type-Classes/Basic-Classes/#Ordering___then)
+  85. `threshold`
+    1. [`pp.deepTerms.threshold`](Tactic-Proofs/Reading-Proof-States/#pp___deepTerms___threshold)
+  86. `threshold`
+    1. [`pp.proofs.threshold`](Tactic-Proofs/Reading-Proof-States/#pp___proofs___threshold)
+  87. `throw`
+    1. [`EStateM.throw`](Functors___-Monads-and--do--Notation/Varieties-of-Monads/#EStateM___throw)
+  88. `throw`
+    1. [`MonadExcept.throw` (class method)](Functors___-Monads-and--do--Notation/Varieties-of-Monads/#MonadExcept___mk)
+  89. `throw`
+    1. [`Monad­ExceptOf.throw` (class method)](Functors___-Monads-and--do--Notation/Varieties-of-Monads/#MonadExceptOf___mk)
+  90. `throw­Error`
+    1. [`Lean.Macro.throw­Error`](Notations-and-Macros/Macros/#Lean___Macro___throwError)
+  91. `throw­Error­At`
+    1. [`Lean.Macro.throw­Error­At`](Notations-and-Macros/Macros/#Lean___Macro___throwErrorAt)
+  92. [`throw­The`](Functors___-Monads-and--do--Notation/Varieties-of-Monads/#throwThe)
+  93. `throw­Unsupported`
+    1. [`Lean.Macro.throw­Unsupported`](Notations-and-Macros/Macros/#Lean___Macro___throwUnsupported)
+  94. `tmod`
+    1. [`Int.tmod`](Basic-Types/Integers/#Int___tmod)
+  95. `to­Add`
+    1. [`Lean.Grind.Semiring.to­Add` (class method)](The--grind--tactic/Algebraic-Solver-_LPAR_Commutative-Rings___-Fields_RPAR_/#Lean___Grind___Semiring___mk)
+  96. `to­Add­Comm­Group`
+    1. [`Lean.Grind.IntModule.to­Add­Comm­Group` (class method)](The--grind--tactic/Linear-Arithmetic-Solver/#Lean___Grind___IntModule___mk)
+  97. `to­Add­Comm­Monoid`
+    1. [`Lean.Grind.NatModule.to­Add­Comm­Monoid` (class method)](The--grind--tactic/Linear-Arithmetic-Solver/#Lean___Grind___NatModule___mk)
+  98. `to­Applicative`
+    1. [`Alternative.to­Applicative` (class method)](Functors___-Monads-and--do--Notation/#Alternative___mk)
+  99. `to­Applicative`
+    1. [`Monad.to­Applicative` (class method)](Functors___-Monads-and--do--Notation/#Monad___mk)
+  100. `to­Array`
+    1. [`List.to­Array`](Basic-Types/Linked-Lists/#List___toArray)
+  101. `to­Array`
+    1. [`Option.to­Array`](Basic-Types/Optional-Values/#Option___toArray)
+  102. `to­Array`
+    1. [`Std.DHashMap.to­Array`](Basic-Types/Maps-and-Sets/#Std___DHashMap___toArray)
+  103. `to­Array`
+    1. [`Std.DTreeMap.to­Array`](Basic-Types/Maps-and-Sets/#Std___DTreeMap___toArray)
+  104. `to­Array`
+    1. [`Std.HashMap.to­Array`](Basic-Types/Maps-and-Sets/#Std___HashMap___toArray)
+  105. `to­Array`
+    1. [`Std.HashSet.to­Array`](Basic-Types/Maps-and-Sets/#Std___HashSet___toArray)
+  106. `to­Array`
+    1. [`Std.Iter.to­Array`](Iterators/Consuming-Iterators/#Std___Iter___toArray)
+  107. `to­Array`
+    1. [`Std.IterM.to­Array`](Iterators/Consuming-Iterators/#Std___IterM___toArray)
+  108. `to­Array`
+    1. [`Std.Rcc.to­Array`](Basic-Types/Ranges/#Std___Rcc___toArray)
+  109. `to­Array`
+    1. [`Std.Rci.to­Array`](Basic-Types/Ranges/#Std___Rci___toArray)
+  110. `to­Array`
+    1. [`Std.Rco.to­Array`](Basic-Types/Ranges/#Std___Rco___toArray)
+  111. `to­Array`
+    1. [`Std.Ric.to­Array`](Basic-Types/Ranges/#Std___Ric___toArray)
+  112. `to­Array`
+    1. [`Std.Rii.to­Array`](Basic-Types/Ranges/#Std___Rii___toArray)
+  113. `to­Array`
+    1. [`Std.Rio.to­Array`](Basic-Types/Ranges/#Std___Rio___toArray)
+  114. `to­Array`
+    1. [`Std.Roc.to­Array`](Basic-Types/Ranges/#Std___Roc___toArray)
+  115. `to­Array`
+    1. [`Std.Roi.to­Array`](Basic-Types/Ranges/#Std___Roi___toArray)
+  116. `to­Array`
+    1. [`Std.Roo.to­Array`](Basic-Types/Ranges/#Std___Roo___toArray)
+  117. `to­Array`
+    1. [`Std.TreeMap.to­Array`](Basic-Types/Maps-and-Sets/#Std___TreeMap___toArray)
+  118. `to­Array`
+    1. [`Std.TreeSet.to­Array`](Basic-Types/Maps-and-Sets/#Std___TreeSet___toArray)
+  119. `to­Array­Impl`
+    1. [`List.to­Array­Impl`](Basic-Types/Linked-Lists/#List___toArrayImpl)
+  120. `to­BEq`
+    1. [`Ord.to­BEq`](Type-Classes/Basic-Classes/#Ord___toBEq)
+  121. `to­Base­IO`
+    1. [`EIO.to­Base­IO`](IO/Logical-Model/#EIO___toBaseIO)
+  122. `to­Bind`
+    1. [`[anonymous]` (class method)](Functors___-Monads-and--do--Notation/#Monad___mk)
+  123. `to­Bit­Vec`
+    1. [`ISize.to­Bit­Vec`](Basic-Types/Fixed-Precision-Integers/#ISize___toBitVec)
+  124. `to­Bit­Vec`
+    1. [`Int16.to­Bit­Vec`](Basic-Types/Fixed-Precision-Integers/#Int16___toBitVec)
+  125. `to­Bit­Vec`
+    1. [`Int32.to­Bit­Vec`](Basic-Types/Fixed-Precision-Integers/#Int32___toBitVec)
+  126. `to­Bit­Vec`
+    1. [`Int64.to­Bit­Vec`](Basic-Types/Fixed-Precision-Integers/#Int64___toBitVec)
+  127. `to­Bit­Vec`
+    1. [`Int8.to­Bit­Vec`](Basic-Types/Fixed-Precision-Integers/#Int8___toBitVec)
+  128. `to­Bit­Vec`
+    1. [`UInt16.to­Bit­Vec` (structure field)](Basic-Types/Fixed-Precision-Integers/#UInt16___ofBitVec)
+  129. `to­Bit­Vec`
+    1. [`UInt32.to­Bit­Vec` (structure field)](Basic-Types/Fixed-Precision-Integers/#UInt32___ofBitVec)
+  130. `to­Bit­Vec`
+    1. [`UInt64.to­Bit­Vec` (structure field)](Basic-Types/Fixed-Precision-Integers/#UInt64___ofBitVec)
+  131. `to­Bit­Vec`
+    1. [`UInt8.to­Bit­Vec` (structure field)](Basic-Types/Fixed-Precision-Integers/#UInt8___ofBitVec)
+  132. `to­Bit­Vec`
+    1. [`USize.to­Bit­Vec` (structure field)](Basic-Types/Fixed-Precision-Integers/#USize___ofBitVec)
+  133. `to­Bits`
+    1. [`Float.to­Bits`](Basic-Types/Floating-Point-Numbers/#Float___toBits)
+  134. `to­Bits`
+    1. [`Float32.to­Bits`](Basic-Types/Floating-Point-Numbers/#Float32___toBits)
+  135. `to­Bool`
+    1. [`Except.to­Bool`](Functors___-Monads-and--do--Notation/Varieties-of-Monads/#Except___toBool)
+  136. `to­Byte­Array`
+    1. [`ByteSlice.to­Byte­Array`](Basic-Types/Byte-Arrays/#ByteSlice___toByteArray)
+  137. `to­Byte­Array`
+    1. [`List.to­Byte­Array`](Basic-Types/Linked-Lists/#List___toByteArray)
+  138. `to­Byte­Array`
+    1. [`String.to­Byte­Array` (structure field)](Basic-Types/Strings/#String___ofByteArray)
+  139. `to­Byte­Slice`
+    1. [`ByteArray.to­Byte­Slice`](Basic-Types/Byte-Arrays/#ByteArray___toByteSlice)
+  140. `to­Comm­Ring`
+    1. [`Lean.Grind.Field.to­Comm­Ring` (class method)](The--grind--tactic/Algebraic-Solver-_LPAR_Commutative-Rings___-Fields_RPAR_/#Lean___Grind___Field___mk)
+  141. `to­Digits`
+    1. [`Nat.to­Digits`](Basic-Types/Natural-Numbers/#Nat___toDigits)
+  142. `to­Div`
+    1. [`[anonymous]` (class method)](The--grind--tactic/Algebraic-Solver-_LPAR_Commutative-Rings___-Fields_RPAR_/#Lean___Grind___Field___mk)
+  143. `to­EIO`
+    1. [`BaseIO.to­EIO`](IO/Logical-Model/#BaseIO___toEIO)
+  144. `to­EIO`
+    1. [`IO.to­EIO`](IO/Logical-Model/#IO___toEIO)
+  145. `to­End`
+    1. [`ByteArray.Iterator.to­End`](Basic-Types/Byte-Arrays/#ByteArray___Iterator___toEnd)
+  146. `to­End`
+    1. [`String.Legacy.Iterator.to­End`](Basic-Types/Strings/#String___Legacy___Iterator___toEnd)
+  147. `to­Fin`
+    1. [`BitVec.to­Fin` (structure field)](Basic-Types/Bitvectors/#BitVec___ofFin)
+  148. `to­Fin`
+    1. [`UInt16.to­Fin`](Basic-Types/Fixed-Precision-Integers/#UInt16___toFin)
+  149. `to­Fin`
+    1. [`UInt32.to­Fin`](Basic-Types/Fixed-Precision-Integers/#UInt32___toFin)
+  150. `to­Fin`
+    1. [`UInt64.to­Fin`](Basic-Types/Fixed-Precision-Integers/#UInt64___toFin)
+  151. `to­Fin`
+    1. [`UInt8.to­Fin`](Basic-Types/Fixed-Precision-Integers/#UInt8___toFin)
+  152. `to­Fin`
+    1. [`USize.to­Fin`](Basic-Types/Fixed-Precision-Integers/#USize___toFin)
+  153. `to­Float`
+    1. [`Float32.to­Float`](Basic-Types/Floating-Point-Numbers/#Float32___toFloat)
+  154. `to­Float`
+    1. [`ISize.to­Float`](Basic-Types/Fixed-Precision-Integers/#ISize___toFloat)
+  155. `to­Float`
+    1. [`Int16.to­Float`](Basic-Types/Fixed-Precision-Integers/#Int16___toFloat)
+  156. `to­Float`
+    1. [`Int32.to­Float`](Basic-Types/Fixed-Precision-Integers/#Int32___toFloat)
+  157. `to­Float`
+    1. [`Int64.to­Float`](Basic-Types/Fixed-Precision-Integers/#Int64___toFloat)
+  158. `to­Float`
+    1. [`Int8.to­Float`](Basic-Types/Fixed-Precision-Integers/#Int8___toFloat)
+  159. `to­Float`
+    1. [`Nat.to­Float`](Basic-Types/Natural-Numbers/#Nat___toFloat)
+  160. `to­Float`
+    1. [`UInt16.to­Float`](Basic-Types/Fixed-Precision-Integers/#UInt16___toFloat)
+  161. `to­Float`
+    1. [`UInt32.to­Float`](Basic-Types/Fixed-Precision-Integers/#UInt32___toFloat)
+  162. `to­Float`
+    1. [`UInt64.to­Float`](Basic-Types/Fixed-Precision-Integers/#UInt64___toFloat)
+  163. `to­Float`
+    1. [`UInt8.to­Float`](Basic-Types/Fixed-Precision-Integers/#UInt8___toFloat)
+  164. `to­Float`
+    1. [`USize.to­Float`](Basic-Types/Fixed-Precision-Integers/#USize___toFloat)
+  165. `to­Float32`
+    1. [`Float.to­Float32`](Basic-Types/Floating-Point-Numbers/#Float___toFloat32)
+  166. `to­Float32`
+    1. [`ISize.to­Float32`](Basic-Types/Fixed-Precision-Integers/#ISize___toFloat32)
+  167. `to­Float32`
+    1. [`Int16.to­Float32`](Basic-Types/Fixed-Precision-Integers/#Int16___toFloat32)
+  168. `to­Float32`
+    1. [`Int32.to­Float32`](Basic-Types/Fixed-Precision-Integers/#Int32___toFloat32)
+  169. `to­Float32`
+    1. [`Int64.to­Float32`](Basic-Types/Fixed-Precision-Integers/#Int64___toFloat32)
+  170. `to­Float32`
+    1. [`Int8.to­Float32`](Basic-Types/Fixed-Precision-Integers/#Int8___toFloat32)
+  171. `to­Float32`
+    1. [`Nat.to­Float32`](Basic-Types/Natural-Numbers/#Nat___toFloat32)
+  172. `to­Float32`
+    1. [`UInt16.to­Float32`](Basic-Types/Fixed-Precision-Integers/#UInt16___toFloat32)
+  173. `to­Float32`
+    1. [`UInt32.to­Float32`](Basic-Types/Fixed-Precision-Integers/#UInt32___toFloat32)
+  174. `to­Float32`
+    1. [`UInt64.to­Float32`](Basic-Types/Fixed-Precision-Integers/#UInt64___toFloat32)
+  175. `to­Float32`
+    1. [`UInt8.to­Float32`](Basic-Types/Fixed-Precision-Integers/#UInt8___toFloat32)
+  176. `to­Float32`
+    1. [`USize.to­Float32`](Basic-Types/Fixed-Precision-Integers/#USize___toFloat32)
+  177. `to­Float­Array`
+    1. [`List.to­Float­Array`](Basic-Types/Linked-Lists/#List___toFloatArray)
+  178. `to­Format`
+    1. [`String.to­Format`](Basic-Types/Strings/#String___toFormat)
+  179. `to­Functor`
+    1. [`Applicative.to­Functor` (class method)](Functors___-Monads-and--do--Notation/#Applicative___mk)
+  180. `to­Get­Elem`
+    1. [`GetElem?.to­Get­Elem` (class method)](Type-Classes/Basic-Classes/#GetElem______mk)
+  181. `to­Handle­Type`
+    1. [`IO.Process.Stdio.to­Handle­Type`](IO/Processes/#IO___Process___Stdio___toHandleType)
+  182. `to­Hex`
+    1. [`BitVec.to­Hex`](Basic-Types/Bitvectors/#BitVec___toHex)
+  183. `to­IO'`
+    1. [`EIO.to­IO'`](IO/Logical-Model/#EIO___toIO___)
+  184. `to­IO`
+    1. [`BaseIO.to­IO`](IO/Logical-Model/#BaseIO___toIO)
+  185. `to­IO`
+    1. [`EIO.to­IO`](IO/Logical-Model/#EIO___toIO)
+  186. `to­ISize`
+    1. [`Bool.to­ISize`](Basic-Types/Booleans/#Bool___toISize)
+  187. `to­ISize`
+    1. [`Float.to­ISize`](Basic-Types/Floating-Point-Numbers/#Float___toISize)
+  188. `to­ISize`
+    1. [`Float32.to­ISize`](Basic-Types/Floating-Point-Numbers/#Float32___toISize)
+  189. `to­ISize`
+    1. [`Int.to­ISize`](Basic-Types/Integers/#Int___toISize)
+  190. `to­ISize`
+    1. [`Int16.to­ISize`](Basic-Types/Fixed-Precision-Integers/#Int16___toISize)
+  191. `to­ISize`
+    1. [`Int32.to­ISize`](Basic-Types/Fixed-Precision-Integers/#Int32___toISize)
+  192. `to­ISize`
+    1. [`Int64.to­ISize`](Basic-Types/Fixed-Precision-Integers/#Int64___toISize)
+  193. `to­ISize`
+    1. [`Int8.to­ISize`](Basic-Types/Fixed-Precision-Integers/#Int8___toISize)
+  194. `to­ISize`
+    1. [`Nat.to­ISize`](Basic-Types/Natural-Numbers/#Nat___toISize)
+  195. `to­ISize`
+    1. [`USize.to­ISize`](Basic-Types/Fixed-Precision-Integers/#USize___toISize)
+  196. `to­Int!`
+    1. [`String.to­Int!`](Basic-Types/Strings/#String___toInt___-next)
+  197. `to­Int`
+    1. [`BitVec.to­Int`](Basic-Types/Bitvectors/#BitVec___toInt)
+  198. `to­Int`
+    1. [`Bool.to­Int`](Basic-Types/Booleans/#Bool___toInt)
+  199. `to­Int`
+    1. [`ISize.to­Int`](Basic-Types/Fixed-Precision-Integers/#ISize___toInt)
+  200. `to­Int`
+    1. [`Int16.to­Int`](Basic-Types/Fixed-Precision-Integers/#Int16___toInt)
+  201. `to­Int`
+    1. [`Int32.to­Int`](Basic-Types/Fixed-Precision-Integers/#Int32___toInt)
+  202. `to­Int`
+    1. [`Int64.to­Int`](Basic-Types/Fixed-Precision-Integers/#Int64___toInt)
+  203. `to­Int`
+    1. [`Int8.to­Int`](Basic-Types/Fixed-Precision-Integers/#Int8___toInt)
+  204. `to­Int`
+    1. [`Lean.Grind.ToInt.to­Int` (class method)](The--grind--tactic/Linear-Integer-Arithmetic/#Lean___Grind___ToInt___mk)
+  205. `to­Int16`
+    1. [`Bool.to­Int16`](Basic-Types/Booleans/#Bool___toInt16)
+  206. `to­Int16`
+    1. [`Float.to­Int16`](Basic-Types/Floating-Point-Numbers/#Float___toInt16)
+  207. `to­Int16`
+    1. [`Float32.to­Int16`](Basic-Types/Floating-Point-Numbers/#Float32___toInt16)
+  208. `to­Int16`
+    1. [`ISize.to­Int16`](Basic-Types/Fixed-Precision-Integers/#ISize___toInt16)
+  209. `to­Int16`
+    1. [`Int.to­Int16`](Basic-Types/Integers/#Int___toInt16)
+  210. `to­Int16`
+    1. [`Int32.to­Int16`](Basic-Types/Fixed-Precision-Integers/#Int32___toInt16)
+  211. `to­Int16`
+    1. [`Int64.to­Int16`](Basic-Types/Fixed-Precision-Integers/#Int64___toInt16)
+  212. `to­Int16`
+    1. [`Int8.to­Int16`](Basic-Types/Fixed-Precision-Integers/#Int8___toInt16)
+  213. `to­Int16`
+    1. [`Nat.to­Int16`](Basic-Types/Natural-Numbers/#Nat___toInt16)
+  214. `to­Int16`
+    1. [`UInt16.to­Int16`](Basic-Types/Fixed-Precision-Integers/#UInt16___toInt16)
+  215. `to­Int32`
+    1. [`Bool.to­Int32`](Basic-Types/Booleans/#Bool___toInt32)
+  216. `to­Int32`
+    1. [`Float.to­Int32`](Basic-Types/Floating-Point-Numbers/#Float___toInt32)
+  217. `to­Int32`
+    1. [`Float32.to­Int32`](Basic-Types/Floating-Point-Numbers/#Float32___toInt32)
+  218. `to­Int32`
+    1. [`ISize.to­Int32`](Basic-Types/Fixed-Precision-Integers/#ISize___toInt32)
+  219. `to­Int32`
+    1. [`Int.to­Int32`](Basic-Types/Integers/#Int___toInt32)
+  220. `to­Int32`
+    1. [`Int16.to­Int32`](Basic-Types/Fixed-Precision-Integers/#Int16___toInt32)
+  221. `to­Int32`
+    1. [`Int64.to­Int32`](Basic-Types/Fixed-Precision-Integers/#Int64___toInt32)
+  222. `to­Int32`
+    1. [`Int8.to­Int32`](Basic-Types/Fixed-Precision-Integers/#Int8___toInt32)
+  223. `to­Int32`
+    1. [`Nat.to­Int32`](Basic-Types/Natural-Numbers/#Nat___toInt32)
+  224. `to­Int32`
+    1. [`UInt32.to­Int32`](Basic-Types/Fixed-Precision-Integers/#UInt32___toInt32)
+  225. `to­Int64`
+    1. [`Bool.to­Int64`](Basic-Types/Booleans/#Bool___toInt64)
+  226. `to­Int64`
+    1. [`Float.to­Int64`](Basic-Types/Floating-Point-Numbers/#Float___toInt64)
+  227. `to­Int64`
+    1. [`Float32.to­Int64`](Basic-Types/Floating-Point-Numbers/#Float32___toInt64)
+  228. `to­Int64`
+    1. [`ISize.to­Int64`](Basic-Types/Fixed-Precision-Integers/#ISize___toInt64)
+  229. `to­Int64`
+    1. [`Int.to­Int64`](Basic-Types/Integers/#Int___toInt64)
+  230. `to­Int64`
+    1. [`Int16.to­Int64`](Basic-Types/Fixed-Precision-Integers/#Int16___toInt64)
+  231. `to­Int64`
+    1. [`Int32.to­Int64`](Basic-Types/Fixed-Precision-Integers/#Int32___toInt64)
+  232. `to­Int64`
+    1. [`Int8.to­Int64`](Basic-Types/Fixed-Precision-Integers/#Int8___toInt64)
+  233. `to­Int64`
+    1. [`Nat.to­Int64`](Basic-Types/Natural-Numbers/#Nat___toInt64)
+  234. `to­Int64`
+    1. [`UInt64.to­Int64`](Basic-Types/Fixed-Precision-Integers/#UInt64___toInt64)
+  235. `to­Int8`
+    1. [`Bool.to­Int8`](Basic-Types/Booleans/#Bool___toInt8)
+  236. `to­Int8`
+    1. [`Float.to­Int8`](Basic-Types/Floating-Point-Numbers/#Float___toInt8)
+  237. `to­Int8`
+    1. [`Float32.to­Int8`](Basic-Types/Floating-Point-Numbers/#Float32___toInt8)
+  238. `to­Int8`
+    1. [`ISize.to­Int8`](Basic-Types/Fixed-Precision-Integers/#ISize___toInt8)
+  239. `to­Int8`
+    1. [`Int.to­Int8`](Basic-Types/Integers/#Int___toInt8)
+  240. `to­Int8`
+    1. [`Int16.to­Int8`](Basic-Types/Fixed-Precision-Integers/#Int16___toInt8)
+  241. `to­Int8`
+    1. [`Int32.to­Int8`](Basic-Types/Fixed-Precision-Integers/#Int32___toInt8)
+  242. `to­Int8`
+    1. [`Int64.to­Int8`](Basic-Types/Fixed-Precision-Integers/#Int64___toInt8)
+  243. `to­Int8`
+    1. [`Nat.to­Int8`](Basic-Types/Natural-Numbers/#Nat___toInt8)
+  244. `to­Int8`
+    1. [`UInt8.to­Int8`](Basic-Types/Fixed-Precision-Integers/#UInt8___toInt8)
+  245. `to­Int?`
+    1. [`String.to­Int?`](Basic-Types/Strings/#String___toInt___)
+  246. `to­Int_inj`
+    1. [`Lean.Grind.ToInt.to­Int_inj` (class method)](The--grind--tactic/Linear-Integer-Arithmetic/#Lean___Grind___ToInt___mk)
+  247. `to­Int_mem`
+    1. [`Lean.Grind.ToInt.to­Int_mem` (class method)](The--grind--tactic/Linear-Integer-Arithmetic/#Lean___Grind___ToInt___mk)
+  248. `to­Inv`
+    1. [`[anonymous]` (class method)](The--grind--tactic/Algebraic-Solver-_LPAR_Commutative-Rings___-Fields_RPAR_/#Lean___Grind___Field___mk)
+  249. `to­Iter`
+    1. [`Std.IterM.to­Iter`](Iterators/Iterator-Combinators/#Std___IterM___toIter)
+  250. `to­Iter­M`
+    1. [`Std.Iter.to­Iter­M`](Iterators/Iterator-Combinators/#Std___Iter___toIterM)
+  251. `to­LE`
+    1. [`Ord.to­LE`](Type-Classes/Basic-Classes/#Ord___toLE)
+  252. `to­LT`
+    1. [`Ord.to­LT`](Type-Classes/Basic-Classes/#Ord___toLT)
+  253. `to­Lawful­Applicative`
+    1. [`LawfulMonad.to­Lawful­Applicative` (class method)](Functors___-Monads-and--do--Notation/Laws/#LawfulMonad___mk)
+  254. `to­Lawful­Functor`
+    1. [`LawfulApplicative.to­Lawful­Functor` (class method)](Functors___-Monads-and--do--Notation/Laws/#LawfulApplicative___mk)
+  255. `to­Lawful­Monad`
+    1. [`Std.Do.WPMonad.to­Lawful­Monad` (class method)](The--mvcgen--tactic/Predicate-Transformers/#Std___Do___WPMonad___mk)
+  256. `to­Lean­Config`
+    1. [`Lake.Lean­ExeConfig.to­Lean­Config` (structure field)](Build-Tools-and-Distribution/Lake/#Lake___LeanExeConfig___mk)
+  257. `to­Lean­Config`
+    1. [`Lake.Lean­LibConfig.to­Lean­Config` (structure field)](Build-Tools-and-Distribution/Lake/#Lake___LeanLibConfig___mk)
+  258. `to­Legacy­Iterator`
+    1. [`Substring.Raw.to­Legacy­Iterator`](Basic-Types/Strings/#Substring___Raw___toLegacyIterator)
+  259. `to­List`
+    1. [`Array.to­List`](Basic-Types/Arrays/#Array___toList)
+  260. `to­List`
+    1. [`Array.to­List` (structure field)](Basic-Types/Arrays/#Array___mk)
+  261. `to­List`
+    1. [`ByteArray.to­List`](Basic-Types/Byte-Arrays/#ByteArray___toList)
+  262. `to­List`
+    1. [`Option.to­List`](Basic-Types/Optional-Values/#Option___toList)
+  263. `to­List`
+    1. [`Std.DHashMap.to­List`](Basic-Types/Maps-and-Sets/#Std___DHashMap___toList)
+  264. `to­List`
+    1. [`Std.DTreeMap.to­List`](Basic-Types/Maps-and-Sets/#Std___DTreeMap___toList)
+  265. `to­List`
+    1. [`Std.HashMap.to­List`](Basic-Types/Maps-and-Sets/#Std___HashMap___toList)
+  266. `to­List`
+    1. [`Std.HashSet.to­List`](Basic-Types/Maps-and-Sets/#Std___HashSet___toList)
+  267. `to­List`
+    1. [`Std.Iter.to­List`](Iterators/Consuming-Iterators/#Std___Iter___toList)
+  268. `to­List`
+    1. [`Std.IterM.to­List`](Iterators/Consuming-Iterators/#Std___IterM___toList)
+  269. `to­List`
+    1. [`Std.Rcc.to­List`](Basic-Types/Ranges/#Std___Rcc___toList)
+  270. `to­List`
+    1. [`Std.Rci.to­List`](Basic-Types/Ranges/#Std___Rci___toList)
+  271. `to­List`
+    1. [`Std.Rco.to­List`](Basic-Types/Ranges/#Std___Rco___toList)
+  272. `to­List`
+    1. [`Std.Ric.to­List`](Basic-Types/Ranges/#Std___Ric___toList)
+  273. `to­List`
+    1. [`Std.Rii.to­List`](Basic-Types/Ranges/#Std___Rii___toList)
+  274. `to­List`
+    1. [`Std.Rio.to­List`](Basic-Types/Ranges/#Std___Rio___toList)
+  275. `to­List`
+    1. [`Std.Roc.to­List`](Basic-Types/Ranges/#Std___Roc___toList)
+  276. `to­List`
+    1. [`Std.Roi.to­List`](Basic-Types/Ranges/#Std___Roi___toList)
+  277. `to­List`
+    1. [`Std.Roo.to­List`](Basic-Types/Ranges/#Std___Roo___toList)
+  278. `to­List`
+    1. [`Std.TreeMap.to­List`](Basic-Types/Maps-and-Sets/#Std___TreeMap___toList)
+  279. `to­List`
+    1. [`Std.TreeSet.to­List`](Basic-Types/Maps-and-Sets/#Std___TreeSet___toList)
+  280. `to­List`
+    1. `String.to­List` [(0)](Basic-Types/Strings/#String___toList) [(1)](Basic-Types/Strings/#String___toList-next)
+  281. `to­List­Append`
+    1. [`Array.to­List­Append`](Basic-Types/Arrays/#Array___toListAppend)
+  282. `to­List­Rev`
+    1. [`Array.to­List­Rev`](Basic-Types/Arrays/#Array___toListRev)
+  283. `to­List­Rev`
+    1. [`Std.Iter.to­List­Rev`](Iterators/Consuming-Iterators/#Std___Iter___toListRev)
+  284. `to­List­Rev`
+    1. [`Std.IterM.to­List­Rev`](Iterators/Consuming-Iterators/#Std___IterM___toListRev)
+  285. `to­Lower`
+    1. [`Char.to­Lower`](Basic-Types/Characters/#Char___toLower)
+  286. `to­Lower`
+    1. [`String.to­Lower`](Basic-Types/Strings/#String___toLower)
+  287. `to­Modify­Of­LE`
+    1. [`String.Pos.to­Modify­Of­LE`](Basic-Types/Strings/#String___Pos___toModifyOfLE)
+  288. `to­Monad­State­Of`
+    1. [`ST.Ref.to­Monad­State­Of`](IO/Mutable-References/#ST___Ref___toMonadStateOf)
+  289. `to­Mul`
+    1. [`[anonymous]` (class method)](The--grind--tactic/Algebraic-Solver-_LPAR_Commutative-Rings___-Fields_RPAR_/#Lean___Grind___Semiring___mk)
+  290. `to­Name`
+    1. [`String.to­Name`](Basic-Types/Strings/#String___toName)
+  291. `to­Name`
+    1. [`Substring.Raw.to­Name`](Basic-Types/Strings/#Substring___Raw___toName)
+  292. `to­Nat!`
+    1. [`String.Slice.to­Nat!`](Basic-Types/Strings/#String___Slice___toNat___)
+  293. `to­Nat!`
+    1. [`String.to­Nat!`](Basic-Types/Strings/#String___toNat___-next)
+  294. `to­Nat`
+    1. [`BitVec.to­Nat`](Basic-Types/Bitvectors/#BitVec___toNat)
+  295. `to­Nat`
+    1. [`Bool.to­Nat`](Basic-Types/Booleans/#Bool___toNat)
+  296. `to­Nat`
+    1. [`Char.to­Nat`](Basic-Types/Characters/#Char___toNat)
+  297. `to­Nat`
+    1. [`Fin.to­Nat`](Basic-Types/Finite-Natural-Numbers/#Fin___toNat)
+  298. `to­Nat`
+    1. [`Int.to­Nat`](Basic-Types/Integers/#Int___toNat)
+  299. `to­Nat`
+    1. [`UInt16.to­Nat`](Basic-Types/Fixed-Precision-Integers/#UInt16___toNat)
+  300. `to­Nat`
+    1. [`UInt32.to­Nat`](Basic-Types/Fixed-Precision-Integers/#UInt32___toNat)
+  301. `to­Nat`
+    1. [`UInt64.to­Nat`](Basic-Types/Fixed-Precision-Integers/#UInt64___toNat)
+  302. `to­Nat`
+    1. [`UInt8.to­Nat`](Basic-Types/Fixed-Precision-Integers/#UInt8___toNat)
+  303. `to­Nat`
+    1. [`USize.to­Nat`](Basic-Types/Fixed-Precision-Integers/#USize___toNat)
+  304. `to­Nat?`
+    1. [`Int.to­Nat?`](Basic-Types/Integers/#Int___toNat___)
+  305. `to­Nat?`
+    1. [`String.Slice.to­Nat?`](Basic-Types/Strings/#String___Slice___toNat___-next)
+  306. `to­Nat?`
+    1. [`String.to­Nat?`](Basic-Types/Strings/#String___toNat___)
+  307. `to­Nat?`
+    1. [`Substring.Raw.to­Nat?`](Basic-Types/Strings/#Substring___Raw___toNat___)
+  308. `to­Nat­Clamp­Neg`
+    1. [`ISize.to­Nat­Clamp­Neg`](Basic-Types/Fixed-Precision-Integers/#ISize___toNatClampNeg)
+  309. `to­Nat­Clamp­Neg`
+    1. [`Int16.to­Nat­Clamp­Neg`](Basic-Types/Fixed-Precision-Integers/#Int16___toNatClampNeg)
+  310. `to­Nat­Clamp­Neg`
+    1. [`Int32.to­Nat­Clamp­Neg`](Basic-Types/Fixed-Precision-Integers/#Int32___toNatClampNeg)
+  311. `to­Nat­Clamp­Neg`
+    1. [`Int64.to­Nat­Clamp­Neg`](Basic-Types/Fixed-Precision-Integers/#Int64___toNatClampNeg)
+  312. `to­Nat­Clamp­Neg`
+    1. [`Int8.to­Nat­Clamp­Neg`](Basic-Types/Fixed-Precision-Integers/#Int8___toNatClampNeg)
+  313. `to­Neg`
+    1. [`[anonymous]` (class method)](The--grind--tactic/Algebraic-Solver-_LPAR_Commutative-Rings___-Fields_RPAR_/#Lean___Grind___Ring___mk)
+  314. `to­Option`
+    1. [`Except.to­Option`](Functors___-Monads-and--do--Notation/Varieties-of-Monads/#Except___toOption)
+  315. `to­Ordered­Add`
+    1. [`Lean.Grind.OrderedRing.to­Ordered­Add` (class method)](The--grind--tactic/Linear-Arithmetic-Solver/#Lean___Grind___OrderedRing___mk)
+  316. `to­Partial­Equiv­BEq`
+    1. [`EquivBEq.to­Partial­Equiv­BEq` (class method)](Type-Classes/Basic-Classes/#EquivBEq___mk)
+  317. `to­Partial­Order`
+    1. [`Lean.Order.CCPO.to­Partial­Order` (class method)](Definitions/Recursive-Definitions/#Lean___Order___CCPO___mk)
+  318. `to­Pure`
+    1. [`[anonymous]` (class method)](Functors___-Monads-and--do--Notation/#Applicative___mk)
+  319. `to­Raw­Substring'`
+    1. [`String.to­Raw­Substring'`](Basic-Types/Strings/#String___toRawSubstring___)
+  320. `to­Raw­Substring`
+    1. [`String.to­Raw­Substring`](Basic-Types/Strings/#String___toRawSubstring)
+  321. `to­Refl­BEq`
+    1. [`LawfulBEq.to­Refl­BEq` (class method)](Type-Classes/Basic-Classes/#LawfulBEq___mk)
+  322. `to­Refl­BEq`
+    1. [`[anonymous]` (class method)](Type-Classes/Basic-Classes/#EquivBEq___mk)
+  323. `to­Ring`
+    1. [`Lean.Grind.CommRing.to­Ring` (class method)](The--grind--tactic/Algebraic-Solver-_LPAR_Commutative-Rings___-Fields_RPAR_/#Lean___Grind___CommRing___mk)
+  324. `to­Searcher`
+    1. [`String.Slice.Pattern.To­BackwardSearcher.to­Searcher` (class method)](Basic-Types/Strings/#String___Slice___Pattern___ToBackwardSearcher___mk)
+  325. `to­Searcher`
+    1. [`String.Slice.Pattern.To­ForwardSearcher.to­Searcher` (class method)](Basic-Types/Strings/#String___Slice___Pattern___ToForwardSearcher___mk)
+  326. `to­Semiring`
+    1. [`Lean.Grind.CommSemiring.to­Semiring` (class method)](The--grind--tactic/Algebraic-Solver-_LPAR_Commutative-Rings___-Fields_RPAR_/#Lean___Grind___CommSemiring___mk)
+  327. `to­Semiring`
+    1. [`Lean.Grind.Ring.to­Semiring` (class method)](The--grind--tactic/Algebraic-Solver-_LPAR_Commutative-Rings___-Fields_RPAR_/#Lean___Grind___Ring___mk)
+  328. `to­Seq`
+    1. [`[anonymous]` (class method)](Functors___-Monads-and--do--Notation/#Applicative___mk)
+  329. `to­Seq­Left`
+    1. [`Applicative.to­Pure` (class method)](Functors___-Monads-and--do--Notation/#Applicative___mk)
+  330. `to­Seq­Right`
+    1. [`[anonymous]` (class method)](Functors___-Monads-and--do--Notation/#Applicative___mk)
+  331. `to­Set­Of­LE`
+    1. [`String.Pos.to­Set­Of­LE`](Basic-Types/Strings/#String___Pos___toSetOfLE)
+  332. `to­Slice`
+    1. [`String.Pos.to­Slice`](Basic-Types/Strings/#String___Pos___toSlice)
+  333. `to­Slice`
+    1. [`String.to­Slice`](Basic-Types/Strings/#String___toSlice)
+  334. `to­Stdio­Config`
+    1. [`IO.Process.SpawnArgs.to­Stdio­Config` (structure field)](IO/Processes/#IO___Process___SpawnArgs___mk)
+  335. `to­String`
+    1. [`Char.to­String`](Basic-Types/Characters/#Char___toString)
+  336. `to­String`
+    1. [`Float.to­String`](Basic-Types/Floating-Point-Numbers/#Float___toString)
+  337. `to­String`
+    1. [`Float32.to­String`](Basic-Types/Floating-Point-Numbers/#Float32___toString)
+  338. `to­String`
+    1. [`IO.Error.to­String`](IO/Logical-Model/#IO___Error___toString)
+  339. `to­String`
+    1. [`List.to­String`](Basic-Types/Linked-Lists/#List___toString)
+  340. `to­String`
+    1. [`String.Legacy.Iterator.to­String`](Basic-Types/Strings/#String___Legacy___Iterator___toString)
+  341. `to­String`
+    1. [`Substring.Raw.to­String`](Basic-Types/Strings/#Substring___Raw___toString)
+  342. `to­String`
+    1. [`System.FilePath.to­String` (structure field)](IO/Files___-File-Handles___-and-Streams/#System___FilePath___mk)
+  343. `to­Sub`
+    1. [`[anonymous]` (class method)](The--grind--tactic/Algebraic-Solver-_LPAR_Commutative-Rings___-Fields_RPAR_/#Lean___Grind___Ring___mk)
+  344. `to­Sub­Digits`
+    1. [`Nat.to­Sub­Digits`](Basic-Types/Natural-Numbers/#Nat___toSubDigits)
+  345. `to­Subarray`
+    1. [`Array.to­Subarray`](Basic-Types/Arrays/#Array___toSubarray)
+  346. `to­Subscript­String`
+    1. [`Nat.to­Subscript­String`](Basic-Types/Natural-Numbers/#Nat___toSubscriptString)
+  347. `to­Super­Digits`
+    1. [`Nat.to­Super­Digits`](Basic-Types/Natural-Numbers/#Nat___toSuperDigits)
+  348. `to­Superscript­String`
+    1. [`Nat.to­Superscript­String`](Basic-Types/Natural-Numbers/#Nat___toSuperscriptString)
+  349. `to­Take`
+    1. [`Std.Iter.to­Take`](Iterators/Iterator-Combinators/#Std___Iter___toTake)
+  350. `to­Take`
+    1. [`Std.IterM.to­Take`](Iterators/Iterator-Combinators/#Std___IterM___toTake)
+  351. `to­UInt16`
+    1. [`Bool.to­UInt16`](Basic-Types/Booleans/#Bool___toUInt16)
+  352. `to­UInt16`
+    1. [`Float.to­UInt16`](Basic-Types/Floating-Point-Numbers/#Float___toUInt16)
+  353. `to­UInt16`
+    1. [`Float32.to­UInt16`](Basic-Types/Floating-Point-Numbers/#Float32___toUInt16)
+  354. `to­UInt16`
+    1. [`Int16.to­UInt16` (structure field)](Basic-Types/Fixed-Precision-Integers/#Int16___ofUInt16)
+  355. `to­UInt16`
+    1. [`Nat.to­UInt16`](Basic-Types/Natural-Numbers/#Nat___toUInt16)
+  356. `to­UInt16`
+    1. [`UInt32.to­UInt16`](Basic-Types/Fixed-Precision-Integers/#UInt32___toUInt16)
+  357. `to­UInt16`
+    1. [`UInt64.to­UInt16`](Basic-Types/Fixed-Precision-Integers/#UInt64___toUInt16)
+  358. `to­UInt16`
+    1. [`UInt8.to­UInt16`](Basic-Types/Fixed-Precision-Integers/#UInt8___toUInt16)
+  359. `to­UInt16`
+    1. [`USize.to­UInt16`](Basic-Types/Fixed-Precision-Integers/#USize___toUInt16)
+  360. `to­UInt32`
+    1. [`Bool.to­UInt32`](Basic-Types/Booleans/#Bool___toUInt32)
+  361. `to­UInt32`
+    1. [`Float.to­UInt32`](Basic-Types/Floating-Point-Numbers/#Float___toUInt32)
+  362. `to­UInt32`
+    1. [`Float32.to­UInt32`](Basic-Types/Floating-Point-Numbers/#Float32___toUInt32)
+  363. `to­UInt32`
+    1. [`Int32.to­UInt32` (structure field)](Basic-Types/Fixed-Precision-Integers/#Int32___ofUInt32)
+  364. `to­UInt32`
+    1. [`Nat.to­UInt32`](Basic-Types/Natural-Numbers/#Nat___toUInt32)
+  365. `to­UInt32`
+    1. [`UInt16.to­UInt32`](Basic-Types/Fixed-Precision-Integers/#UInt16___toUInt32)
+  366. `to­UInt32`
+    1. [`UInt64.to­UInt32`](Basic-Types/Fixed-Precision-Integers/#UInt64___toUInt32)
+  367. `to­UInt32`
+    1. [`UInt8.to­UInt32`](Basic-Types/Fixed-Precision-Integers/#UInt8___toUInt32)
+  368. `to­UInt32`
+    1. [`USize.to­UInt32`](Basic-Types/Fixed-Precision-Integers/#USize___toUInt32)
+  369. `to­UInt64`
+    1. [`Bool.to­UInt64`](Basic-Types/Booleans/#Bool___toUInt64)
+  370. `to­UInt64`
+    1. [`Float.to­UInt64`](Basic-Types/Floating-Point-Numbers/#Float___toUInt64)
+  371. `to­UInt64`
+    1. [`Float32.to­UInt64`](Basic-Types/Floating-Point-Numbers/#Float32___toUInt64)
+  372. `to­UInt64`
+    1. [`Int64.to­UInt64` (structure field)](Basic-Types/Fixed-Precision-Integers/#Int64___ofUInt64)
+  373. `to­UInt64`
+    1. [`Nat.to­UInt64`](Basic-Types/Natural-Numbers/#Nat___toUInt64)
+  374. `to­UInt64`
+    1. [`UInt16.to­UInt64`](Basic-Types/Fixed-Precision-Integers/#UInt16___toUInt64)
+  375. `to­UInt64`
+    1. [`UInt32.to­UInt64`](Basic-Types/Fixed-Precision-Integers/#UInt32___toUInt64)
+  376. `to­UInt64`
+    1. [`UInt8.to­UInt64`](Basic-Types/Fixed-Precision-Integers/#UInt8___toUInt64)
+  377. `to­UInt64`
+    1. [`USize.to­UInt64`](Basic-Types/Fixed-Precision-Integers/#USize___toUInt64)
+  378. `to­UInt64BE!`
+    1. [`ByteArray.to­UInt64BE!`](Basic-Types/Byte-Arrays/#ByteArray___toUInt64BE___)
+  379. `to­UInt64LE!`
+    1. [`ByteArray.to­UInt64LE!`](Basic-Types/Byte-Arrays/#ByteArray___toUInt64LE___)
+  380. `to­UInt8`
+    1. [`Bool.to­UInt8`](Basic-Types/Booleans/#Bool___toUInt8)
+  381. `to­UInt8`
+    1. [`Char.to­UInt8`](Basic-Types/Characters/#Char___toUInt8)
+  382. `to­UInt8`
+    1. [`Float.to­UInt8`](Basic-Types/Floating-Point-Numbers/#Float___toUInt8)
+  383. `to­UInt8`
+    1. [`Float32.to­UInt8`](Basic-Types/Floating-Point-Numbers/#Float32___toUInt8)
+  384. `to­UInt8`
+    1. [`Int8.to­UInt8` (structure field)](Basic-Types/Fixed-Precision-Integers/#Int8___ofUInt8)
+  385. `to­UInt8`
+    1. [`Nat.to­UInt8`](Basic-Types/Natural-Numbers/#Nat___toUInt8)
+  386. `to­UInt8`
+    1. [`UInt16.to­UInt8`](Basic-Types/Fixed-Precision-Integers/#UInt16___toUInt8)
+  387. `to­UInt8`
+    1. [`UInt32.to­UInt8`](Basic-Types/Fixed-Precision-Integers/#UInt32___toUInt8)
+  388. `to­UInt8`
+    1. [`UInt64.to­UInt8`](Basic-Types/Fixed-Precision-Integers/#UInt64___toUInt8)
+  389. `to­UInt8`
+    1. [`USize.to­UInt8`](Basic-Types/Fixed-Precision-Integers/#USize___toUInt8)
+  390. `to­USize`
+    1. [`Bool.to­USize`](Basic-Types/Booleans/#Bool___toUSize)
+  391. `to­USize`
+    1. [`Float.to­USize`](Basic-Types/Floating-Point-Numbers/#Float___toUSize)
+  392. `to­USize`
+    1. [`Float32.to­USize`](Basic-Types/Floating-Point-Numbers/#Float32___toUSize)
+  393. `to­USize`
+    1. [`ISize.to­USize` (structure field)](Basic-Types/Fixed-Precision-Integers/#ISize___ofUSize)
+  394. `to­USize`
+    1. [`Nat.to­USize`](Basic-Types/Natural-Numbers/#Nat___toUSize)
+  395. `to­USize`
+    1. [`UInt16.to­USize`](Basic-Types/Fixed-Precision-Integers/#UInt16___toUSize)
+  396. `to­USize`
+    1. [`UInt32.to­USize`](Basic-Types/Fixed-Precision-Integers/#UInt32___toUSize)
+  397. `to­USize`
+    1. [`UInt64.to­USize`](Basic-Types/Fixed-Precision-Integers/#UInt64___toUSize)
+  398. `to­USize`
+    1. [`UInt8.to­USize`](Basic-Types/Fixed-Precision-Integers/#UInt8___toUSize)
+  399. `to­UTF8`
+    1. [`String.to­UTF8`](Basic-Types/Strings/#String___toUTF8)
+  400. `to­Upper`
+    1. [`Char.to­Upper`](Basic-Types/Characters/#Char___toUpper)
+  401. `to­Upper`
+    1. [`String.to­Upper`](Basic-Types/Strings/#String___toUpper)
+  402. `to­Vector`
+    1. [`Array.to­Vector`](Basic-Types/Arrays/#Array___toVector)
+  403. `to­WP`
+    1. [`[anonymous]` (class method)](The--mvcgen--tactic/Predicate-Transformers/#Std___Do___WPMonad___mk)
+  404. [`toolchain gc` (Elan command)](Build-Tools-and-Distribution/Managing-Toolchains-with-Elan/#toolchain-gc)
+  405. [`toolchain install` (Elan command)](Build-Tools-and-Distribution/Managing-Toolchains-with-Elan/#toolchain-install)
+  406. [`toolchain link` (Elan command)](Build-Tools-and-Distribution/Managing-Toolchains-with-Elan/#toolchain-link)
+  407. [`toolchain list` (Elan command)](Build-Tools-and-Distribution/Managing-Toolchains-with-Elan/#toolchain-list)
+  408. [`toolchain uninstall` (Elan command)](Build-Tools-and-Distribution/Managing-Toolchains-with-Elan/#toolchain-uninstall)
+  409. [`trace`](Tactic-Proofs/Tactic-Reference/#trace)
+  410. `trace`
+    1. [`Lean.Macro.trace`](Notations-and-Macros/Macros/#Lean___Macro___trace)
+  411. `trace`
+    1. `tactic.simp.trace` [(0)](Tactic-Proofs/Options/#tactic___simp___trace) [(1)](The-Simplifier/Configuring-Simplification/#tactic___simp___trace-next)
+  412. [`trace.Elab.definition.wf`](Definitions/Recursive-Definitions/#trace___Elab___definition___wf)
+  413. [`trace.Meta.Tactic.simp.discharge`](The-Simplifier/Configuring-Simplification/#trace___Meta___Tactic___simp___discharge)
+  414. [`trace.Meta.Tactic.simp.rewrite`](The-Simplifier/Configuring-Simplification/#trace___Meta___Tactic___simp___rewrite)
+  415. [`trace.compiler.ir.result`](Run-Time-Code/Reference-Counting/#trace___compiler___ir___result)
+  416. [`trace.grind.ematch.instance`](The--grind--tactic/E___matching/#trace___grind___ematch___instance)
+  417. [`trace.grind.split`](The--grind--tactic/Case-Analysis/#trace___grind___split)
+  418. `trace_state` [(0)](Tactic-Proofs/Tactic-Reference/#trace_state) [(1)](Tactic-Proofs/Targeted-Rewriting-with--conv/#Lean___Parser___Tactic___Conv___convTrace_state)
+  419. `trans`
+    1. [`Eq.trans`](Basic-Propositions/Propositional-Equality/#Eq___trans)
+  420. `trans`
+    1. [`Equivalence.trans` (structure field)](The-Type-System/Quotients/#Equivalence___mk)
+  421. `trans`
+    1. [`Setoid.trans`](The-Type-System/Quotients/#Setoid___trans)
+  422. `trans`
+    1. [`Std.Do.PredTrans.trans` (structure field)](The--mvcgen--tactic/Predicate-Transformers/#Std___Do___PredTrans___mk)
+  423. `trans`
+    1. [`Trans.trans` (class method)](Tactic-Proofs/Tactic-Reference/#Trans___mk)
+  424. [`translate-config` (Lake command)](Build-Tools-and-Distribution/Lake/#translate-config)
+  425. `transparency`
+    1. [`Lean.Meta.Rewrite.Config.transparency` (structure field)](Tactic-Proofs/Tactic-Reference/#Lean___Meta___Rewrite___Config___mk)
+  426. `trim`
+    1. [`Substring.Raw.trim`](Basic-Types/Strings/#Substring___Raw___trim)
+  427. `trim­Ascii`
+    1. [`String.Slice.trim­Ascii`](Basic-Types/Strings/#String___Slice___trimAscii)
+  428. `trim­Ascii`
+    1. [`String.trim­Ascii`](Basic-Types/Strings/#String___trimAscii)
+  429. `trim­Ascii­End`
+    1. [`String.Slice.trim­Ascii­End`](Basic-Types/Strings/#String___Slice___trimAsciiEnd)
+  430. `trim­Ascii­End`
+    1. [`String.trim­Ascii­End`](Basic-Types/Strings/#String___trimAsciiEnd)
+  431. `trim­Ascii­Start`
+    1. [`String.Slice.trim­Ascii­Start`](Basic-Types/Strings/#String___Slice___trimAsciiStart)
+  432. `trim­Ascii­Start`
+    1. [`String.trim­Ascii­Start`](Basic-Types/Strings/#String___trimAsciiStart)
+  433. `trim­Left`
+    1. [`Substring.Raw.trim­Left`](Basic-Types/Strings/#Substring___Raw___trimLeft)
+  434. `trim­Right`
+    1. [`Substring.Raw.trim­Right`](Basic-Types/Strings/#Substring___Raw___trimRight)
+  435. [`trivial`](Tactic-Proofs/Tactic-Reference/#trivial)
+  436. `truncate`
+    1. [`BitVec.truncate`](Basic-Types/Bitvectors/#BitVec___truncate)
+  437. `truncate`
+    1. [`IO.FS.Handle.truncate`](IO/Files___-File-Handles___-and-Streams/#IO___FS___Handle___truncate)
+  438. `try` [(0)](Tactic-Proofs/The-Tactic-Language/#try) [(1)](Tactic-Proofs/Targeted-Rewriting-with--conv/#Lean___Parser___Tactic___Conv___convTry_)
+  439. `try­Catch`
+    1. [`EStateM.try­Catch`](Functors___-Monads-and--do--Notation/Varieties-of-Monads/#EStateM___tryCatch)
+  440. `try­Catch`
+    1. [`Except.try­Catch`](Functors___-Monads-and--do--Notation/Varieties-of-Monads/#Except___tryCatch)
+  441. `try­Catch`
+    1. [`ExceptT.try­Catch`](Functors___-Monads-and--do--Notation/Varieties-of-Monads/#ExceptT___tryCatch)
+  442. `try­Catch`
+    1. [`MonadExcept.try­Catch` (class method)](Functors___-Monads-and--do--Notation/Varieties-of-Monads/#MonadExcept___mk)
+  443. `try­Catch`
+    1. [`Monad­ExceptOf.try­Catch` (class method)](Functors___-Monads-and--do--Notation/Varieties-of-Monads/#MonadExceptOf___mk)
+  444. `try­Catch`
+    1. [`Option.try­Catch`](Basic-Types/Optional-Values/#Option___tryCatch)
+  445. `try­Catch`
+    1. [`OptionT.try­Catch`](Functors___-Monads-and--do--Notation/Varieties-of-Monads/#OptionT___tryCatch)
+  446. [`try­Catch­The`](Functors___-Monads-and--do--Notation/Varieties-of-Monads/#tryCatchThe)
+  447. `try­Finally'`
+    1. [`MonadFinally.try­Finally'` (class method)](Functors___-Monads-and--do--Notation/Varieties-of-Monads/#MonadFinally___mk)
+  448. `try­Lock`
+    1. [`IO.FS.Handle.try­Lock`](IO/Files___-File-Handles___-and-Streams/#IO___FS___Handle___tryLock)
+  449. `try­Wait`
+    1. [`IO.Process.Child.try­Wait`](IO/Processes/#IO___Process___Child___tryWait)
+  450. `two­Pow`
+    1. [`BitVec.two­Pow`](Basic-Types/Bitvectors/#BitVec___twoPow)
+  451. [type constructor](The-Type-System/Inductive-Types/#--index--next-next-next-next-next-next-next-next-next-next-next-next-next-next)
+  452. `type`
+    1. [`IO.FS.Metadata.type` (structure field)](IO/Files___-File-Handles___-and-Streams/#IO___FS___Metadata___mk)
+  453. `type`
+    1. [`eval.type`](Interacting-with-Lean/#eval___type)
+  454. [`type_eq_of_heq`](Basic-Propositions/Propositional-Equality/#type_eq_of_heq)
+
+
+##  U
+  1. [`UInt16`](Basic-Types/Fixed-Precision-Integers/#UInt16___ofBitVec)
+  2. [`UInt16.add`](Basic-Types/Fixed-Precision-Integers/#UInt16___add)
+  3. [`UInt16.complement`](Basic-Types/Fixed-Precision-Integers/#UInt16___complement)
+  4. [`UInt16.dec­Eq`](Basic-Types/Fixed-Precision-Integers/#UInt16___decEq)
+  5. [`UInt16.dec­Le`](Basic-Types/Fixed-Precision-Integers/#UInt16___decLe)
+  6. [`UInt16.dec­Lt`](Basic-Types/Fixed-Precision-Integers/#UInt16___decLt)
+  7. [`UInt16.div`](Basic-Types/Fixed-Precision-Integers/#UInt16___div)
+  8. [`UInt16.land`](Basic-Types/Fixed-Precision-Integers/#UInt16___land)
+  9. [`UInt16.le`](Basic-Types/Fixed-Precision-Integers/#UInt16___le)
+  10. [`UInt16.log2`](Basic-Types/Fixed-Precision-Integers/#UInt16___log2)
+  11. [`UInt16.lor`](Basic-Types/Fixed-Precision-Integers/#UInt16___lor)
+  12. [`UInt16.lt`](Basic-Types/Fixed-Precision-Integers/#UInt16___lt)
+  13. [`UInt16.mod`](Basic-Types/Fixed-Precision-Integers/#UInt16___mod)
+  14. [`UInt16.mul`](Basic-Types/Fixed-Precision-Integers/#UInt16___mul)
+  15. [`UInt16.neg`](Basic-Types/Fixed-Precision-Integers/#UInt16___neg)
+  16. `UInt16.of­Bit­Vec`
+    1. [Constructor of `UInt16`](Basic-Types/Fixed-Precision-Integers/#UInt16___ofBitVec)
+  17. [`UInt16.of­Fin`](Basic-Types/Fixed-Precision-Integers/#UInt16___ofFin)
+  18. [`UInt16.of­Nat`](Basic-Types/Fixed-Precision-Integers/#UInt16___ofNat)
+  19. [`UInt16.of­Nat­LT`](Basic-Types/Fixed-Precision-Integers/#UInt16___ofNatLT)
+  20. [`UInt16.of­Nat­Truncate`](Basic-Types/Fixed-Precision-Integers/#UInt16___ofNatTruncate)
+  21. [`UInt16.shift­Left`](Basic-Types/Fixed-Precision-Integers/#UInt16___shiftLeft)
+  22. [`UInt16.shift­Right`](Basic-Types/Fixed-Precision-Integers/#UInt16___shiftRight)
+  23. [`UInt16.size`](Basic-Types/Fixed-Precision-Integers/#UInt16___size)
+  24. [`UInt16.sub`](Basic-Types/Fixed-Precision-Integers/#UInt16___sub)
+  25. [`UInt16.to­Fin`](Basic-Types/Fixed-Precision-Integers/#UInt16___toFin)
+  26. [`UInt16.to­Float`](Basic-Types/Fixed-Precision-Integers/#UInt16___toFloat)
+  27. [`UInt16.to­Float32`](Basic-Types/Fixed-Precision-Integers/#UInt16___toFloat32)
+  28. [`UInt16.to­Int16`](Basic-Types/Fixed-Precision-Integers/#UInt16___toInt16)
+  29. [`UInt16.to­Nat`](Basic-Types/Fixed-Precision-Integers/#UInt16___toNat)
+  30. [`UInt16.to­UInt32`](Basic-Types/Fixed-Precision-Integers/#UInt16___toUInt32)
+  31. [`UInt16.to­UInt64`](Basic-Types/Fixed-Precision-Integers/#UInt16___toUInt64)
+  32. [`UInt16.to­UInt8`](Basic-Types/Fixed-Precision-Integers/#UInt16___toUInt8)
+  33. [`UInt16.to­USize`](Basic-Types/Fixed-Precision-Integers/#UInt16___toUSize)
+  34. [`UInt16.xor`](Basic-Types/Fixed-Precision-Integers/#UInt16___xor)
+  35. [`UInt32`](Basic-Types/Fixed-Precision-Integers/#UInt32___ofBitVec)
+  36. [`UInt32.add`](Basic-Types/Fixed-Precision-Integers/#UInt32___add)
+  37. [`UInt32.complement`](Basic-Types/Fixed-Precision-Integers/#UInt32___complement)
+  38. [`UInt32.dec­Eq`](Basic-Types/Fixed-Precision-Integers/#UInt32___decEq)
+  39. [`UInt32.dec­Le`](Basic-Types/Fixed-Precision-Integers/#UInt32___decLe)
+  40. [`UInt32.dec­Lt`](Basic-Types/Fixed-Precision-Integers/#UInt32___decLt)
+  41. [`UInt32.div`](Basic-Types/Fixed-Precision-Integers/#UInt32___div)
+  42. [`UInt32.is­Valid­Char`](Basic-Types/Fixed-Precision-Integers/#UInt32___isValidChar)
+  43. [`UInt32.land`](Basic-Types/Fixed-Precision-Integers/#UInt32___land)
+  44. [`UInt32.le`](Basic-Types/Fixed-Precision-Integers/#UInt32___le)
+  45. [`UInt32.log2`](Basic-Types/Fixed-Precision-Integers/#UInt32___log2)
+  46. [`UInt32.lor`](Basic-Types/Fixed-Precision-Integers/#UInt32___lor)
+  47. [`UInt32.lt`](Basic-Types/Fixed-Precision-Integers/#UInt32___lt)
+  48. [`UInt32.mod`](Basic-Types/Fixed-Precision-Integers/#UInt32___mod)
+  49. [`UInt32.mul`](Basic-Types/Fixed-Precision-Integers/#UInt32___mul)
+  50. [`UInt32.neg`](Basic-Types/Fixed-Precision-Integers/#UInt32___neg)
+  51. `UInt32.of­Bit­Vec`
+    1. [Constructor of `UInt32`](Basic-Types/Fixed-Precision-Integers/#UInt32___ofBitVec)
+  52. [`UInt32.of­Fin`](Basic-Types/Fixed-Precision-Integers/#UInt32___ofFin)
+  53. [`UInt32.of­Nat`](Basic-Types/Fixed-Precision-Integers/#UInt32___ofNat)
+  54. [`UInt32.of­Nat­LT`](Basic-Types/Fixed-Precision-Integers/#UInt32___ofNatLT)
+  55. [`UInt32.of­Nat­Truncate`](Basic-Types/Fixed-Precision-Integers/#UInt32___ofNatTruncate)
+  56. [`UInt32.shift­Left`](Basic-Types/Fixed-Precision-Integers/#UInt32___shiftLeft)
+  57. [`UInt32.shift­Right`](Basic-Types/Fixed-Precision-Integers/#UInt32___shiftRight)
+  58. [`UInt32.size`](Basic-Types/Fixed-Precision-Integers/#UInt32___size)
+  59. [`UInt32.sub`](Basic-Types/Fixed-Precision-Integers/#UInt32___sub)
+  60. [`UInt32.to­Fin`](Basic-Types/Fixed-Precision-Integers/#UInt32___toFin)
+  61. [`UInt32.to­Float`](Basic-Types/Fixed-Precision-Integers/#UInt32___toFloat)
+  62. [`UInt32.to­Float32`](Basic-Types/Fixed-Precision-Integers/#UInt32___toFloat32)
+  63. [`UInt32.to­Int32`](Basic-Types/Fixed-Precision-Integers/#UInt32___toInt32)
+  64. [`UInt32.to­Nat`](Basic-Types/Fixed-Precision-Integers/#UInt32___toNat)
+  65. [`UInt32.to­UInt16`](Basic-Types/Fixed-Precision-Integers/#UInt32___toUInt16)
+  66. [`UInt32.to­UInt64`](Basic-Types/Fixed-Precision-Integers/#UInt32___toUInt64)
+  67. [`UInt32.to­UInt8`](Basic-Types/Fixed-Precision-Integers/#UInt32___toUInt8)
+  68. [`UInt32.to­USize`](Basic-Types/Fixed-Precision-Integers/#UInt32___toUSize)
+  69. [`UInt32.xor`](Basic-Types/Fixed-Precision-Integers/#UInt32___xor)
+  70. [`UInt64`](Basic-Types/Fixed-Precision-Integers/#UInt64___ofBitVec)
+  71. [`UInt64.add`](Basic-Types/Fixed-Precision-Integers/#UInt64___add)
+  72. [`UInt64.complement`](Basic-Types/Fixed-Precision-Integers/#UInt64___complement)
+  73. [`UInt64.dec­Eq`](Basic-Types/Fixed-Precision-Integers/#UInt64___decEq)
+  74. [`UInt64.dec­Le`](Basic-Types/Fixed-Precision-Integers/#UInt64___decLe)
+  75. [`UInt64.dec­Lt`](Basic-Types/Fixed-Precision-Integers/#UInt64___decLt)
+  76. [`UInt64.div`](Basic-Types/Fixed-Precision-Integers/#UInt64___div)
+  77. [`UInt64.land`](Basic-Types/Fixed-Precision-Integers/#UInt64___land)
+  78. [`UInt64.le`](Basic-Types/Fixed-Precision-Integers/#UInt64___le)
+  79. [`UInt64.log2`](Basic-Types/Fixed-Precision-Integers/#UInt64___log2)
+  80. [`UInt64.lor`](Basic-Types/Fixed-Precision-Integers/#UInt64___lor)
+  81. [`UInt64.lt`](Basic-Types/Fixed-Precision-Integers/#UInt64___lt)
+  82. [`UInt64.mod`](Basic-Types/Fixed-Precision-Integers/#UInt64___mod)
+  83. [`UInt64.mul`](Basic-Types/Fixed-Precision-Integers/#UInt64___mul)
+  84. [`UInt64.neg`](Basic-Types/Fixed-Precision-Integers/#UInt64___neg)
+  85. `UInt64.of­Bit­Vec`
+    1. [Constructor of `UInt64`](Basic-Types/Fixed-Precision-Integers/#UInt64___ofBitVec)
+  86. [`UInt64.of­Fin`](Basic-Types/Fixed-Precision-Integers/#UInt64___ofFin)
+  87. [`UInt64.of­Nat`](Basic-Types/Fixed-Precision-Integers/#UInt64___ofNat)
+  88. [`UInt64.of­Nat­LT`](Basic-Types/Fixed-Precision-Integers/#UInt64___ofNatLT)
+  89. [`UInt64.of­Nat­Truncate`](Basic-Types/Fixed-Precision-Integers/#UInt64___ofNatTruncate)
+  90. [`UInt64.shift­Left`](Basic-Types/Fixed-Precision-Integers/#UInt64___shiftLeft)
+  91. [`UInt64.shift­Right`](Basic-Types/Fixed-Precision-Integers/#UInt64___shiftRight)
+  92. [`UInt64.size`](Basic-Types/Fixed-Precision-Integers/#UInt64___size)
+  93. [`UInt64.sub`](Basic-Types/Fixed-Precision-Integers/#UInt64___sub)
+  94. [`UInt64.to­Fin`](Basic-Types/Fixed-Precision-Integers/#UInt64___toFin)
+  95. [`UInt64.to­Float`](Basic-Types/Fixed-Precision-Integers/#UInt64___toFloat)
+  96. [`UInt64.to­Float32`](Basic-Types/Fixed-Precision-Integers/#UInt64___toFloat32)
+  97. [`UInt64.to­Int64`](Basic-Types/Fixed-Precision-Integers/#UInt64___toInt64)
+  98. [`UInt64.to­Nat`](Basic-Types/Fixed-Precision-Integers/#UInt64___toNat)
+  99. [`UInt64.to­UInt16`](Basic-Types/Fixed-Precision-Integers/#UInt64___toUInt16)
+  100. [`UInt64.to­UInt32`](Basic-Types/Fixed-Precision-Integers/#UInt64___toUInt32)
+  101. [`UInt64.to­UInt8`](Basic-Types/Fixed-Precision-Integers/#UInt64___toUInt8)
+  102. [`UInt64.to­USize`](Basic-Types/Fixed-Precision-Integers/#UInt64___toUSize)
+  103. [`UInt64.xor`](Basic-Types/Fixed-Precision-Integers/#UInt64___xor)
+  104. [`UInt8`](Basic-Types/Fixed-Precision-Integers/#UInt8___ofBitVec)
+  105. [`UInt8.add`](Basic-Types/Fixed-Precision-Integers/#UInt8___add)
+  106. [`UInt8.complement`](Basic-Types/Fixed-Precision-Integers/#UInt8___complement)
+  107. [`UInt8.dec­Eq`](Basic-Types/Fixed-Precision-Integers/#UInt8___decEq)
+  108. [`UInt8.dec­Le`](Basic-Types/Fixed-Precision-Integers/#UInt8___decLe)
+  109. [`UInt8.dec­Lt`](Basic-Types/Fixed-Precision-Integers/#UInt8___decLt)
+  110. [`UInt8.div`](Basic-Types/Fixed-Precision-Integers/#UInt8___div)
+  111. [`UInt8.land`](Basic-Types/Fixed-Precision-Integers/#UInt8___land)
+  112. [`UInt8.le`](Basic-Types/Fixed-Precision-Integers/#UInt8___le)
+  113. [`UInt8.log2`](Basic-Types/Fixed-Precision-Integers/#UInt8___log2)
+  114. [`UInt8.lor`](Basic-Types/Fixed-Precision-Integers/#UInt8___lor)
+  115. [`UInt8.lt`](Basic-Types/Fixed-Precision-Integers/#UInt8___lt)
+  116. [`UInt8.mod`](Basic-Types/Fixed-Precision-Integers/#UInt8___mod)
+  117. [`UInt8.mul`](Basic-Types/Fixed-Precision-Integers/#UInt8___mul)
+  118. [`UInt8.neg`](Basic-Types/Fixed-Precision-Integers/#UInt8___neg)
+  119. `UInt8.of­Bit­Vec`
+    1. [Constructor of `UInt8`](Basic-Types/Fixed-Precision-Integers/#UInt8___ofBitVec)
+  120. [`UInt8.of­Fin`](Basic-Types/Fixed-Precision-Integers/#UInt8___ofFin)
+  121. [`UInt8.of­Nat`](Basic-Types/Fixed-Precision-Integers/#UInt8___ofNat)
+  122. [`UInt8.of­Nat­LT`](Basic-Types/Fixed-Precision-Integers/#UInt8___ofNatLT)
+  123. [`UInt8.of­Nat­Truncate`](Basic-Types/Fixed-Precision-Integers/#UInt8___ofNatTruncate)
+  124. [`UInt8.shift­Left`](Basic-Types/Fixed-Precision-Integers/#UInt8___shiftLeft)
+  125. [`UInt8.shift­Right`](Basic-Types/Fixed-Precision-Integers/#UInt8___shiftRight)
+  126. [`UInt8.size`](Basic-Types/Fixed-Precision-Integers/#UInt8___size)
+  127. [`UInt8.sub`](Basic-Types/Fixed-Precision-Integers/#UInt8___sub)
+  128. [`UInt8.to­Fin`](Basic-Types/Fixed-Precision-Integers/#UInt8___toFin)
+  129. [`UInt8.to­Float`](Basic-Types/Fixed-Precision-Integers/#UInt8___toFloat)
+  130. [`UInt8.to­Float32`](Basic-Types/Fixed-Precision-Integers/#UInt8___toFloat32)
+  131. [`UInt8.to­Int8`](Basic-Types/Fixed-Precision-Integers/#UInt8___toInt8)
+  132. [`UInt8.to­Nat`](Basic-Types/Fixed-Precision-Integers/#UInt8___toNat)
+  133. [`UInt8.to­UInt16`](Basic-Types/Fixed-Precision-Integers/#UInt8___toUInt16)
+  134. [`UInt8.to­UInt32`](Basic-Types/Fixed-Precision-Integers/#UInt8___toUInt32)
+  135. [`UInt8.to­UInt64`](Basic-Types/Fixed-Precision-Integers/#UInt8___toUInt64)
+  136. [`UInt8.to­USize`](Basic-Types/Fixed-Precision-Integers/#UInt8___toUSize)
+  137. [`UInt8.xor`](Basic-Types/Fixed-Precision-Integers/#UInt8___xor)
+  138. [`ULift`](The-Type-System/Universes/#ULift___up)
+  139. `ULift.up`
+    1. [Constructor of `ULift`](The-Type-System/Universes/#ULift___up)
+  140. [`USize`](Basic-Types/Fixed-Precision-Integers/#USize___ofBitVec)
+  141. [`USize.add`](Basic-Types/Fixed-Precision-Integers/#USize___add)
+  142. [`USize.complement`](Basic-Types/Fixed-Precision-Integers/#USize___complement)
+  143. [`USize.dec­Eq`](Basic-Types/Fixed-Precision-Integers/#USize___decEq)
+  144. [`USize.dec­Le`](Basic-Types/Fixed-Precision-Integers/#USize___decLe)
+  145. [`USize.dec­Lt`](Basic-Types/Fixed-Precision-Integers/#USize___decLt)
+  146. [`USize.div`](Basic-Types/Fixed-Precision-Integers/#USize___div)
+  147. [`USize.land`](Basic-Types/Fixed-Precision-Integers/#USize___land)
+  148. [`USize.le`](Basic-Types/Fixed-Precision-Integers/#USize___le)
+  149. [`USize.log2`](Basic-Types/Fixed-Precision-Integers/#USize___log2)
+  150. [`USize.lor`](Basic-Types/Fixed-Precision-Integers/#USize___lor)
+  151. [`USize.lt`](Basic-Types/Fixed-Precision-Integers/#USize___lt)
+  152. [`USize.mod`](Basic-Types/Fixed-Precision-Integers/#USize___mod)
+  153. [`USize.mul`](Basic-Types/Fixed-Precision-Integers/#USize___mul)
+  154. [`USize.neg`](Basic-Types/Fixed-Precision-Integers/#USize___neg)
+  155. `USize.of­Bit­Vec`
+    1. [Constructor of `USize`](Basic-Types/Fixed-Precision-Integers/#USize___ofBitVec)
+  156. [`USize.of­Fin`](Basic-Types/Fixed-Precision-Integers/#USize___ofFin)
+  157. [`USize.of­Nat`](Basic-Types/Fixed-Precision-Integers/#USize___ofNat)
+  158. [`USize.of­Nat32`](Basic-Types/Fixed-Precision-Integers/#USize___ofNat32)
+  159. [`USize.of­Nat­LT`](Basic-Types/Fixed-Precision-Integers/#USize___ofNatLT)
+  160. [`USize.of­Nat­Truncate`](Basic-Types/Fixed-Precision-Integers/#USize___ofNatTruncate)
+  161. [`USize.repr`](Basic-Types/Fixed-Precision-Integers/#USize___repr)
+  162. [`USize.shift­Left`](Basic-Types/Fixed-Precision-Integers/#USize___shiftLeft)
+  163. [`USize.shift­Right`](Basic-Types/Fixed-Precision-Integers/#USize___shiftRight)
+  164. [`USize.size`](Basic-Types/Fixed-Precision-Integers/#USize___size)
+  165. [`USize.sub`](Basic-Types/Fixed-Precision-Integers/#USize___sub)
+  166. [`USize.to­Fin`](Basic-Types/Fixed-Precision-Integers/#USize___toFin)
+  167. [`USize.to­Float`](Basic-Types/Fixed-Precision-Integers/#USize___toFloat)
+  168. [`USize.to­Float32`](Basic-Types/Fixed-Precision-Integers/#USize___toFloat32)
+  169. [`USize.to­ISize`](Basic-Types/Fixed-Precision-Integers/#USize___toISize)
+  170. [`USize.to­Nat`](Basic-Types/Fixed-Precision-Integers/#USize___toNat)
+  171. [`USize.to­UInt16`](Basic-Types/Fixed-Precision-Integers/#USize___toUInt16)
+  172. [`USize.to­UInt32`](Basic-Types/Fixed-Precision-Integers/#USize___toUInt32)
+  173. [`USize.to­UInt64`](Basic-Types/Fixed-Precision-Integers/#USize___toUInt64)
+  174. [`USize.to­UInt8`](Basic-Types/Fixed-Precision-Integers/#USize___toUInt8)
+  175. [`USize.xor`](Basic-Types/Fixed-Precision-Integers/#USize___xor)
+  176. `Unexpand­M`
+    1. [`Lean.PrettyPrinter.Unexpand­M`](Notations-and-Macros/Extending-Lean___s-Output/#Lean___PrettyPrinter___UnexpandM)
+  177. `Unexpander`
+    1. [`Lean.PrettyPrinter.Unexpander`](Notations-and-Macros/Extending-Lean___s-Output/#Lean___PrettyPrinter___Unexpander)
+  178. [`Unit`](Basic-Types/The-Unit-Type/#Unit)
+  179. [`Unit.unit`](Basic-Types/The-Unit-Type/#Unit___unit)
+  180. `Upward­Enumerable`
+    1. [`Std.PRange.Upward­Enumerable`](Basic-Types/Ranges/#Std___PRange___UpwardEnumerable___mk)
+  181. `u­Lift`
+    1. [`Std.Iter.u­Lift`](Iterators/Iterator-Combinators/#Std___Iter___uLift)
+  182. `u­Lift`
+    1. [`Std.IterM.u­Lift`](Iterators/Iterator-Combinators/#Std___IterM___uLift)
+  183. `uadd­Overflow`
+    1. [`BitVec.uadd­Overflow`](Basic-Types/Bitvectors/#BitVec___uaddOverflow)
+  184. `udiv`
+    1. [`BitVec.udiv`](Basic-Types/Bitvectors/#BitVec___udiv)
+  185. `uget`
+    1. [`Array.uget`](Basic-Types/Arrays/#Array___uget)
+  186. `uget`
+    1. [`ByteArray.uget`](Basic-Types/Byte-Arrays/#ByteArray___uget)
+  187. `ule`
+    1. [`BitVec.ule`](Basic-Types/Bitvectors/#BitVec___ule)
+  188. `ult`
+    1. [`BitVec.ult`](Basic-Types/Bitvectors/#BitVec___ult)
+  189. `umod`
+    1. [`BitVec.umod`](Basic-Types/Bitvectors/#BitVec___umod)
+  190. `unattach`
+    1. [`Array.unattach`](Basic-Types/Arrays/#Array___unattach)
+  191. `unattach`
+    1. [`List.unattach`](Basic-Types/Linked-Lists/#List___unattach)
+  192. `unattach`
+    1. [`Option.unattach`](Basic-Types/Optional-Values/#Option___unattach)
+  193. `uncurry`
+    1. [`Function.uncurry`](The-Type-System/Functions/#Function___uncurry)
+  194. `uncurry`
+    1. [`Std.Do.SVal.uncurry`](The--mvcgen--tactic/Predicate-Transformers/#Std___Do___SVal___uncurry)
+  195. `unfold` [(0)](Tactic-Proofs/Tactic-Reference/#unfold) [(1)](Tactic-Proofs/Targeted-Rewriting-with--conv/#Lean___Parser___Tactic___Conv___unfold)
+  196. `unfold­Partial­App`
+    1. [`Lean.Meta.DSimp.Config.unfold­Partial­App` (structure field)](The-Simplifier/Configuring-Simplification/#Lean___Meta___DSimp___Config___mk)
+  197. `unfold­Partial­App`
+    1. [`Lean.Meta.Simp.Config.unfold­Partial­App` (structure field)](The-Simplifier/Configuring-Simplification/#Lean___Meta___Simp___Config___mk)
+  198. [`unhygienic`](Tactic-Proofs/Tactic-Reference/#unhygienic)
+  199. `union`
+    1. [`Std.DHashMap.union`](Basic-Types/Maps-and-Sets/#Std___DHashMap___union)
+  200. `union`
+    1. [`Std.HashMap.union`](Basic-Types/Maps-and-Sets/#Std___HashMap___union)
+  201. `union`
+    1. [`Std.HashSet.union`](Basic-Types/Maps-and-Sets/#Std___HashSet___union)
+  202. `unit`
+    1. [`Unit.unit`](Basic-Types/The-Unit-Type/#Unit___unit)
+  203. `unit­Of­Array`
+    1. [`Std.Ext­HashMap.unit­Of­Array`](Basic-Types/Maps-and-Sets/#Std___ExtHashMap___unitOfArray)
+  204. `unit­Of­Array`
+    1. [`Std.HashMap.unit­Of­Array`](Basic-Types/Maps-and-Sets/#Std___HashMap___unitOfArray)
+  205. `unit­Of­Array`
+    1. [`Std.TreeMap.unit­Of­Array`](Basic-Types/Maps-and-Sets/#Std___TreeMap___unitOfArray)
+  206. `unit­Of­List`
+    1. [`Std.Ext­HashMap.unit­Of­List`](Basic-Types/Maps-and-Sets/#Std___ExtHashMap___unitOfList)
+  207. `unit­Of­List`
+    1. [`Std.HashMap.unit­Of­List`](Basic-Types/Maps-and-Sets/#Std___HashMap___unitOfList)
+  208. `unit­Of­List`
+    1. [`Std.TreeMap.unit­Of­List`](Basic-Types/Maps-and-Sets/#Std___TreeMap___unitOfList)
+  209. [universe](The-Type-System/Universes/#--index--next-next)
+  210. [universe polymorphism](The-Type-System/Universes/#--index--next-next-next-next-next-next-next-next-next-next-next-next-next)
+  211. `unlock`
+    1. [`IO.FS.Handle.unlock`](IO/Files___-File-Handles___-and-Streams/#IO___FS___Handle___unlock)
+  212. `unnecessary­Simpa`
+    1. [`linter.unnecessary­Simpa`](The-Simplifier/Configuring-Simplification/#linter___unnecessarySimpa)
+  213. `unoffset­By`
+    1. [`String.Pos.Raw.unoffset­By`](Basic-Types/Strings/#String___Pos___Raw___unoffsetBy)
+  214. [`unpack` (Lake command)](Build-Tools-and-Distribution/Lake/#unpack)
+  215. [`unsafe­Base­IO`](Definitions/Recursive-Definitions/#unsafeBaseIO)
+  216. [`unsafe­Cast`](Definitions/Recursive-Definitions/#unsafeCast)
+  217. [`unsafe­EIO`](Definitions/Recursive-Definitions/#unsafeEIO)
+  218. [`unsafe­IO`](Definitions/Recursive-Definitions/#unsafeIO)
+  219. `unsupported­Syntax`
+    1. [`Lean.Macro.Exception.unsupported­Syntax`](Notations-and-Macros/Macros/#Lean___Macro___Exception___unsupportedSyntax)
+  220. `unzip`
+    1. [`Array.unzip`](Basic-Types/Arrays/#Array___unzip)
+  221. `unzip`
+    1. [`List.unzip`](Basic-Types/Linked-Lists/#List___unzip)
+  222. `unzip­TR`
+    1. [`List.unzip­TR`](Basic-Types/Linked-Lists/#List___unzipTR)
+  223. [`update` (Lake command)](Build-Tools-and-Distribution/Lake/#update)
+  224. [`upload` (Lake command)](Build-Tools-and-Distribution/Lake/#upload)
+  225. `upper`
+    1. [`Std.Rcc.upper` (structure field)](Basic-Types/Ranges/#Std___Rcc___mk)
+  226. `upper`
+    1. [`Std.Rco.upper` (structure field)](Basic-Types/Ranges/#Std___Rco___mk)
+  227. `upper`
+    1. [`Std.Ric.upper` (structure field)](Basic-Types/Ranges/#Std___Ric___mk)
+  228. `upper`
+    1. [`Std.Rio.upper` (structure field)](Basic-Types/Ranges/#Std___Rio___mk)
+  229. `upper`
+    1. [`Std.Roc.upper` (structure field)](Basic-Types/Ranges/#Std___Roc___mk)
+  230. `upper`
+    1. [`Std.Roo.upper` (structure field)](Basic-Types/Ranges/#Std___Roo___mk)
+  231. `user`
+    1. [`IO.FileRight.user` (structure field)](IO/Files___-File-Handles___-and-Streams/#IO___FileRight___mk)
+  232. `user­Error`
+    1. [`IO.user­Error`](IO/Logical-Model/#IO___userError)
+  233. `uset`
+    1. [`Array.uset`](Basic-Types/Arrays/#Array___uset)
+  234. `uset`
+    1. [`ByteArray.uset`](Basic-Types/Byte-Arrays/#ByteArray___uset)
+  235. `ushift­Right`
+    1. [`BitVec.ushift­Right`](Basic-Types/Bitvectors/#BitVec___ushiftRight)
+  236. `ushift­Right­Rec`
+    1. [`BitVec.ushift­Right­Rec`](Basic-Types/Bitvectors/#BitVec___ushiftRightRec)
+  237. `usize`
+    1. [`Array.usize`](Basic-Types/Arrays/#Array___usize)
+  238. `usize`
+    1. [`ByteArray.usize`](Basic-Types/Byte-Arrays/#ByteArray___usize)
+  239. `usub­Overflow`
+    1. [`BitVec.usub­Overflow`](Basic-Types/Bitvectors/#BitVec___usubOverflow)
+  240. `utf16Size`
+    1. [`Char.utf16Size`](Basic-Types/Characters/#Char___utf16Size)
+  241. `utf8Byte­Size`
+    1. [`String.Slice.utf8Byte­Size`](Basic-Types/Strings/#String___Slice___utf8ByteSize)
+  242. `utf8Byte­Size`
+    1. [`String.utf8Byte­Size`](Basic-Types/Strings/#String___utf8ByteSize)
+  243. `utf8Decode?`
+    1. [`ByteArray.utf8Decode?`](Basic-Types/Byte-Arrays/#ByteArray___utf8Decode___)
+  244. `utf8Decode­Char`
+    1. [`ByteArray.utf8Decode­Char`](Basic-Types/Byte-Arrays/#ByteArray___utf8DecodeChar)
+  245. `utf8Decode­Char?`
+    1. [`ByteArray.utf8Decode­Char?`](Basic-Types/Byte-Arrays/#ByteArray___utf8DecodeChar___)
+  246. `utf8Encode­Char`
+    1. [`String.utf8Encode­Char`](Basic-Types/Strings/#String___utf8EncodeChar)
+  247. `utf8Size`
+    1. [`Char.utf8Size`](Basic-Types/Characters/#Char___utf8Size)
+
+
+##  V
+  1. `val`
+    1. [`Char.val` (structure field)](Basic-Types/Characters/#Char___mk)
+  2. `val`
+    1. [`Fin.val` (structure field)](Basic-Types/Finite-Natural-Numbers/#Fin___mk)
+  3. `val`
+    1. [`Subtype.val` (structure field)](Basic-Types/Subtypes/#Subtype___mk)
+  4. `valid`
+    1. [`Char.valid` (structure field)](Basic-Types/Characters/#Char___mk)
+  5. `value`
+    1. [`For­InStep.value`](Functors___-Monads-and--do--Notation/Syntax/#ForInStep___value)
+  6. `value`
+    1. [`Lean.LeanOption.value` (structure field)](Build-Tools-and-Distribution/Lake/#Lean___LeanOption___mk)
+  7. `values`
+    1. [`Std.DHashMap.values`](Basic-Types/Maps-and-Sets/#Std___DHashMap___values)
+  8. `values`
+    1. [`Std.DTreeMap.values`](Basic-Types/Maps-and-Sets/#Std___DTreeMap___values)
+  9. `values`
+    1. [`Std.HashMap.values`](Basic-Types/Maps-and-Sets/#Std___HashMap___values)
+  10. `values`
+    1. [`Std.TreeMap.values`](Basic-Types/Maps-and-Sets/#Std___TreeMap___values)
+  11. `values­Array`
+    1. [`Std.DHashMap.values­Array`](Basic-Types/Maps-and-Sets/#Std___DHashMap___valuesArray)
+  12. `values­Array`
+    1. [`Std.DTreeMap.values­Array`](Basic-Types/Maps-and-Sets/#Std___DTreeMap___valuesArray)
+  13. `values­Array`
+    1. [`Std.HashMap.values­Array`](Basic-Types/Maps-and-Sets/#Std___HashMap___valuesArray)
+  14. `values­Array`
+    1. [`Std.TreeMap.values­Array`](Basic-Types/Maps-and-Sets/#Std___TreeMap___valuesArray)
+  15. `values­Iter`
+    1. [`Std.DHashMap.values­Iter`](Basic-Types/Maps-and-Sets/#Std___DHashMap___valuesIter)
+  16. `values­Iter`
+    1. [`Std.DTreeMap.values­Iter`](Basic-Types/Maps-and-Sets/#Std___DTreeMap___valuesIter)
+  17. `values­Iter`
+    1. [`Std.HashMap.values­Iter`](Basic-Types/Maps-and-Sets/#Std___HashMap___valuesIter)
+  18. `values­Iter`
+    1. [`Std.TreeMap.values­Iter`](Basic-Types/Maps-and-Sets/#Std___TreeMap___valuesIter)
+
+
+##  W
+  1. `WF`
+    1. [`Std.DHashMap.Raw.WF`](Basic-Types/Maps-and-Sets/#Std___DHashMap___Raw___WF___wf)
+  2. `WF`
+    1. [`Std.DTreeMap.Raw.WF`](Basic-Types/Maps-and-Sets/#Std___DTreeMap___Raw___WF___mk)
+  3. `WF`
+    1. [`Std.HashMap.Raw.WF`](Basic-Types/Maps-and-Sets/#Std___HashMap___Raw___WF___mk)
+  4. `WF`
+    1. [`Std.HashSet.Raw.WF`](Basic-Types/Maps-and-Sets/#Std___HashSet___Raw___WF___mk)
+  5. `WF`
+    1. [`Std.TreeMap.Raw.WF`](Basic-Types/Maps-and-Sets/#Std___TreeMap___Raw___WF___mk)
+  6. `WF`
+    1. [`Std.TreeSet.Raw.WF`](Basic-Types/Maps-and-Sets/#Std___TreeSet___Raw___WF___mk)
+  7. `WP`
+    1. [`Std.Do.WP`](The--mvcgen--tactic/Predicate-Transformers/#Std___Do___WP___mk)
+  8. `WPMonad`
+    1. [`Std.Do.WPMonad`](The--mvcgen--tactic/Predicate-Transformers/#Std___Do___WPMonad___mk)
+  9. [`Well­Founded`](Definitions/Recursive-Definitions/#WellFounded___intro)
+  10. [`WellFounded.fix`](Definitions/Recursive-Definitions/#WellFounded___fix)
+  11. `WellFounded.intro`
+    1. [Constructor of `Well­Founded`](Definitions/Recursive-Definitions/#WellFounded___intro)
+  12. [`Well­Founded­Relation`](Definitions/Recursive-Definitions/#WellFoundedRelation___mk)
+  13. `Well­FoundedRelation.mk`
+    1. [Instance constructor of `Well­Founded­Relation`](Definitions/Recursive-Definitions/#WellFoundedRelation___mk)
+  14. `wait`
+    1. [`IO.Process.Child.wait`](IO/Processes/#IO___Process___Child___wait)
+  15. `wait`
+    1. [`IO.wait`](IO/Tasks-and-Threads/#IO___wait)
+  16. `wait`
+    1. [`Std.Condvar.wait`](IO/Tasks-and-Threads/#Std___Condvar___wait)
+  17. `wait­Any`
+    1. [`IO.wait­Any`](IO/Tasks-and-Threads/#IO___waitAny)
+  18. `wait­Until`
+    1. [`Std.Condvar.wait­Until`](IO/Tasks-and-Threads/#Std___Condvar___waitUntil)
+  19. `walk­Dir`
+    1. [`System.FilePath.walk­Dir`](IO/Files___-File-Handles___-and-Streams/#System___FilePath___walkDir)
+  20. `warn`
+    1. [`backward.private­InPublic.warn`](Source-Files-and-Modules/#backward___privateInPublic___warn)
+  21. `warn­Exponents`
+    1. [`Lean.Meta.Simp.Config.warn­Exponents` (structure field)](The-Simplifier/Configuring-Simplification/#Lean___Meta___Simp___Config___mk)
+  22. `wf`
+    1. [`Std.Iterators.Finite.wf` (class method)](Iterators/Iterator-Definitions/#Std___Iterators___Finite___mk)
+  23. `wf`
+    1. [`Std.Iterators.Productive.wf` (class method)](Iterators/Iterator-Definitions/#Std___Iterators___Productive___mk)
+  24. `wf`
+    1. [`Well­FoundedRelation.wf` (class method)](Definitions/Recursive-Definitions/#WellFoundedRelation___mk)
+  25. `wf`
+    1. [`trace.Elab.definition.wf`](Definitions/Recursive-Definitions/#trace___Elab___definition___wf)
+  26. [`wf­Param`](Definitions/Recursive-Definitions/#wfParam)
+  27. [`which` (Elan command)](Build-Tools-and-Distribution/Managing-Toolchains-with-Elan/#which)
+  28. [`whnf`](Tactic-Proofs/Targeted-Rewriting-with--conv/#Lean___Parser___Tactic___Conv___whnf)
+  29. `with­Early­Return`
+    1. [`Std.Do.Invariant.with­Early­Return`](The--mvcgen--tactic/Predicate-Transformers/#Std___Do___Invariant___withEarlyReturn)
+  30. `with­Extension`
+    1. [`System.FilePath.with­Extension`](IO/Files___-File-Handles___-and-Streams/#System___FilePath___withExtension)
+  31. `with­File`
+    1. [`IO.FS.with­File`](IO/Files___-File-Handles___-and-Streams/#IO___FS___withFile)
+  32. `with­File­Name`
+    1. [`System.FilePath.with­File­Name`](IO/Files___-File-Handles___-and-Streams/#System___FilePath___withFileName)
+  33. `with­Fresh­Macro­Scope`
+    1. [`Lean.Macro.with­Fresh­Macro­Scope`](Notations-and-Macros/Macros/#Lean___Macro___withFreshMacroScope)
+  34. `with­Isolated­Streams`
+    1. [`IO.FS.with­Isolated­Streams`](IO/Files___-File-Handles___-and-Streams/#IO___FS___withIsolatedStreams)
+  35. [`with­Position`](Notations-and-Macros/Defining-New-Syntax/#withPosition)
+  36. [`with­Position­After­Linebreak`](Notations-and-Macros/Defining-New-Syntax/#withPositionAfterLinebreak)
+  37. `with­Reader`
+    1. [`Monad­WithReader.with­Reader` (class method)](Functors___-Monads-and--do--Notation/Varieties-of-Monads/#MonadWithReader___mk)
+  38. `with­Reader`
+    1. [`Monad­With­ReaderOf.with­Reader` (class method)](Functors___-Monads-and--do--Notation/Varieties-of-Monads/#MonadWithReaderOf___mk)
+  39. `with­Stderr`
+    1. [`IO.with­Stderr`](IO/Files___-File-Handles___-and-Streams/#IO___withStderr)
+  40. `with­Stdin`
+    1. [`IO.with­Stdin`](IO/Files___-File-Handles___-and-Streams/#IO___withStdin)
+  41. `with­Stdout`
+    1. [`IO.with­Stdout`](IO/Files___-File-Handles___-and-Streams/#IO___withStdout)
+  42. `with­Temp­Dir`
+    1. [`IO.FS.with­Temp­Dir`](IO/Files___-File-Handles___-and-Streams/#IO___FS___withTempDir)
+  43. `with­Temp­File`
+    1. [`IO.FS.with­Temp­File`](IO/Files___-File-Handles___-and-Streams/#IO___FS___withTempFile)
+  44. [`with­The­Reader`](Functors___-Monads-and--do--Notation/Varieties-of-Monads/#withTheReader)
+  45. `with_reducible` [(0)](Tactic-Proofs/The-Tactic-Language/#with_reducible) [(1)](Tactic-Proofs/Tactic-Reference/#with_reducible-next)
+  46. `with_reducible_and_instances` [(0)](Tactic-Proofs/The-Tactic-Language/#with_reducible_and_instances) [(1)](Tactic-Proofs/Tactic-Reference/#with_reducible_and_instances-next)
+  47. `with_unfolding_all` [(0)](Tactic-Proofs/The-Tactic-Language/#with_unfolding_all) [(1)](Tactic-Proofs/Tactic-Reference/#with_unfolding_all-next)
+  48. [`with_unfolding_none`](Tactic-Proofs/Tactic-Reference/#with_unfolding_none)
+  49. [`without­Position`](Notations-and-Macros/Defining-New-Syntax/#withoutPosition)
+  50. `wp`
+    1. [`Std.Do.WP.wp` (class method)](The--mvcgen--tactic/Predicate-Transformers/#Std___Do___WP___mk)
+  51. `wp_bind`
+    1. [`[anonymous]` (class method)](The--mvcgen--tactic/Predicate-Transformers/#Std___Do___WPMonad___mk)
+  52. `wp_pure`
+    1. [`[anonymous]` (class method)](The--mvcgen--tactic/Predicate-Transformers/#Std___Do___WPMonad___mk)
+  53. `write`
+    1. [`IO.AccessRight.write` (structure field)](IO/Files___-File-Handles___-and-Streams/#IO___AccessRight___mk)
+  54. `write`
+    1. [`IO.FS.Handle.write`](IO/Files___-File-Handles___-and-Streams/#IO___FS___Handle___write)
+  55. `write`
+    1. [`IO.FS.Stream.write` (structure field)](IO/Files___-File-Handles___-and-Streams/#IO___FS___Stream___mk)
+  56. `write­Bin­File`
+    1. [`IO.FS.write­Bin­File`](IO/Files___-File-Handles___-and-Streams/#IO___FS___writeBinFile)
+  57. `write­File`
+    1. [`IO.FS.write­File`](IO/Files___-File-Handles___-and-Streams/#IO___FS___writeFile)
+
+
+##  X
+  1. [`Xor­Op`](Type-Classes/Basic-Classes/#XorOp___mk)
+  2. `XorOp.mk`
+    1. [Instance constructor of `Xor­Op`](Type-Classes/Basic-Classes/#XorOp___mk)
+  3. `xor`
+    1. [`BitVec.xor`](Basic-Types/Bitvectors/#BitVec___xor)
+  4. `xor`
+    1. [`Bool.xor`](Basic-Types/Booleans/#Bool___xor)
+  5. `xor`
+    1. [`Fin.xor`](Basic-Types/Finite-Natural-Numbers/#Fin___xor)
+  6. `xor`
+    1. [`ISize.xor`](Basic-Types/Fixed-Precision-Integers/#ISize___xor)
+  7. `xor`
+    1. [`Int16.xor`](Basic-Types/Fixed-Precision-Integers/#Int16___xor)
+  8. `xor`
+    1. [`Int32.xor`](Basic-Types/Fixed-Precision-Integers/#Int32___xor)
+  9. `xor`
+    1. [`Int64.xor`](Basic-Types/Fixed-Precision-Integers/#Int64___xor)
+  10. `xor`
+    1. [`Int8.xor`](Basic-Types/Fixed-Precision-Integers/#Int8___xor)
+  11. `xor`
+    1. [`Nat.xor`](Basic-Types/Natural-Numbers/#Nat___xor)
+  12. `xor`
+    1. [`UInt16.xor`](Basic-Types/Fixed-Precision-Integers/#UInt16___xor)
+  13. `xor`
+    1. [`UInt32.xor`](Basic-Types/Fixed-Precision-Integers/#UInt32___xor)
+  14. `xor`
+    1. [`UInt64.xor`](Basic-Types/Fixed-Precision-Integers/#UInt64___xor)
+  15. `xor`
+    1. [`UInt8.xor`](Basic-Types/Fixed-Precision-Integers/#UInt8___xor)
+  16. `xor`
+    1. [`USize.xor`](Basic-Types/Fixed-Precision-Integers/#USize___xor)
+  17. `xor`
+    1. [`XorOp.xor` (class method)](Type-Classes/Basic-Classes/#XorOp___mk)
+
+
+##  Y
+  1. `yield`
+    1. [`Std.Plausible­IterStep.yield`](Iterators/Iterator-Definitions/#Std___PlausibleIterStep___yield)
+
+
+##  Z
+  1. [`Zero`](Type-Classes/Basic-Classes/#Zero___mk)
+  2. `Zero.mk`
+    1. [Instance constructor of `Zero`](Type-Classes/Basic-Classes/#Zero___mk)
+  3. `zero`
+    1. [`BitVec.zero`](Basic-Types/Bitvectors/#BitVec___zero)
+  4. `zero`
+    1. [`Zero.zero` (class method)](Type-Classes/Basic-Classes/#Zero___mk)
+  5. `zero­Extend`
+    1. [`BitVec.zero­Extend`](Basic-Types/Bitvectors/#BitVec___zeroExtend)
+  6. `zero_lt_one`
+    1. [`[anonymous]` (class method)](The--grind--tactic/Linear-Arithmetic-Solver/#Lean___Grind___OrderedRing___mk)
+  7. `zero_mul`
+    1. [`Lean.Grind.Semiring.left_distrib` (class method)](The--grind--tactic/Algebraic-Solver-_LPAR_Commutative-Rings___-Fields_RPAR_/#Lean___Grind___Semiring___mk)
+  8. `zero_ne_one`
+    1. [`[anonymous]` (class method)](The--grind--tactic/Algebraic-Solver-_LPAR_Commutative-Rings___-Fields_RPAR_/#Lean___Grind___Field___mk)
+  9. `zero_nsmul`
+    1. [`[anonymous]` (class method)](The--grind--tactic/Linear-Arithmetic-Solver/#Lean___Grind___NatModule___mk)
+  10. `zero_zsmul`
+    1. [`[anonymous]` (class method)](The--grind--tactic/Linear-Arithmetic-Solver/#Lean___Grind___IntModule___mk)
+  11. [`zeta`](Tactic-Proofs/Targeted-Rewriting-with--conv/#Lean___Parser___Tactic___Conv___zeta)
+  12. `zeta`
+    1. [`Lean.Meta.DSimp.Config.zeta` (structure field)](The-Simplifier/Configuring-Simplification/#Lean___Meta___DSimp___Config___mk)
+  13. `zeta`
+    1. [`Lean.Meta.Simp.Config.zeta` (structure field)](The-Simplifier/Configuring-Simplification/#Lean___Meta___Simp___Config___mk)
+  14. `zeta­Delta`
+    1. [`Lean.Meta.DSimp.Config.zeta­Delta` (structure field)](The-Simplifier/Configuring-Simplification/#Lean___Meta___DSimp___Config___mk)
+  15. `zeta­Delta`
+    1. [`Lean.Meta.Simp.Config.zeta­Delta` (structure field)](The-Simplifier/Configuring-Simplification/#Lean___Meta___Simp___Config___mk)
+  16. `zeta­Have`
+    1. [`Lean.Meta.DSimp.Config.zeta­Have` (structure field)](The-Simplifier/Configuring-Simplification/#Lean___Meta___DSimp___Config___mk)
+  17. `zeta­Have`
+    1. [`Lean.Meta.Simp.Config.zeta­Have` (structure field)](The-Simplifier/Configuring-Simplification/#Lean___Meta___Simp___Config___mk)
+  18. `zeta­Unused`
+    1. [`Lean.Meta.DSimp.Config.zeta­Unused` (structure field)](The-Simplifier/Configuring-Simplification/#Lean___Meta___DSimp___Config___mk)
+  19. `zeta­Unused`
+    1. [`Lean.Meta.Simp.Config.zeta­Unused` (structure field)](The-Simplifier/Configuring-Simplification/#Lean___Meta___Simp___Config___mk)
+  20. `zip`
+    1. [`Array.zip`](Basic-Types/Arrays/#Array___zip)
+  21. `zip`
+    1. [`List.zip`](Basic-Types/Linked-Lists/#List___zip)
+  22. `zip`
+    1. [`Std.Iter.zip`](Iterators/Iterator-Combinators/#Std___Iter___zip)
+  23. `zip`
+    1. [`Std.IterM.zip`](Iterators/Iterator-Combinators/#Std___IterM___zip)
+  24. `zip­Idx`
+    1. [`Array.zip­Idx`](Basic-Types/Arrays/#Array___zipIdx)
+  25. `zip­Idx`
+    1. [`List.zip­Idx`](Basic-Types/Linked-Lists/#List___zipIdx)
+  26. `zip­Idx­TR`
+    1. [`List.zip­Idx­TR`](Basic-Types/Linked-Lists/#List___zipIdxTR)
+  27. `zip­With`
+    1. [`Array.zip­With`](Basic-Types/Arrays/#Array___zipWith)
+  28. `zip­With`
+    1. [`List.zip­With`](Basic-Types/Linked-Lists/#List___zipWith)
+  29. `zip­With­All`
+    1. [`Array.zip­With­All`](Basic-Types/Arrays/#Array___zipWithAll)
+  30. `zip­With­All`
+    1. [`List.zip­With­All`](Basic-Types/Linked-Lists/#List___zipWithAll)
+  31. `zip­With­TR`
+    1. [`List.zip­With­TR`](Basic-Types/Linked-Lists/#List___zipWithTR)
+  32. `zpow`
+    1. [`[anonymous]` (class method)](The--grind--tactic/Algebraic-Solver-_LPAR_Commutative-Rings___-Fields_RPAR_/#Lean___Grind___Field___mk)
+  33. `zpow_neg`
+    1. [`[anonymous]` (class method)](The--grind--tactic/Algebraic-Solver-_LPAR_Commutative-Rings___-Fields_RPAR_/#Lean___Grind___Field___mk)
+  34. `zpow_succ`
+    1. [`[anonymous]` (class method)](The--grind--tactic/Algebraic-Solver-_LPAR_Commutative-Rings___-Fields_RPAR_/#Lean___Grind___Field___mk)
+  35. `zpow_zero`
+    1. [`[anonymous]` (class method)](The--grind--tactic/Algebraic-Solver-_LPAR_Commutative-Rings___-Fields_RPAR_/#Lean___Grind___Field___mk)
+  36. `zsmul`
+    1. `[anonymous]` (class method) [(0)](The--grind--tactic/Algebraic-Solver-_LPAR_Commutative-Rings___-Fields_RPAR_/#Lean___Grind___Ring___mk) [(1)](The--grind--tactic/Linear-Arithmetic-Solver/#Lean___Grind___IntModule___mk)
+  37. `zsmul_nat­Cast_eq_nsmul`
+    1. `[anonymous]` (class method) [(0)](The--grind--tactic/Algebraic-Solver-_LPAR_Commutative-Rings___-Fields_RPAR_/#Lean___Grind___Ring___mk) [(1)](The--grind--tactic/Linear-Arithmetic-Solver/#Lean___Grind___IntModule___mk)
+
+
+[←Supported Platforms](platforms/#platforms "Supported Platforms")

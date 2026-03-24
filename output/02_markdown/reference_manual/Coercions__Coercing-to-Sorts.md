@@ -1,0 +1,65 @@
+[←11.2. Coercing Between Types](Coercions/Coercing-Between-Types/#ordinary-coercion "11.2. Coercing Between Types")[11.4. Coercing to Function Types→](Coercions/Coercing-to-Function-Types/#fun-coercion "11.4. Coercing to Function Types")
+#  11.3. Coercing to Sorts[🔗](find/?domain=Verso.Genre.Manual.section&name=sort-coercion "Permalink")
+The Lean elaborator expects types in certain positions without necessarily being able to determine the type's [universe](The-Type-System/Universes/#--tech-term-universes) ahead of time. For example, the term following the colon in a definition header might be a proposition or a type. The ordinary coercion mechanism is not applicable because it requires a specific expected type, and there's no way to express that the expected type could be _any_ universe in the `[Coe](Coercions/#Coe___mk "Documentation for Coe")` class.
+When a term is elaborated in a position where a proposition or type is expected, but the inferred type of the elaborated term is not a proposition or type, Lean attempts to recover from the error by synthesizing an instance of `[CoeSort](Coercions/Coercing-to-Sorts/#CoeSort___mk "Documentation for CoeSort")`. If the instance is found, and the resulting type is itself a type, then it the coercion is inserted and unfolded.
+Not every situation in which the elaborator expects a universe requires `[CoeSort](Coercions/Coercing-to-Sorts/#CoeSort___mk "Documentation for CoeSort")`. In some cases, a particular universe is available as an expected type. In these situations, ordinary coercion insertion using `[CoeT](Coercions/Coercing-Between-Types/#CoeT___mk "Documentation for CoeT")` is used. Instances of `[CoeSort](Coercions/Coercing-to-Sorts/#CoeSort___mk "Documentation for CoeSort")` can be used to synthesize instances of `[CoeOut](Coercions/Coercing-Between-Types/#CoeOut___mk "Documentation for CoeOut")`, so no separate instance is needed to support this use case. In general, coercions to types should be implemented as `[CoeSort](Coercions/Coercing-to-Sorts/#CoeSort___mk "Documentation for CoeSort")`.
+[🔗](find/?domain=Verso.Genre.Manual.doc&name=CoeSort "Permalink")type class
+```
+
+
+CoeSort.{u, v} (α : Sort u) (β : [outParam](Type-Classes/Instance-Synthesis/#outParam "Documentation for outParam") (Sort v)) :
+  Sort (max (max 1 u) v)
+
+
+CoeSort.{u, v} (α : Sort u)
+  (β : [outParam](Type-Classes/Instance-Synthesis/#outParam "Documentation for outParam") (Sort v)) :
+  Sort (max (max 1 u) v)
+
+
+```
+
+`[CoeSort](Coercions/Coercing-to-Sorts/#CoeSort___mk "Documentation for CoeSort") α β` is a coercion to a sort. `β` must be a universe, and this is triggered when `a : α` appears in a place where a type is expected, like `(x : a)` or `a → a`. `[CoeSort](Coercions/Coercing-to-Sorts/#CoeSort___mk "Documentation for CoeSort")` instances apply to `[CoeOut](Coercions/Coercing-Between-Types/#CoeOut___mk "Documentation for CoeOut")` as well.
+#  Instance Constructor
+
+```
+[CoeSort.mk](Coercions/Coercing-to-Sorts/#CoeSort___mk "Documentation for CoeSort.mk").{u, v}
+```
+
+#  Methods
+
+```
+coe : α → β
+```
+
+Coerces a value of type `α` to `β`, which must be a universe.
+syntaxExplicit Coercion to Sorts
+
+```
+term ::= ...
+    | 
+
+
+↥ t coerces t to a type. 
+
+
+↥ term
+```
+
+Coercions to sorts can be explicitly triggered using the `↥` prefix operator.
+Sort Coercions
+A monoid is a type equipped with an associative binary operation and an identity element. While monoid structure can be defined as a type class, it can also be defined as a structure that “bundles up” the structure with the type:
+`structure Monoid where   Carrier : Type u   op : Carrier → Carrier → Carrier   id : Carrier   op_assoc :     ∀ (x y z : Carrier), op x (op y z) = op (op x y) z   id_op_identity : ∀ (x : Carrier), op id x = x   op_id_identity : ∀ (x : Carrier), op x id = x `
+The type `[Monoid](Coercions/Coercing-to-Sorts/#Monoid-_LPAR_in-Sort-Coercions_RPAR_ "Definition of example")` does not indicate the carrier:
+`def StringMonoid : [Monoid](Coercions/Coercing-to-Sorts/#Monoid-_LPAR_in-Sort-Coercions_RPAR_ "Definition of example") where   [Carrier](Coercions/Coercing-to-Sorts/#Monoid___Carrier-_LPAR_in-Sort-Coercions_RPAR_ "Definition of example") := [String](Basic-Types/Strings/#String___ofByteArray "Documentation for String")   [op](Coercions/Coercing-to-Sorts/#Monoid___op-_LPAR_in-Sort-Coercions_RPAR_ "Definition of example") := (· ++ ·)   [id](Coercions/Coercing-to-Sorts/#Monoid___id-_LPAR_in-Sort-Coercions_RPAR_ "Definition of example") := ""   [op_assoc](Coercions/Coercing-to-Sorts/#Monoid___op_assoc-_LPAR_in-Sort-Coercions_RPAR_ "Definition of example") := by⊢ ∀ (x y z : [String](Basic-Types/Strings/#String___ofByteArray "Documentation for String")), x [++](Type-Classes/Basic-Classes/#HAppend___mk "Documentation for HAppend.hAppend") [(](Type-Classes/Basic-Classes/#HAppend___mk "Documentation for HAppend.hAppend")y [++](Type-Classes/Basic-Classes/#HAppend___mk "Documentation for HAppend.hAppend") z[)](Type-Classes/Basic-Classes/#HAppend___mk "Documentation for HAppend.hAppend") [=](Basic-Propositions/Propositional-Equality/#Eq___refl "Documentation for Eq") x [++](Type-Classes/Basic-Classes/#HAppend___mk "Documentation for HAppend.hAppend") y [++](Type-Classes/Basic-Classes/#HAppend___mk "Documentation for HAppend.hAppend") z [intros](Tactic-Proofs/Tactic-Reference/#intros "Documentation for tactic")x✝:[String](Basic-Types/Strings/#String___ofByteArray "Documentation for String")y✝:[String](Basic-Types/Strings/#String___ofByteArray "Documentation for String")z✝:[String](Basic-Types/Strings/#String___ofByteArray "Documentation for String")⊢ x✝ [++](Type-Classes/Basic-Classes/#HAppend___mk "Documentation for HAppend.hAppend") [(](Type-Classes/Basic-Classes/#HAppend___mk "Documentation for HAppend.hAppend")y✝ [++](Type-Classes/Basic-Classes/#HAppend___mk "Documentation for HAppend.hAppend") z✝[)](Type-Classes/Basic-Classes/#HAppend___mk "Documentation for HAppend.hAppend") [=](Basic-Propositions/Propositional-Equality/#Eq___refl "Documentation for Eq") x✝ [++](Type-Classes/Basic-Classes/#HAppend___mk "Documentation for HAppend.hAppend") y✝ [++](Type-Classes/Basic-Classes/#HAppend___mk "Documentation for HAppend.hAppend") z✝; [simp](Tactic-Proofs/Tactic-Reference/#simp "Documentation for tactic") [String.append_assoc]All goals completed! 🐙   [id_op_identity](Coercions/Coercing-to-Sorts/#Monoid___id_op_identity-_LPAR_in-Sort-Coercions_RPAR_ "Definition of example") := by⊢ ∀ (x : [String](Basic-Types/Strings/#String___ofByteArray "Documentation for String")), "" [++](Type-Classes/Basic-Classes/#HAppend___mk "Documentation for HAppend.hAppend") x [=](Basic-Propositions/Propositional-Equality/#Eq___refl "Documentation for Eq") x [intros](Tactic-Proofs/Tactic-Reference/#intros "Documentation for tactic")x✝:[String](Basic-Types/Strings/#String___ofByteArray "Documentation for String")⊢ "" [++](Type-Classes/Basic-Classes/#HAppend___mk "Documentation for HAppend.hAppend") x✝ [=](Basic-Propositions/Propositional-Equality/#Eq___refl "Documentation for Eq") x✝; [simp](Tactic-Proofs/Tactic-Reference/#simp "Documentation for tactic")All goals completed! 🐙   [op_id_identity](Coercions/Coercing-to-Sorts/#Monoid___op_id_identity-_LPAR_in-Sort-Coercions_RPAR_ "Definition of example") := by⊢ ∀ (x : [String](Basic-Types/Strings/#String___ofByteArray "Documentation for String")), x [++](Type-Classes/Basic-Classes/#HAppend___mk "Documentation for HAppend.hAppend") "" [=](Basic-Propositions/Propositional-Equality/#Eq___refl "Documentation for Eq") x [intros](Tactic-Proofs/Tactic-Reference/#intros "Documentation for tactic")x✝:[String](Basic-Types/Strings/#String___ofByteArray "Documentation for String")⊢ x✝ [++](Type-Classes/Basic-Classes/#HAppend___mk "Documentation for HAppend.hAppend") "" [=](Basic-Propositions/Propositional-Equality/#Eq___refl "Documentation for Eq") x✝; [simp](Tactic-Proofs/Tactic-Reference/#simp "Documentation for tactic")All goals completed! 🐙 `
+However, a `[CoeSort](Coercions/Coercing-to-Sorts/#CoeSort___mk "Documentation for CoeSort")` instance can be implemented that applies the `[Monoid.Carrier](Coercions/Coercing-to-Sorts/#Monoid___Carrier-_LPAR_in-Sort-Coercions_RPAR_ "Definition of example")` projection when a monoid is used in a position where Lean would expect a type:
+`instance : [CoeSort](Coercions/Coercing-to-Sorts/#CoeSort___mk "Documentation for CoeSort") [Monoid](Coercions/Coercing-to-Sorts/#Monoid-_LPAR_in-Sort-Coercions_RPAR_ "Definition of example") (Type u) where   [coe](Coercions/Coercing-to-Sorts/#CoeSort___mk "Documentation for CoeSort.coe") m := m.[Carrier](Coercions/Coercing-to-Sorts/#Monoid___Carrier-_LPAR_in-Sort-Coercions_RPAR_ "Definition of example")  example : [StringMonoid](Coercions/Coercing-to-Sorts/#StringMonoid-_LPAR_in-Sort-Coercions_RPAR_ "Definition of example") := "hello" `
+[Live ↪](javascript:openLiveLink\("M4FwTgrgxiFgpgAgLIHsB2qCWATRB3AC3gQChFEBhAQzDCxMQC5EAVATwAckJzFVOzKrXqNASYTC6DMIgk0pJPriHzRYPgID61YMFRRmfCoAAiRAAoAHonaIAXipHSAlABp+gq2YHW7TxAF53c28rdj9bJRxNLVx4dBAsEBsWU0sHBTBXIOUrQIsNTk1cIpw4hKShVKsWVWc3EMRlPNJSUoAzRABlcCx0AHM0TGUWQew8IhJ4PlrGJkDu+n6C5kCzAHbEAGpNxDWnSJXEACIjgu1dfUOAIxte8FRgAG5EYCwAW0EAbQXevoA6aicbjoKI6PRQAC6kWihVi8USyUCN0a8TAD2erw+Z2KcPKiMQyLuaKeL3enBavVA1HQUCQNVQ8E6qDAIBQGDG5g43EQED8EzIFCgDMQb0Obz+M3UpHgFmoHwANnSuj1+qNhoEjsR5fLUEcgA"\))
+Sort Coercions as Ordinary Coercions
+The [inductive type](The-Type-System/Inductive-Types/#--tech-term-Inductive-types) `[NatOrBool](Coercions/Coercing-to-Sorts/#NatOrBool-_LPAR_in-Sort-Coercions-as-Ordinary-Coercions_RPAR_ "Definition of example")` represents the types `[Nat](Basic-Types/Natural-Numbers/#Nat___zero "Documentation for Nat")` and `[Bool](Basic-Types/Booleans/#Bool___false "Documentation for Bool")`. They can be coerced to the actual types `[Nat](Basic-Types/Natural-Numbers/#Nat___zero "Documentation for Nat")` and `[Bool](Basic-Types/Booleans/#Bool___false "Documentation for Bool")`:
+`inductive NatOrBool where   | nat | bool  @[[coe](Coercions/Coercing-Between-Types/#Lean___Attr___coe "Documentation for syntax")] abbrev NatOrBool.asType : [NatOrBool](Coercions/Coercing-to-Sorts/#NatOrBool-_LPAR_in-Sort-Coercions-as-Ordinary-Coercions_RPAR_ "Definition of example") → Type   | [.nat](Coercions/Coercing-to-Sorts/#NatOrBool___nat-_LPAR_in-Sort-Coercions-as-Ordinary-Coercions_RPAR_ "Definition of example") => [Nat](Basic-Types/Natural-Numbers/#Nat___zero "Documentation for Nat")   | [.bool](Coercions/Coercing-to-Sorts/#NatOrBool___bool-_LPAR_in-Sort-Coercions-as-Ordinary-Coercions_RPAR_ "Definition of example") => [Bool](Basic-Types/Booleans/#Bool___false "Documentation for Bool")  instance : [CoeSort](Coercions/Coercing-to-Sorts/#CoeSort___mk "Documentation for CoeSort") [NatOrBool](Coercions/Coercing-to-Sorts/#NatOrBool-_LPAR_in-Sort-Coercions-as-Ordinary-Coercions_RPAR_ "Definition of example") Type where   [coe](Coercions/Coercing-to-Sorts/#CoeSort___mk "Documentation for CoeSort.coe") := [NatOrBool.asType](Coercions/Coercing-to-Sorts/#NatOrBool___asType-_LPAR_in-Sort-Coercions-as-Ordinary-Coercions_RPAR_ "Definition of example")  [open](Namespaces-and-Sections/#Lean___Parser___Command___open "Documentation for syntax") NatOrBool `
+The `[CoeSort](Coercions/Coercing-to-Sorts/#CoeSort___mk "Documentation for CoeSort")` instance is used when `[nat](Coercions/Coercing-to-Sorts/#NatOrBool___nat-_LPAR_in-Sort-Coercions-as-Ordinary-Coercions_RPAR_ "Definition of example")` occurs to the right of a colon:
+`def x : [nat](Coercions/Coercing-to-Sorts/#NatOrBool___nat-_LPAR_in-Sort-Coercions-as-Ordinary-Coercions_RPAR_ "Definition of example") := 5 `
+When an expected type is available, ordinary coercion insertion is used. In this case, the `[CoeSort](Coercions/Coercing-to-Sorts/#CoeSort___mk "Documentation for CoeSort")` instance is used to synthesize a `[CoeOut](Coercions/Coercing-Between-Types/#CoeOut___mk "Documentation for CoeOut") [NatOrBool](Coercions/Coercing-to-Sorts/#NatOrBool-_LPAR_in-Sort-Coercions-as-Ordinary-Coercions_RPAR_ "Definition of example") Type` instance, which chains with the `[Coe](Coercions/#Coe___mk "Documentation for Coe") Type ([Option](Basic-Types/Optional-Values/#Option___none "Documentation for Option") Type)` instance to recover from the type error.
+`def y : [Option](Basic-Types/Optional-Values/#Option___none "Documentation for Option") Type := [bool](Coercions/Coercing-to-Sorts/#NatOrBool___bool-_LPAR_in-Sort-Coercions-as-Ordinary-Coercions_RPAR_ "Definition of example") `
+[Live ↪](javascript:openLiveLink\("JYOwJgrgxgLsBuBTABAOQIYwPICcBCA9gQDbIDuAFojogFDLIA+yImTyARkcbbQAIBtKAUQBdWug4ca8NJlyESAOnQBnACoBPAA4oAXHOz5uyQEmEyLbvrslrGMgC8APkPXmSriUcvFPWqFUYdBAofWQAYREAZQIcewwjXwsdFEpqOgZhfQdDBW4VDRTeAl0QXOMSXjBEADNkAA9kAzsmnIBWKtrkTSbkLG04AjLLbM5uIA"\))
+[←11.2. Coercing Between Types](Coercions/Coercing-Between-Types/#ordinary-coercion "11.2. Coercing Between Types")[11.4. Coercing to Function Types→](Coercions/Coercing-to-Function-Types/#fun-coercion "11.4. Coercing to Function Types")

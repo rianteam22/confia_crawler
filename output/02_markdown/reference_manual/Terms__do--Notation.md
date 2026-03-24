@@ -1,0 +1,4 @@
+[←13.11. Quotation and Antiquotation](Terms/Quotation-and-Antiquotation/#The-Lean-Language-Reference--Terms--Quotation-and-Antiquotation "13.11. Quotation and Antiquotation")[13.13. Proofs→](Terms/Proofs/#The-Lean-Language-Reference--Terms--Proofs "13.13. Proofs")
+#  13.12. `do`-Notation[🔗](find/?domain=Verso.Genre.Manual.section&name=The-Lean-Language-Reference--Terms--do--Notation "Permalink")
+``Lean.Parser.Term.do : term``[`do`](Functors___-Monads-and--do--Notation/Syntax/#Lean___Parser___Term___do)-notation is described [in the chapter on monads.](Functors___-Monads-and--do--Notation/Syntax/#do-notation)
+[←13.11. Quotation and Antiquotation](Terms/Quotation-and-Antiquotation/#The-Lean-Language-Reference--Terms--Quotation-and-Antiquotation "13.11. Quotation and Antiquotation")[13.13. Proofs→](Terms/Proofs/#The-Lean-Language-Reference--Terms--Proofs "13.13. Proofs")
