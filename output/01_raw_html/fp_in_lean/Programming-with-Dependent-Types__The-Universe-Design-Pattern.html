@@ -1846,7 +1846,15 @@ window.onload = () => {
         <a href="" class="header-title"><h1>
             Functional Programming in Lean</h1>
           </a></div>
-      </header>
+      <div id="search-wrapper">
+  <div class="combobox combobox-list">
+    <div class="group">
+      <div id="cb1-input" class="cb_edit" contenteditable="true" role="searchbox" placeholder="Search..." aria-autocomplete="list" aria-expanded="false" aria-controls="cb1-listbox" aria-haspopup="listbox" aria-label="Search" spellcheck="false" autocorrect="false" autocapitalize="none" inputmode="search"></div>
+    </div>
+    <ul id="cb1-listbox" role="listbox" aria-label="Results"></ul>
+  </div>
+</div>
+</header>
     <label for="toggle-toc" id="toggle-toc-click"><span class="line line1"></span><span class="line line2"></span><span class="line line3"></span></label><div class="with-toc">
       <div class="toc-backdrop" onclick="document.getElementById('toggle-toc-click')?.click()"></div>
       <nav id="toc">

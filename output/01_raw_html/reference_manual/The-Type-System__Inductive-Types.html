@@ -2533,7 +2533,15 @@ window.addEventListener("load", () => {
         <a href="" class="header-title"><h1>
             The Lean Language Reference</h1>
           </a></div>
-      </header>
+      <div id="search-wrapper">
+  <div class="combobox combobox-list">
+    <div class="group">
+      <div id="cb1-input" class="cb_edit" contenteditable="true" role="searchbox" placeholder="Search..." aria-autocomplete="list" aria-expanded="false" aria-controls="cb1-listbox" aria-haspopup="listbox" aria-label="Search" spellcheck="false" autocorrect="false" autocapitalize="none" inputmode="search"></div>
+    </div>
+    <ul id="cb1-listbox" role="listbox" aria-label="Results"></ul>
+  </div>
+</div>
+</header>
     <label for="toggle-toc" id="toggle-toc-click"><span class="line line1"></span><span class="line line2"></span><span class="line line3"></span></label><div class="with-toc">
       <div class="toc-backdrop" onclick="document.getElementById('toggle-toc-click')?.click()"></div>
       <nav id="toc">
@@ -2682,52 +2690,56 @@ When a structure is declared, Lean generates helpers that enable additional lang
               <div class="namedocs" id="command-next-next-next-next-next-next-next-next-next-next-next-next-next-next">
                 <span class="label">syntax</span><span class="title">Inductive Type Declarations</span><div class="text">
                   <pre class="grammar hl lean" data-lean-context="--grammar" id="Lean___Parser___Command___declaration"><span class="nonterminal" data-kind="command">command</span> <span class="bnf">::=</span> ...
-    <span class="bnf">|</span> <span class="from-nonterminal" data-kind="Lean.Parser.Command.declaration"><a href="Definitions/Modifiers/#Lean___Parser___Command___declModifiers"><span class="nonterminal documented" data-kind="Lean.Parser.Command.declModifiers"><code class="hover-info"><code class="docstring">`declModifiers` is the collection of modifiers on a declaration:
-* a doc comment `/-- ... -/`
-* a list of attributes `@[attr1, attr2]`
-* a visibility specifier, `private` or `public`
-* `protected`
-* `noncomputable`
-* `unsafe`
-* `partial` or `nonrec`
-
-All modifiers are optional, and have to come in the listed order.
-
-`nestedDeclModifiers` is the same as `declModifiers`, but attributes are printed
+    <span class="bnf">|</span> <span class="from-nonterminal" data-kind="Lean.Parser.Command.declaration"><a href="Definitions/Modifiers/#Lean___Parser___Command___declModifiers"><span class="nonterminal documented" data-kind="Lean.Parser.Command.declModifiers"><code class="hover-info"><div class="docstring"><p><code>declModifiers</code> is the collection of modifiers on a declaration:</p>
+<ul>
+<li>a doc comment <code>/-- ... -/</code></li>
+<li>a list of attributes <code>@[attr1, attr2]</code></li>
+<li>a visibility specifier, <code>private</code> or <code>public</code></li>
+<li><code>protected</code></li>
+<li><code>noncomputable</code></li>
+<li><code>unsafe</code></li>
+<li><code>partial</code> or <code>nonrec</code></li>
+</ul>
+<p>All modifiers are optional, and have to come in the listed order.</p>
+<p><code>nestedDeclModifiers</code> is the same as <code>declModifiers</code>, but attributes are printed
 on the same line as the declaration. It is used for declarations nested inside other syntax,
-such as inductive constructors, structure projections, and `let rec` / `where` definitions. </code></code>declModifiers</span></a>
-      <span class="from-nonterminal documented" data-kind="Lean.Parser.Command.inductive"><code class="hover-info"><code class="docstring">In Lean, every concrete type other than the universes
+such as inductive constructors, structure projections, and <code>let rec</code> / <code>where</code> definitions. </p>
+</div></code>declModifiers</span></a>
+      <span class="from-nonterminal documented" data-kind="Lean.Parser.Command.inductive"><code class="hover-info"><div class="docstring"><p>In Lean, every concrete type other than the universes
 and every type constructor other than dependent arrows
 is an instance of a general family of type constructions known as inductive types.
 It is remarkable that it is possible to construct a substantial edifice of mathematics
 based on nothing more than the type universes, dependent arrow types, and inductive types;
 everything else follows from those.
 Intuitively, an inductive type is built up from a specified list of constructors.
-For example, `List α` is the list of elements of type `α`, and is defined as follows:
-```
-inductive List (α : Type u) where
+For example, <code>List α</code> is the list of elements of type <code>α</code>, and is defined as follows:</p>
+<pre><code>inductive List (α : Type u) where
 | nil
 | cons (head : α) (tail : List α)
-```
-A list of elements of type `α` is either the empty list, `nil`,
-or an element `head : α` followed by a list `tail : List α`.
-See [Inductive types](https://lean-lang.org/theorem_proving_in_lean4/inductive_types.html)
-for more information.
-</code></code><span class="keyword">inductive</span> <span class="nonterminal documented" data-kind="Lean.Parser.Command.declId"><code class="hover-info"><code class="docstring">`declId` matches `foo` or `foo.{u,v}`: an identifier possibly followed by a list of universe names </code></code>declId</span> <a href="Definitions/Headers-and-Signatures/#Lean___Parser___Command___optDeclSig"><span class="nonterminal documented" data-kind="Lean.Parser.Command.optDeclSig"><code class="hover-info"><code class="docstring">`optDeclSig` matches the signature of a declaration with optional type: a list of binders and then possibly `: type` </code></code>optDeclSig</span></a> <span class="from-nonterminal" data-kind="null"><span class="keyword">where</span>
-        </span><span class="from-nonterminal" data-kind="null"><span class="bnf">(</span><span class="from-nonterminal" data-kind="null"><span class="from-nonterminal" data-kind="Lean.Parser.Command.ctor"><span class="from-nonterminal" data-kind="null"></span><span class="keyword">|</span> <a href="Definitions/Modifiers/#Lean___Parser___Command___declModifiers"><span class="nonterminal documented" data-kind="Lean.Parser.Command.declModifiers"><code class="hover-info"><code class="docstring">`declModifiers` is the collection of modifiers on a declaration:
-* a doc comment `/-- ... -/`
-* a list of attributes `@[attr1, attr2]`
-* a visibility specifier, `private` or `public`
-* `protected`
-* `noncomputable`
-* `unsafe`
-* `partial` or `nonrec`
-
-All modifiers are optional, and have to come in the listed order.
-
-`nestedDeclModifiers` is the same as `declModifiers`, but attributes are printed
+</code></pre>
+<p>A list of elements of type <code>α</code> is either the empty list, <code>nil</code>,
+or an element <code>head : α</code> followed by a list <code>tail : List α</code>.
+See <a href="https://lean-lang.org/theorem_proving_in_lean4/inductive_types.html">Inductive types</a>
+for more information.</p>
+</div></code><span class="keyword">inductive</span> <span class="nonterminal documented" data-kind="Lean.Parser.Command.declId"><code class="hover-info"><div class="docstring"><p><code>declId</code> matches <code>foo</code> or <code>foo.{u,v}</code>: an identifier possibly followed by a list of universe names </p>
+</div></code>declId</span> <a href="Definitions/Headers-and-Signatures/#Lean___Parser___Command___optDeclSig"><span class="nonterminal documented" data-kind="Lean.Parser.Command.optDeclSig"><code class="hover-info"><div class="docstring"><p><code>optDeclSig</code> matches the signature of a declaration with optional type: a list of binders and then possibly <code>: type</code> </p>
+</div></code>optDeclSig</span></a> <span class="from-nonterminal" data-kind="null"><span class="keyword">where</span>
+        </span><span class="from-nonterminal" data-kind="null"><span class="bnf">(</span><span class="from-nonterminal" data-kind="null"><span class="from-nonterminal" data-kind="Lean.Parser.Command.ctor"><span class="from-nonterminal" data-kind="null"></span><span class="keyword">|</span> <a href="Definitions/Modifiers/#Lean___Parser___Command___declModifiers"><span class="nonterminal documented" data-kind="Lean.Parser.Command.declModifiers"><code class="hover-info"><div class="docstring"><p><code>declModifiers</code> is the collection of modifiers on a declaration:</p>
+<ul>
+<li>a doc comment <code>/-- ... -/</code></li>
+<li>a list of attributes <code>@[attr1, attr2]</code></li>
+<li>a visibility specifier, <code>private</code> or <code>public</code></li>
+<li><code>protected</code></li>
+<li><code>noncomputable</code></li>
+<li><code>unsafe</code></li>
+<li><code>partial</code> or <code>nonrec</code></li>
+</ul>
+<p>All modifiers are optional, and have to come in the listed order.</p>
+<p><code>nestedDeclModifiers</code> is the same as <code>declModifiers</code>, but attributes are printed
 on the same line as the declaration. It is used for declarations nested inside other syntax,
-such as inductive constructors, structure projections, and `let rec` / `where` definitions. </code></code>declModifiers</span></a> <span class="nonterminal" data-kind="ident">ident</span> <a href="Definitions/Headers-and-Signatures/#Lean___Parser___Command___optDeclSig"><span class="nonterminal documented" data-kind="Lean.Parser.Command.optDeclSig"><code class="hover-info"><code class="docstring">`optDeclSig` matches the signature of a declaration with optional type: a list of binders and then possibly `: type` </code></code>optDeclSig</span></a></span></span><span class="bnf">)*</span>
+such as inductive constructors, structure projections, and <code>let rec</code> / <code>where</code> definitions. </p>
+</div></code>declModifiers</span></a> <span class="nonterminal" data-kind="ident">ident</span> <a href="Definitions/Headers-and-Signatures/#Lean___Parser___Command___optDeclSig"><span class="nonterminal documented" data-kind="Lean.Parser.Command.optDeclSig"><code class="hover-info"><div class="docstring"><p><code>optDeclSig</code> matches the signature of a declaration with optional type: a list of binders and then possibly <code>: type</code> </p>
+</div></code>optDeclSig</span></a></span></span><span class="bnf">)*</span>
       </span><span class="from-nonterminal" data-kind="null"></span><span class="from-nonterminal" data-kind="Lean.Parser.Command.optDeriving"><span class="from-nonterminal" data-kind="null"><span class="bnf">(</span><span class="from-nonterminal" data-kind="null"><a href="Type-Classes/Deriving-Instances/#Lean___Parser___Command___optDeriving-next"><span class="keyword">deriving</span></a> <span class="from-nonterminal" data-kind="null"><span class="from-nonterminal" data-kind="null"><span class="from-nonterminal" data-kind="Lean.Parser.Command.derivingClass"><span class="from-nonterminal" data-kind="null"></span><span class="nonterminal" data-kind="ident">ident</span></span></span><span class="bnf">,*</span></span></span><span class="bnf">)?</span></span></span></span></span></pre><p>
                     Declares a new inductive type.
 The meaning of the <code class="grammar"><span class="nonterminal" data-kind="declModifiers">declModifiers</span></code> is as described in the section <a href="Definitions/Modifiers/#declaration-modifiers">on declaration modifiers</a>.</p>
@@ -2909,12 +2921,12 @@ Providing arguments by name or converting all implicit parameters to explicit pa
                     <p>
                       Constructors can be invoked anonymously by enclosing their explicit arguments in angle brackets, separated by commas.</p>
                     <pre class="grammar hl lean" data-lean-context="--grammar" id="Lean___Parser___Term___anonymousCtor"><span class="nonterminal" data-kind="term">term</span> <span class="bnf">::=</span> ...
-    <span class="bnf">|</span> <span class="from-nonterminal documented" data-kind="Lean.Parser.Term.anonymousCtor"><code class="hover-info"><code class="docstring">The *anonymous constructor* `⟨e, ...⟩` is equivalent to `c e ...` if the
-expected type is an inductive type with a single constructor `c`.
-If more terms are given than `c` has parameters, the remaining arguments
+    <span class="bnf">|</span> <span class="from-nonterminal documented" data-kind="Lean.Parser.Term.anonymousCtor"><code class="hover-info"><div class="docstring"><p>The <em>anonymous constructor</em> <code>⟨e, ...⟩</code> is equivalent to <code>c e ...</code> if the
+expected type is an inductive type with a single constructor <code>c</code>.
+If more terms are given than <code>c</code> has parameters, the remaining arguments
 are turned into a new anonymous constructor application. For example,
-`⟨a, b, c⟩ : α × (β × γ)` is equivalent to `⟨a, ⟨b, c⟩⟩`.
-</code></code><span class="keyword">⟨</span> <span class="from-nonterminal" data-kind="null"><span class="nonterminal" data-kind="term.pseudo">term</span><span class="bnf">,*</span> </span><span class="keyword">⟩</span></span></pre></div>
+<code>⟨a, b, c⟩ : α × (β × γ)</code> is equivalent to <code>⟨a, ⟨b, c⟩⟩</code>.</p>
+</div></code><span class="keyword">⟨</span> <span class="from-nonterminal" data-kind="null"><span class="nonterminal" data-kind="term.pseudo">term</span><span class="bnf">,*</span> </span><span class="keyword">⟩</span></span></pre></div>
                   </div>
                 <details class="example"><summary class="description">Anonymous constructors</summary><div class="example-content">
                     <p>
@@ -2954,37 +2966,41 @@ Please refer to <a href="Type-Classes/Deriving-Instances/#deriving-instances">th
               <div class="namedocs" id="command-next-next-next-next-next-next-next-next-next-next-next-next-next-next-next">
                 <span class="label">syntax</span><span class="title">Structure Declarations</span><div class="text">
                   <pre class="grammar hl lean" data-lean-context="--grammar" id="Lean___Parser___Command___declaration-next"><span class="nonterminal" data-kind="command">command</span> <span class="bnf">::=</span> ...
-    <span class="bnf">|</span> <span class="from-nonterminal" data-kind="Lean.Parser.Command.declaration"><a href="Definitions/Modifiers/#Lean___Parser___Command___declModifiers"><span class="nonterminal documented" data-kind="Lean.Parser.Command.declModifiers"><code class="hover-info"><code class="docstring">`declModifiers` is the collection of modifiers on a declaration:
-* a doc comment `/-- ... -/`
-* a list of attributes `@[attr1, attr2]`
-* a visibility specifier, `private` or `public`
-* `protected`
-* `noncomputable`
-* `unsafe`
-* `partial` or `nonrec`
-
-All modifiers are optional, and have to come in the listed order.
-
-`nestedDeclModifiers` is the same as `declModifiers`, but attributes are printed
+    <span class="bnf">|</span> <span class="from-nonterminal" data-kind="Lean.Parser.Command.declaration"><a href="Definitions/Modifiers/#Lean___Parser___Command___declModifiers"><span class="nonterminal documented" data-kind="Lean.Parser.Command.declModifiers"><code class="hover-info"><div class="docstring"><p><code>declModifiers</code> is the collection of modifiers on a declaration:</p>
+<ul>
+<li>a doc comment <code>/-- ... -/</code></li>
+<li>a list of attributes <code>@[attr1, attr2]</code></li>
+<li>a visibility specifier, <code>private</code> or <code>public</code></li>
+<li><code>protected</code></li>
+<li><code>noncomputable</code></li>
+<li><code>unsafe</code></li>
+<li><code>partial</code> or <code>nonrec</code></li>
+</ul>
+<p>All modifiers are optional, and have to come in the listed order.</p>
+<p><code>nestedDeclModifiers</code> is the same as <code>declModifiers</code>, but attributes are printed
 on the same line as the declaration. It is used for declarations nested inside other syntax,
-such as inductive constructors, structure projections, and `let rec` / `where` definitions. </code></code>declModifiers</span></a>
-      <span class="from-nonterminal" data-kind="Lean.Parser.Command.structure"><span class="from-nonterminal" data-kind="Lean.Parser.Command.structureTk"><span class="keyword">structure</span> </span><span class="nonterminal documented" data-kind="Lean.Parser.Command.declId"><code class="hover-info"><code class="docstring">`declId` matches `foo` or `foo.{u,v}`: an identifier possibly followed by a list of universe names </code></code>declId</span> <span class="from-nonterminal documented" data-kind="Lean.Parser.Command.optDeclSig"><code class="hover-info"><code class="docstring">`optDeclSig` matches the signature of a declaration with optional type: a list of binders and then possibly `: type` </code></code><span class="from-nonterminal" data-kind="null"><span class="nonterminal" data-kind="Lean.Parser.Term.bracketedBinder.pseudo">bracketedBinder</span><span class="bnf">*</span> </span><span class="from-nonterminal" data-kind="null"><span class="bnf">(</span><span class="from-nonterminal" data-kind="null"><span class="from-nonterminal" data-kind="Lean.Parser.Term.typeSpec"><span class="keyword">:</span> <span class="nonterminal" data-kind="term.pseudo">term</span></span></span><span class="bnf">)?</span>
+such as inductive constructors, structure projections, and <code>let rec</code> / <code>where</code> definitions. </p>
+</div></code>declModifiers</span></a>
+      <span class="from-nonterminal" data-kind="Lean.Parser.Command.structure"><span class="from-nonterminal" data-kind="Lean.Parser.Command.structureTk"><span class="keyword">structure</span> </span><span class="nonterminal documented" data-kind="Lean.Parser.Command.declId"><code class="hover-info"><div class="docstring"><p><code>declId</code> matches <code>foo</code> or <code>foo.{u,v}</code>: an identifier possibly followed by a list of universe names </p>
+</div></code>declId</span> <span class="from-nonterminal documented" data-kind="Lean.Parser.Command.optDeclSig"><code class="hover-info"><div class="docstring"><p><code>optDeclSig</code> matches the signature of a declaration with optional type: a list of binders and then possibly <code>: type</code> </p>
+</div></code><span class="from-nonterminal" data-kind="null"><span class="nonterminal" data-kind="Lean.Parser.Term.bracketedBinder.pseudo">bracketedBinder</span><span class="bnf">*</span> </span><span class="from-nonterminal" data-kind="null"><span class="bnf">(</span><span class="from-nonterminal" data-kind="null"><span class="from-nonterminal" data-kind="Lean.Parser.Term.typeSpec"><span class="keyword">:</span> <span class="nonterminal" data-kind="term.pseudo">term</span></span></span><span class="bnf">)?</span>
         </span></span><span class="from-nonterminal" data-kind="null"><span class="bnf">(</span><span class="from-nonterminal" data-kind="null"><span class="from-nonterminal" data-kind="Lean.Parser.Command.extends"><span class="keyword">extends</span> <span class="from-nonterminal" data-kind="null"><span class="from-nonterminal" data-kind="null"><span class="from-nonterminal" data-kind="Lean.Parser.Command.structParent"><span class="from-nonterminal" data-kind="null"><span class="bnf">(</span><span class="from-nonterminal" data-kind="null"><span class="nonterminal" data-kind="ident">ident</span> <span class="keyword">:</span> </span><span class="bnf">)?</span></span><span class="nonterminal" data-kind="term.pseudo">term</span></span></span><span class="bnf">,*</span></span><span class="from-nonterminal" data-kind="null"></span></span></span><span class="bnf">)?</span>
         </span><span class="from-nonterminal" data-kind="null"><span class="keyword">where</span>
-        <span class="from-nonterminal" data-kind="null"><span class="bnf">(</span><span class="from-nonterminal" data-kind="null"><span class="from-nonterminal" data-kind="Lean.Parser.Command.structCtor"><a href="Definitions/Modifiers/#Lean___Parser___Command___declModifiers"><span class="nonterminal documented" data-kind="Lean.Parser.Command.declModifiers"><code class="hover-info"><code class="docstring">`declModifiers` is the collection of modifiers on a declaration:
-* a doc comment `/-- ... -/`
-* a list of attributes `@[attr1, attr2]`
-* a visibility specifier, `private` or `public`
-* `protected`
-* `noncomputable`
-* `unsafe`
-* `partial` or `nonrec`
-
-All modifiers are optional, and have to come in the listed order.
-
-`nestedDeclModifiers` is the same as `declModifiers`, but attributes are printed
+        <span class="from-nonterminal" data-kind="null"><span class="bnf">(</span><span class="from-nonterminal" data-kind="null"><span class="from-nonterminal" data-kind="Lean.Parser.Command.structCtor"><a href="Definitions/Modifiers/#Lean___Parser___Command___declModifiers"><span class="nonterminal documented" data-kind="Lean.Parser.Command.declModifiers"><code class="hover-info"><div class="docstring"><p><code>declModifiers</code> is the collection of modifiers on a declaration:</p>
+<ul>
+<li>a doc comment <code>/-- ... -/</code></li>
+<li>a list of attributes <code>@[attr1, attr2]</code></li>
+<li>a visibility specifier, <code>private</code> or <code>public</code></li>
+<li><code>protected</code></li>
+<li><code>noncomputable</code></li>
+<li><code>unsafe</code></li>
+<li><code>partial</code> or <code>nonrec</code></li>
+</ul>
+<p>All modifiers are optional, and have to come in the listed order.</p>
+<p><code>nestedDeclModifiers</code> is the same as <code>declModifiers</code>, but attributes are printed
 on the same line as the declaration. It is used for declarations nested inside other syntax,
-such as inductive constructors, structure projections, and `let rec` / `where` definitions. </code></code>declModifiers</span></a> <span class="nonterminal" data-kind="ident">ident</span> <span class="from-nonterminal" data-kind="null"></span><span class="keyword">::</span></span></span><span class="bnf">)?</span>
+such as inductive constructors, structure projections, and <code>let rec</code> / <code>where</code> definitions. </p>
+</div></code>declModifiers</span></a> <span class="nonterminal" data-kind="ident">ident</span> <span class="from-nonterminal" data-kind="null"></span><span class="keyword">::</span></span></span><span class="bnf">)?</span>
         </span><span class="nonterminal" data-kind="Lean.Parser.Command.structFields">structFields</span>
       </span><span class="from-nonterminal" data-kind="Lean.Parser.Command.optDeriving"><span class="from-nonterminal" data-kind="null"><span class="bnf">(</span><span class="from-nonterminal" data-kind="null"><a href="Type-Classes/Deriving-Instances/#Lean___Parser___Command___optDeriving-next"><span class="keyword">deriving</span></a> <span class="from-nonterminal" data-kind="null"><span class="from-nonterminal" data-kind="null"><span class="nonterminal" data-kind="Lean.Parser.Command.derivingClass">derivingClass</span></span><span class="bnf">,*</span></span></span><span class="bnf">)?</span></span></span></span></span></pre><p>
                     Declares a new structure type.</p>
@@ -3142,14 +3158,14 @@ Additionally, structures may be constructed or matched against using <span id="-
                 <div class="namedocs" id="term-next">
                   <span class="label">syntax</span><span class="title">Structure Instances</span><div class="text">
                     <pre class="grammar hl lean" data-lean-context="--grammar" id="Lean___Parser___Term___structInst"><span class="nonterminal" data-kind="term">term</span> <span class="bnf">::=</span> ...
-    <span class="bnf">|</span> <span class="from-nonterminal documented" data-kind="Lean.Parser.Term.structInst"><code class="hover-info"><code class="docstring">Structure instance. `{ x := e, ... }` assigns `e` to field `x`, which may be
-inherited. If `e` is itself a variable called `x`, it can be elided:
-`fun y =&gt; { x := 1, y }`.
-A *structure update* of an existing value can be given via `with`:
-`{ point with x := 1 }`.
+    <span class="bnf">|</span> <span class="from-nonterminal documented" data-kind="Lean.Parser.Term.structInst"><code class="hover-info"><div class="docstring"><p>Structure instance. <code>{ x := e, ... }</code> assigns <code>e</code> to field <code>x</code>, which may be
+inherited. If <code>e</code> is itself a variable called <code>x</code>, it can be elided:
+<code>fun y =&gt; { x := 1, y }</code>.
+A <em>structure update</em> of an existing value can be given via <code>with</code>:
+<code>{ point with x := 1 }</code>.
 The structure type can be specified if not inferable:
-`{ x := 1, y := 2 : Point }`.
-</code></code><span class="keyword">{</span> <span class="from-nonterminal" data-kind="null"></span><span class="from-nonterminal" data-kind="Lean.Parser.Term.structInstFields"><span class="from-nonterminal" data-kind="null"><span class="nonterminal" data-kind="Lean.Parser.Term.structInstField">structInstField</span><span class="bnf">,*</span>
+<code>{ x := 1, y := 2 : Point }</code>.</p>
+</div></code><span class="keyword">{</span> <span class="from-nonterminal" data-kind="null"></span><span class="from-nonterminal" data-kind="Lean.Parser.Term.structInstFields"><span class="from-nonterminal" data-kind="null"><span class="nonterminal" data-kind="Lean.Parser.Term.structInstField">structInstField</span><span class="bnf">,*</span>
         <span class="from-nonterminal" data-kind="null"></span></span></span><span class="from-nonterminal" data-kind="Lean.Parser.Term.optEllipsis"><span class="from-nonterminal" data-kind="null"></span></span><span class="from-nonterminal" data-kind="null"><span class="bnf">(</span><span class="from-nonterminal" data-kind="null"><span class="keyword">:</span> <span class="nonterminal" data-kind="term.pseudo">term</span></span><span class="bnf">)?</span> </span><span class="keyword">}</span></span></pre><p>
                       Constructs a value of a constructor type given values for named fields.
 Field specifiers may take two forms:</p>
@@ -3262,25 +3278,25 @@ However, because the implementations of <a class="technical-term" href="Type-Cla
                   </details><div class="namedocs" id="term-next-next">
                   <span class="label">syntax</span><span class="title">Structure Updates</span><div class="text">
                     <pre class="grammar hl lean" data-lean-context="--grammar" id="Lean___Parser___Term___structInst-next"><span class="nonterminal" data-kind="term">term</span> <span class="bnf">::=</span> ...
-    <span class="bnf">|</span> <span class="from-nonterminal documented" data-kind="Lean.Parser.Term.structInst"><code class="hover-info"><code class="docstring">Structure instance. `{ x := e, ... }` assigns `e` to field `x`, which may be
-inherited. If `e` is itself a variable called `x`, it can be elided:
-`fun y =&gt; { x := 1, y }`.
-A *structure update* of an existing value can be given via `with`:
-`{ point with x := 1 }`.
+    <span class="bnf">|</span> <span class="from-nonterminal documented" data-kind="Lean.Parser.Term.structInst"><code class="hover-info"><div class="docstring"><p>Structure instance. <code>{ x := e, ... }</code> assigns <code>e</code> to field <code>x</code>, which may be
+inherited. If <code>e</code> is itself a variable called <code>x</code>, it can be elided:
+<code>fun y =&gt; { x := 1, y }</code>.
+A <em>structure update</em> of an existing value can be given via <code>with</code>:
+<code>{ point with x := 1 }</code>.
 The structure type can be specified if not inferable:
-`{ x := 1, y := 2 : Point }`.
-</code></code><span class="keyword">{</span><span class="from-nonterminal" data-kind="null"><span class="from-nonterminal" data-kind="null"><span class="nonterminal" data-kind="term.pseudo">term</span> </span><span class="keyword">with</span>
+<code>{ x := 1, y := 2 : Point }</code>.</p>
+</div></code><span class="keyword">{</span><span class="from-nonterminal" data-kind="null"><span class="from-nonterminal" data-kind="null"><span class="nonterminal" data-kind="term.pseudo">term</span> </span><span class="keyword">with</span>
         </span><span class="from-nonterminal" data-kind="Lean.Parser.Term.structInstFields"><span class="from-nonterminal" data-kind="null"><span class="nonterminal" data-kind="Lean.Parser.Term.structInstField">structInstField</span><span class="bnf">,*</span>
         <span class="from-nonterminal" data-kind="null"></span></span></span><span class="from-nonterminal" data-kind="Lean.Parser.Term.optEllipsis"><span class="from-nonterminal" data-kind="null"></span></span><span class="from-nonterminal" data-kind="null"><span class="bnf">(</span><span class="from-nonterminal" data-kind="null"><span class="keyword">:</span> <span class="nonterminal" data-kind="term.pseudo">term</span></span><span class="bnf">)?</span></span><span class="keyword">}</span></span></pre><p>
                       Updates a value of a constructor type.
-The term that precedes the <span class="hl lean keyword-of"><code class="hover-info"><code>Lean.Parser.Term.structInst : term</code><span class="sep"></span><code class="docstring">Structure instance. `{ x := e, ... }` assigns `e` to field `x`, which may be
-inherited. If `e` is itself a variable called `x`, it can be elided:
-`fun y =&gt; { x := 1, y }`.
-A *structure update* of an existing value can be given via `with`:
-`{ point with x := 1 }`.
+The term that precedes the <span class="hl lean keyword-of"><code class="hover-info"><code>Lean.Parser.Term.structInst : term</code><span class="sep"></span><div class="docstring"><p>Structure instance. <code>{ x := e, ... }</code> assigns <code>e</code> to field <code>x</code>, which may be
+inherited. If <code>e</code> is itself a variable called <code>x</code>, it can be elided:
+<code>fun y =&gt; { x := 1, y }</code>.
+A <em>structure update</em> of an existing value can be given via <code>with</code>:
+<code>{ point with x := 1 }</code>.
 The structure type can be specified if not inferable:
-`{ x := 1, y := 2 : Point }`.
-</code></code><code class="kw">with</code></span> clause is expected to have a structure type; it is the value that is being updated.
+<code>{ x := 1, y := 2 : Point }</code>.</p>
+</div></code><code class="kw">with</code></span> clause is expected to have a structure type; it is the value that is being updated.
 A new instance of the structure is created in which every field not specified is copied from the value that is being updated, and the specified fields are replaced with their new values.
 When updating a structure, array values may also be replaced by including the index to be updated in square brackets.
 This updating does not require that the index expression be in bounds for the array, and out-of-bounds updates are discarded.</p>

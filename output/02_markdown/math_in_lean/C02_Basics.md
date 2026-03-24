@@ -1,37 +1,37 @@
-[ Mathematics in Lean ](file:///home/ryant/Projects/confia_crawler/output/01_raw_html/math_in_lean/index.html)
-  * [1. Introduction](file:///home/ryant/Projects/confia_crawler/output/01_raw_html/math_in_lean/C01_Introduction.html)
-  * [](file:///home/ryant/Projects/confia_crawler/output/01_raw_html/math_in_lean/C02_Basics.html)
-    * [2.1. Calculating](file:///home/ryant/Projects/confia_crawler/output/01_raw_html/math_in_lean/C02_Basics.html#calculating)
-    * [2.2. Proving Identities in Algebraic Structures](file:///home/ryant/Projects/confia_crawler/output/01_raw_html/math_in_lean/C02_Basics.html#proving-identities-in-algebraic-structures)
-    * [2.3. Using Theorems and Lemmas](file:///home/ryant/Projects/confia_crawler/output/01_raw_html/math_in_lean/C02_Basics.html#using-theorems-and-lemmas)
-    * [2.4. More examples using apply and rw](file:///home/ryant/Projects/confia_crawler/output/01_raw_html/math_in_lean/C02_Basics.html#more-examples-using-apply-and-rw)
-    * [2.5. Proving Facts about Algebraic Structures](file:///home/ryant/Projects/confia_crawler/output/01_raw_html/math_in_lean/C02_Basics.html#proving-facts-about-algebraic-structures)
-  * [3. Logic](file:///home/ryant/Projects/confia_crawler/output/01_raw_html/math_in_lean/C03_Logic.html)
-  * [4. Sets and Functions](file:///home/ryant/Projects/confia_crawler/output/01_raw_html/math_in_lean/C04_Sets_and_Functions.html)
-  * [5. Elementary Number Theory](file:///home/ryant/Projects/confia_crawler/output/01_raw_html/math_in_lean/C05_Elementary_Number_Theory.html)
-  * [6. Discrete Mathematics](file:///home/ryant/Projects/confia_crawler/output/01_raw_html/math_in_lean/C06_Discrete_Mathematics.html)
-  * [7. Structures](file:///home/ryant/Projects/confia_crawler/output/01_raw_html/math_in_lean/C07_Structures.html)
-  * [8. Hierarchies](file:///home/ryant/Projects/confia_crawler/output/01_raw_html/math_in_lean/C08_Hierarchies.html)
-  * [9. Groups and Rings](file:///home/ryant/Projects/confia_crawler/output/01_raw_html/math_in_lean/C09_Groups_and_Rings.html)
-  * [10. Linear algebra](file:///home/ryant/Projects/confia_crawler/output/01_raw_html/math_in_lean/C10_Linear_Algebra.html)
-  * [11. Topology](file:///home/ryant/Projects/confia_crawler/output/01_raw_html/math_in_lean/C11_Topology.html)
-  * [12. Differential Calculus](file:///home/ryant/Projects/confia_crawler/output/01_raw_html/math_in_lean/C12_Differential_Calculus.html)
-  * [13. Integration and Measure Theory](file:///home/ryant/Projects/confia_crawler/output/01_raw_html/math_in_lean/C13_Integration_and_Measure_Theory.html)
+[ Mathematics in Lean ](file:///home/rian-macedo/Projects/confia_crawler/output/01_raw_html/math_in_lean/index.html)
+  * [1. Introduction](file:///home/rian-macedo/Projects/confia_crawler/output/01_raw_html/math_in_lean/C01_Introduction.html)
+  * [](file:///home/rian-macedo/Projects/confia_crawler/output/01_raw_html/math_in_lean/C02_Basics.html)
+    * [2.1. Calculating](file:///home/rian-macedo/Projects/confia_crawler/output/01_raw_html/math_in_lean/C02_Basics.html#calculating)
+    * [2.2. Proving Identities in Algebraic Structures](file:///home/rian-macedo/Projects/confia_crawler/output/01_raw_html/math_in_lean/C02_Basics.html#proving-identities-in-algebraic-structures)
+    * [2.3. Using Theorems and Lemmas](file:///home/rian-macedo/Projects/confia_crawler/output/01_raw_html/math_in_lean/C02_Basics.html#using-theorems-and-lemmas)
+    * [2.4. More examples using apply and rw](file:///home/rian-macedo/Projects/confia_crawler/output/01_raw_html/math_in_lean/C02_Basics.html#more-examples-using-apply-and-rw)
+    * [2.5. Proving Facts about Algebraic Structures](file:///home/rian-macedo/Projects/confia_crawler/output/01_raw_html/math_in_lean/C02_Basics.html#proving-facts-about-algebraic-structures)
+  * [3. Logic](file:///home/rian-macedo/Projects/confia_crawler/output/01_raw_html/math_in_lean/C03_Logic.html)
+  * [4. Sets and Functions](file:///home/rian-macedo/Projects/confia_crawler/output/01_raw_html/math_in_lean/C04_Sets_and_Functions.html)
+  * [5. Elementary Number Theory](file:///home/rian-macedo/Projects/confia_crawler/output/01_raw_html/math_in_lean/C05_Elementary_Number_Theory.html)
+  * [6. Discrete Mathematics](file:///home/rian-macedo/Projects/confia_crawler/output/01_raw_html/math_in_lean/C06_Discrete_Mathematics.html)
+  * [7. Structures](file:///home/rian-macedo/Projects/confia_crawler/output/01_raw_html/math_in_lean/C07_Structures.html)
+  * [8. Hierarchies](file:///home/rian-macedo/Projects/confia_crawler/output/01_raw_html/math_in_lean/C08_Hierarchies.html)
+  * [9. Groups and Rings](file:///home/rian-macedo/Projects/confia_crawler/output/01_raw_html/math_in_lean/C09_Groups_and_Rings.html)
+  * [10. Linear algebra](file:///home/rian-macedo/Projects/confia_crawler/output/01_raw_html/math_in_lean/C10_Linear_Algebra.html)
+  * [11. Topology](file:///home/rian-macedo/Projects/confia_crawler/output/01_raw_html/math_in_lean/C11_Topology.html)
+  * [12. Differential Calculus](file:///home/rian-macedo/Projects/confia_crawler/output/01_raw_html/math_in_lean/C12_Differential_Calculus.html)
+  * [13. Integration and Measure Theory](file:///home/rian-macedo/Projects/confia_crawler/output/01_raw_html/math_in_lean/C13_Integration_and_Measure_Theory.html)
 
 
-  * [Index](file:///home/ryant/Projects/confia_crawler/output/01_raw_html/math_in_lean/genindex.html)
+  * [Index](file:///home/rian-macedo/Projects/confia_crawler/output/01_raw_html/math_in_lean/genindex.html)
 
 
-[Mathematics in Lean](file:///home/ryant/Projects/confia_crawler/output/01_raw_html/math_in_lean/index.html)
-  * [](file:///home/ryant/Projects/confia_crawler/output/01_raw_html/math_in_lean/index.html)
+[Mathematics in Lean](file:///home/rian-macedo/Projects/confia_crawler/output/01_raw_html/math_in_lean/index.html)
+  * [](file:///home/rian-macedo/Projects/confia_crawler/output/01_raw_html/math_in_lean/index.html)
   * 2. Basics
-  * [ View page source](file:///home/ryant/Projects/confia_crawler/output/01_raw_html/math_in_lean/_sources/C02_Basics.rst.txt)
+  * [ View page source](file:///home/rian-macedo/Projects/confia_crawler/output/01_raw_html/math_in_lean/_sources/C02_Basics.rst.txt)
 
 
 * * *
-#  2. Basics[](file:///home/ryant/Projects/confia_crawler/output/01_raw_html/math_in_lean/C02_Basics.html#basics "Link to this heading")
+#  2. Basics[](file:///home/rian-macedo/Projects/confia_crawler/output/01_raw_html/math_in_lean/C02_Basics.html#basics "Link to this heading")
 This chapter is designed to introduce you to the nuts and bolts of mathematical reasoning in Lean: calculating, applying lemmas and theorems, and reasoning about generic structures.
-##  2.1. Calculating[](file:///home/ryant/Projects/confia_crawler/output/01_raw_html/math_in_lean/C02_Basics.html#calculating "Link to this heading")
+##  2.1. Calculating[](file:///home/rian-macedo/Projects/confia_crawler/output/01_raw_html/math_in_lean/C02_Basics.html#calculating "Link to this heading")
 We generally learn to carry out mathematical calculations without thinking of them as proofs. But when we justify each step in a calculation, as Lean requires us to do, the net result is a proof that the left-hand side of the calculation is equal to the right-hand side.
 In Lean, stating a theorem is tantamount to stating a goal, namely, the goal of proving the theorem. Lean provides the rewriting tactic `rw`, to replace the left-hand side of an identity by the right-hand side in the goal. If `a`, `b`, and `c` are real numbers, `mul_assoc a b c` is the identity `a * b * c = a * (b * c)` and `mul_comm a b` is the identity `a * b = b * a`. Lean provides automation that generally eliminates the need to refer the facts like these explicitly, but they are useful for the purposes of illustration. In Lean, multiplication associates to the left, so the left-hand side of `mul_assoc` could also be written `(a * b) * c`. However, it is generally good style to be mindful of Lean’s notational conventions and leave out parentheses when Lean does as well.
 Let’s try out `rw`.
@@ -253,10 +253,10 @@ example (a b c : ℕ) (h : a + b = c) : (a + b) * (a + b) = a * c + b * c := by
 
 ```
 
-##  2.2. Proving Identities in Algebraic Structures[](file:///home/ryant/Projects/confia_crawler/output/01_raw_html/math_in_lean/C02_Basics.html#proving-identities-in-algebraic-structures "Link to this heading")
-Mathematically, a ring consists of a collection of objects, \\(R\\), operations \\(+\\) \\(\times\\), and constants \\(0\\) and \\(1\\), and an operation \\(x \mapsto -x\\) such that:
-  * \\(R\\) with \\(+\\) is an _abelian group_ , with \\(0\\) as the additive identity and negation as inverse.
-  * Multiplication is associative with identity \\(1\\), and multiplication distributes over addition.
+##  2.2. Proving Identities in Algebraic Structures[](file:///home/rian-macedo/Projects/confia_crawler/output/01_raw_html/math_in_lean/C02_Basics.html#proving-identities-in-algebraic-structures "Link to this heading")
+Mathematically, a ring consists of a collection of objects, R, operations + ×, and constants 0 and 1, and an operation x↦−x such that:
+  * R with + is an _abelian group_ , with 0 as the additive identity and negation as inverse.
+  * Multiplication is associative with identity 1, and multiplication distributes over addition.
 
 
 In Lean, the collection of objects is represented as a _type_ , `R`. The ring axioms are as follows:
@@ -278,7 +278,7 @@ variable (R : Type*) [Ring R]
 
 You will learn more about the square brackets in the first line later, but for the time being, suffice it to say that the declaration gives us a type, `R`, and a ring structure on `R`. Lean then allows us to use generic ring notation with elements of `R`, and to make use of a library of theorems about rings.
 The names of some of the theorems should look familiar: they are exactly the ones we used to calculate with the real numbers in the last section. Lean is good not only for proving things about concrete mathematical structures like the natural numbers and the integers, but also for proving things about abstract structures, characterized axiomatically, like rings. Moreover, Lean supports _generic reasoning_ about both abstract and concrete structures, and can be trained to recognize appropriate instances. So any theorem about rings can be applied to concrete rings like the integers, `ℤ`, the rational numbers, `ℚ`, and the complex numbers `ℂ`. It can also be applied to any instance of an abstract structure that extends rings, such as any ordered ring or any field.
-Not all important properties of the real numbers hold in an arbitrary ring, however. For example, multiplication on the real numbers is commutative, but that does not hold in general. If you have taken a course in linear algebra, you will recognize that, for every \\(n\\), the \\(n\\) by \\(n\\) matrices of real numbers form a ring in which commutativity usually fails. If we declare `R` to be a _commutative_ ring, in fact, all the theorems in the last section continue to hold when we replace `ℝ` by `R`.
+Not all important properties of the real numbers hold in an arbitrary ring, however. For example, multiplication on the real numbers is commutative, but that does not hold in general. If you have taken a course in linear algebra, you will recognize that, for every n, the n by n matrices of real numbers form a ring in which commutativity usually fails. If we declare `R` to be a _commutative_ ring, in fact, all the theorems in the last section continue to hold when we replace `ℝ` by `R`.
 
 ```
 variable (R : Type*) [CommRing R]
@@ -462,8 +462,8 @@ theorem mul_inv_rev (a b : G) : (a * b)⁻¹ = b⁻¹ * a⁻¹ := by
 ```
 
 Explicitly invoking those lemmas is tedious, so Mathlib provides tactics similar to ring in order to cover most uses: group is for non-commutative multiplicative groups, abel for abelian additive groups, and noncomm_ring for non-commutative rings. It may seem odd that the algebraic structures are called Ring and CommRing while the tactics are named noncomm_ring and ring. This is partly for historical reasons, but also for the convenience of using a shorter name for the tactic that deals with commutative rings, since it is used more often.
-##  2.3. Using Theorems and Lemmas[](file:///home/ryant/Projects/confia_crawler/output/01_raw_html/math_in_lean/C02_Basics.html#using-theorems-and-lemmas "Link to this heading")
-Rewriting is great for proving equations, but what about other sorts of theorems? For example, how can we prove an inequality, like the fact that \\(a + e^b \le a + e^c\\) holds whenever \\(b \le c\\)? We have already seen that theorems can be applied to arguments and hypotheses, and that the `apply` and `exact` tactics can be used to solve goals. In this section, we will make good use of these tools.
+##  2.3. Using Theorems and Lemmas[](file:///home/rian-macedo/Projects/confia_crawler/output/01_raw_html/math_in_lean/C02_Basics.html#using-theorems-and-lemmas "Link to this heading")
+Rewriting is great for proving equations, but what about other sorts of theorems? For example, how can we prove an inequality, like the fact that a+eb≤a+ec holds whenever b≤c? We have already seen that theorems can be applied to arguments and hypotheses, and that the `apply` and `exact` tactics can be used to solve goals. In this section, we will make good use of these tools.
 Consider the library theorems `le_refl` and `le_trans`:
 
 ```
@@ -472,7 +472,7 @@ Consider the library theorems `le_refl` and `le_trans`:
 
 ```
 
-As we explain in more detail in [Section 3.1](file:///home/ryant/Projects/confia_crawler/output/01_raw_html/math_in_lean/C03_Logic.html#implication-and-the-universal-quantifier), the implicit parentheses in the statement of `le_trans` associate to the right, so it should be interpreted as `a ≤ b → (b ≤ c → a ≤ c)`. The library designers have set the arguments `a`, `b` and `c` to `le_trans` implicit, so that Lean will _not_ let you provide them explicitly (unless you really insist, as we will discuss later). Rather, it expects to infer them from the context in which they are used. For example, when hypotheses `h : a ≤ b` and `h' : b ≤ c` are in the context, all the following work:
+As we explain in more detail in [Section 3.1](file:///home/rian-macedo/Projects/confia_crawler/output/01_raw_html/math_in_lean/C03_Logic.html#implication-and-the-universal-quantifier), the implicit parentheses in the statement of `le_trans` associate to the right, so it should be interpreted as `a ≤ b → (b ≤ c → a ≤ c)`. The library designers have set the arguments `a`, `b` and `c` to `le_trans` implicit, so that Lean will _not_ let you provide them explicitly (unless you really insist, as we will discuss later). Rather, it expects to infer them from the context in which they are used. For example, when hypotheses `h : a ≤ b` and `h' : b ≤ c` are in the context, all the following work:
 
 ```
 variable (h : a ≤ b) (h' : b ≤ c)
@@ -664,7 +664,7 @@ example : 2*a*b ≤ a^2 + b^2 := by
 
 ```
 
-How nice! We challenge you to use these ideas to prove the following theorem. You can use the theorem `abs_le'.mpr`. You will also need the `constructor` tactic to split a conjunction to two goals; see [Section 3.4](file:///home/ryant/Projects/confia_crawler/output/01_raw_html/math_in_lean/C03_Logic.html#conjunction-and-biimplication).
+How nice! We challenge you to use these ideas to prove the following theorem. You can use the theorem `abs_le'.mpr`. You will also need the `constructor` tactic to split a conjunction to two goals; see [Section 3.4](file:///home/rian-macedo/Projects/confia_crawler/output/01_raw_html/math_in_lean/C03_Logic.html#conjunction-and-biimplication).
 
 ```
 example : |a*b| ≤ (a^2 + b^2)/2 := by
@@ -675,7 +675,7 @@ example : |a*b| ≤ (a^2 + b^2)/2 := by
 ```
 
 If you managed to solve this, congratulations! You are well on your way to becoming a master formalizer.
-##  2.4. More examples using apply and rw[](file:///home/ryant/Projects/confia_crawler/output/01_raw_html/math_in_lean/C02_Basics.html#more-examples-using-apply-and-rw "Link to this heading")
+##  2.4. More examples using apply and rw[](file:///home/rian-macedo/Projects/confia_crawler/output/01_raw_html/math_in_lean/C02_Basics.html#more-examples-using-apply-and-rw "Link to this heading")
 The `min` function on the real numbers is uniquely characterized by the following three facts:
 
 ```
@@ -720,7 +720,7 @@ example : min a b = min b a := by
 
 ```
 
-We will say more about the universal quantifier in [Section 3.1](file:///home/ryant/Projects/confia_crawler/output/01_raw_html/math_in_lean/C03_Logic.html#implication-and-the-universal-quantifier), but suffice it to say here that the hypothesis `h` says that the desired inequality holds for any `x` and `y`, and the `intro` tactic introduces an arbitrary `x` and `y` to establish the conclusion. The first `apply` after `le_antisymm` implicitly uses `h a b`, whereas the second one uses `h b a`.
+We will say more about the universal quantifier in [Section 3.1](file:///home/rian-macedo/Projects/confia_crawler/output/01_raw_html/math_in_lean/C03_Logic.html#implication-and-the-universal-quantifier), but suffice it to say here that the hypothesis `h` says that the desired inequality holds for any `x` and `y`, and the `intro` tactic introduces an arbitrary `x` and `y` to establish the conclusion. The first `apply` after `le_antisymm` implicitly uses `h a b`, whereas the second one uses `h b a`.
 Another solution is to use the `repeat` tactic, which applies a tactic (or a block) as many times as it can.
 
 ```
@@ -744,7 +744,7 @@ example : min (min a b) c = min a (min b c) := by
 ```
 
 Of course, you are welcome to prove the associativity of `max` as well.
-It is an interesting fact that `min` distributes over `max` the way that multiplication distributes over addition, and vice-versa. In other words, on the real numbers, we have the identity `min a (max b c) = max (min a b) (min a c)` as well as the corresponding version with `max` and `min` switched. But in the next section we will see that this does _not_ follow from the transitivity and reflexivity of `≤` and the characterizing properties of `min` and `max` enumerated above. We need to use the fact that `≤` on the real numbers is a _total order_ , which is to say, it satisfies `∀ x y, x ≤ y ∨ y ≤ x`. Here the disjunction symbol, `∨`, represents “or”. In the first case, we have `min x y = x`, and in the second case, we have `min x y = y`. We will learn how to reason by cases in [Section 3.5](file:///home/ryant/Projects/confia_crawler/output/01_raw_html/math_in_lean/C03_Logic.html#disjunction), but for now we will stick to examples that don’t require the case split.
+It is an interesting fact that `min` distributes over `max` the way that multiplication distributes over addition, and vice-versa. In other words, on the real numbers, we have the identity `min a (max b c) = max (min a b) (min a c)` as well as the corresponding version with `max` and `min` switched. But in the next section we will see that this does _not_ follow from the transitivity and reflexivity of `≤` and the characterizing properties of `min` and `max` enumerated above. We need to use the fact that `≤` on the real numbers is a _total order_ , which is to say, it satisfies `∀ x y, x ≤ y ∨ y ≤ x`. Here the disjunction symbol, `∨`, represents “or”. In the first case, we have `min x y = x`, and in the second case, we have `min x y = y`. We will learn how to reason by cases in [Section 3.5](file:///home/rian-macedo/Projects/confia_crawler/output/01_raw_html/math_in_lean/C03_Logic.html#disjunction), but for now we will stick to examples that don’t require the case split.
 Here is one such example:
 
 ```
@@ -818,8 +818,8 @@ example : Nat.gcd m n = Nat.gcd n m := by
 ```
 
 Hint: you can use `dvd_antisymm`, but if you do, Lean will complain that the expression is ambiguous between the generic theorem and the version `Nat.dvd_antisymm`, the one specifically for the natural numbers. You can use `_root_.dvd_antisymm` to specify the generic one; either one will work.
-##  2.5. Proving Facts about Algebraic Structures[](file:///home/ryant/Projects/confia_crawler/output/01_raw_html/math_in_lean/C02_Basics.html#proving-facts-about-algebraic-structures "Link to this heading")
-In [Section 2.2](file:///home/ryant/Projects/confia_crawler/output/01_raw_html/math_in_lean/C02_Basics.html#proving-identities-in-algebraic-structures), we saw that many common identities governing the real numbers hold in more general classes of algebraic structures, such as commutative rings. We can use any axioms we want to describe an algebraic structure, not just equations. For example, a _partial order_ consists of a set with a binary relation that is reflexive, transitive, and antisymmetric. like `≤` on the real numbers. Lean knows about partial orders:
+##  2.5. Proving Facts about Algebraic Structures[](file:///home/rian-macedo/Projects/confia_crawler/output/01_raw_html/math_in_lean/C02_Basics.html#proving-facts-about-algebraic-structures "Link to this heading")
+In [Section 2.2](file:///home/rian-macedo/Projects/confia_crawler/output/01_raw_html/math_in_lean/C02_Basics.html#proving-identities-in-algebraic-structures), we saw that many common identities governing the real numbers hold in more general classes of algebraic structures, such as commutative rings. We can use any axioms we want to describe an algebraic structure, not just equations. For example, a _partial order_ consists of a set with a binary relation that is reflexive, transitive, and antisymmetric. like `≤` on the real numbers. Lean knows about partial orders:
 
 ```
 variable {α : Type*} [PartialOrder α]
@@ -847,7 +847,7 @@ example : x < y ↔ x ≤ y ∧ x ≠ y :=
 
 ```
 
-In this example, the symbol `∧` stands for “and,” the symbol `¬` stands for “not,” and `x ≠ y` abbreviates `¬ (x = y)`. In [Chapter 3](file:///home/ryant/Projects/confia_crawler/output/01_raw_html/math_in_lean/C03_Logic.html#logic), you will learn how to use these logical connectives to _prove_ that `<` has the properties indicated.
+In this example, the symbol `∧` stands for “and,” the symbol `¬` stands for “not,” and `x ≠ y` abbreviates `¬ (x = y)`. In [Chapter 3](file:///home/rian-macedo/Projects/confia_crawler/output/01_raw_html/math_in_lean/C03_Logic.html#logic), you will learn how to use these logical connectives to _prove_ that `<` has the properties indicated.
 A _lattice_ is a structure that extends a partial order with operations `⊓` and `⊔` that are analogous to `min` and `max` on the real numbers:
 
 ```
@@ -948,7 +948,7 @@ variable (a b c : R)
 
 ```
 
-[Chapter 3](file:///home/ryant/Projects/confia_crawler/output/01_raw_html/math_in_lean/C03_Logic.html#logic) will provide the means to derive the following from `mul_pos` and the definition of `<`:
+[Chapter 3](file:///home/rian-macedo/Projects/confia_crawler/output/01_raw_html/math_in_lean/C03_Logic.html#logic) will provide the means to derive the following from `mul_pos` and the definition of `<`:
 
 ```
 #check (mul_nonneg : 0 ≤ a → 0 ≤ b → 0 ≤ a * b)
@@ -990,7 +990,7 @@ example (x y : X) : 0 ≤ dist x y := by
 ```
 
 We recommend making use of the theorem `nonneg_of_mul_nonneg_left`. As you may have guessed, this theorem is called `dist_nonneg` in Mathlib.
-[](file:///home/ryant/Projects/confia_crawler/output/01_raw_html/math_in_lean/C01_Introduction.html "1. Introduction") [Next ](file:///home/ryant/Projects/confia_crawler/output/01_raw_html/math_in_lean/C03_Logic.html "3. Logic")
+[](file:///home/rian-macedo/Projects/confia_crawler/output/01_raw_html/math_in_lean/C01_Introduction.html "1. Introduction") [Next ](file:///home/rian-macedo/Projects/confia_crawler/output/01_raw_html/math_in_lean/C03_Logic.html "3. Logic")
 * * *
 © Copyright 2020-2025, Jeremy Avigad, Patrick Massot. Text licensed under CC BY 4.0.
 Built with [Sphinx](https://www.sphinx-doc.org/) using a [theme](https://github.com/readthedocs/sphinx_rtd_theme) provided by [Read the Docs](https://readthedocs.org). 

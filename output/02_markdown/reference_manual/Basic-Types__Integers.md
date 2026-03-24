@@ -44,13 +44,8 @@ syntaxNegative Successor
 
 ```
 term ::= ...
-    | 
-
-
--[n+1] is suggestive notation for negSucc n, which is the second constructor of
-Int for making strictly negative numbers by mapping n : Nat to -(n + 1).
-
-
+    | `-[n+1]` is suggestive notation for `negSucc n`, which is the second constructor of
+`Int` for making strictly negative numbers by mapping `n : Nat` to `-(n + 1)`.
 -[ term +1]
 ```
 

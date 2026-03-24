@@ -1,38 +1,38 @@
-[ Mathematics in Lean ](file:///home/ryant/Projects/confia_crawler/output/01_raw_html/math_in_lean/index.html)
-  * [1. Introduction](file:///home/ryant/Projects/confia_crawler/output/01_raw_html/math_in_lean/C01_Introduction.html)
-  * [2. Basics](file:///home/ryant/Projects/confia_crawler/output/01_raw_html/math_in_lean/C02_Basics.html)
-  * [3. Logic](file:///home/ryant/Projects/confia_crawler/output/01_raw_html/math_in_lean/C03_Logic.html)
-  * [](file:///home/ryant/Projects/confia_crawler/output/01_raw_html/math_in_lean/C04_Sets_and_Functions.html)
-    * [4.1. Sets](file:///home/ryant/Projects/confia_crawler/output/01_raw_html/math_in_lean/C04_Sets_and_Functions.html#sets)
-    * [4.2. Functions](file:///home/ryant/Projects/confia_crawler/output/01_raw_html/math_in_lean/C04_Sets_and_Functions.html#functions)
-    * [4.3. The Schröder-Bernstein Theorem](file:///home/ryant/Projects/confia_crawler/output/01_raw_html/math_in_lean/C04_Sets_and_Functions.html#the-schroder-bernstein-theorem)
-  * [5. Elementary Number Theory](file:///home/ryant/Projects/confia_crawler/output/01_raw_html/math_in_lean/C05_Elementary_Number_Theory.html)
-  * [6. Discrete Mathematics](file:///home/ryant/Projects/confia_crawler/output/01_raw_html/math_in_lean/C06_Discrete_Mathematics.html)
-  * [7. Structures](file:///home/ryant/Projects/confia_crawler/output/01_raw_html/math_in_lean/C07_Structures.html)
-  * [8. Hierarchies](file:///home/ryant/Projects/confia_crawler/output/01_raw_html/math_in_lean/C08_Hierarchies.html)
-  * [9. Groups and Rings](file:///home/ryant/Projects/confia_crawler/output/01_raw_html/math_in_lean/C09_Groups_and_Rings.html)
-  * [10. Linear algebra](file:///home/ryant/Projects/confia_crawler/output/01_raw_html/math_in_lean/C10_Linear_Algebra.html)
-  * [11. Topology](file:///home/ryant/Projects/confia_crawler/output/01_raw_html/math_in_lean/C11_Topology.html)
-  * [12. Differential Calculus](file:///home/ryant/Projects/confia_crawler/output/01_raw_html/math_in_lean/C12_Differential_Calculus.html)
-  * [13. Integration and Measure Theory](file:///home/ryant/Projects/confia_crawler/output/01_raw_html/math_in_lean/C13_Integration_and_Measure_Theory.html)
+[ Mathematics in Lean ](file:///home/rian-macedo/Projects/confia_crawler/output/01_raw_html/math_in_lean/index.html)
+  * [1. Introduction](file:///home/rian-macedo/Projects/confia_crawler/output/01_raw_html/math_in_lean/C01_Introduction.html)
+  * [2. Basics](file:///home/rian-macedo/Projects/confia_crawler/output/01_raw_html/math_in_lean/C02_Basics.html)
+  * [3. Logic](file:///home/rian-macedo/Projects/confia_crawler/output/01_raw_html/math_in_lean/C03_Logic.html)
+  * [](file:///home/rian-macedo/Projects/confia_crawler/output/01_raw_html/math_in_lean/C04_Sets_and_Functions.html)
+    * [4.1. Sets](file:///home/rian-macedo/Projects/confia_crawler/output/01_raw_html/math_in_lean/C04_Sets_and_Functions.html#sets)
+    * [4.2. Functions](file:///home/rian-macedo/Projects/confia_crawler/output/01_raw_html/math_in_lean/C04_Sets_and_Functions.html#functions)
+    * [4.3. The Schröder-Bernstein Theorem](file:///home/rian-macedo/Projects/confia_crawler/output/01_raw_html/math_in_lean/C04_Sets_and_Functions.html#the-schroder-bernstein-theorem)
+  * [5. Elementary Number Theory](file:///home/rian-macedo/Projects/confia_crawler/output/01_raw_html/math_in_lean/C05_Elementary_Number_Theory.html)
+  * [6. Discrete Mathematics](file:///home/rian-macedo/Projects/confia_crawler/output/01_raw_html/math_in_lean/C06_Discrete_Mathematics.html)
+  * [7. Structures](file:///home/rian-macedo/Projects/confia_crawler/output/01_raw_html/math_in_lean/C07_Structures.html)
+  * [8. Hierarchies](file:///home/rian-macedo/Projects/confia_crawler/output/01_raw_html/math_in_lean/C08_Hierarchies.html)
+  * [9. Groups and Rings](file:///home/rian-macedo/Projects/confia_crawler/output/01_raw_html/math_in_lean/C09_Groups_and_Rings.html)
+  * [10. Linear algebra](file:///home/rian-macedo/Projects/confia_crawler/output/01_raw_html/math_in_lean/C10_Linear_Algebra.html)
+  * [11. Topology](file:///home/rian-macedo/Projects/confia_crawler/output/01_raw_html/math_in_lean/C11_Topology.html)
+  * [12. Differential Calculus](file:///home/rian-macedo/Projects/confia_crawler/output/01_raw_html/math_in_lean/C12_Differential_Calculus.html)
+  * [13. Integration and Measure Theory](file:///home/rian-macedo/Projects/confia_crawler/output/01_raw_html/math_in_lean/C13_Integration_and_Measure_Theory.html)
 
 
-  * [Index](file:///home/ryant/Projects/confia_crawler/output/01_raw_html/math_in_lean/genindex.html)
+  * [Index](file:///home/rian-macedo/Projects/confia_crawler/output/01_raw_html/math_in_lean/genindex.html)
 
 
-[Mathematics in Lean](file:///home/ryant/Projects/confia_crawler/output/01_raw_html/math_in_lean/index.html)
-  * [](file:///home/ryant/Projects/confia_crawler/output/01_raw_html/math_in_lean/index.html)
+[Mathematics in Lean](file:///home/rian-macedo/Projects/confia_crawler/output/01_raw_html/math_in_lean/index.html)
+  * [](file:///home/rian-macedo/Projects/confia_crawler/output/01_raw_html/math_in_lean/index.html)
   * 4. Sets and Functions
-  * [ View page source](file:///home/ryant/Projects/confia_crawler/output/01_raw_html/math_in_lean/_sources/C04_Sets_and_Functions.rst.txt)
+  * [ View page source](file:///home/rian-macedo/Projects/confia_crawler/output/01_raw_html/math_in_lean/_sources/C04_Sets_and_Functions.rst.txt)
 
 
 * * *
-#  4. Sets and Functions[](file:///home/ryant/Projects/confia_crawler/output/01_raw_html/math_in_lean/C04_Sets_and_Functions.html#sets-and-functions "Link to this heading")
+#  4. Sets and Functions[](file:///home/rian-macedo/Projects/confia_crawler/output/01_raw_html/math_in_lean/C04_Sets_and_Functions.html#sets-and-functions "Link to this heading")
 The vocabulary of sets, relations, and functions provides a uniform language for carrying out constructions in all the branches of mathematics. Since functions and relations can be defined in terms of sets, axiomatic set theory can be used as a foundation for mathematics.
 Lean’s foundation is based instead on the primitive notion of a _type_ , and it includes ways of defining functions between types. Every expression in Lean has a type: there are natural numbers, real numbers, functions from reals to reals, groups, vector spaces, and so on. Some expressions _are_ types, which is to say, their type is `Type`. Lean and Mathlib provide ways of defining new types, and ways of defining objects of those types.
 Conceptually, you can think of a type as just a set of objects. Requiring every object to have a type has some advantages. For example, it makes it possible to overload notation like `+`, and it sometimes makes input less verbose because Lean can infer a lot of information from an object’s type. The type system also enables Lean to flag errors when you apply a function to the wrong number of arguments, or apply a function to arguments of the wrong type.
 Lean’s library does define elementary set-theoretic notions. In contrast to set theory, in Lean a set is always a set of objects of some type, such as a set of natural numbers or a set of functions from real numbers to real numbers. The distinction between types and sets takes some getting used to, but this chapter will take you through the essentials.
-##  4.1. Sets[](file:///home/ryant/Projects/confia_crawler/output/01_raw_html/math_in_lean/C04_Sets_and_Functions.html#sets "Link to this heading")
+##  4.1. Sets[](file:///home/rian-macedo/Projects/confia_crawler/output/01_raw_html/math_in_lean/C04_Sets_and_Functions.html#sets "Link to this heading")
 If `α` is any type, the type `Set α` consists of sets of elements of `α`. This type supports the usual set-theoretic operations and relations. For example, `s ⊆ t` says that `s` is a subset of `t`, `s ∩ t` denotes the intersection of `s` and `t`, and `s ∪ t` denotes their union. The subset relation can be typed with `\ss` or `\sub`, intersection can be typed with `\i` or `\cap`, and union can be typed with `\un` or `\cup`. The library also defines the set `univ`, which consists of all the elements of type `α`, and the empty set, `∅`, which can be typed as `\empty`. Given `x : α` and `s : Set α`, the expression `x ∈ s` says that `x` is a member of `s`. Theorems that mention set membership often include `mem` in their name. The expression `x ∉ s` abbreviates `¬ x ∈ s`. You can type `∈` as `\in` or `\mem` and `∉` as `\notin`.
 One way to prove things about sets is to use `rw` or the simplifier to expand the definitions. In the second example below, we use `simp only` to tell the simplifier to use only the list of identities we give it, and not its full database of identities. Unlike `rw`, `simp` can perform simplifications inside a universal or existential quantifier. If you step through the proof, you can see the effects of these commands.
 
@@ -397,7 +397,7 @@ example : ⋂₀ s = ⋂ t ∈ s, t := by
 ```
 
 In the library, these identities are called `sUnion_eq_biUnion` and `sInter_eq_biInter`.
-##  4.2. Functions[](file:///home/ryant/Projects/confia_crawler/output/01_raw_html/math_in_lean/C04_Sets_and_Functions.html#functions "Link to this heading")
+##  4.2. Functions[](file:///home/rian-macedo/Projects/confia_crawler/output/01_raw_html/math_in_lean/C04_Sets_and_Functions.html#functions "Link to this heading")
 If `f : α → β` is a function and `p` is a set of elements of type `β`, the library defines `preimage f p`, written `f ⁻¹' p`, to be `{x | f x ∈ p}`. The expression `x ∈ f ⁻¹' p` reduces to `f x ∈ p`. This is often convenient, as in the following example:
 
 ```
@@ -415,7 +415,7 @@ example : f ⁻¹' (u ∩ v) = f ⁻¹' u ∩ f ⁻¹' v := by
 
 ```
 
-If `s` is a set of elements of type `α`, the library also defines `image f s`, written `f '' s`, to be `{y | ∃ x, x ∈ s ∧ f x = y}`. So a hypothesis `y ∈ f '' s` decomposes to a triple `⟨x, xs, xeq⟩` with `x : α` satisfying the hypotheses `xs : x ∈ s` and `xeq : f x = y`. The `rfl` tag in the `rintro` tactic (see [Section 3.2](file:///home/ryant/Projects/confia_crawler/output/01_raw_html/math_in_lean/C03_Logic.html#the-existential-quantifier)) was made precisely for this sort of situation.
+If `s` is a set of elements of type `α`, the library also defines `image f s`, written `f '' s`, to be `{y | ∃ x, x ∈ s ∧ f x = y}`. So a hypothesis `y ∈ f '' s` decomposes to a triple `⟨x, xs, xeq⟩` with `x : α` satisfying the hypotheses `xs : x ∈ s` and `xeq : f x = y`. The `rfl` tag in the `rintro` tactic (see [Section 3.2](file:///home/rian-macedo/Projects/confia_crawler/output/01_raw_html/math_in_lean/C03_Logic.html#the-existential-quantifier)) was made precisely for this sort of situation.
 
 ```
 example : f '' (s ∪ t) = f '' s ∪ f '' t := by
@@ -640,15 +640,15 @@ theorem Cantor : ∀ f : α → Set α, ¬Surjective f := by
 
 ```
 
-##  4.3. The Schröder-Bernstein Theorem[](file:///home/ryant/Projects/confia_crawler/output/01_raw_html/math_in_lean/C04_Sets_and_Functions.html#the-schroder-bernstein-theorem "Link to this heading")
+##  4.3. The Schröder-Bernstein Theorem[](file:///home/rian-macedo/Projects/confia_crawler/output/01_raw_html/math_in_lean/C04_Sets_and_Functions.html#the-schroder-bernstein-theorem "Link to this heading")
 We close this chapter with an elementary but nontrivial theorem of set theory. Let α and β be sets. (In our formalization, they will actually be types.) Suppose f:α→β and g:β→α are both injective. Intuitively, this means that α is no bigger than β and vice-versa. If α and β are finite, this implies that they have the same cardinality, which is equivalent to saying that there is a bijection between them. In the nineteenth century, Cantor stated that same result holds even in the case where α and β are infinite. This was eventually established by Dedekind, Schröder, and Bernstein independently.
 Our formalization will introduce some new methods that we will explain in greater detail in chapters to come. Don’t worry if they go by too quickly here. Our goal is to show you that you already have the skills to contribute to the formal proof of a real mathematical result.
 To understand the idea behind the proof, consider the image of the map g in α. On that image, the inverse of g is defined and is a bijection with β.
-[ ](file:///home/ryant/Projects/confia_crawler/output/01_raw_html/math_in_lean/_images/schroeder_bernstein1.png)
+[ ](file:///home/rian-macedo/Projects/confia_crawler/output/01_raw_html/math_in_lean/_images/schroeder_bernstein1.png)
 The problem is that the bijection does not include the shaded region in the diagram, which is nonempty if g is not surjective. Alternatively, we can use f to map all of α to β, but in that case the problem is that if f is not surjective, it will miss some elements of β.
-[ ](file:///home/ryant/Projects/confia_crawler/output/01_raw_html/math_in_lean/_images/schroeder_bernstein2.png)
+[ ](file:///home/rian-macedo/Projects/confia_crawler/output/01_raw_html/math_in_lean/_images/schroeder_bernstein2.png)
 But now consider the composition g∘f from α to itself. Because the composition is injective, it forms a bijection between α and its image, yielding a scaled-down copy of α inside itself.
-[ ](file:///home/ryant/Projects/confia_crawler/output/01_raw_html/math_in_lean/_images/schroeder_bernstein3.png)
+[ ](file:///home/rian-macedo/Projects/confia_crawler/output/01_raw_html/math_in_lean/_images/schroeder_bernstein3.png)
 This composition maps the inner shaded ring to yet another such set, which we can think of as an even smaller concentric shaded ring, and so on. This yields a concentric sequence of shaded rings, each of which is in bijective correspondence with the next. If we map each ring to the next and leave the unshaded parts of α alone, we have a bijection of α with the image of g. Composing with g−1, this yields the desired bijection between α and β.
 We can describe this bijection more simply. Let A be the union of the sequence of shaded regions, and define h:α→β as follows:
 h(x)={f(x)if x∈Ag−1(x)otherwise.
@@ -784,7 +784,7 @@ theorem schroeder_bernstein {f : α → β} {g : β → α} (hf : Injective f) (
 
 ```
 
-[](file:///home/ryant/Projects/confia_crawler/output/01_raw_html/math_in_lean/C03_Logic.html "3. Logic") [Next ](file:///home/ryant/Projects/confia_crawler/output/01_raw_html/math_in_lean/C05_Elementary_Number_Theory.html "5. Elementary Number Theory")
+[](file:///home/rian-macedo/Projects/confia_crawler/output/01_raw_html/math_in_lean/C03_Logic.html "3. Logic") [Next ](file:///home/rian-macedo/Projects/confia_crawler/output/01_raw_html/math_in_lean/C05_Elementary_Number_Theory.html "5. Elementary Number Theory")
 * * *
 © Copyright 2020-2025, Jeremy Avigad, Patrick Massot. Text licensed under CC BY 4.0.
 Built with [Sphinx](https://www.sphinx-doc.org/) using a [theme](https://github.com/readthedocs/sphinx_rtd_theme) provided by [Read the Docs](https://readthedocs.org). 

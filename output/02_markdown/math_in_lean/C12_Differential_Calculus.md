@@ -1,38 +1,38 @@
-[ Mathematics in Lean ](file:///home/ryant/Projects/confia_crawler/output/01_raw_html/math_in_lean/index.html)
-  * [1. Introduction](file:///home/ryant/Projects/confia_crawler/output/01_raw_html/math_in_lean/C01_Introduction.html)
-  * [2. Basics](file:///home/ryant/Projects/confia_crawler/output/01_raw_html/math_in_lean/C02_Basics.html)
-  * [3. Logic](file:///home/ryant/Projects/confia_crawler/output/01_raw_html/math_in_lean/C03_Logic.html)
-  * [4. Sets and Functions](file:///home/ryant/Projects/confia_crawler/output/01_raw_html/math_in_lean/C04_Sets_and_Functions.html)
-  * [5. Elementary Number Theory](file:///home/ryant/Projects/confia_crawler/output/01_raw_html/math_in_lean/C05_Elementary_Number_Theory.html)
-  * [6. Discrete Mathematics](file:///home/ryant/Projects/confia_crawler/output/01_raw_html/math_in_lean/C06_Discrete_Mathematics.html)
-  * [7. Structures](file:///home/ryant/Projects/confia_crawler/output/01_raw_html/math_in_lean/C07_Structures.html)
-  * [8. Hierarchies](file:///home/ryant/Projects/confia_crawler/output/01_raw_html/math_in_lean/C08_Hierarchies.html)
-  * [9. Groups and Rings](file:///home/ryant/Projects/confia_crawler/output/01_raw_html/math_in_lean/C09_Groups_and_Rings.html)
-  * [10. Linear algebra](file:///home/ryant/Projects/confia_crawler/output/01_raw_html/math_in_lean/C10_Linear_Algebra.html)
-  * [11. Topology](file:///home/ryant/Projects/confia_crawler/output/01_raw_html/math_in_lean/C11_Topology.html)
-  * [](file:///home/ryant/Projects/confia_crawler/output/01_raw_html/math_in_lean/C12_Differential_Calculus.html)
-    * [12.1. Elementary Differential Calculus](file:///home/ryant/Projects/confia_crawler/output/01_raw_html/math_in_lean/C12_Differential_Calculus.html#elementary-differential-calculus)
-    * [](file:///home/ryant/Projects/confia_crawler/output/01_raw_html/math_in_lean/C12_Differential_Calculus.html#differential-calculus-in-normed-spaces)
-      * [12.2.1. Normed spaces](file:///home/ryant/Projects/confia_crawler/output/01_raw_html/math_in_lean/C12_Differential_Calculus.html#id3)
-      * [12.2.2. Continuous linear maps](file:///home/ryant/Projects/confia_crawler/output/01_raw_html/math_in_lean/C12_Differential_Calculus.html#continuous-linear-maps)
-      * [12.2.3. Asymptotic comparisons](file:///home/ryant/Projects/confia_crawler/output/01_raw_html/math_in_lean/C12_Differential_Calculus.html#asymptotic-comparisons)
-      * [12.2.4. Differentiability](file:///home/ryant/Projects/confia_crawler/output/01_raw_html/math_in_lean/C12_Differential_Calculus.html#differentiability)
-  * [13. Integration and Measure Theory](file:///home/ryant/Projects/confia_crawler/output/01_raw_html/math_in_lean/C13_Integration_and_Measure_Theory.html)
+[ Mathematics in Lean ](file:///home/rian-macedo/Projects/confia_crawler/output/01_raw_html/math_in_lean/index.html)
+  * [1. Introduction](file:///home/rian-macedo/Projects/confia_crawler/output/01_raw_html/math_in_lean/C01_Introduction.html)
+  * [2. Basics](file:///home/rian-macedo/Projects/confia_crawler/output/01_raw_html/math_in_lean/C02_Basics.html)
+  * [3. Logic](file:///home/rian-macedo/Projects/confia_crawler/output/01_raw_html/math_in_lean/C03_Logic.html)
+  * [4. Sets and Functions](file:///home/rian-macedo/Projects/confia_crawler/output/01_raw_html/math_in_lean/C04_Sets_and_Functions.html)
+  * [5. Elementary Number Theory](file:///home/rian-macedo/Projects/confia_crawler/output/01_raw_html/math_in_lean/C05_Elementary_Number_Theory.html)
+  * [6. Discrete Mathematics](file:///home/rian-macedo/Projects/confia_crawler/output/01_raw_html/math_in_lean/C06_Discrete_Mathematics.html)
+  * [7. Structures](file:///home/rian-macedo/Projects/confia_crawler/output/01_raw_html/math_in_lean/C07_Structures.html)
+  * [8. Hierarchies](file:///home/rian-macedo/Projects/confia_crawler/output/01_raw_html/math_in_lean/C08_Hierarchies.html)
+  * [9. Groups and Rings](file:///home/rian-macedo/Projects/confia_crawler/output/01_raw_html/math_in_lean/C09_Groups_and_Rings.html)
+  * [10. Linear algebra](file:///home/rian-macedo/Projects/confia_crawler/output/01_raw_html/math_in_lean/C10_Linear_Algebra.html)
+  * [11. Topology](file:///home/rian-macedo/Projects/confia_crawler/output/01_raw_html/math_in_lean/C11_Topology.html)
+  * [](file:///home/rian-macedo/Projects/confia_crawler/output/01_raw_html/math_in_lean/C12_Differential_Calculus.html)
+    * [12.1. Elementary Differential Calculus](file:///home/rian-macedo/Projects/confia_crawler/output/01_raw_html/math_in_lean/C12_Differential_Calculus.html#elementary-differential-calculus)
+    * [](file:///home/rian-macedo/Projects/confia_crawler/output/01_raw_html/math_in_lean/C12_Differential_Calculus.html#differential-calculus-in-normed-spaces)
+      * [12.2.1. Normed spaces](file:///home/rian-macedo/Projects/confia_crawler/output/01_raw_html/math_in_lean/C12_Differential_Calculus.html#id3)
+      * [12.2.2. Continuous linear maps](file:///home/rian-macedo/Projects/confia_crawler/output/01_raw_html/math_in_lean/C12_Differential_Calculus.html#continuous-linear-maps)
+      * [12.2.3. Asymptotic comparisons](file:///home/rian-macedo/Projects/confia_crawler/output/01_raw_html/math_in_lean/C12_Differential_Calculus.html#asymptotic-comparisons)
+      * [12.2.4. Differentiability](file:///home/rian-macedo/Projects/confia_crawler/output/01_raw_html/math_in_lean/C12_Differential_Calculus.html#differentiability)
+  * [13. Integration and Measure Theory](file:///home/rian-macedo/Projects/confia_crawler/output/01_raw_html/math_in_lean/C13_Integration_and_Measure_Theory.html)
 
 
-  * [Index](file:///home/ryant/Projects/confia_crawler/output/01_raw_html/math_in_lean/genindex.html)
+  * [Index](file:///home/rian-macedo/Projects/confia_crawler/output/01_raw_html/math_in_lean/genindex.html)
 
 
-[Mathematics in Lean](file:///home/ryant/Projects/confia_crawler/output/01_raw_html/math_in_lean/index.html)
-  * [](file:///home/ryant/Projects/confia_crawler/output/01_raw_html/math_in_lean/index.html)
+[Mathematics in Lean](file:///home/rian-macedo/Projects/confia_crawler/output/01_raw_html/math_in_lean/index.html)
+  * [](file:///home/rian-macedo/Projects/confia_crawler/output/01_raw_html/math_in_lean/index.html)
   * 12. Differential Calculus
-  * [ View page source](file:///home/ryant/Projects/confia_crawler/output/01_raw_html/math_in_lean/_sources/C12_Differential_Calculus.rst.txt)
+  * [ View page source](file:///home/rian-macedo/Projects/confia_crawler/output/01_raw_html/math_in_lean/_sources/C12_Differential_Calculus.rst.txt)
 
 
 * * *
-#  12. Differential Calculus[](file:///home/ryant/Projects/confia_crawler/output/01_raw_html/math_in_lean/C12_Differential_Calculus.html#index-0 "Link to this heading")
-We now consider the formalization of notions from _analysis_ , starting with differentiation in this chapter and turning integration and measure theory in the next. In [Section 12.1](file:///home/ryant/Projects/confia_crawler/output/01_raw_html/math_in_lean/C12_Differential_Calculus.html#elementary-differential-calculus), we stick with the setting of functions from the real numbers to the real numbers, which is familiar from any introductory calculus class. In [Section 12.2](file:///home/ryant/Projects/confia_crawler/output/01_raw_html/math_in_lean/C12_Differential_Calculus.html#normed-spaces), we then consider the notion of a derivative in a much broader setting.
-##  12.1. Elementary Differential Calculus[](file:///home/ryant/Projects/confia_crawler/output/01_raw_html/math_in_lean/C12_Differential_Calculus.html#elementary-differential-calculus "Link to this heading")
+#  12. Differential Calculus[](file:///home/rian-macedo/Projects/confia_crawler/output/01_raw_html/math_in_lean/C12_Differential_Calculus.html#index-0 "Link to this heading")
+We now consider the formalization of notions from _analysis_ , starting with differentiation in this chapter and turning integration and measure theory in the next. In [Section 12.1](file:///home/rian-macedo/Projects/confia_crawler/output/01_raw_html/math_in_lean/C12_Differential_Calculus.html#elementary-differential-calculus), we stick with the setting of functions from the real numbers to the real numbers, which is familiar from any introductory calculus class. In [Section 12.2](file:///home/rian-macedo/Projects/confia_crawler/output/01_raw_html/math_in_lean/C12_Differential_Calculus.html#normed-spaces), we then consider the notion of a derivative in a much broader setting.
+##  12.1. Elementary Differential Calculus[](file:///home/rian-macedo/Projects/confia_crawler/output/01_raw_html/math_in_lean/C12_Differential_Calculus.html#elementary-differential-calculus "Link to this heading")
 Let `f` be a function from the reals to the reals. There is a difference between talking about the derivative of `f` at a single point and talking about the derivative function. In Mathlib, the first notion is represented as follows.
 
 ```
@@ -108,8 +108,8 @@ example : deriv sin π = -1 := by simp
 
 ```
 
-##  12.2. Differential Calculus in Normed Spaces[](file:///home/ryant/Projects/confia_crawler/output/01_raw_html/math_in_lean/C12_Differential_Calculus.html#differential-calculus-in-normed-spaces "Link to this heading")
-###  12.2.1. Normed spaces[](file:///home/ryant/Projects/confia_crawler/output/01_raw_html/math_in_lean/C12_Differential_Calculus.html#id3 "Link to this heading")
+##  12.2. Differential Calculus in Normed Spaces[](file:///home/rian-macedo/Projects/confia_crawler/output/01_raw_html/math_in_lean/C12_Differential_Calculus.html#differential-calculus-in-normed-spaces "Link to this heading")
+###  12.2.1. Normed spaces[](file:///home/rian-macedo/Projects/confia_crawler/output/01_raw_html/math_in_lean/C12_Differential_Calculus.html#id3 "Link to this heading")
 Differentiation can be generalized beyond `ℝ` using the notion of a _normed vector space_ , which encapsulates both direction and distance. We start with the notion of a _normed group_ , which is an additive commutative group equipped with a real-valued norm function satisfying the following conditions.
 
 ```
@@ -174,7 +174,7 @@ example (𝕜 : Type*) [NontriviallyNormedField 𝕜] (E : Type*) [NormedAddComm
 
 ```
 
-###  12.2.2. Continuous linear maps[](file:///home/ryant/Projects/confia_crawler/output/01_raw_html/math_in_lean/C12_Differential_Calculus.html#continuous-linear-maps "Link to this heading")
+###  12.2.2. Continuous linear maps[](file:///home/rian-macedo/Projects/confia_crawler/output/01_raw_html/math_in_lean/C12_Differential_Calculus.html#continuous-linear-maps "Link to this heading")
 We now turn to the morphisms in the category of normed spaces, namely, continuous linear maps. In Mathlib, the type of `𝕜`-linear continuous maps between normed spaces `E` and `F` is written `E →L[𝕜] F`. They are implemented as _bundled maps_ , which means that an element of this type a structure that that includes the function itself and the properties of being linear and continuous. Lean will insert a coercion so that a continuous linear map can be treated as a function.
 
 ```
@@ -245,7 +245,7 @@ example {ι : Type*} [CompleteSpace E] {g : ι → E →L[𝕜] F} (h : ∀ x, �
 
 ```
 
-###  12.2.3. Asymptotic comparisons[](file:///home/ryant/Projects/confia_crawler/output/01_raw_html/math_in_lean/C12_Differential_Calculus.html#asymptotic-comparisons "Link to this heading")
+###  12.2.3. Asymptotic comparisons[](file:///home/rian-macedo/Projects/confia_crawler/output/01_raw_html/math_in_lean/C12_Differential_Calculus.html#asymptotic-comparisons "Link to this heading")
 Defining differentiability also requires asymptotic comparisons. Mathlib has an extensive library covering the big O and little o relations, whose definitions are shown below. Opening the `asymptotics` locale allows us to use the corresponding notation. Here we will only use little o to define differentiability.
 
 ```
@@ -269,7 +269,7 @@ example {α : Type*} {E : Type*} [NormedAddCommGroup E] (l : Filter α) (f g : �
 
 ```
 
-###  12.2.4. Differentiability[](file:///home/ryant/Projects/confia_crawler/output/01_raw_html/math_in_lean/C12_Differential_Calculus.html#differentiability "Link to this heading")
+###  12.2.4. Differentiability[](file:///home/rian-macedo/Projects/confia_crawler/output/01_raw_html/math_in_lean/C12_Differential_Calculus.html#differentiability "Link to this heading")
 We are now ready to discuss differentiable functions between normed spaces. In analogy the elementary one-dimensional, Mathlib defines a predicate `HasFDerivAt` and a function `fderiv`. Here the letter “f” stands for _Fréchet_.
 
 ```
@@ -340,7 +340,7 @@ end LocalInverse
 ```
 
 This has been only a quick tour of the differential calculus in Mathlib. The library contains many variations that we have not discussed. For example, you may want to use one-sided derivatives in the one-dimensional setting. The means to do so are found in Mathlib in a more general context; see `HasFDerivWithinAt` or the even more general `HasFDerivAtFilter`.
-[](file:///home/ryant/Projects/confia_crawler/output/01_raw_html/math_in_lean/C11_Topology.html "11. Topology") [Next ](file:///home/ryant/Projects/confia_crawler/output/01_raw_html/math_in_lean/C13_Integration_and_Measure_Theory.html "13. Integration and Measure Theory")
+[](file:///home/rian-macedo/Projects/confia_crawler/output/01_raw_html/math_in_lean/C11_Topology.html "11. Topology") [Next ](file:///home/rian-macedo/Projects/confia_crawler/output/01_raw_html/math_in_lean/C13_Integration_and_Measure_Theory.html "13. Integration and Measure Theory")
 * * *
 © Copyright 2020-2025, Jeremy Avigad, Patrick Massot. Text licensed under CC BY 4.0.
 Built with [Sphinx](https://www.sphinx-doc.org/) using a [theme](https://github.com/readthedocs/sphinx_rtd_theme) provided by [Read the Docs](https://readthedocs.org). 

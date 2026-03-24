@@ -2,7 +2,28 @@
 #  16.6. E‑matching[🔗](find/?domain=Verso.Genre.Manual.section&name=e-matching "Permalink")
 _E-matching_ is a procedure for efficiently instantiating quantified theorem statements with ground terms. It is widely employed in SMT solvers, and `[grind](Tactic-Proofs/Tactic-Reference/#grind "Documentation for tactic")` uses it to instantiate theorems efficiently. It is especially effective when combined with [congruence closure](The--grind--tactic/Congruence-Closure/#--tech-term-Congruence-closure), enabling `[grind](Tactic-Proofs/Tactic-Reference/#grind "Documentation for tactic")` to discover non-obvious consequences of equalities and annotated theorems automatically.
 E-matching adds new facts to the metaphorical whiteboard, based on an index of theorems. When the whiteboard contains terms that match the index, the E-matching engine instantiates the corresponding theorems, and the resulting terms can feed further rounds of [congruence closure](The--grind--tactic/Congruence-Closure/#--tech-term-Congruence-closure), [constraint propagation](The--grind--tactic/Constraint-Propagation/#--tech-term-Constraint-propagation), and theory-specific solvers. Each fact added to the whiteboard by E-matching is referred to as an _instance_. Annotating theorems for E-matching, thus adding them to the index, is essential for enabling `[grind](Tactic-Proofs/Tactic-Reference/#grind "Documentation for tactic")` to make effective use of a library.
-In addition to user-specified theorems, `[grind](Tactic-Proofs/Tactic-Reference/#grind "Documentation for tactic")` uses automatically generated equations for ``Lean.Parser.Term.match : term``Pattern matching. `match e, ... with | p, ... => f | ...` matches each given term `e` against each pattern `p` of a match alternative. When all patterns of an alternative match, the `match` term evaluates to the value of the corresponding right-hand side `f` with the pattern variables bound to the respective matched values. If used as `match h : e, ... with | p, ... => f | ...`, `h : e = p` is available within `f`.  When not constructing a proof, `match` does not automatically substitute variables matched on in dependent variables' types. Use `match (generalizing := true) ...` to enforce this.  Syntax quotations can also be used in a pattern match. This matches a `Syntax` value against quotations, pattern variables, or `_`.  Quoted identifiers only match identical identifiers - custom matching such as by the preresolved names only should be done explicitly.  `Syntax.atom`s are ignored during matching by default except when part of a built-in literal. For users introducing new atoms, we recommend wrapping them in dedicated syntax kinds if they should participate in matching. For example, in ```lean syntax "c" ("foo" <|> "bar") ... ``` `foo` and `bar` are indistinguishable during matching, but in ```lean syntax foo := "foo" syntax "c" (foo <|> "bar") ... ``` they are not. ``[`match`](Terms/Pattern-Matching/#Lean___Parser___Term___match)-expressions as E-matching theorems. Behind the scenes, the [elaborator](Terms/#--tech-term-elaborator) generates auxiliary functions that implement pattern matches, along with equational theorems that specify their behavior. Using these equations with E-matching enables `[grind](Tactic-Proofs/Tactic-Reference/#grind "Documentation for tactic")` to reduce these instances of pattern matching.
+In addition to user-specified theorems, `[grind](Tactic-Proofs/Tactic-Reference/#grind "Documentation for tactic")` uses automatically generated equations for ``Lean.Parser.Term.match : term`
+Pattern matching. `match e, ... with | p, ... => f | ...` matches each given term `e` against each pattern `p` of a match alternative. When all patterns of an alternative match, the `match` term evaluates to the value of the corresponding right-hand side `f` with the pattern variables bound to the respective matched values. If used as `match h : e, ... with | p, ... => f | ...`, `h : e = p` is available within `f`.
+When not constructing a proof, `match` does not automatically substitute variables matched on in dependent variables' types. Use `match (generalizing := true) ...` to enforce this.
+Syntax quotations can also be used in a pattern match. This matches a `Syntax` value against quotations, pattern variables, or `_`.
+Quoted identifiers only match identical identifiers - custom matching such as by the preresolved names only should be done explicitly.
+`Syntax.atom`s are ignored during matching by default except when part of a built-in literal. For users introducing new atoms, we recommend wrapping them in dedicated syntax kinds if they should participate in matching. For example, in
+
+```
+syntax "c" ("foo" <|> "bar") ...
+
+```
+
+`foo` and `bar` are indistinguishable during matching, but in
+
+```
+syntax foo := "foo"
+syntax "c" (foo <|> "bar") ...
+
+```
+
+they are not.
+`[`match`](Terms/Pattern-Matching/#Lean___Parser___Term___match)-expressions as E-matching theorems. Behind the scenes, the [elaborator](Terms/#--tech-term-elaborator) generates auxiliary functions that implement pattern matches, along with equational theorems that specify their behavior. Using these equations with E-matching enables `[grind](Tactic-Proofs/Tactic-Reference/#grind "Documentation for tactic")` to reduce these instances of pattern matching.
 ##  16.6.1. Patterns[🔗](find/?domain=Verso.Genre.Manual.section&name=e-matching-patterns "Permalink")
 The E-matching index is a table of _patterns_. When a term matches one of the patterns in the table, `[grind](Tactic-Proofs/Tactic-Reference/#grind "Documentation for tactic")` attempts to instantiate and apply the corresponding theorem, giving rise to further facts and equalities. Selecting appropriate patterns is an important part of using `[grind](Tactic-Proofs/Tactic-Reference/#grind "Documentation for tactic")` effectively: if the patterns are too restrictive, then useful theorems may not be applied; if they are too general, performance may suffer.
 E-matching Patterns
@@ -18,92 +39,85 @@ syntaxE-matching Pattern Selection
 
 ```
 command ::= ...
-    | The `grind_pattern` command can be used to manually select a pattern for theorem instantiation.
-Enabling the option `trace.grind.ematch.instance` causes `grind` to print a trace message for each
+    | 
+
+
+The grind_pattern command can be used to manually select a pattern for theorem instantiation.
+Enabling the option trace.grind.ematch.instance causes grind to print a trace message for each
 theorem instance it generates, which can be helpful when determining patterns.
 
+
 When multiple patterns are specified together, all of them must match in the current context before
-`grind` attempts to instantiate the theorem. This is referred to as a *multi-pattern*.
+grind attempts to instantiate the theorem. This is referred to as a _multi-pattern_.
 This is useful for theorems such as transitivity rules, where multiple premises must be simultaneously
 present for the rule to apply.
 
-In the following example, `R` is a transitive binary relation over `Int`.
+
+In the following example, R is a transitive binary relation over Int.
+
+
 ```
 opaque R : Int → Int → Prop
 axiom Rtrans {x y z : Int} : R x y → R y z → R x z
+
 ```
-To use the fact that `R` is transitive, `grind` must already be able to satisfy both premises.
-This is represented using a multi-pattern:
+
+To use the fact that `R` is transitive, `grind` must already be able to satisfy both premises. This is represented using a multi-pattern:
+
 ```
 grind_pattern Rtrans => R x y, R y z
 
 example {a b c d} : R a b → R b c → R c d → R a d := by
   grind
-```
-The multi-pattern `R x y`, `R y z` instructs `grind` to instantiate `Rtrans` only when both `R x y`
-and `R y z` are available in the context. In the example, `grind` applies `Rtrans` to derive `R a c`
-from `R a b` and `R b c`, and can then repeat the same reasoning to deduce `R a d` from `R a c` and
-`R c d`.
 
+```
+
+The multi-pattern `R x y`, `R y z` instructs `grind` to instantiate `Rtrans` only when both `R x y` and `R y z` are available in the context. In the example, `grind` applies `Rtrans` to derive `R a c` from `R a b` and `R b c`, and can then repeat the same reasoning to deduce `R a d` from `R a c` and `R c d`.
 You can add constraints to restrict theorem instantiation. For example:
+
 ```
 grind_pattern extract_extract => (as.extract i j).extract k l where
   as =/= #[]
+
 ```
-The constraint instructs `grind` to instantiate the theorem only if `as` is **not** definitionally equal
-to `#[]`.
 
+The constraint instructs `grind` to instantiate the theorem only if `as` is **not** definitionally equal to `#[]`.
 ## Constraints
+  * `x =/= term`: The term bound to `x` (one of the theorem parameters) is **not** definitionally equal to `term`. The term may contain holes (i.e., `_`).
+  * `x =?= term`: The term bound to `x` is definitionally equal to `term`. The term may contain holes (i.e., `_`).
+  * `size x < n`: The term bound to `x` has size less than `n`. Implicit arguments and binder types are ignored when computing the size.
+  * `depth x < n`: The term bound to `x` has depth less than `n`.
+  * `is_ground x`: The term bound to `x` does not contain local variables or meta-variables.
+  * `is_value x`: The term bound to `x` is a value. That is, it is a constructor fully applied to value arguments, a literal (`Nat`, `Int`, `String`, etc.), or a lambda `fun x => t`.
+  * `is_strict_value x`: Similar to `is_value`, but without lambdas.
+  * `not_value x`: The term bound to `x` is a **not** value (see `is_value`).
+  * `not_strict_value x`: Similar to `not_value`, but without lambdas.
+  * `gen < n`: The theorem instance has generation less than `n`. Recall that each term is assigned a generation, and terms produced by theorem instantiation have a generation that is one greater than the maximal generation of all the terms used to instantiate the theorem. This constraint complements the `gen` option available in `grind`.
+  * `max_insts < n`: A new instance is generated only if less than `n` instances have been generated so far.
+  * `guard e`: The instantiation is delayed until `grind` learns that `e` is `true` in this state.
+  * `check e`: Similar to `guard e`, but `grind` checks whether `e` is implied by its current state by assuming `¬ e` and trying to deduce an inconsistency.
 
-- `x =/= term`: The term bound to `x` (one of the theorem parameters) is **not** definitionally equal to `term`.
-  The term may contain holes (i.e., `_`).
-
-- `x =?= term`: The term bound to `x` is definitionally equal to `term`.
-  The term may contain holes (i.e., `_`).
-
-- `size x < n`: The term bound to `x` has size less than `n`. Implicit arguments
-and binder types are ignored when computing the size.
-
-- `depth x < n`: The term bound to `x` has depth less than `n`.
-
-- `is_ground x`: The term bound to `x` does not contain local variables or meta-variables.
-
-- `is_value x`: The term bound to `x` is a value. That is, it is a constructor fully applied to value arguments,
-a literal (`Nat`, `Int`, `String`, etc.), or a lambda `fun x => t`.
-
-- `is_strict_value x`: Similar to `is_value`, but without lambdas.
-
-- `not_value x`: The term bound to `x` is a **not** value (see `is_value`).
-
-- `not_strict_value x`: Similar to `not_value`, but without lambdas.
-
-- `gen < n`: The theorem instance has generation less than `n`. Recall that each term is assigned a
-generation, and terms produced by theorem instantiation have a generation that is one greater than
-the maximal generation of all the terms used to instantiate the theorem. This constraint complements
-the `gen` option available in `grind`.
-
-- `max_insts < n`: A new instance is generated only if less than `n` instances have been generated so far.
-
-- `guard e`: The instantiation is delayed until `grind` learns that `e` is `true` in this state.
-
-- `check e`: Similar to `guard e`, but `grind` checks whether `e` is implied by its current state by
-assuming `¬ e` and trying to deduce an inconsistency.
 
 ## Example
-
 Consider the following example where `f` is a monotonic function
+
 ```
 opaque f : Nat → Nat
 axiom fMono : x ≤ y → f x ≤ f y
+
 ```
-and you want to instruct `grind` to instantiate `fMono` for every pair of terms `f x` and `f y` when
-`x ≤ y` and `x` is **not** definitionally equal to `y`. You can use
+
+and you want to instruct `grind` to instantiate `fMono` for every pair of terms `f x` and `f y` when `x ≤ y` and `x` is **not** definitionally equal to `y`. You can use
+
 ```
 grind_pattern fMono => f x, f y where
   guard x ≤ y
   x =/= y
+
 ```
+
 Then, in the following example, only three instances are generated.
+
 ```
 /--
 trace: [grind.ematch.instance] fMono: a ≤ f a → f a ≤ f (f a)
@@ -114,100 +128,98 @@ trace: [grind.ematch.instance] fMono: a ≤ f a → f a ≤ f (f a)
 example : f b = f c → a ≤ f a → f (f a) ≤ f (f (f a)) := by
   set_option trace.grind.ematch.instance true in
   grind
+
 ```
-`attrKind` matches `("scoped" <|> "local")?`, used before an attribute like `@[local simp]`. grind_pattern ident => term,*
+
+``
+ 
+`attrKind` matches `("scoped" <|> "local")?`, used before an attribute like `@[local simp]`. 
+`grind_pattern ident => term,*
 ```
 
 Associates a theorem with one or more patterns. When multiple patterns are provided in a single ``Lean.Parser.Command.grind_pattern```grind_pattern` command, _all_ of them must match a term before `[grind](Tactic-Proofs/Tactic-Reference/#grind "Documentation for tactic")` will attempt to instantiate the theorem.
 
 ```
 command ::= ...
-    | The `grind_pattern` command can be used to manually select a pattern for theorem instantiation.
-Enabling the option `trace.grind.ematch.instance` causes `grind` to print a trace message for each
+    | 
+
+
+The grind_pattern command can be used to manually select a pattern for theorem instantiation.
+Enabling the option trace.grind.ematch.instance causes grind to print a trace message for each
 theorem instance it generates, which can be helpful when determining patterns.
 
+
 When multiple patterns are specified together, all of them must match in the current context before
-`grind` attempts to instantiate the theorem. This is referred to as a *multi-pattern*.
+grind attempts to instantiate the theorem. This is referred to as a _multi-pattern_.
 This is useful for theorems such as transitivity rules, where multiple premises must be simultaneously
 present for the rule to apply.
 
-In the following example, `R` is a transitive binary relation over `Int`.
+
+In the following example, R is a transitive binary relation over Int.
+
+
 ```
 opaque R : Int → Int → Prop
 axiom Rtrans {x y z : Int} : R x y → R y z → R x z
+
 ```
-To use the fact that `R` is transitive, `grind` must already be able to satisfy both premises.
-This is represented using a multi-pattern:
+
+To use the fact that `R` is transitive, `grind` must already be able to satisfy both premises. This is represented using a multi-pattern:
+
 ```
 grind_pattern Rtrans => R x y, R y z
 
 example {a b c d} : R a b → R b c → R c d → R a d := by
   grind
-```
-The multi-pattern `R x y`, `R y z` instructs `grind` to instantiate `Rtrans` only when both `R x y`
-and `R y z` are available in the context. In the example, `grind` applies `Rtrans` to derive `R a c`
-from `R a b` and `R b c`, and can then repeat the same reasoning to deduce `R a d` from `R a c` and
-`R c d`.
 
+```
+
+The multi-pattern `R x y`, `R y z` instructs `grind` to instantiate `Rtrans` only when both `R x y` and `R y z` are available in the context. In the example, `grind` applies `Rtrans` to derive `R a c` from `R a b` and `R b c`, and can then repeat the same reasoning to deduce `R a d` from `R a c` and `R c d`.
 You can add constraints to restrict theorem instantiation. For example:
+
 ```
 grind_pattern extract_extract => (as.extract i j).extract k l where
   as =/= #[]
+
 ```
-The constraint instructs `grind` to instantiate the theorem only if `as` is **not** definitionally equal
-to `#[]`.
 
+The constraint instructs `grind` to instantiate the theorem only if `as` is **not** definitionally equal to `#[]`.
 ## Constraints
+  * `x =/= term`: The term bound to `x` (one of the theorem parameters) is **not** definitionally equal to `term`. The term may contain holes (i.e., `_`).
+  * `x =?= term`: The term bound to `x` is definitionally equal to `term`. The term may contain holes (i.e., `_`).
+  * `size x < n`: The term bound to `x` has size less than `n`. Implicit arguments and binder types are ignored when computing the size.
+  * `depth x < n`: The term bound to `x` has depth less than `n`.
+  * `is_ground x`: The term bound to `x` does not contain local variables or meta-variables.
+  * `is_value x`: The term bound to `x` is a value. That is, it is a constructor fully applied to value arguments, a literal (`Nat`, `Int`, `String`, etc.), or a lambda `fun x => t`.
+  * `is_strict_value x`: Similar to `is_value`, but without lambdas.
+  * `not_value x`: The term bound to `x` is a **not** value (see `is_value`).
+  * `not_strict_value x`: Similar to `not_value`, but without lambdas.
+  * `gen < n`: The theorem instance has generation less than `n`. Recall that each term is assigned a generation, and terms produced by theorem instantiation have a generation that is one greater than the maximal generation of all the terms used to instantiate the theorem. This constraint complements the `gen` option available in `grind`.
+  * `max_insts < n`: A new instance is generated only if less than `n` instances have been generated so far.
+  * `guard e`: The instantiation is delayed until `grind` learns that `e` is `true` in this state.
+  * `check e`: Similar to `guard e`, but `grind` checks whether `e` is implied by its current state by assuming `¬ e` and trying to deduce an inconsistency.
 
-- `x =/= term`: The term bound to `x` (one of the theorem parameters) is **not** definitionally equal to `term`.
-  The term may contain holes (i.e., `_`).
-
-- `x =?= term`: The term bound to `x` is definitionally equal to `term`.
-  The term may contain holes (i.e., `_`).
-
-- `size x < n`: The term bound to `x` has size less than `n`. Implicit arguments
-and binder types are ignored when computing the size.
-
-- `depth x < n`: The term bound to `x` has depth less than `n`.
-
-- `is_ground x`: The term bound to `x` does not contain local variables or meta-variables.
-
-- `is_value x`: The term bound to `x` is a value. That is, it is a constructor fully applied to value arguments,
-a literal (`Nat`, `Int`, `String`, etc.), or a lambda `fun x => t`.
-
-- `is_strict_value x`: Similar to `is_value`, but without lambdas.
-
-- `not_value x`: The term bound to `x` is a **not** value (see `is_value`).
-
-- `not_strict_value x`: Similar to `not_value`, but without lambdas.
-
-- `gen < n`: The theorem instance has generation less than `n`. Recall that each term is assigned a
-generation, and terms produced by theorem instantiation have a generation that is one greater than
-the maximal generation of all the terms used to instantiate the theorem. This constraint complements
-the `gen` option available in `grind`.
-
-- `max_insts < n`: A new instance is generated only if less than `n` instances have been generated so far.
-
-- `guard e`: The instantiation is delayed until `grind` learns that `e` is `true` in this state.
-
-- `check e`: Similar to `guard e`, but `grind` checks whether `e` is implied by its current state by
-assuming `¬ e` and trying to deduce an inconsistency.
 
 ## Example
-
 Consider the following example where `f` is a monotonic function
+
 ```
 opaque f : Nat → Nat
 axiom fMono : x ≤ y → f x ≤ f y
+
 ```
-and you want to instruct `grind` to instantiate `fMono` for every pair of terms `f x` and `f y` when
-`x ≤ y` and `x` is **not** definitionally equal to `y`. You can use
+
+and you want to instruct `grind` to instantiate `fMono` for every pair of terms `f x` and `f y` when `x ≤ y` and `x` is **not** definitionally equal to `y`. You can use
+
 ```
 grind_pattern fMono => f x, f y where
   guard x ≤ y
   x =/= y
+
 ```
+
 Then, in the following example, only three instances are generated.
+
 ```
 /--
 trace: [grind.ematch.instance] fMono: a ≤ f a → f a ≤ f (f a)
@@ -218,20 +230,13 @@ trace: [grind.ematch.instance] fMono: a ≤ f a → f a ≤ f (f a)
 example : f b = f c → a ≤ f a → f (f a) ≤ f (f (f a)) := by
   set_option trace.grind.ematch.instance true in
   grind
+
 ```
-`attrKind` matches `("scoped" <|> "local")?`, used before an attribute like `@[local simp]`. grind_pattern ident => term,* where (isValue
-       | isStrictValue
-       | notValue
-       | notStrictValue
-       | isGround
-       | sizeLt
-       | depthLt
-       | genLt
-       | maxInsts
-       | guard
-       | check
-       | notDefEq
-       | defEq)
+
+``
+ 
+`attrKind` matches `("scoped" <|> "local")?`, used before an attribute like `@[local simp]`. 
+`grind_pattern ident => term,* where (isValue | isStrictValue | notValue | notStrictValue | isGround | sizeLt | depthLt | genLt | maxInsts | guard | check | notDefEq | defEq)
 ```
 
 The optional ``Lean.Parser.Command.grind_pattern```where` clause specifies constraints that must be satisfied before `[grind](Tactic-Proofs/Tactic-Reference/#grind "Documentation for tactic")` attempts to instantiate the theorem. Each constraint has the form `variable =/= value`, preventing instantiation when the pattern variable would be assigned the specified value. This is useful to avoid unbounded or excessive instantiations with problematic terms.
@@ -339,23 +344,122 @@ grind_pattern reverse_flatMap => (l.flatMap f).reverse where
 
 This instructs `[grind](Tactic-Proofs/Tactic-Reference/#grind "Documentation for tactic")` to use the pattern `(l.flatMap f).reverse`, but only when `f` is not a composition with `[List.reverse](Basic-Types/Linked-Lists/#List___reverse "Documentation for List.reverse")`, preventing the unbounded chain of instantiations.
 You can use `#grind_lint check` to look for problematic patterns, or `#grind_lint check in List` or `#grind_lint check in module Std.Data` to look in specific namespaces or modules.
-The `grind` attribute automatically generates an E-matching pattern or multi-pattern using a heuristic, instead of using ``Lean.Parser.Command.grindPattern : command``The `grind_pattern` command can be used to manually select a pattern for theorem instantiation. Enabling the option `trace.grind.ematch.instance` causes `grind` to print a trace message for each theorem instance it generates, which can be helpful when determining patterns.  When multiple patterns are specified together, all of them must match in the current context before `grind` attempts to instantiate the theorem. This is referred to as a *multi-pattern*. This is useful for theorems such as transitivity rules, where multiple premises must be simultaneously present for the rule to apply.  In the following example, `R` is a transitive binary relation over `Int`. ``` opaque R : Int → Int → Prop axiom Rtrans {x y z : Int} : R x y → R y z → R x z ``` To use the fact that `R` is transitive, `grind` must already be able to satisfy both premises. This is represented using a multi-pattern: ``` grind_pattern Rtrans => R x y, R y z  example {a b c d} : R a b → R b c → R c d → R a d := by   grind ``` The multi-pattern `R x y`, `R y z` instructs `grind` to instantiate `Rtrans` only when both `R x y` and `R y z` are available in the context. In the example, `grind` applies `Rtrans` to derive `R a c` from `R a b` and `R b c`, and can then repeat the same reasoning to deduce `R a d` from `R a c` and `R c d`.  You can add constraints to restrict theorem instantiation. For example: ``` grind_pattern extract_extract => (as.extract i j).extract k l where   as =/= #[] ``` The constraint instructs `grind` to instantiate the theorem only if `as` is **not** definitionally equal to `#[]`.  ## Constraints  - `x =/= term`: The term bound to `x` (one of the theorem parameters) is **not** definitionally equal to `term`.   The term may contain holes (i.e., `_`).  - `x =?= term`: The term bound to `x` is definitionally equal to `term`.   The term may contain holes (i.e., `_`).  - `size x < n`: The term bound to `x` has size less than `n`. Implicit arguments and binder types are ignored when computing the size.  - `depth x < n`: The term bound to `x` has depth less than `n`.  - `is_ground x`: The term bound to `x` does not contain local variables or meta-variables.  - `is_value x`: The term bound to `x` is a value. That is, it is a constructor fully applied to value arguments, a literal (`Nat`, `Int`, `String`, etc.), or a lambda `fun x => t`.  - `is_strict_value x`: Similar to `is_value`, but without lambdas.  - `not_value x`: The term bound to `x` is a **not** value (see `is_value`).  - `not_strict_value x`: Similar to `not_value`, but without lambdas.  - `gen < n`: The theorem instance has generation less than `n`. Recall that each term is assigned a generation, and terms produced by theorem instantiation have a generation that is one greater than the maximal generation of all the terms used to instantiate the theorem. This constraint complements the `gen` option available in `grind`.  - `max_insts < n`: A new instance is generated only if less than `n` instances have been generated so far.  - `guard e`: The instantiation is delayed until `grind` learns that `e` is `true` in this state.  - `check e`: Similar to `guard e`, but `grind` checks whether `e` is implied by its current state by assuming `¬ e` and trying to deduce an inconsistency.  ## Example  Consider the following example where `f` is a monotonic function ``` opaque f : Nat → Nat axiom fMono : x ≤ y → f x ≤ f y ``` and you want to instruct `grind` to instantiate `fMono` for every pair of terms `f x` and `f y` when `x ≤ y` and `x` is **not** definitionally equal to `y`. You can use ``` grind_pattern fMono => f x, f y where   guard x ≤ y   x =/= y ``` Then, in the following example, only three instances are generated. ``` /-- trace: [grind.ematch.instance] fMono: a ≤ f a → f a ≤ f (f a) [grind.ematch.instance] fMono: f a ≤ f (f a) → f (f a) ≤ f (f (f a)) [grind.ematch.instance] fMono: a ≤ f (f a) → f a ≤ f (f (f a)) -/ #guard_msgs in example : f b = f c → a ≤ f a → f (f a) ≤ f (f (f a)) := by   set_option trace.grind.ematch.instance true in   grind ``` ```grind_pattern` to explicitly specify a pattern. It includes a number of variants that select different heuristics. The `grind?` attribute displays an info message showing the pattern which was selected—this is very helpful for debugging!
+The `grind` attribute automatically generates an E-matching pattern or multi-pattern using a heuristic, instead of using ``Lean.Parser.Command.grindPattern : command`
+The `grind_pattern` command can be used to manually select a pattern for theorem instantiation. Enabling the option `trace.grind.ematch.instance` causes `grind` to print a trace message for each theorem instance it generates, which can be helpful when determining patterns.
+When multiple patterns are specified together, all of them must match in the current context before `grind` attempts to instantiate the theorem. This is referred to as a _multi-pattern_. This is useful for theorems such as transitivity rules, where multiple premises must be simultaneously present for the rule to apply.
+In the following example, `R` is a transitive binary relation over `Int`.
+
+```
+opaque R : Int → Int → Prop
+axiom Rtrans {x y z : Int} : R x y → R y z → R x z
+
+```
+
+To use the fact that `R` is transitive, `grind` must already be able to satisfy both premises. This is represented using a multi-pattern:
+
+```
+grind_pattern Rtrans => R x y, R y z
+
+example {a b c d} : R a b → R b c → R c d → R a d := by
+  grind
+
+```
+
+The multi-pattern `R x y`, `R y z` instructs `grind` to instantiate `Rtrans` only when both `R x y` and `R y z` are available in the context. In the example, `grind` applies `Rtrans` to derive `R a c` from `R a b` and `R b c`, and can then repeat the same reasoning to deduce `R a d` from `R a c` and `R c d`.
+You can add constraints to restrict theorem instantiation. For example:
+
+```
+grind_pattern extract_extract => (as.extract i j).extract k l where
+  as =/= #[]
+
+```
+
+The constraint instructs `grind` to instantiate the theorem only if `as` is **not** definitionally equal to `#[]`.
+## Constraints
+  * `x =/= term`: The term bound to `x` (one of the theorem parameters) is **not** definitionally equal to `term`. The term may contain holes (i.e., `_`).
+  * `x =?= term`: The term bound to `x` is definitionally equal to `term`. The term may contain holes (i.e., `_`).
+  * `size x < n`: The term bound to `x` has size less than `n`. Implicit arguments and binder types are ignored when computing the size.
+  * `depth x < n`: The term bound to `x` has depth less than `n`.
+  * `is_ground x`: The term bound to `x` does not contain local variables or meta-variables.
+  * `is_value x`: The term bound to `x` is a value. That is, it is a constructor fully applied to value arguments, a literal (`Nat`, `Int`, `String`, etc.), or a lambda `fun x => t`.
+  * `is_strict_value x`: Similar to `is_value`, but without lambdas.
+  * `not_value x`: The term bound to `x` is a **not** value (see `is_value`).
+  * `not_strict_value x`: Similar to `not_value`, but without lambdas.
+  * `gen < n`: The theorem instance has generation less than `n`. Recall that each term is assigned a generation, and terms produced by theorem instantiation have a generation that is one greater than the maximal generation of all the terms used to instantiate the theorem. This constraint complements the `gen` option available in `grind`.
+  * `max_insts < n`: A new instance is generated only if less than `n` instances have been generated so far.
+  * `guard e`: The instantiation is delayed until `grind` learns that `e` is `true` in this state.
+  * `check e`: Similar to `guard e`, but `grind` checks whether `e` is implied by its current state by assuming `¬ e` and trying to deduce an inconsistency.
+
+
+## Example
+Consider the following example where `f` is a monotonic function
+
+```
+opaque f : Nat → Nat
+axiom fMono : x ≤ y → f x ≤ f y
+
+```
+
+and you want to instruct `grind` to instantiate `fMono` for every pair of terms `f x` and `f y` when `x ≤ y` and `x` is **not** definitionally equal to `y`. You can use
+
+```
+grind_pattern fMono => f x, f y where
+  guard x ≤ y
+  x =/= y
+
+```
+
+Then, in the following example, only three instances are generated.
+
+```
+/--
+trace: [grind.ematch.instance] fMono: a ≤ f a → f a ≤ f (f a)
+[grind.ematch.instance] fMono: f a ≤ f (f a) → f (f a) ≤ f (f (f a))
+[grind.ematch.instance] fMono: a ≤ f (f a) → f a ≤ f (f (f a))
+-/
+#guard_msgs in
+example : f b = f c → a ≤ f a → f (f a) ≤ f (f (f a)) := by
+  set_option trace.grind.ematch.instance true in
+  grind
+
+```
+
+``grind_pattern` to explicitly specify a pattern. It includes a number of variants that select different heuristics. The `grind?` attribute displays an info message showing the pattern which was selected—this is very helpful for debugging!
 Patterns are subexpressions of theorem statements. A subexpression is _indexable_ if it has an indexable constant as its head, and it is said to _cover_ one of the theorem's arguments if it fixes the argument's value. Indexable constants are all constants other than `[Eq](Basic-Propositions/Propositional-Equality/#Eq___refl "Documentation for Eq")`, `[HEq](Basic-Propositions/Propositional-Equality/#HEq___refl "Documentation for HEq")`, `[Iff](Basic-Propositions/Logical-Connectives/#Iff___intro "Documentation for Iff")`, `[And](Basic-Propositions/Logical-Connectives/#And___intro "Documentation for And")`, `[Or](Basic-Propositions/Logical-Connectives/#Or___inl "Documentation for Or")`, and `[Not](Basic-Propositions/Logical-Connectives/#Not "Documentation for Not")`. The set of arguments that are covered by a pattern or multi-pattern is referred to as its _coverage_. Some constants are lower priority than others; in particular, the arithmetic operators `[HAdd.hAdd](Type-Classes/Basic-Classes/#HAdd___mk "Documentation for HAdd.hAdd")`, `[HSub.hSub](Type-Classes/Basic-Classes/#HSub___mk "Documentation for HSub.hSub")`, `[HMul.hMul](Type-Classes/Basic-Classes/#HMul___mk "Documentation for HMul.hMul")`, `[Dvd.dvd](Type-Classes/Basic-Classes/#Dvd___mk "Documentation for Dvd.dvd")`, `[HDiv.hDiv](Type-Classes/Basic-Classes/#HDiv___mk "Documentation for HDiv.hDiv")`, and `[HMod.hMod](Type-Classes/Basic-Classes/#HMod___mk "Documentation for HMod.hMod")` have low priority. An indexable subexpression is _minimal_ if there is no smaller indexable subexpression whose head constant has at least as high priority.
 attributeGrind Patterns
 When the `grind` attribute is added to a definition, it causes `grind` to unfold that definition to its body whenever it is encountered. When using the module system, if the body of the definition is not visible (e.g. via `[@[](Attributes/#Lean___Parser___Term___attributes-next "Documentation for syntax")expose[]](Attributes/#Lean___Parser___Term___attributes-next "Documentation for syntax")`), then the `grind` attribute is ignored.
 
 ```
 attr ::= ...
-    | Marks a theorem or definition for use by the `grind` tactic.
+    | 
 
-An optional modifier (e.g. `=`, `→`, `←`, `cases`, `intro`, `ext`, `inj`, etc.)
-controls how `grind` uses the declaration:
-* whether it is applied forwards, backwards, or both,
-* whether equalities are used on the left, right, or both sides,
-* whether case-splits, constructors, extensionality, or injectivity are applied,
-* or whether custom instantiation patterns are used.
+
+Marks a theorem or definition for use by the grind tactic.
+
+
+An optional modifier (e.g. =, →, ←, cases, intro, ext, inj, etc.)
+controls how grind uses the declaration:
+
+
+
+
+  * whether it is applied forwards, backwards, or both,
+
+
+  * whether equalities are used on the left, right, or both sides,
+
+
+  * whether case-splits, constructors, extensionality, or injectivity are applied,
+
+
+  * or whether custom instantiation patterns are used.
+
+
+
 
 See the individual modifier docstrings for details.
+
+
 grind grindMod?
 ```
 
@@ -363,13 +467,20 @@ The `grind` attribute automatically generates an E-matching pattern for a theore
 
 ```
 attr ::= ...
-    | Like `@[grind]`, but enforces the **minimal indexable subexpression condition**:
-when several subterms cover the same free variables, `grind!` chooses the smallest one.
+    | 
+
+
+Like @[grind], but enforces the **minimal indexable subexpression condition**:
+when several subterms cover the same free variables, grind! chooses the smallest one.
+
 
 This influences E-matching pattern selection.
 
+
 ### Example
-```lean
+
+
+```
 theorem fg_eq (h : x > 0) : f (g x) = x
 
 @[grind <-] theorem fg_eq (h : x > 0) : f (g x) = x
@@ -378,16 +489,23 @@ theorem fg_eq (h : x > 0) : f (g x) = x
 -- With minimal subexpression:
 @[grind! <-] theorem fg_eq (h : x > 0) : f (g x) = x
 -- Pattern selected: `g x`
+
 ```
-grind! grindMod?
+
+` grind! grindMod?
 ```
 
 The `grind!` attribute automatically generates an E-matching pattern for a theorem, using a strategy determined by the provided modifier. It additionally enforces the condition that the selected pattern(s) should be minimal indexable subexpressions.
 
 ```
 attr ::= ...
-    | Like `@[grind]`, but also prints the pattern(s) selected by `grind`
+    | 
+
+
+Like @[grind], but also prints the pattern(s) selected by grind
 as info messages. Useful for debugging annotations and modifiers.
+
+
 grind? grindMod?
 ```
 
@@ -395,32 +513,49 @@ The `grind?` displays the pattern that was generated.
 
 ```
 attr ::= ...
-    | Like `@[grind!]`, but also prints the pattern(s) selected by `grind`
+    | 
+
+
+Like @[grind!], but also prints the pattern(s) selected by grind
 as info messages. Combines minimal subexpression selection with debugging output.
+
+
 grind!? grindMod?
 ```
 
 The `grind!?` attribute is equivalent to `grind!`, except it displays the resulting pattern for inspection.
-Without any modifier, `[@[](Attributes/#Lean___Parser___Term___attributes-next "Documentation for syntax")grind[]](Attributes/#Lean___Parser___Term___attributes-next "Documentation for syntax")` traverses the conclusion and then the hypotheses from left to right, adding patterns as they increase the coverage, stopping when all arguments are covered. This default strategy can be explicitly requested using the ``Lean.Parser.Attr.grindDef``The `.` modifier instructs `grind` to select a multi-pattern by traversing the conclusion of the theorem, and then the hypotheses from left to right. We say this is the default modifier. Each time it encounters a subexpression which covers an argument which was not previously covered, it adds that subexpression as a pattern, until all arguments have been covered. If `grind!` is used, then only minimal indexable subexpressions are considered. ```.` modifier. In addition to using the default strategy, the attribute checks which other strategies could be applied, and displays all of the resulting patterns.
+Without any modifier, `[@[](Attributes/#Lean___Parser___Term___attributes-next "Documentation for syntax")grind[]](Attributes/#Lean___Parser___Term___attributes-next "Documentation for syntax")` traverses the conclusion and then the hypotheses from left to right, adding patterns as they increase the coverage, stopping when all arguments are covered. This default strategy can be explicitly requested using the ``Lean.Parser.Attr.grindDef`
+The `.` modifier instructs `grind` to select a multi-pattern by traversing the conclusion of the theorem, and then the hypotheses from left to right. We say this is the default modifier. Each time it encounters a subexpression which covers an argument which was not previously covered, it adds that subexpression as a pattern, until all arguments have been covered. If `grind!` is used, then only minimal indexable subexpressions are considered.
+``.` modifier. In addition to using the default strategy, the attribute checks which other strategies could be applied, and displays all of the resulting patterns.
 syntaxDefault Pattern
 
 ```
 grindMod ::= ...
-    | The `.` modifier instructs `grind` to select a multi-pattern by traversing the conclusion of the
+    | 
+
+
+The . modifier instructs grind to select a multi-pattern by traversing the conclusion of the
 theorem, and then the hypotheses from left to right. We say this is the default modifier.
 Each time it encounters a subexpression which covers an argument which was not
 previously covered, it adds that subexpression as a pattern, until all arguments have been covered.
-If `grind!` is used, then only minimal indexable subexpressions are considered.
+If grind! is used, then only minimal indexable subexpressions are considered.
+
+
 .
 ```
 
 ```
 grindMod ::= ...
-    | The `.` modifier instructs `grind` to select a multi-pattern by traversing the conclusion of the
+    | 
+
+
+The . modifier instructs grind to select a multi-pattern by traversing the conclusion of the
 theorem, and then the hypotheses from left to right. We say this is the default modifier.
 Each time it encounters a subexpression which covers an argument which was not
 previously covered, it adds that subexpression as a pattern, until all arguments have been covered.
-If `grind!` is used, then only minimal indexable subexpressions are considered.
+If grind! is used, then only minimal indexable subexpressions are considered.
+
+
 ·
 ```
 
@@ -429,9 +564,14 @@ syntaxEquality Rewrites
 
 ```
 grindMod ::= ...
-    | The `=` modifier instructs `grind` to check that the conclusion of the theorem is an equality,
+    | 
+
+
+The = modifier instructs grind to check that the conclusion of the theorem is an equality,
 and then uses the left-hand side of the equality as a pattern. This may fail if not all of the arguments appear
 in the left-hand side.
+
+
 =
 ```
 
@@ -440,9 +580,14 @@ syntaxBackward Equality Rewrites
 
 ```
 grindMod ::= ...
-    | The `=_` modifier instructs `grind` to check that the conclusion of the theorem is an equality,
+    | 
+
+
+The =_ modifier instructs grind to check that the conclusion of the theorem is an equality,
 and then uses the right-hand side of the equality as a pattern. This may fail if not all of the arguments appear
 in the right-hand side.
+
+
 =_
 ```
 
@@ -451,8 +596,13 @@ syntaxBidirectional Equality Rewrites
 
 ```
 grindMod ::= ...
-    | The `_=_` modifier acts like a macro which expands to `=` and `=_`.  It adds two patterns,
+    | 
+
+
+The _=_ modifier acts like a macro which expands to = and =_.  It adds two patterns,
 allowing the equality theorem to trigger in either direction.
+
+
 _=_
 ```
 
@@ -461,12 +611,17 @@ syntaxForward Reasoning
 
 ```
 grindMod ::= ...
-    | The `→` modifier instructs `grind` to select a multi-pattern from the hypotheses of the theorem.
-In other words, `grind` will use the theorem for forwards reasoning.
+    | 
+
+
+The → modifier instructs grind to select a multi-pattern from the hypotheses of the theorem.
+In other words, grind will use the theorem for forwards reasoning.
 To generate a pattern, it traverses the hypotheses of the theorem from left to right.
 Each time it encounters a subexpression which covers an argument which was not
 previously covered, it adds that subexpression as a pattern, until all arguments have been covered.
-If `grind!` is used, then only minimal indexable subexpressions are considered.
+If grind! is used, then only minimal indexable subexpressions are considered.
+
+
 →
 ```
 
@@ -475,12 +630,17 @@ syntaxBackward Reasoning
 
 ```
 grindMod ::= ...
-    | The `←` modifier instructs `grind` to select a multi-pattern from the conclusion of theorem.
-In other words, `grind` will use the theorem for backwards reasoning.
+    | 
+
+
+The ← modifier instructs grind to select a multi-pattern from the conclusion of theorem.
+In other words, grind will use the theorem for backwards reasoning.
 This may fail if not all of the arguments to the theorem appear in the conclusion.
 Each time it encounters a subexpression which covers an argument which was not
 previously covered, it adds that subexpression as a pattern, until all arguments have been covered.
-If `grind!` is used, then only minimal indexable subexpressions are considered.
+If grind! is used, then only minimal indexable subexpressions are considered.
+
+
 ←
 ```
 
@@ -491,21 +651,31 @@ syntaxLeft-to-Right Traversal
 
 ```
 grindMod ::= ...
-    | The `⇒` modifier instructs `grind` to select a multi-pattern by traversing all the hypotheses from
+    | 
+
+
+The ⇒ modifier instructs grind to select a multi-pattern by traversing all the hypotheses from
 left to right, followed by the conclusion.
 Each time it encounters a subexpression which covers an argument which was not
 previously covered, it adds that subexpression as a pattern, until all arguments have been covered.
-If `grind!` is used, then only minimal indexable subexpressions are considered.
+If grind! is used, then only minimal indexable subexpressions are considered.
+
+
 =>
 ```
 
 ```
 grindMod ::= ...
-    | The `⇒` modifier instructs `grind` to select a multi-pattern by traversing all the hypotheses from
+    | 
+
+
+The ⇒ modifier instructs grind to select a multi-pattern by traversing all the hypotheses from
 left to right, followed by the conclusion.
 Each time it encounters a subexpression which covers an argument which was not
 previously covered, it adds that subexpression as a pattern, until all arguments have been covered.
-If `grind!` is used, then only minimal indexable subexpressions are considered.
+If grind! is used, then only minimal indexable subexpressions are considered.
+
+
 ⇒
 ```
 
@@ -514,21 +684,31 @@ syntaxRight-to-Left Traversal
 
 ```
 grindMod ::= ...
-    | The `⇐` modifier instructs `grind` to select a multi-pattern by traversing the conclusion, and then
+    | 
+
+
+The ⇐ modifier instructs grind to select a multi-pattern by traversing the conclusion, and then
 all the hypotheses from right to left.
 Each time it encounters a subexpression which covers an argument which was not
 previously covered, it adds that subexpression as a pattern, until all arguments have been covered.
-If `grind!` is used, then only minimal indexable subexpressions are considered.
+If grind! is used, then only minimal indexable subexpressions are considered.
+
+
 <=
 ```
 
 ```
 grindMod ::= ...
-    | The `⇐` modifier instructs `grind` to select a multi-pattern by traversing the conclusion, and then
+    | 
+
+
+The ⇐ modifier instructs grind to select a multi-pattern by traversing the conclusion, and then
 all the hypotheses from right to left.
 Each time it encounters a subexpression which covers an argument which was not
 previously covered, it adds that subexpression as a pattern, until all arguments have been covered.
-If `grind!` is used, then only minimal indexable subexpressions are considered.
+If grind! is used, then only minimal indexable subexpressions are considered.
+
+
 ⇐
 ```
 
@@ -537,11 +717,16 @@ syntaxBackward Reasoning on Equality
 
 ```
 grindMod ::= ...
-    | The `←=` modifier is unlike the other `grind` modifiers, and it used specifically for
+    | 
+
+
+The ←= modifier is unlike the other grind modifiers, and it used specifically for
 backwards reasoning on equality. When a theorem's conclusion is an equality proposition and it
-is annotated with `@[grind ←=]`, grind `will` instantiate it whenever the corresponding disequality
+is annotated with @[grind ←=], grind will instantiate it whenever the corresponding disequality
 is assumed—this is a consequence of the fact that grind performs all proofs by contradiction.
-Ordinarily, the grind attribute does not consider the `=` symbol when generating patterns.
+Ordinarily, the grind attribute does not consider the = symbol when generating patterns.
+
+
 ←=
 ```
 
@@ -554,13 +739,30 @@ syntaxFunction-Valued Congruence Closure
 
 ```
 grindMod ::= ...
-    | The `funCC` modifier marks global functions that support **function-valued congruence closure**.
-Given an application `f a₁ a₂ … aₙ`, when `funCC := true`,
-`grind` generates and tracks equalities for all partial applications:
-- `f a₁`
-- `f a₁ a₂`
-- `…`
-- `f a₁ a₂ … aₙ`
+    | 
+
+
+The funCC modifier marks global functions that support **function-valued congruence closure**.
+Given an application f a₁ a₂ … aₙ, when funCC := true,
+grind generates and tracks equalities for all partial applications:
+
+
+
+
+  * f a₁
+
+
+  * f a₁ a₂
+
+
+  * …
+
+
+  * f a₁ a₂ … aₙ
+
+
+
+
 funCC
 ```
 
@@ -576,11 +778,17 @@ syntaxExtensionality
 
 ```
 grindMod ::= ...
-    | The `ext` modifier marks extensionality theorems for use by `grind`.
-For example, the standard library marks `funext` with this attribute.
+    | 
 
-Whenever `grind` encounters a disequality `a ≠ b`, it attempts to apply any
-available extensionality theorems whose matches the type of `a` and `b`.
+
+The ext modifier marks extensionality theorems for use by grind.
+For example, the standard library marks funext with this attribute.
+
+
+Whenever grind encounters a disequality a ≠ b, it attempts to apply any
+available extensionality theorems whose matches the type of a and b.
+
+
 ext
 ```
 
@@ -736,9 +944,14 @@ syntaxInjectivity
 
 ```
 grindMod ::= ...
-    | The `inj` modifier marks injectivity theorems for use by `grind`.
-The conclusion of the theorem must be of the form `Function.Injective f`
-where the term `f` contains at least one constant symbol.
+    | 
+
+
+The inj modifier marks injectivity theorems for use by grind.
+The conclusion of the theorem must be of the form Function.Injective f
+where the term f contains at least one constant symbol.
+
+
 inj
 ```
 
@@ -796,8 +1009,13 @@ syntaxConstructor Patterns
 
 ```
 grindMod ::= ...
-    | The `intro` modifier instructs `grind` to use the constructors (introduction rules)
+    | 
+
+
+The intro modifier instructs grind to use the constructors (introduction rules)
 of an inductive predicate as E-matching theorems.Example:
+
+
 ```
 inductive Even : Nat → Prop where
 | zero : Even 0
@@ -806,11 +1024,11 @@ inductive Even : Nat → Prop where
 attribute [grind intro] Even
 example (h : Even x) : Even (x + 6) := by grind
 example : Even 0 := by grind
+
 ```
-Here `attribute [grind intro] Even` acts like a macro that expands to
-`attribute [grind] Even.zero` and `attribute [grind] Even.add2`.
-This is especially convenient for inductive predicates with many constructors.
-intro
+
+Here `attribute [grind intro] Even` acts like a macro that expands to `attribute [grind] Even.zero` and `attribute [grind] Even.add2`. This is especially convenient for inductive predicates with many constructors.
+`intro
 ```
 
 The `[intro](Tactic-Proofs/Tactic-Reference/#intro "Documentation for tactic")` modifier instructs `[grind](Tactic-Proofs/Tactic-Reference/#grind "Documentation for tactic")` to use the constructors (introduction rules) of an inductive predicate as E-matching theorems.Example:
@@ -1034,13 +1252,20 @@ syntaxUnfolding During Preprocessing
 
 ```
 grindMod ::= ...
-    | The `unfold` modifier instructs `grind` to unfold the given definition during the preprocessing step.
+    | 
+
+
+The unfold modifier instructs grind to unfold the given definition during the preprocessing step.
 Example:
+
+
 ```
 @[grind unfold] def h (x : Nat) := 2 * x
 example : 6 ∣ 3*h x := by grind
+
 ```
-unfold
+
+`unfold
 ```
 
 The `[unfold](Tactic-Proofs/Tactic-Reference/#unfold "Documentation for tactic")` modifier instructs `[grind](Tactic-Proofs/Tactic-Reference/#grind "Documentation for tactic")` to unfold the given definition during the preprocessing step. Example:
@@ -1049,16 +1274,24 @@ syntaxNormalization Rules
 
 ```
 grindMod ::= ...
-    | The `norm` modifier instructs `grind` to use a theorem as a normalization rule. That is,
+    | 
+
+
+The norm modifier instructs grind to use a theorem as a normalization rule. That is,
 the theorem is applied during the preprocessing step.
-This feature is meant for advanced users who understand how the preprocessor and `grind`'s search
+This feature is meant for advanced users who understand how the preprocessor and grind's search
 procedure interact with each other.
 New users can still benefit from this feature by restricting its use to theorems that completely
 eliminate a symbol from the goal. Example:
+
+
 ```
 theorem max_def : max n m = if n ≤ m then m else n
+
 ```
+
 For a negative example, consider:
+
 ```
 opaque f : Int → Int → Int → Int
 theorem fax1 : f x 0 1 = 1 := sorry
@@ -1068,13 +1301,11 @@ attribute [grind =] fax2
 
 example (h : c = 1) : f c 0 c = 1 := by
   grind -- fails
+
 ```
-In this example, `fax1` is a normalization rule, but it is not applicable to the input goal since
-`f c 0 c` is not an instance of `f x 0 1`. However, `f c 0 c` matches the pattern `f 1 x 1` modulo
-the equality `c = 1`. Thus, `grind` instantiates `fax2` with `x := 0`, producing the equality
-`f 1 0 1 = 1`, which the normalizer simplifies to `True`. As a result, nothing useful is learned.
-In the future, we plan to include linters to automatically detect issues like these.
-Example:
+
+In this example, `fax1` is a normalization rule, but it is not applicable to the input goal since `f c 0 c` is not an instance of `f x 0 1`. However, `f c 0 c` matches the pattern `f 1 x 1` modulo the equality `c = 1`. Thus, `grind` instantiates `fax2` with `x := 0`, producing the equality `f 1 0 1 = 1`, which the normalizer simplifies to `True`. As a result, nothing useful is learned. In the future, we plan to include linters to automatically detect issues like these. Example:
+
 ```
 opaque f : Nat → Nat
 opaque g : Nat → Nat
@@ -1085,8 +1316,10 @@ opaque g : Nat → Nat
 example : f x ≥ 2 := by grind
 example : f x ≥ g x := by grind
 example : f x + g x ≥ 4 := by grind
+
 ```
-norm
+
+`norm
 ```
 
 The `norm` modifier instructs `[grind](Tactic-Proofs/Tactic-Reference/#grind "Documentation for tactic")` to use a theorem as a normalization rule. That is, the theorem is applied during the preprocessing step. This feature is meant for advanced users who understand how the preprocessor and `[grind](Tactic-Proofs/Tactic-Reference/#grind "Documentation for tactic")`'s search procedure interact with each other. New users can still benefit from this feature by restricting its use to theorems that completely eliminate a symbol from the goal. Example:
@@ -2030,7 +2263,28 @@ When the option `diagnostics` is set to `[true](Basic-Types/Booleans/#Bool___fal
 ```
 
 [Live ↪](javascript:openLiveLink\("CYUwZgBAlg9gLgQwgLggOQXCgkwggGSgGcsM4AoCCAHwgAYIBeAPggG0BdC6iAOwgGoIARkYs+yVLES8yZAAKsA5gCcoPYI3YQ4ACxAxlIALbR4CAPqEArgGMbKU9IAUfQUICUjXiklnvyBi5lMAAbWRAADwQjAAcQkAcnKSQAJlp3ADp4nkVdCBYhegCIACMATy4VNQ0nRRBxBgg0zydjTBsdFEbm2UIQOHMYGLhYPmAoBEUeGGIoG0JtZSsEtTI+gaGRmDGJqZmR+YzdQ0IdGBCNQugeMkjouITUJL9mrPrczoKixvLK1XUILV6l0mulAW04B0Qc0gA"\))
-By default, `[grind](Tactic-Proofs/Tactic-Reference/#grind "Documentation for tactic")` uses automatically generated equations for ``Lean.Parser.Term.match : term``Pattern matching. `match e, ... with | p, ... => f | ...` matches each given term `e` against each pattern `p` of a match alternative. When all patterns of an alternative match, the `match` term evaluates to the value of the corresponding right-hand side `f` with the pattern variables bound to the respective matched values. If used as `match h : e, ... with | p, ... => f | ...`, `h : e = p` is available within `f`.  When not constructing a proof, `match` does not automatically substitute variables matched on in dependent variables' types. Use `match (generalizing := true) ...` to enforce this.  Syntax quotations can also be used in a pattern match. This matches a `Syntax` value against quotations, pattern variables, or `_`.  Quoted identifiers only match identical identifiers - custom matching such as by the preresolved names only should be done explicitly.  `Syntax.atom`s are ignored during matching by default except when part of a built-in literal. For users introducing new atoms, we recommend wrapping them in dedicated syntax kinds if they should participate in matching. For example, in ```lean syntax "c" ("foo" <|> "bar") ... ``` `foo` and `bar` are indistinguishable during matching, but in ```lean syntax foo := "foo" syntax "c" (foo <|> "bar") ... ``` they are not. ``[`match`](Terms/Pattern-Matching/#Lean___Parser___Term___match)-expressions as E-matching theorems. This can be disabled by setting the `matchEqs` flag to `[false](Basic-Types/Booleans/#Bool___false "Documentation for Bool.false")`.
+By default, `[grind](Tactic-Proofs/Tactic-Reference/#grind "Documentation for tactic")` uses automatically generated equations for ``Lean.Parser.Term.match : term`
+Pattern matching. `match e, ... with | p, ... => f | ...` matches each given term `e` against each pattern `p` of a match alternative. When all patterns of an alternative match, the `match` term evaluates to the value of the corresponding right-hand side `f` with the pattern variables bound to the respective matched values. If used as `match h : e, ... with | p, ... => f | ...`, `h : e = p` is available within `f`.
+When not constructing a proof, `match` does not automatically substitute variables matched on in dependent variables' types. Use `match (generalizing := true) ...` to enforce this.
+Syntax quotations can also be used in a pattern match. This matches a `Syntax` value against quotations, pattern variables, or `_`.
+Quoted identifiers only match identical identifiers - custom matching such as by the preresolved names only should be done explicitly.
+`Syntax.atom`s are ignored during matching by default except when part of a built-in literal. For users introducing new atoms, we recommend wrapping them in dedicated syntax kinds if they should participate in matching. For example, in
+
+```
+syntax "c" ("foo" <|> "bar") ...
+
+```
+
+`foo` and `bar` are indistinguishable during matching, but in
+
+```
+syntax foo := "foo"
+syntax "c" (foo <|> "bar") ...
+
+```
+
+they are not.
+`[`match`](Terms/Pattern-Matching/#Lean___Parser___Term___match)-expressions as E-matching theorems. This can be disabled by setting the `matchEqs` flag to `[false](Basic-Types/Booleans/#Bool___false "Documentation for Bool.false")`.
 E-matching and Pattern Matching
 Enabling diagnostics shows that `[grind](Tactic-Proofs/Tactic-Reference/#grind "Documentation for tactic")` uses one of the equations of the auxiliary matching function during E-matching:
 `theorem gt1 (x y : [Nat](Basic-Types/Natural-Numbers/#Nat___zero "Documentation for Nat")) :     x = y + 1 →     0 < [match](Terms/Pattern-Matching/#Lean___Parser___Term___match "Documentation for syntax") x [with](Terms/Pattern-Matching/#Lean___Parser___Term___match "Documentation for syntax")         | 0 => 0         | _ + 1 => 1 := byx:[Nat](Basic-Types/Natural-Numbers/#Nat___zero "Documentation for Nat")y:[Nat](Basic-Types/Natural-Numbers/#Nat___zero "Documentation for Nat")⊢ x [=](Basic-Propositions/Propositional-Equality/#Eq___refl "Documentation for Eq") y [+](Type-Classes/Basic-Classes/#HAdd___mk "Documentation for HAdd.hAdd") 1 →   0 [<](Type-Classes/Basic-Classes/#LT___mk "Documentation for LT.lt")     match x with     | 0 => 0     | n.[succ](Basic-Types/Natural-Numbers/#Nat___zero "Documentation for Nat.succ") => 1   `[diag] Diagnostics

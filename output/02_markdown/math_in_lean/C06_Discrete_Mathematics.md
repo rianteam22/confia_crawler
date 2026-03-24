@@ -1,37 +1,37 @@
-[ Mathematics in Lean ](file:///home/ryant/Projects/confia_crawler/output/01_raw_html/math_in_lean/index.html)
-  * [1. Introduction](file:///home/ryant/Projects/confia_crawler/output/01_raw_html/math_in_lean/C01_Introduction.html)
-  * [2. Basics](file:///home/ryant/Projects/confia_crawler/output/01_raw_html/math_in_lean/C02_Basics.html)
-  * [3. Logic](file:///home/ryant/Projects/confia_crawler/output/01_raw_html/math_in_lean/C03_Logic.html)
-  * [4. Sets and Functions](file:///home/ryant/Projects/confia_crawler/output/01_raw_html/math_in_lean/C04_Sets_and_Functions.html)
-  * [5. Elementary Number Theory](file:///home/ryant/Projects/confia_crawler/output/01_raw_html/math_in_lean/C05_Elementary_Number_Theory.html)
-  * [](file:///home/ryant/Projects/confia_crawler/output/01_raw_html/math_in_lean/C06_Discrete_Mathematics.html)
-    * [6.1. Finsets and Fintypes](file:///home/ryant/Projects/confia_crawler/output/01_raw_html/math_in_lean/C06_Discrete_Mathematics.html#finsets-and-fintypes)
-    * [6.2. Counting Arguments](file:///home/ryant/Projects/confia_crawler/output/01_raw_html/math_in_lean/C06_Discrete_Mathematics.html#counting-arguments)
-    * [6.3. Inductively Defined Types](file:///home/ryant/Projects/confia_crawler/output/01_raw_html/math_in_lean/C06_Discrete_Mathematics.html#inductively-defined-types)
-  * [7. Structures](file:///home/ryant/Projects/confia_crawler/output/01_raw_html/math_in_lean/C07_Structures.html)
-  * [8. Hierarchies](file:///home/ryant/Projects/confia_crawler/output/01_raw_html/math_in_lean/C08_Hierarchies.html)
-  * [9. Groups and Rings](file:///home/ryant/Projects/confia_crawler/output/01_raw_html/math_in_lean/C09_Groups_and_Rings.html)
-  * [10. Linear algebra](file:///home/ryant/Projects/confia_crawler/output/01_raw_html/math_in_lean/C10_Linear_Algebra.html)
-  * [11. Topology](file:///home/ryant/Projects/confia_crawler/output/01_raw_html/math_in_lean/C11_Topology.html)
-  * [12. Differential Calculus](file:///home/ryant/Projects/confia_crawler/output/01_raw_html/math_in_lean/C12_Differential_Calculus.html)
-  * [13. Integration and Measure Theory](file:///home/ryant/Projects/confia_crawler/output/01_raw_html/math_in_lean/C13_Integration_and_Measure_Theory.html)
+[ Mathematics in Lean ](file:///home/rian-macedo/Projects/confia_crawler/output/01_raw_html/math_in_lean/index.html)
+  * [1. Introduction](file:///home/rian-macedo/Projects/confia_crawler/output/01_raw_html/math_in_lean/C01_Introduction.html)
+  * [2. Basics](file:///home/rian-macedo/Projects/confia_crawler/output/01_raw_html/math_in_lean/C02_Basics.html)
+  * [3. Logic](file:///home/rian-macedo/Projects/confia_crawler/output/01_raw_html/math_in_lean/C03_Logic.html)
+  * [4. Sets and Functions](file:///home/rian-macedo/Projects/confia_crawler/output/01_raw_html/math_in_lean/C04_Sets_and_Functions.html)
+  * [5. Elementary Number Theory](file:///home/rian-macedo/Projects/confia_crawler/output/01_raw_html/math_in_lean/C05_Elementary_Number_Theory.html)
+  * [](file:///home/rian-macedo/Projects/confia_crawler/output/01_raw_html/math_in_lean/C06_Discrete_Mathematics.html)
+    * [6.1. Finsets and Fintypes](file:///home/rian-macedo/Projects/confia_crawler/output/01_raw_html/math_in_lean/C06_Discrete_Mathematics.html#finsets-and-fintypes)
+    * [6.2. Counting Arguments](file:///home/rian-macedo/Projects/confia_crawler/output/01_raw_html/math_in_lean/C06_Discrete_Mathematics.html#counting-arguments)
+    * [6.3. Inductively Defined Types](file:///home/rian-macedo/Projects/confia_crawler/output/01_raw_html/math_in_lean/C06_Discrete_Mathematics.html#inductively-defined-types)
+  * [7. Structures](file:///home/rian-macedo/Projects/confia_crawler/output/01_raw_html/math_in_lean/C07_Structures.html)
+  * [8. Hierarchies](file:///home/rian-macedo/Projects/confia_crawler/output/01_raw_html/math_in_lean/C08_Hierarchies.html)
+  * [9. Groups and Rings](file:///home/rian-macedo/Projects/confia_crawler/output/01_raw_html/math_in_lean/C09_Groups_and_Rings.html)
+  * [10. Linear algebra](file:///home/rian-macedo/Projects/confia_crawler/output/01_raw_html/math_in_lean/C10_Linear_Algebra.html)
+  * [11. Topology](file:///home/rian-macedo/Projects/confia_crawler/output/01_raw_html/math_in_lean/C11_Topology.html)
+  * [12. Differential Calculus](file:///home/rian-macedo/Projects/confia_crawler/output/01_raw_html/math_in_lean/C12_Differential_Calculus.html)
+  * [13. Integration and Measure Theory](file:///home/rian-macedo/Projects/confia_crawler/output/01_raw_html/math_in_lean/C13_Integration_and_Measure_Theory.html)
 
 
-  * [Index](file:///home/ryant/Projects/confia_crawler/output/01_raw_html/math_in_lean/genindex.html)
+  * [Index](file:///home/rian-macedo/Projects/confia_crawler/output/01_raw_html/math_in_lean/genindex.html)
 
 
-[Mathematics in Lean](file:///home/ryant/Projects/confia_crawler/output/01_raw_html/math_in_lean/index.html)
-  * [](file:///home/ryant/Projects/confia_crawler/output/01_raw_html/math_in_lean/index.html)
+[Mathematics in Lean](file:///home/rian-macedo/Projects/confia_crawler/output/01_raw_html/math_in_lean/index.html)
+  * [](file:///home/rian-macedo/Projects/confia_crawler/output/01_raw_html/math_in_lean/index.html)
   * 6. Discrete Mathematics
-  * [ View page source](file:///home/ryant/Projects/confia_crawler/output/01_raw_html/math_in_lean/_sources/C06_Discrete_Mathematics.rst.txt)
+  * [ View page source](file:///home/rian-macedo/Projects/confia_crawler/output/01_raw_html/math_in_lean/_sources/C06_Discrete_Mathematics.rst.txt)
 
 
 * * *
-#  6. Discrete Mathematics[](file:///home/ryant/Projects/confia_crawler/output/01_raw_html/math_in_lean/C06_Discrete_Mathematics.html#discrete-mathematics "Link to this heading")
+#  6. Discrete Mathematics[](file:///home/rian-macedo/Projects/confia_crawler/output/01_raw_html/math_in_lean/C06_Discrete_Mathematics.html#discrete-mathematics "Link to this heading")
 _Discrete Mathematics_ is the study of finite sets, objects, and structures. We can count the elements of a finite set, and we can compute finite sums or products over its elements, we can compute maximums and minimums, and so on. We can also study objects that are generated by finitely many applications of certain generating functions, we can define functions by structural recursion, and prove theorems by structural induction. This chapters describes parts of Mathlib that support these activities.
-##  6.1. Finsets and Fintypes[](file:///home/ryant/Projects/confia_crawler/output/01_raw_html/math_in_lean/C06_Discrete_Mathematics.html#finsets-and-fintypes "Link to this heading")
+##  6.1. Finsets and Fintypes[](file:///home/rian-macedo/Projects/confia_crawler/output/01_raw_html/math_in_lean/C06_Discrete_Mathematics.html#finsets-and-fintypes "Link to this heading")
 Dealing with finite sets and types in Mathlib can be confusing, because the library offers multiple ways of handling them. In this section we will discuss the most common ones.
-We have already come across the type `Finset` in [Section 5.2](file:///home/ryant/Projects/confia_crawler/output/01_raw_html/math_in_lean/C05_Elementary_Number_Theory.html#section-induction-and-recursion) and [Section 5.3](file:///home/ryant/Projects/confia_crawler/output/01_raw_html/math_in_lean/C05_Elementary_Number_Theory.html#section-infinitely-many-primes). As the name suggests, an element of type `Finset α` is a finite set of elements of type `α`. We will call these “finsets.” The `Finset` data type is designed to have a computational interpretation, and many basic operations on `Finset α` assume that `α` has decidable equality, which guarantees that there is an algorithm for testing whether `a : α` is an element of a finset `s`.
+We have already come across the type `Finset` in [Section 5.2](file:///home/rian-macedo/Projects/confia_crawler/output/01_raw_html/math_in_lean/C05_Elementary_Number_Theory.html#section-induction-and-recursion) and [Section 5.3](file:///home/rian-macedo/Projects/confia_crawler/output/01_raw_html/math_in_lean/C05_Elementary_Number_Theory.html#section-infinitely-many-primes). As the name suggests, an element of type `Finset α` is a finite set of elements of type `α`. We will call these “finsets.” The `Finset` data type is designed to have a computational interpretation, and many basic operations on `Finset α` assume that `α` has decidable equality, which guarantees that there is an algorithm for testing whether `a : α` is an element of a finset `s`.
 
 ```
 section
@@ -65,7 +65,7 @@ example : a ∩ (b ∪ c) = (a ∩ b) ∪ (a ∩ c) := by rw [inter_union_distri
 
 ```
 
-Note that we have opened the `Finset` namespace, where theorems specific to finsets are found. If you step through the last example below, you will see applying `ext` followed by `simp` reduces the identity to a problem in propositional logic. As an exercise, you can try proving some of set identities from [Chapter 4](file:///home/ryant/Projects/confia_crawler/output/01_raw_html/math_in_lean/C04_Sets_and_Functions.html#sets-and-functions), transported to finsets.
+Note that we have opened the `Finset` namespace, where theorems specific to finsets are found. If you step through the last example below, you will see applying `ext` followed by `simp` reduces the identity to a problem in propositional logic. As an exercise, you can try proving some of set identities from [Chapter 4](file:///home/rian-macedo/Projects/confia_crawler/output/01_raw_html/math_in_lean/C04_Sets_and_Functions.html#sets-and-functions), transported to finsets.
 You have already seen the notation `Finset.range n` for the finite set of natural numbers {0,1,…,n−1}. `Finset` also allows you to define finite sets by enumerating the elements:
 
 ```
@@ -259,8 +259,8 @@ example : Fintype.card ↑s = s.card := by simp
 
 ```
 
-Lean and Mathlib use _type class inference_ to track the additional structure on fintypes, namely, the universal finset that contains all the elements. In other words, you can think of a fintype as an algebraic structure equipped with that extra data. [Chapter 7](file:///home/ryant/Projects/confia_crawler/output/01_raw_html/math_in_lean/C07_Structures.html#structures) explains how this works.
-##  6.2. Counting Arguments[](file:///home/ryant/Projects/confia_crawler/output/01_raw_html/math_in_lean/C06_Discrete_Mathematics.html#counting-arguments "Link to this heading")
+Lean and Mathlib use _type class inference_ to track the additional structure on fintypes, namely, the universal finset that contains all the elements. In other words, you can think of a fintype as an algebraic structure equipped with that extra data. [Chapter 7](file:///home/rian-macedo/Projects/confia_crawler/output/01_raw_html/math_in_lean/C07_Structures.html#structures) explains how this works.
+##  6.2. Counting Arguments[](file:///home/rian-macedo/Projects/confia_crawler/output/01_raw_html/math_in_lean/C06_Discrete_Mathematics.html#counting-arguments "Link to this heading")
 The art of counting things is a central part of combinatorics. Mathlib contains several basic identities for counting elements of finsets:
 
 ```
@@ -445,7 +445,7 @@ example {n : ℕ} (A : Finset ℕ)
 
 ```
 
-##  6.3. Inductively Defined Types[](file:///home/ryant/Projects/confia_crawler/output/01_raw_html/math_in_lean/C06_Discrete_Mathematics.html#inductively-defined-types "Link to this heading")
+##  6.3. Inductively Defined Types[](file:///home/rian-macedo/Projects/confia_crawler/output/01_raw_html/math_in_lean/C06_Discrete_Mathematics.html#inductively-defined-types "Link to this heading")
 Lean’s foundation allows us to define inductive types, that is, data types whose instances are generated from the bottom up. For example, the data type `List α` of lists of elements of `α` is generated by starting with the empty list, `nil`, and successively adding elements to the front the list. Below we will define a type of binary trees, `BinTree`, whose elements are generated by starting with the empty tree and building new trees by attaching a new node to two existing trees.
 In Lean, one can define inductive types whose objects are infinite, like countably branching well-founded trees. Finite inductive definitions are commonly used in discrete mathematics, however, especially in those branches of discrete mathematics that are relevant to computer science. Lean provides not only the means to define such types, but also principles of induction and definition by recursion. For example, the data type `List α` is defined inductively:
 
@@ -678,7 +678,7 @@ theorem subst_eval_eq : ∀ (A : PropForm) (n : ℕ) (C : PropForm) (v : ℕ →
 
 ```
 
-[](file:///home/ryant/Projects/confia_crawler/output/01_raw_html/math_in_lean/C05_Elementary_Number_Theory.html "5. Elementary Number Theory") [Next ](file:///home/ryant/Projects/confia_crawler/output/01_raw_html/math_in_lean/C07_Structures.html "7. Structures")
+[](file:///home/rian-macedo/Projects/confia_crawler/output/01_raw_html/math_in_lean/C05_Elementary_Number_Theory.html "5. Elementary Number Theory") [Next ](file:///home/rian-macedo/Projects/confia_crawler/output/01_raw_html/math_in_lean/C07_Structures.html "7. Structures")
 * * *
 © Copyright 2020-2025, Jeremy Avigad, Patrick Massot. Text licensed under CC BY 4.0.
 Built with [Sphinx](https://www.sphinx-doc.org/) using a [theme](https://github.com/readthedocs/sphinx_rtd_theme) provided by [Read the Docs](https://readthedocs.org). 

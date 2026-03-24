@@ -9,53 +9,77 @@ syntaxInductive Type Declarations
 
 ```
 command ::= ...
-    | [`declModifiers` is the collection of modifiers on a declaration:
-* a doc comment `/-- ... -/`
-* a list of attributes `@[attr1, attr2]`
-* a visibility specifier, `private` or `public`
-* `protected`
-* `noncomputable`
-* `unsafe`
-* `partial` or `nonrec`
+    | [
+declModifiers is the collection of modifiers on a declaration:
+
+
+
+  * a doc comment /-- ... -/
+
+
+
+  * a list of attributes @[attr1, attr2]
+
+
+
+  * a visibility specifier, private or public
+
+
+
+  * protected
+
+
+  * noncomputable
+
+
+  * unsafe
+
+
+  * 
+partial or nonrec
+
+
+
 
 All modifiers are optional, and have to come in the listed order.
-
-`nestedDeclModifiers` is the same as `declModifiers`, but attributes are printed
+nestedDeclModifiers is the same as declModifiers, but attributes are printed
 on the same line as the declaration. It is used for declarations nested inside other syntax,
-such as inductive constructors, structure projections, and `let rec` / `where` definitions. declModifiers](Definitions/Modifiers/#Lean___Parser___Command___declModifiers)
-      In Lean, every concrete type other than the universes
+such as inductive constructors, structure projections, and let rec / where definitions. 
+declModifiers](Definitions/Modifiers/#Lean___Parser___Command___declModifiers)
+      
+
+
+In Lean, every concrete type other than the universes
 and every type constructor other than dependent arrows
 is an instance of a general family of type constructions known as inductive types.
 It is remarkable that it is possible to construct a substantial edifice of mathematics
 based on nothing more than the type universes, dependent arrow types, and inductive types;
 everything else follows from those.
 Intuitively, an inductive type is built up from a specified list of constructors.
-For example, `List α` is the list of elements of type `α`, and is defined as follows:
+For example, List α is the list of elements of type α, and is defined as follows:
+
+
 ```
 inductive List (α : Type u) where
 | nil
 | cons (head : α) (tail : List α)
+
 ```
-A list of elements of type `α` is either the empty list, `nil`,
-or an element `head : α` followed by a list `tail : List α`.
-See [Inductive types](https://lean-lang.org/theorem_proving_in_lean4/inductive_types.html)
-for more information.
-inductive `declId` matches `foo` or `foo.{u,v}`: an identifier possibly followed by a list of universe names declId [`optDeclSig` matches the signature of a declaration with optional type: a list of binders and then possibly `: type` optDeclSig](Definitions/Headers-and-Signatures/#Lean___Parser___Command___optDeclSig) where
-        (| [`declModifiers` is the collection of modifiers on a declaration:
-* a doc comment `/-- ... -/`
-* a list of attributes `@[attr1, attr2]`
-* a visibility specifier, `private` or `public`
-* `protected`
-* `noncomputable`
-* `unsafe`
-* `partial` or `nonrec`
 
-All modifiers are optional, and have to come in the listed order.
+A list of elements of type `α` is either the empty list, `nil`, or an element `head : α` followed by a list `tail : List α`. See [Inductive types](https://lean-lang.org/theorem_proving_in_lean4/inductive_types.html) for more information.
+`inductive `
+ 
+`declId` matches `foo` or `foo.{u,v}`: an identifier possibly followed by a list of universe names 
+`declId [` `optDeclSig` matches the signature of a declaration with optional type: a list of binders and then possibly `: type` `optDeclSig](Definitions/Headers-and-Signatures/#Lean___Parser___Command___optDeclSig) where (| [` `declModifiers` is the collection of modifiers on a declaration:
+  * a doc comment `/-- ... -/`
+  * a list of attributes `@[attr1, attr2]`
+  * a visibility specifier, `private` or `public`
+  * `protected`
+  * `noncomputable`
+  * `unsafe`
+  * `partial` or `nonrec`
 
-`nestedDeclModifiers` is the same as `declModifiers`, but attributes are printed
-on the same line as the declaration. It is used for declarations nested inside other syntax,
-such as inductive constructors, structure projections, and `let rec` / `where` definitions. declModifiers](Definitions/Modifiers/#Lean___Parser___Command___declModifiers) ident [`optDeclSig` matches the signature of a declaration with optional type: a list of binders and then possibly `: type` optDeclSig](Definitions/Headers-and-Signatures/#Lean___Parser___Command___optDeclSig))*
-      ([deriving](Type-Classes/Deriving-Instances/#Lean___Parser___Command___optDeriving-next) ident,*)?
+All modifiers are optional, and have to come in the listed order. `nestedDeclModifiers` is the same as `declModifiers`, but attributes are printed on the same line as the declaration. It is used for declarations nested inside other syntax, such as inductive constructors, structure projections, and `let rec` / `where` definitions.  `declModifiers](Definitions/Modifiers/#Lean___Parser___Command___declModifiers) ident [` `optDeclSig` matches the signature of a declaration with optional type: a list of binders and then possibly `: type` `optDeclSig](Definitions/Headers-and-Signatures/#Lean___Parser___Command___optDeclSig))* ([deriving](Type-Classes/Deriving-Instances/#Lean___Parser___Command___optDeriving-next) ident,*)?
 ```
 
 Declares a new inductive type. The meaning of the `declModifiers` is as described in the section [on declaration modifiers](Definitions/Modifiers/#declaration-modifiers).
@@ -161,11 +185,16 @@ Constructors can be invoked anonymously by enclosing their explicit arguments in
 
 ```
 term ::= ...
-    | The *anonymous constructor* `⟨e, ...⟩` is equivalent to `c e ...` if the
-expected type is an inductive type with a single constructor `c`.
-If more terms are given than `c` has parameters, the remaining arguments
+    | 
+
+
+The _anonymous constructor_ ⟨e, ...⟩ is equivalent to c e ... if the
+expected type is an inductive type with a single constructor c.
+If more terms are given than c has parameters, the remaining arguments
 are turned into a new anonymous constructor application. For example,
-`⟨a, b, c⟩ : α × (β × γ)` is equivalent to `⟨a, ⟨b, c⟩⟩`.
+⟨a, b, c⟩ : α × (β × γ) is equivalent to ⟨a, ⟨b, c⟩⟩.
+
+
 ⟨ term,* ⟩
 ```
 
@@ -186,37 +215,95 @@ syntaxStructure Declarations
 
 ```
 command ::= ...
-    | [`declModifiers` is the collection of modifiers on a declaration:
-* a doc comment `/-- ... -/`
-* a list of attributes `@[attr1, attr2]`
-* a visibility specifier, `private` or `public`
-* `protected`
-* `noncomputable`
-* `unsafe`
-* `partial` or `nonrec`
+    | [
+declModifiers is the collection of modifiers on a declaration:
+
+
+
+  * a doc comment /-- ... -/
+
+
+
+  * a list of attributes @[attr1, attr2]
+
+
+
+  * a visibility specifier, private or public
+
+
+
+  * protected
+
+
+  * noncomputable
+
+
+  * unsafe
+
+
+  * 
+partial or nonrec
+
+
+
 
 All modifiers are optional, and have to come in the listed order.
-
-`nestedDeclModifiers` is the same as `declModifiers`, but attributes are printed
+nestedDeclModifiers is the same as declModifiers, but attributes are printed
 on the same line as the declaration. It is used for declarations nested inside other syntax,
-such as inductive constructors, structure projections, and `let rec` / `where` definitions. declModifiers](Definitions/Modifiers/#Lean___Parser___Command___declModifiers)
-      structure `declId` matches `foo` or `foo.{u,v}`: an identifier possibly followed by a list of universe names declId `optDeclSig` matches the signature of a declaration with optional type: a list of binders and then possibly `: type` bracketedBinder* (: term)?
+such as inductive constructors, structure projections, and let rec / where definitions. 
+declModifiers](Definitions/Modifiers/#Lean___Parser___Command___declModifiers)
+      structure 
+
+
+declId matches foo or foo.{u,v}: an identifier possibly followed by a list of universe names 
+
+
+declId 
+
+
+optDeclSig matches the signature of a declaration with optional type: a list of binders and then possibly : type 
+
+
+bracketedBinder* (: term)?
         (extends (ident : )?term,*)?
         where
-        ([`declModifiers` is the collection of modifiers on a declaration:
-* a doc comment `/-- ... -/`
-* a list of attributes `@[attr1, attr2]`
-* a visibility specifier, `private` or `public`
-* `protected`
-* `noncomputable`
-* `unsafe`
-* `partial` or `nonrec`
+        ([
+declModifiers is the collection of modifiers on a declaration:
+
+
+
+  * a doc comment /-- ... -/
+
+
+
+  * a list of attributes @[attr1, attr2]
+
+
+
+  * a visibility specifier, private or public
+
+
+
+  * protected
+
+
+  * noncomputable
+
+
+  * unsafe
+
+
+  * 
+partial or nonrec
+
+
+
 
 All modifiers are optional, and have to come in the listed order.
-
-`nestedDeclModifiers` is the same as `declModifiers`, but attributes are printed
+nestedDeclModifiers is the same as declModifiers, but attributes are printed
 on the same line as the declaration. It is used for declarations nested inside other syntax,
-such as inductive constructors, structure projections, and `let rec` / `where` definitions. declModifiers](Definitions/Modifiers/#Lean___Parser___Command___declModifiers) ident ::)?
+such as inductive constructors, structure projections, and let rec / where definitions. 
+declModifiers](Definitions/Modifiers/#Lean___Parser___Command___declModifiers) ident ::)?
         structFields
       ([deriving](Type-Classes/Deriving-Instances/#Lean___Parser___Command___optDeriving-next) derivingClass,*)?
 ```
@@ -274,13 +361,18 @@ syntaxStructure Instances
 
 ```
 term ::= ...
-    | Structure instance. `{ x := e, ... }` assigns `e` to field `x`, which may be
-inherited. If `e` is itself a variable called `x`, it can be elided:
-`fun y => { x := 1, y }`.
-A *structure update* of an existing value can be given via `with`:
-`{ point with x := 1 }`.
+    | 
+
+
+Structure instance. { x := e, ... } assigns e to field x, which may be
+inherited. If e is itself a variable called x, it can be elided:
+fun y => { x := 1, y }.
+A _structure update_ of an existing value can be given via with:
+{ point with x := 1 }.
 The structure type can be specified if not inferable:
-`{ x := 1, y := 2 : Point }`.
+{ x := 1, y := 2 : Point }.
+
+
 { structInstField,*
         (: term)? }
 ```
@@ -335,19 +427,26 @@ syntaxStructure Updates
 
 ```
 term ::= ...
-    | Structure instance. `{ x := e, ... }` assigns `e` to field `x`, which may be
-inherited. If `e` is itself a variable called `x`, it can be elided:
-`fun y => { x := 1, y }`.
-A *structure update* of an existing value can be given via `with`:
-`{ point with x := 1 }`.
+    | 
+
+
+Structure instance. { x := e, ... } assigns e to field x, which may be
+inherited. If e is itself a variable called x, it can be elided:
+fun y => { x := 1, y }.
+A _structure update_ of an existing value can be given via with:
+{ point with x := 1 }.
 The structure type can be specified if not inferable:
-`{ x := 1, y := 2 : Point }`.
+{ x := 1, y := 2 : Point }.
+
+
 {term with
         structInstField,*
         (: term)?}
 ```
 
-Updates a value of a constructor type. The term that precedes the ``Lean.Parser.Term.structInst : term``Structure instance. `{ x := e, ... }` assigns `e` to field `x`, which may be inherited. If `e` is itself a variable called `x`, it can be elided: `fun y => { x := 1, y }`. A *structure update* of an existing value can be given via `with`: `{ point with x := 1 }`. The structure type can be specified if not inferable: `{ x := 1, y := 2 : Point }`. ```with` clause is expected to have a structure type; it is the value that is being updated. A new instance of the structure is created in which every field not specified is copied from the value that is being updated, and the specified fields are replaced with their new values. When updating a structure, array values may also be replaced by including the index to be updated in square brackets. This updating does not require that the index expression be in bounds for the array, and out-of-bounds updates are discarded.
+Updates a value of a constructor type. The term that precedes the ``Lean.Parser.Term.structInst : term`
+Structure instance. `{ x := e, ... }` assigns `e` to field `x`, which may be inherited. If `e` is itself a variable called `x`, it can be elided: `fun y => { x := 1, y }`. A _structure update_ of an existing value can be given via `with`: `{ point with x := 1 }`. The structure type can be specified if not inferable: `{ x := 1, y := 2 : Point }`.
+``with` clause is expected to have a structure type; it is the value that is being updated. A new instance of the structure is created in which every field not specified is copied from the value that is being updated, and the specified fields are replaced with their new values. When updating a structure, array values may also be replaced by including the index to be updated in square brackets. This updating does not require that the index expression be in bounds for the array, and out-of-bounds updates are discarded.
 Updating arrays
 Updating structures may use array indices as well as projection names. Updates at indices that are out of bounds are ignored:
 `structure AugmentedIntArray where   array : [Array](Basic-Types/Arrays/#Array___mk "Documentation for Array") [Int](Basic-Types/Integers/#Int___ofNat "Documentation for Int")   augmentation : [String](Basic-Types/Strings/#String___ofByteArray "Documentation for String") := "" deriving [Repr](Interacting-with-Lean/#Repr___mk "Documentation for Repr")  def one : [AugmentedIntArray](The-Type-System/Inductive-Types/#AugmentedIntArray-_LPAR_in-Updating-arrays_RPAR_ "Definition of example") := {[array](The-Type-System/Inductive-Types/#AugmentedIntArray___array-_LPAR_in-Updating-arrays_RPAR_ "Definition of example") := #[1]} def two : [AugmentedIntArray](The-Type-System/Inductive-Types/#AugmentedIntArray-_LPAR_in-Updating-arrays_RPAR_ "Definition of example") := {[one](The-Type-System/Inductive-Types/#one-_LPAR_in-Updating-arrays_RPAR_ "Definition of example") with [array](The-Type-System/Inductive-Types/#AugmentedIntArray___array-_LPAR_in-Updating-arrays_RPAR_ "Definition of example") := #[1, 2]} def two' : [AugmentedIntArray](The-Type-System/Inductive-Types/#AugmentedIntArray-_LPAR_in-Updating-arrays_RPAR_ "Definition of example") := {[two](The-Type-System/Inductive-Types/#two-_LPAR_in-Updating-arrays_RPAR_ "Definition of example") with [array](The-Type-System/Inductive-Types/#AugmentedIntArray___array-_LPAR_in-Updating-arrays_RPAR_ "Definition of example")[0] := 2} def two'' : [AugmentedIntArray](The-Type-System/Inductive-Types/#AugmentedIntArray-_LPAR_in-Updating-arrays_RPAR_ "Definition of example") := {[two](The-Type-System/Inductive-Types/#two-_LPAR_in-Updating-arrays_RPAR_ "Definition of example") with [array](The-Type-System/Inductive-Types/#AugmentedIntArray___array-_LPAR_in-Updating-arrays_RPAR_ "Definition of example")[99] := 3} `({ array := #[1], augmentation := "" },  { array := #[1, 2], augmentation := "" },  { array := #[2, 2], augmentation := "" },  { array := #[1, 2], augmentation := "" })`[#eval](Interacting-with-Lean/#Lean___Parser___Command___eval "Documentation for syntax") ([one](The-Type-System/Inductive-Types/#one-_LPAR_in-Updating-arrays_RPAR_ "Definition of example"), [two](The-Type-System/Inductive-Types/#two-_LPAR_in-Updating-arrays_RPAR_ "Definition of example"), [two'](The-Type-System/Inductive-Types/#two___-_LPAR_in-Updating-arrays_RPAR_ "Definition of example"), [two''](The-Type-System/Inductive-Types/#two______-_LPAR_in-Updating-arrays_RPAR_ "Definition of example")) `

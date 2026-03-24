@@ -1,36 +1,36 @@
-[ Mathematics in Lean ](file:///home/ryant/Projects/confia_crawler/output/01_raw_html/math_in_lean/index.html)
-  * [1. Introduction](file:///home/ryant/Projects/confia_crawler/output/01_raw_html/math_in_lean/C01_Introduction.html)
-  * [2. Basics](file:///home/ryant/Projects/confia_crawler/output/01_raw_html/math_in_lean/C02_Basics.html)
-  * [3. Logic](file:///home/ryant/Projects/confia_crawler/output/01_raw_html/math_in_lean/C03_Logic.html)
-  * [4. Sets and Functions](file:///home/ryant/Projects/confia_crawler/output/01_raw_html/math_in_lean/C04_Sets_and_Functions.html)
-  * [](file:///home/ryant/Projects/confia_crawler/output/01_raw_html/math_in_lean/C05_Elementary_Number_Theory.html)
-    * [5.1. Irrational Roots](file:///home/ryant/Projects/confia_crawler/output/01_raw_html/math_in_lean/C05_Elementary_Number_Theory.html#irrational-roots)
-    * [5.2. Induction and Recursion](file:///home/ryant/Projects/confia_crawler/output/01_raw_html/math_in_lean/C05_Elementary_Number_Theory.html#induction-and-recursion)
-    * [5.3. Infinitely Many Primes](file:///home/ryant/Projects/confia_crawler/output/01_raw_html/math_in_lean/C05_Elementary_Number_Theory.html#infinitely-many-primes)
-    * [5.4. More Induction](file:///home/ryant/Projects/confia_crawler/output/01_raw_html/math_in_lean/C05_Elementary_Number_Theory.html#more-induction)
-  * [6. Discrete Mathematics](file:///home/ryant/Projects/confia_crawler/output/01_raw_html/math_in_lean/C06_Discrete_Mathematics.html)
-  * [7. Structures](file:///home/ryant/Projects/confia_crawler/output/01_raw_html/math_in_lean/C07_Structures.html)
-  * [8. Hierarchies](file:///home/ryant/Projects/confia_crawler/output/01_raw_html/math_in_lean/C08_Hierarchies.html)
-  * [9. Groups and Rings](file:///home/ryant/Projects/confia_crawler/output/01_raw_html/math_in_lean/C09_Groups_and_Rings.html)
-  * [10. Linear algebra](file:///home/ryant/Projects/confia_crawler/output/01_raw_html/math_in_lean/C10_Linear_Algebra.html)
-  * [11. Topology](file:///home/ryant/Projects/confia_crawler/output/01_raw_html/math_in_lean/C11_Topology.html)
-  * [12. Differential Calculus](file:///home/ryant/Projects/confia_crawler/output/01_raw_html/math_in_lean/C12_Differential_Calculus.html)
-  * [13. Integration and Measure Theory](file:///home/ryant/Projects/confia_crawler/output/01_raw_html/math_in_lean/C13_Integration_and_Measure_Theory.html)
+[ Mathematics in Lean ](file:///home/rian-macedo/Projects/confia_crawler/output/01_raw_html/math_in_lean/index.html)
+  * [1. Introduction](file:///home/rian-macedo/Projects/confia_crawler/output/01_raw_html/math_in_lean/C01_Introduction.html)
+  * [2. Basics](file:///home/rian-macedo/Projects/confia_crawler/output/01_raw_html/math_in_lean/C02_Basics.html)
+  * [3. Logic](file:///home/rian-macedo/Projects/confia_crawler/output/01_raw_html/math_in_lean/C03_Logic.html)
+  * [4. Sets and Functions](file:///home/rian-macedo/Projects/confia_crawler/output/01_raw_html/math_in_lean/C04_Sets_and_Functions.html)
+  * [](file:///home/rian-macedo/Projects/confia_crawler/output/01_raw_html/math_in_lean/C05_Elementary_Number_Theory.html)
+    * [5.1. Irrational Roots](file:///home/rian-macedo/Projects/confia_crawler/output/01_raw_html/math_in_lean/C05_Elementary_Number_Theory.html#irrational-roots)
+    * [5.2. Induction and Recursion](file:///home/rian-macedo/Projects/confia_crawler/output/01_raw_html/math_in_lean/C05_Elementary_Number_Theory.html#induction-and-recursion)
+    * [5.3. Infinitely Many Primes](file:///home/rian-macedo/Projects/confia_crawler/output/01_raw_html/math_in_lean/C05_Elementary_Number_Theory.html#infinitely-many-primes)
+    * [5.4. More Induction](file:///home/rian-macedo/Projects/confia_crawler/output/01_raw_html/math_in_lean/C05_Elementary_Number_Theory.html#more-induction)
+  * [6. Discrete Mathematics](file:///home/rian-macedo/Projects/confia_crawler/output/01_raw_html/math_in_lean/C06_Discrete_Mathematics.html)
+  * [7. Structures](file:///home/rian-macedo/Projects/confia_crawler/output/01_raw_html/math_in_lean/C07_Structures.html)
+  * [8. Hierarchies](file:///home/rian-macedo/Projects/confia_crawler/output/01_raw_html/math_in_lean/C08_Hierarchies.html)
+  * [9. Groups and Rings](file:///home/rian-macedo/Projects/confia_crawler/output/01_raw_html/math_in_lean/C09_Groups_and_Rings.html)
+  * [10. Linear algebra](file:///home/rian-macedo/Projects/confia_crawler/output/01_raw_html/math_in_lean/C10_Linear_Algebra.html)
+  * [11. Topology](file:///home/rian-macedo/Projects/confia_crawler/output/01_raw_html/math_in_lean/C11_Topology.html)
+  * [12. Differential Calculus](file:///home/rian-macedo/Projects/confia_crawler/output/01_raw_html/math_in_lean/C12_Differential_Calculus.html)
+  * [13. Integration and Measure Theory](file:///home/rian-macedo/Projects/confia_crawler/output/01_raw_html/math_in_lean/C13_Integration_and_Measure_Theory.html)
 
 
-  * [Index](file:///home/ryant/Projects/confia_crawler/output/01_raw_html/math_in_lean/genindex.html)
+  * [Index](file:///home/rian-macedo/Projects/confia_crawler/output/01_raw_html/math_in_lean/genindex.html)
 
 
-[Mathematics in Lean](file:///home/ryant/Projects/confia_crawler/output/01_raw_html/math_in_lean/index.html)
-  * [](file:///home/ryant/Projects/confia_crawler/output/01_raw_html/math_in_lean/index.html)
+[Mathematics in Lean](file:///home/rian-macedo/Projects/confia_crawler/output/01_raw_html/math_in_lean/index.html)
+  * [](file:///home/rian-macedo/Projects/confia_crawler/output/01_raw_html/math_in_lean/index.html)
   * 5. Elementary Number Theory
-  * [ View page source](file:///home/ryant/Projects/confia_crawler/output/01_raw_html/math_in_lean/_sources/C05_Elementary_Number_Theory.rst.txt)
+  * [ View page source](file:///home/rian-macedo/Projects/confia_crawler/output/01_raw_html/math_in_lean/_sources/C05_Elementary_Number_Theory.rst.txt)
 
 
 * * *
-#  5. Elementary Number Theory[](file:///home/ryant/Projects/confia_crawler/output/01_raw_html/math_in_lean/C05_Elementary_Number_Theory.html#elementary-number-theory "Link to this heading")
+#  5. Elementary Number Theory[](file:///home/rian-macedo/Projects/confia_crawler/output/01_raw_html/math_in_lean/C05_Elementary_Number_Theory.html#elementary-number-theory "Link to this heading")
 In this chapter, we show you how to formalize some elementary results in number theory. As we deal with more substantive mathematical content, the proofs will get longer and more involved, building on the skills you have already mastered.
-##  5.1. Irrational Roots[](file:///home/ryant/Projects/confia_crawler/output/01_raw_html/math_in_lean/C05_Elementary_Number_Theory.html#irrational-roots "Link to this heading")
+##  5.1. Irrational Roots[](file:///home/rian-macedo/Projects/confia_crawler/output/01_raw_html/math_in_lean/C05_Elementary_Number_Theory.html#irrational-roots "Link to this heading")
 Let’s start with a fact known to the ancient Greeks, namely, that the square root of 2 is irrational. If we suppose otherwise, we can write 2=a/b as a fraction in lowest terms. Squaring both sides yields a2=2b2, which implies that a is even. If we write a=2c, then we get 4c2=2b2 and hence b2=2c2. This implies that b is also even, contradicting the fact that we have assumed that a/b has been reduced to lowest terms.
 Saying that a/b is a fraction in lowest terms means that a and b do not have any factors in common, which is to say, they are _coprime_. Mathlib defines the predicate `Nat.Coprime m n` to be `Nat.gcd m n = 1`. Using Lean’s anonymous projection notation, if `s` and `t` are expressions of type `Nat`, we can write `s.Coprime t` instead of `Nat.Coprime s t`, and similarly for `Nat.gcd`. As usual, Lean will often unfold the definition of `Nat.Coprime` automatically when necessary, but we can also do it manually by rewriting or simplifying with the identifier `Nat.Coprime`. The `norm_num` tactic is smart enough to compute concrete values.
 
@@ -50,7 +50,7 @@ example : Nat.gcd 12 8 = 4 := by norm_num
 
 ```
 
-We have already encountered the `gcd` function in [Section 2.4](file:///home/ryant/Projects/confia_crawler/output/01_raw_html/math_in_lean/C02_Basics.html#more-on-order-and-divisibility). There is also a version of `gcd` for the integers; we will return to a discussion of the relationship between different number systems below. There are even a generic `gcd` function and generic notions of `Prime` and `Coprime` that make sense in general classes of algebraic structures. We will come to understand how Lean manages this generality in the next chapter. In the meanwhile, in this section, we will restrict attention to the natural numbers.
+We have already encountered the `gcd` function in [Section 2.4](file:///home/rian-macedo/Projects/confia_crawler/output/01_raw_html/math_in_lean/C02_Basics.html#more-on-order-and-divisibility). There is also a version of `gcd` for the integers; we will return to a discussion of the relationship between different number systems below. There are even a generic `gcd` function and generic notions of `Prime` and `Coprime` that make sense in general classes of algebraic structures. We will come to understand how Lean manages this generality in the next chapter. In the meanwhile, in this section, we will restrict attention to the natural numbers.
 We also need the notion of a prime number, `Nat.Prime`. The theorem `Nat.prime_def_lt` provides one familiar characterization, and `Nat.Prime.eq_one_or_self_of_dvd` provides another.
 
 ```
@@ -210,7 +210,7 @@ There are a number of ways in which we might want to improve on these results. T
 In Mathlib, the natural numbers, the integers, the rationals, the reals, and the complex numbers are represented by separate data types. Restricting attention to the separate domains is often helpful: we will see that it is easy to do induction on the natural numbers, and it is easiest to reason about divisibility of integers when the real numbers are not part of the picture. But having to mediate between the different domains is a headache, one we will have to contend with. We will return to this issue later in this chapter.
 We should also expect to be able to strengthen the conclusion of the last theorem to say that the number `r` is a `k`-th power, since its `k`-th root is just the product of each prime dividing `r` raised to its multiplicity in `r` divided by `k`. To be able to do that we will need better means for reasoning about products and sums over a finite set, which is also a topic we will return to.
 In fact, the results in this section are all established in much greater generality in Mathlib, in `Data.Real.Irrational`. The notion of `multiplicity` is defined for an arbitrary commutative monoid, and that it takes values in the extended natural numbers `enat`, which adds the value infinity to the natural numbers. In the next chapter, we will begin to develop the means to appreciate the way that Lean supports this sort of generality.
-##  5.2. Induction and Recursion[](file:///home/ryant/Projects/confia_crawler/output/01_raw_html/math_in_lean/C05_Elementary_Number_Theory.html#induction-and-recursion "Link to this heading")
+##  5.2. Induction and Recursion[](file:///home/rian-macedo/Projects/confia_crawler/output/01_raw_html/math_in_lean/C05_Elementary_Number_Theory.html#induction-and-recursion "Link to this heading")
 The set of natural numbers N={0,1,2,…} is not only fundamentally important in its own right, but also a plays a central role in the construction of new mathematical objects. Lean’s foundation allows us to declare _inductive types_ , which are types generated inductively by a given list of _constructors_. In Lean, the natural numbers are declared as follows.
 
 ```
@@ -436,7 +436,7 @@ end MyNat
 
 ```
 
-##  5.3. Infinitely Many Primes[](file:///home/ryant/Projects/confia_crawler/output/01_raw_html/math_in_lean/C05_Elementary_Number_Theory.html#infinitely-many-primes "Link to this heading")
+##  5.3. Infinitely Many Primes[](file:///home/rian-macedo/Projects/confia_crawler/output/01_raw_html/math_in_lean/C05_Elementary_Number_Theory.html#infinitely-many-primes "Link to this heading")
 Let us continue our exploration of induction and recursion with another mathematical standard: a proof that there are infinitely many primes. One way to formulate this is as the statement that for every natural number n, there is a prime number greater than n. To prove this, let p be any prime factor of n!+1. If p is less than or equal to n, it divides n!. Since it also divides n!+1, it divides 1, a contradiction. Hence p is greater than n.
 To formalize that proof, we need to show that any number greater than or equal to 2 has a prime factor. To do that, we will need to show that any natural number that is not equal to 0 or 1 is greater-than or equal to 2. And this brings us to a quirky feature of formalization: it is often trivial statements like this that are among the most annoying to formalize. Here we consider a few ways to do it.
 To start with, we can use the `cases` tactic and the fact that the successor function respects the ordering on the natural numbers.
@@ -597,7 +597,7 @@ theorem mem_of_dvd_prod_primes {s : Finset ℕ} {p : ℕ} (prime_p : p.Prime) :
 
 ```
 
-We need one last property of finite sets. Given an element `s : Set α` and a predicate `P` on `α`, in [Chapter 4](file:///home/ryant/Projects/confia_crawler/output/01_raw_html/math_in_lean/C04_Sets_and_Functions.html#sets-and-functions) we wrote `{ x ∈ s | P x }` for the set of elements of `s` that satisfy `P`. Given `s : Finset α`, the analogous notion is written `s.filter P`.
+We need one last property of finite sets. Given an element `s : Set α` and a predicate `P` on `α`, in [Chapter 4](file:///home/rian-macedo/Projects/confia_crawler/output/01_raw_html/math_in_lean/C04_Sets_and_Functions.html#sets-and-functions) we wrote `{ x ∈ s | P x }` for the set of elements of `s` that satisfy `P`. Given `s : Finset α`, the analogous notion is written `s.filter P`.
 
 ```
 example (s : Finset ℕ) (x : ℕ) : x ∈ s.filter Nat.Prime ↔ x ∈ s ∧ x.Prime :=
@@ -762,8 +762,8 @@ theorem primes_mod_4_eq_3_infinite : ∀ n, ∃ p > n, Nat.Prime p ∧ p % 4 = 3
 ```
 
 If you managed to complete the proof, congratulations! This has been a serious feat of formalization.
-##  5.4. More Induction[](file:///home/ryant/Projects/confia_crawler/output/01_raw_html/math_in_lean/C05_Elementary_Number_Theory.html#more-induction "Link to this heading")
-In [Section 5.2](file:///home/ryant/Projects/confia_crawler/output/01_raw_html/math_in_lean/C05_Elementary_Number_Theory.html#section-induction-and-recursion), we saw how to define the factorial function by recursion on the natural numbers.
+##  5.4. More Induction[](file:///home/rian-macedo/Projects/confia_crawler/output/01_raw_html/math_in_lean/C05_Elementary_Number_Theory.html#more-induction "Link to this heading")
+In [Section 5.2](file:///home/rian-macedo/Projects/confia_crawler/output/01_raw_html/math_in_lean/C05_Elementary_Number_Theory.html#section-induction-and-recursion), we saw how to define the factorial function by recursion on the natural numbers.
 
 ```
 def fac : ℕ → ℕ
@@ -975,7 +975,7 @@ example (m n : ℕ) : n*m = 1 → 0 < n ∧ 0 < m := by
 ```
 
 This is a useful trick. Often you have a theorem about a natural number `n` for which the zero case is easy. If you case on `n` and take care of the zero case quickly, you are left with the original goal with `n` replaced by `n + 1`.
-[](file:///home/ryant/Projects/confia_crawler/output/01_raw_html/math_in_lean/C04_Sets_and_Functions.html "4. Sets and Functions") [Next ](file:///home/ryant/Projects/confia_crawler/output/01_raw_html/math_in_lean/C06_Discrete_Mathematics.html "6. Discrete Mathematics")
+[](file:///home/rian-macedo/Projects/confia_crawler/output/01_raw_html/math_in_lean/C04_Sets_and_Functions.html "4. Sets and Functions") [Next ](file:///home/rian-macedo/Projects/confia_crawler/output/01_raw_html/math_in_lean/C06_Discrete_Mathematics.html "6. Discrete Mathematics")
 * * *
 © Copyright 2020-2025, Jeremy Avigad, Patrick Massot. Text licensed under CC BY 4.0.
 Built with [Sphinx](https://www.sphinx-doc.org/) using a [theme](https://github.com/readthedocs/sphinx_rtd_theme) provided by [Read the Docs](https://readthedocs.org). 

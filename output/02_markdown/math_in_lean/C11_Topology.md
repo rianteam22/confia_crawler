@@ -1,48 +1,48 @@
-[ Mathematics in Lean ](file:///home/ryant/Projects/confia_crawler/output/01_raw_html/math_in_lean/index.html)
-  * [1. Introduction](file:///home/ryant/Projects/confia_crawler/output/01_raw_html/math_in_lean/C01_Introduction.html)
-  * [2. Basics](file:///home/ryant/Projects/confia_crawler/output/01_raw_html/math_in_lean/C02_Basics.html)
-  * [3. Logic](file:///home/ryant/Projects/confia_crawler/output/01_raw_html/math_in_lean/C03_Logic.html)
-  * [4. Sets and Functions](file:///home/ryant/Projects/confia_crawler/output/01_raw_html/math_in_lean/C04_Sets_and_Functions.html)
-  * [5. Elementary Number Theory](file:///home/ryant/Projects/confia_crawler/output/01_raw_html/math_in_lean/C05_Elementary_Number_Theory.html)
-  * [6. Discrete Mathematics](file:///home/ryant/Projects/confia_crawler/output/01_raw_html/math_in_lean/C06_Discrete_Mathematics.html)
-  * [7. Structures](file:///home/ryant/Projects/confia_crawler/output/01_raw_html/math_in_lean/C07_Structures.html)
-  * [8. Hierarchies](file:///home/ryant/Projects/confia_crawler/output/01_raw_html/math_in_lean/C08_Hierarchies.html)
-  * [9. Groups and Rings](file:///home/ryant/Projects/confia_crawler/output/01_raw_html/math_in_lean/C09_Groups_and_Rings.html)
-  * [10. Linear algebra](file:///home/ryant/Projects/confia_crawler/output/01_raw_html/math_in_lean/C10_Linear_Algebra.html)
-  * [](file:///home/ryant/Projects/confia_crawler/output/01_raw_html/math_in_lean/C11_Topology.html)
-    * [11.1. Filters](file:///home/ryant/Projects/confia_crawler/output/01_raw_html/math_in_lean/C11_Topology.html#filters)
-    * [](file:///home/ryant/Projects/confia_crawler/output/01_raw_html/math_in_lean/C11_Topology.html#metric-spaces)
-      * [11.2.1. Convergence and continuity](file:///home/ryant/Projects/confia_crawler/output/01_raw_html/math_in_lean/C11_Topology.html#convergence-and-continuity)
-      * [11.2.2. Balls, open sets and closed sets](file:///home/ryant/Projects/confia_crawler/output/01_raw_html/math_in_lean/C11_Topology.html#balls-open-sets-and-closed-sets)
-      * [11.2.3. Compactness](file:///home/ryant/Projects/confia_crawler/output/01_raw_html/math_in_lean/C11_Topology.html#compactness)
-      * [11.2.4. Uniformly continuous functions](file:///home/ryant/Projects/confia_crawler/output/01_raw_html/math_in_lean/C11_Topology.html#uniformly-continuous-functions)
-      * [11.2.5. Completeness](file:///home/ryant/Projects/confia_crawler/output/01_raw_html/math_in_lean/C11_Topology.html#completeness)
-    * [](file:///home/ryant/Projects/confia_crawler/output/01_raw_html/math_in_lean/C11_Topology.html#topological-spaces)
-      * [11.3.1. Fundamentals](file:///home/ryant/Projects/confia_crawler/output/01_raw_html/math_in_lean/C11_Topology.html#fundamentals)
-      * [11.3.2. Separation and countability](file:///home/ryant/Projects/confia_crawler/output/01_raw_html/math_in_lean/C11_Topology.html#separation-and-countability)
-      * [11.3.3. Compactness](file:///home/ryant/Projects/confia_crawler/output/01_raw_html/math_in_lean/C11_Topology.html#id5)
-  * [12. Differential Calculus](file:///home/ryant/Projects/confia_crawler/output/01_raw_html/math_in_lean/C12_Differential_Calculus.html)
-  * [13. Integration and Measure Theory](file:///home/ryant/Projects/confia_crawler/output/01_raw_html/math_in_lean/C13_Integration_and_Measure_Theory.html)
+[ Mathematics in Lean ](file:///home/rian-macedo/Projects/confia_crawler/output/01_raw_html/math_in_lean/index.html)
+  * [1. Introduction](file:///home/rian-macedo/Projects/confia_crawler/output/01_raw_html/math_in_lean/C01_Introduction.html)
+  * [2. Basics](file:///home/rian-macedo/Projects/confia_crawler/output/01_raw_html/math_in_lean/C02_Basics.html)
+  * [3. Logic](file:///home/rian-macedo/Projects/confia_crawler/output/01_raw_html/math_in_lean/C03_Logic.html)
+  * [4. Sets and Functions](file:///home/rian-macedo/Projects/confia_crawler/output/01_raw_html/math_in_lean/C04_Sets_and_Functions.html)
+  * [5. Elementary Number Theory](file:///home/rian-macedo/Projects/confia_crawler/output/01_raw_html/math_in_lean/C05_Elementary_Number_Theory.html)
+  * [6. Discrete Mathematics](file:///home/rian-macedo/Projects/confia_crawler/output/01_raw_html/math_in_lean/C06_Discrete_Mathematics.html)
+  * [7. Structures](file:///home/rian-macedo/Projects/confia_crawler/output/01_raw_html/math_in_lean/C07_Structures.html)
+  * [8. Hierarchies](file:///home/rian-macedo/Projects/confia_crawler/output/01_raw_html/math_in_lean/C08_Hierarchies.html)
+  * [9. Groups and Rings](file:///home/rian-macedo/Projects/confia_crawler/output/01_raw_html/math_in_lean/C09_Groups_and_Rings.html)
+  * [10. Linear algebra](file:///home/rian-macedo/Projects/confia_crawler/output/01_raw_html/math_in_lean/C10_Linear_Algebra.html)
+  * [](file:///home/rian-macedo/Projects/confia_crawler/output/01_raw_html/math_in_lean/C11_Topology.html)
+    * [11.1. Filters](file:///home/rian-macedo/Projects/confia_crawler/output/01_raw_html/math_in_lean/C11_Topology.html#filters)
+    * [](file:///home/rian-macedo/Projects/confia_crawler/output/01_raw_html/math_in_lean/C11_Topology.html#metric-spaces)
+      * [11.2.1. Convergence and continuity](file:///home/rian-macedo/Projects/confia_crawler/output/01_raw_html/math_in_lean/C11_Topology.html#convergence-and-continuity)
+      * [11.2.2. Balls, open sets and closed sets](file:///home/rian-macedo/Projects/confia_crawler/output/01_raw_html/math_in_lean/C11_Topology.html#balls-open-sets-and-closed-sets)
+      * [11.2.3. Compactness](file:///home/rian-macedo/Projects/confia_crawler/output/01_raw_html/math_in_lean/C11_Topology.html#compactness)
+      * [11.2.4. Uniformly continuous functions](file:///home/rian-macedo/Projects/confia_crawler/output/01_raw_html/math_in_lean/C11_Topology.html#uniformly-continuous-functions)
+      * [11.2.5. Completeness](file:///home/rian-macedo/Projects/confia_crawler/output/01_raw_html/math_in_lean/C11_Topology.html#completeness)
+    * [](file:///home/rian-macedo/Projects/confia_crawler/output/01_raw_html/math_in_lean/C11_Topology.html#topological-spaces)
+      * [11.3.1. Fundamentals](file:///home/rian-macedo/Projects/confia_crawler/output/01_raw_html/math_in_lean/C11_Topology.html#fundamentals)
+      * [11.3.2. Separation and countability](file:///home/rian-macedo/Projects/confia_crawler/output/01_raw_html/math_in_lean/C11_Topology.html#separation-and-countability)
+      * [11.3.3. Compactness](file:///home/rian-macedo/Projects/confia_crawler/output/01_raw_html/math_in_lean/C11_Topology.html#id5)
+  * [12. Differential Calculus](file:///home/rian-macedo/Projects/confia_crawler/output/01_raw_html/math_in_lean/C12_Differential_Calculus.html)
+  * [13. Integration and Measure Theory](file:///home/rian-macedo/Projects/confia_crawler/output/01_raw_html/math_in_lean/C13_Integration_and_Measure_Theory.html)
 
 
-  * [Index](file:///home/ryant/Projects/confia_crawler/output/01_raw_html/math_in_lean/genindex.html)
+  * [Index](file:///home/rian-macedo/Projects/confia_crawler/output/01_raw_html/math_in_lean/genindex.html)
 
 
-[Mathematics in Lean](file:///home/ryant/Projects/confia_crawler/output/01_raw_html/math_in_lean/index.html)
-  * [](file:///home/ryant/Projects/confia_crawler/output/01_raw_html/math_in_lean/index.html)
+[Mathematics in Lean](file:///home/rian-macedo/Projects/confia_crawler/output/01_raw_html/math_in_lean/index.html)
+  * [](file:///home/rian-macedo/Projects/confia_crawler/output/01_raw_html/math_in_lean/index.html)
   * 11. Topology
-  * [ View page source](file:///home/ryant/Projects/confia_crawler/output/01_raw_html/math_in_lean/_sources/C11_Topology.rst.txt)
+  * [ View page source](file:///home/rian-macedo/Projects/confia_crawler/output/01_raw_html/math_in_lean/_sources/C11_Topology.rst.txt)
 
 
 * * *
-#  11. Topology[](file:///home/ryant/Projects/confia_crawler/output/01_raw_html/math_in_lean/C11_Topology.html#index-0 "Link to this heading")
-Calculus is based on the concept of a function, which is used to model quantities that depend on one another. For example, it is common to study quantities that change over time. The notion of a _limit_ is also fundamental. We may say that the limit of a function f(x) is a value b as x approaches a value a, or that f(x) _converges to_ b as x approaches a. Equivalently, we may say that f(x) approaches b as x approaches a value a, or that it _tends to_ b as x tends to a. We have already begun to consider such notions in [Section 3.6](file:///home/ryant/Projects/confia_crawler/output/01_raw_html/math_in_lean/C03_Logic.html#sequences-and-convergence).
-_Topology_ is the abstract study of limits and continuity. Having covered the essentials of formalization in Chapters [2](file:///home/ryant/Projects/confia_crawler/output/01_raw_html/math_in_lean/C02_Basics.html#basics) to [7](file:///home/ryant/Projects/confia_crawler/output/01_raw_html/math_in_lean/C07_Structures.html#structures), in this chapter, we will explain how topological notions are formalized in Mathlib. Not only do topological abstractions apply in much greater generality, but they also, somewhat paradoxically, make it easier to reason about limits and continuity in concrete instances.
-Topological notions build on quite a few layers of mathematical structure. The first layer is naive set theory, as described in [Chapter 4](file:///home/ryant/Projects/confia_crawler/output/01_raw_html/math_in_lean/C04_Sets_and_Functions.html#sets-and-functions). The next layer is the theory of _filters_ , which we will describe in [Section 11.1](file:///home/ryant/Projects/confia_crawler/output/01_raw_html/math_in_lean/C11_Topology.html#filters). On top of that, we layer the theories of _topological spaces_ , _metric spaces_ , and a slightly more exotic intermediate notion called a _uniform space_.
+#  11. Topology[](file:///home/rian-macedo/Projects/confia_crawler/output/01_raw_html/math_in_lean/C11_Topology.html#index-0 "Link to this heading")
+Calculus is based on the concept of a function, which is used to model quantities that depend on one another. For example, it is common to study quantities that change over time. The notion of a _limit_ is also fundamental. We may say that the limit of a function f(x) is a value b as x approaches a value a, or that f(x) _converges to_ b as x approaches a. Equivalently, we may say that f(x) approaches b as x approaches a value a, or that it _tends to_ b as x tends to a. We have already begun to consider such notions in [Section 3.6](file:///home/rian-macedo/Projects/confia_crawler/output/01_raw_html/math_in_lean/C03_Logic.html#sequences-and-convergence).
+_Topology_ is the abstract study of limits and continuity. Having covered the essentials of formalization in Chapters [2](file:///home/rian-macedo/Projects/confia_crawler/output/01_raw_html/math_in_lean/C02_Basics.html#basics) to [7](file:///home/rian-macedo/Projects/confia_crawler/output/01_raw_html/math_in_lean/C07_Structures.html#structures), in this chapter, we will explain how topological notions are formalized in Mathlib. Not only do topological abstractions apply in much greater generality, but they also, somewhat paradoxically, make it easier to reason about limits and continuity in concrete instances.
+Topological notions build on quite a few layers of mathematical structure. The first layer is naive set theory, as described in [Chapter 4](file:///home/rian-macedo/Projects/confia_crawler/output/01_raw_html/math_in_lean/C04_Sets_and_Functions.html#sets-and-functions). The next layer is the theory of _filters_ , which we will describe in [Section 11.1](file:///home/rian-macedo/Projects/confia_crawler/output/01_raw_html/math_in_lean/C11_Topology.html#filters). On top of that, we layer the theories of _topological spaces_ , _metric spaces_ , and a slightly more exotic intermediate notion called a _uniform space_.
 Whereas previous chapters relied on mathematical notions that were likely familiar to you, the notion of a filter is less well known, even to many working mathematicians. The notion is essential, however, for formalizing mathematics effectively. Let us explain why. Let `f : ℝ → ℝ` be any function. We can consider the limit of `f x` as `x` approaches some value `x₀`, but we can also consider the limit of `f x` as `x` approaches infinity or negative infinity. We can moreover consider the limit of `f x` as `x` approaches `x₀` from the right, conventionally written `x₀⁺`, or from the left, written `x₀⁻`. There are variations where `x` approaches `x₀` or `x₀⁺` or `x₀⁻` but is not allowed to take on the value `x₀` itself. This results in at least eight ways that `x` can approach something. We can also restrict to rational values of `x` or place other constraints on the domain, but let’s stick to those 8 cases.
-We have a similar variety of options on the codomain: we can specify that `f x` approaches a value from the left or right, or that it approaches positive or negative infinity, and so on. For example, we may wish to say that `f x` tends to `+∞` when `x` tends to `x₀` from the right without being equal to `x₀`. This results in 64 different kinds of limit statements, and we haven’t even begun to deal with limits of sequences, as we did in [Section 3.6](file:///home/ryant/Projects/confia_crawler/output/01_raw_html/math_in_lean/C03_Logic.html#sequences-and-convergence).
+We have a similar variety of options on the codomain: we can specify that `f x` approaches a value from the left or right, or that it approaches positive or negative infinity, and so on. For example, we may wish to say that `f x` tends to `+∞` when `x` tends to `x₀` from the right without being equal to `x₀`. This results in 64 different kinds of limit statements, and we haven’t even begun to deal with limits of sequences, as we did in [Section 3.6](file:///home/rian-macedo/Projects/confia_crawler/output/01_raw_html/math_in_lean/C03_Logic.html#sequences-and-convergence).
 The problem is compounded even further when it comes to the supporting lemmas. For instance, limits compose: if `f x` tends to `y₀` when `x` tends to `x₀` and `g y` tends to `z₀` when `y` tends to `y₀` then `g ∘ f x` tends to `z₀` when `x` tends to `x₀`. There are three notions of “tends to” at play here, each of which can be instantiated in any of the eight ways described in the previous paragraph. This results in 512 lemmas, a lot to have to add to a library! Informally, mathematicians generally prove two or three of these and simply note that the rest can be proved “in the same way.” Formalizing mathematics requires making the relevant notion of “sameness” fully explicit, and that is exactly what Bourbaki’s theory of filters manages to do.
-##  11.1. Filters[](file:///home/ryant/Projects/confia_crawler/output/01_raw_html/math_in_lean/C11_Topology.html#filters "Link to this heading")
+##  11.1. Filters[](file:///home/rian-macedo/Projects/confia_crawler/output/01_raw_html/math_in_lean/C11_Topology.html#filters "Link to this heading")
 A _filter_ on a type `X` is a collection of sets of `X` that satisfies three conditions that we will spell out below. The notion supports two related ideas:
   * _limits_ , including all the kinds of limits discussed above: finite and infinite limits of sequences, finite and infinite limits of functions at a point or at infinity, and so on.
   * _things happening eventually_ , including things happening for large enough `n : ℕ`, or sufficiently near a point `x`, or for sufficiently close pairs of points, or almost everywhere in the sense of measure theory. Dually, filters can also express the idea of _things happening often_ : for arbitrarily large `n`, at a point in any neighborhood of a given point, etc.
@@ -183,7 +183,7 @@ The ordered type `Filter X` is actually a _complete_ lattice, which is to say, t
 Note that given the second property in the definition of a filter (if `U` belongs to `F` then anything larger than `U` also belongs to `F`), the first property (the set of all inhabitants of `X` belongs to `F`) is equivalent to the property that `F` is not the empty collection of sets. This shouldn’t be confused with the more subtle question as to whether the empty set is an _element_ of `F`. The definition of a filter does not prohibit `∅ ∈ F`, but if the empty set is in `F` then every set is in `F`, which is to say, `∀ U : Set X, U ∈ F`. In this case, `F` is a rather trivial filter, which is precisely the bottom element of the complete lattice `Filter X`. This contrasts with the definition of filters in Bourbaki, which doesn’t allow filters containing the empty set.
 Because we include the trivial filter in our definition, we sometimes need to explicitly assume nontriviality in some lemmas. In return, however, the theory has nicer global properties. We have already seen that including the trivial filter gives us a bottom element. It also allows us to define `principal : Set X → Filter X`, which maps `∅` to `⊥`, without adding a precondition to rule out the empty set. And it allows us to define the pullback operation without a precondition as well. Indeed, it can happen that `comap f F = ⊥` although `F ≠ ⊥`. For instance, given `x₀ : ℝ` and `s : Set ℝ`, the pullback of `𝓝 x₀` under the coercion from the subtype corresponding to `s` is nontrivial if and only if `x₀` belongs to the closure of `s`.
 In order to manage lemmas that do need to assume some filter is nontrivial, Mathlib has a type class `Filter.NeBot`, and the library has lemmas that assume `(F : Filter X) [F.NeBot]`. The instance database knows, for example, that `(atTop : Filter ℕ).NeBot`, and it knows that pushing forward a nontrivial filter gives a nontrivial filter. As a result, a lemma assuming `[F.NeBot]` will automatically apply to `map u atTop` for any sequence `u`.
-Our tour of the algebraic properties of filters and their relation to limits is essentially done, but we have not yet justified our claim to have recaptured the usual limit notions. Superficially, it may seem that `Tendsto u atTop (𝓝 x₀)` is stronger than the notion of convergence defined in [Section 3.6](file:///home/ryant/Projects/confia_crawler/output/01_raw_html/math_in_lean/C03_Logic.html#sequences-and-convergence) because we ask that _every_ neighborhood of `x₀` has a preimage belonging to `atTop`, whereas the usual definition only requires this for the standard neighborhoods `Ioo (x₀ - ε) (x₀ + ε)`. The key is that, by definition, every neighborhood contains such a standard one. This observation leads to the notion of a _filter basis_.
+Our tour of the algebraic properties of filters and their relation to limits is essentially done, but we have not yet justified our claim to have recaptured the usual limit notions. Superficially, it may seem that `Tendsto u atTop (𝓝 x₀)` is stronger than the notion of convergence defined in [Section 3.6](file:///home/rian-macedo/Projects/confia_crawler/output/01_raw_html/math_in_lean/C03_Logic.html#sequences-and-convergence) because we ask that _every_ neighborhood of `x₀` has a preimage belonging to `atTop`, whereas the usual definition only requires this for the standard neighborhoods `Ioo (x₀ - ε) (x₀ + ε)`. The key is that, by definition, every neighborhood contains such a standard one. This observation leads to the notion of a _filter basis_.
 Given `F : Filter X`, a family of sets `s : ι → Set X` is a basis for `F` if for every set `U`, we have `U ∈ F` if and only if it contains some `s i`. In other words, formally speaking, `s` is a basis if it satisfies `∀ U : Set X, U ∈ F ↔ ∃ i, s i ⊆ U`. It is even more flexible to consider a predicate on `ι` that selects only some of the values `i` in the indexing type. In the case of `𝓝 x₀`, we want `ι` to be `ℝ`, we write `ε` for `i`, and the predicate should select the positive values of `ε`. So the fact that the sets `Ioo  (x₀ - ε) (x₀ + ε)` form a basis for the neighborhood topology on `ℝ` is stated as follows:
 
 ```
@@ -192,7 +192,7 @@ example (x₀ : ℝ) : HasBasis (𝓝 x₀) (fun ε : ℝ ↦ 0 < ε) fun ε ↦
 
 ```
 
-There is also a nice basis for the filter `atTop`. The lemma `Filter.HasBasis.tendsto_iff` allows us to reformulate a statement of the form `Tendsto f F G` given bases for `F` and `G`. Putting these pieces together gives us essentially the notion of convergence that we used in [Section 3.6](file:///home/ryant/Projects/confia_crawler/output/01_raw_html/math_in_lean/C03_Logic.html#sequences-and-convergence).
+There is also a nice basis for the filter `atTop`. The lemma `Filter.HasBasis.tendsto_iff` allows us to reformulate a statement of the form `Tendsto f F G` given bases for `F` and `G`. Putting these pieces together gives us essentially the notion of convergence that we used in [Section 3.6](file:///home/rian-macedo/Projects/confia_crawler/output/01_raw_html/math_in_lean/C03_Logic.html#sequences-and-convergence).
 
 ```
 example (u : ℕ → ℝ) (x₀ : ℝ) :
@@ -203,7 +203,7 @@ example (u : ℕ → ℝ) (x₀ : ℝ) :
 
 ```
 
-We now show how filters facilitate working with properties that hold for sufficiently large numbers or for points that are sufficiently close to a given point. In [Section 3.6](file:///home/ryant/Projects/confia_crawler/output/01_raw_html/math_in_lean/C03_Logic.html#sequences-and-convergence), we were often faced with the situation where we knew that some property `P n` holds for sufficiently large `n` and that some other property `Q n` holds for sufficiently large `n`. Using `cases` twice gave us `N_P` and `N_Q` satisfying `∀ n ≥ N_P, P n` and `∀ n ≥ N_Q, Q n`. Using `set N := max N_P N_Q`, we could eventually prove `∀ n ≥ N, P n ∧ Q n`. Doing this repeatedly becomes tiresome.
+We now show how filters facilitate working with properties that hold for sufficiently large numbers or for points that are sufficiently close to a given point. In [Section 3.6](file:///home/rian-macedo/Projects/confia_crawler/output/01_raw_html/math_in_lean/C03_Logic.html#sequences-and-convergence), we were often faced with the situation where we knew that some property `P n` holds for sufficiently large `n` and that some other property `Q n` holds for sufficiently large `n`. Using `cases` twice gave us `N_P` and `N_Q` satisfying `∀ n ≥ N_P, P n` and `∀ n ≥ N_Q, Q n`. Using `set N := max N_P N_Q`, we could eventually prove `∀ n ≥ N, P n ∧ Q n`. Doing this repeatedly becomes tiresome.
 We can do better by noting that the statement “`P n` and `Q n` hold for large enough `n`” means that we have `{n | P n} ∈ atTop` and `{n | Q n} ∈ atTop`. The fact that `atTop` is a filter implies that the intersection of two elements of `atTop` is again in `atTop`, so we have `{n | P n ∧ Q n} ∈ atTop`. Writing `{n | P n} ∈ atTop` is unpleasant, but we can use the more suggestive notation `∀ᶠ n in atTop, P n`. Here the superscripted `f` stands for “Filter.” You can think of the notation as saying that for all `n` in the “set of very large numbers,” `P n` holds. The `∀ᶠ` notation stands for `Filter.Eventually`, and the lemma `Filter.Eventually.and` uses the intersection property of filters to do what we just described:
 
 ```
@@ -275,7 +275,7 @@ example (u : ℕ → ℝ) (M : Set ℝ) (x : ℝ) (hux : Tendsto u atTop (𝓝 x
 
 ```
 
-##  11.2. Metric spaces[](file:///home/ryant/Projects/confia_crawler/output/01_raw_html/math_in_lean/C11_Topology.html#metric-spaces "Link to this heading")
+##  11.2. Metric spaces[](file:///home/rian-macedo/Projects/confia_crawler/output/01_raw_html/math_in_lean/C11_Topology.html#metric-spaces "Link to this heading")
 Examples in the previous section focus on sequences of real numbers. In this section we will go up a bit in generality and focus on metric spaces. A metric space is a type `X` equipped with a distance function `dist : X → X → ℝ` which is a generalization of the function `fun x y ↦ |x - y|` from the case where `X = ℝ`.
 Introducing such a space is easy and we will check all properties required from the distance function.
 
@@ -292,7 +292,7 @@ variable {X : Type*} [MetricSpace X] (a b c : X)
 
 Note we also have variants where the distance can be infinite or where `dist a b` can be zero without having `a = b` or both. They are called `EMetricSpace`, `PseudoMetricSpace` and `PseudoEMetricSpace` respectively (here “e” stands for “extended”).
 Note that our journey from `ℝ` to metric spaces jumped over the special case of normed spaces that also require linear algebra and will be explained as part of the calculus chapter.
-###  11.2.1. Convergence and continuity[](file:///home/ryant/Projects/confia_crawler/output/01_raw_html/math_in_lean/C11_Topology.html#convergence-and-continuity "Link to this heading")
+###  11.2.1. Convergence and continuity[](file:///home/rian-macedo/Projects/confia_crawler/output/01_raw_html/math_in_lean/C11_Topology.html#convergence-and-continuity "Link to this heading")
 Using distance functions, we can already define convergent sequences and continuous functions between metric spaces. They are actually defined in a more general setting covered in the next section, but we have lemmas recasting the definition in terms of distances.
 
 ```
@@ -367,7 +367,7 @@ example {X Y : Type*} [MetricSpace X] [MetricSpace Y] (f : X → Y) (a : X) :
 
 ```
 
-###  11.2.2. Balls, open sets and closed sets[](file:///home/ryant/Projects/confia_crawler/output/01_raw_html/math_in_lean/C11_Topology.html#balls-open-sets-and-closed-sets "Link to this heading")
+###  11.2.2. Balls, open sets and closed sets[](file:///home/rian-macedo/Projects/confia_crawler/output/01_raw_html/math_in_lean/C11_Topology.html#balls-open-sets-and-closed-sets "Link to this heading")
 Once we have a distance function, the most important geometric definitions are (open) balls and closed balls.
 
 ```
@@ -435,7 +435,7 @@ example {x : X} {s : Set X} : s ∈ 𝓝 x ↔ ∃ ε > 0, Metric.closedBall x �
 
 ```
 
-###  11.2.3. Compactness[](file:///home/ryant/Projects/confia_crawler/output/01_raw_html/math_in_lean/C11_Topology.html#compactness "Link to this heading")
+###  11.2.3. Compactness[](file:///home/rian-macedo/Projects/confia_crawler/output/01_raw_html/math_in_lean/C11_Topology.html#compactness "Link to this heading")
 Compactness is an important topological notion. It distinguishes subsets of a metric space that enjoy the same kind of properties as segments in the reals compared to other intervals:
   * Any sequence with values in a compact set has a subsequence that converges in this set.
   * Any continuous function on a nonempty compact set with values in real numbers is bounded and attains its bounds somewhere (this is called the extreme value theorem).
@@ -476,7 +476,7 @@ example {X : Type*} [MetricSpace X] [CompactSpace X] : IsCompact (univ : Set X) 
 ```
 
 In a compact metric space any closed set is compact, this is `IsClosed.isCompact`.
-###  11.2.4. Uniformly continuous functions[](file:///home/ryant/Projects/confia_crawler/output/01_raw_html/math_in_lean/C11_Topology.html#uniformly-continuous-functions "Link to this heading")
+###  11.2.4. Uniformly continuous functions[](file:///home/rian-macedo/Projects/confia_crawler/output/01_raw_html/math_in_lean/C11_Topology.html#uniformly-continuous-functions "Link to this heading")
 We now turn to uniformity notions on metric spaces : uniformly continuous functions, Cauchy sequences and completeness. Again those are defined in a more general context but we have lemmas in the metric name space to access their elementary definitions. We start with uniform continuity.
 
 ```
@@ -500,7 +500,7 @@ example {X : Type*} [MetricSpace X] [CompactSpace X]
 
 ```
 
-###  11.2.5. Completeness[](file:///home/ryant/Projects/confia_crawler/output/01_raw_html/math_in_lean/C11_Topology.html#completeness "Link to this heading")
+###  11.2.5. Completeness[](file:///home/rian-macedo/Projects/confia_crawler/output/01_raw_html/math_in_lean/C11_Topology.html#completeness "Link to this heading")
 A Cauchy sequence in a metric space is a sequence whose terms get closer and closer to each other. There are a couple of equivalent ways to state that idea. In particular converging sequences are Cauchy. The converse is true only in so-called _complete_ spaces.
 
 ```
@@ -589,8 +589,8 @@ example [CompleteSpace X] (f : ℕ → Set X) (ho : ∀ n, IsOpen (f n)) (hd : �
 
 ```
 
-##  11.3. Topological spaces[](file:///home/ryant/Projects/confia_crawler/output/01_raw_html/math_in_lean/C11_Topology.html#topological-spaces "Link to this heading")
-###  11.3.1. Fundamentals[](file:///home/ryant/Projects/confia_crawler/output/01_raw_html/math_in_lean/C11_Topology.html#fundamentals "Link to this heading")
+##  11.3. Topological spaces[](file:///home/rian-macedo/Projects/confia_crawler/output/01_raw_html/math_in_lean/C11_Topology.html#topological-spaces "Link to this heading")
+###  11.3.1. Fundamentals[](file:///home/rian-macedo/Projects/confia_crawler/output/01_raw_html/math_in_lean/C11_Topology.html#fundamentals "Link to this heading")
 We now go up in generality and introduce topological spaces. We will review the two main ways to define topological spaces and then explain how the category of topological spaces is much better behaved than the category of metric spaces. Note that we won’t be using Mathlib category theory here, only having a somewhat categorical point of view.
 The first way to think about the transition from metric spaces to topological spaces is that we only remember the notion of open sets (or equivalently the notion of closed sets). From this point of view, a topological space is a type equipped with a collection of sets that are called open sets. This collection has to satisfy a number of axioms presented below (this collection is slightly redundant but we will ignore that).
 
@@ -743,7 +743,7 @@ example (ι : Type*) (X : ι → Type*) (T_X : ∀ i, TopologicalSpace (X i)) :
 ```
 
 This ends our tour of how Mathlib thinks that topological spaces fix defects of the theory of metric spaces by being a more functorial theory and having a complete lattice structure for any fixed type.
-###  11.3.2. Separation and countability[](file:///home/ryant/Projects/confia_crawler/output/01_raw_html/math_in_lean/C11_Topology.html#separation-and-countability "Link to this heading")
+###  11.3.2. Separation and countability[](file:///home/rian-macedo/Projects/confia_crawler/output/01_raw_html/math_in_lean/C11_Topology.html#separation-and-countability "Link to this heading")
 We saw that the category of topological spaces have very nice properties. The price to pay for this is existence of rather pathological topological spaces. There are a number of assumptions you can make on a topological space to ensure its behavior is closer to what metric spaces do. The most important is `T2Space`, also called “Hausdorff”, that will ensure that limits are unique. A stronger separation property is `T3Space` that ensures in addition the RegularSpace property: each point has a basis of closed neighborhoods.
 
 ```
@@ -809,7 +809,7 @@ example [TopologicalSpace X] [FirstCountableTopology X]
 
 ```
 
-###  11.3.3. Compactness[](file:///home/ryant/Projects/confia_crawler/output/01_raw_html/math_in_lean/C11_Topology.html#id5 "Link to this heading")
+###  11.3.3. Compactness[](file:///home/rian-macedo/Projects/confia_crawler/output/01_raw_html/math_in_lean/C11_Topology.html#id5 "Link to this heading")
 Let us now discuss how compactness is defined for topological spaces. As usual there are several ways to think about it and Mathlib goes for the filter version.
 We first need to define cluster points of filters. Given a filter `F` on a topological space `X`, a point `x : X` is a cluster point of `F` if `F`, seen as a generalized set, has non-empty intersection with the generalized set of points that are close to `x`.
 Then we can say that a set `s` is compact if every nonempty generalized set `F` contained in `s`, i.e. such that `F ≤ 𝓟 s`, has a cluster point in `s`.
@@ -868,7 +868,7 @@ example {ι : Type*} {s : Set X} (hs : IsCompact s) (U : ι → Set X) (hUo : �
 
 ```
 
-[](file:///home/ryant/Projects/confia_crawler/output/01_raw_html/math_in_lean/C10_Linear_Algebra.html "10. Linear algebra") [Next ](file:///home/ryant/Projects/confia_crawler/output/01_raw_html/math_in_lean/C12_Differential_Calculus.html "12. Differential Calculus")
+[](file:///home/rian-macedo/Projects/confia_crawler/output/01_raw_html/math_in_lean/C10_Linear_Algebra.html "10. Linear algebra") [Next ](file:///home/rian-macedo/Projects/confia_crawler/output/01_raw_html/math_in_lean/C12_Differential_Calculus.html "12. Differential Calculus")
 * * *
 © Copyright 2020-2025, Jeremy Avigad, Patrick Massot. Text licensed under CC BY 4.0.
 Built with [Sphinx](https://www.sphinx-doc.org/) using a [theme](https://github.com/readthedocs/sphinx_rtd_theme) provided by [Read the Docs](https://readthedocs.org). 

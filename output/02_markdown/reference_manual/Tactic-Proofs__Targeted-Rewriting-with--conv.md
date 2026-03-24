@@ -182,8 +182,13 @@ enterArg ::= ...
 
 ```
 enterArg ::= ...
-    | `binderIdent` matches an `ident` or a `_`. It is used for identifiers in binding
-position, where `_` means that the value should be left unnamed and inaccessible.
+    | 
+
+
+binderIdent matches an ident or a _. It is used for identifiers in binding
+position, where _ means that the value should be left unnamed and inaccessible.
+
+
 ident
 ```
 

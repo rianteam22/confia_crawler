@@ -1,37 +1,37 @@
-[ Mathematics in Lean ](file:///home/ryant/Projects/confia_crawler/output/01_raw_html/math_in_lean/index.html)
-  * [1. Introduction](file:///home/ryant/Projects/confia_crawler/output/01_raw_html/math_in_lean/C01_Introduction.html)
-  * [2. Basics](file:///home/ryant/Projects/confia_crawler/output/01_raw_html/math_in_lean/C02_Basics.html)
-  * [3. Logic](file:///home/ryant/Projects/confia_crawler/output/01_raw_html/math_in_lean/C03_Logic.html)
-  * [4. Sets and Functions](file:///home/ryant/Projects/confia_crawler/output/01_raw_html/math_in_lean/C04_Sets_and_Functions.html)
-  * [5. Elementary Number Theory](file:///home/ryant/Projects/confia_crawler/output/01_raw_html/math_in_lean/C05_Elementary_Number_Theory.html)
-  * [6. Discrete Mathematics](file:///home/ryant/Projects/confia_crawler/output/01_raw_html/math_in_lean/C06_Discrete_Mathematics.html)
-  * [](file:///home/ryant/Projects/confia_crawler/output/01_raw_html/math_in_lean/C07_Structures.html)
-    * [7.1. Defining structures](file:///home/ryant/Projects/confia_crawler/output/01_raw_html/math_in_lean/C07_Structures.html#defining-structures)
-    * [7.2. Algebraic Structures](file:///home/ryant/Projects/confia_crawler/output/01_raw_html/math_in_lean/C07_Structures.html#algebraic-structures)
-    * [7.3. Building the Gaussian Integers](file:///home/ryant/Projects/confia_crawler/output/01_raw_html/math_in_lean/C07_Structures.html#building-the-gaussian-integers)
-  * [8. Hierarchies](file:///home/ryant/Projects/confia_crawler/output/01_raw_html/math_in_lean/C08_Hierarchies.html)
-  * [9. Groups and Rings](file:///home/ryant/Projects/confia_crawler/output/01_raw_html/math_in_lean/C09_Groups_and_Rings.html)
-  * [10. Linear algebra](file:///home/ryant/Projects/confia_crawler/output/01_raw_html/math_in_lean/C10_Linear_Algebra.html)
-  * [11. Topology](file:///home/ryant/Projects/confia_crawler/output/01_raw_html/math_in_lean/C11_Topology.html)
-  * [12. Differential Calculus](file:///home/ryant/Projects/confia_crawler/output/01_raw_html/math_in_lean/C12_Differential_Calculus.html)
-  * [13. Integration and Measure Theory](file:///home/ryant/Projects/confia_crawler/output/01_raw_html/math_in_lean/C13_Integration_and_Measure_Theory.html)
+[ Mathematics in Lean ](file:///home/rian-macedo/Projects/confia_crawler/output/01_raw_html/math_in_lean/index.html)
+  * [1. Introduction](file:///home/rian-macedo/Projects/confia_crawler/output/01_raw_html/math_in_lean/C01_Introduction.html)
+  * [2. Basics](file:///home/rian-macedo/Projects/confia_crawler/output/01_raw_html/math_in_lean/C02_Basics.html)
+  * [3. Logic](file:///home/rian-macedo/Projects/confia_crawler/output/01_raw_html/math_in_lean/C03_Logic.html)
+  * [4. Sets and Functions](file:///home/rian-macedo/Projects/confia_crawler/output/01_raw_html/math_in_lean/C04_Sets_and_Functions.html)
+  * [5. Elementary Number Theory](file:///home/rian-macedo/Projects/confia_crawler/output/01_raw_html/math_in_lean/C05_Elementary_Number_Theory.html)
+  * [6. Discrete Mathematics](file:///home/rian-macedo/Projects/confia_crawler/output/01_raw_html/math_in_lean/C06_Discrete_Mathematics.html)
+  * [](file:///home/rian-macedo/Projects/confia_crawler/output/01_raw_html/math_in_lean/C07_Structures.html)
+    * [7.1. Defining structures](file:///home/rian-macedo/Projects/confia_crawler/output/01_raw_html/math_in_lean/C07_Structures.html#defining-structures)
+    * [7.2. Algebraic Structures](file:///home/rian-macedo/Projects/confia_crawler/output/01_raw_html/math_in_lean/C07_Structures.html#algebraic-structures)
+    * [7.3. Building the Gaussian Integers](file:///home/rian-macedo/Projects/confia_crawler/output/01_raw_html/math_in_lean/C07_Structures.html#building-the-gaussian-integers)
+  * [8. Hierarchies](file:///home/rian-macedo/Projects/confia_crawler/output/01_raw_html/math_in_lean/C08_Hierarchies.html)
+  * [9. Groups and Rings](file:///home/rian-macedo/Projects/confia_crawler/output/01_raw_html/math_in_lean/C09_Groups_and_Rings.html)
+  * [10. Linear algebra](file:///home/rian-macedo/Projects/confia_crawler/output/01_raw_html/math_in_lean/C10_Linear_Algebra.html)
+  * [11. Topology](file:///home/rian-macedo/Projects/confia_crawler/output/01_raw_html/math_in_lean/C11_Topology.html)
+  * [12. Differential Calculus](file:///home/rian-macedo/Projects/confia_crawler/output/01_raw_html/math_in_lean/C12_Differential_Calculus.html)
+  * [13. Integration and Measure Theory](file:///home/rian-macedo/Projects/confia_crawler/output/01_raw_html/math_in_lean/C13_Integration_and_Measure_Theory.html)
 
 
-  * [Index](file:///home/ryant/Projects/confia_crawler/output/01_raw_html/math_in_lean/genindex.html)
+  * [Index](file:///home/rian-macedo/Projects/confia_crawler/output/01_raw_html/math_in_lean/genindex.html)
 
 
-[Mathematics in Lean](file:///home/ryant/Projects/confia_crawler/output/01_raw_html/math_in_lean/index.html)
-  * [](file:///home/ryant/Projects/confia_crawler/output/01_raw_html/math_in_lean/index.html)
+[Mathematics in Lean](file:///home/rian-macedo/Projects/confia_crawler/output/01_raw_html/math_in_lean/index.html)
+  * [](file:///home/rian-macedo/Projects/confia_crawler/output/01_raw_html/math_in_lean/index.html)
   * 7. Structures
-  * [ View page source](file:///home/ryant/Projects/confia_crawler/output/01_raw_html/math_in_lean/_sources/C07_Structures.rst.txt)
+  * [ View page source](file:///home/rian-macedo/Projects/confia_crawler/output/01_raw_html/math_in_lean/_sources/C07_Structures.rst.txt)
 
 
 * * *
-#  7. Structures[](file:///home/ryant/Projects/confia_crawler/output/01_raw_html/math_in_lean/C07_Structures.html#structures "Link to this heading")
+#  7. Structures[](file:///home/rian-macedo/Projects/confia_crawler/output/01_raw_html/math_in_lean/C07_Structures.html#structures "Link to this heading")
 Modern mathematics makes essential use of algebraic structures, which encapsulate patterns that can be instantiated in multiple settings. The subject provides various ways of defining such structures and constructing particular instances.
-Lean therefore provides corresponding ways of defining structures formally and working with them. You have already seen examples of algebraic structures in Lean, such as rings and lattices, which were discussed in [Chapter 2](file:///home/ryant/Projects/confia_crawler/output/01_raw_html/math_in_lean/C02_Basics.html#basics). This chapter will explain the mysterious square bracket annotations that you saw there, `[Ring α]` and `[Lattice α]`. It will also show you how to define and use algebraic structures on your own.
+Lean therefore provides corresponding ways of defining structures formally and working with them. You have already seen examples of algebraic structures in Lean, such as rings and lattices, which were discussed in [Chapter 2](file:///home/rian-macedo/Projects/confia_crawler/output/01_raw_html/math_in_lean/C02_Basics.html#basics). This chapter will explain the mysterious square bracket annotations that you saw there, `[Ring α]` and `[Lattice α]`. It will also show you how to define and use algebraic structures on your own.
 For more technical detail, you can consult [Theorem Proving in Lean](https://leanprover.github.io/theorem_proving_in_lean/), and a paper by Anne Baanen, [Use and abuse of instance parameters in the Lean mathematical library](https://arxiv.org/abs/2202.01629).
-##  7.1. Defining structures[](file:///home/ryant/Projects/confia_crawler/output/01_raw_html/math_in_lean/C07_Structures.html#defining-structures "Link to this heading")
+##  7.1. Defining structures[](file:///home/rian-macedo/Projects/confia_crawler/output/01_raw_html/math_in_lean/C07_Structures.html#defining-structures "Link to this heading")
 In the broadest sense of the term, a _structure_ is a specification of a collection of data, possibly with constraints that the data is required to satisfy. An _instance_ of the structure is a particular bundle of data satisfying the constraints. For example, we can specify that a point is a tuple of three real numbers:
 
 ```
@@ -125,7 +125,7 @@ theorem add_x (a b : Point) : (a.add b).x = a.x + b.x :=
 
 ```
 
-It is also possible to define functions on structures using pattern matching, in a manner similar to the way we defined recursive functions in [Section 5.2](file:///home/ryant/Projects/confia_crawler/output/01_raw_html/math_in_lean/C05_Elementary_Number_Theory.html#section-induction-and-recursion). The definitions `addAlt` and `addAlt'` below are essentially the same; the only difference is that we use anonymous constructor notation in the second. Although it is sometimes convenient to define functions this way, and structural eta-reduction makes this alternative definitionally equivalent, it can make things less convenient in later proofs. In particular, `rw [addAlt]` leaves us with a messier goal view containing a `match` statement.
+It is also possible to define functions on structures using pattern matching, in a manner similar to the way we defined recursive functions in [Section 5.2](file:///home/rian-macedo/Projects/confia_crawler/output/01_raw_html/math_in_lean/C05_Elementary_Number_Theory.html#section-induction-and-recursion). The definitions `addAlt` and `addAlt'` below are essentially the same; the only difference is that we use anonymous constructor notation in the second. Although it is sometimes convenient to define functions this way, and structural eta-reduction makes this alternative definitionally equivalent, it can make things less convenient in later proofs. In particular, `rw [addAlt]` leaves us with a messier goal view containing a `match` statement.
 
 ```
 def addAlt : Point → Point → Point
@@ -324,7 +324,7 @@ end
 
 Given `s : StdSimplex`, the first component `s.fst` is a natural number, and the second component is an element of the corresponding simplex `StandardSimplex s.fst`. The difference between a Sigma type and a subtype is that the second component of a Sigma type is data rather than a proposition.
 But even though we can use products, subtypes, and Sigma types instead of structures, using structures has a number of advantages. Defining a structure abstracts away the underlying representation and provides custom names for the functions that access the components. This makes proofs more robust: proofs that rely only on the interface to a structure will generally continue to work when we change the definition, as long as we redefine the old accessors in terms of the new definition. Moreover, as we are about to see, Lean provides support for weaving structures together into a rich, interconnected hierarchy, and for managing the interactions between them.
-##  7.2. Algebraic Structures[](file:///home/ryant/Projects/confia_crawler/output/01_raw_html/math_in_lean/C07_Structures.html#algebraic-structures "Link to this heading")
+##  7.2. Algebraic Structures[](file:///home/rian-macedo/Projects/confia_crawler/output/01_raw_html/math_in_lean/C07_Structures.html#algebraic-structures "Link to this heading")
 To clarify what we mean by the phrase _algebraic structure_ , it will help to consider some examples.
   1. A _partially ordered set_ consists of a set P and a binary relation ≤ on P that is transitive and reflexive.
   2. A _group_ consists of a set G with an associative binary operation, an identity element 1, and a function g↦g−1 that returns an inverse for each g in G. A group is _abelian_ or _commutative_ if the operation is commutative.
@@ -348,7 +348,7 @@ Second, a proof assistant needs to support generic notation on structures. In Le
 Third, it needs to deal with the fact that structures can inherit definitions, theorems, and notation from other structures in various ways. Some structures extend others by adding more axioms. A commutative ring is still a ring, so any definition that makes sense in a ring also makes sense in a commutative ring, and any theorem that holds in a ring also holds in a commutative ring. Some structures extend others by adding more data. For example, the additive part of any ring is an additive group. The ring structure adds a multiplication and an identity, as well as axioms that govern them and relate them to the additive part. Sometimes we can define one structure in terms of another. Any metric space has a canonical topology associated with it, the _metric space topology_ , and there are various topologies that can be associated with any linear ordering.
 Finally, it is important to keep in mind that mathematics allows us to use functions and operations to define structures in the same way we use functions and operations to define numbers. Products and powers of groups are again groups. For every n, the integers modulo n form a ring, and for every k>0, the k×k matrices of polynomials with coefficients in that ring again form a ring. Thus we can calculate with structures just as easily as we can calculate with their elements. This means that algebraic structures lead dual lives in mathematics, as containers for collections of objects and as objects in their own right. A proof assistant has to accommodate this dual role.
 When dealing with elements of a type that has an algebraic structure associated with it, a proof assistant needs to recognize the structure and find the relevant definitions, theorems, and notation. All this should sound like a lot of work, and it is. But Lean uses a small collection of fundamental mechanisms to carry out these tasks. The goal of this section is to explain these mechanisms and show you how to use them.
-The first ingredient is almost too obvious to mention: formally speaking, algebraic structures are structures in the sense of [Section 7.1](file:///home/ryant/Projects/confia_crawler/output/01_raw_html/math_in_lean/C07_Structures.html#section-structures). An algebraic structure is a specification of a bundle of data satisfying some axiomatic hypotheses, and we saw in [Section 7.1](file:///home/ryant/Projects/confia_crawler/output/01_raw_html/math_in_lean/C07_Structures.html#section-structures) that this is exactly what the `structure` command is designed to accommodate. It’s a marriage made in heaven!
+The first ingredient is almost too obvious to mention: formally speaking, algebraic structures are structures in the sense of [Section 7.1](file:///home/rian-macedo/Projects/confia_crawler/output/01_raw_html/math_in_lean/C07_Structures.html#section-structures). An algebraic structure is a specification of a bundle of data satisfying some axiomatic hypotheses, and we saw in [Section 7.1](file:///home/rian-macedo/Projects/confia_crawler/output/01_raw_html/math_in_lean/C07_Structures.html#section-structures) that this is exactly what the `structure` command is designed to accommodate. It’s a marriage made in heaven!
 Given a data type `α`, we can define the group structure on `α` as follows.
 
 ```
@@ -363,7 +363,7 @@ structure Group₁ (α : Type*) where
 
 ```
 
-Notice that the type `α` is a _parameter_ in the definition of `Group₁`. So you should think of an object `struc : Group₁ α` as being a group structure on `α`. We saw in [Section 2.2](file:///home/ryant/Projects/confia_crawler/output/01_raw_html/math_in_lean/C02_Basics.html#proving-identities-in-algebraic-structures) that the counterpart `mul_inv_cancel` to `inv_mul_cancel` follows from the other group axioms, so there is no need to add it to the definition.
+Notice that the type `α` is a _parameter_ in the definition of `Group₁`. So you should think of an object `struc : Group₁ α` as being a group structure on `α`. We saw in [Section 2.2](file:///home/rian-macedo/Projects/confia_crawler/output/01_raw_html/math_in_lean/C02_Basics.html#proving-identities-in-algebraic-structures) that the counterpart `mul_inv_cancel` to `inv_mul_cancel` follows from the other group axioms, so there is no need to add it to the definition.
 This definition of a group is similar to the definition of `Group` in Mathlib, and we have chosen the name `Group₁` to distinguish our version. If you write `#check Group` and ctrl-click on the definition, you will see that the Mathlib version of `Group` is defined to extend another structure; we will explain how to do that later. If you type `#print Group` you will also see that the Mathlib version of `Group` has a number of extra fields. For reasons we will explain later, sometimes it is useful to add redundant information to a structure, so that there are additional fields for objects and functions that can be defined from the core data. Don’t worry about that for now. Rest assured that our simplified version `Group₁` is morally the same as the definition of a group that Mathlib uses.
 It is sometimes useful to bundle the type together with the structure, and Mathlib also contains a definition of a `Grp` structure that is equivalent to the following:
 
@@ -433,7 +433,7 @@ def permGroup {α : Type*} : Group₁ (Equiv.Perm α)
 
 In fact, Mathlib defines exactly this `Group` structure on `Equiv.Perm α` in the file `Algebra.Group.End`. As always, you can hover over the theorems used in the definition of `permGroup` to see their statements, and you can jump to their definitions in the original file to learn more about how they are implemented.
 In ordinary mathematics, we generally think of notation as independent of structure. For example, we can consider groups (G1,⋅,1,⋅−1), (G2,∘,e,i(⋅)), and (G3,+,0,−). In the first case, we write the binary operation as ⋅, the identity as 1, and the inverse function as x↦x−1. In the second and third cases, we use the notational alternatives shown. When we formalize the notion of a group in Lean, however, the notation is more tightly linked to the structure. In Lean, the components of any `Group` are named `mul`, `one`, and `inv`, and in a moment we will see how multiplicative notation is set up to refer to them. If we want to use additive notation, we instead use an isomorphic structure `AddGroup` (the structure underlying additive groups). Its components are named `add`, `zero`, and `neg`, and the associated notation is what you would expect it to be.
-Recall the type `Point` that we defined in [Section 7.1](file:///home/ryant/Projects/confia_crawler/output/01_raw_html/math_in_lean/C07_Structures.html#section-structures), and the addition function that we defined there. These definitions are reproduced in the examples file that accompanies this section. As an exercise, define an `AddGroup₁` structure that is similar to the `Group₁` structure we defined above, except that it uses the additive naming scheme just described. Define negation and a zero on the `Point` data type, and define the `AddGroup₁` structure on `Point`.
+Recall the type `Point` that we defined in [Section 7.1](file:///home/rian-macedo/Projects/confia_crawler/output/01_raw_html/math_in_lean/C07_Structures.html#section-structures), and the addition function that we defined there. These definitions are reproduced in the examples file that accompanies this section. As an exercise, define an `AddGroup₁` structure that is similar to the `Group₁` structure we defined above, except that it uses the additive naming scheme just described. Define negation and a zero on the `Point` data type, and define the `AddGroup₁` structure on `Point`.
 
 ```
 structure AddGroup₁ (α : Type*) where
@@ -594,7 +594,7 @@ end
 ```
 
 What makes this approach work is that Lean carries out a recursive search. According to the instances we have declared, Lean can find an instance of `Mul (Equiv.Perm α)` by finding an instance of `Group₂ (Equiv.Perm α)`, and it can find an instance of `Group₂ (Equiv.Perm α)` because we have provided one. Lean is capable of finding these two facts and chaining them together.
-The example we have just given is dangerous, because Lean’s library also has an instance of `Group (Equiv.Perm α)`, and multiplication is defined on any group. So it is ambiguous as to which instance is found. In fact, Lean favors more recent declarations unless you explicitly specify a different priority. Also, there is another way to tell Lean that one structure is an instance of another, using the `extends` keyword. This is how Mathlib specifies that, for example, every commutative ring is a ring. You can find more information in [Section 8](file:///home/ryant/Projects/confia_crawler/output/01_raw_html/math_in_lean/C08_Hierarchies.html#hierarchies) and in a [section on class inference](https://leanprover.github.io/theorem_proving_in_lean4/type_classes.html#managing-type-class-inference) in _Theorem Proving in Lean_.
+The example we have just given is dangerous, because Lean’s library also has an instance of `Group (Equiv.Perm α)`, and multiplication is defined on any group. So it is ambiguous as to which instance is found. In fact, Lean favors more recent declarations unless you explicitly specify a different priority. Also, there is another way to tell Lean that one structure is an instance of another, using the `extends` keyword. This is how Mathlib specifies that, for example, every commutative ring is a ring. You can find more information in [Section 8](file:///home/rian-macedo/Projects/confia_crawler/output/01_raw_html/math_in_lean/C08_Hierarchies.html#hierarchies) and in a [section on class inference](https://leanprover.github.io/theorem_proving_in_lean4/type_classes.html#managing-type-class-inference) in _Theorem Proving in Lean_.
 In general, it is a bad idea to specify a value of `*` for an instance of an algebraic structure that already has the notation defined. Redefining the notion of `Group` in Lean is an artificial example. In this case, however, both interpretations of the group notation unfold to `Equiv.trans`, `Equiv.refl`, and `Equiv.symm`, in the same way.
 As a similarly artificial exercise, define a class `AddGroup₂` in analogy to `Group₂`. Define the usual notation for addition, negation, and zero on any `AddGroup₂` using the classes `Add`, `Neg`, and `Zero`. Then show `Point` is an instance of `AddGroup₂`. Try it out and make sure that the additive group notation works for elements of `Point`.
 
@@ -607,7 +607,7 @@ class AddGroup₂ (α : Type*) where
 
 It is not a big problem that we have already declared instances `Add`, `Neg`, and `Zero` for `Point` above. Once again, the two ways of synthesizing the notation should come up with the same answer.
 Class inference is subtle, and you have to be careful when using it, because it configures automation that invisibly governs the interpretation of the expressions we type. When used wisely, however, class inference is a powerful tool. It is what makes algebraic reasoning possible in Lean.
-##  7.3. Building the Gaussian Integers[](file:///home/ryant/Projects/confia_crawler/output/01_raw_html/math_in_lean/C07_Structures.html#building-the-gaussian-integers "Link to this heading")
+##  7.3. Building the Gaussian Integers[](file:///home/rian-macedo/Projects/confia_crawler/output/01_raw_html/math_in_lean/C07_Structures.html#building-the-gaussian-integers "Link to this heading")
 We will now illustrate the use of the algebraic hierarchy in Lean by building an important mathematical object, the _Gaussian integers_ , and showing that it is a Euclidean domain. In other words, according to the terminology we have been using, we will define the Gaussian integers and show that they are an instance of the Euclidean domain structure.
 In ordinary mathematical terms, the set of Gaussian integers Z[i] is the set of complex numbers {a+bi∣a,b∈Z}. But rather than define them as a subset of the complex numbers, our goal here is to define them as a data type in their own right. We do this by representing a Gaussian integer as a pair of integers, which we think of as the _real_ and _imaginary_ parts.
 
@@ -641,7 +641,7 @@ instance : Mul GaussInt :=
 
 ```
 
-As noted in [Section 7.1](file:///home/ryant/Projects/confia_crawler/output/01_raw_html/math_in_lean/C07_Structures.html#section-structures), it is a good idea to put all the definitions related to a data type in a namespace with the same name. Thus in the Lean files associated with this chapter, these definitions are made in the `GaussInt` namespace.
+As noted in [Section 7.1](file:///home/rian-macedo/Projects/confia_crawler/output/01_raw_html/math_in_lean/C07_Structures.html#section-structures), it is a good idea to put all the definitions related to a data type in a namespace with the same name. Thus in the Lean files associated with this chapter, these definitions are made in the `GaussInt` namespace.
 Notice that here we are defining the interpretations of the notation `0`, `1`, `+`, `-`, and `*` directly, rather than naming them `GaussInt.zero` and the like and assigning the notation to those. It is often useful to have an explicit name for the definitions, for example, to use with `simp` and `rw`.
 
 ```
@@ -994,7 +994,7 @@ example (x : GaussInt) : Irreducible x ↔ Prime x :=
 
 ```
 
-[](file:///home/ryant/Projects/confia_crawler/output/01_raw_html/math_in_lean/C06_Discrete_Mathematics.html "6. Discrete Mathematics") [Next ](file:///home/ryant/Projects/confia_crawler/output/01_raw_html/math_in_lean/C08_Hierarchies.html "8. Hierarchies")
+[](file:///home/rian-macedo/Projects/confia_crawler/output/01_raw_html/math_in_lean/C06_Discrete_Mathematics.html "6. Discrete Mathematics") [Next ](file:///home/rian-macedo/Projects/confia_crawler/output/01_raw_html/math_in_lean/C08_Hierarchies.html "8. Hierarchies")
 * * *
 © Copyright 2020-2025, Jeremy Avigad, Patrick Massot. Text licensed under CC BY 4.0.
 Built with [Sphinx](https://www.sphinx-doc.org/) using a [theme](https://github.com/readthedocs/sphinx_rtd_theme) provided by [Read the Docs](https://readthedocs.org). 

@@ -27,7 +27,13 @@ syntaxNotation for `SPred`
 
 ```
 term ::= ...
-    | Embedding of pure Lean values into `SVal`. An alias for `SPred.pure`. ⌜term⌝
+    | 
+
+
+Embedding of pure Lean values into SVal. An alias for SPred.pure. 
+
+
+⌜term⌝
 ```
 
 Embedding of pure Lean values into `[SVal](The--mvcgen--tactic/Predicate-Transformers/#Std___Do___SVal "Documentation for Std.Do.SVal")`. An alias for `[SPred.pure](The--mvcgen--tactic/Predicate-Transformers/#Std___Do___SPred___pure "Documentation for Std.Do.SPred.pure")`.
@@ -87,43 +93,82 @@ syntaxNotation for `SPred`
 
 ```
 term ::= ...
-    | Entailment in `SPred`; sugar for `SPred.entails`. term ⊢ₛ term
+    | 
+
+
+Entailment in SPred; sugar for SPred.entails. 
+
+
+term ⊢ₛ term
 ```
 
 Entailment in `[SPred](The--mvcgen--tactic/Predicate-Transformers/#Std___Do___SPred "Documentation for Std.Do.SPred")`; sugar for `[SPred.entails](The--mvcgen--tactic/Predicate-Transformers/#Std___Do___SPred___entails "Documentation for Std.Do.SPred.entails")`.
 
 ```
 term ::= ...
-    | Tautology in `SPred`; sugar for `SPred.entails ⌜True⌝`. ⊢ₛ term
+    | 
+
+
+Tautology in SPred; sugar for SPred.entails ⌜True⌝. 
+
+
+⊢ₛ term
 ```
 
 Tautology in `[SPred](The--mvcgen--tactic/Predicate-Transformers/#Std___Do___SPred "Documentation for Std.Do.SPred")`; sugar for `[SPred.entails](The--mvcgen--tactic/Predicate-Transformers/#Std___Do___SPred___entails "Documentation for Std.Do.SPred.entails") ⌜[True](Basic-Propositions/Truth/#True___intro "Documentation for True")⌝`.
 
 ```
 term ::= ...
-    | Bi-entailment in `SPred`; sugar for `SPred.bientails`. term ⊣⊢ₛ term
+    | 
+
+
+Bi-entailment in SPred; sugar for SPred.bientails. 
+
+
+term ⊣⊢ₛ term
 ```
 
 Bi-entailment in `[SPred](The--mvcgen--tactic/Predicate-Transformers/#Std___Do___SPred "Documentation for Std.Do.SPred")`; sugar for `[SPred.bientails](The--mvcgen--tactic/Predicate-Transformers/#Std___Do___SPred___bientails "Documentation for Std.Do.SPred.bientails")`.
 The logic of stateful predicates includes an implication connective. The difference between entailment and implication is that entailment is a statement in Lean's logic, while implication is internal to the stateful logic. Given stateful predicates `P` and `Q` for state `σ`, `P ⊢ₛ Q` is a `Prop` while `spred(P → Q)` is an `[SPred](The--mvcgen--tactic/Predicate-Transformers/#Std___Do___SPred "Documentation for Std.Do.SPred") σ`.
 ###  17.2.1.2. Notation[🔗](find/?domain=Verso.Genre.Manual.section&name=The-Lean-Language-Reference--The--mvcgen--tactic--Predicate-Transformers--Stateful-Predicates--Notation "Permalink")
-The syntax of stateful predicates overlaps with that of ordinary Lean terms. In particular, stateful predicates use the usual syntax for logical connectives and quantifiers. The syntax associated with stateful predicates is automatically enabled in contexts such as pre- and postconditions where they are clearly intended; other contexts must explicitly opt in to the syntax using ``Std.Do.«termSpred(_)» : term``An embedding of the special syntax for `SPred` into ordinary terms that provides alternative interpretations of logical connectives and quantifiers.  Within `spred(...)`, `term(...)` escapes to the ordinary Lean interpretation of this syntax. ```spred`. The usual meanings of these operators can be recovered by using the ``Std.Do.«termTerm(_)» : term``Escapes from a surrounding `spred(...)` term, returning to the usual interpretations of quantifiers and connectives. ``[`term`](The--mvcgen--tactic/Predicate-Transformers/#Std___Do____FLQQ_termTerm_LPAR___RPAR__FLQQ_) operator.
+The syntax of stateful predicates overlaps with that of ordinary Lean terms. In particular, stateful predicates use the usual syntax for logical connectives and quantifiers. The syntax associated with stateful predicates is automatically enabled in contexts such as pre- and postconditions where they are clearly intended; other contexts must explicitly opt in to the syntax using ``Std.Do.«termSpred(_)» : term`
+An embedding of the special syntax for `SPred` into ordinary terms that provides alternative interpretations of logical connectives and quantifiers.
+Within `spred(...)`, `term(...)` escapes to the ordinary Lean interpretation of this syntax.
+``spred`. The usual meanings of these operators can be recovered by using the ``Std.Do.«termTerm(_)» : term`
+Escapes from a surrounding `spred(...)` term, returning to the usual interpretations of quantifiers and connectives.
+`[`term`](The--mvcgen--tactic/Predicate-Transformers/#Std___Do____FLQQ_termTerm_LPAR___RPAR__FLQQ_) operator.
 syntaxPredicate Terms
-``Std.Do.«termSpred(_)» : term``An embedding of the special syntax for `SPred` into ordinary terms that provides alternative interpretations of logical connectives and quantifiers.  Within `spred(...)`, `term(...)` escapes to the ordinary Lean interpretation of this syntax. ```spred` indicates that logical connectives and quantifiers should be understood as those pertaining to stateful predicates, while ``Std.Do.«termTerm(_)» : term``Escapes from a surrounding `spred(...)` term, returning to the usual interpretations of quantifiers and connectives. ``[`term`](The--mvcgen--tactic/Predicate-Transformers/#Std___Do____FLQQ_termTerm_LPAR___RPAR__FLQQ_) indicates that they should have the usual meaning.
+``Std.Do.«termSpred(_)» : term`
+An embedding of the special syntax for `SPred` into ordinary terms that provides alternative interpretations of logical connectives and quantifiers.
+Within `spred(...)`, `term(...)` escapes to the ordinary Lean interpretation of this syntax.
+``spred` indicates that logical connectives and quantifiers should be understood as those pertaining to stateful predicates, while ``Std.Do.«termTerm(_)» : term`
+Escapes from a surrounding `spred(...)` term, returning to the usual interpretations of quantifiers and connectives.
+`[`term`](The--mvcgen--tactic/Predicate-Transformers/#Std___Do____FLQQ_termTerm_LPAR___RPAR__FLQQ_) indicates that they should have the usual meaning.
 
 ```
 term ::= ...
-    | An embedding of the special syntax for `SPred` into ordinary terms that provides alternative
+    | 
+
+
+An embedding of the special syntax for SPred into ordinary terms that provides alternative
 interpretations of logical connectives and quantifiers.
 
-Within `spred(...)`, `term(...)` escapes to the ordinary Lean interpretation of this syntax.
+
+Within spred(...), term(...) escapes to the ordinary Lean interpretation of this syntax.
+
+
 spred(term)
 ```
 
 ```
 term ::= ...
-    | Escapes from a surrounding `spred(...)` term, returning to the usual interpretations of quantifiers
+    | 
+
+
+Escapes from a surrounding spred(...) term, returning to the usual interpretations of quantifiers
 and connectives.
+
+
 term(term)
 ```
 
@@ -132,67 +177,124 @@ syntaxPredicate Connectives
 
 ```
 term ::= ...
-    | An embedding of the special syntax for `SPred` into ordinary terms that provides alternative
+    | 
+
+
+An embedding of the special syntax for SPred into ordinary terms that provides alternative
 interpretations of logical connectives and quantifiers.
 
-Within `spred(...)`, `term(...)` escapes to the ordinary Lean interpretation of this syntax.
-spred(`And a b`, or `a ∧ b`, is the conjunction of propositions. It can be
-constructed and destructed like a pair: if `ha : a` and `hb : b` then
-`⟨ha, hb⟩ : a ∧ b`, and if `h : a ∧ b` then `h.left : a` and `h.right : b`.
+
+Within spred(...), term(...) escapes to the ordinary Lean interpretation of this syntax.
+
+
+spred(
+
+
+And a b, or a ∧ b, is the conjunction of propositions. It can be
+constructed and destructed like a pair: if ha : a and hb : b then
+⟨ha, hb⟩ : a ∧ b, and if h : a ∧ b then h.left : a and h.right : b.
 
 
 Conventions for notations in identifiers:
 
- * The recommended spelling of `∧` in identifiers is `and`.term [∧](Basic-Propositions/Logical-Connectives/#_FLQQ_term______FLQQ_-next-next-next) term)
+
+
+
+  * The recommended spelling of ∧ in identifiers is and.
+
+
+
+
+term [∧](Basic-Propositions/Logical-Connectives/#_FLQQ_term______FLQQ_-next-next-next) term)
 ```
 
 Syntactic sugar for `[SPred.and](The--mvcgen--tactic/Predicate-Transformers/#Std___Do___SPred___and "Documentation for Std.Do.SPred.and")`.
 
 ```
 term ::= ...
-    | An embedding of the special syntax for `SPred` into ordinary terms that provides alternative
+    | 
+
+
+An embedding of the special syntax for SPred into ordinary terms that provides alternative
 interpretations of logical connectives and quantifiers.
 
-Within `spred(...)`, `term(...)` escapes to the ordinary Lean interpretation of this syntax.
-spred(`Or a b`, or `a ∨ b`, is the disjunction of propositions. There are two
-constructors for `Or`, called `Or.inl : a → a ∨ b` and `Or.inr : b → a ∨ b`,
-and you can use `match` or `cases` to destruct an `Or` assumption into the
+
+Within spred(...), term(...) escapes to the ordinary Lean interpretation of this syntax.
+
+
+spred(
+
+
+Or a b, or a ∨ b, is the disjunction of propositions. There are two
+constructors for Or, called Or.inl : a → a ∨ b and Or.inr : b → a ∨ b,
+and you can use match or cases to destruct an Or assumption into the
 two cases.
 
 
 Conventions for notations in identifiers:
 
- * The recommended spelling of `∨` in identifiers is `or`.term [∨](Basic-Propositions/Logical-Connectives/#_FLQQ_term______FLQQ_-next-next-next-next) term)
+
+
+
+  * The recommended spelling of ∨ in identifiers is or.
+
+
+
+
+term [∨](Basic-Propositions/Logical-Connectives/#_FLQQ_term______FLQQ_-next-next-next-next) term)
 ```
 
 Syntactic sugar for `[SPred.or](The--mvcgen--tactic/Predicate-Transformers/#Std___Do___SPred___or "Documentation for Std.Do.SPred.or")`.
 
 ```
 term ::= ...
-    | An embedding of the special syntax for `SPred` into ordinary terms that provides alternative
+    | 
+
+
+An embedding of the special syntax for SPred into ordinary terms that provides alternative
 interpretations of logical connectives and quantifiers.
 
-Within `spred(...)`, `term(...)` escapes to the ordinary Lean interpretation of this syntax.
-spred(`Not p`, or `¬p`, is the negation of `p`. It is defined to be `p → False`,
-so if your goal is `¬p` you can use `intro h` to turn the goal into
-`h : p ⊢ False`, and if you have `hn : ¬p` and `h : p` then `hn h : False`
-and `(hn h).elim` will prove anything.
-For more information: [Propositional Logic](https://lean-lang.org/theorem_proving_in_lean4/propositions_and_proofs.html#propositional-logic)
+
+Within spred(...), term(...) escapes to the ordinary Lean interpretation of this syntax.
+
+
+spred(
+
+
+Not p, or ¬p, is the negation of p. It is defined to be p → False,
+so if your goal is ¬p you can use intro h to turn the goal into
+h : p ⊢ False, and if you have hn : ¬p and h : p then hn h : False
+and (hn h).elim will prove anything.
+For more information: Propositional Logic[](https://lean-lang.org/theorem_proving_in_lean4/propositions_and_proofs.html#propositional-logic)
 
 
 Conventions for notations in identifiers:
 
- * The recommended spelling of `¬` in identifiers is `not`.[¬](Basic-Propositions/Logical-Connectives/#_FLQQ_term_____FLQQ_) term)
+
+
+
+  * The recommended spelling of ¬ in identifiers is not.
+
+
+
+
+[¬](Basic-Propositions/Logical-Connectives/#_FLQQ_term_____FLQQ_) term)
 ```
 
 Syntactic sugar for `[SPred.not](The--mvcgen--tactic/Predicate-Transformers/#Std___Do___SPred___not "Documentation for Std.Do.SPred.not")`.
 
 ```
 term ::= ...
-    | An embedding of the special syntax for `SPred` into ordinary terms that provides alternative
+    | 
+
+
+An embedding of the special syntax for SPred into ordinary terms that provides alternative
 interpretations of logical connectives and quantifiers.
 
-Within `spred(...)`, `term(...)` escapes to the ordinary Lean interpretation of this syntax.
+
+Within spred(...), term(...) escapes to the ordinary Lean interpretation of this syntax.
+
+
 spred(term [→](Terms/Function-Types/#Lean___Parser___Term___arrow) term)
 ```
 
@@ -200,18 +302,35 @@ Syntactic sugar for `[SPred.imp](The--mvcgen--tactic/Predicate-Transformers/#Std
 
 ```
 term ::= ...
-    | An embedding of the special syntax for `SPred` into ordinary terms that provides alternative
+    | 
+
+
+An embedding of the special syntax for SPred into ordinary terms that provides alternative
 interpretations of logical connectives and quantifiers.
 
-Within `spred(...)`, `term(...)` escapes to the ordinary Lean interpretation of this syntax.
-spred(If and only if, or logical bi-implication. `a ↔ b` means that `a` implies `b` and vice versa.
-By `propext`, this implies that `a` and `b` are equal and hence any expression involving `a`
-is equivalent to the corresponding expression with `b` instead.
+
+Within spred(...), term(...) escapes to the ordinary Lean interpretation of this syntax.
+
+
+spred(
+
+
+If and only if, or logical bi-implication. a ↔ b means that a implies b and vice versa.
+By propext, this implies that a and b are equal and hence any expression involving a
+is equivalent to the corresponding expression with b instead.
 
 
 Conventions for notations in identifiers:
 
- * The recommended spelling of `↔` in identifiers is `iff`.term [↔](Basic-Propositions/Logical-Connectives/#_FLQQ_term______FLQQ_-next-next-next-next-next) term)
+
+
+
+  * The recommended spelling of ↔ in identifiers is iff.
+
+
+
+
+term [↔](Basic-Propositions/Logical-Connectives/#_FLQQ_term______FLQQ_-next-next-next-next-next) term)
 ```
 
 Syntactic sugar for `[SPred.iff](The--mvcgen--tactic/Predicate-Transformers/#Std___Do___SPred___iff "Documentation for Std.Do.SPred.iff")`.
@@ -305,129 +424,236 @@ syntaxPredicate Quantifiers
 
 ```
 term ::= ...
-    | An embedding of the special syntax for `SPred` into ordinary terms that provides alternative
+    | 
+
+
+An embedding of the special syntax for SPred into ordinary terms that provides alternative
 interpretations of logical connectives and quantifiers.
 
-Within `spred(...)`, `term(...)` escapes to the ordinary Lean interpretation of this syntax.
+
+Within spred(...), term(...) escapes to the ordinary Lean interpretation of this syntax.
+
+
 spred(∀ ident, term)
 ```
 
 ```
 term ::= ...
-    | An embedding of the special syntax for `SPred` into ordinary terms that provides alternative
+    | 
+
+
+An embedding of the special syntax for SPred into ordinary terms that provides alternative
 interpretations of logical connectives and quantifiers.
 
-Within `spred(...)`, `term(...)` escapes to the ordinary Lean interpretation of this syntax.
+
+Within spred(...), term(...) escapes to the ordinary Lean interpretation of this syntax.
+
+
 spred(∀ ident : term,  term)
 ```
 
 ```
 term ::= ...
-    | An embedding of the special syntax for `SPred` into ordinary terms that provides alternative
+    | 
+
+
+An embedding of the special syntax for SPred into ordinary terms that provides alternative
 interpretations of logical connectives and quantifiers.
 
-Within `spred(...)`, `term(...)` escapes to the ordinary Lean interpretation of this syntax.
-spred(∀ Explicit binder, like `(x y : A)` or `(x y)`.
-Default values can be specified using `(x : A := v)` syntax, and tactics using `(x : A := by tac)`.
-(ident (ident | [A *hole* (or *placeholder term*), which stands for an unknown term that is expected to be inferred based on context.
-For example, in `@id _ Nat.zero`, the `_` must be the type of `Nat.zero`, which is `Nat`.
 
+Within spred(...), term(...) escapes to the ordinary Lean interpretation of this syntax.
+
+
+spred(∀ 
+
+
+Explicit binder, like (x y : A) or (x y).
+Default values can be specified using (x : A := v) syntax, and tactics using (x : A := by tac).
+
+
+(ident (ident | [
+A _hole_ (or _placeholder term_), which stands for an unknown term that is expected to be inferred based on context.
+For example, in @id _ Nat.zero, the _ must be the type of Nat.zero, which is Nat.
 The way this works is that holes create fresh metavariables.
 The elaborator is allowed to assign terms to metavariables while it is checking definitional equalities.
-This is often known as *unification*.
-
+This is often known as _unification_.
 Normally, all holes must be solved for. However, there are a few contexts where this is not necessary:
-* In `match` patterns, holes are catch-all patterns.
-* In some tactics, such as `refine'` and `apply`, unsolved-for placeholders become new goals.
+
+
+
+  * In match patterns, holes are catch-all patterns.
+
+
+  * In some tactics, such as refine' and apply, unsolved-for placeholders become new goals.
+
+
 
 Related concept: implicit parameters are automatically filled in with holes during the elaboration process.
-
-See also `?m` syntax (synthetic holes).
+See also ?m syntax (synthetic holes).
 hole](Terms/Holes/#Lean___Parser___Term___hole))* : term),  term)
 ```
 
 ```
 term ::= ...
-    | An embedding of the special syntax for `SPred` into ordinary terms that provides alternative
+    | 
+
+
+An embedding of the special syntax for SPred into ordinary terms that provides alternative
 interpretations of logical connectives and quantifiers.
 
-Within `spred(...)`, `term(...)` escapes to the ordinary Lean interpretation of this syntax.
-spred(∀ A *hole* (or *placeholder term*), which stands for an unknown term that is expected to be inferred based on context.
-For example, in `@id _ Nat.zero`, the `_` must be the type of `Nat.zero`, which is `Nat`.
+
+Within spred(...), term(...) escapes to the ordinary Lean interpretation of this syntax.
+
+
+spred(∀ 
+
+
+A _hole_ (or _placeholder term_), which stands for an unknown term that is expected to be inferred based on context.
+For example, in @id _ Nat.zero, the _ must be the type of Nat.zero, which is Nat.
+
 
 The way this works is that holes create fresh metavariables.
 The elaborator is allowed to assign terms to metavariables while it is checking definitional equalities.
-This is often known as *unification*.
+This is often known as _unification_.
+
 
 Normally, all holes must be solved for. However, there are a few contexts where this is not necessary:
-* In `match` patterns, holes are catch-all patterns.
-* In some tactics, such as `refine'` and `apply`, unsolved-for placeholders become new goals.
+
+
+
+
+  * In match patterns, holes are catch-all patterns.
+
+
+  * In some tactics, such as refine' and apply, unsolved-for placeholders become new goals.
+
+
+
 
 Related concept: implicit parameters are automatically filled in with holes during the elaboration process.
 
-See also `?m` syntax (synthetic holes).
+
+See also ?m syntax (synthetic holes).
+
+
 [_](Terms/Holes/#Lean___Parser___Term___hole), term)
 ```
 
 ```
 term ::= ...
-    | An embedding of the special syntax for `SPred` into ordinary terms that provides alternative
+    | 
+
+
+An embedding of the special syntax for SPred into ordinary terms that provides alternative
 interpretations of logical connectives and quantifiers.
 
-Within `spred(...)`, `term(...)` escapes to the ordinary Lean interpretation of this syntax.
-spred(∀ A *hole* (or *placeholder term*), which stands for an unknown term that is expected to be inferred based on context.
-For example, in `@id _ Nat.zero`, the `_` must be the type of `Nat.zero`, which is `Nat`.
+
+Within spred(...), term(...) escapes to the ordinary Lean interpretation of this syntax.
+
+
+spred(∀ 
+
+
+A _hole_ (or _placeholder term_), which stands for an unknown term that is expected to be inferred based on context.
+For example, in @id _ Nat.zero, the _ must be the type of Nat.zero, which is Nat.
+
 
 The way this works is that holes create fresh metavariables.
 The elaborator is allowed to assign terms to metavariables while it is checking definitional equalities.
-This is often known as *unification*.
+This is often known as _unification_.
+
 
 Normally, all holes must be solved for. However, there are a few contexts where this is not necessary:
-* In `match` patterns, holes are catch-all patterns.
-* In some tactics, such as `refine'` and `apply`, unsolved-for placeholders become new goals.
+
+
+
+
+  * In match patterns, holes are catch-all patterns.
+
+
+  * In some tactics, such as refine' and apply, unsolved-for placeholders become new goals.
+
+
+
 
 Related concept: implicit parameters are automatically filled in with holes during the elaboration process.
 
-See also `?m` syntax (synthetic holes).
+
+See also ?m syntax (synthetic holes).
+
+
 [_](Terms/Holes/#Lean___Parser___Term___hole) : term,  term)
 ```
 
 ```
 term ::= ...
-    | An embedding of the special syntax for `SPred` into ordinary terms that provides alternative
+    | 
+
+
+An embedding of the special syntax for SPred into ordinary terms that provides alternative
 interpretations of logical connectives and quantifiers.
 
-Within `spred(...)`, `term(...)` escapes to the ordinary Lean interpretation of this syntax.
-spred(∀ Explicit binder, like `(x y : A)` or `(x y)`.
-Default values can be specified using `(x : A := v)` syntax, and tactics using `(x : A := by tac)`.
-(A *hole* (or *placeholder term*), which stands for an unknown term that is expected to be inferred based on context.
-For example, in `@id _ Nat.zero`, the `_` must be the type of `Nat.zero`, which is `Nat`.
+
+Within spred(...), term(...) escapes to the ordinary Lean interpretation of this syntax.
+
+
+spred(∀ 
+
+
+Explicit binder, like (x y : A) or (x y).
+Default values can be specified using (x : A := v) syntax, and tactics using (x : A := by tac).
+
+
+(
+
+
+A _hole_ (or _placeholder term_), which stands for an unknown term that is expected to be inferred based on context.
+For example, in @id _ Nat.zero, the _ must be the type of Nat.zero, which is Nat.
+
 
 The way this works is that holes create fresh metavariables.
 The elaborator is allowed to assign terms to metavariables while it is checking definitional equalities.
-This is often known as *unification*.
+This is often known as _unification_.
+
 
 Normally, all holes must be solved for. However, there are a few contexts where this is not necessary:
-* In `match` patterns, holes are catch-all patterns.
-* In some tactics, such as `refine'` and `apply`, unsolved-for placeholders become new goals.
+
+
+
+
+  * In match patterns, holes are catch-all patterns.
+
+
+  * In some tactics, such as refine' and apply, unsolved-for placeholders become new goals.
+
+
+
 
 Related concept: implicit parameters are automatically filled in with holes during the elaboration process.
 
-See also `?m` syntax (synthetic holes).
-[_](Terms/Holes/#Lean___Parser___Term___hole) (ident | [A *hole* (or *placeholder term*), which stands for an unknown term that is expected to be inferred based on context.
-For example, in `@id _ Nat.zero`, the `_` must be the type of `Nat.zero`, which is `Nat`.
 
+See also ?m syntax (synthetic holes).
+
+
+[_](Terms/Holes/#Lean___Parser___Term___hole) (ident | [
+A _hole_ (or _placeholder term_), which stands for an unknown term that is expected to be inferred based on context.
+For example, in @id _ Nat.zero, the _ must be the type of Nat.zero, which is Nat.
 The way this works is that holes create fresh metavariables.
 The elaborator is allowed to assign terms to metavariables while it is checking definitional equalities.
-This is often known as *unification*.
-
+This is often known as _unification_.
 Normally, all holes must be solved for. However, there are a few contexts where this is not necessary:
-* In `match` patterns, holes are catch-all patterns.
-* In some tactics, such as `refine'` and `apply`, unsolved-for placeholders become new goals.
+
+
+
+  * In match patterns, holes are catch-all patterns.
+
+
+  * In some tactics, such as refine' and apply, unsolved-for placeholders become new goals.
+
+
 
 Related concept: implicit parameters are automatically filled in with holes during the elaboration process.
-
-See also `?m` syntax (synthetic holes).
+See also ?m syntax (synthetic holes).
 hole](Terms/Holes/#Lean___Parser___Term___hole))* : term),  term)
 ```
 
@@ -435,113 +661,237 @@ Each form of universal quantification is syntactic sugar for an invocation of `[
 
 ```
 term ::= ...
-    | An embedding of the special syntax for `SPred` into ordinary terms that provides alternative
+    | 
+
+
+An embedding of the special syntax for SPred into ordinary terms that provides alternative
 interpretations of logical connectives and quantifiers.
 
-Within `spred(...)`, `term(...)` escapes to the ordinary Lean interpretation of this syntax.
-spred(∃ `binderIdent` matches an `ident` or a `_`. It is used for identifiers in binding
-position, where `_` means that the value should be left unnamed and inaccessible.
+
+Within spred(...), term(...) escapes to the ordinary Lean interpretation of this syntax.
+
+
+spred(∃ 
+
+
+binderIdent matches an ident or a _. It is used for identifiers in binding
+position, where _ means that the value should be left unnamed and inaccessible.
+
+
 ident, term)
 ```
 
 ```
 term ::= ...
-    | An embedding of the special syntax for `SPred` into ordinary terms that provides alternative
+    | 
+
+
+An embedding of the special syntax for SPred into ordinary terms that provides alternative
 interpretations of logical connectives and quantifiers.
 
-Within `spred(...)`, `term(...)` escapes to the ordinary Lean interpretation of this syntax.
-spred(∃ `binderIdent` matches an `ident` or a `_`. It is used for identifiers in binding
-position, where `_` means that the value should be left unnamed and inaccessible.
+
+Within spred(...), term(...) escapes to the ordinary Lean interpretation of this syntax.
+
+
+spred(∃ 
+
+
+binderIdent matches an ident or a _. It is used for identifiers in binding
+position, where _ means that the value should be left unnamed and inaccessible.
+
+
 ident : term,  term)
 ```
 
 ```
 term ::= ...
-    | An embedding of the special syntax for `SPred` into ordinary terms that provides alternative
+    | 
+
+
+An embedding of the special syntax for SPred into ordinary terms that provides alternative
 interpretations of logical connectives and quantifiers.
 
-Within `spred(...)`, `term(...)` escapes to the ordinary Lean interpretation of this syntax.
-spred(∃ (`binderIdent` matches an `ident` or a `_`. It is used for identifiers in binding
-position, where `_` means that the value should be left unnamed and inaccessible.
-ident `binderIdent` matches an `ident` or a `_`. It is used for identifiers in binding
-position, where `_` means that the value should be left unnamed and inaccessible.
+
+Within spred(...), term(...) escapes to the ordinary Lean interpretation of this syntax.
+
+
+spred(∃ (
+
+
+binderIdent matches an ident or a _. It is used for identifiers in binding
+position, where _ means that the value should be left unnamed and inaccessible.
+
+
+ident 
+
+
+binderIdent matches an ident or a _. It is used for identifiers in binding
+position, where _ means that the value should be left unnamed and inaccessible.
+
+
 binderIdent* : term),  term)
 ```
 
 ```
 term ::= ...
-    | An embedding of the special syntax for `SPred` into ordinary terms that provides alternative
+    | 
+
+
+An embedding of the special syntax for SPred into ordinary terms that provides alternative
 interpretations of logical connectives and quantifiers.
 
-Within `spred(...)`, `term(...)` escapes to the ordinary Lean interpretation of this syntax.
-spred(∃ `binderIdent` matches an `ident` or a `_`. It is used for identifiers in binding
-position, where `_` means that the value should be left unnamed and inaccessible.
-A *hole* (or *placeholder term*), which stands for an unknown term that is expected to be inferred based on context.
-For example, in `@id _ Nat.zero`, the `_` must be the type of `Nat.zero`, which is `Nat`.
+
+Within spred(...), term(...) escapes to the ordinary Lean interpretation of this syntax.
+
+
+spred(∃ 
+
+
+binderIdent matches an ident or a _. It is used for identifiers in binding
+position, where _ means that the value should be left unnamed and inaccessible.
+
+
+
+
+A _hole_ (or _placeholder term_), which stands for an unknown term that is expected to be inferred based on context.
+For example, in @id _ Nat.zero, the _ must be the type of Nat.zero, which is Nat.
+
 
 The way this works is that holes create fresh metavariables.
 The elaborator is allowed to assign terms to metavariables while it is checking definitional equalities.
-This is often known as *unification*.
+This is often known as _unification_.
+
 
 Normally, all holes must be solved for. However, there are a few contexts where this is not necessary:
-* In `match` patterns, holes are catch-all patterns.
-* In some tactics, such as `refine'` and `apply`, unsolved-for placeholders become new goals.
+
+
+
+
+  * In match patterns, holes are catch-all patterns.
+
+
+  * In some tactics, such as refine' and apply, unsolved-for placeholders become new goals.
+
+
+
 
 Related concept: implicit parameters are automatically filled in with holes during the elaboration process.
 
-See also `?m` syntax (synthetic holes).
+
+See also ?m syntax (synthetic holes).
+
+
 [_](Terms/Holes/#Lean___Parser___Term___hole), term)
 ```
 
 ```
 term ::= ...
-    | An embedding of the special syntax for `SPred` into ordinary terms that provides alternative
+    | 
+
+
+An embedding of the special syntax for SPred into ordinary terms that provides alternative
 interpretations of logical connectives and quantifiers.
 
-Within `spred(...)`, `term(...)` escapes to the ordinary Lean interpretation of this syntax.
-spred(∃ `binderIdent` matches an `ident` or a `_`. It is used for identifiers in binding
-position, where `_` means that the value should be left unnamed and inaccessible.
-A *hole* (or *placeholder term*), which stands for an unknown term that is expected to be inferred based on context.
-For example, in `@id _ Nat.zero`, the `_` must be the type of `Nat.zero`, which is `Nat`.
+
+Within spred(...), term(...) escapes to the ordinary Lean interpretation of this syntax.
+
+
+spred(∃ 
+
+
+binderIdent matches an ident or a _. It is used for identifiers in binding
+position, where _ means that the value should be left unnamed and inaccessible.
+
+
+
+
+A _hole_ (or _placeholder term_), which stands for an unknown term that is expected to be inferred based on context.
+For example, in @id _ Nat.zero, the _ must be the type of Nat.zero, which is Nat.
+
 
 The way this works is that holes create fresh metavariables.
 The elaborator is allowed to assign terms to metavariables while it is checking definitional equalities.
-This is often known as *unification*.
+This is often known as _unification_.
+
 
 Normally, all holes must be solved for. However, there are a few contexts where this is not necessary:
-* In `match` patterns, holes are catch-all patterns.
-* In some tactics, such as `refine'` and `apply`, unsolved-for placeholders become new goals.
+
+
+
+
+  * In match patterns, holes are catch-all patterns.
+
+
+  * In some tactics, such as refine' and apply, unsolved-for placeholders become new goals.
+
+
+
 
 Related concept: implicit parameters are automatically filled in with holes during the elaboration process.
 
-See also `?m` syntax (synthetic holes).
+
+See also ?m syntax (synthetic holes).
+
+
 [_](Terms/Holes/#Lean___Parser___Term___hole) : term,  term)
 ```
 
 ```
 term ::= ...
-    | An embedding of the special syntax for `SPred` into ordinary terms that provides alternative
+    | 
+
+
+An embedding of the special syntax for SPred into ordinary terms that provides alternative
 interpretations of logical connectives and quantifiers.
 
-Within `spred(...)`, `term(...)` escapes to the ordinary Lean interpretation of this syntax.
-spred(∃ (`binderIdent` matches an `ident` or a `_`. It is used for identifiers in binding
-position, where `_` means that the value should be left unnamed and inaccessible.
-A *hole* (or *placeholder term*), which stands for an unknown term that is expected to be inferred based on context.
-For example, in `@id _ Nat.zero`, the `_` must be the type of `Nat.zero`, which is `Nat`.
+
+Within spred(...), term(...) escapes to the ordinary Lean interpretation of this syntax.
+
+
+spred(∃ (
+
+
+binderIdent matches an ident or a _. It is used for identifiers in binding
+position, where _ means that the value should be left unnamed and inaccessible.
+
+
+
+
+A _hole_ (or _placeholder term_), which stands for an unknown term that is expected to be inferred based on context.
+For example, in @id _ Nat.zero, the _ must be the type of Nat.zero, which is Nat.
+
 
 The way this works is that holes create fresh metavariables.
 The elaborator is allowed to assign terms to metavariables while it is checking definitional equalities.
-This is often known as *unification*.
+This is often known as _unification_.
+
 
 Normally, all holes must be solved for. However, there are a few contexts where this is not necessary:
-* In `match` patterns, holes are catch-all patterns.
-* In some tactics, such as `refine'` and `apply`, unsolved-for placeholders become new goals.
+
+
+
+
+  * In match patterns, holes are catch-all patterns.
+
+
+  * In some tactics, such as refine' and apply, unsolved-for placeholders become new goals.
+
+
+
 
 Related concept: implicit parameters are automatically filled in with holes during the elaboration process.
 
-See also `?m` syntax (synthetic holes).
-[_](Terms/Holes/#Lean___Parser___Term___hole) `binderIdent` matches an `ident` or a `_`. It is used for identifiers in binding
-position, where `_` means that the value should be left unnamed and inaccessible.
+
+See also ?m syntax (synthetic holes).
+
+
+[_](Terms/Holes/#Lean___Parser___Term___hole) 
+
+
+binderIdent matches an ident or a _. It is used for identifiers in binding
+position, where _ means that the value should be left unnamed and inaccessible.
+
+
 binderIdent* : term),  term)
 ```
 
@@ -766,9 +1116,14 @@ syntaxPostconditions
 
 ```
 term ::= ...
-    | A postcondition expressing total correctness.
+    | 
+
+
+A postcondition expressing total correctness.
 That is, it expresses that the asserted computation finishes without throwing an exception
-*and* the result satisfies the given predicate `p`.
+_and_ the result satisfies the given predicate p.
+
+
 ⇓ term* => term
 ```
 
@@ -802,9 +1157,14 @@ syntaxException-Free Postconditions
 
 ```
 term ::= ...
-    | A postcondition expressing total correctness.
+    | 
+
+
+A postcondition expressing total correctness.
 That is, it expresses that the asserted computation finishes without throwing an exception
-*and* the result satisfies the given predicate `p`.
+_and_ the result satisfies the given predicate p.
+
+
 ⇓ term* => term
 ```
 
@@ -829,10 +1189,15 @@ syntaxPartial Postconditions
 
 ```
 term ::= ...
-    | A postcondition expressing partial correctness.
-That is, it expresses that *if* the asserted computation finishes without throwing an exception
-*then* the result satisfies the given predicate `p`.
+    | 
+
+
+A postcondition expressing partial correctness.
+That is, it expresses that _if_ the asserted computation finishes without throwing an exception
+_then_ the result satisfies the given predicate p.
 Nothing is asserted when the computation throws an exception.
+
+
 ⇓? term* => term
 ```
 
@@ -857,14 +1222,29 @@ syntaxPostcondition Entailment
 
 ```
 term ::= ...
-    | Entailment of postconditions.
+    | 
+
+
+Entailment of postconditions.
+
 
 This consists of:
- * Entailment of the assertion about the return value, for all possible return values.
- * Entailment of the exception conditions.
 
-While implication of postconditions (`PostCond.imp`) results in a new postcondition, entailment is
+
+
+
+  * Entailment of the assertion about the return value, for all possible return values.
+
+
+  * Entailment of the exception conditions.
+
+
+
+
+While implication of postconditions (PostCond.imp) results in a new postcondition, entailment is
 an ordinary proposition.
+
+
 term ⊢ₚ term
 ```
 
@@ -895,10 +1275,16 @@ syntaxPostcondition Conjunction
 
 ```
 term ::= ...
-    | Conjunction of postconditions.
+    | 
+
+
+Conjunction of postconditions.
+
 
 This is defined pointwise, as the conjunction of the assertions about the return value and the
 conjunctions of the assertions about each potential exception.
+
+
 term ∧ₚ term
 ```
 
@@ -924,13 +1310,20 @@ syntaxPostcondition Implication
 
 ```
 term ::= ...
-    | Implication of postconditions.
+    | 
+
+
+Implication of postconditions.
+
 
 This is defined pointwise, as the implication of the assertions about the return value and the
 implications of each of the assertions about each potential exception.
 
-While entailment of postconditions (`PostCond.entails`) is an ordinary proposition, implication of
+
+While entailment of postconditions (PostCond.entails) is an ordinary proposition, implication of
 postconditions is itself a postcondition.
+
+
 term →ₚ term
 ```
 
@@ -1146,7 +1539,13 @@ syntaxWeakest Preconditions
 
 ```
 term ::= ...
-    | `wp⟦x⟧ Q` is defined as `(WP.wp x).apply Q`. wp⟦term (: term)?⟧
+    | 
+
+
+wp⟦x⟧ Q is defined as (WP.wp x).apply Q. 
+
+
+wp⟦term (: term)?⟧
 ```
 
 `wp⟦x⟧ Q` is defined as `(WP.wp x).apply Q`.
@@ -1558,11 +1957,17 @@ syntaxHoare Triples
 
 ```
 term ::= ...
-    | A Hoare triple for reasoning about monadic programs. A Hoare triple `Triple x P Q` is a
-*specification* for `x`: if assertion `P` holds before `x`, then postcondition `Q` holds after
-running `x`.
+    | 
 
-`⦃P⦄ x ⦃Q⦄` is convenient syntax for `Triple x P Q`.
+
+A Hoare triple for reasoning about monadic programs. A Hoare triple Triple x P Q is a
+_specification_ for x: if assertion P holds before x, then postcondition Q holds after
+running x.
+
+
+⦃P⦄ x ⦃Q⦄ is convenient syntax for Triple x P Q.
+
+
 ⦃ term ⦄ term ⦃ term ⦄
 ```
 
@@ -1620,13 +2025,25 @@ attributeSpecification Lemmas
 
 ```
 attr ::= ...
-    | Theorems tagged with the `spec` attribute are used by the `mspec` and `mvcgen` tactics.
+    | 
 
-* When used on a theorem `foo_spec : Triple (foo a b c) P Q`, then `mspec` and `mvcgen` will use
-  `foo_spec` as a specification for calls to `foo`.
-* Otherwise, when used on a definition that `@[simp]` would work on, it is added to the internal
-  simp set of `mvcgen` that is used within `wp⟦·⟧` contexts to simplify match discriminants and
-  applications of constants.
+
+Theorems tagged with the spec attribute are used by the mspec and mvcgen tactics.
+
+
+
+
+  * When used on a theorem foo_spec : Triple (foo a b c) P Q, then mspec and mvcgen will use
+foo_spec as a specification for calls to foo.
+
+
+  * Otherwise, when used on a definition that @[simp] would work on, it is added to the internal
+simp set of mvcgen that is used within wp⟦·⟧ contexts to simplify match discriminants and
+applications of constants.
+
+
+
+
 spec prio?
 ```
 
@@ -1702,7 +2119,9 @@ forIn (β := MProd (Option γ) ...) (b := ⟨none, ...⟩) collection loopBody
 
 Note that the first component of the `[MProd](Basic-Types/Tuples/#MProd___mk "Documentation for MProd")` state tuple is the optional early return value. It is `[none](Basic-Types/Optional-Values/#Option___none "Documentation for Option.none")` as long as there was no early return and `[some](Basic-Types/Optional-Values/#Option___none "Documentation for Option.some") r` if the loop returned early with `r`.
 This function allows to specify different invariants for the loop body depending on whether the loop terminated early or not. When there was an early return, the loop has effectively finished, which is encoded by the additional `⌜xs.suffix = []⌝` assertion in the invariant. This assertion is vital for successfully proving the induction step, as it contradicts with the assumption that `xs.suffix = x::rest` of the inductive hypothesis at the start of the loop body, meaning that users won't need to prove anything about the bogus case where the loop has returned early yet takes another iteration of the loop body.
-Invariants use lists to model the sequence of values in a ``Lean.Parser.Term.doFor : doElem```for x in e do s`  iterates over `e` assuming `e`'s type has an instance of the `ForIn` typeclass. `break` and `continue` are supported inside `for` loops. `for x in e, x2 in e2, ... do s` iterates of the given collections in parallel, until at least one of them is exhausted. The types of `e2` etc. must implement the `Std.ToStream` typeclass. ```for` loop. The current position in the loop is tracked with a `[List.Cursor](The--mvcgen--tactic/Predicate-Transformers/#List___Cursor___mk "Documentation for List.Cursor")` that represents a position in a list as a combination of the elements to the left of the position and the elements to the right. This type is not a traditional zipper, in which the prefix is reversed for efficient movement: it is intended for use in specifications and proofs, not in run-time code, so the prefix is in the original order.
+Invariants use lists to model the sequence of values in a ``Lean.Parser.Term.doFor : doElem`
+`for x in e do s` iterates over `e` assuming `e`'s type has an instance of the `ForIn` typeclass. `break` and `continue` are supported inside `for` loops. `for x in e, x2 in e2, ... do s` iterates of the given collections in parallel, until at least one of them is exhausted. The types of `e2` etc. must implement the `Std.ToStream` typeclass.
+``for` loop. The current position in the loop is tracked with a `[List.Cursor](The--mvcgen--tactic/Predicate-Transformers/#List___Cursor___mk "Documentation for List.Cursor")` that represents a position in a list as a combination of the elements to the left of the position and the elements to the right. This type is not a traditional zipper, in which the prefix is reversed for efficient movement: it is intended for use in specifications and proofs, not in run-time code, so the prefix is in the original order.
 [🔗](find/?domain=Verso.Genre.Manual.doc&name=List.Cursor.prefix "Permalink")structure
 ```
 

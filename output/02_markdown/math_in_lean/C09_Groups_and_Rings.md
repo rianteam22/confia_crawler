@@ -1,45 +1,45 @@
-[ Mathematics in Lean ](file:///home/ryant/Projects/confia_crawler/output/01_raw_html/math_in_lean/index.html)
-  * [1. Introduction](file:///home/ryant/Projects/confia_crawler/output/01_raw_html/math_in_lean/C01_Introduction.html)
-  * [2. Basics](file:///home/ryant/Projects/confia_crawler/output/01_raw_html/math_in_lean/C02_Basics.html)
-  * [3. Logic](file:///home/ryant/Projects/confia_crawler/output/01_raw_html/math_in_lean/C03_Logic.html)
-  * [4. Sets and Functions](file:///home/ryant/Projects/confia_crawler/output/01_raw_html/math_in_lean/C04_Sets_and_Functions.html)
-  * [5. Elementary Number Theory](file:///home/ryant/Projects/confia_crawler/output/01_raw_html/math_in_lean/C05_Elementary_Number_Theory.html)
-  * [6. Discrete Mathematics](file:///home/ryant/Projects/confia_crawler/output/01_raw_html/math_in_lean/C06_Discrete_Mathematics.html)
-  * [7. Structures](file:///home/ryant/Projects/confia_crawler/output/01_raw_html/math_in_lean/C07_Structures.html)
-  * [8. Hierarchies](file:///home/ryant/Projects/confia_crawler/output/01_raw_html/math_in_lean/C08_Hierarchies.html)
-  * [](file:///home/ryant/Projects/confia_crawler/output/01_raw_html/math_in_lean/C09_Groups_and_Rings.html)
-    * [](file:///home/ryant/Projects/confia_crawler/output/01_raw_html/math_in_lean/C09_Groups_and_Rings.html#monoids-and-groups)
-      * [9.1.1. Monoids and their morphisms](file:///home/ryant/Projects/confia_crawler/output/01_raw_html/math_in_lean/C09_Groups_and_Rings.html#monoids-and-their-morphisms)
-      * [9.1.2. Groups and their morphisms](file:///home/ryant/Projects/confia_crawler/output/01_raw_html/math_in_lean/C09_Groups_and_Rings.html#groups-and-their-morphisms)
-      * [9.1.3. Subgroups](file:///home/ryant/Projects/confia_crawler/output/01_raw_html/math_in_lean/C09_Groups_and_Rings.html#subgroups)
-      * [9.1.4. Concrete groups](file:///home/ryant/Projects/confia_crawler/output/01_raw_html/math_in_lean/C09_Groups_and_Rings.html#concrete-groups)
-      * [9.1.5. Group actions](file:///home/ryant/Projects/confia_crawler/output/01_raw_html/math_in_lean/C09_Groups_and_Rings.html#group-actions)
-      * [9.1.6. Quotient groups](file:///home/ryant/Projects/confia_crawler/output/01_raw_html/math_in_lean/C09_Groups_and_Rings.html#quotient-groups)
-    * [](file:///home/ryant/Projects/confia_crawler/output/01_raw_html/math_in_lean/C09_Groups_and_Rings.html#rings)
-      * [9.2.1. Rings, their units, morphisms and subrings](file:///home/ryant/Projects/confia_crawler/output/01_raw_html/math_in_lean/C09_Groups_and_Rings.html#rings-their-units-morphisms-and-subrings)
-      * [9.2.2. Ideals and quotients](file:///home/ryant/Projects/confia_crawler/output/01_raw_html/math_in_lean/C09_Groups_and_Rings.html#ideals-and-quotients)
-      * [9.2.3. Algebras and polynomials](file:///home/ryant/Projects/confia_crawler/output/01_raw_html/math_in_lean/C09_Groups_and_Rings.html#algebras-and-polynomials)
-  * [10. Linear algebra](file:///home/ryant/Projects/confia_crawler/output/01_raw_html/math_in_lean/C10_Linear_Algebra.html)
-  * [11. Topology](file:///home/ryant/Projects/confia_crawler/output/01_raw_html/math_in_lean/C11_Topology.html)
-  * [12. Differential Calculus](file:///home/ryant/Projects/confia_crawler/output/01_raw_html/math_in_lean/C12_Differential_Calculus.html)
-  * [13. Integration and Measure Theory](file:///home/ryant/Projects/confia_crawler/output/01_raw_html/math_in_lean/C13_Integration_and_Measure_Theory.html)
+[ Mathematics in Lean ](file:///home/rian-macedo/Projects/confia_crawler/output/01_raw_html/math_in_lean/index.html)
+  * [1. Introduction](file:///home/rian-macedo/Projects/confia_crawler/output/01_raw_html/math_in_lean/C01_Introduction.html)
+  * [2. Basics](file:///home/rian-macedo/Projects/confia_crawler/output/01_raw_html/math_in_lean/C02_Basics.html)
+  * [3. Logic](file:///home/rian-macedo/Projects/confia_crawler/output/01_raw_html/math_in_lean/C03_Logic.html)
+  * [4. Sets and Functions](file:///home/rian-macedo/Projects/confia_crawler/output/01_raw_html/math_in_lean/C04_Sets_and_Functions.html)
+  * [5. Elementary Number Theory](file:///home/rian-macedo/Projects/confia_crawler/output/01_raw_html/math_in_lean/C05_Elementary_Number_Theory.html)
+  * [6. Discrete Mathematics](file:///home/rian-macedo/Projects/confia_crawler/output/01_raw_html/math_in_lean/C06_Discrete_Mathematics.html)
+  * [7. Structures](file:///home/rian-macedo/Projects/confia_crawler/output/01_raw_html/math_in_lean/C07_Structures.html)
+  * [8. Hierarchies](file:///home/rian-macedo/Projects/confia_crawler/output/01_raw_html/math_in_lean/C08_Hierarchies.html)
+  * [](file:///home/rian-macedo/Projects/confia_crawler/output/01_raw_html/math_in_lean/C09_Groups_and_Rings.html)
+    * [](file:///home/rian-macedo/Projects/confia_crawler/output/01_raw_html/math_in_lean/C09_Groups_and_Rings.html#monoids-and-groups)
+      * [9.1.1. Monoids and their morphisms](file:///home/rian-macedo/Projects/confia_crawler/output/01_raw_html/math_in_lean/C09_Groups_and_Rings.html#monoids-and-their-morphisms)
+      * [9.1.2. Groups and their morphisms](file:///home/rian-macedo/Projects/confia_crawler/output/01_raw_html/math_in_lean/C09_Groups_and_Rings.html#groups-and-their-morphisms)
+      * [9.1.3. Subgroups](file:///home/rian-macedo/Projects/confia_crawler/output/01_raw_html/math_in_lean/C09_Groups_and_Rings.html#subgroups)
+      * [9.1.4. Concrete groups](file:///home/rian-macedo/Projects/confia_crawler/output/01_raw_html/math_in_lean/C09_Groups_and_Rings.html#concrete-groups)
+      * [9.1.5. Group actions](file:///home/rian-macedo/Projects/confia_crawler/output/01_raw_html/math_in_lean/C09_Groups_and_Rings.html#group-actions)
+      * [9.1.6. Quotient groups](file:///home/rian-macedo/Projects/confia_crawler/output/01_raw_html/math_in_lean/C09_Groups_and_Rings.html#quotient-groups)
+    * [](file:///home/rian-macedo/Projects/confia_crawler/output/01_raw_html/math_in_lean/C09_Groups_and_Rings.html#rings)
+      * [9.2.1. Rings, their units, morphisms and subrings](file:///home/rian-macedo/Projects/confia_crawler/output/01_raw_html/math_in_lean/C09_Groups_and_Rings.html#rings-their-units-morphisms-and-subrings)
+      * [9.2.2. Ideals and quotients](file:///home/rian-macedo/Projects/confia_crawler/output/01_raw_html/math_in_lean/C09_Groups_and_Rings.html#ideals-and-quotients)
+      * [9.2.3. Algebras and polynomials](file:///home/rian-macedo/Projects/confia_crawler/output/01_raw_html/math_in_lean/C09_Groups_and_Rings.html#algebras-and-polynomials)
+  * [10. Linear algebra](file:///home/rian-macedo/Projects/confia_crawler/output/01_raw_html/math_in_lean/C10_Linear_Algebra.html)
+  * [11. Topology](file:///home/rian-macedo/Projects/confia_crawler/output/01_raw_html/math_in_lean/C11_Topology.html)
+  * [12. Differential Calculus](file:///home/rian-macedo/Projects/confia_crawler/output/01_raw_html/math_in_lean/C12_Differential_Calculus.html)
+  * [13. Integration and Measure Theory](file:///home/rian-macedo/Projects/confia_crawler/output/01_raw_html/math_in_lean/C13_Integration_and_Measure_Theory.html)
 
 
-  * [Index](file:///home/ryant/Projects/confia_crawler/output/01_raw_html/math_in_lean/genindex.html)
+  * [Index](file:///home/rian-macedo/Projects/confia_crawler/output/01_raw_html/math_in_lean/genindex.html)
 
 
-[Mathematics in Lean](file:///home/ryant/Projects/confia_crawler/output/01_raw_html/math_in_lean/index.html)
-  * [](file:///home/ryant/Projects/confia_crawler/output/01_raw_html/math_in_lean/index.html)
+[Mathematics in Lean](file:///home/rian-macedo/Projects/confia_crawler/output/01_raw_html/math_in_lean/index.html)
+  * [](file:///home/rian-macedo/Projects/confia_crawler/output/01_raw_html/math_in_lean/index.html)
   * 9. Groups and Rings
-  * [ View page source](file:///home/ryant/Projects/confia_crawler/output/01_raw_html/math_in_lean/_sources/C09_Groups_and_Rings.rst.txt)
+  * [ View page source](file:///home/rian-macedo/Projects/confia_crawler/output/01_raw_html/math_in_lean/_sources/C09_Groups_and_Rings.rst.txt)
 
 
 * * *
-#  9. Groups and Rings[](file:///home/ryant/Projects/confia_crawler/output/01_raw_html/math_in_lean/C09_Groups_and_Rings.html#groups-and-rings "Link to this heading")
-We saw in [Section 2.2](file:///home/ryant/Projects/confia_crawler/output/01_raw_html/math_in_lean/C02_Basics.html#proving-identities-in-algebraic-structures) how to reason about operations in groups and rings. Later, in [Section 7.2](file:///home/ryant/Projects/confia_crawler/output/01_raw_html/math_in_lean/C07_Structures.html#section-algebraic-structures), we saw how to define abstract algebraic structures, such as group structures, as well as concrete instances such as the ring structure on the Gaussian integers. [Chapter 8](file:///home/ryant/Projects/confia_crawler/output/01_raw_html/math_in_lean/C08_Hierarchies.html#hierarchies) explained how hierarchies of abstract structures are handled in Mathlib.
-In this chapter we work with groups and rings in more detail. We won’t be able to cover every aspect of the treatment of these topics in Mathlib, especially since Mathlib is constantly growing. But we will provide entry points to the library and show how the essential concepts are used. There is some overlap with the discussion of [Chapter 8](file:///home/ryant/Projects/confia_crawler/output/01_raw_html/math_in_lean/C08_Hierarchies.html#hierarchies), but here we will focus on how to use Mathlib instead of the design decisions behind the way the topics are treated. So making sense of some of the examples may require reviewing the background from [Chapter 8](file:///home/ryant/Projects/confia_crawler/output/01_raw_html/math_in_lean/C08_Hierarchies.html#hierarchies).
-##  9.1. Monoids and Groups[](file:///home/ryant/Projects/confia_crawler/output/01_raw_html/math_in_lean/C09_Groups_and_Rings.html#monoids-and-groups "Link to this heading")
-###  9.1.1. Monoids and their morphisms[](file:///home/ryant/Projects/confia_crawler/output/01_raw_html/math_in_lean/C09_Groups_and_Rings.html#monoids-and-their-morphisms "Link to this heading")
+#  9. Groups and Rings[](file:///home/rian-macedo/Projects/confia_crawler/output/01_raw_html/math_in_lean/C09_Groups_and_Rings.html#groups-and-rings "Link to this heading")
+We saw in [Section 2.2](file:///home/rian-macedo/Projects/confia_crawler/output/01_raw_html/math_in_lean/C02_Basics.html#proving-identities-in-algebraic-structures) how to reason about operations in groups and rings. Later, in [Section 7.2](file:///home/rian-macedo/Projects/confia_crawler/output/01_raw_html/math_in_lean/C07_Structures.html#section-algebraic-structures), we saw how to define abstract algebraic structures, such as group structures, as well as concrete instances such as the ring structure on the Gaussian integers. [Chapter 8](file:///home/rian-macedo/Projects/confia_crawler/output/01_raw_html/math_in_lean/C08_Hierarchies.html#hierarchies) explained how hierarchies of abstract structures are handled in Mathlib.
+In this chapter we work with groups and rings in more detail. We won’t be able to cover every aspect of the treatment of these topics in Mathlib, especially since Mathlib is constantly growing. But we will provide entry points to the library and show how the essential concepts are used. There is some overlap with the discussion of [Chapter 8](file:///home/rian-macedo/Projects/confia_crawler/output/01_raw_html/math_in_lean/C08_Hierarchies.html#hierarchies), but here we will focus on how to use Mathlib instead of the design decisions behind the way the topics are treated. So making sense of some of the examples may require reviewing the background from [Chapter 8](file:///home/rian-macedo/Projects/confia_crawler/output/01_raw_html/math_in_lean/C08_Hierarchies.html#hierarchies).
+##  9.1. Monoids and Groups[](file:///home/rian-macedo/Projects/confia_crawler/output/01_raw_html/math_in_lean/C09_Groups_and_Rings.html#monoids-and-groups "Link to this heading")
+###  9.1.1. Monoids and their morphisms[](file:///home/rian-macedo/Projects/confia_crawler/output/01_raw_html/math_in_lean/C09_Groups_and_Rings.html#monoids-and-their-morphisms "Link to this heading")
 Courses in abstract algebra often start with groups and then progress to rings, fields, and vector spaces. This involves some contortions when discussing multiplication on rings since the multiplication operation does not come from a group structure but many of the proofs carry over verbatim from group theory to this new setting. The most common fix, when doing mathematics with pen and paper, is to leave those proofs as exercises. A less efficient but safer and more formalization-friendly way of proceeding is to use monoids. A _monoid_ structure on a type M is an internal composition law that is associative and has a neutral element. Monoids are used primarily to accommodate both groups and the multiplicative structure of rings. But there are also a number of natural examples; for instance, the set of natural numbers equipped with addition forms a monoid.
 From a practical point of view, you can mostly ignore monoids when using Mathlib. But you need to know they exist when you are looking for a lemma by browsing Mathlib files. Otherwise, you might end up looking for a statement in the group theory files when it is actually in the found with monoids because it does not require elements to be invertible.
 The type of monoid structures on a type `M` is written `Monoid M`. The function `Monoid` is a type class so it will almost always appear as an instance implicit argument (in other words, in square brackets). By default, `Monoid` uses multiplicative notation for the operation; for additive notation use `AddMonoid` instead. The commutative versions of these structures add the prefix `Comm` before `Monoid`.
@@ -63,7 +63,7 @@ example {M N : Type*} [AddMonoid M] [AddMonoid N] (f : M →+ N) : f 0 = 0 :=
 
 ```
 
-These morphisms are bundled maps, i.e. they package together a map and some of its properties. Remember that [Section 8.2](file:///home/ryant/Projects/confia_crawler/output/01_raw_html/math_in_lean/C08_Hierarchies.html#section-hierarchies-morphisms) explains bundled maps; here we simply note the slightly unfortunate consequence that we cannot use ordinary function composition to compose maps. Instead, we need to use `MonoidHom.comp` and `AddMonoidHom.comp`.
+These morphisms are bundled maps, i.e. they package together a map and some of its properties. Remember that [Section 8.2](file:///home/rian-macedo/Projects/confia_crawler/output/01_raw_html/math_in_lean/C08_Hierarchies.html#section-hierarchies-morphisms) explains bundled maps; here we simply note the slightly unfortunate consequence that we cannot use ordinary function composition to compose maps. Instead, we need to use `MonoidHom.comp` and `AddMonoidHom.comp`.
 
 ```
 example {M N P : Type*} [AddMonoid M] [AddMonoid N] [AddMonoid P]
@@ -71,7 +71,7 @@ example {M N P : Type*} [AddMonoid M] [AddMonoid N] [AddMonoid P]
 
 ```
 
-###  9.1.2. Groups and their morphisms[](file:///home/ryant/Projects/confia_crawler/output/01_raw_html/math_in_lean/C09_Groups_and_Rings.html#groups-and-their-morphisms "Link to this heading")
+###  9.1.2. Groups and their morphisms[](file:///home/rian-macedo/Projects/confia_crawler/output/01_raw_html/math_in_lean/C09_Groups_and_Rings.html#groups-and-their-morphisms "Link to this heading")
 We will have much more to say about groups, which are monoids with the extra property that every element has an inverse.
 
 ```
@@ -139,7 +139,7 @@ noncomputable example {G H : Type*} [Group G] [Group H]
 
 ```
 
-###  9.1.3. Subgroups[](file:///home/ryant/Projects/confia_crawler/output/01_raw_html/math_in_lean/C09_Groups_and_Rings.html#subgroups "Link to this heading")
+###  9.1.3. Subgroups[](file:///home/rian-macedo/Projects/confia_crawler/output/01_raw_html/math_in_lean/C09_Groups_and_Rings.html#subgroups "Link to this heading")
 Just as group morphisms are bundled, a subgroup of `G` is also a bundled structure consisting of a set in `G` with the relevant closure properties.
 
 ```
@@ -153,7 +153,7 @@ example {G : Type*} [Group G] (H : Subgroup G) {x : G} (hx : x ∈ H) :
 
 ```
 
-In the example above, it is important to understand that `Subgroup G` is the type of subgroups of `G`, rather than a predicate `IsSubgroup H` where `H` is an element of `Set G`. `Subgroup G` is endowed with a coercion to `Set G` and a membership predicate on `G`. See [Section 8.3](file:///home/ryant/Projects/confia_crawler/output/01_raw_html/math_in_lean/C08_Hierarchies.html#section-hierarchies-subobjects) for an explanation of how and why this is done.
+In the example above, it is important to understand that `Subgroup G` is the type of subgroups of `G`, rather than a predicate `IsSubgroup H` where `H` is an element of `Set G`. `Subgroup G` is endowed with a coercion to `Set G` and a membership predicate on `G`. See [Section 8.3](file:///home/rian-macedo/Projects/confia_crawler/output/01_raw_html/math_in_lean/C08_Hierarchies.html#section-hierarchies-subobjects) for an explanation of how and why this is done.
 Of course, two subgroups are the same if and only if they have the same elements. This fact is registered for use with the `ext` tactic, which can be used to prove two subgroups are equal in the same way it is used to prove that two sets are equal.
 To state and prove, for example, that `ℤ` is an additive subgroup of `ℚ`, what we really want is to construct a term of type `AddSubgroup ℚ` whose projection to `Set ℚ` is `ℤ`, or, more precisely, the image of `ℤ` in `ℚ`.
 
@@ -330,7 +330,7 @@ lemma inf_bot_of_coprime {G : Type*} [Group G] (H K : Subgroup G)
 
 ```
 
-###  9.1.4. Concrete groups[](file:///home/ryant/Projects/confia_crawler/output/01_raw_html/math_in_lean/C09_Groups_and_Rings.html#concrete-groups "Link to this heading")
+###  9.1.4. Concrete groups[](file:///home/rian-macedo/Projects/confia_crawler/output/01_raw_html/math_in_lean/C09_Groups_and_Rings.html#concrete-groups "Link to this heading")
 One can also manipulate concrete groups in Mathlib, although this is typically more complicated than working with the abstract theory. For instance, given any type `X`, the group of permutations of `X` is `Equiv.Perm X`. In particular the symmetric group Sn is `Equiv.Perm (Fin n)`. One can state abstract results about this group, for instance saying that `Equiv.Perm X` is generated by cycles if `X` is finite.
 
 ```
@@ -373,7 +373,7 @@ def myMorphism : FreeGroup S →* Perm (Fin 5) :=
 ```
 
 As a last concrete example, let us see how to define a group generated by a single element whose cube is one (so that group will be isomorphic to Z/3) and build a morphism from that group to `Perm (Fin 5)`.
-As a type with exactly one element, we will use `Unit` whose only element is denoted by `()`. The function `PresentedGroup` takes a set of relations, i.e. a set of elements of some free group, and returns a group that is this free group quotiented by a normal subgroup generated by relations. (We will see how to handle more general quotients in [Section 9.1.6](file:///home/ryant/Projects/confia_crawler/output/01_raw_html/math_in_lean/C09_Groups_and_Rings.html#quotient-groups).) Since we somehow hide this behind a definition, we use `deriving Group` to force creation of a group instance on `myGroup`.
+As a type with exactly one element, we will use `Unit` whose only element is denoted by `()`. The function `PresentedGroup` takes a set of relations, i.e. a set of elements of some free group, and returns a group that is this free group quotiented by a normal subgroup generated by relations. (We will see how to handle more general quotients in [Section 9.1.6](file:///home/rian-macedo/Projects/confia_crawler/output/01_raw_html/math_in_lean/C09_Groups_and_Rings.html#quotient-groups).) Since we somehow hide this behind a definition, we use `deriving Group` to force creation of a group instance on `myGroup`.
 
 ```
 def myGroup := PresentedGroup {.of () ^ 3} deriving Group
@@ -398,7 +398,7 @@ end FreeGroup
 
 ```
 
-###  9.1.5. Group actions[](file:///home/ryant/Projects/confia_crawler/output/01_raw_html/math_in_lean/C09_Groups_and_Rings.html#group-actions "Link to this heading")
+###  9.1.5. Group actions[](file:///home/rian-macedo/Projects/confia_crawler/output/01_raw_html/math_in_lean/C09_Groups_and_Rings.html#group-actions "Link to this heading")
 One important way that group theory interacts with the rest of mathematics is through the use of group actions. An action of a group `G` on some type `X` is nothing more than a morphism from `G` to `Equiv.Perm X`. So in a sense group actions are already covered by the previous discussion. But we don’t want to carry this morphism around; instead, we want it to be inferred automatically by Lean as much as possible. So we have a type class for this, which is `MulAction G X`. The downside of this setup is that having multiple actions of the same group on the same type requires some contortions, such as defining type synonyms, each of which carries different type class instances.
 This allows us in particular to use `g • x` to denote the action of a group element `g` on a point `x`.
 
@@ -492,7 +492,7 @@ end GroupActions
 
 ```
 
-###  9.1.6. Quotient groups[](file:///home/ryant/Projects/confia_crawler/output/01_raw_html/math_in_lean/C09_Groups_and_Rings.html#quotient-groups "Link to this heading")
+###  9.1.6. Quotient groups[](file:///home/rian-macedo/Projects/confia_crawler/output/01_raw_html/math_in_lean/C09_Groups_and_Rings.html#quotient-groups "Link to this heading")
 In the above discussion of subgroups acting on groups, we saw the quotient `G ⧸ H` appear. In general this is only a type. It can be endowed with a group structure such that the quotient map is a group morphism if and only if `H` is a normal subgroup (and this group structure is then unique).
 The normality assumption is a type class `Subgroup.Normal` so that type class inference can use it to derive the group structure on the quotient.
 
@@ -597,8 +597,8 @@ def finalIso : G ≃* H × K :=
 
 ```
 
-##  9.2. Rings[](file:///home/ryant/Projects/confia_crawler/output/01_raw_html/math_in_lean/C09_Groups_and_Rings.html#rings "Link to this heading")
-###  9.2.1. Rings, their units, morphisms and subrings[](file:///home/ryant/Projects/confia_crawler/output/01_raw_html/math_in_lean/C09_Groups_and_Rings.html#rings-their-units-morphisms-and-subrings "Link to this heading")
+##  9.2. Rings[](file:///home/rian-macedo/Projects/confia_crawler/output/01_raw_html/math_in_lean/C09_Groups_and_Rings.html#rings "Link to this heading")
+###  9.2.1. Rings, their units, morphisms and subrings[](file:///home/rian-macedo/Projects/confia_crawler/output/01_raw_html/math_in_lean/C09_Groups_and_Rings.html#rings-their-units-morphisms-and-subrings "Link to this heading")
 The type of ring structures on a type `R` is `Ring R`. The variant where multiplication is assumed to be commutative is `CommRing R`. We have already seen that the `ring` tactic will prove any equality that follows from the axioms of a commutative ring.
 
 ```
@@ -645,7 +645,7 @@ example {R : Type*} [Ring R] (S : Subring R) : Ring S := inferInstance
 ```
 
 Also notice that `RingHom.range` produces a subring.
-###  9.2.2. Ideals and quotients[](file:///home/ryant/Projects/confia_crawler/output/01_raw_html/math_in_lean/C09_Groups_and_Rings.html#ideals-and-quotients "Link to this heading")
+###  9.2.2. Ideals and quotients[](file:///home/rian-macedo/Projects/confia_crawler/output/01_raw_html/math_in_lean/C09_Groups_and_Rings.html#ideals-and-quotients "Link to this heading")
 For historical reasons, Mathlib only has a theory of ideals for commutative rings. (The ring library was originally developed to make quick progress toward the foundations of modern algebraic geometry.) So in this section we will work with commutative (semi)rings. Ideals of `R` are defined as submodules of `R` seen as `R`-modules. Modules will be covered later in a chapter on linear algebra, but this implementation detail can mostly be safely ignored since most (but not all) relevant lemmas are restated in the special context of ideals. But anonymous projection notation won’t always work as expected. For instance, one cannot replace `Ideal.Quotient.mk I` by `I.Quotient.mk` in the snippet below because there are two `.`s and so it will parse as `(Ideal.Quotient I).mk`; but `Ideal.Quotient` by itself doesn’t exist.
 
 ```
@@ -835,7 +835,7 @@ noncomputable def chineseIso [Fintype ι] (f : ι → Ideal R)
 
 ```
 
-###  9.2.3. Algebras and polynomials[](file:///home/ryant/Projects/confia_crawler/output/01_raw_html/math_in_lean/C09_Groups_and_Rings.html#algebras-and-polynomials "Link to this heading")
+###  9.2.3. Algebras and polynomials[](file:///home/rian-macedo/Projects/confia_crawler/output/01_raw_html/math_in_lean/C09_Groups_and_Rings.html#algebras-and-polynomials "Link to this heading")
 Given a commutative (semi)ring `R`, an _algebra over_ `R` is a semiring `A` equipped with a ring morphism whose image commutes with every element of `A`. This is encoded as a type class `Algebra R A`. The morphism from `R` to `A` is called the structure map and is denoted `algebraMap R A : R →+* A` in Lean. Multiplication of `a : A` by `algebraMap R A r` for some `r : R` is called the scalar multiplication of `a` by `r` and denoted by `r • a`. Note that this notion of algebra is sometimes called an _associative unital algebra_ to emphasize the existence of more general notions of algebra.
 The fact that `algebraMap R A` is ring morphism packages together a lot of properties of scalar multiplication, such as the following:
 
@@ -993,7 +993,7 @@ example : MvPolynomial.eval ![1, 0] circleEquation = 0 := by simp [circleEquatio
 
 ```
 
-[](file:///home/ryant/Projects/confia_crawler/output/01_raw_html/math_in_lean/C08_Hierarchies.html "8. Hierarchies") [Next ](file:///home/ryant/Projects/confia_crawler/output/01_raw_html/math_in_lean/C10_Linear_Algebra.html "10. Linear algebra")
+[](file:///home/rian-macedo/Projects/confia_crawler/output/01_raw_html/math_in_lean/C08_Hierarchies.html "8. Hierarchies") [Next ](file:///home/rian-macedo/Projects/confia_crawler/output/01_raw_html/math_in_lean/C10_Linear_Algebra.html "10. Linear algebra")
 * * *
 © Copyright 2020-2025, Jeremy Avigad, Patrick Massot. Text licensed under CC BY 4.0.
 Built with [Sphinx](https://www.sphinx-doc.org/) using a [theme](https://github.com/readthedocs/sphinx_rtd_theme) provided by [Read the Docs](https://readthedocs.org). 

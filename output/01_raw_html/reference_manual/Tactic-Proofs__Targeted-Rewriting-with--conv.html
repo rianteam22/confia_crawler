@@ -2533,7 +2533,15 @@ window.addEventListener("load", () => {
         <a href="" class="header-title"><h1>
             The Lean Language Reference</h1>
           </a></div>
-      </header>
+      <div id="search-wrapper">
+  <div class="combobox combobox-list">
+    <div class="group">
+      <div id="cb1-input" class="cb_edit" contenteditable="true" role="searchbox" placeholder="Search..." aria-autocomplete="list" aria-expanded="false" aria-controls="cb1-listbox" aria-haspopup="listbox" aria-label="Search" spellcheck="false" autocorrect="false" autocapitalize="none" inputmode="search"></div>
+    </div>
+    <ul id="cb1-listbox" role="listbox" aria-label="Results"></ul>
+  </div>
+</div>
+</header>
     <label for="toggle-toc" id="toggle-toc-click"><span class="line line1"></span><span class="line line2"></span><span class="line line3"></span></label><div class="with-toc">
       <div class="toc-backdrop" onclick="document.getElementById('toggle-toc-click')?.click()"></div>
       <nav id="toc">
@@ -2966,9 +2974,9 @@ explicit arguments.</p>
                   <pre class="grammar hl lean" data-lean-context="--grammar" id="Lean___Parser___Tactic___Conv___enterArg-next"><span class="nonterminal" data-kind="Lean.Parser.Tactic.Conv.enterArg">enterArg</span> <span class="bnf">::=</span> ...
     <span class="bnf">|</span> <span class="from-nonterminal" data-kind="Lean.Parser.Tactic.Conv.enterArg"><span class="from-nonterminal" data-kind="Lean.Parser.Tactic.Conv.argArg"><span class="from-nonterminal" data-kind="null"></span><span class="from-nonterminal" data-kind="null"></span><span class="nonterminal" data-kind="num">num</span></span></span></pre><pre class="grammar hl lean" data-lean-context="--grammar" id="Lean___Parser___Tactic___Conv___enterArg-next-next"><span class="nonterminal" data-kind="Lean.Parser.Tactic.Conv.enterArg">enterArg</span> <span class="bnf">::=</span> ...
     <span class="bnf">|</span> <span class="from-nonterminal" data-kind="Lean.Parser.Tactic.Conv.enterArg"><span class="from-nonterminal" data-kind="Lean.Parser.Tactic.Conv.argArg"><span class="from-nonterminal" data-kind="null"><span class="keyword">@</span></span><span class="from-nonterminal" data-kind="null"></span><span class="nonterminal" data-kind="num">num</span></span></span></pre><pre class="grammar hl lean" data-lean-context="--grammar" id="Lean___Parser___Tactic___Conv___enterArg-next-next-next"><span class="nonterminal" data-kind="Lean.Parser.Tactic.Conv.enterArg">enterArg</span> <span class="bnf">::=</span> ...
-    <span class="bnf">|</span> <span class="from-nonterminal" data-kind="Lean.Parser.Tactic.Conv.enterArg"><span class="from-nonterminal documented" data-kind="Lean.binderIdent"><code class="hover-info"><code class="docstring">`binderIdent` matches an `ident` or a `_`. It is used for identifiers in binding
-position, where `_` means that the value should be left unnamed and inaccessible.
-</code></code><span class="nonterminal" data-kind="ident">ident</span></span></span></pre></div>
+    <span class="bnf">|</span> <span class="from-nonterminal" data-kind="Lean.Parser.Tactic.Conv.enterArg"><span class="from-nonterminal documented" data-kind="Lean.binderIdent"><code class="hover-info"><div class="docstring"><p><code>binderIdent</code> matches an <code>ident</code> or a <code>_</code>. It is used for identifiers in binding
+position, where <code>_</code> means that the value should be left unnamed and inaccessible.</p>
+</div></code><span class="nonterminal" data-kind="ident">ident</span></span></span></pre></div>
                 </div>
               <div class="namedocs" id="Lean___Parser___Tactic___Conv___enter">
                 <span class="permalink-widget block"><a href="find/?domain=Verso.Genre.Manual.doc.tactic.conv&amp;name=Lean.Parser.Tactic.Conv.enter" title="Permalink">🔗</a></span><span class="label">conv tactic</span><pre class="signature hl lean block"><a href="Tactic-Proofs/Targeted-Rewriting-with--conv/#Lean___Parser___Tactic___Conv___enter" title="Documentation for conv tactic"><span class="keyword token" data-binding="" data-verso-hover="2853">enter</span></a></pre><div class="text">

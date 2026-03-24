@@ -1,48 +1,48 @@
-[ Mathematics in Lean ](file:///home/ryant/Projects/confia_crawler/output/01_raw_html/math_in_lean/index.html)
-  * [1. Introduction](file:///home/ryant/Projects/confia_crawler/output/01_raw_html/math_in_lean/C01_Introduction.html)
-  * [2. Basics](file:///home/ryant/Projects/confia_crawler/output/01_raw_html/math_in_lean/C02_Basics.html)
-  * [3. Logic](file:///home/ryant/Projects/confia_crawler/output/01_raw_html/math_in_lean/C03_Logic.html)
-  * [4. Sets and Functions](file:///home/ryant/Projects/confia_crawler/output/01_raw_html/math_in_lean/C04_Sets_and_Functions.html)
-  * [5. Elementary Number Theory](file:///home/ryant/Projects/confia_crawler/output/01_raw_html/math_in_lean/C05_Elementary_Number_Theory.html)
-  * [6. Discrete Mathematics](file:///home/ryant/Projects/confia_crawler/output/01_raw_html/math_in_lean/C06_Discrete_Mathematics.html)
-  * [7. Structures](file:///home/ryant/Projects/confia_crawler/output/01_raw_html/math_in_lean/C07_Structures.html)
-  * [8. Hierarchies](file:///home/ryant/Projects/confia_crawler/output/01_raw_html/math_in_lean/C08_Hierarchies.html)
-  * [9. Groups and Rings](file:///home/ryant/Projects/confia_crawler/output/01_raw_html/math_in_lean/C09_Groups_and_Rings.html)
-  * [](file:///home/ryant/Projects/confia_crawler/output/01_raw_html/math_in_lean/C10_Linear_Algebra.html)
-    * [](file:///home/ryant/Projects/confia_crawler/output/01_raw_html/math_in_lean/C10_Linear_Algebra.html#vector-spaces-and-linear-maps)
-      * [10.1.1. Vector spaces](file:///home/ryant/Projects/confia_crawler/output/01_raw_html/math_in_lean/C10_Linear_Algebra.html#vector-spaces)
-      * [10.1.2. Linear maps](file:///home/ryant/Projects/confia_crawler/output/01_raw_html/math_in_lean/C10_Linear_Algebra.html#linear-maps)
-      * [10.1.3. Sums and products of vector spaces](file:///home/ryant/Projects/confia_crawler/output/01_raw_html/math_in_lean/C10_Linear_Algebra.html#sums-and-products-of-vector-spaces)
-    * [](file:///home/ryant/Projects/confia_crawler/output/01_raw_html/math_in_lean/C10_Linear_Algebra.html#subspaces-and-quotients)
-      * [10.2.1. Subspaces](file:///home/ryant/Projects/confia_crawler/output/01_raw_html/math_in_lean/C10_Linear_Algebra.html#subspaces)
-      * [10.2.2. Complete lattice structure and internal direct sums](file:///home/ryant/Projects/confia_crawler/output/01_raw_html/math_in_lean/C10_Linear_Algebra.html#complete-lattice-structure-and-internal-direct-sums)
-      * [10.2.3. Subspace spanned by a set](file:///home/ryant/Projects/confia_crawler/output/01_raw_html/math_in_lean/C10_Linear_Algebra.html#subspace-spanned-by-a-set)
-      * [10.2.4. Pushing and pulling subspaces](file:///home/ryant/Projects/confia_crawler/output/01_raw_html/math_in_lean/C10_Linear_Algebra.html#pushing-and-pulling-subspaces)
-      * [10.2.5. Quotient spaces](file:///home/ryant/Projects/confia_crawler/output/01_raw_html/math_in_lean/C10_Linear_Algebra.html#quotient-spaces)
-    * [10.3. Endomorphisms](file:///home/ryant/Projects/confia_crawler/output/01_raw_html/math_in_lean/C10_Linear_Algebra.html#endomorphisms)
-    * [](file:///home/ryant/Projects/confia_crawler/output/01_raw_html/math_in_lean/C10_Linear_Algebra.html#matrices-bases-and-dimension)
-      * [10.4.1. Matrices](file:///home/ryant/Projects/confia_crawler/output/01_raw_html/math_in_lean/C10_Linear_Algebra.html#matrices)
-      * [10.4.2. Bases](file:///home/ryant/Projects/confia_crawler/output/01_raw_html/math_in_lean/C10_Linear_Algebra.html#bases)
-      * [10.4.3. Dimension](file:///home/ryant/Projects/confia_crawler/output/01_raw_html/math_in_lean/C10_Linear_Algebra.html#dimension)
-  * [11. Topology](file:///home/ryant/Projects/confia_crawler/output/01_raw_html/math_in_lean/C11_Topology.html)
-  * [12. Differential Calculus](file:///home/ryant/Projects/confia_crawler/output/01_raw_html/math_in_lean/C12_Differential_Calculus.html)
-  * [13. Integration and Measure Theory](file:///home/ryant/Projects/confia_crawler/output/01_raw_html/math_in_lean/C13_Integration_and_Measure_Theory.html)
+[ Mathematics in Lean ](file:///home/rian-macedo/Projects/confia_crawler/output/01_raw_html/math_in_lean/index.html)
+  * [1. Introduction](file:///home/rian-macedo/Projects/confia_crawler/output/01_raw_html/math_in_lean/C01_Introduction.html)
+  * [2. Basics](file:///home/rian-macedo/Projects/confia_crawler/output/01_raw_html/math_in_lean/C02_Basics.html)
+  * [3. Logic](file:///home/rian-macedo/Projects/confia_crawler/output/01_raw_html/math_in_lean/C03_Logic.html)
+  * [4. Sets and Functions](file:///home/rian-macedo/Projects/confia_crawler/output/01_raw_html/math_in_lean/C04_Sets_and_Functions.html)
+  * [5. Elementary Number Theory](file:///home/rian-macedo/Projects/confia_crawler/output/01_raw_html/math_in_lean/C05_Elementary_Number_Theory.html)
+  * [6. Discrete Mathematics](file:///home/rian-macedo/Projects/confia_crawler/output/01_raw_html/math_in_lean/C06_Discrete_Mathematics.html)
+  * [7. Structures](file:///home/rian-macedo/Projects/confia_crawler/output/01_raw_html/math_in_lean/C07_Structures.html)
+  * [8. Hierarchies](file:///home/rian-macedo/Projects/confia_crawler/output/01_raw_html/math_in_lean/C08_Hierarchies.html)
+  * [9. Groups and Rings](file:///home/rian-macedo/Projects/confia_crawler/output/01_raw_html/math_in_lean/C09_Groups_and_Rings.html)
+  * [](file:///home/rian-macedo/Projects/confia_crawler/output/01_raw_html/math_in_lean/C10_Linear_Algebra.html)
+    * [](file:///home/rian-macedo/Projects/confia_crawler/output/01_raw_html/math_in_lean/C10_Linear_Algebra.html#vector-spaces-and-linear-maps)
+      * [10.1.1. Vector spaces](file:///home/rian-macedo/Projects/confia_crawler/output/01_raw_html/math_in_lean/C10_Linear_Algebra.html#vector-spaces)
+      * [10.1.2. Linear maps](file:///home/rian-macedo/Projects/confia_crawler/output/01_raw_html/math_in_lean/C10_Linear_Algebra.html#linear-maps)
+      * [10.1.3. Sums and products of vector spaces](file:///home/rian-macedo/Projects/confia_crawler/output/01_raw_html/math_in_lean/C10_Linear_Algebra.html#sums-and-products-of-vector-spaces)
+    * [](file:///home/rian-macedo/Projects/confia_crawler/output/01_raw_html/math_in_lean/C10_Linear_Algebra.html#subspaces-and-quotients)
+      * [10.2.1. Subspaces](file:///home/rian-macedo/Projects/confia_crawler/output/01_raw_html/math_in_lean/C10_Linear_Algebra.html#subspaces)
+      * [10.2.2. Complete lattice structure and internal direct sums](file:///home/rian-macedo/Projects/confia_crawler/output/01_raw_html/math_in_lean/C10_Linear_Algebra.html#complete-lattice-structure-and-internal-direct-sums)
+      * [10.2.3. Subspace spanned by a set](file:///home/rian-macedo/Projects/confia_crawler/output/01_raw_html/math_in_lean/C10_Linear_Algebra.html#subspace-spanned-by-a-set)
+      * [10.2.4. Pushing and pulling subspaces](file:///home/rian-macedo/Projects/confia_crawler/output/01_raw_html/math_in_lean/C10_Linear_Algebra.html#pushing-and-pulling-subspaces)
+      * [10.2.5. Quotient spaces](file:///home/rian-macedo/Projects/confia_crawler/output/01_raw_html/math_in_lean/C10_Linear_Algebra.html#quotient-spaces)
+    * [10.3. Endomorphisms](file:///home/rian-macedo/Projects/confia_crawler/output/01_raw_html/math_in_lean/C10_Linear_Algebra.html#endomorphisms)
+    * [](file:///home/rian-macedo/Projects/confia_crawler/output/01_raw_html/math_in_lean/C10_Linear_Algebra.html#matrices-bases-and-dimension)
+      * [10.4.1. Matrices](file:///home/rian-macedo/Projects/confia_crawler/output/01_raw_html/math_in_lean/C10_Linear_Algebra.html#matrices)
+      * [10.4.2. Bases](file:///home/rian-macedo/Projects/confia_crawler/output/01_raw_html/math_in_lean/C10_Linear_Algebra.html#bases)
+      * [10.4.3. Dimension](file:///home/rian-macedo/Projects/confia_crawler/output/01_raw_html/math_in_lean/C10_Linear_Algebra.html#dimension)
+  * [11. Topology](file:///home/rian-macedo/Projects/confia_crawler/output/01_raw_html/math_in_lean/C11_Topology.html)
+  * [12. Differential Calculus](file:///home/rian-macedo/Projects/confia_crawler/output/01_raw_html/math_in_lean/C12_Differential_Calculus.html)
+  * [13. Integration and Measure Theory](file:///home/rian-macedo/Projects/confia_crawler/output/01_raw_html/math_in_lean/C13_Integration_and_Measure_Theory.html)
 
 
-  * [Index](file:///home/ryant/Projects/confia_crawler/output/01_raw_html/math_in_lean/genindex.html)
+  * [Index](file:///home/rian-macedo/Projects/confia_crawler/output/01_raw_html/math_in_lean/genindex.html)
 
 
-[Mathematics in Lean](file:///home/ryant/Projects/confia_crawler/output/01_raw_html/math_in_lean/index.html)
-  * [](file:///home/ryant/Projects/confia_crawler/output/01_raw_html/math_in_lean/index.html)
+[Mathematics in Lean](file:///home/rian-macedo/Projects/confia_crawler/output/01_raw_html/math_in_lean/index.html)
+  * [](file:///home/rian-macedo/Projects/confia_crawler/output/01_raw_html/math_in_lean/index.html)
   * 10. Linear algebra
-  * [ View page source](file:///home/ryant/Projects/confia_crawler/output/01_raw_html/math_in_lean/_sources/C10_Linear_Algebra.rst.txt)
+  * [ View page source](file:///home/rian-macedo/Projects/confia_crawler/output/01_raw_html/math_in_lean/_sources/C10_Linear_Algebra.rst.txt)
 
 
 * * *
-#  10. Linear algebra[](file:///home/ryant/Projects/confia_crawler/output/01_raw_html/math_in_lean/C10_Linear_Algebra.html#linear-algebra "Link to this heading")
-##  10.1. Vector spaces and linear maps[](file:///home/ryant/Projects/confia_crawler/output/01_raw_html/math_in_lean/C10_Linear_Algebra.html#vector-spaces-and-linear-maps "Link to this heading")
-###  10.1.1. Vector spaces[](file:///home/ryant/Projects/confia_crawler/output/01_raw_html/math_in_lean/C10_Linear_Algebra.html#vector-spaces "Link to this heading")
-We will start directly abstract linear algebra, taking place in a vector space over any field. However you can find information about matrices in [Section 10.4.1](file:///home/ryant/Projects/confia_crawler/output/01_raw_html/math_in_lean/C10_Linear_Algebra.html#matrices) which does not logically depend on this abstract theory. Mathlib actually deals with a more general version of linear algebra involving the word module, but for now we will pretend this is only an eccentric spelling habit.
+#  10. Linear algebra[](file:///home/rian-macedo/Projects/confia_crawler/output/01_raw_html/math_in_lean/C10_Linear_Algebra.html#linear-algebra "Link to this heading")
+##  10.1. Vector spaces and linear maps[](file:///home/rian-macedo/Projects/confia_crawler/output/01_raw_html/math_in_lean/C10_Linear_Algebra.html#vector-spaces-and-linear-maps "Link to this heading")
+###  10.1.1. Vector spaces[](file:///home/rian-macedo/Projects/confia_crawler/output/01_raw_html/math_in_lean/C10_Linear_Algebra.html#vector-spaces "Link to this heading")
+We will start directly abstract linear algebra, taking place in a vector space over any field. However you can find information about matrices in [Section 10.4.1](file:///home/rian-macedo/Projects/confia_crawler/output/01_raw_html/math_in_lean/C10_Linear_Algebra.html#matrices) which does not logically depend on this abstract theory. Mathlib actually deals with a more general version of linear algebra involving the word module, but for now we will pretend this is only an eccentric spelling habit.
 The way to say “let K be a field and let V be a vector space over K” (and make them implicit arguments to later results) is:
 
 ```
@@ -50,7 +50,7 @@ variable {K : Type*} [Field K] {V : Type*} [AddCommGroup V] [Module K V]
 
 ```
 
-We explained in [Chapter 8](file:///home/ryant/Projects/confia_crawler/output/01_raw_html/math_in_lean/C08_Hierarchies.html#hierarchies) why we need two separate typeclasses `[AddCommGroup V] [Module K V]`. The short version is the following. Mathematically we want to say that having a K-vector space structure implies having an additive commutative group structure. We could tell this to Lean. But then whenever Lean would need to find such a group structure on a type V, it would go hunting for vector space structures using a _completely unspecified_ field K that cannot be inferred from V. This would be very bad for the type class synthesis system.
+We explained in [Chapter 8](file:///home/rian-macedo/Projects/confia_crawler/output/01_raw_html/math_in_lean/C08_Hierarchies.html#hierarchies) why we need two separate typeclasses `[AddCommGroup V] [Module K V]`. The short version is the following. Mathematically we want to say that having a K-vector space structure implies having an additive commutative group structure. We could tell this to Lean. But then whenever Lean would need to find such a group structure on a type V, it would go hunting for vector space structures using a _completely unspecified_ field K that cannot be inferred from V. This would be very bad for the type class synthesis system.
 The multiplication of a vector v by a scalar a is denoted by a • v. We list a couple of algebraic rules about the interaction of this operation with addition in the following examples. Of course simp or apply? would find those proofs. There is also a module tactic that solves goals following from the axioms of vector spaces and fields, in the same way the ring tactic is used in commutative rings or the group tactic is used in groups. But it is still useful to remember that scalar multiplication is abbreviated smul in lemma names.
 
 ```
@@ -74,8 +74,8 @@ example {R M : Type*} [CommSemiring R] [AddCommMonoid M] [Module R M] :
 
 ```
 
-###  10.1.2. Linear maps[](file:///home/ryant/Projects/confia_crawler/output/01_raw_html/math_in_lean/C10_Linear_Algebra.html#linear-maps "Link to this heading")
-Next we need linear maps. Like group morphisms, linear maps in Mathlib are bundled maps, i.e. packages made of a map and proofs of its linearity properties. Those bundled maps are converted to ordinary functions when applied. See [Chapter 8](file:///home/ryant/Projects/confia_crawler/output/01_raw_html/math_in_lean/C08_Hierarchies.html#hierarchies) for more information about this design.
+###  10.1.2. Linear maps[](file:///home/rian-macedo/Projects/confia_crawler/output/01_raw_html/math_in_lean/C10_Linear_Algebra.html#linear-maps "Link to this heading")
+Next we need linear maps. Like group morphisms, linear maps in Mathlib are bundled maps, i.e. packages made of a map and proofs of its linearity properties. Those bundled maps are converted to ordinary functions when applied. See [Chapter 8](file:///home/rian-macedo/Projects/confia_crawler/output/01_raw_html/math_in_lean/C08_Hierarchies.html#hierarchies) for more information about this design.
 The type of linear maps between two `K`-vector spaces `V` and `W` is denoted by `V →ₗ[K] W`. The subscript l stands for linear. At first it may feel odd to specify `K` in this notation. But this is crucial when several fields come into play. For instance real-linear maps from ℂ to ℂ are every map z↦az+bz¯ while only the maps z↦az are complex linear, and this difference is crucial in complex analysis.
 
 ```
@@ -120,7 +120,7 @@ example : V →ₗ[K] V where
 
 ```
 
-You may wonder why the proof fields of `LinearMap` have names ending with a prime. This is because they are defined before the coercion to functions is defined, hence they are phrased in terms of `LinearMap.toFun`. Then they are restated as `LinearMap.map_add` and `LinearMap.map_smul` in terms of the coercion to function. This is not yet the end of the story. One also wants a version of `map_add` that applies to any (bundled) map preserving addition, such as additive group morphisms, linear maps, continuous linear maps, `K`-algebra maps etc… This one is `map_add` (in the root namespace). The intermediate version, `LinearMap.map_add` is a bit redundant but allows to use dot notation, which can be nice sometimes. A similar story exists for `map_smul`, and the general framework is explained in [Chapter 8](file:///home/ryant/Projects/confia_crawler/output/01_raw_html/math_in_lean/C08_Hierarchies.html#hierarchies).
+You may wonder why the proof fields of `LinearMap` have names ending with a prime. This is because they are defined before the coercion to functions is defined, hence they are phrased in terms of `LinearMap.toFun`. Then they are restated as `LinearMap.map_add` and `LinearMap.map_smul` in terms of the coercion to function. This is not yet the end of the story. One also wants a version of `map_add` that applies to any (bundled) map preserving addition, such as additive group morphisms, linear maps, continuous linear maps, `K`-algebra maps etc… This one is `map_add` (in the root namespace). The intermediate version, `LinearMap.map_add` is a bit redundant but allows to use dot notation, which can be nice sometimes. A similar story exists for `map_smul`, and the general framework is explained in [Chapter 8](file:///home/rian-macedo/Projects/confia_crawler/output/01_raw_html/math_in_lean/C08_Hierarchies.html#hierarchies).
 
 ```
 #check (φ.map_add' : ∀ x y : V, φ.toFun (x + y) = φ.toFun x + φ.toFun y)
@@ -154,7 +154,7 @@ noncomputable example (f : V →ₗ[K] W) (h : Function.Bijective f) : V ≃ₗ[
 ```
 
 Note that in the above example, Lean uses the announced type to understand that `.ofBijective` refers to `LinearEquiv.ofBijective` (without needing to open any namespace).
-###  10.1.3. Sums and products of vector spaces[](file:///home/ryant/Projects/confia_crawler/output/01_raw_html/math_in_lean/C10_Linear_Algebra.html#sums-and-products-of-vector-spaces "Link to this heading")
+###  10.1.3. Sums and products of vector spaces[](file:///home/rian-macedo/Projects/confia_crawler/output/01_raw_html/math_in_lean/C10_Linear_Algebra.html#sums-and-products-of-vector-spaces "Link to this heading")
 We can build new vector spaces out of old ones using direct sums and direct products. Let us start with two vectors spaces. In this case there is no difference between sum and product, and we can simply use the product type. In the following snippet of code we simply show how to get all the structure maps (inclusions and projections) as linear maps, as well as the universal properties constructing linear maps into products and out of sums (if you are not familiar with the category-theoretic distinction between sums and products, you can simply ignore the universal property vocabulary and focus on the types of the following examples).
 
 ```
@@ -248,8 +248,8 @@ end families
 
 ```
 
-##  10.2. Subspaces and quotients[](file:///home/ryant/Projects/confia_crawler/output/01_raw_html/math_in_lean/C10_Linear_Algebra.html#subspaces-and-quotients "Link to this heading")
-###  10.2.1. Subspaces[](file:///home/ryant/Projects/confia_crawler/output/01_raw_html/math_in_lean/C10_Linear_Algebra.html#subspaces "Link to this heading")
+##  10.2. Subspaces and quotients[](file:///home/rian-macedo/Projects/confia_crawler/output/01_raw_html/math_in_lean/C10_Linear_Algebra.html#subspaces-and-quotients "Link to this heading")
+###  10.2.1. Subspaces[](file:///home/rian-macedo/Projects/confia_crawler/output/01_raw_html/math_in_lean/C10_Linear_Algebra.html#subspaces "Link to this heading")
 Just as linear maps are bundled, a linear subspace of `V` is also a bundled structure consisting of a set in `V`, called the carrier of the subspace, with the relevant closure properties. Again the word module appears instead of vector space because of the more general context that Mathlib actually uses for linear algebra.
 
 ```
@@ -265,7 +265,7 @@ example (U : Submodule K V) {x : V} (hx : x ∈ U) (a : K) :
 
 ```
 
-In the example above, it is important to understand that `Submodule K V` is the type of `K`-linear subspaces of `V`, rather than a predicate `IsSubmodule U` where `U` is an element of `Set V`. `Submodule K V` is endowed with a coercion to `Set V` and a membership predicate on `V`. See [Section 8.3](file:///home/ryant/Projects/confia_crawler/output/01_raw_html/math_in_lean/C08_Hierarchies.html#section-hierarchies-subobjects) for an explanation of how and why this is done.
+In the example above, it is important to understand that `Submodule K V` is the type of `K`-linear subspaces of `V`, rather than a predicate `IsSubmodule U` where `U` is an element of `Set V`. `Submodule K V` is endowed with a coercion to `Set V` and a membership predicate on `V`. See [Section 8.3](file:///home/rian-macedo/Projects/confia_crawler/output/01_raw_html/math_in_lean/C08_Hierarchies.html#section-hierarchies-subobjects) for an explanation of how and why this is done.
 Of course, two subspaces are the same if and only if they have the same elements. This fact is registered for use with the `ext` tactic, which can be used to prove two subspaces are equal in the same way it is used to prove that two sets are equal.
 To state and prove, for example, that `ℝ` is a `ℝ`-linear subspace of `ℂ`, what we really want is to construct a term of type `Submodule ℝ ℂ` whose projection to `Set ℂ` is `ℝ`, or, more precisely, the image of `ℝ` in `ℂ`.
 
@@ -316,7 +316,7 @@ example (U : Submodule K V) : Module K {x : V // x ∈ U} := inferInstance
 
 ```
 
-###  10.2.2. Complete lattice structure and internal direct sums[](file:///home/ryant/Projects/confia_crawler/output/01_raw_html/math_in_lean/C10_Linear_Algebra.html#complete-lattice-structure-and-internal-direct-sums "Link to this heading")
+###  10.2.2. Complete lattice structure and internal direct sums[](file:///home/rian-macedo/Projects/confia_crawler/output/01_raw_html/math_in_lean/C10_Linear_Algebra.html#complete-lattice-structure-and-internal-direct-sums "Link to this heading")
 An important benefit of having a type `Submodule K V` instead of a predicate `IsSubmodule : Set V → Prop` is that one can easily endow `Submodule K V` with additional structure. Importantly, it has the structure of a complete lattice structure with respect to inclusion. For instance, instead of having a lemma stating that an intersection of two subspaces of `V` is again a subspace, we use the lattice operation `⊓` to construct the intersection. We can then apply arbitrary lemmas about lattices to the construction.
 Let us check that the set underlying the infimum of two subspaces is indeed, by definition, their intersection.
 
@@ -386,7 +386,7 @@ end
 
 ```
 
-###  10.2.3. Subspace spanned by a set[](file:///home/ryant/Projects/confia_crawler/output/01_raw_html/math_in_lean/C10_Linear_Algebra.html#subspace-spanned-by-a-set "Link to this heading")
+###  10.2.3. Subspace spanned by a set[](file:///home/rian-macedo/Projects/confia_crawler/output/01_raw_html/math_in_lean/C10_Linear_Algebra.html#subspace-spanned-by-a-set "Link to this heading")
 In addition to building subspaces out of existing subspaces, we can build them out of any set `s` using `Submodule.span K s` which builds the smallest subspace containing `s`. On paper it is common to use that this space is made of all linear combinations of elements of `s`. But it is often more efficient to use its universal property expressed by `Submodule.span_le`, and the whole theory of Galois connections.
 
 ```
@@ -417,7 +417,7 @@ example {S T : Submodule K V} {x : V} (h : x ∈ S ⊔ T) :
 
 ```
 
-###  10.2.4. Pushing and pulling subspaces[](file:///home/ryant/Projects/confia_crawler/output/01_raw_html/math_in_lean/C10_Linear_Algebra.html#pushing-and-pulling-subspaces "Link to this heading")
+###  10.2.4. Pushing and pulling subspaces[](file:///home/rian-macedo/Projects/confia_crawler/output/01_raw_html/math_in_lean/C10_Linear_Algebra.html#pushing-and-pulling-subspaces "Link to this heading")
 As promised earlier, we now describe how to push and pull subspaces by linear maps. As usual in Mathlib, the first operation is called `map` and the second one is called `comap`.
 
 ```
@@ -468,7 +468,7 @@ example (E : Submodule K V) (F : Submodule K W) :
 
 ```
 
-###  10.2.5. Quotient spaces[](file:///home/ryant/Projects/confia_crawler/output/01_raw_html/math_in_lean/C10_Linear_Algebra.html#quotient-spaces "Link to this heading")
+###  10.2.5. Quotient spaces[](file:///home/rian-macedo/Projects/confia_crawler/output/01_raw_html/math_in_lean/C10_Linear_Algebra.html#quotient-spaces "Link to this heading")
 Quotient vector spaces use the general quotient notation (typed with `\quot`, not the ordinary `/`). The projection onto a quotient space is `Submodule.mkQ` and the universal property is `Submodule.liftQ`.
 
 ```
@@ -506,7 +506,7 @@ example : Submodule K (V ⧸ E) ≃ { F : Submodule K V // E ≤ F } where
 
 ```
 
-##  10.3. Endomorphisms[](file:///home/ryant/Projects/confia_crawler/output/01_raw_html/math_in_lean/C10_Linear_Algebra.html#endomorphisms "Link to this heading")
+##  10.3. Endomorphisms[](file:///home/rian-macedo/Projects/confia_crawler/output/01_raw_html/math_in_lean/C10_Linear_Algebra.html#endomorphisms "Link to this heading")
 An important special case of linear maps are endomorphisms: linear maps from a vector space to itself. They are interesting because they form a `K`-algebra. In particular we can evaluate polynomials with coefficients in `K` on them, and they can have eigenvalues and eigenvectors.
 Mathlib uses the abbreviation `Module.End K V := V →ₗ[K] V` which is convenient when using a lot of these (especially after opening the `Module` namespace).
 
@@ -588,8 +588,8 @@ example [FiniteDimensional K V] (φ : End K V) : aeval φ φ.charpoly = 0 :=
 
 ```
 
-##  10.4. Matrices, bases and dimension[](file:///home/ryant/Projects/confia_crawler/output/01_raw_html/math_in_lean/C10_Linear_Algebra.html#matrices-bases-and-dimension "Link to this heading")
-###  10.4.1. Matrices[](file:///home/ryant/Projects/confia_crawler/output/01_raw_html/math_in_lean/C10_Linear_Algebra.html#matrices "Link to this heading")
+##  10.4. Matrices, bases and dimension[](file:///home/rian-macedo/Projects/confia_crawler/output/01_raw_html/math_in_lean/C10_Linear_Algebra.html#matrices-bases-and-dimension "Link to this heading")
+###  10.4.1. Matrices[](file:///home/rian-macedo/Projects/confia_crawler/output/01_raw_html/math_in_lean/C10_Linear_Algebra.html#matrices "Link to this heading")
 Before introducing bases for abstract vector spaces, we go back to the much more elementary setup of linear algebra in Kn for some field K. Here the main objects are vectors and matrices. For concrete vectors, one can use the `![…]` notation, where components are separated by commas. For concrete matrices we can use the `!![…]` notation, lines are separated by semi-colons and components of lines are separated by colons. When entries have a computable type such as `ℕ` or `ℚ`, we can use the `eval` command to play with basic operations.
 
 ```
@@ -726,7 +726,7 @@ end matrices
 
 ```
 
-###  10.4.2. Bases[](file:///home/ryant/Projects/confia_crawler/output/01_raw_html/math_in_lean/C10_Linear_Algebra.html#bases "Link to this heading")
+###  10.4.2. Bases[](file:///home/rian-macedo/Projects/confia_crawler/output/01_raw_html/math_in_lean/C10_Linear_Algebra.html#bases "Link to this heading")
 We now want to discuss bases of vector spaces. Informally there are many ways to define this notion. One can use a universal property. One can say a basis is a family of vectors that is linearly independent and spanning. Or one can combine those properties and directly say that a basis is a family of vectors such that every vectors can be written uniquely as a linear combination of bases vectors. Yet another way to say it is that a basis provides a linear isomorphism with a power of the base field `K`, seen as a vector space over `K`.
 This isomorphism version is actually the one that Mathlib uses as a definition under the hood, and other characterizations are proven from it. One must be slightly careful with the “power of `K`” idea in the case of infinite bases. Indeed only finite linear combinations make sense in this algebraic context. So what we need as a reference vector space is not a direct product of copies of `K` but a direct sum. We could use `⨁ i : ι, K` for some type `ι` indexing the basis But we rather use the more specialized spelling `ι →₀ K` which means “functions from `ι` to `K` with finite support”, i.e. functions which vanish outside a finite set in `ι` (this finite set is not fixed, it depends on the function). Evaluating such a function coming from a basis `B` at a vector `v` and `i : ι` returns the component (or coordinate) of `v` on the `i`-th basis vector.
 The type of bases indexed by a type `ι` of `V` as a `K` vector space is `Basis ι K V`. The isomorphism is called `Basis.repr`.
@@ -902,7 +902,7 @@ end
 
 ```
 
-###  10.4.3. Dimension[](file:///home/ryant/Projects/confia_crawler/output/01_raw_html/math_in_lean/C10_Linear_Algebra.html#dimension "Link to this heading")
+###  10.4.3. Dimension[](file:///home/rian-macedo/Projects/confia_crawler/output/01_raw_html/math_in_lean/C10_Linear_Algebra.html#dimension "Link to this heading")
 Returning to the case of a single vector space, bases are also useful to define the concept of dimension. Here again, there is the elementary case of finite-dimensional vector spaces. For such spaces we expect a dimension which is a natural number. This is `Module.finrank`. It takes the base field as an explicit argument since a given abelian group can be a vector space over different fields.
 
 ```
@@ -1018,7 +1018,7 @@ example [FiniteDimensional K V] :
 
 ```
 
-[](file:///home/ryant/Projects/confia_crawler/output/01_raw_html/math_in_lean/C09_Groups_and_Rings.html "9. Groups and Rings") [Next ](file:///home/ryant/Projects/confia_crawler/output/01_raw_html/math_in_lean/C11_Topology.html "11. Topology")
+[](file:///home/rian-macedo/Projects/confia_crawler/output/01_raw_html/math_in_lean/C09_Groups_and_Rings.html "9. Groups and Rings") [Next ](file:///home/rian-macedo/Projects/confia_crawler/output/01_raw_html/math_in_lean/C11_Topology.html "11. Topology")
 * * *
 © Copyright 2020-2025, Jeremy Avigad, Patrick Massot. Text licensed under CC BY 4.0.
 Built with [Sphinx](https://www.sphinx-doc.org/) using a [theme](https://github.com/readthedocs/sphinx_rtd_theme) provided by [Read the Docs](https://readthedocs.org). 

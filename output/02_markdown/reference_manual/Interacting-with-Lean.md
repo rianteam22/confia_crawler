@@ -3,60 +3,132 @@
 Lean is designed for interactive use, rather than as a batch-mode system in which whole files are fed in and then translated to either object code or error messages. Many programming languages designed for interactive use provide a REPL,Short for “**R** ead-**E** val-**P** rint **L** oop”, because code is parsed (“read”), evaluated, and the result displayed, with this process repeated as many times as desired. at which code can be input and tested, along with commands for loading source files, type checking terms, or querying the environment. Lean's interactive features are based on a different paradigm. Rather than a separate command prompt outside of the program, Lean provides [commands](Source-Files-and-Modules/#--tech-term-commands) for accomplishing the same tasks in the context of a source file. By convention, commands that are intended for interactive use rather than as part of a durable code artifact are prefixed with `#`.
 Information from Lean commands is available in the _message log_ , which accumulates output from the [elaborator](Terms/#--tech-term-elaborator). Each entry in the message log is associated with a specific source range and has a _severity_. There are three severities: `information` is used for messages that do not indicate a problem, `warning` indicates a potential problem, and `error` indicates a definite problem. For interactive commands, results are typically returned as informational messages that are associated with the command's leading keyword.
 ##  3.1. Evaluating Terms[🔗](find/?domain=Verso.Genre.Manual.section&name=hash-eval "Permalink")
-The ``Lean.Parser.Command.eval : command```#eval e` evaluates the expression `e` by compiling and evaluating it.  * The command attempts to use `ToExpr`, `Repr`, or `ToString` instances to print the result. * If `e` is a monadic value of type `m ty`, then the command tries to adapt the monad `m`   to one of the monads that `#eval` supports, which include `IO`, `CoreM`, `MetaM`, `TermElabM`, and `CommandElabM`.   Users can define `MonadEval` instances to extend the list of supported monads.  The `#eval` command gracefully degrades in capability depending on what is imported. Importing the `Lean.Elab.Command` module provides full capabilities.  Due to unsoundness, `#eval` refuses to evaluate expressions that depend on `sorry`, even indirectly, since the presence of `sorry` can lead to runtime instability and crashes. This check can be overridden with the `#eval! e` command.  Options: * If `eval.pp` is true (default: true) then tries to use `ToExpr` instances to make use of the   usual pretty printer. Otherwise, only tries using `Repr` and `ToString` instances. * If `eval.type` is true (default: false) then pretty prints the type of the evaluated value. * If `eval.derive.repr` is true (default: true) then attempts to auto-derive a `Repr` instance   when there is no other way to print the result.  See also: `#reduce e` for evaluation by term reduction. ``[`#eval`](Interacting-with-Lean/#Lean___Parser___Command___eval) command is used to run code as a program. In particular, it is capable of executing `[IO](IO/Logical-Model/#IO "Documentation for IO")` actions, it uses a call-by-value evaluation strategy, [`partial` functions are executed](Definitions/Recursive-Definitions/#partial-unsafe), and both types and proofs are erased. Use ``Lean.reduceCmd : command```#reduce <expression>` reduces the expression `<expression>` to its normal form. This involves applying reduction rules until no further reduction is possible.  By default, proofs and types within the expression are not reduced. Use modifiers `(proofs := true)`  and `(types := true)` to reduce them. Recall that propositions are types in Lean.  **Warning:** This can be a computationally expensive operation, especially for complex expressions.  Consider using `#eval <expression>` for simple evaluation/execution of expressions. ``[`#reduce`](Interacting-with-Lean/#Lean___reduceCmd) to instead reduce terms using the reduction rules that are part of [definitional equality](The-Type-System/#--tech-term-definitional-equality).
+The ``Lean.Parser.Command.eval : command`
+`#eval e` evaluates the expression `e` by compiling and evaluating it.
+  * The command attempts to use `ToExpr`, `Repr`, or `ToString` instances to print the result.
+  * If `e` is a monadic value of type `m ty`, then the command tries to adapt the monad `m` to one of the monads that `#eval` supports, which include `IO`, `CoreM`, `MetaM`, `TermElabM`, and `CommandElabM`. Users can define `MonadEval` instances to extend the list of supported monads.
+
+
+The `#eval` command gracefully degrades in capability depending on what is imported. Importing the `Lean.Elab.Command` module provides full capabilities.
+Due to unsoundness, `#eval` refuses to evaluate expressions that depend on `sorry`, even indirectly, since the presence of `sorry` can lead to runtime instability and crashes. This check can be overridden with the `#eval! e` command.
+Options:
+  * If `eval.pp` is true (default: true) then tries to use `ToExpr` instances to make use of the usual pretty printer. Otherwise, only tries using `Repr` and `ToString` instances.
+  * If `eval.type` is true (default: false) then pretty prints the type of the evaluated value.
+  * If `eval.derive.repr` is true (default: true) then attempts to auto-derive a `Repr` instance when there is no other way to print the result.
+
+
+See also: `#reduce e` for evaluation by term reduction.
+`[`#eval`](Interacting-with-Lean/#Lean___Parser___Command___eval) command is used to run code as a program. In particular, it is capable of executing `[IO](IO/Logical-Model/#IO "Documentation for IO")` actions, it uses a call-by-value evaluation strategy, [`partial` functions are executed](Definitions/Recursive-Definitions/#partial-unsafe), and both types and proofs are erased. Use ``Lean.reduceCmd : command`
+`#reduce <expression>` reduces the expression `<expression>` to its normal form. This involves applying reduction rules until no further reduction is possible.
+By default, proofs and types within the expression are not reduced. Use modifiers `(proofs := true)` and `(types := true)` to reduce them. Recall that propositions are types in Lean.
+**Warning:** This can be a computationally expensive operation, especially for complex expressions.
+Consider using `#eval <expression>` for simple evaluation/execution of expressions.
+`[`#reduce`](Interacting-with-Lean/#Lean___reduceCmd) to instead reduce terms using the reduction rules that are part of [definitional equality](The-Type-System/#--tech-term-definitional-equality).
 syntaxEvaluating Terms
 
 ```
 command ::= ...
-    | `#eval e` evaluates the expression `e` by compiling and evaluating it.
+    | 
 
-* The command attempts to use `ToExpr`, `Repr`, or `ToString` instances to print the result.
-* If `e` is a monadic value of type `m ty`, then the command tries to adapt the monad `m`
-  to one of the monads that `#eval` supports, which include `IO`, `CoreM`, `MetaM`, `TermElabM`, and `CommandElabM`.
-  Users can define `MonadEval` instances to extend the list of supported monads.
 
-The `#eval` command gracefully degrades in capability depending on what is imported.
-Importing the `Lean.Elab.Command` module provides full capabilities.
+#eval e evaluates the expression e by compiling and evaluating it.
 
-Due to unsoundness, `#eval` refuses to evaluate expressions that depend on `sorry`, even indirectly,
-since the presence of `sorry` can lead to runtime instability and crashes.
-This check can be overridden with the `#eval! e` command.
+
+
+
+  * The command attempts to use ToExpr, Repr, or ToString instances to print the result.
+
+
+  * If e is a monadic value of type m ty, then the command tries to adapt the monad m
+to one of the monads that #eval supports, which include IO, CoreM, MetaM, TermElabM, and CommandElabM.
+Users can define MonadEval instances to extend the list of supported monads.
+
+
+
+
+The #eval command gracefully degrades in capability depending on what is imported.
+Importing the Lean.Elab.Command module provides full capabilities.
+
+
+Due to unsoundness, #eval refuses to evaluate expressions that depend on sorry, even indirectly,
+since the presence of sorry can lead to runtime instability and crashes.
+This check can be overridden with the #eval! e command.
+
 
 Options:
-* If `eval.pp` is true (default: true) then tries to use `ToExpr` instances to make use of the
-  usual pretty printer. Otherwise, only tries using `Repr` and `ToString` instances.
-* If `eval.type` is true (default: false) then pretty prints the type of the evaluated value.
-* If `eval.derive.repr` is true (default: true) then attempts to auto-derive a `Repr` instance
-  when there is no other way to print the result.
 
-See also: `#reduce e` for evaluation by term reduction.
+
+
+
+  * If eval.pp is true (default: true) then tries to use ToExpr instances to make use of the
+usual pretty printer. Otherwise, only tries using Repr and ToString instances.
+
+
+  * If eval.type is true (default: false) then pretty prints the type of the evaluated value.
+
+
+  * If eval.derive.repr is true (default: true) then attempts to auto-derive a Repr instance
+when there is no other way to print the result.
+
+
+
+
+See also: #reduce e for evaluation by term reduction.
+
+
 #eval term
 ```
 
 ```
 command ::= ...
-    | `#eval e` evaluates the expression `e` by compiling and evaluating it.
+    | 
 
-* The command attempts to use `ToExpr`, `Repr`, or `ToString` instances to print the result.
-* If `e` is a monadic value of type `m ty`, then the command tries to adapt the monad `m`
-  to one of the monads that `#eval` supports, which include `IO`, `CoreM`, `MetaM`, `TermElabM`, and `CommandElabM`.
-  Users can define `MonadEval` instances to extend the list of supported monads.
 
-The `#eval` command gracefully degrades in capability depending on what is imported.
-Importing the `Lean.Elab.Command` module provides full capabilities.
+#eval e evaluates the expression e by compiling and evaluating it.
 
-Due to unsoundness, `#eval` refuses to evaluate expressions that depend on `sorry`, even indirectly,
-since the presence of `sorry` can lead to runtime instability and crashes.
-This check can be overridden with the `#eval! e` command.
+
+
+
+  * The command attempts to use ToExpr, Repr, or ToString instances to print the result.
+
+
+  * If e is a monadic value of type m ty, then the command tries to adapt the monad m
+to one of the monads that #eval supports, which include IO, CoreM, MetaM, TermElabM, and CommandElabM.
+Users can define MonadEval instances to extend the list of supported monads.
+
+
+
+
+The #eval command gracefully degrades in capability depending on what is imported.
+Importing the Lean.Elab.Command module provides full capabilities.
+
+
+Due to unsoundness, #eval refuses to evaluate expressions that depend on sorry, even indirectly,
+since the presence of sorry can lead to runtime instability and crashes.
+This check can be overridden with the #eval! e command.
+
 
 Options:
-* If `eval.pp` is true (default: true) then tries to use `ToExpr` instances to make use of the
-  usual pretty printer. Otherwise, only tries using `Repr` and `ToString` instances.
-* If `eval.type` is true (default: false) then pretty prints the type of the evaluated value.
-* If `eval.derive.repr` is true (default: true) then attempts to auto-derive a `Repr` instance
-  when there is no other way to print the result.
 
-See also: `#reduce e` for evaluation by term reduction.
+
+
+
+  * If eval.pp is true (default: true) then tries to use ToExpr instances to make use of the
+usual pretty printer. Otherwise, only tries using Repr and ToString instances.
+
+
+  * If eval.type is true (default: false) then pretty prints the type of the evaluated value.
+
+
+  * If eval.derive.repr is true (default: true) then attempts to auto-derive a Repr instance
+when there is no other way to print the result.
+
+
+
+
+See also: #reduce e for evaluation by term reduction.
+
+
 #eval! term
 ```
 
@@ -74,18 +146,101 @@ Options:
 
 
 See also: `#reduce e` for evaluation by term reduction.
-``Lean.Parser.Command.eval : command```#eval e` evaluates the expression `e` by compiling and evaluating it.  * The command attempts to use `ToExpr`, `Repr`, or `ToString` instances to print the result. * If `e` is a monadic value of type `m ty`, then the command tries to adapt the monad `m`   to one of the monads that `#eval` supports, which include `IO`, `CoreM`, `MetaM`, `TermElabM`, and `CommandElabM`.   Users can define `MonadEval` instances to extend the list of supported monads.  The `#eval` command gracefully degrades in capability depending on what is imported. Importing the `Lean.Elab.Command` module provides full capabilities.  Due to unsoundness, `#eval` refuses to evaluate expressions that depend on `sorry`, even indirectly, since the presence of `sorry` can lead to runtime instability and crashes. This check can be overridden with the `#eval! e` command.  Options: * If `eval.pp` is true (default: true) then tries to use `ToExpr` instances to make use of the   usual pretty printer. Otherwise, only tries using `Repr` and `ToString` instances. * If `eval.type` is true (default: false) then pretty prints the type of the evaluated value. * If `eval.derive.repr` is true (default: true) then attempts to auto-derive a `Repr` instance   when there is no other way to print the result.  See also: `#reduce e` for evaluation by term reduction. ``[`#eval`](Interacting-with-Lean/#Lean___Parser___Command___eval) always [elaborates](Terms/#--tech-term-elaborator) and compiles the provided term. It then checks whether the term transitively depends on any uses of `sorry`, in which case evaluation is terminated unless the command was invoked as ``Lean.Parser.Command.eval : command```#eval e` evaluates the expression `e` by compiling and evaluating it.  * The command attempts to use `ToExpr`, `Repr`, or `ToString` instances to print the result. * If `e` is a monadic value of type `m ty`, then the command tries to adapt the monad `m`   to one of the monads that `#eval` supports, which include `IO`, `CoreM`, `MetaM`, `TermElabM`, and `CommandElabM`.   Users can define `MonadEval` instances to extend the list of supported monads.  The `#eval` command gracefully degrades in capability depending on what is imported. Importing the `Lean.Elab.Command` module provides full capabilities.  Due to unsoundness, `#eval` refuses to evaluate expressions that depend on `sorry`, even indirectly, since the presence of `sorry` can lead to runtime instability and crashes. This check can be overridden with the `#eval! e` command.  Options: * If `eval.pp` is true (default: true) then tries to use `ToExpr` instances to make use of the   usual pretty printer. Otherwise, only tries using `Repr` and `ToString` instances. * If `eval.type` is true (default: false) then pretty prints the type of the evaluated value. * If `eval.derive.repr` is true (default: true) then attempts to auto-derive a `Repr` instance   when there is no other way to print the result.  See also: `#reduce e` for evaluation by term reduction. ``[`#eval!`](Interacting-with-Lean/#Lean___Parser___Command___eval). This is because compiled code may rely on compile-time invariants (such as array lookups being in-bounds) that are ensured by proofs of suitable statements, and running code that contains incomplete proofs (or uses of `sorry` that “prove” incorrect statements) can cause Lean itself to crash.
+``Lean.Parser.Command.eval : command`
+`#eval e` evaluates the expression `e` by compiling and evaluating it.
+  * The command attempts to use `ToExpr`, `Repr`, or `ToString` instances to print the result.
+  * If `e` is a monadic value of type `m ty`, then the command tries to adapt the monad `m` to one of the monads that `#eval` supports, which include `IO`, `CoreM`, `MetaM`, `TermElabM`, and `CommandElabM`. Users can define `MonadEval` instances to extend the list of supported monads.
+
+
+The `#eval` command gracefully degrades in capability depending on what is imported. Importing the `Lean.Elab.Command` module provides full capabilities.
+Due to unsoundness, `#eval` refuses to evaluate expressions that depend on `sorry`, even indirectly, since the presence of `sorry` can lead to runtime instability and crashes. This check can be overridden with the `#eval! e` command.
+Options:
+  * If `eval.pp` is true (default: true) then tries to use `ToExpr` instances to make use of the usual pretty printer. Otherwise, only tries using `Repr` and `ToString` instances.
+  * If `eval.type` is true (default: false) then pretty prints the type of the evaluated value.
+  * If `eval.derive.repr` is true (default: true) then attempts to auto-derive a `Repr` instance when there is no other way to print the result.
+
+
+See also: `#reduce e` for evaluation by term reduction.
+`[`#eval`](Interacting-with-Lean/#Lean___Parser___Command___eval) always [elaborates](Terms/#--tech-term-elaborator) and compiles the provided term. It then checks whether the term transitively depends on any uses of `sorry`, in which case evaluation is terminated unless the command was invoked as ``Lean.Parser.Command.eval : command`
+`#eval e` evaluates the expression `e` by compiling and evaluating it.
+  * The command attempts to use `ToExpr`, `Repr`, or `ToString` instances to print the result.
+  * If `e` is a monadic value of type `m ty`, then the command tries to adapt the monad `m` to one of the monads that `#eval` supports, which include `IO`, `CoreM`, `MetaM`, `TermElabM`, and `CommandElabM`. Users can define `MonadEval` instances to extend the list of supported monads.
+
+
+The `#eval` command gracefully degrades in capability depending on what is imported. Importing the `Lean.Elab.Command` module provides full capabilities.
+Due to unsoundness, `#eval` refuses to evaluate expressions that depend on `sorry`, even indirectly, since the presence of `sorry` can lead to runtime instability and crashes. This check can be overridden with the `#eval! e` command.
+Options:
+  * If `eval.pp` is true (default: true) then tries to use `ToExpr` instances to make use of the usual pretty printer. Otherwise, only tries using `Repr` and `ToString` instances.
+  * If `eval.type` is true (default: false) then pretty prints the type of the evaluated value.
+  * If `eval.derive.repr` is true (default: true) then attempts to auto-derive a `Repr` instance when there is no other way to print the result.
+
+
+See also: `#reduce e` for evaluation by term reduction.
+`[`#eval!`](Interacting-with-Lean/#Lean___Parser___Command___eval). This is because compiled code may rely on compile-time invariants (such as array lookups being in-bounds) that are ensured by proofs of suitable statements, and running code that contains incomplete proofs (or uses of `sorry` that “prove” incorrect statements) can cause Lean itself to crash.
 The way the code is run depends on its type:
   * If the type is in the `[IO](IO/Logical-Model/#IO "Documentation for IO")` monad, then it is executed in a context where [standard output](IO/Files___-File-Handles___-and-Streams/#--tech-term-standard-output) and [standard error](IO/Files___-File-Handles___-and-Streams/#--tech-term-standard-error) are captured and redirected to the Lean [message log](Interacting-with-Lean/#--tech-term-message-log). If the returned value's type is not `[Unit](Basic-Types/The-Unit-Type/#Unit "Documentation for Unit")`, then it is displayed as if it were the result of a non-monadic expression.
-  * If the type is in one of the internal Lean metaprogramming monads (`CommandElabM`, `TermElabM`, `MetaM`, or `CoreM`), then it is run in the current context. For example, the environment will contain the definitions that are in scope where ``Lean.Parser.Command.eval : command```#eval e` evaluates the expression `e` by compiling and evaluating it.  * The command attempts to use `ToExpr`, `Repr`, or `ToString` instances to print the result. * If `e` is a monadic value of type `m ty`, then the command tries to adapt the monad `m`   to one of the monads that `#eval` supports, which include `IO`, `CoreM`, `MetaM`, `TermElabM`, and `CommandElabM`.   Users can define `MonadEval` instances to extend the list of supported monads.  The `#eval` command gracefully degrades in capability depending on what is imported. Importing the `Lean.Elab.Command` module provides full capabilities.  Due to unsoundness, `#eval` refuses to evaluate expressions that depend on `sorry`, even indirectly, since the presence of `sorry` can lead to runtime instability and crashes. This check can be overridden with the `#eval! e` command.  Options: * If `eval.pp` is true (default: true) then tries to use `ToExpr` instances to make use of the   usual pretty printer. Otherwise, only tries using `Repr` and `ToString` instances. * If `eval.type` is true (default: false) then pretty prints the type of the evaluated value. * If `eval.derive.repr` is true (default: true) then attempts to auto-derive a `Repr` instance   when there is no other way to print the result.  See also: `#reduce e` for evaluation by term reduction. ``[`#eval`](Interacting-with-Lean/#Lean___Parser___Command___eval) is invoked. As with `[IO](IO/Logical-Model/#IO "Documentation for IO")`, the resulting value is displayed as if it were the result of a non-monadic expression. When Lean is running under [Lake](Build-Tools-and-Distribution/Lake/#lake), its working directory (and thus the working directory for `[IO](IO/Logical-Model/#IO "Documentation for IO")` actions) is the current [`workspace`](Build-Tools-and-Distribution/Lake/#--tech-term-workspace).
-  * If the type is in some other monad `m`, and there is a `[MonadLiftT](Functors___-Monads-and--do--Notation/Lifting-Monads/#MonadLiftT___mk "Documentation for MonadLiftT") m CommandElabM` or `[MonadEvalT](Interacting-with-Lean/#MonadEvalT___mk "Documentation for MonadEvalT") m CommandElabM` instance, then `[MonadLiftT.monadLift](Functors___-Monads-and--do--Notation/Lifting-Monads/#MonadLiftT___mk "Documentation for MonadLiftT.monadLift")` or `[MonadEvalT.monadEval](Interacting-with-Lean/#MonadEvalT___mk "Documentation for MonadEvalT.monadEval")` is used to transform the monad into one that may be run with ``Lean.Parser.Command.eval : command```#eval e` evaluates the expression `e` by compiling and evaluating it.  * The command attempts to use `ToExpr`, `Repr`, or `ToString` instances to print the result. * If `e` is a monadic value of type `m ty`, then the command tries to adapt the monad `m`   to one of the monads that `#eval` supports, which include `IO`, `CoreM`, `MetaM`, `TermElabM`, and `CommandElabM`.   Users can define `MonadEval` instances to extend the list of supported monads.  The `#eval` command gracefully degrades in capability depending on what is imported. Importing the `Lean.Elab.Command` module provides full capabilities.  Due to unsoundness, `#eval` refuses to evaluate expressions that depend on `sorry`, even indirectly, since the presence of `sorry` can lead to runtime instability and crashes. This check can be overridden with the `#eval! e` command.  Options: * If `eval.pp` is true (default: true) then tries to use `ToExpr` instances to make use of the   usual pretty printer. Otherwise, only tries using `Repr` and `ToString` instances. * If `eval.type` is true (default: false) then pretty prints the type of the evaluated value. * If `eval.derive.repr` is true (default: true) then attempts to auto-derive a `Repr` instance   when there is no other way to print the result.  See also: `#reduce e` for evaluation by term reduction. ``[`#eval`](Interacting-with-Lean/#Lean___Parser___Command___eval), after which it is run as usual.
+  * If the type is in one of the internal Lean metaprogramming monads (`CommandElabM`, `TermElabM`, `MetaM`, or `CoreM`), then it is run in the current context. For example, the environment will contain the definitions that are in scope where ``Lean.Parser.Command.eval : command`
+`#eval e` evaluates the expression `e` by compiling and evaluating it.
+    * The command attempts to use `ToExpr`, `Repr`, or `ToString` instances to print the result.
+    * If `e` is a monadic value of type `m ty`, then the command tries to adapt the monad `m` to one of the monads that `#eval` supports, which include `IO`, `CoreM`, `MetaM`, `TermElabM`, and `CommandElabM`. Users can define `MonadEval` instances to extend the list of supported monads.
+The `#eval` command gracefully degrades in capability depending on what is imported. Importing the `Lean.Elab.Command` module provides full capabilities.
+Due to unsoundness, `#eval` refuses to evaluate expressions that depend on `sorry`, even indirectly, since the presence of `sorry` can lead to runtime instability and crashes. This check can be overridden with the `#eval! e` command.
+Options:
+    * If `eval.pp` is true (default: true) then tries to use `ToExpr` instances to make use of the usual pretty printer. Otherwise, only tries using `Repr` and `ToString` instances.
+    * If `eval.type` is true (default: false) then pretty prints the type of the evaluated value.
+    * If `eval.derive.repr` is true (default: true) then attempts to auto-derive a `Repr` instance when there is no other way to print the result.
+See also: `#reduce e` for evaluation by term reduction.
+`[`#eval`](Interacting-with-Lean/#Lean___Parser___Command___eval) is invoked. As with `[IO](IO/Logical-Model/#IO "Documentation for IO")`, the resulting value is displayed as if it were the result of a non-monadic expression. When Lean is running under [Lake](Build-Tools-and-Distribution/Lake/#lake), its working directory (and thus the working directory for `[IO](IO/Logical-Model/#IO "Documentation for IO")` actions) is the current [`workspace`](Build-Tools-and-Distribution/Lake/#--tech-term-workspace).
+  * If the type is in some other monad `m`, and there is a `[MonadLiftT](Functors___-Monads-and--do--Notation/Lifting-Monads/#MonadLiftT___mk "Documentation for MonadLiftT") m CommandElabM` or `[MonadEvalT](Interacting-with-Lean/#MonadEvalT___mk "Documentation for MonadEvalT") m CommandElabM` instance, then `[MonadLiftT.monadLift](Functors___-Monads-and--do--Notation/Lifting-Monads/#MonadLiftT___mk "Documentation for MonadLiftT.monadLift")` or `[MonadEvalT.monadEval](Interacting-with-Lean/#MonadEvalT___mk "Documentation for MonadEvalT.monadEval")` is used to transform the monad into one that may be run with ``Lean.Parser.Command.eval : command`
+`#eval e` evaluates the expression `e` by compiling and evaluating it.
+    * The command attempts to use `ToExpr`, `Repr`, or `ToString` instances to print the result.
+    * If `e` is a monadic value of type `m ty`, then the command tries to adapt the monad `m` to one of the monads that `#eval` supports, which include `IO`, `CoreM`, `MetaM`, `TermElabM`, and `CommandElabM`. Users can define `MonadEval` instances to extend the list of supported monads.
+The `#eval` command gracefully degrades in capability depending on what is imported. Importing the `Lean.Elab.Command` module provides full capabilities.
+Due to unsoundness, `#eval` refuses to evaluate expressions that depend on `sorry`, even indirectly, since the presence of `sorry` can lead to runtime instability and crashes. This check can be overridden with the `#eval! e` command.
+Options:
+    * If `eval.pp` is true (default: true) then tries to use `ToExpr` instances to make use of the usual pretty printer. Otherwise, only tries using `Repr` and `ToString` instances.
+    * If `eval.type` is true (default: false) then pretty prints the type of the evaluated value.
+    * If `eval.derive.repr` is true (default: true) then attempts to auto-derive a `Repr` instance when there is no other way to print the result.
+See also: `#reduce e` for evaluation by term reduction.
+`[`#eval`](Interacting-with-Lean/#Lean___Parser___Command___eval), after which it is run as usual.
   * If the term's type is not in any of the supported monads, then it is treated as a pure value. The compiled code is run, and the result is displayed.
 
 
-Auxiliary definitions or other environment modifications that result from elaborating the term in ``Lean.Parser.Command.eval : command```#eval e` evaluates the expression `e` by compiling and evaluating it.  * The command attempts to use `ToExpr`, `Repr`, or `ToString` instances to print the result. * If `e` is a monadic value of type `m ty`, then the command tries to adapt the monad `m`   to one of the monads that `#eval` supports, which include `IO`, `CoreM`, `MetaM`, `TermElabM`, and `CommandElabM`.   Users can define `MonadEval` instances to extend the list of supported monads.  The `#eval` command gracefully degrades in capability depending on what is imported. Importing the `Lean.Elab.Command` module provides full capabilities.  Due to unsoundness, `#eval` refuses to evaluate expressions that depend on `sorry`, even indirectly, since the presence of `sorry` can lead to runtime instability and crashes. This check can be overridden with the `#eval! e` command.  Options: * If `eval.pp` is true (default: true) then tries to use `ToExpr` instances to make use of the   usual pretty printer. Otherwise, only tries using `Repr` and `ToString` instances. * If `eval.type` is true (default: false) then pretty prints the type of the evaluated value. * If `eval.derive.repr` is true (default: true) then attempts to auto-derive a `Repr` instance   when there is no other way to print the result.  See also: `#reduce e` for evaluation by term reduction. ``[`#eval`](Interacting-with-Lean/#Lean___Parser___Command___eval) are discarded. If the term is an action in a metaprogramming monad, then changes made to the environment by running the monadic action are preserved.
-Results are displayed using a `ToExpr`, `ToString`, or `[Repr](Interacting-with-Lean/#Repr___mk "Documentation for Repr")` instance, if they exist. If not, and `[eval.derive.repr](Interacting-with-Lean/#eval___derive___repr "Documentation for option eval.derive.repr")` is `[true](Basic-Types/Booleans/#Bool___false "Documentation for Bool.true")`, Lean attempts to derive a suitable `[Repr](Interacting-with-Lean/#Repr___mk "Documentation for Repr")` instance. It is an error if no suitable instance can be found or derived. Setting `[eval.pp](Interacting-with-Lean/#eval___pp "Documentation for option eval.pp")` to `[false](Basic-Types/Booleans/#Bool___false "Documentation for Bool.false")` disables the use of `ToExpr` instances by ``Lean.Parser.Command.eval : command```#eval e` evaluates the expression `e` by compiling and evaluating it.  * The command attempts to use `ToExpr`, `Repr`, or `ToString` instances to print the result. * If `e` is a monadic value of type `m ty`, then the command tries to adapt the monad `m`   to one of the monads that `#eval` supports, which include `IO`, `CoreM`, `MetaM`, `TermElabM`, and `CommandElabM`.   Users can define `MonadEval` instances to extend the list of supported monads.  The `#eval` command gracefully degrades in capability depending on what is imported. Importing the `Lean.Elab.Command` module provides full capabilities.  Due to unsoundness, `#eval` refuses to evaluate expressions that depend on `sorry`, even indirectly, since the presence of `sorry` can lead to runtime instability and crashes. This check can be overridden with the `#eval! e` command.  Options: * If `eval.pp` is true (default: true) then tries to use `ToExpr` instances to make use of the   usual pretty printer. Otherwise, only tries using `Repr` and `ToString` instances. * If `eval.type` is true (default: false) then pretty prints the type of the evaluated value. * If `eval.derive.repr` is true (default: true) then attempts to auto-derive a `Repr` instance   when there is no other way to print the result.  See also: `#reduce e` for evaluation by term reduction. ``[`#eval`](Interacting-with-Lean/#Lean___Parser___Command___eval).
+Auxiliary definitions or other environment modifications that result from elaborating the term in ``Lean.Parser.Command.eval : command`
+`#eval e` evaluates the expression `e` by compiling and evaluating it.
+  * The command attempts to use `ToExpr`, `Repr`, or `ToString` instances to print the result.
+  * If `e` is a monadic value of type `m ty`, then the command tries to adapt the monad `m` to one of the monads that `#eval` supports, which include `IO`, `CoreM`, `MetaM`, `TermElabM`, and `CommandElabM`. Users can define `MonadEval` instances to extend the list of supported monads.
+
+
+The `#eval` command gracefully degrades in capability depending on what is imported. Importing the `Lean.Elab.Command` module provides full capabilities.
+Due to unsoundness, `#eval` refuses to evaluate expressions that depend on `sorry`, even indirectly, since the presence of `sorry` can lead to runtime instability and crashes. This check can be overridden with the `#eval! e` command.
+Options:
+  * If `eval.pp` is true (default: true) then tries to use `ToExpr` instances to make use of the usual pretty printer. Otherwise, only tries using `Repr` and `ToString` instances.
+  * If `eval.type` is true (default: false) then pretty prints the type of the evaluated value.
+  * If `eval.derive.repr` is true (default: true) then attempts to auto-derive a `Repr` instance when there is no other way to print the result.
+
+
+See also: `#reduce e` for evaluation by term reduction.
+`[`#eval`](Interacting-with-Lean/#Lean___Parser___Command___eval) are discarded. If the term is an action in a metaprogramming monad, then changes made to the environment by running the monadic action are preserved.
+Results are displayed using a `ToExpr`, `ToString`, or `[Repr](Interacting-with-Lean/#Repr___mk "Documentation for Repr")` instance, if they exist. If not, and `[eval.derive.repr](Interacting-with-Lean/#eval___derive___repr "Documentation for option eval.derive.repr")` is `[true](Basic-Types/Booleans/#Bool___false "Documentation for Bool.true")`, Lean attempts to derive a suitable `[Repr](Interacting-with-Lean/#Repr___mk "Documentation for Repr")` instance. It is an error if no suitable instance can be found or derived. Setting `[eval.pp](Interacting-with-Lean/#eval___pp "Documentation for option eval.pp")` to `[false](Basic-Types/Booleans/#Bool___false "Documentation for Bool.false")` disables the use of `ToExpr` instances by ``Lean.Parser.Command.eval : command`
+`#eval e` evaluates the expression `e` by compiling and evaluating it.
+  * The command attempts to use `ToExpr`, `Repr`, or `ToString` instances to print the result.
+  * If `e` is a monadic value of type `m ty`, then the command tries to adapt the monad `m` to one of the monads that `#eval` supports, which include `IO`, `CoreM`, `MetaM`, `TermElabM`, and `CommandElabM`. Users can define `MonadEval` instances to extend the list of supported monads.
+
+
+The `#eval` command gracefully degrades in capability depending on what is imported. Importing the `Lean.Elab.Command` module provides full capabilities.
+Due to unsoundness, `#eval` refuses to evaluate expressions that depend on `sorry`, even indirectly, since the presence of `sorry` can lead to runtime instability and crashes. This check can be overridden with the `#eval! e` command.
+Options:
+  * If `eval.pp` is true (default: true) then tries to use `ToExpr` instances to make use of the usual pretty printer. Otherwise, only tries using `Repr` and `ToString` instances.
+  * If `eval.type` is true (default: false) then pretty prints the type of the evaluated value.
+  * If `eval.derive.repr` is true (default: true) then attempts to auto-derive a `Repr` instance when there is no other way to print the result.
+
+
+See also: `#reduce e` for evaluation by term reduction.
+`[`#eval`](Interacting-with-Lean/#Lean___Parser___Command___eval).
 Displaying Output
-``Lean.Parser.Command.eval : command```#eval e` evaluates the expression `e` by compiling and evaluating it.  * The command attempts to use `ToExpr`, `Repr`, or `ToString` instances to print the result. * If `e` is a monadic value of type `m ty`, then the command tries to adapt the monad `m`   to one of the monads that `#eval` supports, which include `IO`, `CoreM`, `MetaM`, `TermElabM`, and `CommandElabM`.   Users can define `MonadEval` instances to extend the list of supported monads.  The `#eval` command gracefully degrades in capability depending on what is imported. Importing the `Lean.Elab.Command` module provides full capabilities.  Due to unsoundness, `#eval` refuses to evaluate expressions that depend on `sorry`, even indirectly, since the presence of `sorry` can lead to runtime instability and crashes. This check can be overridden with the `#eval! e` command.  Options: * If `eval.pp` is true (default: true) then tries to use `ToExpr` instances to make use of the   usual pretty printer. Otherwise, only tries using `Repr` and `ToString` instances. * If `eval.type` is true (default: false) then pretty prints the type of the evaluated value. * If `eval.derive.repr` is true (default: true) then attempts to auto-derive a `Repr` instance   when there is no other way to print the result.  See also: `#reduce e` for evaluation by term reduction. ``[`#eval`](Interacting-with-Lean/#Lean___Parser___Command___eval) cannot display functions:
+``Lean.Parser.Command.eval : command`
+`[`#eval`](Interacting-with-Lean/#Lean___Parser___Command___eval) cannot display functions:
 ``could not synthesize a `ToExpr`, `Repr`, or `ToString` instance for type   [Nat](Basic-Types/Natural-Numbers/#Nat___zero "Documentation for Nat") → [Nat](Basic-Types/Natural-Numbers/#Nat___zero "Documentation for Nat")`[#eval](Interacting-with-Lean/#Lean___Parser___Command___eval "Documentation for syntax") fun x => x + 1 `
 ```
 could not synthesize a `ToExpr`, `Repr`, or `ToString` instance for type
@@ -98,7 +253,8 @@ It is capable of deriving instances to display output that has no `ToString` or 
 Quadrant.nw
 ```
 
-The derived instance is not saved. Disabling `[eval.derive.repr](Interacting-with-Lean/#eval___derive___repr "Documentation for option eval.derive.repr")` causes ``Lean.Parser.Command.eval : command```#eval e` evaluates the expression `e` by compiling and evaluating it.  * The command attempts to use `ToExpr`, `Repr`, or `ToString` instances to print the result. * If `e` is a monadic value of type `m ty`, then the command tries to adapt the monad `m`   to one of the monads that `#eval` supports, which include `IO`, `CoreM`, `MetaM`, `TermElabM`, and `CommandElabM`.   Users can define `MonadEval` instances to extend the list of supported monads.  The `#eval` command gracefully degrades in capability depending on what is imported. Importing the `Lean.Elab.Command` module provides full capabilities.  Due to unsoundness, `#eval` refuses to evaluate expressions that depend on `sorry`, even indirectly, since the presence of `sorry` can lead to runtime instability and crashes. This check can be overridden with the `#eval! e` command.  Options: * If `eval.pp` is true (default: true) then tries to use `ToExpr` instances to make use of the   usual pretty printer. Otherwise, only tries using `Repr` and `ToString` instances. * If `eval.type` is true (default: false) then pretty prints the type of the evaluated value. * If `eval.derive.repr` is true (default: true) then attempts to auto-derive a `Repr` instance   when there is no other way to print the result.  See also: `#reduce e` for evaluation by term reduction. ``[`#eval`](Interacting-with-Lean/#Lean___Parser___Command___eval) to fail:
+The derived instance is not saved. Disabling `[eval.derive.repr](Interacting-with-Lean/#eval___derive___repr "Documentation for option eval.derive.repr")` causes ``Lean.Parser.Command.eval : command`
+`[`#eval`](Interacting-with-Lean/#Lean___Parser___Command___eval) to fail:
 `set_option [eval.derive.repr](Interacting-with-Lean/#eval___derive___repr "Documentation for option eval.derive.repr") false `could not synthesize a `ToExpr`, `Repr`, or `ToString` instance for type   [Quadrant](Interacting-with-Lean/#Quadrant-_LPAR_in-Displaying-Output_RPAR_ "Definition of example")`[#eval](Interacting-with-Lean/#Lean___Parser___Command___eval "Documentation for syntax") [Quadrant.nw](Interacting-with-Lean/#Quadrant___nw-_LPAR_in-Displaying-Output_RPAR_ "Definition of example") `
 ```
 could not synthesize a `ToExpr`, `Repr`, or `ToString` instance for type
@@ -127,7 +283,22 @@ eval.derive.repr
 
 Default value: `[true](Basic-Types/Booleans/#Bool___false "Documentation for Bool.true")`
 ('#eval' command) enables auto-deriving 'Repr' instances as a fallback
-Monads can be given the ability to execute in ``Lean.Parser.Command.eval : command```#eval e` evaluates the expression `e` by compiling and evaluating it.  * The command attempts to use `ToExpr`, `Repr`, or `ToString` instances to print the result. * If `e` is a monadic value of type `m ty`, then the command tries to adapt the monad `m`   to one of the monads that `#eval` supports, which include `IO`, `CoreM`, `MetaM`, `TermElabM`, and `CommandElabM`.   Users can define `MonadEval` instances to extend the list of supported monads.  The `#eval` command gracefully degrades in capability depending on what is imported. Importing the `Lean.Elab.Command` module provides full capabilities.  Due to unsoundness, `#eval` refuses to evaluate expressions that depend on `sorry`, even indirectly, since the presence of `sorry` can lead to runtime instability and crashes. This check can be overridden with the `#eval! e` command.  Options: * If `eval.pp` is true (default: true) then tries to use `ToExpr` instances to make use of the   usual pretty printer. Otherwise, only tries using `Repr` and `ToString` instances. * If `eval.type` is true (default: false) then pretty prints the type of the evaluated value. * If `eval.derive.repr` is true (default: true) then attempts to auto-derive a `Repr` instance   when there is no other way to print the result.  See also: `#reduce e` for evaluation by term reduction. ``[`#eval`](Interacting-with-Lean/#Lean___Parser___Command___eval) by defining a suitable `[MonadLift](Functors___-Monads-and--do--Notation/Lifting-Monads/#MonadLift___mk "Documentation for MonadLift")``[MonadLift](Functors___-Monads-and--do--Notation/Lifting-Monads/#MonadLift___mk "Documentation for MonadLift")` is described in [the section on lifting monads.](Functors___-Monads-and--do--Notation/Lifting-Monads/#lifting-monads) or `[MonadEval](Interacting-with-Lean/#MonadEval___mk "Documentation for MonadEval")` instance. Just as `[MonadLiftT](Functors___-Monads-and--do--Notation/Lifting-Monads/#MonadLiftT___mk "Documentation for MonadLiftT")` is the transitive closure of `[MonadLift](Functors___-Monads-and--do--Notation/Lifting-Monads/#MonadLift___mk "Documentation for MonadLift")` instances, `[MonadEvalT](Interacting-with-Lean/#MonadEvalT___mk "Documentation for MonadEvalT")` is the transitive closure of `[MonadEval](Interacting-with-Lean/#MonadEval___mk "Documentation for MonadEval")` instances. As with `[MonadLiftT](Functors___-Monads-and--do--Notation/Lifting-Monads/#MonadLiftT___mk "Documentation for MonadLiftT")` users should not define additional instances of `[MonadEvalT](Interacting-with-Lean/#MonadEvalT___mk "Documentation for MonadEvalT")` directly.
+Monads can be given the ability to execute in ``Lean.Parser.Command.eval : command`
+`#eval e` evaluates the expression `e` by compiling and evaluating it.
+  * The command attempts to use `ToExpr`, `Repr`, or `ToString` instances to print the result.
+  * If `e` is a monadic value of type `m ty`, then the command tries to adapt the monad `m` to one of the monads that `#eval` supports, which include `IO`, `CoreM`, `MetaM`, `TermElabM`, and `CommandElabM`. Users can define `MonadEval` instances to extend the list of supported monads.
+
+
+The `#eval` command gracefully degrades in capability depending on what is imported. Importing the `Lean.Elab.Command` module provides full capabilities.
+Due to unsoundness, `#eval` refuses to evaluate expressions that depend on `sorry`, even indirectly, since the presence of `sorry` can lead to runtime instability and crashes. This check can be overridden with the `#eval! e` command.
+Options:
+  * If `eval.pp` is true (default: true) then tries to use `ToExpr` instances to make use of the usual pretty printer. Otherwise, only tries using `Repr` and `ToString` instances.
+  * If `eval.type` is true (default: false) then pretty prints the type of the evaluated value.
+  * If `eval.derive.repr` is true (default: true) then attempts to auto-derive a `Repr` instance when there is no other way to print the result.
+
+
+See also: `#reduce e` for evaluation by term reduction.
+`[`#eval`](Interacting-with-Lean/#Lean___Parser___Command___eval) by defining a suitable `[MonadLift](Functors___-Monads-and--do--Notation/Lifting-Monads/#MonadLift___mk "Documentation for MonadLift")``[MonadLift](Functors___-Monads-and--do--Notation/Lifting-Monads/#MonadLift___mk "Documentation for MonadLift")` is described in [the section on lifting monads.](Functors___-Monads-and--do--Notation/Lifting-Monads/#lifting-monads) or `[MonadEval](Interacting-with-Lean/#MonadEval___mk "Documentation for MonadEval")` instance. Just as `[MonadLiftT](Functors___-Monads-and--do--Notation/Lifting-Monads/#MonadLiftT___mk "Documentation for MonadLiftT")` is the transitive closure of `[MonadLift](Functors___-Monads-and--do--Notation/Lifting-Monads/#MonadLift___mk "Documentation for MonadLift")` instances, `[MonadEvalT](Interacting-with-Lean/#MonadEvalT___mk "Documentation for MonadEvalT")` is the transitive closure of `[MonadEval](Interacting-with-Lean/#MonadEval___mk "Documentation for MonadEval")` instances. As with `[MonadLiftT](Functors___-Monads-and--do--Notation/Lifting-Monads/#MonadLiftT___mk "Documentation for MonadLiftT")` users should not define additional instances of `[MonadEvalT](Interacting-with-Lean/#MonadEvalT___mk "Documentation for MonadEvalT")` directly.
 [🔗](find/?domain=Verso.Genre.Manual.doc&name=MonadEval.monadEval "Permalink")type class
 ```
 
@@ -189,24 +360,77 @@ monadEval : {α : Type u} → m α → n α
 
 Evaluates a value from monad `m` into monad `n`.
 ##  3.2. Reducing Terms[🔗](find/?domain=Verso.Genre.Manual.section&name=hash-reduce "Permalink")
-The ``Lean.reduceCmd : command```#reduce <expression>` reduces the expression `<expression>` to its normal form. This involves applying reduction rules until no further reduction is possible.  By default, proofs and types within the expression are not reduced. Use modifiers `(proofs := true)`  and `(types := true)` to reduce them. Recall that propositions are types in Lean.  **Warning:** This can be a computationally expensive operation, especially for complex expressions.  Consider using `#eval <expression>` for simple evaluation/execution of expressions. ``[`#reduce`](Interacting-with-Lean/#Lean___reduceCmd) command repeatedly applies reductions to a term until no further reductions are possible. Reductions are performed under binders, but to avoid unexpected slowdowns, proofs and types are skipped unless the corresponding options to ``Lean.reduceCmd : command```#reduce <expression>` reduces the expression `<expression>` to its normal form. This involves applying reduction rules until no further reduction is possible.  By default, proofs and types within the expression are not reduced. Use modifiers `(proofs := true)`  and `(types := true)` to reduce them. Recall that propositions are types in Lean.  **Warning:** This can be a computationally expensive operation, especially for complex expressions.  Consider using `#eval <expression>` for simple evaluation/execution of expressions. ``[`#reduce`](Interacting-with-Lean/#Lean___reduceCmd) are enabled. Unlike ``Lean.Parser.Command.eval : command```#eval e` evaluates the expression `e` by compiling and evaluating it.  * The command attempts to use `ToExpr`, `Repr`, or `ToString` instances to print the result. * If `e` is a monadic value of type `m ty`, then the command tries to adapt the monad `m`   to one of the monads that `#eval` supports, which include `IO`, `CoreM`, `MetaM`, `TermElabM`, and `CommandElabM`.   Users can define `MonadEval` instances to extend the list of supported monads.  The `#eval` command gracefully degrades in capability depending on what is imported. Importing the `Lean.Elab.Command` module provides full capabilities.  Due to unsoundness, `#eval` refuses to evaluate expressions that depend on `sorry`, even indirectly, since the presence of `sorry` can lead to runtime instability and crashes. This check can be overridden with the `#eval! e` command.  Options: * If `eval.pp` is true (default: true) then tries to use `ToExpr` instances to make use of the   usual pretty printer. Otherwise, only tries using `Repr` and `ToString` instances. * If `eval.type` is true (default: false) then pretty prints the type of the evaluated value. * If `eval.derive.repr` is true (default: true) then attempts to auto-derive a `Repr` instance   when there is no other way to print the result.  See also: `#reduce e` for evaluation by term reduction. ``[`#eval`](Interacting-with-Lean/#Lean___Parser___Command___eval) command, reduction cannot have side effects and the result is displayed as a term rather than via a `ToString` or `[Repr](Interacting-with-Lean/#Repr___mk "Documentation for Repr")` instance.
-Generally speaking, ``Lean.reduceCmd : command```#reduce <expression>` reduces the expression `<expression>` to its normal form. This involves applying reduction rules until no further reduction is possible.  By default, proofs and types within the expression are not reduced. Use modifiers `(proofs := true)`  and `(types := true)` to reduce them. Recall that propositions are types in Lean.  **Warning:** This can be a computationally expensive operation, especially for complex expressions.  Consider using `#eval <expression>` for simple evaluation/execution of expressions. ``[`#reduce`](Interacting-with-Lean/#Lean___reduceCmd) is primarily useful for diagnosing issues with definitional equality and proof terms, while ``Lean.Parser.Command.eval : command```#eval e` evaluates the expression `e` by compiling and evaluating it.  * The command attempts to use `ToExpr`, `Repr`, or `ToString` instances to print the result. * If `e` is a monadic value of type `m ty`, then the command tries to adapt the monad `m`   to one of the monads that `#eval` supports, which include `IO`, `CoreM`, `MetaM`, `TermElabM`, and `CommandElabM`.   Users can define `MonadEval` instances to extend the list of supported monads.  The `#eval` command gracefully degrades in capability depending on what is imported. Importing the `Lean.Elab.Command` module provides full capabilities.  Due to unsoundness, `#eval` refuses to evaluate expressions that depend on `sorry`, even indirectly, since the presence of `sorry` can lead to runtime instability and crashes. This check can be overridden with the `#eval! e` command.  Options: * If `eval.pp` is true (default: true) then tries to use `ToExpr` instances to make use of the   usual pretty printer. Otherwise, only tries using `Repr` and `ToString` instances. * If `eval.type` is true (default: false) then pretty prints the type of the evaluated value. * If `eval.derive.repr` is true (default: true) then attempts to auto-derive a `Repr` instance   when there is no other way to print the result.  See also: `#reduce e` for evaluation by term reduction. ``[`#eval`](Interacting-with-Lean/#Lean___Parser___Command___eval) is more suitable for computing the value of a term. In particular, functions defined using [well-founded recursion](Definitions/Recursive-Definitions/#--tech-term-well-founded-recursion) or as [partial fixpoints](Definitions/Recursive-Definitions/#--tech-term-partial-fixpoint) are either very slow to compute with the reduction engine, or will not reduce at all.
+The ``Lean.reduceCmd : command`
+`#reduce <expression>` reduces the expression `<expression>` to its normal form. This involves applying reduction rules until no further reduction is possible.
+By default, proofs and types within the expression are not reduced. Use modifiers `(proofs := true)` and `(types := true)` to reduce them. Recall that propositions are types in Lean.
+**Warning:** This can be a computationally expensive operation, especially for complex expressions.
+Consider using `#eval <expression>` for simple evaluation/execution of expressions.
+`[`#reduce`](Interacting-with-Lean/#Lean___reduceCmd) command repeatedly applies reductions to a term until no further reductions are possible. Reductions are performed under binders, but to avoid unexpected slowdowns, proofs and types are skipped unless the corresponding options to ``Lean.reduceCmd : command`
+`#reduce <expression>` reduces the expression `<expression>` to its normal form. This involves applying reduction rules until no further reduction is possible.
+By default, proofs and types within the expression are not reduced. Use modifiers `(proofs := true)` and `(types := true)` to reduce them. Recall that propositions are types in Lean.
+**Warning:** This can be a computationally expensive operation, especially for complex expressions.
+Consider using `#eval <expression>` for simple evaluation/execution of expressions.
+`[`#reduce`](Interacting-with-Lean/#Lean___reduceCmd) are enabled. Unlike ``Lean.Parser.Command.eval : command`
+`#eval e` evaluates the expression `e` by compiling and evaluating it.
+  * The command attempts to use `ToExpr`, `Repr`, or `ToString` instances to print the result.
+  * If `e` is a monadic value of type `m ty`, then the command tries to adapt the monad `m` to one of the monads that `#eval` supports, which include `IO`, `CoreM`, `MetaM`, `TermElabM`, and `CommandElabM`. Users can define `MonadEval` instances to extend the list of supported monads.
+
+
+The `#eval` command gracefully degrades in capability depending on what is imported. Importing the `Lean.Elab.Command` module provides full capabilities.
+Due to unsoundness, `#eval` refuses to evaluate expressions that depend on `sorry`, even indirectly, since the presence of `sorry` can lead to runtime instability and crashes. This check can be overridden with the `#eval! e` command.
+Options:
+  * If `eval.pp` is true (default: true) then tries to use `ToExpr` instances to make use of the usual pretty printer. Otherwise, only tries using `Repr` and `ToString` instances.
+  * If `eval.type` is true (default: false) then pretty prints the type of the evaluated value.
+  * If `eval.derive.repr` is true (default: true) then attempts to auto-derive a `Repr` instance when there is no other way to print the result.
+
+
+See also: `#reduce e` for evaluation by term reduction.
+`[`#eval`](Interacting-with-Lean/#Lean___Parser___Command___eval) command, reduction cannot have side effects and the result is displayed as a term rather than via a `ToString` or `[Repr](Interacting-with-Lean/#Repr___mk "Documentation for Repr")` instance.
+Generally speaking, ``Lean.reduceCmd : command`
+`#reduce <expression>` reduces the expression `<expression>` to its normal form. This involves applying reduction rules until no further reduction is possible.
+By default, proofs and types within the expression are not reduced. Use modifiers `(proofs := true)` and `(types := true)` to reduce them. Recall that propositions are types in Lean.
+**Warning:** This can be a computationally expensive operation, especially for complex expressions.
+Consider using `#eval <expression>` for simple evaluation/execution of expressions.
+`[`#reduce`](Interacting-with-Lean/#Lean___reduceCmd) is primarily useful for diagnosing issues with definitional equality and proof terms, while ``Lean.Parser.Command.eval : command`
+`#eval e` evaluates the expression `e` by compiling and evaluating it.
+  * The command attempts to use `ToExpr`, `Repr`, or `ToString` instances to print the result.
+  * If `e` is a monadic value of type `m ty`, then the command tries to adapt the monad `m` to one of the monads that `#eval` supports, which include `IO`, `CoreM`, `MetaM`, `TermElabM`, and `CommandElabM`. Users can define `MonadEval` instances to extend the list of supported monads.
+
+
+The `#eval` command gracefully degrades in capability depending on what is imported. Importing the `Lean.Elab.Command` module provides full capabilities.
+Due to unsoundness, `#eval` refuses to evaluate expressions that depend on `sorry`, even indirectly, since the presence of `sorry` can lead to runtime instability and crashes. This check can be overridden with the `#eval! e` command.
+Options:
+  * If `eval.pp` is true (default: true) then tries to use `ToExpr` instances to make use of the usual pretty printer. Otherwise, only tries using `Repr` and `ToString` instances.
+  * If `eval.type` is true (default: false) then pretty prints the type of the evaluated value.
+  * If `eval.derive.repr` is true (default: true) then attempts to auto-derive a `Repr` instance when there is no other way to print the result.
+
+
+See also: `#reduce e` for evaluation by term reduction.
+`[`#eval`](Interacting-with-Lean/#Lean___Parser___Command___eval) is more suitable for computing the value of a term. In particular, functions defined using [well-founded recursion](Definitions/Recursive-Definitions/#--tech-term-well-founded-recursion) or as [partial fixpoints](Definitions/Recursive-Definitions/#--tech-term-partial-fixpoint) are either very slow to compute with the reduction engine, or will not reduce at all.
 syntaxReducing Terms
 
 ```
 command ::= ...
-    | `#reduce <expression>` reduces the expression `<expression>` to its normal form. This
+    | 
+
+
+#reduce <expression> reduces the expression <expression> to its normal form. This
 involves applying reduction rules until no further reduction is possible.
 
+
 By default, proofs and types within the expression are not reduced. Use modifiers
-`(proofs := true)`  and `(types := true)` to reduce them.
+(proofs := true)  and (types := true) to reduce them.
 Recall that propositions are types in Lean.
+
 
 **Warning:** This can be a computationally expensive operation,
 especially for complex expressions.
 
-Consider using `#eval <expression>` for simple evaluation/execution
+
+Consider using #eval <expression> for simple evaluation/execution
 of expressions.
+
+
 #reduce ((proofs := true))? ((types := true))? term
 ```
 
@@ -397,14 +621,20 @@ syntaxScope Information
 
 ```
 command ::= ...
-    | `#where` gives a description of the state of the current scope scope.
-This includes the current namespace, `open` namespaces, `universe` and `variable` commands,
-and options set with `set_option`.
+    | 
+
+
+#where gives a description of the state of the current scope scope.
+This includes the current namespace, open namespaces, universe and variable commands,
+and options set with set_option.
+
+
 #where
 ```
 
 Scope Information
-The ``Lean.Parser.Command.where : command```#where` gives a description of the state of the current scope scope. This includes the current namespace, `open` namespaces, `universe` and `variable` commands, and options set with `set_option`. ``[`#where`](Interacting-with-Lean/#Lean___Parser___Command___where) command displays all the modifications made to the current [section scope](Namespaces-and-Sections/#--tech-term-section-scope), both in the current scope and in the scopes in which it is nested.
+The ``Lean.Parser.Command.where : command`
+`[`#where`](Interacting-with-Lean/#Lean___Parser___Command___where) command displays all the modifications made to the current [section scope](Namespaces-and-Sections/#--tech-term-section-scope), both in the current scope and in the scopes in which it is nested.
 `[section](Namespaces-and-Sections/#Lean___Parser___Command___section "Documentation for syntax") [open](Namespaces-and-Sections/#Lean___Parser___Command___open "Documentation for syntax") Nat  [namespace](Namespaces-and-Sections/#Lean___Parser___Command___namespace "Documentation for syntax") A [variable](Namespaces-and-Sections/#Lean___Parser___Command___variable "Documentation for syntax") (n : [Nat](Basic-Types/Natural-Numbers/#Nat___zero "Documentation for Nat")) [namespace](Namespaces-and-Sections/#Lean___Parser___Command___namespace "Documentation for syntax") B  [open](Namespaces-and-Sections/#Lean___Parser___Command___open "Documentation for syntax") List set_option pp.funBinderTypes true  `namespace A.B  open Nat List  variable (n : Nat)  set_option pp.funBinderTypes true set_option pp.tagAppFns true`[#where](Interacting-with-Lean/#Lean___Parser___Command___where "Documentation for syntax") end A.B end `
 ```
 namespace A.B
@@ -423,120 +653,200 @@ Shows the current Lean version. Prints `Lean.versionString`.
 
 ```
 command ::= ...
-    | Shows the current Lean version. Prints `Lean.versionString`. #version
+    | 
+
+
+Shows the current Lean version. Prints Lean.versionString. 
+
+
+#version
 ```
 
 ##  3.6. Testing Output with `#guard_msgs`[🔗](find/?domain=Verso.Genre.Manual.section&name=hash-guard_msgs "Permalink")
-The ``Lean.guardMsgsCmd : command```/-- ... -/ #guard_msgs in cmd` captures the messages generated by the command `cmd` and checks that they match the contents of the docstring.  Basic example: ```lean /-- error: Unknown identifier `x` -/ #guard_msgs in example : α := x ``` This checks that there is such an error and then consumes the message.  By default, the command captures all messages, but the filter condition can be adjusted. For example, we can select only warnings: ```lean /-- warning: declaration uses 'sorry' -/ #guard_msgs(warning) in example : α := sorry ``` or only errors ```lean #guard_msgs(error) in example : α := sorry ``` In the previous example, since warnings are not captured there is a warning on `sorry`. We can drop the warning completely with ```lean #guard_msgs(error, drop warning) in example : α := sorry ```  In general, `#guard_msgs` accepts a comma-separated list of configuration clauses in parentheses: ``` #guard_msgs (configElt,*) in cmd ``` By default, the configuration list is `(check all, whitespace := normalized, ordering := exact, positions := false)`.  Message filters select messages by severity: - `info`, `warning`, `error`: (non-trace) messages with the given severity level. - `trace`: trace messages - `all`: all messages.  The filters can be prefixed with the action to take: - `check` (the default): capture and check the message - `drop`: drop the message - `pass`: let the message pass through  If no filter is specified, `check all` is assumed.  Otherwise, these filters are processed in left-to-right order, with an implicit `pass all` at the end.  Whitespace handling (after trimming leading and trailing whitespace): - `whitespace := exact` requires an exact whitespace match. - `whitespace := normalized` converts all newline characters to a space before matching   (the default). This allows breaking long lines. - `whitespace := lax` collapses whitespace to a single space before matching.  Message ordering: - `ordering := exact` uses the exact ordering of the messages (the default). - `ordering := sorted` sorts the messages in lexicographic order.   This helps with testing commands that are non-deterministic in their ordering.  Position reporting: - `positions := true` reports the ranges of all messages relative to the line on which   `#guard_msgs` appears. - `positions := false` does not report position info.  Substring matching: - `substring := true` checks that the docstring appears as a substring of the output   (after whitespace normalization). This is useful when you only care about part of the message. - `substring := false` (the default) requires exact matching (modulo whitespace normalization).  Stabilizing output: When messages contain autogenerated names (e.g., metavariables like `?m.47`), the output may differ between runs or Lean versions. Use `set_option pp.mvars.anonymous false` to replace anonymous metavariables with `?_` while preserving user-named metavariables like `?a`. Alternatively, `set_option pp.mvars false` replaces all metavariables with `?_`. Similarly, `set_option pp.fvars.anonymous false` replaces loose free variable names like `_fvar.22` with `_fvar._`.  For example, `#guard_msgs (error, drop all) in cmd` means to check errors and drop everything else.  The command elaborator has special support for `#guard_msgs` for linting. The `#guard_msgs` itself wants to capture linter warnings, so it elaborates the command it is attached to as if it were a top-level command. However, the command elaborator runs linters for *all* top-level commands, which would include `#guard_msgs` itself, and would cause duplicate and/or uncaptured linter warnings. The top-level command elaborator only runs the linters if `#guard_msgs` is not present. ``[`#guard_msgs`](Interacting-with-Lean/#Lean___guardMsgsCmd) command can be used to ensure that the messages output by a command are as expected. Together with the interaction commands in this section, it can be used to construct a file that will only elaborate if the output is as expected; such a file can be used as a [test driver](Build-Tools-and-Distribution/Lake/#--tech-term-test-driver) in [Lake](Build-Tools-and-Distribution/Lake/#lake).
-syntaxDocumenting Expected Output
+The ``Lean.guardMsgsCmd : command`
+`/-- ... -/ #guard_msgs in cmd` captures the messages generated by the command `cmd` and checks that they match the contents of the docstring.
+Basic example:
 
 ```
-command ::= ...
-    | `/-- ... -/ #guard_msgs in cmd` captures the messages generated by the command `cmd`
-and checks that they match the contents of the docstring.
-
-Basic example:
-```lean
 /--
 error: Unknown identifier `x`
 -/
 #guard_msgs in
 example : α := x
-```
-This checks that there is such an error and then consumes the message.
 
-By default, the command captures all messages, but the filter condition can be adjusted.
-For example, we can select only warnings:
-```lean
+```
+
+This checks that there is such an error and then consumes the message.
+By default, the command captures all messages, but the filter condition can be adjusted. For example, we can select only warnings:
+
+```
 /--
 warning: declaration uses 'sorry'
 -/
 #guard_msgs(warning) in
 example : α := sorry
+
 ```
+
 or only errors
-```lean
+
+```
 #guard_msgs(error) in
 example : α := sorry
+
 ```
-In the previous example, since warnings are not captured there is a warning on `sorry`.
-We can drop the warning completely with
-```lean
+
+In the previous example, since warnings are not captured there is a warning on `sorry`. We can drop the warning completely with
+
+```
 #guard_msgs(error, drop warning) in
 example : α := sorry
+
 ```
 
 In general, `#guard_msgs` accepts a comma-separated list of configuration clauses in parentheses:
+
 ```
 #guard_msgs (configElt,*) in cmd
-```
-By default, the configuration list is
-`(check all, whitespace := normalized, ordering := exact, positions := false)`.
 
+```
+
+By default, the configuration list is `(check all, whitespace := normalized, ordering := exact, positions := false)`.
 Message filters select messages by severity:
-- `info`, `warning`, `error`: (non-trace) messages with the given severity level.
-- `trace`: trace messages
-- `all`: all messages.
+  * `info`, `warning`, `error`: (non-trace) messages with the given severity level.
+  * `trace`: trace messages
+  * `all`: all messages.
+
 
 The filters can be prefixed with the action to take:
-- `check` (the default): capture and check the message
-- `drop`: drop the message
-- `pass`: let the message pass through
+  * `check` (the default): capture and check the message
+  * `drop`: drop the message
+  * `pass`: let the message pass through
 
-If no filter is specified, `check all` is assumed.  Otherwise, these filters are processed in
-left-to-right order, with an implicit `pass all` at the end.
 
+If no filter is specified, `check all` is assumed. Otherwise, these filters are processed in left-to-right order, with an implicit `pass all` at the end.
 Whitespace handling (after trimming leading and trailing whitespace):
-- `whitespace := exact` requires an exact whitespace match.
-- `whitespace := normalized` converts all newline characters to a space before matching
-  (the default). This allows breaking long lines.
-- `whitespace := lax` collapses whitespace to a single space before matching.
+  * `whitespace := exact` requires an exact whitespace match.
+  * `whitespace := normalized` converts all newline characters to a space before matching (the default). This allows breaking long lines.
+  * `whitespace := lax` collapses whitespace to a single space before matching.
+
 
 Message ordering:
-- `ordering := exact` uses the exact ordering of the messages (the default).
-- `ordering := sorted` sorts the messages in lexicographic order.
-  This helps with testing commands that are non-deterministic in their ordering.
+  * `ordering := exact` uses the exact ordering of the messages (the default).
+  * `ordering := sorted` sorts the messages in lexicographic order. This helps with testing commands that are non-deterministic in their ordering.
+
 
 Position reporting:
-- `positions := true` reports the ranges of all messages relative to the line on which
-  `#guard_msgs` appears.
-- `positions := false` does not report position info.
+  * `positions := true` reports the ranges of all messages relative to the line on which `#guard_msgs` appears.
+  * `positions := false` does not report position info.
+
 
 Substring matching:
-- `substring := true` checks that the docstring appears as a substring of the output
-  (after whitespace normalization). This is useful when you only care about part of the message.
-- `substring := false` (the default) requires exact matching (modulo whitespace normalization).
+  * `substring := true` checks that the docstring appears as a substring of the output (after whitespace normalization). This is useful when you only care about part of the message.
+  * `substring := false` (the default) requires exact matching (modulo whitespace normalization).
 
-Stabilizing output:
-When messages contain autogenerated names (e.g., metavariables like `?m.47`), the output may
-differ between runs or Lean versions. Use `set_option pp.mvars.anonymous false` to replace
-anonymous metavariables with `?_` while preserving user-named metavariables like `?a`.
-Alternatively, `set_option pp.mvars false` replaces all metavariables with `?_`.
-Similarly, `set_option pp.fvars.anonymous false` replaces loose free variable names like
-`_fvar.22` with `_fvar._`.
 
-For example, `#guard_msgs (error, drop all) in cmd` means to check errors and drop
-everything else.
+Stabilizing output: When messages contain autogenerated names (e.g., metavariables like `?m.47`), the output may differ between runs or Lean versions. Use `set_option pp.mvars.anonymous false` to replace anonymous metavariables with `?_` while preserving user-named metavariables like `?a`. Alternatively, `set_option pp.mvars false` replaces all metavariables with `?_`. Similarly, `set_option pp.fvars.anonymous false` replaces loose free variable names like `_fvar.22` with `_fvar._`.
+For example, `#guard_msgs (error, drop all) in cmd` means to check errors and drop everything else.
+The command elaborator has special support for `#guard_msgs` for linting. The `#guard_msgs` itself wants to capture linter warnings, so it elaborates the command it is attached to as if it were a top-level command. However, the command elaborator runs linters for _all_ top-level commands, which would include `#guard_msgs` itself, and would cause duplicate and/or uncaptured linter warnings. The top-level command elaborator only runs the linters if `#guard_msgs` is not present.
+`[`#guard_msgs`](Interacting-with-Lean/#Lean___guardMsgsCmd) command can be used to ensure that the messages output by a command are as expected. Together with the interaction commands in this section, it can be used to construct a file that will only elaborate if the output is as expected; such a file can be used as a [test driver](Build-Tools-and-Distribution/Lake/#--tech-term-test-driver) in [Lake](Build-Tools-and-Distribution/Lake/#lake).
+syntaxDocumenting Expected Output
 
-The command elaborator has special support for `#guard_msgs` for linting.
-The `#guard_msgs` itself wants to capture linter warnings,
-so it elaborates the command it is attached to as if it were a top-level command.
-However, the command elaborator runs linters for *all* top-level commands,
-which would include `#guard_msgs` itself, and would cause duplicate and/or uncaptured linter warnings.
-The top-level command elaborator only runs the linters if `#guard_msgs` is not present.
-[A `docComment` parses a "documentation comment" like `/-- foo -/`. This is not treated like
-a regular comment (that is, as whitespace); it is parsed and forms part of the syntax tree structure.
+```
+command ::= ...
+    | 
 
-At parse time, `docComment` checks the value of the `doc.verso` option. If it is true, the contents
-are parsed as Verso markup. If not, the contents are treated as plain text or Markdown. Use
-`plainDocComment` to always treat the contents as plain text.
 
-A plain text doc comment node contains a `/--` atom and then the remainder of the comment, `foo -/`
-in this example. Use `TSyntax.getDocString` to extract the body text from a doc string syntax node.
-A Verso comment node contains the `/--` atom, the document's syntax tree, and a closing `-/` atom.
-docComment](Definitions/Modifiers/#Lean___Parser___Command___docComment)?
-      #guard_msgs ((guardMsgsSpecElt,*))? in
-      command
+/-- ... -/ #guard_msgs in cmd captures the messages generated by the command cmd
+and checks that they match the contents of the docstring.
+
+
+Basic example:
+
+
+```
+/--
+error: Unknown identifier `x`
+-/
+#guard_msgs in
+example : α := x
+
+```
+
+This checks that there is such an error and then consumes the message.
+By default, the command captures all messages, but the filter condition can be adjusted. For example, we can select only warnings:
+
+```
+/--
+warning: declaration uses 'sorry'
+-/
+#guard_msgs(warning) in
+example : α := sorry
+
+```
+
+or only errors
+
+```
+#guard_msgs(error) in
+example : α := sorry
+
+```
+
+In the previous example, since warnings are not captured there is a warning on `sorry`. We can drop the warning completely with
+
+```
+#guard_msgs(error, drop warning) in
+example : α := sorry
+
+```
+
+In general, `#guard_msgs` accepts a comma-separated list of configuration clauses in parentheses:
+
+```
+#guard_msgs (configElt,*) in cmd
+
+```
+
+By default, the configuration list is `(check all, whitespace := normalized, ordering := exact, positions := false)`.
+Message filters select messages by severity:
+  * `info`, `warning`, `error`: (non-trace) messages with the given severity level.
+  * `trace`: trace messages
+  * `all`: all messages.
+
+
+The filters can be prefixed with the action to take:
+  * `check` (the default): capture and check the message
+  * `drop`: drop the message
+  * `pass`: let the message pass through
+
+
+If no filter is specified, `check all` is assumed. Otherwise, these filters are processed in left-to-right order, with an implicit `pass all` at the end.
+Whitespace handling (after trimming leading and trailing whitespace):
+  * `whitespace := exact` requires an exact whitespace match.
+  * `whitespace := normalized` converts all newline characters to a space before matching (the default). This allows breaking long lines.
+  * `whitespace := lax` collapses whitespace to a single space before matching.
+
+
+Message ordering:
+  * `ordering := exact` uses the exact ordering of the messages (the default).
+  * `ordering := sorted` sorts the messages in lexicographic order. This helps with testing commands that are non-deterministic in their ordering.
+
+
+Position reporting:
+  * `positions := true` reports the ranges of all messages relative to the line on which `#guard_msgs` appears.
+  * `positions := false` does not report position info.
+
+
+Substring matching:
+  * `substring := true` checks that the docstring appears as a substring of the output (after whitespace normalization). This is useful when you only care about part of the message.
+  * `substring := false` (the default) requires exact matching (modulo whitespace normalization).
+
+
+Stabilizing output: When messages contain autogenerated names (e.g., metavariables like `?m.47`), the output may differ between runs or Lean versions. Use `set_option pp.mvars.anonymous false` to replace anonymous metavariables with `?_` while preserving user-named metavariables like `?a`. Alternatively, `set_option pp.mvars false` replaces all metavariables with `?_`. Similarly, `set_option pp.fvars.anonymous false` replaces loose free variable names like `_fvar.22` with `_fvar._`.
+For example, `#guard_msgs (error, drop all) in cmd` means to check errors and drop everything else.
+The command elaborator has special support for `#guard_msgs` for linting. The `#guard_msgs` itself wants to capture linter warnings, so it elaborates the command it is attached to as if it were a top-level command. However, the command elaborator runs linters for _all_ top-level commands, which would include `#guard_msgs` itself, and would cause duplicate and/or uncaptured linter warnings. The top-level command elaborator only runs the linters if `#guard_msgs` is not present.
+`[` A `docComment` parses a "documentation comment" like `/-- foo -/`. This is not treated like a regular comment (that is, as whitespace); it is parsed and forms part of the syntax tree structure. At parse time, `docComment` checks the value of the `doc.verso` option. If it is true, the contents are parsed as Verso markup. If not, the contents are treated as plain text or Markdown. Use `plainDocComment` to always treat the contents as plain text. A plain text doc comment node contains a `/--` atom and then the remainder of the comment, `foo -/` in this example. Use `TSyntax.getDocString` to extract the body text from a doc string syntax node. A Verso comment node contains the `/--` atom, the document's syntax tree, and a closing `-/` atom. `docComment](Definitions/Modifiers/#Lean___Parser___Command___docComment)? #guard_msgs ((guardMsgsSpecElt,*))? in command
 ```
 
 `/-- ... -/ #guard_msgs in cmd` captures the messages generated by the command `cmd` and checks that they match the contents of the docstring.
@@ -599,10 +909,97 @@ Stabilizing output: When messages contain autogenerated names (e.g., metavariabl
 For example, `#guard_msgs (error, drop all) in cmd` means to check errors and drop everything else.
 The command elaborator has special support for `#guard_msgs` for linting. The `#guard_msgs` itself wants to capture linter warnings, so it elaborates the command it is attached to as if it were a top-level command. However, the command elaborator runs linters for _all_ top-level commands, which would include `#guard_msgs` itself, and would cause duplicate and/or uncaptured linter warnings. The top-level command elaborator only runs the linters if `#guard_msgs` is not present.
 Testing Return Values
-The ``Lean.guardMsgsCmd : command```/-- ... -/ #guard_msgs in cmd` captures the messages generated by the command `cmd` and checks that they match the contents of the docstring.  Basic example: ```lean /-- error: Unknown identifier `x` -/ #guard_msgs in example : α := x ``` This checks that there is such an error and then consumes the message.  By default, the command captures all messages, but the filter condition can be adjusted. For example, we can select only warnings: ```lean /-- warning: declaration uses 'sorry' -/ #guard_msgs(warning) in example : α := sorry ``` or only errors ```lean #guard_msgs(error) in example : α := sorry ``` In the previous example, since warnings are not captured there is a warning on `sorry`. We can drop the warning completely with ```lean #guard_msgs(error, drop warning) in example : α := sorry ```  In general, `#guard_msgs` accepts a comma-separated list of configuration clauses in parentheses: ``` #guard_msgs (configElt,*) in cmd ``` By default, the configuration list is `(check all, whitespace := normalized, ordering := exact, positions := false)`.  Message filters select messages by severity: - `info`, `warning`, `error`: (non-trace) messages with the given severity level. - `trace`: trace messages - `all`: all messages.  The filters can be prefixed with the action to take: - `check` (the default): capture and check the message - `drop`: drop the message - `pass`: let the message pass through  If no filter is specified, `check all` is assumed.  Otherwise, these filters are processed in left-to-right order, with an implicit `pass all` at the end.  Whitespace handling (after trimming leading and trailing whitespace): - `whitespace := exact` requires an exact whitespace match. - `whitespace := normalized` converts all newline characters to a space before matching   (the default). This allows breaking long lines. - `whitespace := lax` collapses whitespace to a single space before matching.  Message ordering: - `ordering := exact` uses the exact ordering of the messages (the default). - `ordering := sorted` sorts the messages in lexicographic order.   This helps with testing commands that are non-deterministic in their ordering.  Position reporting: - `positions := true` reports the ranges of all messages relative to the line on which   `#guard_msgs` appears. - `positions := false` does not report position info.  Substring matching: - `substring := true` checks that the docstring appears as a substring of the output   (after whitespace normalization). This is useful when you only care about part of the message. - `substring := false` (the default) requires exact matching (modulo whitespace normalization).  Stabilizing output: When messages contain autogenerated names (e.g., metavariables like `?m.47`), the output may differ between runs or Lean versions. Use `set_option pp.mvars.anonymous false` to replace anonymous metavariables with `?_` while preserving user-named metavariables like `?a`. Alternatively, `set_option pp.mvars false` replaces all metavariables with `?_`. Similarly, `set_option pp.fvars.anonymous false` replaces loose free variable names like `_fvar.22` with `_fvar._`.  For example, `#guard_msgs (error, drop all) in cmd` means to check errors and drop everything else.  The command elaborator has special support for `#guard_msgs` for linting. The `#guard_msgs` itself wants to capture linter warnings, so it elaborates the command it is attached to as if it were a top-level command. However, the command elaborator runs linters for *all* top-level commands, which would include `#guard_msgs` itself, and would cause duplicate and/or uncaptured linter warnings. The top-level command elaborator only runs the linters if `#guard_msgs` is not present. ``[`#guard_msgs`](Interacting-with-Lean/#Lean___guardMsgsCmd) command can ensure that a set of test cases pass:
+The ``Lean.guardMsgsCmd : command`
+`[`#guard_msgs`](Interacting-with-Lean/#Lean___guardMsgsCmd) command can ensure that a set of test cases pass:
 `def reverse : [List](Basic-Types/Linked-Lists/#List___nil "Documentation for List") α → [List](Basic-Types/Linked-Lists/#List___nil "Documentation for List") α := [helper](Interacting-with-Lean/#reverse___helper-_LPAR_in-Testing-Return-Values_RPAR_ "Definition of example") [] where   helper acc     | [] => acc     | x :: xs => [helper](Interacting-with-Lean/#reverse___helper-_LPAR_in-Testing-Return-Values_RPAR_ "Definition of example") (x :: acc) xs  /-- info: [] -/ [#guard_msgs](Interacting-with-Lean/#Lean___guardMsgsCmd "Documentation for syntax") [in](Interacting-with-Lean/#Lean___guardMsgsCmd "Documentation for syntax") [#eval](Interacting-with-Lean/#Lean___Parser___Command___eval "Documentation for syntax") [reverse](Interacting-with-Lean/#reverse-_LPAR_in-Testing-Return-Values_RPAR_ "Definition of example") ([] : [List](Basic-Types/Linked-Lists/#List___nil "Documentation for List") [Nat](Basic-Types/Natural-Numbers/#Nat___zero "Documentation for Nat"))  /-- info: ['c', 'b', 'a'] -/ [#guard_msgs](Interacting-with-Lean/#Lean___guardMsgsCmd "Documentation for syntax") [in](Interacting-with-Lean/#Lean___guardMsgsCmd "Documentation for syntax") [#eval](Interacting-with-Lean/#Lean___Parser___Command___eval "Documentation for syntax") [reverse](Interacting-with-Lean/#reverse-_LPAR_in-Testing-Return-Values_RPAR_ "Definition of example") "abc".toList `
 [Live ↪](javascript:openLiveLink\("CYUwZgBATiBuJQM4ggLggGQJaIC4UEbgCQJMJMd8jUBeCACxABsAHBCAbQF0AoAd3pi4Q6jFlAgBDAMaTBQiAB92HCFQB8E6bKGKAHmnQ7EK9fWasAFHtTopkgJQRDXLgHoAtG4hYAdmAD26JwQbi5cAMQA5gCu4lDAAPoAtogRRj7hcOIM0HAIyBDmQejYeBAAcuK4ds7unj7+gQDkko0ANBCNAEZtHeKNyiHh0bEJyale3hmwWTnwSCgAROKdkgsAdLh+JbhAA"\))
-The behavior of the ``Lean.guardMsgsCmd : command```/-- ... -/ #guard_msgs in cmd` captures the messages generated by the command `cmd` and checks that they match the contents of the docstring.  Basic example: ```lean /-- error: Unknown identifier `x` -/ #guard_msgs in example : α := x ``` This checks that there is such an error and then consumes the message.  By default, the command captures all messages, but the filter condition can be adjusted. For example, we can select only warnings: ```lean /-- warning: declaration uses 'sorry' -/ #guard_msgs(warning) in example : α := sorry ``` or only errors ```lean #guard_msgs(error) in example : α := sorry ``` In the previous example, since warnings are not captured there is a warning on `sorry`. We can drop the warning completely with ```lean #guard_msgs(error, drop warning) in example : α := sorry ```  In general, `#guard_msgs` accepts a comma-separated list of configuration clauses in parentheses: ``` #guard_msgs (configElt,*) in cmd ``` By default, the configuration list is `(check all, whitespace := normalized, ordering := exact, positions := false)`.  Message filters select messages by severity: - `info`, `warning`, `error`: (non-trace) messages with the given severity level. - `trace`: trace messages - `all`: all messages.  The filters can be prefixed with the action to take: - `check` (the default): capture and check the message - `drop`: drop the message - `pass`: let the message pass through  If no filter is specified, `check all` is assumed.  Otherwise, these filters are processed in left-to-right order, with an implicit `pass all` at the end.  Whitespace handling (after trimming leading and trailing whitespace): - `whitespace := exact` requires an exact whitespace match. - `whitespace := normalized` converts all newline characters to a space before matching   (the default). This allows breaking long lines. - `whitespace := lax` collapses whitespace to a single space before matching.  Message ordering: - `ordering := exact` uses the exact ordering of the messages (the default). - `ordering := sorted` sorts the messages in lexicographic order.   This helps with testing commands that are non-deterministic in their ordering.  Position reporting: - `positions := true` reports the ranges of all messages relative to the line on which   `#guard_msgs` appears. - `positions := false` does not report position info.  Substring matching: - `substring := true` checks that the docstring appears as a substring of the output   (after whitespace normalization). This is useful when you only care about part of the message. - `substring := false` (the default) requires exact matching (modulo whitespace normalization).  Stabilizing output: When messages contain autogenerated names (e.g., metavariables like `?m.47`), the output may differ between runs or Lean versions. Use `set_option pp.mvars.anonymous false` to replace anonymous metavariables with `?_` while preserving user-named metavariables like `?a`. Alternatively, `set_option pp.mvars false` replaces all metavariables with `?_`. Similarly, `set_option pp.fvars.anonymous false` replaces loose free variable names like `_fvar.22` with `_fvar._`.  For example, `#guard_msgs (error, drop all) in cmd` means to check errors and drop everything else.  The command elaborator has special support for `#guard_msgs` for linting. The `#guard_msgs` itself wants to capture linter warnings, so it elaborates the command it is attached to as if it were a top-level command. However, the command elaborator runs linters for *all* top-level commands, which would include `#guard_msgs` itself, and would cause duplicate and/or uncaptured linter warnings. The top-level command elaborator only runs the linters if `#guard_msgs` is not present. ``[`#guard_msgs`](Interacting-with-Lean/#Lean___guardMsgsCmd) command can be specified in three ways:
+The behavior of the ``Lean.guardMsgsCmd : command`
+`/-- ... -/ #guard_msgs in cmd` captures the messages generated by the command `cmd` and checks that they match the contents of the docstring.
+Basic example:
+
+```
+/--
+error: Unknown identifier `x`
+-/
+#guard_msgs in
+example : α := x
+
+```
+
+This checks that there is such an error and then consumes the message.
+By default, the command captures all messages, but the filter condition can be adjusted. For example, we can select only warnings:
+
+```
+/--
+warning: declaration uses 'sorry'
+-/
+#guard_msgs(warning) in
+example : α := sorry
+
+```
+
+or only errors
+
+```
+#guard_msgs(error) in
+example : α := sorry
+
+```
+
+In the previous example, since warnings are not captured there is a warning on `sorry`. We can drop the warning completely with
+
+```
+#guard_msgs(error, drop warning) in
+example : α := sorry
+
+```
+
+In general, `#guard_msgs` accepts a comma-separated list of configuration clauses in parentheses:
+
+```
+#guard_msgs (configElt,*) in cmd
+
+```
+
+By default, the configuration list is `(check all, whitespace := normalized, ordering := exact, positions := false)`.
+Message filters select messages by severity:
+  * `info`, `warning`, `error`: (non-trace) messages with the given severity level.
+  * `trace`: trace messages
+  * `all`: all messages.
+
+
+The filters can be prefixed with the action to take:
+  * `check` (the default): capture and check the message
+  * `drop`: drop the message
+  * `pass`: let the message pass through
+
+
+If no filter is specified, `check all` is assumed. Otherwise, these filters are processed in left-to-right order, with an implicit `pass all` at the end.
+Whitespace handling (after trimming leading and trailing whitespace):
+  * `whitespace := exact` requires an exact whitespace match.
+  * `whitespace := normalized` converts all newline characters to a space before matching (the default). This allows breaking long lines.
+  * `whitespace := lax` collapses whitespace to a single space before matching.
+
+
+Message ordering:
+  * `ordering := exact` uses the exact ordering of the messages (the default).
+  * `ordering := sorted` sorts the messages in lexicographic order. This helps with testing commands that are non-deterministic in their ordering.
+
+
+Position reporting:
+  * `positions := true` reports the ranges of all messages relative to the line on which `#guard_msgs` appears.
+  * `positions := false` does not report position info.
+
+
+Substring matching:
+  * `substring := true` checks that the docstring appears as a substring of the output (after whitespace normalization). This is useful when you only care about part of the message.
+  * `substring := false` (the default) requires exact matching (modulo whitespace normalization).
+
+
+Stabilizing output: When messages contain autogenerated names (e.g., metavariables like `?m.47`), the output may differ between runs or Lean versions. Use `set_option pp.mvars.anonymous false` to replace anonymous metavariables with `?_` while preserving user-named metavariables like `?a`. Alternatively, `set_option pp.mvars false` replaces all metavariables with `?_`. Similarly, `set_option pp.fvars.anonymous false` replaces loose free variable names like `_fvar.22` with `_fvar._`.
+For example, `#guard_msgs (error, drop all) in cmd` means to check errors and drop everything else.
+The command elaborator has special support for `#guard_msgs` for linting. The `#guard_msgs` itself wants to capture linter warnings, so it elaborates the command it is attached to as if it were a top-level command. However, the command elaborator runs linters for _all_ top-level commands, which would include `#guard_msgs` itself, and would cause duplicate and/or uncaptured linter warnings. The top-level command elaborator only runs the linters if `#guard_msgs` is not present.
+`[`#guard_msgs`](Interacting-with-Lean/#Lean___guardMsgsCmd) command can be specified in three ways:
   1. Providing a filter that selects a subset of messages to be checked
   2. Specifying a whitespace comparison strategy
   3. Deciding to sort messages by their content or by the order in which they were produced
@@ -613,157 +1010,573 @@ syntaxSpecifying `#guard_msgs` Behavior
 
 ```
 guardMsgsSpecElt ::=
-    A message filter specification for `#guard_msgs`.
-- `info`, `warning`, `error`: capture (non-trace) messages with the given severity level.
-- `trace`: captures trace messages
-- `all`: capture all messages.
+    
+
+
+A message filter specification for #guard_msgs.
+
+
+
+
+  * 
+info, warning, error: capture (non-trace) messages with the given severity level.
+
+
+  * 
+trace: captures trace messages
+
+
+  * 
+all: capture all messages.
+
+
+
 
 The filters can be prefixed with
-- `check` (the default): capture and check the message
-- `drop`: drop the message
-- `pass`: let the message pass through
 
-If no filter is specified, `check all` is assumed.  Otherwise, these filters are processed in
-left-to-right order, with an implicit `pass all` at the end.
+
+
+
+  * 
+check (the default): capture and check the message
+
+
+  * 
+drop: drop the message
+
+
+  * 
+pass: let the message pass through
+
+
+
+
+If no filter is specified, check all is assumed.  Otherwise, these filters are processed in
+left-to-right order, with an implicit pass all at the end.
+
+
 guardMsgsFilter
 ```
 
 ```
 guardMsgsSpecElt ::= ...
-    | Whitespace handling for `#guard_msgs`:
-- `whitespace := exact` requires an exact whitespace match.
-- `whitespace := normalized` converts all newline characters to a space before matching
-  (the default). This allows breaking long lines.
-- `whitespace := lax` collapses whitespace to a single space before matching.
+    | 
+
+
+Whitespace handling for #guard_msgs:
+
+
+
+
+  * 
+whitespace := exact requires an exact whitespace match.
+
+
+  * 
+whitespace := normalized converts all newline characters to a space before matching
+(the default). This allows breaking long lines.
+
+
+  * 
+whitespace := lax collapses whitespace to a single space before matching.
 In all cases, leading and trailing whitespace is trimmed before matching.
+
+
+
+
 whitespace := guardMsgsWhitespaceArg
 ```
 
 ```
 guardMsgsSpecElt ::= ...
-    | Message ordering for `#guard_msgs`:
-- `ordering := exact` uses the exact ordering of the messages (the default).
-- `ordering := sorted` sorts the messages in lexicographic order.
-  This helps with testing commands that are non-deterministic in their ordering.
+    | 
+
+
+Message ordering for #guard_msgs:
+
+
+
+
+  * 
+ordering := exact uses the exact ordering of the messages (the default).
+
+
+  * 
+ordering := sorted sorts the messages in lexicographic order.
+This helps with testing commands that are non-deterministic in their ordering.
+
+
+
+
 ordering := guardMsgsOrderingArg
 ```
 
-There are three kinds of options for ``Lean.guardMsgsCmd : command```/-- ... -/ #guard_msgs in cmd` captures the messages generated by the command `cmd` and checks that they match the contents of the docstring.  Basic example: ```lean /-- error: Unknown identifier `x` -/ #guard_msgs in example : α := x ``` This checks that there is such an error and then consumes the message.  By default, the command captures all messages, but the filter condition can be adjusted. For example, we can select only warnings: ```lean /-- warning: declaration uses 'sorry' -/ #guard_msgs(warning) in example : α := sorry ``` or only errors ```lean #guard_msgs(error) in example : α := sorry ``` In the previous example, since warnings are not captured there is a warning on `sorry`. We can drop the warning completely with ```lean #guard_msgs(error, drop warning) in example : α := sorry ```  In general, `#guard_msgs` accepts a comma-separated list of configuration clauses in parentheses: ``` #guard_msgs (configElt,*) in cmd ``` By default, the configuration list is `(check all, whitespace := normalized, ordering := exact, positions := false)`.  Message filters select messages by severity: - `info`, `warning`, `error`: (non-trace) messages with the given severity level. - `trace`: trace messages - `all`: all messages.  The filters can be prefixed with the action to take: - `check` (the default): capture and check the message - `drop`: drop the message - `pass`: let the message pass through  If no filter is specified, `check all` is assumed.  Otherwise, these filters are processed in left-to-right order, with an implicit `pass all` at the end.  Whitespace handling (after trimming leading and trailing whitespace): - `whitespace := exact` requires an exact whitespace match. - `whitespace := normalized` converts all newline characters to a space before matching   (the default). This allows breaking long lines. - `whitespace := lax` collapses whitespace to a single space before matching.  Message ordering: - `ordering := exact` uses the exact ordering of the messages (the default). - `ordering := sorted` sorts the messages in lexicographic order.   This helps with testing commands that are non-deterministic in their ordering.  Position reporting: - `positions := true` reports the ranges of all messages relative to the line on which   `#guard_msgs` appears. - `positions := false` does not report position info.  Substring matching: - `substring := true` checks that the docstring appears as a substring of the output   (after whitespace normalization). This is useful when you only care about part of the message. - `substring := false` (the default) requires exact matching (modulo whitespace normalization).  Stabilizing output: When messages contain autogenerated names (e.g., metavariables like `?m.47`), the output may differ between runs or Lean versions. Use `set_option pp.mvars.anonymous false` to replace anonymous metavariables with `?_` while preserving user-named metavariables like `?a`. Alternatively, `set_option pp.mvars false` replaces all metavariables with `?_`. Similarly, `set_option pp.fvars.anonymous false` replaces loose free variable names like `_fvar.22` with `_fvar._`.  For example, `#guard_msgs (error, drop all) in cmd` means to check errors and drop everything else.  The command elaborator has special support for `#guard_msgs` for linting. The `#guard_msgs` itself wants to capture linter warnings, so it elaborates the command it is attached to as if it were a top-level command. However, the command elaborator runs linters for *all* top-level commands, which would include `#guard_msgs` itself, and would cause duplicate and/or uncaptured linter warnings. The top-level command elaborator only runs the linters if `#guard_msgs` is not present. ``[`#guard_msgs`](Interacting-with-Lean/#Lean___guardMsgsCmd): filters, whitespace comparison strategies, and orderings.
+There are three kinds of options for ``Lean.guardMsgsCmd : command`
+`/-- ... -/ #guard_msgs in cmd` captures the messages generated by the command `cmd` and checks that they match the contents of the docstring.
+Basic example:
+
+```
+/--
+error: Unknown identifier `x`
+-/
+#guard_msgs in
+example : α := x
+
+```
+
+This checks that there is such an error and then consumes the message.
+By default, the command captures all messages, but the filter condition can be adjusted. For example, we can select only warnings:
+
+```
+/--
+warning: declaration uses 'sorry'
+-/
+#guard_msgs(warning) in
+example : α := sorry
+
+```
+
+or only errors
+
+```
+#guard_msgs(error) in
+example : α := sorry
+
+```
+
+In the previous example, since warnings are not captured there is a warning on `sorry`. We can drop the warning completely with
+
+```
+#guard_msgs(error, drop warning) in
+example : α := sorry
+
+```
+
+In general, `#guard_msgs` accepts a comma-separated list of configuration clauses in parentheses:
+
+```
+#guard_msgs (configElt,*) in cmd
+
+```
+
+By default, the configuration list is `(check all, whitespace := normalized, ordering := exact, positions := false)`.
+Message filters select messages by severity:
+  * `info`, `warning`, `error`: (non-trace) messages with the given severity level.
+  * `trace`: trace messages
+  * `all`: all messages.
+
+
+The filters can be prefixed with the action to take:
+  * `check` (the default): capture and check the message
+  * `drop`: drop the message
+  * `pass`: let the message pass through
+
+
+If no filter is specified, `check all` is assumed. Otherwise, these filters are processed in left-to-right order, with an implicit `pass all` at the end.
+Whitespace handling (after trimming leading and trailing whitespace):
+  * `whitespace := exact` requires an exact whitespace match.
+  * `whitespace := normalized` converts all newline characters to a space before matching (the default). This allows breaking long lines.
+  * `whitespace := lax` collapses whitespace to a single space before matching.
+
+
+Message ordering:
+  * `ordering := exact` uses the exact ordering of the messages (the default).
+  * `ordering := sorted` sorts the messages in lexicographic order. This helps with testing commands that are non-deterministic in their ordering.
+
+
+Position reporting:
+  * `positions := true` reports the ranges of all messages relative to the line on which `#guard_msgs` appears.
+  * `positions := false` does not report position info.
+
+
+Substring matching:
+  * `substring := true` checks that the docstring appears as a substring of the output (after whitespace normalization). This is useful when you only care about part of the message.
+  * `substring := false` (the default) requires exact matching (modulo whitespace normalization).
+
+
+Stabilizing output: When messages contain autogenerated names (e.g., metavariables like `?m.47`), the output may differ between runs or Lean versions. Use `set_option pp.mvars.anonymous false` to replace anonymous metavariables with `?_` while preserving user-named metavariables like `?a`. Alternatively, `set_option pp.mvars false` replaces all metavariables with `?_`. Similarly, `set_option pp.fvars.anonymous false` replaces loose free variable names like `_fvar.22` with `_fvar._`.
+For example, `#guard_msgs (error, drop all) in cmd` means to check errors and drop everything else.
+The command elaborator has special support for `#guard_msgs` for linting. The `#guard_msgs` itself wants to capture linter warnings, so it elaborates the command it is attached to as if it were a top-level command. However, the command elaborator runs linters for _all_ top-level commands, which would include `#guard_msgs` itself, and would cause duplicate and/or uncaptured linter warnings. The top-level command elaborator only runs the linters if `#guard_msgs` is not present.
+`[`#guard_msgs`](Interacting-with-Lean/#Lean___guardMsgsCmd): filters, whitespace comparison strategies, and orderings.
 syntaxOutput Filters for `#guard_msgs`
 
 ```
-A message filter specification for `#guard_msgs`.
-- `info`, `warning`, `error`: capture (non-trace) messages with the given severity level.
-- `trace`: captures trace messages
-- `all`: capture all messages.
+
+
+
+A message filter specification for #guard_msgs.
+
+
+
+
+  * 
+info, warning, error: capture (non-trace) messages with the given severity level.
+
+
+  * 
+trace: captures trace messages
+
+
+  * 
+all: capture all messages.
+
+
+
 
 The filters can be prefixed with
-- `check` (the default): capture and check the message
-- `drop`: drop the message
-- `pass`: let the message pass through
 
-If no filter is specified, `check all` is assumed.  Otherwise, these filters are processed in
-left-to-right order, with an implicit `pass all` at the end.
+
+
+
+  * 
+check (the default): capture and check the message
+
+
+  * 
+drop: drop the message
+
+
+  * 
+pass: let the message pass through
+
+
+
+
+If no filter is specified, check all is assumed.  Otherwise, these filters are processed in
+left-to-right order, with an implicit pass all at the end.
+
+
 guardMsgsFilter ::=
-    A message filter specification for `#guard_msgs`.
-- `info`, `warning`, `error`: capture (non-trace) messages with the given severity level.
-- `trace`: captures trace messages
-- `all`: capture all messages.
+    
+
+
+A message filter specification for #guard_msgs.
+
+
+
+
+  * 
+info, warning, error: capture (non-trace) messages with the given severity level.
+
+
+  * 
+trace: captures trace messages
+
+
+  * 
+all: capture all messages.
+
+
+
 
 The filters can be prefixed with
-- `check` (the default): capture and check the message
-- `drop`: drop the message
-- `pass`: let the message pass through
 
-If no filter is specified, `check all` is assumed.  Otherwise, these filters are processed in
-left-to-right order, with an implicit `pass all` at the end.
+
+
+
+  * 
+check (the default): capture and check the message
+
+
+  * 
+drop: drop the message
+
+
+  * 
+pass: let the message pass through
+
+
+
+
+If no filter is specified, check all is assumed.  Otherwise, these filters are processed in
+left-to-right order, with an implicit pass all at the end.
+
+
 drop? all
 ```
 
 ```
-A message filter specification for `#guard_msgs`.
-- `info`, `warning`, `error`: capture (non-trace) messages with the given severity level.
-- `trace`: captures trace messages
-- `all`: capture all messages.
+
+
+
+A message filter specification for #guard_msgs.
+
+
+
+
+  * 
+info, warning, error: capture (non-trace) messages with the given severity level.
+
+
+  * 
+trace: captures trace messages
+
+
+  * 
+all: capture all messages.
+
+
+
 
 The filters can be prefixed with
-- `check` (the default): capture and check the message
-- `drop`: drop the message
-- `pass`: let the message pass through
 
-If no filter is specified, `check all` is assumed.  Otherwise, these filters are processed in
-left-to-right order, with an implicit `pass all` at the end.
+
+
+
+  * 
+check (the default): capture and check the message
+
+
+  * 
+drop: drop the message
+
+
+  * 
+pass: let the message pass through
+
+
+
+
+If no filter is specified, check all is assumed.  Otherwise, these filters are processed in
+left-to-right order, with an implicit pass all at the end.
+
+
 guardMsgsFilter ::= ...
-    | A message filter specification for `#guard_msgs`.
-- `info`, `warning`, `error`: capture (non-trace) messages with the given severity level.
-- `trace`: captures trace messages
-- `all`: capture all messages.
+    | 
+
+
+A message filter specification for #guard_msgs.
+
+
+
+
+  * 
+info, warning, error: capture (non-trace) messages with the given severity level.
+
+
+  * 
+trace: captures trace messages
+
+
+  * 
+all: capture all messages.
+
+
+
 
 The filters can be prefixed with
-- `check` (the default): capture and check the message
-- `drop`: drop the message
-- `pass`: let the message pass through
 
-If no filter is specified, `check all` is assumed.  Otherwise, these filters are processed in
-left-to-right order, with an implicit `pass all` at the end.
+
+
+
+  * 
+check (the default): capture and check the message
+
+
+  * 
+drop: drop the message
+
+
+  * 
+pass: let the message pass through
+
+
+
+
+If no filter is specified, check all is assumed.  Otherwise, these filters are processed in
+left-to-right order, with an implicit pass all at the end.
+
+
 drop? info
 ```
 
 ```
-A message filter specification for `#guard_msgs`.
-- `info`, `warning`, `error`: capture (non-trace) messages with the given severity level.
-- `trace`: captures trace messages
-- `all`: capture all messages.
+
+
+
+A message filter specification for #guard_msgs.
+
+
+
+
+  * 
+info, warning, error: capture (non-trace) messages with the given severity level.
+
+
+  * 
+trace: captures trace messages
+
+
+  * 
+all: capture all messages.
+
+
+
 
 The filters can be prefixed with
-- `check` (the default): capture and check the message
-- `drop`: drop the message
-- `pass`: let the message pass through
 
-If no filter is specified, `check all` is assumed.  Otherwise, these filters are processed in
-left-to-right order, with an implicit `pass all` at the end.
+
+
+
+  * 
+check (the default): capture and check the message
+
+
+  * 
+drop: drop the message
+
+
+  * 
+pass: let the message pass through
+
+
+
+
+If no filter is specified, check all is assumed.  Otherwise, these filters are processed in
+left-to-right order, with an implicit pass all at the end.
+
+
 guardMsgsFilter ::= ...
-    | A message filter specification for `#guard_msgs`.
-- `info`, `warning`, `error`: capture (non-trace) messages with the given severity level.
-- `trace`: captures trace messages
-- `all`: capture all messages.
+    | 
+
+
+A message filter specification for #guard_msgs.
+
+
+
+
+  * 
+info, warning, error: capture (non-trace) messages with the given severity level.
+
+
+  * 
+trace: captures trace messages
+
+
+  * 
+all: capture all messages.
+
+
+
 
 The filters can be prefixed with
-- `check` (the default): capture and check the message
-- `drop`: drop the message
-- `pass`: let the message pass through
 
-If no filter is specified, `check all` is assumed.  Otherwise, these filters are processed in
-left-to-right order, with an implicit `pass all` at the end.
+
+
+
+  * 
+check (the default): capture and check the message
+
+
+  * 
+drop: drop the message
+
+
+  * 
+pass: let the message pass through
+
+
+
+
+If no filter is specified, check all is assumed.  Otherwise, these filters are processed in
+left-to-right order, with an implicit pass all at the end.
+
+
 drop? warning
 ```
 
 ```
-A message filter specification for `#guard_msgs`.
-- `info`, `warning`, `error`: capture (non-trace) messages with the given severity level.
-- `trace`: captures trace messages
-- `all`: capture all messages.
+
+
+
+A message filter specification for #guard_msgs.
+
+
+
+
+  * 
+info, warning, error: capture (non-trace) messages with the given severity level.
+
+
+  * 
+trace: captures trace messages
+
+
+  * 
+all: capture all messages.
+
+
+
 
 The filters can be prefixed with
-- `check` (the default): capture and check the message
-- `drop`: drop the message
-- `pass`: let the message pass through
 
-If no filter is specified, `check all` is assumed.  Otherwise, these filters are processed in
-left-to-right order, with an implicit `pass all` at the end.
+
+
+
+  * 
+check (the default): capture and check the message
+
+
+  * 
+drop: drop the message
+
+
+  * 
+pass: let the message pass through
+
+
+
+
+If no filter is specified, check all is assumed.  Otherwise, these filters are processed in
+left-to-right order, with an implicit pass all at the end.
+
+
 guardMsgsFilter ::= ...
-    | A message filter specification for `#guard_msgs`.
-- `info`, `warning`, `error`: capture (non-trace) messages with the given severity level.
-- `trace`: captures trace messages
-- `all`: capture all messages.
+    | 
+
+
+A message filter specification for #guard_msgs.
+
+
+
+
+  * 
+info, warning, error: capture (non-trace) messages with the given severity level.
+
+
+  * 
+trace: captures trace messages
+
+
+  * 
+all: capture all messages.
+
+
+
 
 The filters can be prefixed with
-- `check` (the default): capture and check the message
-- `drop`: drop the message
-- `pass`: let the message pass through
 
-If no filter is specified, `check all` is assumed.  Otherwise, these filters are processed in
-left-to-right order, with an implicit `pass all` at the end.
+
+
+
+  * 
+check (the default): capture and check the message
+
+
+  * 
+drop: drop the message
+
+
+  * 
+pass: let the message pass through
+
+
+
+
+If no filter is specified, check all is assumed.  Otherwise, these filters are processed in
+left-to-right order, with an implicit pass all at the end.
+
+
 drop? error
 ```
 
@@ -803,7 +1616,265 @@ Leading and trailing whitespace is always ignored when comparing messages. On to
   * `whitespace := lax` collapses whitespace to a single space before matching.
 
 
-The option `[guard_msgs.diff](Interacting-with-Lean/#guard_msgs___diff "Documentation for option guard_msgs.diff")` controls the content of the error message that ``Lean.guardMsgsCmd : command```/-- ... -/ #guard_msgs in cmd` captures the messages generated by the command `cmd` and checks that they match the contents of the docstring.  Basic example: ```lean /-- error: Unknown identifier `x` -/ #guard_msgs in example : α := x ``` This checks that there is such an error and then consumes the message.  By default, the command captures all messages, but the filter condition can be adjusted. For example, we can select only warnings: ```lean /-- warning: declaration uses 'sorry' -/ #guard_msgs(warning) in example : α := sorry ``` or only errors ```lean #guard_msgs(error) in example : α := sorry ``` In the previous example, since warnings are not captured there is a warning on `sorry`. We can drop the warning completely with ```lean #guard_msgs(error, drop warning) in example : α := sorry ```  In general, `#guard_msgs` accepts a comma-separated list of configuration clauses in parentheses: ``` #guard_msgs (configElt,*) in cmd ``` By default, the configuration list is `(check all, whitespace := normalized, ordering := exact, positions := false)`.  Message filters select messages by severity: - `info`, `warning`, `error`: (non-trace) messages with the given severity level. - `trace`: trace messages - `all`: all messages.  The filters can be prefixed with the action to take: - `check` (the default): capture and check the message - `drop`: drop the message - `pass`: let the message pass through  If no filter is specified, `check all` is assumed.  Otherwise, these filters are processed in left-to-right order, with an implicit `pass all` at the end.  Whitespace handling (after trimming leading and trailing whitespace): - `whitespace := exact` requires an exact whitespace match. - `whitespace := normalized` converts all newline characters to a space before matching   (the default). This allows breaking long lines. - `whitespace := lax` collapses whitespace to a single space before matching.  Message ordering: - `ordering := exact` uses the exact ordering of the messages (the default). - `ordering := sorted` sorts the messages in lexicographic order.   This helps with testing commands that are non-deterministic in their ordering.  Position reporting: - `positions := true` reports the ranges of all messages relative to the line on which   `#guard_msgs` appears. - `positions := false` does not report position info.  Substring matching: - `substring := true` checks that the docstring appears as a substring of the output   (after whitespace normalization). This is useful when you only care about part of the message. - `substring := false` (the default) requires exact matching (modulo whitespace normalization).  Stabilizing output: When messages contain autogenerated names (e.g., metavariables like `?m.47`), the output may differ between runs or Lean versions. Use `set_option pp.mvars.anonymous false` to replace anonymous metavariables with `?_` while preserving user-named metavariables like `?a`. Alternatively, `set_option pp.mvars false` replaces all metavariables with `?_`. Similarly, `set_option pp.fvars.anonymous false` replaces loose free variable names like `_fvar.22` with `_fvar._`.  For example, `#guard_msgs (error, drop all) in cmd` means to check errors and drop everything else.  The command elaborator has special support for `#guard_msgs` for linting. The `#guard_msgs` itself wants to capture linter warnings, so it elaborates the command it is attached to as if it were a top-level command. However, the command elaborator runs linters for *all* top-level commands, which would include `#guard_msgs` itself, and would cause duplicate and/or uncaptured linter warnings. The top-level command elaborator only runs the linters if `#guard_msgs` is not present. ``[`#guard_msgs`](Interacting-with-Lean/#Lean___guardMsgsCmd) produces when the expected message doesn't match the produced message. By default, ``Lean.guardMsgsCmd : command```/-- ... -/ #guard_msgs in cmd` captures the messages generated by the command `cmd` and checks that they match the contents of the docstring.  Basic example: ```lean /-- error: Unknown identifier `x` -/ #guard_msgs in example : α := x ``` This checks that there is such an error and then consumes the message.  By default, the command captures all messages, but the filter condition can be adjusted. For example, we can select only warnings: ```lean /-- warning: declaration uses 'sorry' -/ #guard_msgs(warning) in example : α := sorry ``` or only errors ```lean #guard_msgs(error) in example : α := sorry ``` In the previous example, since warnings are not captured there is a warning on `sorry`. We can drop the warning completely with ```lean #guard_msgs(error, drop warning) in example : α := sorry ```  In general, `#guard_msgs` accepts a comma-separated list of configuration clauses in parentheses: ``` #guard_msgs (configElt,*) in cmd ``` By default, the configuration list is `(check all, whitespace := normalized, ordering := exact, positions := false)`.  Message filters select messages by severity: - `info`, `warning`, `error`: (non-trace) messages with the given severity level. - `trace`: trace messages - `all`: all messages.  The filters can be prefixed with the action to take: - `check` (the default): capture and check the message - `drop`: drop the message - `pass`: let the message pass through  If no filter is specified, `check all` is assumed.  Otherwise, these filters are processed in left-to-right order, with an implicit `pass all` at the end.  Whitespace handling (after trimming leading and trailing whitespace): - `whitespace := exact` requires an exact whitespace match. - `whitespace := normalized` converts all newline characters to a space before matching   (the default). This allows breaking long lines. - `whitespace := lax` collapses whitespace to a single space before matching.  Message ordering: - `ordering := exact` uses the exact ordering of the messages (the default). - `ordering := sorted` sorts the messages in lexicographic order.   This helps with testing commands that are non-deterministic in their ordering.  Position reporting: - `positions := true` reports the ranges of all messages relative to the line on which   `#guard_msgs` appears. - `positions := false` does not report position info.  Substring matching: - `substring := true` checks that the docstring appears as a substring of the output   (after whitespace normalization). This is useful when you only care about part of the message. - `substring := false` (the default) requires exact matching (modulo whitespace normalization).  Stabilizing output: When messages contain autogenerated names (e.g., metavariables like `?m.47`), the output may differ between runs or Lean versions. Use `set_option pp.mvars.anonymous false` to replace anonymous metavariables with `?_` while preserving user-named metavariables like `?a`. Alternatively, `set_option pp.mvars false` replaces all metavariables with `?_`. Similarly, `set_option pp.fvars.anonymous false` replaces loose free variable names like `_fvar.22` with `_fvar._`.  For example, `#guard_msgs (error, drop all) in cmd` means to check errors and drop everything else.  The command elaborator has special support for `#guard_msgs` for linting. The `#guard_msgs` itself wants to capture linter warnings, so it elaborates the command it is attached to as if it were a top-level command. However, the command elaborator runs linters for *all* top-level commands, which would include `#guard_msgs` itself, and would cause duplicate and/or uncaptured linter warnings. The top-level command elaborator only runs the linters if `#guard_msgs` is not present. ``[`#guard_msgs`](Interacting-with-Lean/#Lean___guardMsgsCmd) shows a line-by-line difference, with a leading `+` used to indicate lines from the produced message and a leading `-` used to indicate lines from the expected message. When messages are large and only differ by a small amount, this can make it easier to notice where they differ. Setting `[guard_msgs.diff](Interacting-with-Lean/#guard_msgs___diff "Documentation for option guard_msgs.diff")` to `false` causes ``Lean.guardMsgsCmd : command```/-- ... -/ #guard_msgs in cmd` captures the messages generated by the command `cmd` and checks that they match the contents of the docstring.  Basic example: ```lean /-- error: Unknown identifier `x` -/ #guard_msgs in example : α := x ``` This checks that there is such an error and then consumes the message.  By default, the command captures all messages, but the filter condition can be adjusted. For example, we can select only warnings: ```lean /-- warning: declaration uses 'sorry' -/ #guard_msgs(warning) in example : α := sorry ``` or only errors ```lean #guard_msgs(error) in example : α := sorry ``` In the previous example, since warnings are not captured there is a warning on `sorry`. We can drop the warning completely with ```lean #guard_msgs(error, drop warning) in example : α := sorry ```  In general, `#guard_msgs` accepts a comma-separated list of configuration clauses in parentheses: ``` #guard_msgs (configElt,*) in cmd ``` By default, the configuration list is `(check all, whitespace := normalized, ordering := exact, positions := false)`.  Message filters select messages by severity: - `info`, `warning`, `error`: (non-trace) messages with the given severity level. - `trace`: trace messages - `all`: all messages.  The filters can be prefixed with the action to take: - `check` (the default): capture and check the message - `drop`: drop the message - `pass`: let the message pass through  If no filter is specified, `check all` is assumed.  Otherwise, these filters are processed in left-to-right order, with an implicit `pass all` at the end.  Whitespace handling (after trimming leading and trailing whitespace): - `whitespace := exact` requires an exact whitespace match. - `whitespace := normalized` converts all newline characters to a space before matching   (the default). This allows breaking long lines. - `whitespace := lax` collapses whitespace to a single space before matching.  Message ordering: - `ordering := exact` uses the exact ordering of the messages (the default). - `ordering := sorted` sorts the messages in lexicographic order.   This helps with testing commands that are non-deterministic in their ordering.  Position reporting: - `positions := true` reports the ranges of all messages relative to the line on which   `#guard_msgs` appears. - `positions := false` does not report position info.  Substring matching: - `substring := true` checks that the docstring appears as a substring of the output   (after whitespace normalization). This is useful when you only care about part of the message. - `substring := false` (the default) requires exact matching (modulo whitespace normalization).  Stabilizing output: When messages contain autogenerated names (e.g., metavariables like `?m.47`), the output may differ between runs or Lean versions. Use `set_option pp.mvars.anonymous false` to replace anonymous metavariables with `?_` while preserving user-named metavariables like `?a`. Alternatively, `set_option pp.mvars false` replaces all metavariables with `?_`. Similarly, `set_option pp.fvars.anonymous false` replaces loose free variable names like `_fvar.22` with `_fvar._`.  For example, `#guard_msgs (error, drop all) in cmd` means to check errors and drop everything else.  The command elaborator has special support for `#guard_msgs` for linting. The `#guard_msgs` itself wants to capture linter warnings, so it elaborates the command it is attached to as if it were a top-level command. However, the command elaborator runs linters for *all* top-level commands, which would include `#guard_msgs` itself, and would cause duplicate and/or uncaptured linter warnings. The top-level command elaborator only runs the linters if `#guard_msgs` is not present. ``[`#guard_msgs`](Interacting-with-Lean/#Lean___guardMsgsCmd) to instead show just the produced message, which can be compared with the expected message in the source file. This can be convenient if the difference between the message is confusing or overwhelming.
+The option `[guard_msgs.diff](Interacting-with-Lean/#guard_msgs___diff "Documentation for option guard_msgs.diff")` controls the content of the error message that ``Lean.guardMsgsCmd : command`
+`/-- ... -/ #guard_msgs in cmd` captures the messages generated by the command `cmd` and checks that they match the contents of the docstring.
+Basic example:
+
+```
+/--
+error: Unknown identifier `x`
+-/
+#guard_msgs in
+example : α := x
+
+```
+
+This checks that there is such an error and then consumes the message.
+By default, the command captures all messages, but the filter condition can be adjusted. For example, we can select only warnings:
+
+```
+/--
+warning: declaration uses 'sorry'
+-/
+#guard_msgs(warning) in
+example : α := sorry
+
+```
+
+or only errors
+
+```
+#guard_msgs(error) in
+example : α := sorry
+
+```
+
+In the previous example, since warnings are not captured there is a warning on `sorry`. We can drop the warning completely with
+
+```
+#guard_msgs(error, drop warning) in
+example : α := sorry
+
+```
+
+In general, `#guard_msgs` accepts a comma-separated list of configuration clauses in parentheses:
+
+```
+#guard_msgs (configElt,*) in cmd
+
+```
+
+By default, the configuration list is `(check all, whitespace := normalized, ordering := exact, positions := false)`.
+Message filters select messages by severity:
+  * `info`, `warning`, `error`: (non-trace) messages with the given severity level.
+  * `trace`: trace messages
+  * `all`: all messages.
+
+
+The filters can be prefixed with the action to take:
+  * `check` (the default): capture and check the message
+  * `drop`: drop the message
+  * `pass`: let the message pass through
+
+
+If no filter is specified, `check all` is assumed. Otherwise, these filters are processed in left-to-right order, with an implicit `pass all` at the end.
+Whitespace handling (after trimming leading and trailing whitespace):
+  * `whitespace := exact` requires an exact whitespace match.
+  * `whitespace := normalized` converts all newline characters to a space before matching (the default). This allows breaking long lines.
+  * `whitespace := lax` collapses whitespace to a single space before matching.
+
+
+Message ordering:
+  * `ordering := exact` uses the exact ordering of the messages (the default).
+  * `ordering := sorted` sorts the messages in lexicographic order. This helps with testing commands that are non-deterministic in their ordering.
+
+
+Position reporting:
+  * `positions := true` reports the ranges of all messages relative to the line on which `#guard_msgs` appears.
+  * `positions := false` does not report position info.
+
+
+Substring matching:
+  * `substring := true` checks that the docstring appears as a substring of the output (after whitespace normalization). This is useful when you only care about part of the message.
+  * `substring := false` (the default) requires exact matching (modulo whitespace normalization).
+
+
+Stabilizing output: When messages contain autogenerated names (e.g., metavariables like `?m.47`), the output may differ between runs or Lean versions. Use `set_option pp.mvars.anonymous false` to replace anonymous metavariables with `?_` while preserving user-named metavariables like `?a`. Alternatively, `set_option pp.mvars false` replaces all metavariables with `?_`. Similarly, `set_option pp.fvars.anonymous false` replaces loose free variable names like `_fvar.22` with `_fvar._`.
+For example, `#guard_msgs (error, drop all) in cmd` means to check errors and drop everything else.
+The command elaborator has special support for `#guard_msgs` for linting. The `#guard_msgs` itself wants to capture linter warnings, so it elaborates the command it is attached to as if it were a top-level command. However, the command elaborator runs linters for _all_ top-level commands, which would include `#guard_msgs` itself, and would cause duplicate and/or uncaptured linter warnings. The top-level command elaborator only runs the linters if `#guard_msgs` is not present.
+`[`#guard_msgs`](Interacting-with-Lean/#Lean___guardMsgsCmd) produces when the expected message doesn't match the produced message. By default, ``Lean.guardMsgsCmd : command`
+`/-- ... -/ #guard_msgs in cmd` captures the messages generated by the command `cmd` and checks that they match the contents of the docstring.
+Basic example:
+
+```
+/--
+error: Unknown identifier `x`
+-/
+#guard_msgs in
+example : α := x
+
+```
+
+This checks that there is such an error and then consumes the message.
+By default, the command captures all messages, but the filter condition can be adjusted. For example, we can select only warnings:
+
+```
+/--
+warning: declaration uses 'sorry'
+-/
+#guard_msgs(warning) in
+example : α := sorry
+
+```
+
+or only errors
+
+```
+#guard_msgs(error) in
+example : α := sorry
+
+```
+
+In the previous example, since warnings are not captured there is a warning on `sorry`. We can drop the warning completely with
+
+```
+#guard_msgs(error, drop warning) in
+example : α := sorry
+
+```
+
+In general, `#guard_msgs` accepts a comma-separated list of configuration clauses in parentheses:
+
+```
+#guard_msgs (configElt,*) in cmd
+
+```
+
+By default, the configuration list is `(check all, whitespace := normalized, ordering := exact, positions := false)`.
+Message filters select messages by severity:
+  * `info`, `warning`, `error`: (non-trace) messages with the given severity level.
+  * `trace`: trace messages
+  * `all`: all messages.
+
+
+The filters can be prefixed with the action to take:
+  * `check` (the default): capture and check the message
+  * `drop`: drop the message
+  * `pass`: let the message pass through
+
+
+If no filter is specified, `check all` is assumed. Otherwise, these filters are processed in left-to-right order, with an implicit `pass all` at the end.
+Whitespace handling (after trimming leading and trailing whitespace):
+  * `whitespace := exact` requires an exact whitespace match.
+  * `whitespace := normalized` converts all newline characters to a space before matching (the default). This allows breaking long lines.
+  * `whitespace := lax` collapses whitespace to a single space before matching.
+
+
+Message ordering:
+  * `ordering := exact` uses the exact ordering of the messages (the default).
+  * `ordering := sorted` sorts the messages in lexicographic order. This helps with testing commands that are non-deterministic in their ordering.
+
+
+Position reporting:
+  * `positions := true` reports the ranges of all messages relative to the line on which `#guard_msgs` appears.
+  * `positions := false` does not report position info.
+
+
+Substring matching:
+  * `substring := true` checks that the docstring appears as a substring of the output (after whitespace normalization). This is useful when you only care about part of the message.
+  * `substring := false` (the default) requires exact matching (modulo whitespace normalization).
+
+
+Stabilizing output: When messages contain autogenerated names (e.g., metavariables like `?m.47`), the output may differ between runs or Lean versions. Use `set_option pp.mvars.anonymous false` to replace anonymous metavariables with `?_` while preserving user-named metavariables like `?a`. Alternatively, `set_option pp.mvars false` replaces all metavariables with `?_`. Similarly, `set_option pp.fvars.anonymous false` replaces loose free variable names like `_fvar.22` with `_fvar._`.
+For example, `#guard_msgs (error, drop all) in cmd` means to check errors and drop everything else.
+The command elaborator has special support for `#guard_msgs` for linting. The `#guard_msgs` itself wants to capture linter warnings, so it elaborates the command it is attached to as if it were a top-level command. However, the command elaborator runs linters for _all_ top-level commands, which would include `#guard_msgs` itself, and would cause duplicate and/or uncaptured linter warnings. The top-level command elaborator only runs the linters if `#guard_msgs` is not present.
+`[`#guard_msgs`](Interacting-with-Lean/#Lean___guardMsgsCmd) shows a line-by-line difference, with a leading `+` used to indicate lines from the produced message and a leading `-` used to indicate lines from the expected message. When messages are large and only differ by a small amount, this can make it easier to notice where they differ. Setting `[guard_msgs.diff](Interacting-with-Lean/#guard_msgs___diff "Documentation for option guard_msgs.diff")` to `false` causes ``Lean.guardMsgsCmd : command`
+`/-- ... -/ #guard_msgs in cmd` captures the messages generated by the command `cmd` and checks that they match the contents of the docstring.
+Basic example:
+
+```
+/--
+error: Unknown identifier `x`
+-/
+#guard_msgs in
+example : α := x
+
+```
+
+This checks that there is such an error and then consumes the message.
+By default, the command captures all messages, but the filter condition can be adjusted. For example, we can select only warnings:
+
+```
+/--
+warning: declaration uses 'sorry'
+-/
+#guard_msgs(warning) in
+example : α := sorry
+
+```
+
+or only errors
+
+```
+#guard_msgs(error) in
+example : α := sorry
+
+```
+
+In the previous example, since warnings are not captured there is a warning on `sorry`. We can drop the warning completely with
+
+```
+#guard_msgs(error, drop warning) in
+example : α := sorry
+
+```
+
+In general, `#guard_msgs` accepts a comma-separated list of configuration clauses in parentheses:
+
+```
+#guard_msgs (configElt,*) in cmd
+
+```
+
+By default, the configuration list is `(check all, whitespace := normalized, ordering := exact, positions := false)`.
+Message filters select messages by severity:
+  * `info`, `warning`, `error`: (non-trace) messages with the given severity level.
+  * `trace`: trace messages
+  * `all`: all messages.
+
+
+The filters can be prefixed with the action to take:
+  * `check` (the default): capture and check the message
+  * `drop`: drop the message
+  * `pass`: let the message pass through
+
+
+If no filter is specified, `check all` is assumed. Otherwise, these filters are processed in left-to-right order, with an implicit `pass all` at the end.
+Whitespace handling (after trimming leading and trailing whitespace):
+  * `whitespace := exact` requires an exact whitespace match.
+  * `whitespace := normalized` converts all newline characters to a space before matching (the default). This allows breaking long lines.
+  * `whitespace := lax` collapses whitespace to a single space before matching.
+
+
+Message ordering:
+  * `ordering := exact` uses the exact ordering of the messages (the default).
+  * `ordering := sorted` sorts the messages in lexicographic order. This helps with testing commands that are non-deterministic in their ordering.
+
+
+Position reporting:
+  * `positions := true` reports the ranges of all messages relative to the line on which `#guard_msgs` appears.
+  * `positions := false` does not report position info.
+
+
+Substring matching:
+  * `substring := true` checks that the docstring appears as a substring of the output (after whitespace normalization). This is useful when you only care about part of the message.
+  * `substring := false` (the default) requires exact matching (modulo whitespace normalization).
+
+
+Stabilizing output: When messages contain autogenerated names (e.g., metavariables like `?m.47`), the output may differ between runs or Lean versions. Use `set_option pp.mvars.anonymous false` to replace anonymous metavariables with `?_` while preserving user-named metavariables like `?a`. Alternatively, `set_option pp.mvars false` replaces all metavariables with `?_`. Similarly, `set_option pp.fvars.anonymous false` replaces loose free variable names like `_fvar.22` with `_fvar._`.
+For example, `#guard_msgs (error, drop all) in cmd` means to check errors and drop everything else.
+The command elaborator has special support for `#guard_msgs` for linting. The `#guard_msgs` itself wants to capture linter warnings, so it elaborates the command it is attached to as if it were a top-level command. However, the command elaborator runs linters for _all_ top-level commands, which would include `#guard_msgs` itself, and would cause duplicate and/or uncaptured linter warnings. The top-level command elaborator only runs the linters if `#guard_msgs` is not present.
+`[`#guard_msgs`](Interacting-with-Lean/#Lean___guardMsgsCmd) to instead show just the produced message, which can be compared with the expected message in the source file. This can be convenient if the difference between the message is confusing or overwhelming.
 [🔗](find/?domain=Verso.Genre.Manual.doc.option&name=guard_msgs.diff "Permalink")option
 ```
 guard_msgs.diff
@@ -812,7 +1883,8 @@ guard_msgs.diff
 Default value: `[true](Basic-Types/Booleans/#Bool___false "Documentation for Bool.true")`
 When true, show a diff between expected and actual messages if they don't match.
 Displaying Differences
-The ``Lean.guardMsgsCmd : command```/-- ... -/ #guard_msgs in cmd` captures the messages generated by the command `cmd` and checks that they match the contents of the docstring.  Basic example: ```lean /-- error: Unknown identifier `x` -/ #guard_msgs in example : α := x ``` This checks that there is such an error and then consumes the message.  By default, the command captures all messages, but the filter condition can be adjusted. For example, we can select only warnings: ```lean /-- warning: declaration uses 'sorry' -/ #guard_msgs(warning) in example : α := sorry ``` or only errors ```lean #guard_msgs(error) in example : α := sorry ``` In the previous example, since warnings are not captured there is a warning on `sorry`. We can drop the warning completely with ```lean #guard_msgs(error, drop warning) in example : α := sorry ```  In general, `#guard_msgs` accepts a comma-separated list of configuration clauses in parentheses: ``` #guard_msgs (configElt,*) in cmd ``` By default, the configuration list is `(check all, whitespace := normalized, ordering := exact, positions := false)`.  Message filters select messages by severity: - `info`, `warning`, `error`: (non-trace) messages with the given severity level. - `trace`: trace messages - `all`: all messages.  The filters can be prefixed with the action to take: - `check` (the default): capture and check the message - `drop`: drop the message - `pass`: let the message pass through  If no filter is specified, `check all` is assumed.  Otherwise, these filters are processed in left-to-right order, with an implicit `pass all` at the end.  Whitespace handling (after trimming leading and trailing whitespace): - `whitespace := exact` requires an exact whitespace match. - `whitespace := normalized` converts all newline characters to a space before matching   (the default). This allows breaking long lines. - `whitespace := lax` collapses whitespace to a single space before matching.  Message ordering: - `ordering := exact` uses the exact ordering of the messages (the default). - `ordering := sorted` sorts the messages in lexicographic order.   This helps with testing commands that are non-deterministic in their ordering.  Position reporting: - `positions := true` reports the ranges of all messages relative to the line on which   `#guard_msgs` appears. - `positions := false` does not report position info.  Substring matching: - `substring := true` checks that the docstring appears as a substring of the output   (after whitespace normalization). This is useful when you only care about part of the message. - `substring := false` (the default) requires exact matching (modulo whitespace normalization).  Stabilizing output: When messages contain autogenerated names (e.g., metavariables like `?m.47`), the output may differ between runs or Lean versions. Use `set_option pp.mvars.anonymous false` to replace anonymous metavariables with `?_` while preserving user-named metavariables like `?a`. Alternatively, `set_option pp.mvars false` replaces all metavariables with `?_`. Similarly, `set_option pp.fvars.anonymous false` replaces loose free variable names like `_fvar.22` with `_fvar._`.  For example, `#guard_msgs (error, drop all) in cmd` means to check errors and drop everything else.  The command elaborator has special support for `#guard_msgs` for linting. The `#guard_msgs` itself wants to capture linter warnings, so it elaborates the command it is attached to as if it were a top-level command. However, the command elaborator runs linters for *all* top-level commands, which would include `#guard_msgs` itself, and would cause duplicate and/or uncaptured linter warnings. The top-level command elaborator only runs the linters if `#guard_msgs` is not present. ``[`#guard_msgs`](Interacting-with-Lean/#Lean___guardMsgsCmd) command can be used to test definition of a rose tree `[Tree](Interacting-with-Lean/#Tree-_LPAR_in-Displaying-Differences_RPAR_ "Definition of example")` and a function `[Tree.big](Interacting-with-Lean/#Tree___big-_LPAR_in-Displaying-Differences_RPAR_ "Definition of example")` that creates them:
+The ``Lean.guardMsgsCmd : command`
+`[`#guard_msgs`](Interacting-with-Lean/#Lean___guardMsgsCmd) command can be used to test definition of a rose tree `[Tree](Interacting-with-Lean/#Tree-_LPAR_in-Displaying-Differences_RPAR_ "Definition of example")` and a function `[Tree.big](Interacting-with-Lean/#Tree___big-_LPAR_in-Displaying-Differences_RPAR_ "Definition of example")` that creates them:
 `inductive Tree (α : Type u) : Type u where   | val : α → [Tree](Interacting-with-Lean/#Tree-_LPAR_in-Displaying-Differences_RPAR_ "Definition of example") α   | branches : [List](Basic-Types/Linked-Lists/#List___nil "Documentation for List") ([Tree](Interacting-with-Lean/#Tree-_LPAR_in-Displaying-Differences_RPAR_ "Definition of example") α) → [Tree](Interacting-with-Lean/#Tree-_LPAR_in-Displaying-Differences_RPAR_ "Definition of example") α  def Tree.big (n : [Nat](Basic-Types/Natural-Numbers/#Nat___zero "Documentation for Nat")) : [Tree](Interacting-with-Lean/#Tree-_LPAR_in-Displaying-Differences_RPAR_ "Definition of example") [Nat](Basic-Types/Natural-Numbers/#Nat___zero "Documentation for Nat") :=   [if](Terms/Conditionals/#termIfThenElse "Documentation for syntax") n < 5 [then](Terms/Conditionals/#termIfThenElse "Documentation for syntax") [.branches](Interacting-with-Lean/#Tree___branches-_LPAR_in-Displaying-Differences_RPAR_ "Definition of example") [[.val](Interacting-with-Lean/#Tree___val-_LPAR_in-Displaying-Differences_RPAR_ "Definition of example") n, [.val](Interacting-with-Lean/#Tree___val-_LPAR_in-Displaying-Differences_RPAR_ "Definition of example") (n - 1), [.val](Interacting-with-Lean/#Tree___val-_LPAR_in-Displaying-Differences_RPAR_ "Definition of example") n, [.val](Interacting-with-Lean/#Tree___val-_LPAR_in-Displaying-Differences_RPAR_ "Definition of example") (n - 2)]   [else](Terms/Conditionals/#termIfThenElse "Documentation for syntax") [.branches](Interacting-with-Lean/#Tree___branches-_LPAR_in-Displaying-Differences_RPAR_ "Definition of example") [[.big](Interacting-with-Lean/#Tree___big-_LPAR_in-Displaying-Differences_RPAR_ "Definition of example") (n / 2),  [.big](Interacting-with-Lean/#Tree___big-_LPAR_in-Displaying-Differences_RPAR_ "Definition of example") (n / 3)] `
 However, it can be difficult to spot where test failures come from when the output is large:
 `set_option [guard_msgs.diff](Interacting-with-Lean/#guard_msgs___diff "Documentation for option guard_msgs.diff") false /-- info: Tree.branches   [Tree.branches      [Tree.branches         [Tree.branches [Tree.val 2, Tree.val 1, Tree.val 2, Tree.val 0],          Tree.branches [Tree.val 1, Tree.val 0, Tree.val 1, Tree.val 0],       Tree.branches [Tree.val 3, Tree.val 2, Tree.val 3, Tree.val 1]],    Tree.branches      [Tree.branches [Tree.val 3, Tree.val 2, Tree.val 3, Tree.val 1],       Tree.branches [Tree.val 2, Tree.val 1, Tree.val 2, Tree.val 0]]] -/ `❌️ Docstring on `#guard_msgs` does not match generated message:  info: Tree.branches   [Tree.branches      [Tree.branches         [Tree.branches [Tree.val 2, Tree.val 1, Tree.val 2, Tree.val 0],          Tree.branches [Tree.val 1, Tree.val 0, Tree.val 1, Tree.val 0]],       Tree.branches [Tree.val 3, Tree.val 2, Tree.val 3, Tree.val 1]],    Tree.branches      [Tree.branches [Tree.val 3, Tree.val 2, Tree.val 3, Tree.val 1],       Tree.branches [Tree.val 2, Tree.val 1, Tree.val 2, Tree.val 0]]]`[#guard_msgs](Interacting-with-Lean/#Lean___guardMsgsCmd "Documentation for syntax") [in](Interacting-with-Lean/#Lean___guardMsgsCmd "Documentation for syntax") `Tree.branches   [Tree.branches      [Tree.branches         [Tree.branches [Tree.val 2, Tree.val 1, Tree.val 2, Tree.val 0],          Tree.branches [Tree.val 1, Tree.val 0, Tree.val 1, Tree.val 0]],       Tree.branches [Tree.val 3, Tree.val 2, Tree.val 3, Tree.val 1]],    Tree.branches      [Tree.branches [Tree.val 3, Tree.val 2, Tree.val 3, Tree.val 1],       Tree.branches [Tree.val 2, Tree.val 1, Tree.val 2, Tree.val 0]]]`[#eval](Interacting-with-Lean/#Lean___Parser___Command___eval "Documentation for syntax") [Tree.big](Interacting-with-Lean/#Tree___big-_LPAR_in-Displaying-Differences_RPAR_ "Definition of example") 20 `
@@ -830,7 +1902,8 @@ Tree.branches
       Tree.branches [Tree.val 2, Tree.val 1, Tree.val 2, Tree.val 0]]]
 ```
 
-Without `[guard_msgs.diff](Interacting-with-Lean/#guard_msgs___diff "Documentation for option guard_msgs.diff")`, the ``Lean.guardMsgsCmd : command```/-- ... -/ #guard_msgs in cmd` captures the messages generated by the command `cmd` and checks that they match the contents of the docstring.  Basic example: ```lean /-- error: Unknown identifier `x` -/ #guard_msgs in example : α := x ``` This checks that there is such an error and then consumes the message.  By default, the command captures all messages, but the filter condition can be adjusted. For example, we can select only warnings: ```lean /-- warning: declaration uses 'sorry' -/ #guard_msgs(warning) in example : α := sorry ``` or only errors ```lean #guard_msgs(error) in example : α := sorry ``` In the previous example, since warnings are not captured there is a warning on `sorry`. We can drop the warning completely with ```lean #guard_msgs(error, drop warning) in example : α := sorry ```  In general, `#guard_msgs` accepts a comma-separated list of configuration clauses in parentheses: ``` #guard_msgs (configElt,*) in cmd ``` By default, the configuration list is `(check all, whitespace := normalized, ordering := exact, positions := false)`.  Message filters select messages by severity: - `info`, `warning`, `error`: (non-trace) messages with the given severity level. - `trace`: trace messages - `all`: all messages.  The filters can be prefixed with the action to take: - `check` (the default): capture and check the message - `drop`: drop the message - `pass`: let the message pass through  If no filter is specified, `check all` is assumed.  Otherwise, these filters are processed in left-to-right order, with an implicit `pass all` at the end.  Whitespace handling (after trimming leading and trailing whitespace): - `whitespace := exact` requires an exact whitespace match. - `whitespace := normalized` converts all newline characters to a space before matching   (the default). This allows breaking long lines. - `whitespace := lax` collapses whitespace to a single space before matching.  Message ordering: - `ordering := exact` uses the exact ordering of the messages (the default). - `ordering := sorted` sorts the messages in lexicographic order.   This helps with testing commands that are non-deterministic in their ordering.  Position reporting: - `positions := true` reports the ranges of all messages relative to the line on which   `#guard_msgs` appears. - `positions := false` does not report position info.  Substring matching: - `substring := true` checks that the docstring appears as a substring of the output   (after whitespace normalization). This is useful when you only care about part of the message. - `substring := false` (the default) requires exact matching (modulo whitespace normalization).  Stabilizing output: When messages contain autogenerated names (e.g., metavariables like `?m.47`), the output may differ between runs or Lean versions. Use `set_option pp.mvars.anonymous false` to replace anonymous metavariables with `?_` while preserving user-named metavariables like `?a`. Alternatively, `set_option pp.mvars false` replaces all metavariables with `?_`. Similarly, `set_option pp.fvars.anonymous false` replaces loose free variable names like `_fvar.22` with `_fvar._`.  For example, `#guard_msgs (error, drop all) in cmd` means to check errors and drop everything else.  The command elaborator has special support for `#guard_msgs` for linting. The `#guard_msgs` itself wants to capture linter warnings, so it elaborates the command it is attached to as if it were a top-level command. However, the command elaborator runs linters for *all* top-level commands, which would include `#guard_msgs` itself, and would cause duplicate and/or uncaptured linter warnings. The top-level command elaborator only runs the linters if `#guard_msgs` is not present. ``[`#guard_msgs`](Interacting-with-Lean/#Lean___guardMsgsCmd) command reports this error:
+Without `[guard_msgs.diff](Interacting-with-Lean/#guard_msgs___diff "Documentation for option guard_msgs.diff")`, the ``Lean.guardMsgsCmd : command`
+`[`#guard_msgs`](Interacting-with-Lean/#Lean___guardMsgsCmd) command reports this error:
 
 ```
 ❌️ Docstring on `#guard_msgs` does not match generated message:

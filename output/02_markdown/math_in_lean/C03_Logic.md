@@ -1,38 +1,38 @@
-[ Mathematics in Lean ](file:///home/ryant/Projects/confia_crawler/output/01_raw_html/math_in_lean/index.html)
-  * [1. Introduction](file:///home/ryant/Projects/confia_crawler/output/01_raw_html/math_in_lean/C01_Introduction.html)
-  * [2. Basics](file:///home/ryant/Projects/confia_crawler/output/01_raw_html/math_in_lean/C02_Basics.html)
-  * [](file:///home/ryant/Projects/confia_crawler/output/01_raw_html/math_in_lean/C03_Logic.html)
-    * [3.1. Implication and the Universal Quantifier](file:///home/ryant/Projects/confia_crawler/output/01_raw_html/math_in_lean/C03_Logic.html#implication-and-the-universal-quantifier)
-    * [3.2. The Existential Quantifier](file:///home/ryant/Projects/confia_crawler/output/01_raw_html/math_in_lean/C03_Logic.html#the-existential-quantifier)
-    * [3.3. Negation](file:///home/ryant/Projects/confia_crawler/output/01_raw_html/math_in_lean/C03_Logic.html#negation)
-    * [3.4. Conjunction and Iff](file:///home/ryant/Projects/confia_crawler/output/01_raw_html/math_in_lean/C03_Logic.html#conjunction-and-iff)
-    * [3.5. Disjunction](file:///home/ryant/Projects/confia_crawler/output/01_raw_html/math_in_lean/C03_Logic.html#disjunction)
-    * [3.6. Sequences and Convergence](file:///home/ryant/Projects/confia_crawler/output/01_raw_html/math_in_lean/C03_Logic.html#sequences-and-convergence)
-  * [4. Sets and Functions](file:///home/ryant/Projects/confia_crawler/output/01_raw_html/math_in_lean/C04_Sets_and_Functions.html)
-  * [5. Elementary Number Theory](file:///home/ryant/Projects/confia_crawler/output/01_raw_html/math_in_lean/C05_Elementary_Number_Theory.html)
-  * [6. Discrete Mathematics](file:///home/ryant/Projects/confia_crawler/output/01_raw_html/math_in_lean/C06_Discrete_Mathematics.html)
-  * [7. Structures](file:///home/ryant/Projects/confia_crawler/output/01_raw_html/math_in_lean/C07_Structures.html)
-  * [8. Hierarchies](file:///home/ryant/Projects/confia_crawler/output/01_raw_html/math_in_lean/C08_Hierarchies.html)
-  * [9. Groups and Rings](file:///home/ryant/Projects/confia_crawler/output/01_raw_html/math_in_lean/C09_Groups_and_Rings.html)
-  * [10. Linear algebra](file:///home/ryant/Projects/confia_crawler/output/01_raw_html/math_in_lean/C10_Linear_Algebra.html)
-  * [11. Topology](file:///home/ryant/Projects/confia_crawler/output/01_raw_html/math_in_lean/C11_Topology.html)
-  * [12. Differential Calculus](file:///home/ryant/Projects/confia_crawler/output/01_raw_html/math_in_lean/C12_Differential_Calculus.html)
-  * [13. Integration and Measure Theory](file:///home/ryant/Projects/confia_crawler/output/01_raw_html/math_in_lean/C13_Integration_and_Measure_Theory.html)
+[ Mathematics in Lean ](file:///home/rian-macedo/Projects/confia_crawler/output/01_raw_html/math_in_lean/index.html)
+  * [1. Introduction](file:///home/rian-macedo/Projects/confia_crawler/output/01_raw_html/math_in_lean/C01_Introduction.html)
+  * [2. Basics](file:///home/rian-macedo/Projects/confia_crawler/output/01_raw_html/math_in_lean/C02_Basics.html)
+  * [](file:///home/rian-macedo/Projects/confia_crawler/output/01_raw_html/math_in_lean/C03_Logic.html)
+    * [3.1. Implication and the Universal Quantifier](file:///home/rian-macedo/Projects/confia_crawler/output/01_raw_html/math_in_lean/C03_Logic.html#implication-and-the-universal-quantifier)
+    * [3.2. The Existential Quantifier](file:///home/rian-macedo/Projects/confia_crawler/output/01_raw_html/math_in_lean/C03_Logic.html#the-existential-quantifier)
+    * [3.3. Negation](file:///home/rian-macedo/Projects/confia_crawler/output/01_raw_html/math_in_lean/C03_Logic.html#negation)
+    * [3.4. Conjunction and Iff](file:///home/rian-macedo/Projects/confia_crawler/output/01_raw_html/math_in_lean/C03_Logic.html#conjunction-and-iff)
+    * [3.5. Disjunction](file:///home/rian-macedo/Projects/confia_crawler/output/01_raw_html/math_in_lean/C03_Logic.html#disjunction)
+    * [3.6. Sequences and Convergence](file:///home/rian-macedo/Projects/confia_crawler/output/01_raw_html/math_in_lean/C03_Logic.html#sequences-and-convergence)
+  * [4. Sets and Functions](file:///home/rian-macedo/Projects/confia_crawler/output/01_raw_html/math_in_lean/C04_Sets_and_Functions.html)
+  * [5. Elementary Number Theory](file:///home/rian-macedo/Projects/confia_crawler/output/01_raw_html/math_in_lean/C05_Elementary_Number_Theory.html)
+  * [6. Discrete Mathematics](file:///home/rian-macedo/Projects/confia_crawler/output/01_raw_html/math_in_lean/C06_Discrete_Mathematics.html)
+  * [7. Structures](file:///home/rian-macedo/Projects/confia_crawler/output/01_raw_html/math_in_lean/C07_Structures.html)
+  * [8. Hierarchies](file:///home/rian-macedo/Projects/confia_crawler/output/01_raw_html/math_in_lean/C08_Hierarchies.html)
+  * [9. Groups and Rings](file:///home/rian-macedo/Projects/confia_crawler/output/01_raw_html/math_in_lean/C09_Groups_and_Rings.html)
+  * [10. Linear algebra](file:///home/rian-macedo/Projects/confia_crawler/output/01_raw_html/math_in_lean/C10_Linear_Algebra.html)
+  * [11. Topology](file:///home/rian-macedo/Projects/confia_crawler/output/01_raw_html/math_in_lean/C11_Topology.html)
+  * [12. Differential Calculus](file:///home/rian-macedo/Projects/confia_crawler/output/01_raw_html/math_in_lean/C12_Differential_Calculus.html)
+  * [13. Integration and Measure Theory](file:///home/rian-macedo/Projects/confia_crawler/output/01_raw_html/math_in_lean/C13_Integration_and_Measure_Theory.html)
 
 
-  * [Index](file:///home/ryant/Projects/confia_crawler/output/01_raw_html/math_in_lean/genindex.html)
+  * [Index](file:///home/rian-macedo/Projects/confia_crawler/output/01_raw_html/math_in_lean/genindex.html)
 
 
-[Mathematics in Lean](file:///home/ryant/Projects/confia_crawler/output/01_raw_html/math_in_lean/index.html)
-  * [](file:///home/ryant/Projects/confia_crawler/output/01_raw_html/math_in_lean/index.html)
+[Mathematics in Lean](file:///home/rian-macedo/Projects/confia_crawler/output/01_raw_html/math_in_lean/index.html)
+  * [](file:///home/rian-macedo/Projects/confia_crawler/output/01_raw_html/math_in_lean/index.html)
   * 3. Logic
-  * [ View page source](file:///home/ryant/Projects/confia_crawler/output/01_raw_html/math_in_lean/_sources/C03_Logic.rst.txt)
+  * [ View page source](file:///home/rian-macedo/Projects/confia_crawler/output/01_raw_html/math_in_lean/_sources/C03_Logic.rst.txt)
 
 
 * * *
-#  3. Logic[](file:///home/ryant/Projects/confia_crawler/output/01_raw_html/math_in_lean/C03_Logic.html#logic "Link to this heading")
+#  3. Logic[](file:///home/rian-macedo/Projects/confia_crawler/output/01_raw_html/math_in_lean/C03_Logic.html#logic "Link to this heading")
 In the last chapter, we dealt with equations, inequalities, and basic mathematical statements like “x divides y.” Complex mathematical statements are built up from simple ones like these using logical terms like “and,” “or,” “not,” and “if … then,” “every,” and “some.” In this chapter, we show you how to work with statements that are built up in this way.
-##  3.1. Implication and the Universal Quantifier[](file:///home/ryant/Projects/confia_crawler/output/01_raw_html/math_in_lean/C03_Logic.html#implication-and-the-universal-quantifier "Link to this heading")
+##  3.1. Implication and the Universal Quantifier[](file:///home/rian-macedo/Projects/confia_crawler/output/01_raw_html/math_in_lean/C03_Logic.html#implication-and-the-universal-quantifier "Link to this heading")
 Consider the statement after the `#check`:
 
 ```
@@ -165,7 +165,7 @@ theorem fnUb_add {f g : α → R} {a b : R} (hfa : FnUb' f a) (hgb : FnUb' g b) 
 
 ```
 
-You have already seen square brackets like these in Section [Section 2.2](file:///home/ryant/Projects/confia_crawler/output/01_raw_html/math_in_lean/C02_Basics.html#proving-identities-in-algebraic-structures), though we still haven’t explained what they mean. For concreteness, we will stick to the real numbers for most of our examples, but it is worth knowing that Mathlib contains definitions and theorems that work at a high level of generality.
+You have already seen square brackets like these in Section [Section 2.2](file:///home/rian-macedo/Projects/confia_crawler/output/01_raw_html/math_in_lean/C02_Basics.html#proving-identities-in-algebraic-structures), though we still haven’t explained what they mean. For concreteness, we will stick to the real numbers for most of our examples, but it is worth knowing that Mathlib contains definitions and theorems that work at a high level of generality.
 For another example of a hidden universal quantifier, Mathlib defines a predicate `Monotone`, which says that a function is nondecreasing in its arguments:
 
 ```
@@ -291,8 +291,8 @@ example (injg : Injective g) (injf : Injective f) : Injective fun x ↦ g (f x) 
 
 ```
 
-##  3.2. The Existential Quantifier[](file:///home/ryant/Projects/confia_crawler/output/01_raw_html/math_in_lean/C03_Logic.html#the-existential-quantifier "Link to this heading")
-The existential quantifier, which can be entered as `\ex` in VS Code, is used to represent the phrase “there exists.” The formal expression `∃ x : ℝ, 2 < x ∧ x < 3` in Lean says that there is a real number between 2 and 3. (We will discuss the conjunction symbol, `∧`, in [Section 3.4](file:///home/ryant/Projects/confia_crawler/output/01_raw_html/math_in_lean/C03_Logic.html#conjunction-and-biimplication).) The canonical way to prove such a statement is to exhibit a real number and show that it has the stated property. The number 2.5, which we can enter as `5 / 2` or `(5 : ℝ) / 2` when Lean cannot infer from context that we have the real numbers in mind, has the required property, and the `norm_num` tactic can prove that it meets the description.
+##  3.2. The Existential Quantifier[](file:///home/rian-macedo/Projects/confia_crawler/output/01_raw_html/math_in_lean/C03_Logic.html#the-existential-quantifier "Link to this heading")
+The existential quantifier, which can be entered as `\ex` in VS Code, is used to represent the phrase “there exists.” The formal expression `∃ x : ℝ, 2 < x ∧ x < 3` in Lean says that there is a real number between 2 and 3. (We will discuss the conjunction symbol, `∧`, in [Section 3.4](file:///home/rian-macedo/Projects/confia_crawler/output/01_raw_html/math_in_lean/C03_Logic.html#conjunction-and-biimplication).) The canonical way to prove such a statement is to exhibit a real number and show that it has the stated property. The number 2.5, which we can enter as `5 / 2` or `(5 : ℝ) / 2` when Lean cannot infer from context that we have the real numbers in mind, has the required property, and the `norm_num` tactic can prove that it meets the description.
 There are a few ways we can put the information together. Given a goal that begins with an existential quantifier, the `use` tactic is used to provide the object, leaving the goal of proving the property.
 
 ```
@@ -457,7 +457,7 @@ theorem sumOfSquares_mul {x y : α} (sosx : SumOfSquares x) (sosy : SumOfSquares
 
 ```
 
-This proof doesn’t provide much insight, but here is one way to motivate it. A _Gaussian integer_ is a number of the form a+bi where a and b are integers and i=−1. The _norm_ of the Gaussian integer a+bi is, by definition, a2+b2. So the norm of a Gaussian integer is a sum of squares, and any sum of squares can be expressed in this way. The theorem above reflects the fact that norm of a product of Gaussian integers is the product of their norms: if x is the norm of a+bi and y in the norm of c+di, then xy is the norm of (a+bi)(c+di). Our cryptic proof illustrates the fact that the proof that is easiest to formalize isn’t always the most perspicuous one. In [Section 7.3](file:///home/ryant/Projects/confia_crawler/output/01_raw_html/math_in_lean/C07_Structures.html#section-building-the-gaussian-integers), we will provide you with the means to define the Gaussian integers and use them to provide an alternative proof.
+This proof doesn’t provide much insight, but here is one way to motivate it. A _Gaussian integer_ is a number of the form a+bi where a and b are integers and i=−1. The _norm_ of the Gaussian integer a+bi is, by definition, a2+b2. So the norm of a Gaussian integer is a sum of squares, and any sum of squares can be expressed in this way. The theorem above reflects the fact that norm of a product of Gaussian integers is the product of their norms: if x is the norm of a+bi and y in the norm of c+di, then xy is the norm of (a+bi)(c+di). Our cryptic proof illustrates the fact that the proof that is easiest to formalize isn’t always the most perspicuous one. In [Section 7.3](file:///home/rian-macedo/Projects/confia_crawler/output/01_raw_html/math_in_lean/C07_Structures.html#section-building-the-gaussian-integers), we will provide you with the means to define the Gaussian integers and use them to provide an alternative proof.
 The pattern of unpacking an equation inside an existential quantifier and then using it to rewrite an expression in the goal comes up often, so much so that the `rcases` tactic provides an abbreviation: if you use the keyword `rfl` in place of a new identifier, `rcases` does the rewriting automatically (this trick doesn’t work with pattern-matching lambdas).
 
 ```
@@ -539,7 +539,7 @@ example (surjg : Surjective g) (surjf : Surjective f) : Surjective fun x ↦ g (
 
 ```
 
-##  3.3. Negation[](file:///home/ryant/Projects/confia_crawler/output/01_raw_html/math_in_lean/C03_Logic.html#negation "Link to this heading")
+##  3.3. Negation[](file:///home/rian-macedo/Projects/confia_crawler/output/01_raw_html/math_in_lean/C03_Logic.html#negation "Link to this heading")
 The symbol `¬` is meant to express negation, so `¬ x < y` says that `x` is not less than `y`, `¬ x = y` (or, equivalently, `x ≠ y`) says that `x` is not equal to `y`, and `¬ ∃ z, x < z ∧ z < y` says that there does not exist a `z` strictly between `x` and `y`. In Lean, the notation `¬ A` abbreviates `A → False`, which you can think of as saying that `A` implies a contradiction. Practically speaking, this means that you already know something about how to work with negations: you can prove `¬ A` by introducing a hypothesis `h : A` and proving `False`, and if you have `h : ¬ A` and `h' : A`, then applying `h` to `h'` yields `False`.
 To illustrate, consider the irreflexivity principle `lt_irrefl` for a strict order, which says that we have `¬ a < a` for every `a`. The asymmetry principle `lt_asymm` says that we have `a < b → ¬ b < a`. Let’s show that `lt_asymm` follows from `lt_irrefl`.
 
@@ -706,7 +706,7 @@ example (x : ℝ) (h : ∀ ε > 0, x ≤ ε) : x ≤ 0 := by
 ```
 
 We have not yet explained the `constructor` command or the use of the semicolon after it, but we will do that in the next section.
-We close this section with the principle of _ex falso_ , which says that anything follows from a contradiction. In Lean, this is represented by `False.elim`, which establishes `False → P` for any proposition `P`. This may seem like a strange principle, but it comes up fairly often. We often prove a theorem by splitting on cases, and sometimes we can show that one of the cases is contradictory. In that case, we need to assert that the contradiction establishes the goal so we can move on to the next one. (We will see instances of reasoning by cases in [Section 3.5](file:///home/ryant/Projects/confia_crawler/output/01_raw_html/math_in_lean/C03_Logic.html#disjunction).)
+We close this section with the principle of _ex falso_ , which says that anything follows from a contradiction. In Lean, this is represented by `False.elim`, which establishes `False → P` for any proposition `P`. This may seem like a strange principle, but it comes up fairly often. We often prove a theorem by splitting on cases, and sometimes we can show that one of the cases is contradictory. In that case, we need to assert that the contradiction establishes the goal so we can move on to the next one. (We will see instances of reasoning by cases in [Section 3.5](file:///home/rian-macedo/Projects/confia_crawler/output/01_raw_html/math_in_lean/C03_Logic.html#disjunction).)
 Lean provides a number of ways of closing a goal once a contradiction has been reached.
 
 ```
@@ -724,7 +724,7 @@ example (h : 0 < 0) : a > 37 := by
 ```
 
 The `exfalso` tactic replaces the current goal with the goal of proving `False`. Given `h : P` and `h' : ¬ P`, the term `absurd h h'` establishes any proposition. Finally, the `contradiction` tactic tries to close a goal by finding a contradiction in the hypotheses, such as a pair of the form `h : P` and `h' : ¬ P`. Of course, in this example, `linarith` also works.
-##  3.4. Conjunction and Iff[](file:///home/ryant/Projects/confia_crawler/output/01_raw_html/math_in_lean/C03_Logic.html#conjunction-and-iff "Link to this heading")
+##  3.4. Conjunction and Iff[](file:///home/rian-macedo/Projects/confia_crawler/output/01_raw_html/math_in_lean/C03_Logic.html#conjunction-and-iff "Link to this heading")
 You have already seen that the conjunction symbol, `∧`, is used to express “and.” The `constructor` tactic allows you to prove a statement of the form `A ∧ B` by proving `A` and then proving `B`.
 
 ```
@@ -949,7 +949,7 @@ example : a < b → b < c → a < c := by
 
 ```
 
-##  3.5. Disjunction[](file:///home/ryant/Projects/confia_crawler/output/01_raw_html/math_in_lean/C03_Logic.html#disjunction "Link to this heading")
+##  3.5. Disjunction[](file:///home/rian-macedo/Projects/confia_crawler/output/01_raw_html/math_in_lean/C03_Logic.html#disjunction "Link to this heading")
 The canonical way to prove a disjunction `A ∨ B` is to prove `A` or to prove `B`. The `left` tactic chooses `A`, and the `right` tactic chooses `B`.
 
 ```
@@ -1144,7 +1144,7 @@ example (P Q : Prop) : P → Q ↔ ¬P ∨ Q := by
 
 ```
 
-##  3.6. Sequences and Convergence[](file:///home/ryant/Projects/confia_crawler/output/01_raw_html/math_in_lean/C03_Logic.html#sequences-and-convergence "Link to this heading")
+##  3.6. Sequences and Convergence[](file:///home/rian-macedo/Projects/confia_crawler/output/01_raw_html/math_in_lean/C03_Logic.html#sequences-and-convergence "Link to this heading")
 We now have enough skills at our disposal to do some real mathematics. In Lean, we can represent a sequence s0,s1,s2,… of real numbers as a function `s : ℕ → ℝ`. Such a sequence is said to _converge_ to a number a if for every ε>0 there is a point beyond which the sequence remains within ε of a, that is, there is a number N such that for every n≥N, |sn−a|<ε. In Lean, we can render this as follows:
 
 ```
@@ -1306,8 +1306,8 @@ def ConvergesTo' (s : α → ℝ) (a : ℝ) :=
 
 ```
 
-In [Section 11.1](file:///home/ryant/Projects/confia_crawler/output/01_raw_html/math_in_lean/C11_Topology.html#filters), we will see that Mathlib has mechanisms for dealing with convergence in vastly more general terms, not only abstracting away particular features of the domain and codomain, but also abstracting over different types of convergence.
-[](file:///home/ryant/Projects/confia_crawler/output/01_raw_html/math_in_lean/C02_Basics.html "2. Basics") [Next ](file:///home/ryant/Projects/confia_crawler/output/01_raw_html/math_in_lean/C04_Sets_and_Functions.html "4. Sets and Functions")
+In [Section 11.1](file:///home/rian-macedo/Projects/confia_crawler/output/01_raw_html/math_in_lean/C11_Topology.html#filters), we will see that Mathlib has mechanisms for dealing with convergence in vastly more general terms, not only abstracting away particular features of the domain and codomain, but also abstracting over different types of convergence.
+[](file:///home/rian-macedo/Projects/confia_crawler/output/01_raw_html/math_in_lean/C02_Basics.html "2. Basics") [Next ](file:///home/rian-macedo/Projects/confia_crawler/output/01_raw_html/math_in_lean/C04_Sets_and_Functions.html "4. Sets and Functions")
 * * *
 © Copyright 2020-2025, Jeremy Avigad, Patrick Massot. Text licensed under CC BY 4.0.
 Built with [Sphinx](https://www.sphinx-doc.org/) using a [theme](https://github.com/readthedocs/sphinx_rtd_theme) provided by [Read the Docs](https://readthedocs.org). 
